@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -13,21 +13,32 @@
     </script>
 
     <style>
-        #flipbook {
-            width: 800px;
-            height: 500px;
-            margin: auto;
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
         }
 
-            #flipbook .page {
-                width: 100%;
-                height: 100%;
+        #flipbook {
+            width: 100vw;
+            height: 100vh;
+        }
+
+            #flipbook > div {
+                width: 100vw;
+                height: 100vh;
+                background: #f0f0f0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
             }
     </style>
 </head>
 <body>
 
-    <h2 style="text-align: center;">Flipbook PDF Viewer</h2>
+    <h2 style="text-align: center;">طريق الأمل : حياة بلا جلوتين</h2>
     <div id="flipbook"></div>
 
     <script>

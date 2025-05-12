@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Flipbook Viewer</title>
+
+    <!-- Include DearFlip CSS and JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+    <link rel="stylesheet" href="dflip.min.css">
+    <script src="dflip.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #flipbook {
+            width: 800px;
+            height: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>PDF Flipbook Example</h2>
+
+    <!-- Flipbook container -->
+    <div id="flipbook" class="dflip"
+         data-dflip-source="WayOfHope.pdf"
+         data-dflip-width="800"
+         data-dflip-height="500">
+    </div>
+
+</body>
+</html>

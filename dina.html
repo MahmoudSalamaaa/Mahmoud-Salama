@@ -1,42 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>PDF Flipbook Viewer</title>
-
-    <!-- jQuery (Required by DearFlip) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- DearFlip CSS & JS (Use hosted or ensure local files are correct) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dflip@1.5.15/css/dflip.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/dflip@1.5.15/js/dflip.min.js"></script>
-
+    <meta charset="utf-8">
+    <title>PDF Flipbook (No Watermark)</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-
         #flipbook {
             width: 800px;
             height: 500px;
             margin: auto;
         }
+
+            #flipbook .page {
+                width: 100%;
+                height: 100%;
+            }
     </style>
 </head>
 <body>
 
-    <h2 style="text-align: center;">PDF Flipbook Example</h2>
+    <h2 style="text-align: center;">Flipbook PDF Viewer</h2>
+    <div id="flipbook"></div>
 
-    <!-- Flipbook container -->
-    <div id="flipbook" class="df-book"
-         data-df-src="WayOfHope.pdf"
-         data-df-width="800"
-         data-df-height="500">
-    </div>
+    <script>
+        const url = 'WayOfHope.pdf'; // Replace with your PDF file path
+
+        const flipbook = document.getElementById('flipbook');
+        const loadingTask = pdfjsLib.getDocument(url);
+
+        loadingTask.promise.then(function (pdf) {
+            const pageCount = pdf.numPages;
+            const promises = [];
+
+            for (let i = 1; i <= pageCount; i++) {
+                promises.push(
+                    pdf.getPage(i).then(function (page) {
+                        const viewport = page.getViewport({ scale: 1.5 });
+                        const canvas = document.createElement('canvas');
+                        const context = canvas.getContext('2d');
+                        canvas.height = viewport.height;
+                        canvas.width = viewport.width;
+
+                        const renderContext = {
+                            canvasContext: context,
+                            viewport: viewport
+                        };
+
+                        return page.render(renderContext).promise.then(function () {
+                            const pageDiv = document.createElement('div');
+                            pageDiv.className = 'page';
+                            pageDiv.appendChild(canvas);
+                            flipbook.appendChild(pageDiv);
+                        });
+                    })
+                );
+            }
+
+            Promise.all(promises).then(() => {
+                $('#flipbook').turn({
+                    width: 800,
+                    height: 500,
+                    autoCenter: true
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>

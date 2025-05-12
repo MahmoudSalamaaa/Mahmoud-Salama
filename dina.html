@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <title>PDF Flipbook Viewer</title>
 
-    <!-- Include DearFlip CSS and JS -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jQuery (Required by DearFlip) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-
-
-    <link rel="stylesheet" href="dflip.min.css">
-    <script src="dflip.min.js"></script>
+    <!-- DearFlip CSS & JS (Use hosted or ensure local files are correct) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dflip@1.5.15/css/dflip.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/dflip@1.5.15/js/dflip.min.js"></script>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
+            background-color: #f5f5f5;
         }
 
         #flipbook {
@@ -28,13 +29,13 @@
 </head>
 <body>
 
-    <h2>PDF Flipbook Example</h2>
+    <h2 style="text-align: center;">PDF Flipbook Example</h2>
 
     <!-- Flipbook container -->
-    <div id="flipbook" class="dflip"
-         data-dflip-source="WayOfHope.pdf"
-         data-dflip-width="800"
-         data-dflip-height="500">
+    <div id="flipbook" class="df-book"
+         data-df-src="WayOfHope.pdf"
+         data-df-width="800"
+         data-df-height="500">
     </div>
 
 </body>

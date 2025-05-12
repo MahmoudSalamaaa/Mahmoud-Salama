@@ -1,14 +1,18 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Dr.Dina</title>
+    <title>Dr. Dina</title>
 
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="turn.min.js"></script>
+
+    <!-- Turn.js -->
+    <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js@4/turn.min.js"></script>
+
+    <!-- PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.1.81/pdf.min.js"></script>
     <script>
-        // Set worker path
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.1.81/pdf.worker.min.js';
     </script>
 
@@ -17,37 +21,59 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden;
+            background-color: #fdfdfd;
+            font-family: Arial, sans-serif;
         }
 
-       /* #flipbook {
-            width: 100vw;
-            height: 100vh;
+        h2 {
+            text-align: center;
+            margin: 20px 0;
         }
 
-            #flipbook > div {
-                width: 100vw;
-                height: 100vh;
-                background: #f0f0f0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 2rem;
-            }*/
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #flipbook-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            width: 100%;
+            height: 100%;
+        }
+
+        #flipbook {
+            width: 90vw;
+            height: 90vh;
+        }
+
+            #flipbook .page {
+                background: white;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            }
+
+        canvas {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
     </style>
 </head>
 <body>
 
-    <h2 style="text-align: center;">طريق الأمل : حياة بلا جلوتينk</h2>
-    <div id="flipbook"></div>
+    <h2>طريق الأمل : حياة بلا جلوتين</h2>
+    <div id="flipbook-container">
+        <div id="flipbook"></div>
+    </div>
 
     <script>
-        const url = 'WayOfHope.pdf'; // Replace with your PDF file path
-
+        const url = 'WayOfHope.pdf'; // Your PDF file path
         const flipbook = document.getElementById('flipbook');
-        const loadingTask = pdfjsLib.getDocument(url);
 
-        loadingTask.promise.then(function (pdf) {
+        pdfjsLib.getDocument(url).promise.then(function (pdf) {
             const pageCount = pdf.numPages;
             const promises = [];
 
@@ -60,12 +86,7 @@
                         canvas.height = viewport.height;
                         canvas.width = viewport.width;
 
-                        const renderContext = {
-                            canvasContext: context,
-                            viewport: viewport
-                        };
-
-                        return page.render(renderContext).promise.then(function () {
+                        return page.render({ canvasContext: context, viewport: viewport }).promise.then(function () {
                             const pageDiv = document.createElement('div');
                             pageDiv.className = 'page';
                             pageDiv.appendChild(canvas);
@@ -77,8 +98,8 @@
 
             Promise.all(promises).then(() => {
                 $('#flipbook').turn({
-                    width: 1500,
-                    height: 1500,
+                    width: $('#flipbook').width(),
+                    height: $('#flipbook').height(),
                     autoCenter: true
                 });
             });

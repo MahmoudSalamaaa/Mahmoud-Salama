@@ -6,17 +6,19 @@
 
 /* ===== BASE STYLES ===== */
 :root {
-    /* Color Variables - Feminine Palette */
-    --primary-color: #9b4f96; /* Purple/Mauve */
-    --secondary-color: #d87093; /* Medium Pink */
-    --accent-color: #e6b3cc; /* Light Pink */
+    /* Color Variables - Vibrant Feminine Medical Palette */
+    --primary-color: #8e44ad; /* Rich Purple */
+    --secondary-color: #e74c3c; /* Vibrant Red */
+    --accent-color: #3498db; /* Bright Blue */
+    --accent-color-2: #2ecc71; /* Emerald Green */
+    --accent-color-3: #f39c12; /* Golden Yellow */
     --bg-color: #ffffff;
-    --bg-alt-color: #fdf2f7; /* Very Light Pink */
-    --text-primary: #4a4a4a;
-    --text-secondary: #777777;
+    --bg-alt-color: #f0f9ff; /* Very Light Blue */
+    --text-primary: #2c3e50;
+    --text-secondary: #7f8c8d;
     --text-light: #ffffff;
-    --border-color: #f0d4e3; /* Soft Pink Border */
-    --shadow-color: rgba(216, 112, 147, 0.1); /* Pink Shadow */
+    --border-color: #d6eaf8; /* Light Blue Border */
+    --shadow-color: rgba(142, 68, 173, 0.15); /* Purple Shadow */
     
     /* Spacing Variables */
     --spacing-xs: 0.5rem;
@@ -156,6 +158,22 @@ section:nth-child(even) {
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 15px var(--shadow-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/medical_icons.jpeg');
+    background-size: 300px;
+    background-position: right top;
+    opacity: 0.1;
+    z-index: -1;
 }
 
 .header-content {
@@ -269,12 +287,30 @@ section:nth-child(even) {
 /* ===== ABOUT SECTION ===== */
 .about-section {
     background-color: var(--bg-alt-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/medical_stethoscope.jpeg');
+    background-size: 200px;
+    background-position: left bottom;
+    opacity: 0.08;
+    z-index: 0;
 }
 
 .about-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .objective {
@@ -286,11 +322,13 @@ section:nth-child(even) {
 }
 
 /* ===== EXPERIENCE SECTION ===== */
-.timeline {
+.experience-section {
     position: relative;
     max-width: 900px;
     margin: 0 auto;
     padding: var(--spacing-md) 0;
+    background: linear-gradient(to bottom right, rgba(52, 152, 219, 0.05), rgba(46, 204, 113, 0.05));
+    border-radius: var(--border-radius-lg);
 }
 
 .timeline::before {
@@ -315,9 +353,23 @@ section:nth-child(even) {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: var(--accent-color);
+    background-color: var(--accent-color-3);
     border: 3px solid var(--primary-color);
     z-index: 1;
+    box-shadow: 0 0 0 4px rgba(243, 156, 18, 0.2);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(243, 156, 18, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(243, 156, 18, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(243, 156, 18, 0);
+    }
 }
 
 .timeline-content {
@@ -325,6 +377,13 @@ section:nth-child(even) {
     padding: var(--spacing-md);
     border-radius: var(--border-radius-md);
     box-shadow: 0 4px 10px var(--shadow-color);
+    border-left: 4px solid var(--accent-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px var(--shadow-color);
 }
 
 .timeline-date {
@@ -413,11 +472,27 @@ section:nth-child(even) {
 }
 
 /* ===== SKILLS SECTION ===== */
-.skills-content {
+.skills-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/medical_team.png');
+    background-size: 300px;
+    background-position: right bottom;
+    opacity: 0.07;
+    z-index: 0;
 }
 
 .skill-item {
@@ -439,10 +514,21 @@ section:nth-child(even) {
 
 .skill-progress {
     height: 100%;
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color), var(--accent-color-2), var(--accent-color-3));
     border-radius: 5px;
     transition: width 1s ease-in-out;
     box-shadow: 0 1px 3px var(--shadow-color);
+    animation: shimmer 3s infinite linear;
+    background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
 
 .languages-content {
@@ -495,12 +581,16 @@ section:nth-child(even) {
     border-radius: var(--border-radius-md);
     box-shadow: 0 4px 10px var(--shadow-color);
     text-align: center;
-    transition: transform var(--transition-medium);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-top: 3px solid transparent;
+    background-image: linear-gradient(white, white), linear-gradient(to right, var(--primary-color), var(--accent-color), var(--accent-color-2));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
 
 .certificate-item:hover {
@@ -520,9 +610,30 @@ section:nth-child(even) {
 }
 
 /* ===== INVOLVEMENT SECTION ===== */
-.involvement-timeline {
+.involvement-section {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.involvement-content {
+    position: relative;
+}
+
+.involvement-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/medical_checklist.png');
+    background-size: 200px;
+    background-position: right center;
+    opacity: 0.07;
+    z-index: -1;
+    border-radius: var(--border-radius-lg);
 }
 
 .involvement-item {

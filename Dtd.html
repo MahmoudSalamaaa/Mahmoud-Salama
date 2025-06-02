@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of systems, applications and technical support</title>
+    <meta name="description" content="Department serves as the technological backbone of the Unified Procurement Authority (UPA), enabling efficient procurement operations through custom software development, 24/7 technical support for 50,000+ end-users, secure system integrations with government platforms, and proactive cybersecurity measures">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Department of systems, applications and technical support">
+    <meta property="og:description" content="Department serves as the technological backbone of the Unified Procurement Authority (UPA), enabling efficient procurement operations through custom software development, 24/7 technical support for 50,000+ end-users, secure system integrations with government platforms, and proactive cybersecurity measures">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Department of systems, applications and technical support">
+    <meta name="twitter:description" content="Department serves as the technological backbone of the Unified Procurement Authority (UPA), enabling efficient procurement operations through custom software development, 24/7 technical support for 50,000+ end-users, secure system integrations with government platforms, and proactive cybersecurity measures">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS Variables matching Chakra UI theme */
+        :root {
+            --chakra-colors-transparent: transparent;
+            --chakra-colors-current: currentColor;
+            --chakra-colors-black: #000000;
+            --chakra-colors-white: #ffffff;
+            --chakra-colors-gray-50: #f5f5f6;
+            --chakra-colors-gray-100: #f5f5f6;
+            --chakra-colors-gray-200: #e6e6e7;
+            --chakra-colors-gray-300: #d0cfd2;
+            --chakra-colors-gray-400: #aeaeb2;
+            --chakra-colors-gray-500: #85858b;
+            --chakra-colors-gray-600: #66666b;
+            --chakra-colors-gray-700: #5b5b5f;
+            --chakra-colors-gray-800: #4d4d51;
+            --chakra-colors-gray-900: #444446;
+            --chakra-colors-blue-50: #eff7ff;
+            --chakra-colors-blue-500: #3f8bf2;
+            --chakra-colors-blue-600: #296ee7;
+            --chakra-colors-blue-700: #2158d4;
+            --chakra-colors-green-500: #2db92d;
+            --chakra-colors-purple-500: #b179fb;
+            --chakra-colors-orange-500: #ff6a0a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--chakra-colors-gray-800);
+            background-color: var(--chakra-colors-white);
+            overflow-x: hidden;
+        }
+
+        /* Presentation Container */
+        .presentation-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Slide Structure */
+        .slide {
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .slide-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Title Slide */
+        .title-slide {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .main-title {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+
+        .organization-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Overview Slide */
+        .overview-slide {
+            background: var(--chakra-colors-gray-50);
+        }
+
+        .slide-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: var(--chakra-colors-gray-800);
+            text-align: center;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .overview-content {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: var(--chakra-colors-gray-700);
+        }
+
+        .overview-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .department-illustration {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, var(--chakra-colors-blue-500), var(--chakra-colors-purple-500));
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dept-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .dept-label {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Services Slide */
+        .services-slide {
+            background: var(--chakra-colors-white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: var(--chakra-colors-white);
+            border: 2px solid var(--chakra-colors-gray-200);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-color: var(--chakra-colors-blue-500);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon.development {
+            background: var(--chakra-colors-blue-500);
+        }
+
+        .service-icon.support {
+            background: var(--chakra-colors-green-500);
+        }
+
+        .service-icon.integration {
+            background: var(--chakra-colors-purple-500);
+        }
+
+        .service-icon.security {
+            background: var(--chakra-colors-orange-500);
+        }
+
+        .service-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--chakra-colors-gray-800);
+        }
+
+        .service-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--chakra-colors-gray-600);
+        }
+
+        /* Statistics Slide */
+        .stats-slide {
+            background: linear-gradient(135deg, #2158d4 0%, #b179fb 100%);
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #fff, #e0e7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        /* Technology Stack Slide */
+        .tech-slide {
+            background: var(--chakra-colors-gray-900);
+            color: white;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .tech-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .tech-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .tech-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--chakra-colors-blue-500);
+        }
+
+        .tech-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        /* Contact Slide */
+        .contact-slide {
+            background: var(--chakra-colors-gray-50);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--chakra-colors-blue-500);
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Navigation */
+        .slide-nav {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 1rem;
+            z-index: 1000;
+        }
+
+        .nav-btn {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background: var(--chakra-colors-blue-500);
+            transform: scale(1.1);
+        }
+
+        .slide-indicator {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+            z-index: 1000;
+        }
+
+        .indicator-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator-dot.active {
+            background: var(--chakra-colors-blue-500);
+            transform: scale(1.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.5rem;
+            }
+
+            .slide-title {
+                font-size: 2rem;
+            }
+
+            .overview-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .services-grid,
+            .stats-grid,
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .slide {
+                padding: 1rem;
+            }
+
+            .department-illustration {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        /* Animations */
+        .slide {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .slide.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hide Gamma branding elements */
+        .chakra-link.chakra-button.css-u02v1v,
+        .css-1f8etj {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide 1: Title -->
+        <section class="slide active title-slide" id="slide-1">
+            <div class="slide-content fade-in">
+                <h1 class="main-title">Department of Systems, Applications and Technical Support</h1>
+                <p class="subtitle">Technological Backbone of Government Procurement</p>
+                <div class="organization-badge">
+                    <i class="fas fa-building"></i>
+                    Unified Procurement Authority (UPA)
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: Overview -->
+        <section class="slide overview-slide" id="slide-2">
+            <div class="slide-content">
+                <h2 class="slide-title">Our Mission</h2>
+                <div class="overview-grid">
+                    <div class="overview-content">
+                        <p>The Department serves as the <strong>technological backbone</strong> of the Unified Procurement Authority (UPA), enabling efficient procurement operations through:</p>
+                        <br>
+                        <ul style="font-size: 1.2rem; line-height: 2;">
+                            <li>✓ Custom software development</li>
+                            <li>✓ 24/7 technical support for 50,000+ end-users</li>
+                            <li>✓ Secure system integrations with government platforms</li>
+                            <li>✓ Proactive cybersecurity measures</li>
+                        </ul>
+                    </div>
+                    <div class="overview-visual">
+                        <div class="department-illustration">
+                            <div class="dept-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="dept-label">Systems & Applications<br>Technical Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Core Services -->
+        <section class="slide services-slide" id="slide-3">
+            <div class="slide-content">
+                <h2 class="slide-title">Core Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon development">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Custom Software Development</h3>
+                        <p class="service-description">Tailored software solutions designed specifically for government procurement needs, ensuring compliance with regulations and optimizing workflow efficiency.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon support">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="service-title">24/7 Technical Support</h3>
+                        <p class="service-description">Round-the-clock technical assistance for over 50,000 end-users across all government departments, ensuring uninterrupted operations.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon integration">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3 class="service-title">System Integration</h3>
+                        <p class="service-description">Secure and seamless integration with government platforms, ensuring data consistency and streamlined inter-departmental communication.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon security">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="service-title">Cybersecurity Management</h3>
+                        <p class="service-description">Proactive cybersecurity measures to protect sensitive government data, including threat monitoring, security audits, and incident response.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Key Statistics -->
+        <section class="slide stats-slide" id="slide-4">
+            <div class="slide-content">
+                <h2 class="slide-title">Impact by Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">50,000+</div>
+                        <div class="stat-label">Active End Users</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Technical Support</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">System Uptime</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Government Integrations</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Technology Stack -->
+        <section class="slide tech-slide" id="slide-5">
+            <div class="slide-content">
+                <h2 class="slide-title">Technology Infrastructure</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <div class="tech-icon"><i class="fas fa-server"></i></div>
+                        <div class="tech-name">Enterprise Servers</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon"><i class="fas fa-database"></i></div>
+                        <div class="tech-name">Database Management</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon"><i class="fas fa-cloud"></i></div>
+                        <div class="tech-name">Cloud Infrastructure</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="tech-name">Network Security</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="tech-name">Mobile Applications</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="tech-name">Analytics Platform</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Contact & Support -->
+        <section class="slide contact-slide" id="slide-6">
+            <div class="slide-content">
+                <h2 class="slide-title">Get Support</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong>24/7 Helpdesk</strong><br>
+                                +1 (800) UPA-TECH
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <strong>Email Support</strong><br>
+                                support@upa.gov
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div>
+                                <strong>Web Portal</strong><br>
+                                portal.upa.gov
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <strong>Location</strong><br>
+                                Government Technology Center<br>
+                                Washington, DC
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Service Hours</h3>
+                        
+                        <div style="font-size: 1.1rem; line-height: 2;">
+                            <p><strong>Technical Support:</strong> 24/7/365</p>
+                            <p><strong>Development Team:</strong> Mon-Fri, 8AM-6PM EST</p>
+                            <p><strong>System Maintenance:</strong> Sundays, 2AM-6AM EST</p>
+                            <p><strong>Training Sessions:</strong> By Appointment</p>
+                        </div>
+
+                        <div style="margin-top: 2rem; padding: 1.5rem; background: #f0f9ff; border-radius: 12px;">
+                            <h4 style="color: #1e40af; margin-bottom: 1rem;">Emergency Contact</h4>
+                            <p>For critical system issues outside business hours, contact our emergency hotline:</p>
+                            <p style="font-weight: 600; color: #dc2626;">+1 (800) UPA-URGENT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Navigation -->
+    <div class="slide-nav">
+        <button class="nav-btn" onclick="previousSlide()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="nav-btn" onclick="nextSlide()">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Slide Indicators -->
+    <div class="slide-indicator">
+        <div class="indicator-dot active" onclick="goToSlide(1)"></div>
+        <div class="indicator-dot" onclick="goToSlide(2)"></div>
+        <div class="indicator-dot" onclick="goToSlide(3)"></div>
+        <div class="indicator-dot" onclick="goToSlide(4)"></div>
+        <div class="indicator-dot" onclick="goToSlide(5)"></div>
+        <div class="indicator-dot" onclick="goToSlide(6)"></div>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 6;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            const indicators = document.querySelectorAll('.indicator-dot');
+            
+            // Hide all slides
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            // Remove active from all indicators
+            indicators.forEach(indicator => {
+                indicator.classList.remove('active');
+            });
+            
+            // Show current slide
+            document.getElementById(`slide-${n}`).classList.add('active');
+            indicators[n-1].classList.add('active');
+            
+            currentSlide = n;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                showSlide(currentSlide + 1);
+            }
+        }
+
+        function previousSlide() {
+            if (currentSlide > 1) {
+                showSlide(currentSlide - 1);
+            }
+        }
+
+        function goToSlide(n) {
+            showSlide(n);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                previousSlide();
+            }
+        });
+
+        // Touch/swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50) {
+                nextSlide(); // Swipe left - next slide
+            }
+            if (touchEndX > touchStartX + 50) {
+                previousSlide(); // Swipe right - previous slide
+            }
+        }
+
+        // Auto-advance slides (optional)
+        // setInterval(nextSlide, 10000); // Uncomment for auto-advance every 10 seconds
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            showSlide(1);
+        });
+    </script>
+</body>
+</html>

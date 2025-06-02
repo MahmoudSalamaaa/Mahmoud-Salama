@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Development Department - Project Lifecycle & Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1976d2;
+      --secondary: #f5f6fa;
+      --accent: #43a047;
+      --danger: #d32f2f;
+      --warning: #ffa000;
+      --info: #0288d1;
+      --success: #388e3c;
+      --gray: #757575;
+      --font: 'Roboto', Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--secondary);
+      color: #222;
+      font-family: var(--font);
+      line-height: 1.7;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+      border-radius: 0 0 2rem 2rem;
+      box-shadow: 0 4px 16px rgba(25, 118, 210, 0.09);
+    }
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.15rem;
+      margin: 0;
+      opacity: 0.88;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0 1rem 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      background: #fff;
+      padding: 0.5rem 1.2rem;
+      border-radius: 2rem;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(25, 118, 210, 0.08);
+      transition: background 0.2s, color 0.2s;
+    }
+    nav a:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 24px rgba(25, 118, 210, 0.07);
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      color: var(--primary);
+      margin-top: 0;
+      margin-bottom: 1.2rem;
+      font-size: 2rem;
+      border-left: 5px solid var(--primary);
+      padding-left: 0.6rem;
+      letter-spacing: 0.5px;
+    }
+    h3 {
+      color: var(--accent);
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+      background: #fafbfc;
+      border-radius: 1em;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 0.7rem;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+      vertical-align: top;
+      font-size: 1em;
+    }
+    th {
+      background: var(--primary);
+      color: #fff;
+      font-size: 1em;
+      font-weight: 700;
+    }
+    .status-dot {
+      font-size: 1.1em;
+      margin-right: 0.4em;
+      vertical-align: middle;
+    }
+    .dot-yellow { color: var(--warning); }
+    .dot-green { color: var(--success); }
+    .dot-blue { color: var(--info); }
+    .dot-orange { color: #ff7043; }
+    .dot-gray { color: var(--gray);}
+    .dot-cyan { color: #00bcd4;}
+    .dot-purple { color: #8e24aa;}
+    .dot-red { color: var(--danger);}
+    .dot-black { color: #222;}
+    .dot-cycle { color: #607d8b;}
+    .tag {
+      display: inline-block;
+      padding: 0.2em 0.7em;
+      border-radius: 1em;
+      font-size: 0.9em;
+      margin: 0 0.2em 0.2em 0;
+      background: var(--info);
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .tag.warning { background: var(--warning); }
+    .tag.success { background: var(--success); }
+    .tag.danger { background: var(--danger); }
+    .tag.accent { background: var(--accent); }
+    .tag.primary { background: var(--primary); }
+    .tag.secondary { background: #bdbdbd; color: #222; }
+    .tag.gray { background: var(--gray);}
+    .tag.cyan { background: #00bcd4;}
+    .tag.purple { background: #8e24aa;}
+    .tag.red { background: var(--danger);}
+    .tag.cycle { background: #607d8b;}
+    .tag.black { background: #222;}
+    .tag.blue { background: var(--info);}
+    .tag.orange { background: #ff7043;}
+    .tag.green { background: var(--success);}
+    .tag.yellow { background: var(--warning); color: #222;}
+    .tag.white { background: #fff; color: #222;}
+    .tag.small { font-size: 0.82em; padding: 0.12em 0.5em;}
+    ul, ol {
+      margin: 0.7rem 0 0.7rem 1.2rem;
+      padding: 0;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .card {
+      background: var(--secondary);
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(25, 118, 210, 0.04);
+      padding: 1.2rem 1rem;
+      flex: 1 1 300px;
+      min-width: 270px;
+      max-width: 100%;
+    }
+    .section-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-top: 1.5em;
+      color: var(--primary);
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.3em;
+    }
+    blockquote {
+      background: #e3f2fd;
+      border-left: 5px solid var(--primary);
+      margin: 1.5em 0;
+      padding: 1em 1.5em;
+      color: #222;
+      border-radius: 0.5em;
+      font-style: italic;
+    }
+    @media (max-width: 850px) {
+      main { padding: 1rem; }
+      .grid { flex-direction: column; gap: 1rem;}
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      main { padding: 0.5rem; }
+      th, td { font-size: 0.92em;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Development Department</h1>
+    <p>Project Lifecycle • Agile Practices • Strategic Services • Case Study: HMIS</p>
+  </header>
+  <nav>
+    <a href="#phases">Project Phases</a>
+    <a href="#agile">Agile Delivery</a>
+    <a href="#services">Core Services</a>
+    <a href="#best-practices">Best Practices</a>
+    <a href="#ai">AI & Gen Z</a>
+    <a href="#case-study">Case Study: HMIS</a>
+  </nav>
+  <main>
+    <section id="phases">
+      <h2>📍 Project Lifecycle Phases</h2>
+      <table>
+        <tr>
+          <th>📌 Phase</th>
+          <th>📅 Timing</th>
+          <th>🛠️ Key Activities</th>
+          <th>📦 Deliverables</th>
+          <th>🔔 Status</th>
+        </tr>
+        <tr>
+          <td>📍 1. Requirement Analysis</td>
+          <td>🟡 Start of Project</td>
+          <td>
+            📝 Collect business requirements<br>
+            🔍 Analyze system goals and scope
+          </td>
+          <td>
+            📄 Business Requirements Doc (BRD),<br>
+            Software Specs (SRS)
+          </td>
+          <td>🟡 Planning</td>
+        </tr>
+        <tr>
+          <td>📍 2. System Design</td>
+          <td>🟢 After Requirements are finalized</td>
+          <td>
+            🧩 Design architecture<br>
+            🎨 Wireframes & UI flows<br>
+            🗂️ Data model planning
+          </td>
+          <td>🏗️ High-Level & Low-Level Design (HLD, LLD)</td>
+          <td>🟢 Design Ready</td>
+        </tr>
+        <tr>
+          <td>📍 3. Implementation (Dev)</td>
+          <td>🔵 Following design phase</td>
+          <td>
+            💻 Code modules<br>
+            🔗 Integrate components<br>
+            🛠️ Unit testing
+          </td>
+          <td>💾 Source code, Executables, Build artifacts</td>
+          <td>🟠 In Progress</td>
+        </tr>
+        <tr>
+          <td>📍 4. Integration & Testing</td>
+          <td>🟢 After full development</td>
+          <td>
+            🧪 QA testing<br>
+            🕵️ Bug fixing<br>
+            🧰 Integration validation
+          </td>
+          <td>🧪 Test reports, Bug logs, QA sign-off</td>
+          <td>🔵 Scheduled</td>
+        </tr>
+        <tr>
+          <td>📍 5. Deployment</td>
+          <td>✅ Post-testing approval</td>
+          <td>
+            🚀 Deploy to production<br>
+            🔁 Migrate data<br>
+            🔧 Configure environments
+          </td>
+          <td>🗃️ Deployed system, Install logs, Deployment checklists</td>
+          <td>✅ Done / Released</td>
+        </tr>
+        <tr>
+          <td>📍 6. Maintenance</td>
+          <td>🔁 Post-deployment & ongoing</td>
+          <td>
+            🔄 Monitor system<br>
+            🛠️ Apply patches & hotfixes<br>
+            📞 Support users
+          </td>
+          <td>🧰 Maintenance reports, Update logs, User feedback summaries</td>
+          <td>🔁 Ongoing</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="agile">
+      <h2>🧭 Agile Delivery & Sprints</h2>
+      <table>
+        <tr>
+          <th>🧭 Phase</th>
+          <th>📅 Timing</th>
+          <th>🛠️ Key Activities</th>
+          <th>📦 Deliverables</th>
+          <th>🔔 Status</th>
+        </tr>
+        <tr>
+          <td>📍 Product Backlog Creation</td>
+          <td>🟡 Ongoing / Pre-Sprint</td>
+          <td>
+            📝 Gather user stories<br>
+            ⭐ Prioritize features<br>
+            📌 Define EPICs
+          </td>
+          <td>🗂️ Product backlog, story points, EPICs</td>
+          <td>🟡 Planning</td>
+        </tr>
+        <tr>
+          <td>📍 Sprint Planning</td>
+          <td>🟡 Start of each sprint (e.g., 2 weeks)</td>
+          <td>
+            📋 Select backlog items<br>
+            🧮 Estimate effort<br>
+            👥 Assign roles
+          </td>
+          <td>🗓️ Sprint backlog, 🥅 Sprint goal</td>
+          <td>🟢 Ready</td>
+        </tr>
+        <tr>
+          <td>📍 Sprint Execution</td>
+          <td>🔵 1–4 Weeks Sprint Duration</td>
+          <td>
+            💻 Code features<br>
+            🔁 Integrate modules<br>
+            🎯 Daily standups
+          </td>
+          <td>🧾 Code commits, 🔀 Feature branches, 🔧 Internal builds</td>
+          <td>🟠 In Progress</td>
+        </tr>
+        <tr>
+          <td>📍 Continuous Testing</td>
+          <td>🔁 Parallel with Development</td>
+          <td>
+            ✅ QA testing<br>
+            🧪 Regression checks<br>
+            ⚙️ CI/CD pipelines
+          </td>
+          <td>🧪 Test reports, 🐞 Bug tickets, ✅ Pass/fail logs</td>
+          <td>🟠 In Progress</td>
+        </tr>
+        <tr>
+          <td>📍 Sprint Review (Demo)</td>
+          <td>🟢 End of Sprint</td>
+          <td>
+            🖥️ Present deliverables<br>
+            🔍 Review with stakeholders<br>
+            💬 Gather feedback
+          </td>
+          <td>🎥 Sprint demo, 📝 Stakeholder notes</td>
+          <td>🔵 Scheduled</td>
+        </tr>
+        <tr>
+          <td>📍 Sprint Retrospective</td>
+          <td>🔁 Post Sprint Review</td>
+          <td>
+            💭 Reflect on performance<br>
+            📌 List improvements<br>
+            📈 Identify process enhancements
+          </td>
+          <td>📓 Retrospective notes, 🛠️ Process tweaks</td>
+          <td>🔵 Scheduled</td>
+        </tr>
+        <tr>
+          <td>📍 Release (if applicable)</td>
+          <td>✅ After 1+ sprints or successful QA</td>
+          <td>
+            🚀 Deploy to production<br>
+            🧾 Publish release notes<br>
+            🎯 Final rollout
+          </td>
+          <td>📤 Release notes, ✅ Deployment confirmation</td>
+          <td>✅ Done / In Queue</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="services">
+      <h2>🛠️ Strategic & Operational Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Operations & Security</h3>
+          <ul>
+            <li>24/7 monitoring & observability</li>
+            <li>High-availability infrastructure</li>
+            <li>CI/CD with automated testing</li>
+            <li>Tier 2/3 team handling escalations</li>
+            <li>Central ticketing with response tracking</li>
+            <li>Access control, encryption</li>
+            <li>Internal audit prep & validation</li>
+            <li>Real-time threat monitoring</li>
+            <li>Full SDLC and Agile sprints</li>
+            <li>On-time delivery tracking</li>
+            <li>Sessions, workshops, and live sessions (UPA Meet)</li>
+            <li>Superset dashboards across departments</li>
+            <li>Role-based access and real-time views</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Strategic Planning & Innovation</h3>
+          <ul>
+            <li>Strategic DT Planning</li>
+            <li>Budget and Resource Forecasting</li>
+            <li>IT Roadmapping</li>
+            <li>Innovation Management</li>
+            <li>Proof-of-Concept Projects</li>
+            <li>R&D and Tech Scouting</li>
+            <li>Consulting and Internal Advisory</li>
+            <li>Solution Feasibility Studies</li>
+            <li>Business Continuity and Disaster Recovery</li>
+            <li>Continuity Testing and Simulation</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Compliance & Vendor Management</h3>
+          <ul>
+            <li>Compliance and Policy Management</li>
+            <li>IT Policy Enforcement</li>
+            <li>Regulatory Compliance</li>
+            <li>Vendor and Contract Management</li>
+            <li>License and SLA Monitoring</li>
+            <li>Vendor Evaluation and Procurement</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Workforce & Project Management</h3>
+          <ul>
+            <li>Strategic Workforce Planning</li>
+            <li>Skills Gap Analysis</li>
+            <li>Talent Acquisition Strategy</li>
+            <li>Project and Process Management</li>
+            <li>Project Lifecycle Management</li>
+            <li>Agile Practice</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Architecture, DevOps & Change Management</h3>
+          <ul>
+            <li>System Architecture and Design</li>
+            <li>Technical Standards and Guidelines</li>
+            <li>Solution Architecture</li>
+            <li>DevOps and CI/CD</li>
+            <li>Environment Provisioning</li>
+            <li>CI/CD Pipeline Management</li>
+            <li>Change Management</li>
+            <li>Risk and Impact Assessments</li>
+            <li>Change Request Handling</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Training, Integration & Reporting</h3>
+          <ul>
+            <li>Training and Knowledge Sharing</li>
+            <li>Internal Team Upskilling (Internal Effort)</li>
+            <li>End-User Training</li>
+            <li>Integration and Middleware Services</li>
+            <li>Data Sync and ETL Processes</li>
+            <li>System Interconnectivity</li>
+            <li>Reporting and BI</li>
+            <li>Data Analytics Support</li>
+            <li>Report Design</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Service Level & Application Management</h3>
+          <ul>
+            <li>Service Level Management</li>
+            <li>SLA Definition and Monitoring</li>
+            <li>Escalation Handling and Reporting</li>
+            <li>Application Development</li>
+            <li>Cross-Platform Development</li>
+            <li>API and Service Layer Development</li>
+            <li>Testing and Quality Assurance</li>
+            <li>QA Framework Management</li>
+            <li>Automated and Manual Testing</li>
+            <li>Application Support and Maintenance</li>
+            <li>Updates and Optimizations</li>
+            <li>Bug Fixing and Incident Resolution</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Infrastructure, Database & Cybersecurity</h3>
+          <ul>
+            <li>Infrastructure and Server Management</li>
+            <li>Server Operations and Monitoring</li>
+            <li>Database Administration</li>
+            <li>DB Performance and Optimization</li>
+            <li>Monitoring and Observability</li>
+            <li>System Alerts and Uptime Monitoring</li>
+            <li>Logging and Diagnostics</li>
+            <li>Cybersecurity</li>
+            <li>Access Control and MFA</li>
+            <li>Threat Detection and Prevention</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Documentation, Automation & Support</h3>
+          <ul>
+            <li>Documentation and Technical Writing</li>
+            <li>User and Operational Manuals</li>
+            <li>Developer and System Docs</li>
+            <li>Digital Enablement Projects</li>
+            <li>Process Automation</li>
+            <li>User and Technical Support</li>
+            <li>Ticketing and Resolution Tracking</li>
+            <li>First and Second-Level Support</li>
+            <li>Collaboration and Communication Platforms</li>
+            <li>Knowledge Sharing Spaces</li>
+            <li>Platform Management</li>
+            <li>Configuration and Deployment Management</li>
+            <li>Build Version Control</li>
+            <li>Rollback and Release Protocols</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="best-practices">
+      <h2>🧩 Best Practices & Engineering Standards</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Development</h3>
+          <ul>
+            <li>Define clear requirements</li>
+            <li>Use acceptance criteria</li>
+            <li>Use components</li>
+            <li>Document thoroughly</li>
+            <li>Using clean code standards</li>
+            <li>Automate tests and deployment</li>
+            <li>Implement robust error handling</li>
+            <li>Use Version Control</li>
+            <li>Conduct stress testing</li>
+            <li>Encrypt data</li>
+            <li>Implement Validation Rules</li>
+            <li>Implements access control policies</li>
+            <li>Enabled by logging, digital signatures</li>
+            <li>Minimum access necessary</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Performance</h3>
+          <ul>
+            <li>Optimize databases</li>
+            <li>Integrate load balancers</li>
+            <li>Asynchronous Processing</li>
+            <li>Use Caching</li>
+            <li>Keep Payloads Lightweight</li>
+            <li>Use Efficient Algorithms and Data Structures</li>
+            <li>Batch Processing</li>
+            <li>Optimize Code and Algorithms</li>
+            <li>Use Lazy Loading and Pagination</li>
+            <li>Clear Unused Resources</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>UX & Design</h3>
+          <ul>
+            <li>Conduct UX testing</li>
+            <li>Follow design standards (Material Design)</li>
+            <li>Iterate based on feedback</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai">
+      <h2>🤖 AI Integration & Gen Z Workforce</h2>
+      <blockquote>
+        Gen Z isn’t just adapting to digital transformation—they’re shaping it. Manage them with purpose, trust, and tools they believe in.
+      </blockquote>
+      <p>
+        Integrating AI tools like ChatGPT into the Development Department significantly enhances productivity, innovation, and decision-making. These tools assist developers in writing cleaner code, generating documentation, debugging, and even suggesting architectural improvements in real time. They accelerate research, automate repetitive tasks, and provide instant support for multiple programming languages, frameworks, and libraries. Beyond coding, AI also aids in project planning, task tracking, and improving team communication—ultimately allowing teams to focus more on creativity and strategic problem-solving while reducing development cycles.
+      </p>
+    </section>
+
+    <section id="case-study">
+      <h2>🏥 Case Study: Health Management Information System (HMIS)</h2>
+      <div class="section-title">Overview</div>
+      <p>
+        The Health Management Information System (HMIS) is a strategic initiative designed to consolidate procurement and inventory data across healthcare facilities within the UPA network. It aims to replace fragmented legacy systems with a centralized, digital platform, enhancing efficiency in stock monitoring, reporting, and emergency preparedness across more than 120 health centers.
+      </p>
+      <div class="section-title">Goal</div>
+      <p>
+        To establish a real-time, centralized health inventory and procurement system that integrates national-level data, providing transparent, automated reporting. This will lead to improved resource management, streamlined supply chain operations, and enhanced emergency response capabilities.
+      </p>
+      <div class="section-title">Objectives</div>
+      <ul>
+        <li>Consolidate procurement and inventory data from 7 disparate legacy systems, including the Pharmacy Management System (PMS), Inventory Tracking System (ITS), and Procurement Database (PDB), into a unified HMIS database.</li>
+        <li>Eliminate manual reporting processes through automation, replacing paper-based reports with real-time dashboards and automated reporting tools, reducing reporting time by 75%.</li>
+        <li>Enable real-time visibility of stock levels (medicines, PPE, equipment), providing up-to-the-minute insights into inventory levels for essential medical supplies, personal protective equipment, and critical medical equipment across all health centers.</li>
+        <li>Alert health centers and the Ministry of Health about low-stock or emergency supply needs through automated SMS and email alerts, ensuring timely replenishment of critical supplies and enabling proactive response to emergencies.</li>
+        <li>Provide interactive dashboards for real-time monitoring and strategic planning, offering customizable views and data visualization tools to support informed decision-making at the facility, regional, and national levels.</li>
+        <li>Improve coordination between UPA and MoH for medical supply chain governance, facilitating seamless data exchange and collaborative decision-making to optimize resource allocation and supply chain efficiency.</li>
+      </ul>
+      <div class="section-title">Scope</div>
+      <ul>
+        <li>Nationwide health facilities and MoH supply chain: Encompassing all UPA-affiliated health facilities and the MoH supply chain network, ensuring comprehensive coverage of the national healthcare system.</li>
+        <li>120+ health centers included in live monitoring: Integrating data from over 120 health centers into the HMIS platform, providing real-time insights into inventory levels, procurement activities, and supply chain performance.</li>
+        <li>Integration with Ministry of Health systems: Establishing seamless data exchange between HMIS and existing MoH systems, such as the National Health Registry and Disease Surveillance System, to enhance data sharing and collaboration.</li>
+        <li>Dashboards for decision-makers at UPA and MoH: Providing tailored dashboards for decision-makers at UPA and MoH, offering customizable views, data visualization tools, and real-time insights to support strategic planning and resource allocation.</li>
+        <li>Automated alerts for inventory replenishment: Implementing automated alerts for inventory replenishment, notifying health centers and MoH operators when stock levels fall below pre-defined thresholds, ensuring timely replenishment of critical supplies.</li>
+      </ul>
+      <div class="section-title">Stakeholders</div>
+      <ul>
+        <li>Ministry of Health: The primary government body responsible for healthcare policy and regulation, relying on HMIS for data-driven decision-making and resource allocation.</li>
+        <li>Unified Procurement Authority (UPA): The central procurement agency responsible for sourcing and distributing medical supplies, utilizing HMIS to optimize procurement processes and supply chain efficiency.</li>
+        <li>Health facility managers: The frontline healthcare providers responsible for managing inventory levels and ensuring adequate supply of essential medical supplies, relying on HMIS for real-time monitoring and automated alerts.</li>
+        <li>IT & data migration teams: The technical experts responsible for integrating legacy systems, migrating data, and ensuring the ongoing maintenance and support of the HMIS platform.</li>
+        <li>Emergency logistics planners: The personnel responsible for coordinating emergency response efforts and ensuring timely delivery of medical supplies to affected areas, relying on HMIS for real-time monitoring and situational awareness.</li>
+        <li>Data analytics and reporting teams: The data specialists responsible for analyzing HMIS data, generating reports, and providing insights to support decision-making at all levels of the healthcare system.</li>
+      </ul>
+      <div class="section-title">Timeline & Phases</div>
+      <ul>
+        <li>✅ Phase 1 – System Design & Legacy Analysis: Completed analysis of 7 legacy systems, including PMS, ITS, PDB, and HRIS, and their respective data structures, identifying key data elements, data flows, and integration points.</li>
+        <li>✅ Phase 2 – Integration & Development: Integrated data pipelines and middleware with MoH systems, such as the National Health Registry and Disease Surveillance System, enabling seamless data exchange and interoperability.</li>
+        <li>✅ Phase 3 – Data Migration & Testing: Completed migration of legacy data and initial testing for consistency and real-time sync, validating data accuracy, completeness, and timeliness across all integrated systems.</li>
+        <li>🔄 Phase 4 – Dashboard Customization & Alert Automation: Designing tailored dashboards and configuring automated alerts based on inventory thresholds, collaborating with stakeholders to define key performance indicators (KPIs), data visualization requirements, and alert notification rules.</li>
+        <li>🟢 Phase 5 – Go-Live & Feedback Collection: Prepare for full deployment across all health centers with user training and monitoring for issues, conducting comprehensive user training programs and establishing a feedback loop for continuous improvement.</li>
+      </ul>
+      <div class="section-title">Dependencies & Risks</div>
+      <ul>
+        <li>Full data access from legacy systems: Ensuring timely and unrestricted access to all relevant data from legacy systems, including historical data, real-time updates, and metadata.</li>
+        <li>Timely participation from MoH IT team: Securing the active participation and collaboration of the MoH IT team in the integration, testing, and deployment of HMIS.</li>
+        <li>Compatibility with UPA's central system infrastructure: Ensuring seamless integration and compatibility between HMIS and UPA's infrastructure.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

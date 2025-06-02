@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مشروع تطوير خدمة العملاء والشكاوى والدعم الفني - UPA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Noto+Kufi+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: 'Noto Kufi Arabic', 'Cairo', Arial, sans-serif; background: #F2F2F2; color: #003366; margin: 0; padding: 0; direction: rtl; }
+    header { background: linear-gradient(90deg, #003366 60%, #6699CC 100%); color: #fff; padding: 2rem 0 1rem 0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    main { max-width: 1100px; margin: 2rem auto; background: #fff; border-radius: 16px; box-shadow: 0 4px 20px #00336616; padding: 2rem; }
+    section { margin-bottom: 2.5rem; }
+    h1, h2, h3 { font-family: 'Cairo', Arial, sans-serif; font-weight: 700; margin-bottom: 1rem; color: #003366; }
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.2rem; color: #4D4D4D; }
+    ul, ol { padding-right: 1.4em; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; font-size: 1.08rem; background: #fafcff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px #0033660f; }
+    th, td { padding: 0.9em; border-bottom: 1px solid #e4e4e4; text-align: center; }
+    th { background: #003366; color: #fff; }
+    tr:last-child td { border-bottom: none; }
+    .charts { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+    .chart-container { background: #f6fafd; border-radius: 12px; box-shadow: 0 2px 6px #0033660a; padding: 1rem 2rem 2rem 2rem; width: 340px; }
+    .timeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.2rem; margin: 2rem 0; }
+    .timeline-step { background: #E9F4FF; border-right: 6px solid #003366; padding: 1rem 1.3rem; border-radius: 12px; box-shadow: 0 2px 10px #0033660d; position: relative; min-height: 90px; }
+    .timeline-step:last-child { border-right: 6px solid #66CC99; }
+    .faq { background: #f6fafd; border-radius: 10px; padding: 1.2rem; margin-bottom: 1.5rem; }
+    .faq h3 { color: #003366; margin-top: 0; }
+    @media (max-width: 600px) { main { padding: 0.7rem; } .charts { flex-direction: column; gap: 1rem; } .chart-container { width: 99%; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="color:white;">مشروع تطوير خدمة العملاء والشكاوى والدعم الفني</h1>
+    <h3>هيئة الشراء الموحد - UPA</h3>
+  </header>
+  <main>
+    <section>
+      <h2>مقدمة المشروع</h2>
+      <p>
+        تهدف هذه المبادرة إلى إحداث تحول شامل في تجربة خدمة العملاء والدعم الفني من خلال تبني أحدث التقنيات والحلول الاستراتيجية، مع ضمان الكفاءة التشغيلية والفعالية من حيث التكلفة.
+        نلتزم بتقديم خدمة استثنائية تلبي تطلعات العملاء وتجاوزها، وتعزيز رضا العملاء وبناء علاقات قوية ودائمة تسهم في تحقيق أهداف الهيئة.
+      </p>
+    </section>
+    <section>
+      <h2>الاحتياجات الأساسية</h2>
+      <ul>
+        <li>تطبيق نظام CRM متكامل لتوحيد وتتبع كافة تفاعلات العملاء.</li>
+        <li>توزيع المكالمات وتتبع الجودة (IVR) لتوجيه المكالمات بكفاءة ورفع أداء الفرق.</li>
+        <li>نظام إدارة تذاكر دعم فني لتسجيل وتتبع وحل المشكلات التقنية بسرعة وكفاءة.</li>
+        <li>إدماج قنوات حديثة مثل واتساب للأعمال، بوابة إلكترونية تفاعلية، وربط مع تطبيق حكومي موحد.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>الخيارات الاستراتيجية والمخاطر</h2>
+      <table>
+        <thead>
+          <tr><th>البند/الخيار</th><th>CRM داخلي</th><th>شركة متخصصة</th><th>حل هجين</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>سرعة التنفيذ</td><td>بطيء</td><td>سريع</td><td>متوسط</td></tr>
+          <tr><td>التكلفة الأولية</td><td>عالية</td><td>منخفضة</td><td>متوسطة</td></tr>
+          <tr><td>سهولة التوسع</td><td>يدوي</td><td>تلقائي</td><td>تدريجي</td></tr>
+          <tr><td>الأمان والسيطرة على البيانات</td><td>عالي</td><td>متوسط</td><td>عالي</td></tr>
+          <tr><td>مرونة التخصيص</td><td>عالية</td><td>منخفضة</td><td>عالية</td></tr>
+          <tr><td>بناء القدرات الداخلية</td><td>ممتاز</td><td>ضعيف</td><td>متوازن</td></tr>
+          <tr><td>مخاطر فقدان البيانات</td><td>منخفضة</td><td>مرتفعة</td><td>منخفضة</td></tr>
+          <tr><td>الاعتماد على مورد خارجي</td><td>لا يوجد</td><td>مرتفع</td><td>مؤقت</td></tr>
+          <tr><td>صعوبة دمج الأنظمة</td><td>مرتفع</td><td>متوسط</td><td>متوسط</td></tr>
+        </tbody>
+      </table>
+      <div class="charts">
+        <div class="chart-container">
+          <canvas id="barCompare"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="pieKPI"></canvas>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>سياسات إدارة الجودة وتجربة العميل</h2>
+      <ul>
+        <li>تدريب دوري للفريق على مهارات التواصل الرقمي الفعال وحل المشكلات.</li>
+        <li>قياس رضا العميل بعد كل تذكرة أو تواصل.</li>
+        <li>متابعة مغلقة لكل شكوى حتى يؤكد العميل الرضا النهائي.</li>
+        <li>ربط مؤشرات الأداء بمكافآت الموظفين والمشرفين.</li>
+        <li>مراجعة شهرية لعينات عشوائية من التذاكر لجودة المعالجة.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>مؤشرات الأداء الرئيسية (KPIs)</h2>
+      <ul>
+        <li>زمن الاستجابة الأول (ثوانٍ/دقائق).</li>
+        <li>نسبة الشكاوى المحلولة من أول تواصل (%).</li>
+        <li>مؤشر رضا العميل (0-5 نجوم أو نقاط).</li>
+        <li>عدد العملاء الجدد في الخدمة الرقمية (% من الإجمالي).</li>
+        <li>نسبة التذاكر المعاد فتحها بسبب عدم الرضا (%).</li>
+        <li>متوسط عدد خطوات حل المشكلة (step reduction %).</li>
+        <li>معدل الأعطال التقنية مقارنة بالنظام القديم.</li>
+        <li>معدل اقتراحات التحسين المقدمة من الموظفين (% مشاركة الفريق).</li>
+      </ul>
+    </section>
+    <section>
+      <h2>خطة التنفيذ الزمنية</h2>
+      <div class="timeline">
+        <div class="timeline-step"><b>شهر 1-2:</b><br>تعاقد خارجي مؤقت وتخفيف الضغط على الفريق الداخلي</div>
+        <div class="timeline-step"><b>شهر 2-4:</b><br>اختيار نظام CRM داخلي وتخطيط مراحل التطبيق</div>
+        <div class="timeline-step"><b>شهر 5-8:</b><br>التطبيق المرحلي للنظام وتدريب الفريق الداخلي</div>
+        <div class="timeline-step"><b>شهر 9-12:</b><br>تشغيل النظام بالكامل ومتابعة الأداء والتطوير المستمر</div>
+      </div>
+    </section>
+    <section>
+      <h2>التحول الرقمي والأتمتة</h2>
+      <ul>
+        <li>تطبيق Mobile App للموظفين والعملاء لتتبع التذاكر والرد السريع.</li>
+        <li>إطلاق روبوت دردشة (Chatbot) للإجابات الفورية على الأسئلة المتكررة.</li>
+        <li>لوحات بيانات تفاعلية للمشرفين تعرض الأداء لحظيًا.</li>
+        <li>تكامل النظام مع قواعد بيانات الهيئة والجهات الحكومية.</li>
+        <li>إغلاق التذاكر وتذكيرات تلقائية للعملاء والموظفين.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>خطة التواصل والتوعية</h2>
+      <ul>
+        <li>ورش عمل وندوات تعريفية لموظفي الهيئة والعملاء الرئيسيين.</li>
+        <li>كتيبات وفيديوهات إرشادية حول النظام الجديد.</li>
+        <li>حملات اتصالات داخلية وأسبوعية لمتابعة التغيير.</li>
+        <li>سفراء تغيير من داخل الهيئة لنقل الحماس والثقافة الرقمية.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>الذكاء الاصطناعي وتحليل البيانات</h2>
+      <ul>
+        <li>تصنيف الشكاوى وتوجيهها تلقائيًا للمتخصص المناسب.</li>
+        <li>تحليل نصوص الشكاوى لاكتشاف الأنماط المتكررة.</li>
+        <li>اقتراح ردود تلقائية للموظفين أثناء التفاعل مع العميل.</li>
+        <li>لوحات مراقبة تنبؤية للمشرفين لتحليل الأداء والتدخل المبكر.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>الاستدامة وخطة مواجهة الأزمات</h2>
+      <ul>
+        <li>فريق جودة لمراجعة التذاكر وتقارير شهرية عن الشكاوى الأكثر تكرارًا.</li>
+        <li>تحديث سنوي للنظام بناءً على مؤشرات الأداء.</li>
+        <li>صندوق اقتراحات إلكتروني وتحفيز أفضل الأفكار.</li>
+        <li>خطة استمرارية الأعمال (BCP) وتدريب على العمل عن بعد للطوارئ.</li>
+        <li>إجراءات تشفير البيانات وتدريب الموظفين على حماية خصوصية العميل.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>قبل وبعد التحول الرقمي</h2>
+      <table>
+        <thead>
+          <tr><th>المؤشر</th><th>قبل التطوير</th><th>بعد التطوير المتوقع</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>زمن الرد الأول</td><td>١-٣ أيام</td><td>١-٣ ساعات</td></tr>
+          <tr><td>نسبة رضا العملاء</td><td>٥٨٪</td><td>٩٠٪+</td></tr>
+          <tr><td>التذاكر المغلقة من أول تواصل</td><td>٣٥٪</td><td>٧٥٪</td></tr>
+          <tr><td>التفاعل الإلكتروني</td><td>أقل من ٢٠٪</td><td>أكثر من ٨٠٪</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>قسم الأسئلة الشائعة (FAQ)</h2>
+      <div class="faq">
+        <h3>كيف أتابع حالة شكواي؟</h3>
+        <p>من خلال البوابة الإلكترونية أو التطبيق، يمكنك إدخال رقم الشكوى ومتابعة الحالة لحظيًا، وستصلك إشعارات تلقائية عند أي تحديث.</p>
+      </div>
+      <div class="faq">
+        <h3>ما هي قنوات التواصل السريعة؟</h3>
+        <p>يمكنك التواصل عبر البوابة الإلكترونية، الخط الساخن، الواتساب للأعمال، أو عبر تطبيق الهيئة.</p>
+      </div>
+      <div class="faq">
+        <h3>هل بياناتي مؤمنة في النظام الجديد؟</h3>
+        <p>جميع البيانات مشفرة ويتم تطبيق أعلى معايير الأمان لحماية معلوماتك.</p>
+      </div>
+      <div class="faq">
+        <h3>كيف أقيّم مستوى الخدمة؟</h3>
+        <p>سيصلك استبيان تقييم بعد كل تواصل مع خدمة العملاء ويمكنك تعبئته بسهولة من خلال رابط أو كود QR.</p>
+      </div>
+    </section>
+  </main>
+  <script>
+    // Bar Chart: مقارنة البنود الرئيسية بين الحلول
+    new Chart(document.getElementById('barCompare').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['سرعة التنفيذ', 'التكلفة الأولية', 'سهولة التوسع', 'الأمان', 'مرونة التخصيص', 'بناء القدرات'],
+        datasets: [
+          { label: 'CRM داخلي', data: [2, 1, 2, 3, 3, 3], backgroundColor: '#003366', },
+          { label: 'شركة متخصصة', data: [5, 4, 5, 2, 1, 1], backgroundColor: '#66CC99', },
+          { label: 'حل هجين', data: [4, 3, 4, 3, 3, 2], backgroundColor: '#6699CC', }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { position: 'bottom' }, title: { display: true, text: 'مقارنة الخيارات حسب البنود الرئيسية' } },
+        scales: { x: { grid: { display: false } }, y: { grid: { color: '#eee' }, beginAtZero: true, max: 5 } }
+      }
+    });
+    // Pie Chart: توزيع نسبي للأولويات
+    new Chart(document.getElementById('pieKPI').getContext('2d'), {
+      type: 'pie',
+      data: {
+        labels: ['سرعة التنفيذ', 'الأمان', 'رضا العملاء', 'تكامل الأنظمة', 'التكلفة'],
+        datasets: [{ data: [25, 20, 25, 15, 15], backgroundColor: [ '#003366', '#66CC99', '#6699CC', '#4D4D4D', '#F2C572' ], }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { position: 'bottom' }, title: { display: true, text: 'أهم أولويات المشروع' } }
+      }
+    });
+  </script>
+</body>
+</html>

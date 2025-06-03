@@ -1,0 +1,74 @@
+/* Theme: Technical */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e74c3c;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+    --card-bg: #ffffff;
+    --navbar-bg: var(--primary-color);
+    --navbar-text: #ffffff;
+    --footer-bg: #34495e;
+    --footer-text: #ecf0f1;
+    --accent-color: #e74c3c;
+    --border-color: #bdc3c7;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+code, pre {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: var(--navbar-bg);
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: var(--navbar-text) !important;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Card styling */
+.card, .accordion-item, .tech-card, .achievement-card, .mission-card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+/* Progress bar */
+.progress-bar {
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+}
+
+/* Theme switcher */
+.theme-btn[data-theme="technical"] {
+    background-color: var(--primary-color);
+    color: white;
+}

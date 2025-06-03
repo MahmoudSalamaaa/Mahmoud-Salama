@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مشروع تطوير خدمة العملاء والشكاوى والدعم الفني الحكومي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Noto+Kufi+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: 'Noto Kufi Arabic', 'Cairo', Arial, sans-serif; background: #F2F2F2; color: #003366; margin: 0; padding: 0; direction: rtl; }
+    header { background: linear-gradient(90deg, #003366 60%, #6699CC 100%); color: #fff; padding: 2rem 0 1rem 0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    main { max-width: 1150px; margin: 2rem auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 20px #00336616; padding: 2.2rem; }
+    section { margin-bottom: 2.8rem; }
+    h1, h2, h3 { font-family: 'Cairo', Arial, sans-serif; font-weight: 700; margin-bottom: 1rem; color: #003366; }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.7rem; border-right: 8px solid #6699CC; padding-right: 12px; }
+    h3 { font-size: 1.2rem; color: #4D4D4D; }
+    ul, ol { padding-right: 1.6em; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; font-size: 1.08rem; background: #fafcff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px #0033660f; }
+    th, td { padding: 0.9em; border-bottom: 1px solid #e4e4e4; text-align: center; }
+    th { background: #003366; color: #fff; }
+    tr:last-child td { border-bottom: none; }
+    .charts { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-bottom: 1.5rem; }
+    .chart-container { background: #f6fafd; border-radius: 12px; box-shadow: 0 2px 6px #0033660a; padding: 1rem 2rem 2rem 2rem; width: 340px; }
+    .faq { background: #f6fafd; border-radius: 10px; padding: 1.2rem; margin-bottom: 1.5rem; }
+    .faq h3 { color: #003366; margin-top: 0; }
+    @media (max-width: 700px) {
+      main { padding: 0.8rem; }
+      .charts { flex-direction: column; gap: 1rem; }
+      .chart-container { width: 99%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>مشروع تطوير خدمة العملاء والشكاوى والدعم الفني الحكومي</h1>
+    <h3>هيئة الشراء الموحد - رؤية 2030</h3>
+  </header>
+  <main>
+    <section>
+      <h2>١. المقدمة والرؤية</h2>
+      <ul>
+        <li>رفع كفاءة تجربة العميل والمورد.</li>
+        <li>تعزيز التحول الرقمي الحكومي، وضمان الجودة والشفافية.</li>
+        <li>تحقيق رؤية مصر 2030، وخدمة المجتمع بكفاءة واحترافية.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>٢. التحليل الاستراتيجي</h2>
+      <ul>
+        <li><b>SWOT:</b> بنية قوية، فرص التحول الرقمي، تحديات الأمان والموارد.</li>
+        <li><b>Gap:</b> من نظام تقليدي إلى منصة ذكية متكاملة.</li>
+        <li><b>PESTLE:</b> التشريع، التقنية، الاقتصاد، المجتمع، البيئة.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>٣. رحلة العميل</h2>
+      <ol>
+        <li>البدء عبر القنوات الرقمية/الميدانية.</li>
+        <li>تصنيف ذكي وتحويل الطلب للفريق المختص.</li>
+        <li>التواصل والمتابعة اللحظية.</li>
+        <li>إغلاق الطلب وقياس الرضا.</li>
+      </ol>
+    </section>
+    <section>
+      <h2>٤. الخيارات الاستراتيجية</h2>
+      <table>
+        <thead>
+          <tr><th>الخيار</th><th>مزايا</th><th>تحديات</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>نظام داخلي</td><td>تحكم تام، خصوصية</td><td>بطء التطوير، تكلفة أولية</td></tr>
+          <tr><td>شريك خارجي</td><td>سرعة، خبرة متخصصة</td><td>اعتماد على طرف آخر، رسوم مستمرة</td></tr>
+          <tr><td>سحابي/هجيني</td><td>مرونة، سرعة التوسع</td><td>تعقيدات تكاملية وأمنية</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>٥. بنية النظام والتقنيات الحديثة</h2>
+      <ul>
+        <li>نظام CRM موحد وقاعدة معرفة مركزية.</li>
+        <li>دعم API وربط مع أنظمة المخازن، HR، المشتريات.</li>
+        <li>تكامل مع روبوتات أتمتة العمليات (RPA).</li>
+      </ul>
+    </section>
+    <section>
+      <h2>٦. الذكاء الاصطناعي والتحليلات المتقدمة</h2>
+      <ul>
+        <li>تصنيف الشكاوى آليًا بالذكاء الاصطناعي.</li>
+        <li>روبوت محادثة متعدد اللغات والقنوات.</li>
+        <li>تحليلات جغرافية وخريطة حرارية لحظية للشكاوى.</li>
+        <li>توقع الأعطال والأزمات عبر نماذج تنبؤية.</li>
+      </ul>
+      <div class="charts">
+        <div class="chart-container">
+          <canvas id="chart-complaints"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="chart-kpi"></canvas>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>٧. حماية البيانات والأمن السيبراني</h2>
+      <ul>
+        <li>تشفير البيانات وتطبيق معايير ISO/GDPR.</li>
+        <li>تدقيق أمني واختبارات اختراق دورية.</li>
+        <li>سجل تدقيق غير قابل للتلاعب، مصادقة متعددة العوامل.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>٨. إدارة الأزمات وخطط الطوارئ</h2>
+      <ul>
+        <li>خطة نسخ احتياطي ومركز بديل للطوارئ.</li>
+        <li>تدريبات دورية ومحاكاة أزمات.</li>
+        <li>تصعيد تلقائي للقيادة عند الحاجة.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>٩. الجودة والحوكمة والشفافية</h2>
+      <ul>
+        <li>مراجعة أداء دورية.</li>
+        <li>سياسة التظلمات والتصعيد العادل.</li>
+        <li>نشر المؤشرات للجمهور.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>١٠. تجربة العميل/المورد/الموظف</h2>
+      <ul>
+        <li>استبيانات رضا وتقييم مستمر.</li>
+        <li>ورش عمل ومسابقات للابتكار.</li>
+        <li>برامج تحفيز للموظفين والموردين.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>١١. الشراكات والاستدامة</h2>
+      <ul>
+        <li>اتفاقيات مع جامعات وشركات عالمية.</li>
+        <li>تقارير بيئية سنوية.</li>
+        <li>حملات مجتمع توعوية.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>١٢. التكامل مع الأنظمة الحكومية والخاصة</h2>
+      <ul>
+        <li>بوابة مصر الرقمية، التأمين الصحي، المخازن.</li>
+        <li>دعم الهوية الرقمية الموحدة والتسجيل الموحد.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>١٣. السياسات التخصصية والابتكارية</h2>
+      <ul>
+        <li>شكاوى حساسة/قانونية بسرية تامة.</li>
+        <li>تقييم أداء الفرق.</li>
+        <li>برامج التحول الثقافي.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>١٤. إدارة المخاطر والتحليل التنبؤي</h2>
+      <ul>
+        <li>نماذج تنبؤية للأزمات.</li>
+        <li>تحديث خطة المخاطر شهريًا.</li>
+        <li>تحذيرات فورية للإدارة.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>١٥. الدليل الإلكتروني والتدريب</h2>
+      <ul>
+        <li>فيديوهات شرح ومقالات واختبارات.</li>
+        <li>شهادات إلكترونية.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>١٦. الاتصال الإعلامي وإدارة السمعة</h2>
+      <ul>
+        <li>فريق إدارة أزمات إعلامية محترف.</li>
+        <li>نشر تقارير الأداء والتعامل مع الإعلام.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>١٧. قصص النجاح ومشاركة المجتمع</h2>
+      <ul>
+        <li>قسم لقصص النجاح.</li>
+        <li>استقبال الأفكار من الجمهور.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>١٨. مستقبل المشروع وخطة النمو</h2>
+      <ul>
+        <li>خطة 3 سنوات: الدمج – الذكاء الاصطناعي – الخدمات الاستباقية.</li>
+        <li>مؤشرات نجاح واضحة لكل مرحلة.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>الخاتمة</h2>
+      <ul>
+        <li>التزام الهيئة بتقديم أفضل تجربة.</li>
+        <li>استدامة وابتكار وشمولية في خدمة الجميع.</li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    // رسوم بيانية تجريبية
+    new Chart(document.getElementById('chart-complaints').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['يناير', 'فبراير', 'مارس', 'إبريل', 'مايو'],
+        datasets: [{
+          label: 'عدد الشكاوى',
+          data: [120, 200, 180, 240, 190],
+          backgroundColor: '#003366'
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false }, title: { display: true, text: 'اتجاه الشكاوى الشهرية' } }
+      }
+    });
+    new Chart(document.getElementById('chart-kpi').getContext('2d'), {
+      type: 'pie',
+      data: {
+        labels: ['رضا العملاء', 'سرعة الحل', 'الشفافية'],
+        datasets: [{ data: [38, 40, 22], backgroundColor: ['#003366', '#6699CC', '#66CC99'] }]
+      },
+      options: { responsive: true, plugins: { legend: { position: 'bottom' }, title: { display: true, text: 'مؤشرات الأداء الرئيسية' } } }
+    });
+  </script>
+</body>
+</html>

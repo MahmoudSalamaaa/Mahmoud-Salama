@@ -1,0 +1,80 @@
+		/* Root theme variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --header-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --link-color: #0d6efd;
+}
+/* Dark theme overrides */
+body.dark-theme {
+  --bg-color: #121212;
+  --text-color: #e1e1e1;
+  --primary-color: #66b0ff;
+  --secondary-color: #a0a0a0;
+  --header-bg: #1f1f1f;
+  --card-bg: #1e1e1e;
+  --link-color: #66b0ff;
+}
+/* Corporate Blue theme overrides */
+body.corporate-theme {
+  --bg-color: #e9f0fb;
+  --text-color: #022b55;
+  --primary-color: #0056b3;
+  --secondary-color: #0a3d62;
+  --header-bg: #c4daf7;
+  --card-bg: #f0f5fb;
+  --link-color: #004085;
+}
+
+/* General styling using CSS variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+header.navbar {
+  background-color: var(--header-bg);
+  transition: background-color 0.3s;
+}
+a.nav-link,
+a.nav-link:hover {
+  color: var(--text-color);
+  font-weight: 500;
+}
+a.nav-link.active {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--primary-color);
+}
+.card {
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  margin-bottom: 1.5rem;
+}
+.btn-theme {
+  margin-left: 0.5rem;
+}
+footer {
+  background-color: var(--header-bg);
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+/* Responsive fixes */
+@media (max-width: 575.98px) {
+  .theme-switcher {
+    margin-top: 0.5rem;
+  }
+}

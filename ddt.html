@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development Department | Project Lifecycle & Services</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1976d2;
+      --secondary: #f5f5f5;
+      --accent: #43a047;
+      --danger: #d32f2f;
+      --warning: #ffa000;
+      --info: #0288d1;
+      --success: #388e3c;
+      --font: 'Roboto', Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--secondary);
+      color: #222;
+      font-family: var(--font);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+      border-radius: 0 0 2rem 2rem;
+    }
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+      opacity: 0.85;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0 1rem 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      background: #fff;
+      padding: 0.5rem 1.2rem;
+      border-radius: 2rem;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(25, 118, 210, 0.08);
+      transition: background 0.2s, color 0.2s;
+    }
+    nav a:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 24px rgba(25, 118, 210, 0.07);
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      color: var(--primary);
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      border-left: 5px solid var(--primary);
+      padding-left: 0.6rem;
+      letter-spacing: 0.5px;
+    }
+    .phases, .agile, .services, .best-practices, .case-study {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .card {
+      background: var(--secondary);
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(25, 118, 210, 0.04);
+      padding: 1.2rem 1rem;
+      flex: 1 1 300px;
+      min-width: 270px;
+      max-width: 100%;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    ul, ol {
+      margin: 0.7rem 0 0.7rem 1.2rem;
+      padding: 0;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.2em 0.7em;
+      border-radius: 1em;
+      font-size: 0.9em;
+      margin: 0 0.2em 0.2em 0;
+      background: var(--info);
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .tag.warning { background: var(--warning); }
+    .tag.success { background: var(--success); }
+    .tag.danger { background: var(--danger); }
+    .tag.accent { background: var(--accent); }
+    .tag.primary { background: var(--primary); }
+    .tag.secondary { background: #bdbdbd; color: #222; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      padding: 0.7rem;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    th {
+      background: var(--primary);
+      color: #fff;
+    }
+    @media (max-width: 850px) {
+      main { padding: 1rem; }
+      .phases, .agile, .services, .best-practices, .case-study {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      main { padding: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Development Department</h1>
+    <p>Project Lifecycle, Agile Practices, and Strategic Services</p>
+  </header>
+  <nav>
+    <a href="#phases">Project Phases</a>
+    <a href="#agile">Agile Delivery</a>
+    <a href="#services">Core Services</a>
+    <a href="#best-practices">Best Practices</a>
+    <a href="#case-study">Case Study: HMIS</a>
+  </nav>
+  <main>
+    <section id="phases">
+      <h2>Project Lifecycle Phases</h2>
+      <div class="phases">
+        <div class="card">
+          <h3><span class="tag warning">1</span> Requirement Analysis</h3>
+          <ul>
+            <li>Engage stakeholders, gather requirements</li>
+            <li>Define goals, expectations, scope</li>
+            <li>Deliverables: BRD, SRS</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag accent">2</span> System Design</h3>
+          <ul>
+            <li>Architecture, wireframes, UI/UX flows</li>
+            <li>Database schemas</li>
+            <li>Deliverables: HLD, LLD, UI mockups</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag primary">3</span> Development</h3>
+          <ul>
+            <li>Code backend, frontend, APIs, integrations</li>
+            <li>Deliverables: Source code, builds, repositories</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag info">4</span> Testing</h3>
+          <ul>
+            <li>QA: unit, integration, system, UAT</li>
+            <li>Deliverables: Test cases, bug reports</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag success">5</span> Deployment</h3>
+          <ul>
+            <li>Production/staging releases</li>
+            <li>Deliverables: Release docs, deployment logs</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag secondary">6</span> Maintenance</h3>
+          <ul>
+            <li>Updates, bug fixes, support, monitoring</li>
+            <li>Deliverables: Patch notes, user feedback</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="agile">
+      <h2>Agile Delivery & Sprints</h2>
+      <div class="agile">
+        <div class="card">
+          <h3>Product Backlog</h3>
+          <ul>
+            <li>Gather user stories, prioritize features</li>
+            <li>Define EPICs, story points</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Sprint Planning</h3>
+          <ul>
+            <li>Select backlog items, estimate effort</li>
+            <li>Assign roles, set sprint goal</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Sprint Execution</h3>
+          <ul>
+            <li>Code features, integrate modules</li>
+            <li>Daily standups, code commits</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Continuous Testing</h3>
+          <ul>
+            <li>QA, regression, CI/CD pipelines</li>
+            <li>Test reports, bug tickets</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Sprint Review & Retrospective</h3>
+          <ul>
+            <li>Demo deliverables, gather feedback</li>
+            <li>Reflect, process improvements</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Release</h3>
+          <ul>
+            <li>Deploy to production, release notes</li>
+            <li>Deployment confirmation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Strategic & Operational Services</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Operations & Security</h3>
+          <ul>
+            <li>24/7 monitoring, high-availability infra</li>
+            <li>CI/CD, automated testing</li>
+            <li>Access control, encryption, audit</li>
+            <li>Real-time threat monitoring</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Project & Resource Management</h3>
+          <ul>
+            <li>Budgeting, IT roadmapping</li>
+            <li>Innovation management, R&D</li>
+            <li>Consulting, feasibility studies</li>
+            <li>Business continuity, disaster recovery</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Compliance & Vendor Management</h3>
+          <ul>
+            <li>Policy enforcement, regulatory compliance</li>
+            <li>License/SLA monitoring, procurement</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Development & QA</h3>
+          <ul>
+            <li>Cross-platform/app development</li>
+            <li>API/service layer, automated/manual testing</li>
+            <li>Application support & maintenance</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Infrastructure & Data</h3>
+          <ul>
+            <li>Server ops, monitoring, DB admin</li>
+            <li>Performance optimization, logging</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Digital Transformation & AI</h3>
+          <ul>
+            <li>Process automation, digital enablement</li>
+            <li>Integrating AI tools for code, docs, planning</li>
+            <li>Gen Z workforce management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="best-practices">
+      <h2>Best Practices & Engineering Standards</h2>
+      <div class="best-practices">
+        <div class="card">
+          <h3>Development</h3>
+          <ul>
+            <li>Clear requirements, acceptance criteria</li>
+            <li>Component-based, clean code</li>
+            <li>Thorough documentation</li>
+            <li>Automated tests, CI/CD</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Security & Reliability</h3>
+          <ul>
+            <li>Robust error handling, version control</li>
+            <li>Stress testing, encryption, validation</li>
+            <li>Access control, logging, digital signatures</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Performance</h3>
+          <ul>
+            <li>Database optimization, load balancing</li>
+            <li>Asynchronous processing, caching</li>
+            <li>Efficient algorithms, batch processing</li>
+            <li>Lazy loading, pagination, resource cleanup</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>UX & Design</h3>
+          <ul>
+            <li>UX testing, material design standards</li>
+            <li>Iterative feedback-driven improvements</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="case-study">
+      <h2>Case Study: Health Management Information System (HMIS)</h2>
+      <div class="case-study">
+        <div class="card">
+          <h3>Overview & Goal</h3>
+          <ul>
+            <li>Centralized platform for procurement & inventory across 120+ health centers</li>
+            <li>Replace legacy systems, enable real-time monitoring & reporting</li>
+            <li>Improve resource management, supply chain, and emergency response</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Objectives</h3>
+          <ul>
+            <li>Unify 7 legacy systems into HMIS</li>
+            <li>Automate reporting, reduce manual work by 75%</li>
+            <li>Enable real-time stock visibility & automated alerts</li>
+            <li>Provide interactive dashboards for stakeholders</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Scope & Stakeholders</h3>
+          <ul>
+            <li>Nationwide coverage, 120+ health centers</li>
+            <li>Integration with Ministry of Health systems</li>
+            <li>Stakeholders: MoH, UPA, facility managers, IT, logistics, analytics teams</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Timeline & Phases</h3>
+          <ul>
+            <li>System design & legacy analysis (complete)</li>
+            <li>Integration & development (complete)</li>
+            <li>Data migration & testing (complete)</li>
+            <li>Dashboard customization & alert automation (in progress)</li>
+            <li>Go-live & feedback (upcoming)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Dependencies & Risks</h3>
+          <ul>
+            <li>Full data access from legacy systems</li>
+            <li>Timely MoH IT team participation</li>
+            <li>Compatibility with UPA infrastructure</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

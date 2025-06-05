@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpOceans">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+    <title>Remonda - Health Economist Portfolio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #5e60ce;
+            --secondary-color: #48bfe3;
+            --accent-color: #64dfdf;
+            --dark-color: #212529;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+            position: relative;
+        }
+        
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .navbar {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-scrolled {
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            background-color: rgba(255,255,255,0.95) !important;
+        }
+        
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 45%;
+            height: 100%;
+            background-color: var(--primary-color);
+            clip-path: polygon(100% 0, 0 0, 100% 100%);
+            opacity: 0.1;
+        }
+        
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 45%;
+            height: 100%;
+            background-color: var(--secondary-color);
+            clip-path: polygon(0 100%, 0 0, 100% 100%);
+            opacity: 0.1;
+        }
+        
+        .hero-img {
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .hero-img:hover {
+            transform: translateY(-10px);
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-title h3 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+        
+        .section-title.text-center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .skill-card {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .progress {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #e9ecef;
+            margin-top: 10px;
+        }
+        
+        .progress-bar {
+            border-radius: 4px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: var(--primary-color);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            border: 2px solid #fff;
+        }
+        
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--light-color);
+            color: var(--primary-color);
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        
+        .contact-info i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: #fff;
+        }
+        
+        /* Preloader */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top-color: var(--primary-color);
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Offcanvas menu */
+        .offcanvas {
+            max-width: 300px;
+        }
+        
+        .nav-link {
+            color: var(--dark-color);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-color);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 991.98px) {
+            .hero-section {
+                min-height: auto;
+                padding: 100px 0;
+            }
+            
+            .section-title h3 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#top">
+                    <img src="assets/images/logo.png" alt="Remonda" height="40">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Remonda</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#top">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#objective">Objective</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#education">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#publications">Publications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h1 class="display-4 fw-bold mb-3">Hello, I'm <span class="text-gradient">Remonda Refaat</span></h1>
+                        <h3 class="h2 mb-4">Health Economist</h3>
+                        <p class="lead mb-4">With over 15 years of experience in the healthcare sector, I am a dedicated professional skilled in both public and private domains. I excel in collaborating with cross-functional teams to identify needs and drive innovative solutions that enhance service delivery.</p>
+                        <div class="d-flex gap-3">
+                            <a href="#contact" class="btn btn-primary px-4 py-2 rounded-pill">Contact Me</a>
+                            <a href="#experience" class="btn btn-outline-primary px-4 py-2 rounded-pill">My Experience</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <img src="assets/images/about-1.jpg" alt="Remonda Refaat" class="img-fluid hero-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Objective Section -->
+        <section class="py-5 py-lg-7 bg-light" id="objective">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center">
+                            <h2>Objective</h2>
+                            <h3>Professional Summary</h3>
+                        </div>
+                        <div class="card shadow-sm p-4">
+                            <div class="card-body">
+                                <p class="lead text-center">Dynamic Health Economist with extensive experience in public health policy, specializing in financing, surveillance, and pandemic preparedness. Proven track record of leading projects that generate evidence-based strategies to enhance health system resilience. Committed to fostering collaboration with key stakeholders to facilitate sustainable financing and improve health outcomes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="py-5 py-lg-7" id="education">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center">
+                            <h2>Education</h2>
+                            <h3>Academic Qualifications</h3>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="card shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Doctor of Business Administration (DBA)</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Helwan University</h6>
+                                        <p class="card-text text-muted">2021-2025 (Ongoing)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="card shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Master of Health Economics</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Joint Faculty of Medicine & Economics, Cairo University</h6>
+                                        <p class="card-text text-muted">2018 – 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Bachelor of Pharmaceutical Sciences</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Ain Shams University</h6>
+                                        <p class="card-text text-muted">2004 – 2009</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="py-5 py-lg-7 bg-light" id="experience">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center">
+                            <h2>Experience</h2>
+                            <h3>Professional Background</h3>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="card shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Director of Public Policy</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Healthcare, Pharma & Higher Education – Moharram & Partners</h6>
+                                        <p class="card-text text-muted">Jul 2024 - Present</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="card shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">General Manager of Industrial Development</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">UPA</h6>
+                                        <p class="card-text text-muted">Oct 2023 - Jul 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="card shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">General Manager of Needs' Collection and Assessment</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">UPA</h6>
+                                        <p class="card-text text-muted">Nov 2021 - Sep 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="card shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Senior Pharmacist</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">EDA</h6>
+                                        <p class="card-text text-muted">Feb 2019 - Nov 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="card shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Technical Officer</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Egyptian Ministry of Health</h6>
+                                        <p class="card-text text-muted">May 2018 - Feb 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="card shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Key Account Manager</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Sunny Medical Group</h6>
+                                        <p class="card-text text-muted">Feb 2015 - Apr 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="card shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Senior Product Specialist</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Technowave</h6>
+                                        <p class="card-text text-muted">Aug 2014 - Jan 2015</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="card shadow-sm mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Medical Representative</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Medical Union Pharmaceuticals & Chemipharm</h6>
+                                        <p class="card-text text-muted">Aug 2010 - Jul 2014</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Community Pharmacist</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">Green Pharmacy, Shoubra</h6>
+                                        <p class="card-text text-muted">Aug 2009 - Jul 2010</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="py-5 py-lg-7" id="skills">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Skills</h2>
+                    <h3>Key Competencies</h3>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card shadow-sm h-100 p-4">
+                            <h5>Health Economics & Financing</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card shadow-sm h-100 p-4">
+                            <h5>Policy Analysis & Advocacy</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card shadow-sm h-100 p-4">
+                            <h5>Public Health Strategy Development</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card shadow-sm h-100 p-4">
+                            <h5>Project Management</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card shadow-sm h-100 p-4">
+                            <h5>Cross-Functional Collaboration</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card shadow-sm h-100 p-4">
+                            <h5>Strategic Planning</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card shadow-sm h-100 p-4">
+                            <h5>Communication & Leadership</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skill-card shadow-sm h-100 p-4">
+                            <h5>Data Analysis & Innovation</h5>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 89%;" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="py-5 py-lg-7 bg-light" id="publications">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Publications</h2>
+                    <h3>Research & Articles</h3>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Publications will be listed here</h5>
+                                <p class="card-text">Academic papers, research articles, and other publications will be displayed in this section.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-5 py-lg-7" id="contact">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Contact</h2>
+                    <h3>Get In Touch</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card shadow-sm">
+                            <div class="card-body p-4 p-md-5">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 mb-md-0">
+                                        <h4 class="mb-4">Contact Information</h4>
+                                        <div class="contact-info d-flex align-items-center mb-3">
+                                            <i class="bi bi-geo-alt"></i>
+                                            <div>
+                                                <p class="mb-0">Cairo, Egypt</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-info d-flex align-items-center mb-3">
+                                            <i class="bi bi-envelope"></i>
+                                            <div>
+                                                <p class="mb-0">contact@remonda.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-info d-flex align-items-center mb-4">
+                                            <i class="bi bi-phone"></i>
+                                            <div>
+                                                <p class="mb-0">+20 123 456 7890</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-icons">
+                                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                                            <a href="#"><i class="bi bi-twitter"></i></a>
+                                            <a href="#"><i class="bi bi-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4 class="mb-4">Send a Message</h4>
+                                        <form>
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="Your Name" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="email" class="form-control" placeholder="Your Email" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="Subject">
+                                            </div>
+                                            <div class="mb-3">
+                                                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Remonda Refaat. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            document.querySelector('.preloader').style.display = 'none';
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+        
+        // Activate Bootstrap scrollspy
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: '#navbar'
+            });
+            
+            // Close offcanvas when clicking on a nav link
+            const navLinks = document.querySelectorAll('.nav-link');
+            const offcanvas = document.getElementById('offcanvasNavbar');
+            const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+            
+            navLinks.forEach(function(navLink) {
+                navLink.addEventListener('click', function() {
+                    if (bsOffcanvas) {
+                        bsOffcanvas.hide();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

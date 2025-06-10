@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع تطوير خدمة العملاء والشكاوى والدعم الفني</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f8fafb;
+            font-family: 'Cairo', Tahoma, Arial, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #3575d3 60%, #7dcfff 100%);
+            color: #fff;
+            padding: 60px 0;
+        }
+
+        .section-title {
+            color: #3575d3;
+            border-right: 5px solid #3575d3;
+            padding-right: 10px;
+            margin-bottom: 24px;
+        }
+
+        .card {
+            border-radius: 16px;
+        }
+
+        .icon {
+            font-size: 2.3rem;
+            color: #3575d3;
+        }
+
+        .stats-box {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px #0001;
+        }
+
+        .footer {
+            background: #3575d3;
+            color: #fff;
+            text-align: center;
+            padding: 24px 0;
+            margin-top: 60px;
+        }
+
+        .table > :not(:last-child) > :last-child > * {
+            border-bottom: 2px solid #7dcfff;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">خدمة العملاء UPA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">عن المشروع</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#goals">الأهداف</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#challenges">التحديات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solutions">الحلول</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ideas">أفكار تطويرية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dashboard">لوحة البيانات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center" id="about">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-3">مشروع تطوير خدمة العملاء والشكاوى والدعم الفني</h1>
+            <p class="lead mb-4">
+                يهدف المشروع لإحداث نقلة نوعية في تجربة عملاء الهيئة المصرية للشراء الموحد، عبر حلول تقنية حديثة
+                تضمن سرعة الاستجابة، ورفع جودة الدعم الفني، وتحسين رضا العملاء والموردين.
+            </p>
+            <img src="https://cdn.pixabay.com/photo/2017/02/10/11/25/meeting-2056025_960_720.jpg" class="rounded shadow" style="max-width: 350px;">
+        </div>
+    </section>
+
+    <!-- أهداف المشروع -->
+    <section class="py-5" id="goals">
+        <div class="container">
+            <h2 class="section-title">أهداف المشروع</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card stats-box text-center">
+                        <div class="icon mb-2">📞</div>
+                        <h5 class="fw-bold">تقليص فجوة التواصل</h5>
+                        <p>ربط الجهات الحكومية والموردين بالهيئة عبر قنوات موحدة وسهلة.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card stats-box text-center">
+                        <div class="icon mb-2">⚡</div>
+                        <h5 class="fw-bold">تسريع الاستجابة</h5>
+                        <p>تقديم حلول فورية للاستفسارات والشكاوى وتقليل التراكمات.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card stats-box text-center">
+                        <div class="icon mb-2">🎯</div>
+                        <h5 class="fw-bold">رفع جودة الخدمة</h5>
+                        <p>تحسين تجربة العملاء بشكل مستدام وتحقيق أهداف الهيئة الاستراتيجية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التحديات الرئيسية -->
+    <section class="py-5 bg-white" id="challenges">
+        <div class="container">
+            <h2 class="section-title">التحديات بالأرقام</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-2">
+                    <div class="stats-box text-center">
+                        <div class="icon mb-2">🧑‍💼</div>
+                        <h4 class="fw-bold mb-0">39,000+</h4>
+                        <small>مستخدم فعّال سنويًا</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="stats-box text-center">
+                        <div class="icon mb-2">🏢</div>
+                        <h4 class="fw-bold mb-0">2,000+</h4>
+                        <small>شركة ومورد</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="stats-box text-center">
+                        <div class="icon mb-2">📨</div>
+                        <h4 class="fw-bold mb-0">45,000+</h4>
+                        <small>استفسار سنوي</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="stats-box text-center">
+                        <div class="icon mb-2">⚠️</div>
+                        <h4 class="fw-bold mb-0">700,000+</h4>
+                        <small>شكوى سنوية</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="stats-box text-center">
+                        <div class="icon mb-2">⏳</div>
+                        <h4 class="fw-bold mb-0">5,000+</h4>
+                        <small>جهة تابعة</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="stats-box text-center">
+                        <div class="icon mb-2">💡</div>
+                        <h4 class="fw-bold mb-0">11,000+</h4>
+                        <small>مكالمة سنويًا</small>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">تعدد قنوات الاستفسار (هاتف – بريد – مقر الهيئة – بوابة إلكترونية)</li>
+                    <li class="list-group-item">تكرار البيانات وصعوبة تتبع سجل العميل</li>
+                    <li class="list-group-item">تراكم الشكاوى وتأخر الردود في بعض الإدارات</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- حلول المشروع -->
+    <section class="py-5" id="solutions">
+        <div class="container">
+            <h2 class="section-title">الحلول المقترحة</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 p-3 shadow-sm">
+                        <h5 class="fw-bold mb-2">نظام داخلي (On-Premise CRM)</h5>
+                        <ul>
+                            <li>تحكم كامل في البيانات</li>
+                            <li>مرونة تخصيص عالية</li>
+                            <li>تكامل سهل مع أنظمة الهيئة</li>
+                            <li>يتطلب تكلفة أولية وفريق تقني داخلي</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-3 shadow-sm">
+                        <h5 class="fw-bold mb-2">التعاقد مع شركة متخصصة (Outsourcing)</h5>
+                        <ul>
+                            <li>جاهزية فورية وخبرات متراكمة</li>
+                            <li>توفير وقت وموارد الهيئة</li>
+                            <li>صعوبة تخصيص كاملة للعمليات</li>
+                            <li>تكلفة تشغيلية شهرية مستمرة</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-3 shadow-sm">
+                        <h5 class="fw-bold mb-2">الحل المدمج (Hybrid)</h5>
+                        <ul>
+                            <li>بدء سريع عبر Outsourcing مؤقت</li>
+                            <li>بناء قدرات فريق داخلي تدريجيًا</li>
+                            <li>تحكم كامل مع مرور الوقت</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- جدول مقارنة -->
+            <div class="mt-5">
+                <h5 class="fw-bold mb-3">مقارنة تفصيلية بين الحلول</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered text-center align-middle">
+                        <thead class="table-info">
+                            <tr>
+                                <th>المعيار</th>
+                                <th>On-Premise CRM</th>
+                                <th>Outsourcing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>تحكم البيانات</td>
+                                <td>كامل ومحفوظ داخليًا</td>
+                                <td>محدود لدى طرف ثالث</td>
+                            </tr>
+                            <tr>
+                                <td>سرعة التنفيذ</td>
+                                <td>3-6 شهور</td>
+                                <td>أسابيع</td>
+                            </tr>
+                            <tr>
+                                <td>المرونة والتخصيص</td>
+                                <td>عالية جدًا</td>
+                                <td>محدودة أو مكلفة</td>
+                            </tr>
+                            <tr>
+                                <td>التكلفة الأولية</td>
+                                <td>مرتفعة (رخصة، سيرفرات)</td>
+                                <td>منخفضة</td>
+                            </tr>
+                            <tr>
+                                <td>التكلفة التشغيلية</td>
+                                <td>منخفضة بعد التأسيس</td>
+                                <td>شهرية مستمرة</td>
+                            </tr>
+                            <tr>
+                                <td>تراكم المعرفة</td>
+                                <td>داخلي تدريجيًا</td>
+                                <td>خارج الهيئة</td>
+                            </tr>
+                            <tr>
+                                <td>سهولة التوسع</td>
+                                <td>متوسطة إلى صعبة</td>
+                                <td>سريعة ومرنة</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- أفكار تطويرية حديثة -->
+    <section class="py-5 bg-light" id="ideas">
+        <div class="container">
+            <h2 class="section-title">أفكار تطويرية حديثة</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">🧠 <b>استخدام الذكاء الاصطناعي</b> لتحليل الشكاوى وتصنيفها واقتراح الحلول تلقائيًا.</li>
+                        <li class="list-group-item">📊 <b>لوحات بيانات لحظية</b> للمشرفين لمتابعة الأداء والشكاوى المفتوحة.</li>
+                        <li class="list-group-item">🔗 <b>Omni-Channel</b> توحيد كل قنوات التواصل (مكالمات – بريد – واتساب – الموقع) في نظام واحد.</li>
+                        <li class="list-group-item">⏱️ <b>أتمتة التصعيد</b> للطلبات المتأخرة تلقائيًا للإدارة العليا.</li>
+                        <li class="list-group-item">📚 <b>قاعدة معرفة تفاعلية</b> لحلول المشاكل الشائعة للموظفين والعملاء.</li>
+                        <li class="list-group-item">📝 <b>استبيانات تقييم رضا العملاء</b> بعد كل تذكرة أو شكوى مغلقة.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://cdn.pixabay.com/photo/2016/10/23/12/53/analytics-1768823_960_720.jpg" class="img-fluid rounded shadow" alt="تطوير خدمة العملاء">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- لوحة بيانات مرئية -->
+    <section class="py-5" id="dashboard">
+        <div class="container">
+            <h2 class="section-title">لوحة بيانات المشروع (نماذج وهمية)</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <canvas id="chartComplaints"></canvas>
+                </div>
+                <div class="col-md-6">
+                    <canvas id="chartChannels"></canvas>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-md-6">
+                    <canvas id="chartSatisfaction"></canvas>
+                </div>
+                <div class="col-md-6">
+                    <div class="stats-box text-center">
+                        <div class="icon mb-2">🏆</div>
+                        <h4 class="fw-bold mb-0">89%</h4>
+                        <small>معدل رضا العملاء (2024)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تواصل -->
+    <section class="py-5 bg-light" id="contact">
+        <div class="container">
+            <h2 class="section-title">للتواصل والاستفسار</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">الاسم</label>
+                            <input type="text" class="form-control" placeholder="ادخل اسمك">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" placeholder="name@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">الرسالة</label>
+                            <textarea class="form-control" rows="3" placeholder="اكتب استفسارك هنا"></textarea>
+                        </div>
+                        <button class="btn btn-primary px-4">إرسال</button>
+                    </form>
+                </div>
+                <div class="col-md-6 text-center d-flex align-items-center justify-content-center">
+                    <div>
+                        <h5 class="fw-bold">الهيئة المصرية للشراء الموحد والإمداد والتموين الطبي</h5>
+                        <p>لأي استفسار: info@upa.gov.eg</p>
+                        <p>الهاتف: 0123456789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 مشروع تطوير خدمة العملاء - الهيئة المصرية للشراء الموحد
+    </div>
+
+    <script>// Complaints by Year
+    new Chart(document.getElementById('chartComplaints'), {
+        type: 'line',
+        data: {
+            labels: ['2021', '2022', '2023', '2024', '2025'],
+            datasets: [{
+                label: 'عدد الشكاوى',
+                data: [3000, 6480, 11577, 5779, 8000],
+                fill: false,
+                borderColor: '#3575d3',
+                tension: 0.4
+            }]
+        },
+        options: {
+            plugins: {legend: {display: false}},
+            scales: { y: { beginAtZero: true } }
+        }
+    });
+
+    // Channels Pie
+    new Chart(document.getElementById('chartChannels'), {
+        type: 'doughnut',
+        data: {
+            labels: ['مكالمات', 'بريد إلكتروني', 'حضور فعلي', 'بوابة إلكترونية'],
+            datasets: [{
+                data: [11000, 3000, 1000, 5000],
+                backgroundColor: ['#3575d3', '#7dcfff', '#fed46c', '#fc7978']
+            }]
+        },
+        options: {
+            plugins: {legend: {position: 'right'}}
+        }
+    });
+
+    // Satisfaction Bar
+    new Chart(document.getElementById('chartSatisfaction'), {
+        type: 'bar',
+        data: {
+            labels: ['2021', '2022', '2023', '2024'],
+            datasets: [{
+                label: 'معدل الرضا (%)',
+                data: [75, 81, 85, 89],
+                backgroundColor: '#3575d3'
+            }]
+        },
+        options: {
+            plugins: {legend: {display: false}},
+            scales: { y: { beginAtZero: true, max: 100 } }
+        }
+    });</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

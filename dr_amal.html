@@ -15,11 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* === FINAL ENHANCED CUSTOM STYLESHEET V6 (Magenta Theme) === */
+        /* === FINAL ENHANCED CUSTOM STYLESHEET V6.1 (FIXED IMAGE) === */
 
-        /* 1. CSS Variables (New Color Palette) */
+        /* 1. CSS Variables (Magenta Palette) */
         :root {
-            --primary-gradient: linear-gradient(135deg, rgba(120, 47, 111, 0.9), rgba(60, 55, 145, 0.9)); /* Magenta to Deep Blue */
+            /* Gradient overlay is now slightly more transparent (0.85) */
+            --primary-gradient: linear-gradient(135deg, rgba(120, 47, 111, 0.85), rgba(60, 55, 145, 0.85));
             --secondary-gradient: linear-gradient(135deg, #48a9a6 0%, #782f6f 100%);
             --accent-gradient: linear-gradient(135deg, #d4b483 0%, #e8d0a9 100%);
             
@@ -128,7 +129,8 @@
             align-items: center;
             text-align: center;
             position: relative;
-            background-image: var(--primary-gradient), url('https://images.unsplash.com/photo-1554224155-8d04421cd6a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            /* FIXED IMAGE LINK */
+            background-image: var(--primary-gradient), url('https://i.ibb.co/Ybrg2z6/health-economics-bg.jpg');
             background-blend-mode: multiply;
             background-size: cover;
             background-position: center;

@@ -15,19 +15,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* === FINAL ENHANCED CUSTOM STYLESHEET V5 (Health Economics Theme) === */
+        /* === FINAL ENHANCED CUSTOM STYLESHEET V6 (Magenta Theme) === */
 
         /* 1. CSS Variables (New Color Palette) */
         :root {
-            --primary-gradient: linear-gradient(135deg, rgba(13, 47, 79, 0.9), rgba(0, 90, 87, 0.9)); /* Navy to Teal */
-            --secondary-gradient: linear-gradient(135deg, #00B2A9 0%, #0D2F4F 100%);
-            --accent-gradient: linear-gradient(135deg, #C5A565 0%, #E3C488 100%);
+            --primary-gradient: linear-gradient(135deg, rgba(120, 47, 111, 0.9), rgba(60, 55, 145, 0.9)); /* Magenta to Deep Blue */
+            --secondary-gradient: linear-gradient(135deg, #48a9a6 0%, #782f6f 100%);
+            --accent-gradient: linear-gradient(135deg, #d4b483 0%, #e8d0a9 100%);
             
-            --primary-color: #0D2F4F;   /* Deep Navy Blue */
-            --secondary-color: #00B2A9; /* Vibrant Teal */
-            --accent-color: #C5A565;    /* Rich Gold */
+            --primary-color: #782f6f;   /* Deep Magenta */
+            --secondary-color: #48a9a6; /* Muted Teal */
+            --accent-color: #d4b483;    /* Soft Gold */
             --light-color: #ffffff;
-            --off-white-bg: #F4F6F8;   /* Light Cool Gray */
+            --off-white-bg: #f7f9fb;
             --text-primary: #212529;
             --text-secondary: #6c757d;
             --text-light: #ffffff;
@@ -118,7 +118,7 @@
         }
         .navbar-brand { color: var(--primary-color); font-weight: 700; }
         .navbar .nav-link { color: var(--text-primary) !important; font-weight: 500; }
-        .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--secondary-color) !important; }
+        .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--primary-color) !important; }
 
         /* 5. Hero Section with Background Image */
         .hero-section {
@@ -128,7 +128,7 @@
             align-items: center;
             text-align: center;
             position: relative;
-            background-image: var(--primary-gradient), url('https://images.unsplash.com/photo-1621262342027-6f7b94b873ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
+            background-image: var(--primary-gradient), url('https://images.unsplash.com/photo-1554224155-8d04421cd6a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-blend-mode: multiply;
             background-size: cover;
             background-position: center;
@@ -145,7 +145,7 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        .hero-contact-item:hover { transform: translateY(-3px) scale(1.05); background: var(--accent-color); color: var(--text-primary); }
+        .hero-contact-item:hover { transform: translateY(-3px) scale(1.05); background: var(--accent-color); color: var(--primary-color); }
 
         /* 6. General Components */
         .section { padding: var(--section-padding); }
@@ -178,7 +178,7 @@
         .skill-card:hover .icon { transform: scale(1.15); }
         
         .accordion-button { font-weight: 600; }
-        .accordion-button:not(.collapsed) { background-color: var(--secondary-color); color: var(--text-light); }
+        .accordion-button:not(.collapsed) { background-color: var(--primary-color); color: var(--text-light); }
         .accordion-button:focus { box-shadow: none; }
         
         /* 7. Footer */

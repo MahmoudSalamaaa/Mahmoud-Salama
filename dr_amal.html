@@ -4,833 +4,373 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prof. Dr. Amal Samir Sedrak | Public Health Professor</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --background-color: #ecf0f1;
-            --text-color: #34495e;
-            --card-bg: #ffffff;
-            --header-bg: #1a252f;
-        }
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-        html {
-            scroll-behavior: smooth;
+    <style>
+        /* --- Custom Feminine Color Palette & UI/UX Tweaks --- */
+        :root {
+            --primary-color: #865DFF; /* Vibrant Purple */
+            --secondary-color: #FFA5B0; /* Soft Pink */
+            --accent-color: #E384FF; /* Lavender */
+            --background-color: #FDF7F8; /* Very light pinkish white */
+            --text-color: #40364C; /* Dark, soft eggplant */
+            --heading-font: 'Playfair Display', serif;
+            --body-font: 'Poppins', sans-serif;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: var(--background-color);
             color: var(--text-color);
-            line-height: 1.6;
+            font-family: var(--body-font);
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
         }
 
-        /* --- Header & Navigation --- */
-        .header {
-            background: var(--header-bg);
-            color: #fff;
-            padding: 80px 20px;
-            text-align: center;
+        h2.section-title {
+            font-size: 2.8rem;
+            font-weight: 700;
             position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
         }
 
-        .header h1 {
-            font-size: 3em;
-            margin: 0;
-            font-weight: 600;
+        h2.section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+            border-radius: 2px;
         }
 
-        .header .title {
-            font-size: 1.5em;
-            color: var(--secondary-color);
-            margin: 10px 0 20px;
+        .navbar {
+            background-color: var(--primary-color) !important;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar .nav-link {
+            color: #fff !important;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            padding: 8px 15px !important;
         }
 
-        .contact-info {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0 0;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
+        .navbar .nav-link:hover, .navbar .nav-link.active {
+            color: var(--primary-color) !important;
+            background-color: #fff;
+            transform: translateY(-2px);
         }
 
-        .contact-info li {
-            font-size: 1.1em;
+        /* --- Header Section --- */
+        .hero-header {
+            background-color: #fff;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .hero-header .display-4 {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .hero-header .lead {
+            font-size: 1.3rem;
+            color: var(--text-color);
+            font-weight: 300;
+            max-width: 800px;
+            margin: auto;
         }
 
         .contact-info a {
-            color: #fff;
+            color: var(--accent-color);
             text-decoration: none;
+            font-weight: 400;
             transition: color 0.3s;
         }
-
         .contact-info a:hover {
             color: var(--secondary-color);
         }
-
         .contact-info i {
-            margin-right: 8px;
-        }
-
-        nav {
-            background: var(--primary-color);
-            color: #fff;
-            padding: 15px 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        nav a {
-            color: #fff;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease-in-out;
-        }
-
-        nav a:hover {
             color: var(--secondary-color);
         }
 
-        /* --- Section Styling --- */
-        section {
-            padding: 60px 20px;
-            border-bottom: 1px solid #dcdcdc;
-        }
-
-        section:last-of-type {
-            border-bottom: none;
-        }
-        
-        section h2 {
-            text-align: center;
-            font-size: 2.5em;
-            color: var(--primary-color);
-            margin-bottom: 40px;
-            position: relative;
-        }
-        
-        section h2::after {
-            content: '';
-            width: 80px;
-            height: 4px;
-            background: var(--secondary-color);
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
+        /* --- Card & Section Styling --- */
+        .section-padding {
+            padding: 80px 0;
         }
 
         .card {
-            background: var(--card-bg);
-            border-radius: 8px;
-            padding: 30px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(134, 93, 255, 0.1);
+            transition: all 0.3s ease-in-out;
+            height: 100%;
         }
 
-        .card h3 {
-            color: var(--secondary-color);
-            margin-top: 0;
-            font-size: 1.6em;
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(255, 165, 176, 0.3);
+        }
+        
+        .card .card-title {
+            color: var(--primary-color);
+            font-weight: 600;
         }
         
         .card .meta {
-            font-size: 1em;
-            color: #555;
-            margin-bottom: 15px;
-            font-style: italic;
-        }
-        
-        .card ul {
-            padding-left: 20px;
+            color: var(--accent-color);
+            font-weight: 600;
+            font-family: var(--body-font);
         }
 
-        /* --- Specific Section Layouts --- */
-        #summary p {
-            font-size: 1.2em;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        #experience .job .company {
-            font-weight: bold;
-            color: var(--primary-color);
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-        
-        #skills .skill-category h3 {
-             color: var(--secondary-color);
-             margin-bottom: 15px;
-             border-bottom: 2px solid var(--background-color);
-             padding-bottom: 10px;
-        }
-        
-        #skills ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        #skills li {
-            background-color: var(--background-color);
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-bottom: 8px;
-        }
-
-        #certifications ul, #projects ul, #education ul {
-            list-style: none;
+        .list-group-item {
+            background-color: transparent;
+            border: none;
             padding-left: 0;
         }
-        
-        #certifications li, #projects .card, #education .card {
-            padding: 20px;
+
+        .list-group-item i {
+            color: var(--secondary-color);
+            margin-right: 10px;
         }
         
-        #education h3 { font-size: 1.4em; }
-        #education .meta { font-size: 0.9em; }
-
         footer {
-            text-align: center;
-            padding: 20px;
-            background: var(--primary-color);
-            color: #fff;
+            background-color: var(--primary-color);
         }
 
     </style>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNav">
 
-    <header class="header">
+    <header class="hero-header">
         <div class="container">
-            <h1>Prof. Dr. Amal Samir Sedrak</h1>
-            <p class="title">Professor of Public Health</p>
-            <p>A highly accomplished leader with extensive experience in managing training initiatives and community awareness programs within the public health sector.</p>
-            <ul class="contact-info">
-                <li><a href="tel:+201203344637"><i class="fas fa-phone"></i> (+20) 1203344637</a></li>
-                <li><a href="mailto:amalnewlife82@gmail.com"><i class="fas fa-envelope"></i> amalnewlife82@gmail.com</a></li>
-                <li><i class="fas fa-map-marker-alt"></i> Giza, Egypt</li>
-            </ul>
+            <h1 class="display-4">Prof. Dr. Amal Samir Sedrak</h1>
+            [span_0](start_span)<p class="lead mt-3 mb-4">A distinguished Professor of Public Health specializing in strategic leadership, community engagement, and evidence-based public health initiatives[span_0](end_span).</p>
+            <div class="contact-info d-flex justify-content-center flex-wrap gap-4 h5">
+                [span_1](start_span)<span><a href="tel:+201203344637"><i class="fas fa-phone"></i> (+20) 1203344637</a>[span_1](end_span)</span>
+                [span_2](start_span)<span><a href="mailto:amalnewlife82@gmail.com"><i class="fas fa-envelope"></i> amalnewlife82@gmail.com</a>[span_2](end_span)</span>
+                [span_3](start_span)<span><i class="fas fa-map-marker-alt"></i> Giza, Egypt[span_3](end_span)</span>
+            </div>
         </div>
     </header>
 
-    <nav>
-        <a href="#summary">Summary</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-    </nav>
-
-    <main class="container">
-
-        <section id="summary">
-            <h2>Professional Summary</h2>
-            <p>
-                My expertise lies in strategic leadership, project management, and effective communication. I am dedicated to fostering community engagement and contributing to research, teaching, and public health initiatives, adeptly navigating complex organizational structures to implement evidence-based strategies effectively.
-            </p>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="card">
-                <h3>Director of Health Technology Assessment</h3>
-                <span class="company">Egyptian Authority for Unified Procurement, Medical Supplies and Medical Technology Management</span>
-                <p class="meta">Jan 2025 - Present | Egypt</p>
-                <ul>
-                    <li>Spearhead national/regional HTA strategy, providing governance and direction to four general administrations.</li>
-                    <li>Direct systematic identification and evaluation of new/emerging health technologies and develop programs for regular review of existing ones.</li>
-                    <li>Guide national-level planning and implementation of health technology acquisition and utilization.</li>
-                    <li>Design and implement training programs for healthcare providers, decision-makers, and technical staff.</li>
-                    <li>Lead initiatives to raise public awareness about health technology benefits and limitations.</li>
-                    <li>Establish performance indicators to monitor HTA impact on health outcomes and coordinate activities among four general administrations for operational synergy.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Head of Training and Community Awareness</h3>
-                <span class="company">Egyptian Authority for Unified Procurement, Medical Supplies and Medical Technology Management</span>
-                <p class="meta">Oct 2020 - Dec 2024 | Egypt</p>
-                <ul>
-                    <li>Led a team in developing and implementing training programs for healthcare professionals.</li>
-                    <li>Designed comprehensive training curricula and coordinated community awareness campaigns.</li>
-                    <li>Established partnerships with MOHP, UHIA, Universities, and key stakeholders.</li>
-                    <li>Managed multiple projects ensuring adherence to timelines and quality standards.</li>
-                    <li>Conducted regular evaluations of training programs and community engagement efforts.</li>
-                </ul>
-            </div>
-        </section>
-        
-        <section id="skills">
-            <h2>Strengths & Skills</h2>
-            <div class="grid-container">
-                <div class="card skill-category">
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li>Statistical Analysis (SPSS)</li>
-                        <li>Microsoft Excel (Formulas, Data Analysis, Visualization)</li>
-                        <li>Microsoft PowerPoint (Presentation Design, Animations)</li>
-                        <li>Microsoft Word (Advanced Document Creation, Mail Merge)</li>
-                        <li>Spreadsheets & Data Manipulation</li>
-                        <li>IBM SPSS Statistics</li>
-                    </ul>
-                </div>
-                 <div class="card skill-category">
-                    <h3>Leadership & Management</h3>
-                     <ul>
-                        <li>Strategic Leadership & Team Management</li>
-                        <li>Project Management</li>
-                        <li>Training Development & Implementation</li>
-                        <li>Community Engagement</li>
-                        <li>Stakeholder Relationship Management</li>
-                        <li>Problem Solving</li>
-                     </ul>
-                </div>
-                <div class="card skill-category">
-                    <h3>Public Health & Policy</h3>
-                    <ul>
-                        <li>Health Technology Assessment (HTA)</li>
-                        <li>Evidence-Based Decision-Making</li>
-                        <li>Public Policy Analysis</li>
-                        <li>Internal Audit Principles</li>
-                        <li>Synergy Training Programs Development</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="education">
-            <h2>Education</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <h3>MD in Public Health and Community Medicine</h3>
-                    <p class="meta">Cairo University, Faculty of Medicine | 2009 - 2012</p>
-                </div>
-                <div class="card">
-                    <h3>MS in Public Health and Community Medicine</h3>
-                    <p class="meta">Cairo University, Faculty of Medicine | 2001 - 2009</p>
-                </div>
-                <div class="card">
-                    <h3>MS in Professional Master of Health Economics</h3>
-                    <p class="meta">Cairo University, Faculty of Medicine and Faculty of Economics and Political Science | 2001 - 2016</p>
-                </div>
-                <div class="card">
-                    <h3>Bachelors of Medicine and Surgery (Excellent with Honors)</h3>
-                    <p class="meta">Cairo University, Faculty of Medicine</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Key Projects</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <h3>Focal Point for HTA Central Administration at UPA</h3>
-                    <p class="meta">2023 - Present</p>
-                    <p>Activation of INAHTA Membership and leading team participation in INAHTA activities, training, and meetings.</p>
-                </div>
-                <div class="card">
-                    <h3>Economic Analysis of HCV Screening Algorithms</h3>
-                    <p class="meta">2019</p>
-                    <p>Evaluated different hepatitis C screening algorithms in Egypt to provide supporting evidence for the national plan.</p>
-                </div>
-                <div class="card">
-                    <h3>Gene-Xpert Cost Effectiveness Analysis</h3>
-                    <p class="meta">2017</p>
-                    <p>Economic evaluation using decision analysis for adopting Gene-Xpert in diagnosing Multi-drug resistant T.B.</p>
-                </div>
-                <div class="card">
-                    <h3>Socioeconomic Cost of Road Traffic Injury</h3>
-                    <p class="meta">2016</p>
-                    <p>Implemented international methodology to estimate the socioeconomic cost of road traffic injuries in Egypt.</p>
-                </div>
-                <div class="card">
-                    <h3>Making the Case for Inclusive Health</h3>
-                    <p class="meta">2018</p>
-                    <p>Conducted desk research to highlight the health and economic benefits of social inclusion for individuals with Intellectual Disabilities.</p>
-                </div>
-                 <div class="card">
-                    <h3>Give Every Baby a Story</h3>
-                    <p class="meta">2018</p>
-                    <p>Evaluation study on community health education's impact on maternal and child health in Upper Egypt and urban areas.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications">
-            <h2>Certifications & Achievements</h2>
-            <div class="card">
-                <ul>
-                    <li><b>Outstanding Contribution Recognition:</b> Public Health and Community Medicine Department, Faculty of Medicine, Cairo University.</li>
-                    <li><b>Professional Diploma on Health Technology Assessment:</b> Syreon Research Institute, Middle East (One Year).</li>
-                    <li><b>Modelling Cost-Effectiveness in Healthcare:</b> The London School of Economics and Political Science (LSE) (8-week online course).</li>
-                    <li><b>Tri Country Training Program (TCTP) Certificate:</b> Speaker on "Infection Prevention and control of Neglected Tropical Diseases in the Era of COVID-19".</li>
-                    <li><b>Health Economics of Vaccines CPD Certificate:</b> By AEC Partners co-organized by Educo-Life Science.</li>
-                    <li><b>Access to Innovation Forum Completion Certificate:</b> The American Association of Continuing Medical Education.</li>
-                    <li><b>Capacity Building in Tropical Disease Implementation Research Workshop Certificate:</b> Arabian Gulf University.</li>
-                    <li><b>DIES Pro GRANT Proposal Writing Seminar Certificate:</b> DAAD.</li>
-                    <li><b>Competency Based Curriculum Development Workshop Certificate:</b> Educational Development Fund (EDF), Cabinet of Ministers.</li>
-                    <li><b>Research Methods Training Program Certificate:</b> The American University in Cairo "Social research center".</li>
-                    <li><b>WHO/EMRO/TDR/HQ Workshop Certificate:</b> For PIs of TDR/WHO projects.</li>
-                    <li><b>Systematic Analysis Workshop Participation Certificate:</b> Armed Forces College of Medicine.</li>
-                </ul>
-            </div>
-        </section>
-        
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Prof. Dr. Amal Samir Sedrak | Designed from CV</p>
-    </footer>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prof. Dr. Amal Samir Sedrak | Public Health Professor</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --background-color: #ecf0f1;
-            --text-color: #34495e;
-            --card-bg: #ffffff;
-            --header-bg: #1a252f;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* --- Header & Navigation --- */
-        .header {
-            background: var(--header-bg);
-            color: #fff;
-            padding: 80px 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        .header h1 {
-            font-size: 3em;
-            margin: 0;
-            font-weight: 600;
-        }
-
-        .header .title {
-            font-size: 1.5em;
-            color: var(--secondary-color);
-            margin: 10px 0 20px;
-        }
-
-        .contact-info {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0 0;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-
-        .contact-info li {
-            font-size: 1.1em;
-        }
-
-        .contact-info a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .contact-info a:hover {
-            color: var(--secondary-color);
-        }
-
-        .contact-info i {
-            margin-right: 8px;
-        }
-
-        nav {
-            background: var(--primary-color);
-            color: #fff;
-            padding: 15px 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        nav a {
-            color: #fff;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease-in-out;
-        }
-
-        nav a:hover {
-            color: var(--secondary-color);
-        }
-
-        /* --- Section Styling --- */
-        section {
-            padding: 60px 20px;
-            border-bottom: 1px solid #dcdcdc;
-        }
-
-        section:last-of-type {
-            border-bottom: none;
-        }
-        
-        section h2 {
-            text-align: center;
-            font-size: 2.5em;
-            color: var(--primary-color);
-            margin-bottom: 40px;
-            position: relative;
-        }
-        
-        section h2::after {
-            content: '';
-            width: 80px;
-            height: 4px;
-            background: var(--secondary-color);
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .card {
-            background: var(--card-bg);
-            border-radius: 8px;
-            padding: 30px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-        }
-
-        .card h3 {
-            color: var(--secondary-color);
-            margin-top: 0;
-            font-size: 1.6em;
-        }
-        
-        .card .meta {
-            font-size: 1em;
-            color: #555;
-            margin-bottom: 15px;
-            font-style: italic;
-        }
-        
-        .card ul {
-            padding-left: 20px;
-        }
-
-        /* --- Specific Section Layouts --- */
-        #summary p {
-            font-size: 1.2em;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        #experience .job .company {
-            font-weight: bold;
-            color: var(--primary-color);
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-        
-        #skills .skill-category h3 {
-             color: var(--secondary-color);
-             margin-bottom: 15px;
-             border-bottom: 2px solid var(--background-color);
-             padding-bottom: 10px;
-        }
-        
-        #skills ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        #skills li {
-            background-color: var(--background-color);
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-bottom: 8px;
-        }
-
-        #certifications ul, #projects ul, #education ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        #certifications li, #projects .card, #education .card {
-            padding: 20px;
-        }
-        
-        #education h3 { font-size: 1.4em; }
-        #education .meta { font-size: 0.9em; }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: var(--primary-color);
-            color: #fff;
-        }
-
-    </style>
-</head>
-<body>
-
-    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
         <div class="container">
-            <h1>Prof. Dr. Amal Samir Sedrak</h1>
-            <p class="title">Professor of Public Health</p>
-            <p>A highly accomplished leader with extensive experience in managing training initiatives and community awareness programs within the public health sector.</p>
-            <ul class="contact-info">
-                <li><a href="tel:+201203344637"><i class="fas fa-phone"></i> (+20) 1203344637</a></li>
-                <li><a href="mailto:amalnewlife82@gmail.com"><i class="fas fa-envelope"></i> amalnewlife82@gmail.com</a></li>
-                <li><i class="fas fa-map-marker-alt"></i> Giza, Egypt</li>
-            </ul>
+            <a class="navbar-brand d-lg-none" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
-
-    <nav>
-        <a href="#summary">Summary</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
     </nav>
-
-    <main class="container">
-
-        <section id="summary">
-            <h2>Professional Summary</h2>
-            <p>
-                My expertise lies in strategic leadership, project management, and effective communication. I am dedicated to fostering community engagement and contributing to research, teaching, and public health initiatives, adeptly navigating complex organizational structures to implement evidence-based strategies effectively.
-            </p>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="card">
-                <h3>Director of Health Technology Assessment</h3>
-                <span class="company">Egyptian Authority for Unified Procurement, Medical Supplies and Medical Technology Management</span>
-                <p class="meta">Jan 2025 - Present | Egypt</p>
-                <ul>
-                    <li>Spearhead national/regional HTA strategy, providing governance and direction to four general administrations.</li>
-                    <li>Direct systematic identification and evaluation of new/emerging health technologies and develop programs for regular review of existing ones.</li>
-                    <li>Guide national-level planning and implementation of health technology acquisition and utilization.</li>
-                    <li>Design and implement training programs for healthcare providers, decision-makers, and technical staff.</li>
-                    <li>Lead initiatives to raise public awareness about health technology benefits and limitations.</li>
-                    <li>Establish performance indicators to monitor HTA impact on health outcomes and coordinate activities among four general administrations for operational synergy.</li>
-                </ul>
+    
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Experience</h2>
             </div>
-            <div class="card">
-                <h3>Head of Training and Community Awareness</h3>
-                <span class="company">Egyptian Authority for Unified Procurement, Medical Supplies and Medical Technology Management</span>
-                <p class="meta">Oct 2020 - Dec 2024 | Egypt</p>
-                <ul>
-                    <li>Led a team in developing and implementing training programs for healthcare professionals.</li>
-                    <li>Designed comprehensive training curricula and coordinated community awareness campaigns.</li>
-                    <li>Established partnerships with MOHP, UHIA, Universities, and key stakeholders.</li>
-                    <li>Managed multiple projects ensuring adherence to timelines and quality standards.</li>
-                    <li>Conducted regular evaluations of training programs and community engagement efforts.</li>
-                </ul>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Director of Health Technology Assessment</h3>
+                            [span_4](start_span)<p class="meta">Egyptian Authority for Unified Procurement, Medical Supplies and Medical Technology Management[span_4](end_span) | [span_5](start_span)2025 - Present[span_5](end_span)</p>
+                            <ul>
+                                [span_6](start_span)<li>Spearheads national HTA strategy and provides governance to four general administrations[span_6](end_span).</li>
+                                [span_7](start_span)<li>Directs the evaluation of new and emerging health technologies[span_7](end_span).</li>
+                                [span_8](start_span)<li>Leads public awareness initiatives and designs training programs for healthcare providers[span_8](end_span).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Head of Training and Community Awareness</h3>
+                            [span_9](start_span)<p class="meta">Egyptian Authority for Unified Procurement, Medical Supplies and Medical Technology Management[span_9](end_span) | [span_10](start_span)2020 - 2024[span_10](end_span)</p>
+                            <ul>
+                                [span_11](start_span)<li>Led a team in developing and implementing training programs for healthcare professionals[span_11](end_span).</li>
+                                [span_12](start_span)<li>Designed comprehensive training curricula and coordinated community awareness campaigns[span_12](end_span).</li>
+                                [span_13](start_span)<li>Established key partnerships with MOHP, UHIA, and Universities[span_13](end_span).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        
-        <section id="skills">
-            <h2>Strengths & Skills</h2>
-            <div class="grid-container">
-                <div class="card skill-category">
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li>Statistical Analysis (SPSS)</li>
-                        <li>Microsoft Excel (Formulas, Data Analysis, Visualization)</li>
-                        <li>Microsoft PowerPoint (Presentation Design, Animations)</li>
-                        <li>Microsoft Word (Advanced Document Creation, Mail Merge)</li>
-                        <li>Spreadsheets & Data Manipulation</li>
-                        <li>IBM SPSS Statistics</li>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Strengths & Skills</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-3 text-center">
+                        <div class="card-body">
+                           <i class="fas fa-cogs fa-3x mb-3" style="color:var(--accent-color)"></i>
+                            <h4 class="card-title">Technical Skills</h4>
+                            [span_14](start_span)[span_15](start_span)<p>Proficient in SPSS for statistical analysis, Microsoft Office Suite (Excel, Word, PowerPoint), and various spreadsheet applications[span_14](end_span)[span_15](end_span).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-3 text-center">
+                         <div class="card-body">
+                            <i class="fas fa-users fa-3x mb-3" style="color:var(--accent-color)"></i>
+                            <h4 class="card-title">Leadership & Management</h4>
+                            [span_16](start_span)[span_17](start_span)<p>Skilled in strategic leadership, team management, project management, community engagement, and stakeholder relationship management[span_16](end_span)[span_17](end_span).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-3 text-center">
+                         <div class="card-body">
+                           <i class="fas fa-heart-pulse fa-3x mb-3" style="color:var(--accent-color)"></i>
+                            <h4 class="card-title">Public Health & Policy</h4>
+                            [span_18](start_span)<p>Expertise in Health Technology Assessment, public policy analysis, evidence-based decision-making, and developing training programs[span_18](end_span).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h4 class="card-title">MD in Public Health and Community Medicine</h4>
+                            [span_19](start_span)<p class="meta">Cairo University, Faculty of Medicine[span_19](end_span) [span_20](start_span)(2012)[span_20](end_span)</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-5">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h4 class="card-title">MS in Professional Master of Health Economics</h4>
+                            [span_21](start_span)<p class="meta">Cairo University[span_21](end_span) [span_22](start_span)(2016)[span_22](end_span)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h4 class="card-title">MS in Public Health and Community Medicine</h4>
+                            [span_23](start_span)<p class="meta">Cairo University, Faculty of Medicine[span_23](end_span) [span_24](start_span)(2009)[span_24](end_span)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h4 class="card-title">Bachelors of Medicine and Surgery</h4>
+                            [span_25](start_span)<p class="meta">Cairo University, Faculty of Medicine[span_25](end_span) [span_26](start_span)(Excellent with Honors)[span_26](end_span)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h4 class="card-title">Economic Analysis of HCV Screening</h4>
+                            [span_27](start_span)<p>Led an economic valuation study evaluating hepatitis C screening algorithms to support Egypt's national plan[span_27](end_span).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h4 class="card-title">Gene-Xpert Cost Effectiveness</h4>
+                            [span_28](start_span)<p>Conducted a cost-effectiveness analysis for adopting Gene-Xpert in diagnosing Multi-drug resistant T.B[span_28](end_span).</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h4 class="card-title">Inclusive Health Research</h4>
+                            [span_29](start_span)<p>Researched the health and economic benefits of social inclusion for individuals with Intellectual Disabilities[span_29](end_span).</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h4 class="card-title">Socioeconomic Cost of Road Traffic Injury</h4>
+                            [span_30](start_span)<p>Managed data collection and stakeholder engagement to estimate the socioeconomic cost of road traffic injuries in Egypt[span_30](end_span).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="certifications" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Certifications & Achievements</h2>
+            </div>
+            <div class="card p-4">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        [span_31](start_span)<li class="list-group-item"><i class="fas fa-award"></i><b>Outstanding Contribution Recognition Certificate</b> from Cairo University's Public Health Department[span_31](end_span).</li>
+                        [span_32](start_span)<li class="list-group-item"><i class="fas fa-award"></i><b>Professional Diploma on Health Technology Assessment</b> from Syreon Research Institute[span_32](end_span).</li>
+                        [span_33](start_span)<li class="list-group-item"><i class="fas fa-award"></i><b>Modelling Cost-Effectiveness in Healthcare Certificate</b> from The London School of Economics (LSE)[span_33](end_span).</li>
+                        [span_34](start_span)<li class="list-group-item"><i class="fas fa-award"></i><b>Access to Innovation Forum Completion Certificate</b> from The American Association of Continuing Medical Education[span_34](end_span).</li>
+                        [span_35](start_span)<li class="list-group-item"><i class="fas fa-award"></i><b>Health Economics of Vaccines CPD Certificate</b> from AEC Partners & Educo-Life Science[span_35](end_span).</li>
+                        [span_36](start_span)<li class="list-group-item"><i class="fas fa-award"></i><b>DIES Pro GRANT Proposal Writing Seminar Certificate</b> from DAAD[span_36](end_span).</li>
+                        [span_37](start_span)<li class="list-group-item"><i class="fas fa-award"></i>Speaker certificate for the <b>Tri Country Training Program (TCTP)</b> on Infection Prevention[span_37](end_span).</li>
+                        [span_38](start_span)[span_39](start_span)<li class="list-group-item"><i class="fas fa-award"></i>Workshop certificates from <b>WHO/EMRO/TDR/HQ</b> and the <b>Arabian Gulf University</b>[span_38](end_span)[span_39](end_span).</li>
                     </ul>
                 </div>
-                 <div class="card skill-category">
-                    <h3>Leadership & Management</h3>
-                     <ul>
-                        <li>Strategic Leadership & Team Management</li>
-                        <li>Project Management</li>
-                        <li>Training Development & Implementation</li>
-                        <li>Community Engagement</li>
-                        <li>Stakeholder Relationship Management</li>
-                        <li>Problem Solving</li>
-                     </ul>
-                </div>
-                <div class="card skill-category">
-                    <h3>Public Health & Policy</h3>
-                    <ul>
-                        <li>Health Technology Assessment (HTA)</li>
-                        <li>Evidence-Based Decision-Making</li>
-                        <li>Public Policy Analysis</li>
-                        <li>Internal Audit Principles</li>
-                        <li>Synergy Training Programs Development</li>
-                    </ul>
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-
-        <section id="education">
-            <h2>Education</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <h3>MD in Public Health and Community Medicine</h3>
-                    <p class="meta">Cairo University, Faculty of Medicine | 2009 - 2012</p>
-                </div>
-                <div class="card">
-                    <h3>MS in Public Health and Community Medicine</h3>
-                    <p class="meta">Cairo University, Faculty of Medicine | 2001 - 2009</p>
-                </div>
-                <div class="card">
-                    <h3>MS in Professional Master of Health Economics</h3>
-                    <p class="meta">Cairo University, Faculty of Medicine and Faculty of Economics and Political Science | 2001 - 2016</p>
-                </div>
-                <div class="card">
-                    <h3>Bachelors of Medicine and Surgery (Excellent with Honors)</h3>
-                    <p class="meta">Cairo University, Faculty of Medicine</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Key Projects</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <h3>Focal Point for HTA Central Administration at UPA</h3>
-                    <p class="meta">2023 - Present</p>
-                    <p>Activation of INAHTA Membership and leading team participation in INAHTA activities, training, and meetings.</p>
-                </div>
-                <div class="card">
-                    <h3>Economic Analysis of HCV Screening Algorithms</h3>
-                    <p class="meta">2019</p>
-                    <p>Evaluated different hepatitis C screening algorithms in Egypt to provide supporting evidence for the national plan.</p>
-                </div>
-                <div class="card">
-                    <h3>Gene-Xpert Cost Effectiveness Analysis</h3>
-                    <p class="meta">2017</p>
-                    <p>Economic evaluation using decision analysis for adopting Gene-Xpert in diagnosing Multi-drug resistant T.B.</p>
-                </div>
-                <div class="card">
-                    <h3>Socioeconomic Cost of Road Traffic Injury</h3>
-                    <p class="meta">2016</p>
-                    <p>Implemented international methodology to estimate the socioeconomic cost of road traffic injuries in Egypt.</p>
-                </div>
-                <div class="card">
-                    <h3>Making the Case for Inclusive Health</h3>
-                    <p class="meta">2018</p>
-                    <p>Conducted desk research to highlight the health and economic benefits of social inclusion for individuals with Intellectual Disabilities.</p>
-                </div>
-                 <div class="card">
-                    <h3>Give Every Baby a Story</h3>
-                    <p class="meta">2018</p>
-                    <p>Evaluation study on community health education's impact on maternal and child health in Upper Egypt and urban areas.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications">
-            <h2>Certifications & Achievements</h2>
-            <div class="card">
-                <ul>
-                    <li><b>Outstanding Contribution Recognition:</b> Public Health and Community Medicine Department, Faculty of Medicine, Cairo University.</li>
-                    <li><b>Professional Diploma on Health Technology Assessment:</b> Syreon Research Institute, Middle East (One Year).</li>
-                    <li><b>Modelling Cost-Effectiveness in Healthcare:</b> The London School of Economics and Political Science (LSE) (8-week online course).</li>
-                    <li><b>Tri Country Training Program (TCTP) Certificate:</b> Speaker on "Infection Prevention and control of Neglected Tropical Diseases in the Era of COVID-19".</li>
-                    <li><b>Health Economics of Vaccines CPD Certificate:</b> By AEC Partners co-organized by Educo-Life Science.</li>
-                    <li><b>Access to Innovation Forum Completion Certificate:</b> The American Association of Continuing Medical Education.</li>
-                    <li><b>Capacity Building in Tropical Disease Implementation Research Workshop Certificate:</b> Arabian Gulf University.</li>
-                    <li><b>DIES Pro GRANT Proposal Writing Seminar Certificate:</b> DAAD.</li>
-                    <li><b>Competency Based Curriculum Development Workshop Certificate:</b> Educational Development Fund (EDF), Cabinet of Ministers.</li>
-                    <li><b>Research Methods Training Program Certificate:</b> The American University in Cairo "Social research center".</li>
-                    <li><b>WHO/EMRO/TDR/HQ Workshop Certificate:</b> For PIs of TDR/WHO projects.</li>
-                    <li><b>Systematic Analysis Workshop Participation Certificate:</b> Armed Forces College of Medicine.</li>
-                </ul>
-            </div>
-        </section>
-        
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Prof. Dr. Amal Samir Sedrak | Designed from CV</p>
+    <footer class="text-white text-center p-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Prof. Dr. Amal Samir Sedrak | Designed with <i class="fas fa-heart" style="color: var(--secondary-color);"></i> using Bootstrap & UI/UX Principles</p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

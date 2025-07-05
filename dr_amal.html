@@ -15,20 +15,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* === FINAL ENHANCED CUSTOM STYLESHEET === */
+        /* === FINAL ENHANCED CUSTOM STYLESHEET V2 === */
 
-        /* 1. CSS Variables & Global Styles (Color Scheme) */
+        /* 1. CSS Variables & Global Styles */
         :root {
-            --primary-gradient: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%); /* Teal and Dark Blue */
-            --secondary-gradient: linear-gradient(135deg, #4ca1af 0%, #6FB1FC 100%); /* Teal to Light Blue */
-            --accent-gradient: linear-gradient(135deg, #f09819 0%, #edde5d 100%); /* Warm Orange to Gold */
-            --dark-gradient: linear-gradient(135deg, #232526 0%, #414345 100%); /* Charcoal to Slate */
-            --light-gradient: linear-gradient(135deg, #F0F2F5 0%, #E9ECEF 100%); /* Off-white to Light Gray */
+            --primary-gradient: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+            --secondary-gradient: linear-gradient(135deg, #4ca1af 0%, #6FB1FC 100%);
+            --accent-gradient: linear-gradient(135deg, #f09819 0%, #edde5d 100%);
+            --dark-gradient: linear-gradient(135deg, #232526 0%, #414345 100%);
             
             --primary-color: #2c3e50;
             --secondary-color: #4ca1af;
             --accent-color: #f09819;
-            --dark-color: #232526;
             --light-color: #F0F2F5;
             --text-primary: #232526;
             --text-secondary: #6c757d;
@@ -37,51 +35,35 @@
             --heading-font: 'Poppins', sans-serif;
             --body-font: 'Inter', sans-serif;
             
-            --shadow-sm: 0 2px 4px rgba(0,0,0,0.07);
             --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
             --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
             --shadow-xl: 0 20px 40px rgba(0,0,0,0.2);
             
-            --border-radius: 12px;
             --border-radius-lg: 20px;
             --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-
+        html { scroll-behavior: smooth; }
         body {
             font-family: var(--body-font);
             line-height: 1.6;
             color: var(--text-primary);
-            background: var(--light-color);
+            background-color: var(--light-color);
             overflow-x: hidden;
         }
 
-        /* 2. Enhanced Typography */
+        /* 2. Typography & Section Titles */
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--heading-font);
             font-weight: 600;
-            line-height: 1.2;
-            margin-bottom: 1rem;
         }
 
         .section-title {
-            font-size: clamp(2rem, 4vw, 3rem);
             font-weight: 700;
             background: var(--primary-gradient);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
             position: relative;
             display: inline-block;
             margin-bottom: 3rem;
@@ -99,7 +81,7 @@
             border-radius: 2px;
         }
 
-        /* 3. Enhanced Animations */
+        /* 3. Animations */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -121,11 +103,10 @@
             transform: translateY(0);
         }
 
-        /* 4. Enhanced Navigation */
+        /* 4. Navigation */
         .navbar {
             background: rgba(255, 255, 255, 0.9) !important;
             backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
             box-shadow: var(--shadow-md);
             transition: var(--transition);
             padding: 1rem 0;
@@ -137,95 +118,38 @@
             box-shadow: var(--shadow-lg);
         }
 
-        .navbar-brand {
-            font-family: var(--heading-font);
-            font-weight: 700;
-            font-size: 1.5rem;
-            color: var(--primary-color);
-        }
+        .navbar-brand { color: var(--primary-color); }
+        .navbar .nav-link { color: var(--text-primary) !important; }
+        .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--secondary-color) !important; }
 
-        .navbar .nav-link {
-            color: var(--text-primary) !important;
-            font-weight: 500;
-            padding: 0.5rem 1rem !important;
-            margin: 0 0.25rem;
-            border-radius: var(--border-radius);
-            transition: var(--transition);
-            position: relative;
-        }
-
-        .navbar .nav-link::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background: var(--secondary-color);
-            transition: var(--transition);
-            transform: translateX(-50%);
-        }
-
-        .navbar .nav-link:hover, .navbar .nav-link.active {
-            color: var(--secondary-color) !important;
-            transform: translateY(-2px);
-        }
-
-        .navbar .nav-link:hover::before, .navbar .nav-link.active::before {
-            width: 80%;
-        }
-
-        /* 5. Enhanced Hero Section */
+        /* 5. Hero Section (No Profile Picture) */
         .hero-section {
-            min-height: 100vh;
+            min-height: 95vh;
             background: var(--primary-gradient);
             position: relative;
             display: flex;
             align-items: center;
-            overflow: hidden;
             color: var(--text-light);
+            padding-bottom: 100px; /* Space for the divider */
         }
         
-        .hero-section-container {
-            position: relative;
-            z-index: 2;
-        }
+        .hero-section-container { position: relative; z-index: 2; }
 
-        .hero-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid rgba(255, 255, 255, 0.5);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            margin-bottom: 1.5rem;
-        }
-        
-        .hero-title {
-            font-weight: 700;
-            text-shadow: 0 3px 6px rgba(0,0,0,0.15);
-        }
-
-        .hero-subtitle {
-            font-weight: 300;
-            opacity: 0.9;
-        }
-
-        .hero-contact {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 2.5rem;
+        .hero-icon-bg {
+            font-size: 20rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.05;
+            z-index: 1;
+            color: white;
+            line-height: 1;
         }
 
         .hero-contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            color: var(--text-light);
-            text-decoration: none;
-            font-weight: 500;
+            display: flex; align-items: center; gap: 0.75rem;
+            color: var(--text-light); text-decoration: none;
             transition: var(--transition);
             padding: 0.75rem 1.5rem;
             border-radius: 50px;
@@ -233,109 +157,62 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
+        .hero-contact-item:hover { transform: translateY(-3px) scale(1.05); background: rgba(255, 255, 255, 0.2); }
 
-        .hero-contact-item:hover {
-            color: var(--text-light);
-            transform: translateY(-3px) scale(1.05);
-            background: rgba(255, 255, 255, 0.2);
-            box-shadow: var(--shadow-md);
+        /* 6. Section Divider Visual */
+        .section-divider {
+            position: absolute;
+            bottom: -1px; /* Prevents tiny gaps */
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
         }
 
-        .hero-contact-item i { font-size: 1.2rem; }
+        .section-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 100px;
+        }
 
-        /* 6. Enhanced Cards & Lists */
-        .card, .enhanced-list-item {
+        .section-divider .shape-fill { fill: var(--light-color); }
+
+        /* 7. Components & Cards */
+        .card {
             border: none;
             border-radius: var(--border-radius-lg);
             box-shadow: var(--shadow-md);
             transition: var(--transition);
-            overflow: hidden;
             background: #ffffff;
+            height: 100%;
         }
-
-        .card:hover, .enhanced-list-item:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-xl);
-        }
+        .card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); }
+        .card-meta { color: var(--secondary-color); font-weight: 600; text-transform: uppercase; }
         
-        .card-meta {
-            color: var(--secondary-color);
-            font-weight: 600;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-
-        .enhanced-list { list-style: none; padding: 0; }
-
-        .enhanced-list-item {
-            display: flex;
-            align-items: center;
-            padding: 1.25rem;
-            margin-bottom: 1rem;
-        }
-
-        .enhanced-list-item i {
-            width: 40px; height: 40px;
-            border-radius: 50%;
+        .value-card { text-align: center; padding: 2rem 1rem; }
+        .value-card .icon { font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem; }
+        
+        /* 8. Skills Section Visuals */
+        .skill-card { text-align: center; padding: 2rem; }
+        .skill-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
             background: var(--secondary-gradient);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-light);
-            margin-right: 1.25rem;
-            flex-shrink: 0;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: var(--transition);
         }
-        
-        /* 7. Other Sections */
-        .section { padding: 6rem 0; position: relative; }
-        .section-alt { background: rgba(255, 255, 255, 0.6); }
+        .skill-card:hover .icon { transform: scale(1.2); }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .skill-card::before {
-            content: '';
-            position: absolute; top: 0; left: 0; right: 0;
-            height: 5px;
-            background: var(--accent-gradient);
-        }
-        
-        .footer {
-            background: var(--dark-gradient);
-            color: var(--text-light);
-            padding: 4rem 0 2rem;
-            text-align: center;
-            position: relative;
-        }
-
-        /* 8. Loading Animation */
-        .loading-overlay {
-            position: fixed; top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: var(--primary-gradient);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            transition: opacity 0.75s ease;
-        }
-
+        /* 9. Loading Animation */
+        .loading-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--primary-gradient); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.75s ease; }
         .loading-overlay.hidden { opacity: 0; pointer-events: none; }
-
-        .loader {
-            width: 50px; height: 50px;
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top-color: white;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
+        .loader { width: 50px; height: 50px; border: 4px solid rgba(255, 255, 255, 0.3); border-top-color: white; border-radius: 50%; animation: spin 1s linear infinite; }
         @keyframes spin { to { transform: rotate(360deg); } }
+
     </style>
 </head>
 <body>
@@ -354,23 +231,24 @@
                     <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <section id="home" class="hero-section">
+        <div class="hero-icon-bg">
+            <i class="fa-solid fa-globe-africa"></i>
+        </div>
         <div class="container hero-section-container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-10">
                     <div class="fade-in-on-load">
-                        <img src="https://i.ibb.co/6r02c5c/image.png" alt="Prof. Dr. Amal Samir Sedrak" class="hero-image">
-                        <h1 class="hero-title">Prof. Dr. Amal Samir Sedrak</h1>
-                        <p class="hero-subtitle">Pioneering Healthier Futures through Strategic Public Health & HTA Leadership</p>
-                        <div class="hero-contact">
+                        <h1 class="display-4 fw-bold">Prof. Dr. Amal Samir Sedrak</h1>
+                        <p class="lead fs-4 my-4">Pioneering Healthier Futures through Strategic Public Health & HTA Leadership</p>
+                        <div class="d-flex justify-content-center flex-wrap gap-3">
                             <a href="tel:+201203344637" class="hero-contact-item" aria-label="Call Dr. Amal Sedrak"><i class="fas fa-phone"></i><span>Call</span></a>
                             <a href="mailto:amalnewlife82@gmail.com" class="hero-contact-item" aria-label="Email Dr. Amal Sedrak"><i class="fas fa-envelope"></i><span>Email</span></a>
                             <a href="https://www.linkedin.com/in/amalsedrak/" class="hero-contact-item" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
@@ -379,35 +257,47 @@
                 </div>
             </div>
         </div>
+        <div class="section-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
     </section>
 
     <section id="about" class="section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="section-title animate-on-scroll">About Me</h2>
+                    <h2 class="section-title animate-on-scroll">My Guiding Principles</h2>
                 </div>
             </div>
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-8">
-                    <div class="animate-on-scroll">
-                        <p class="lead mb-4">A dynamic public health leader dedicated to architecting transformative training programs and captivating community awareness campaigns. I thrive on translating complex data into evidence-based strategies, driving successful projects and forging powerful community alliances.</p>
-                        <p>With over two decades of experience in public health and community medicine, I have consistently demonstrated excellence in leadership, strategic planning, and innovative program development. My expertise spans health technology assessment, economic evaluation, and community engagement, making me a trusted voice in Egypt's healthcare transformation journey.</p>
+            <div class="row g-4 text-center">
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="card value-card">
+                        <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                        <h5 class="card-title">Innovation</h5>
+                        <p>Leveraging cutting-edge research and technology to solve public health challenges.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="animate-on-scroll">
-                        <div class="card p-4 text-center">
-                           <h5 class="card-title">My Mission</h5>
-                           <p class="text-muted mb-0">To leverage evidence and strategic partnerships to build equitable, efficient, and resilient health systems for a healthier future.</p>
-                        </div>
+                <div class="col-md-4 animate-on-scroll">
+                     <div class="card value-card">
+                        <div class="icon"><i class="fas fa-users"></i></div>
+                        <h5 class="card-title">Collaboration</h5>
+                        <p>Building powerful alliances across sectors to drive collective impact and success.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-on-scroll">
+                     <div class="card value-card">
+                        <div class="icon"><i class="fas fa-balance-scale"></i></div>
+                        <h5 class="card-title">Equity</h5>
+                        <p>Striving for fair and just health outcomes for all communities, leaving no one behind.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="section section-alt">
+    <section id="experience" class="section" style="background-color: #e9ecef;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
@@ -416,70 +306,22 @@
             </div>
             <div class="row g-4">
                 <div class="col-lg-6 animate-on-scroll">
-                    <div class="card h-100 p-4">
-                        <h3 class="card-title">Director of Health Technology Assessment</h3>
+                    <div class="card p-4">
+                        <h3 class="card-title"><i class="fas fa-star text-warning me-2"></i>Director of Health Technology Assessment</h3>
                         <p class="card-meta">Egyptian Authority for Unified Procurement</p>
-                        <p class="text-muted mb-3">January 2025 - Present</p>
-                        <p>Championing the national HTA strategy, orchestrating the systematic evaluation of health technologies, and innovating high-impact training programs.</p>
+                        <p class="text-muted mb-0">Championing the national HTA strategy, orchestrating the systematic evaluation of health technologies, and innovating high-impact training programs.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 animate-on-scroll">
-                    <div class="card h-100 p-4">
-                        <h3 class="card-title">Head of Training & Community Awareness</h3>
+                    <div class="card p-4">
+                        <h3 class="card-title"><i class="fas fa-award text-info me-2"></i>Head of Training & Community Awareness</h3>
                         <p class="card-meta">Egyptian Authority for Unified Procurement</p>
-                        <p class="text-muted mb-3">October 2020 - December 2024</p>
-                        <p>Engineered training modules for thousands of professionals and masterminded nationwide awareness campaigns, forging key strategic alliances.</p>
+                        <p class="text-muted mb-0">Engineered training modules for thousands of professionals and masterminded nationwide awareness campaigns, forging key strategic alliances.</p>
                     </div>
                 </div>
             </div>
         </section>
         
-    <section id="projects" class="section">
-        <div class="container">
-             <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title animate-on-scroll">Key Projects & Achievements</h2>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-7 animate-on-scroll">
-                    <div class="accordion" id="projectsAccordion">
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#p1">UPA HTA Leadership & Global Engagement</button></h2><div id="p1" class="accordion-collapse collapse show" data-bs-parent="#projectsAccordion"><div class="accordion-body">Activated INAHTA membership, leading team engagement in international activities to elevate Egypt's global HTA standing.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#p2">HCV Screening Economic Analysis</button></h2><div id="p2" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion"><div class="accordion-body">Conducted pivotal economic valuation of HCV screening algorithms, shaping Egypt's national eradication strategy.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#p4">TB Diagnostics Cost-Benefit Analysis</button></h2><div id="p4" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion"><div class="accordion-body">Delivered a compelling economic case for adopting Gene-Xpert technology in diagnosing multi-drug resistant TB.</div></div></div>
-                    </div>
-                </div>
-                <div class="col-lg-5 animate-on-scroll">
-                    <ul class="enhanced-list">
-                        <li class="enhanced-list-item"><i class="fas fa-award"></i><div><strong>Outstanding Contributions Recognition</strong><br><span class="text-muted">Honored by Cairo University</span></div></li>
-                        <li class="enhanced-list-item"><i class="fas fa-certificate"></i><div><strong>Diploma in Health Technology Assessment</strong><br><span class="text-muted">Syreon Research Institute</span></div></li>
-                        <li class="enhanced-list-item"><i class="fas fa-university"></i><div><strong>Cost-Effectiveness Modelling Training</strong><br><span class="text-muted">The London School of Economics</span></div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="publications" class="section section-alt">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title animate-on-scroll">Selected Publications</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 animate-on-scroll">
-                    <ul class="enhanced-list">
-                        <li class="enhanced-list-item"><i class="fas fa-book-open"></i><div><strong>The Economic Burden of Road Traffic Injuries in Egypt.</strong><br><span class="text-muted">Journal of Global Health, 2017. <a href="#" class="text-decoration-none fw-bold">View ›</a></span></div></li>
-                        <li class="enhanced-list-item"><i class="fas fa-book-open"></i><div><strong>Cost-Effectiveness of Gene-Xpert for MDR-TB Diagnosis.</strong><br><span class="text-muted">The Lancet Infectious Diseases, 2018. <a href="#" class="text-decoration-none fw-bold">View ›</a></span></div></li>
-                        <li class="enhanced-list-item"><i class="fas fa-book-open"></i><div><strong>Impact of Community Health Worker Education in Rural Egypt.</strong><br><span class="text-muted">International Journal of Public Health, 2019. <a href="#" class="text-decoration-none fw-bold">View ›</a></span></div></li>
-                         <li class="enhanced-list-item"><i class="fas fa-book-open"></i><div><strong>Comparative Analysis of HCV Screening Algorithms.</strong><br><span class="text-muted">Hepatology International, 2020. <a href="#" class="text-decoration-none fw-bold">View ›</a></span></div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="skills" class="section">
         <div class="container">
             <div class="row justify-content-center">
@@ -487,13 +329,44 @@
                     <h2 class="section-title animate-on-scroll">Core Competencies</h2>
                 </div>
             </div>
-            <div class="skills-grid">
-                <div class="card text-center p-4 animate-on-scroll"><h5>Strategic Leadership</h5></div>
-                <div class="card text-center p-4 animate-on-scroll"><h5>Health Technology Assessment (HTA)</h5></div>
-                <div class="card text-center p-4 animate-on-scroll"><h5>Project Management</h5></div>
-                <div class="card text-center p-4 animate-on-scroll"><h5>Data Analysis (SPSS)</h5></div>
-                <div class="card text-center p-4 animate-on-scroll"><h5>Public Policy Development</h5></div>
-                <div class="card text-center p-4 animate-on-scroll"><h5>Community Engagement</h5></div>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6 animate-on-scroll">
+                    <div class="card skill-card"><div class="icon"><i class="fas fa-sitemap"></i></div><h5>Strategic Leadership</h5></div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate-on-scroll">
+                    <div class="card skill-card"><div class="icon"><i class="fas fa-microscope"></i></div><h5>Health Technology Assessment (HTA)</h5></div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate-on-scroll">
+                    <div class="card skill-card"><div class="icon"><i class="fas fa-tasks"></i></div><h5>Project Management</h5></div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate-on-scroll">
+                    <div class="card skill-card"><div class="icon"><i class="fas fa-chart-line"></i></div><h5>Data Analysis & SPSS</h5></div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate-on-scroll">
+                    <div class="card skill-card"><div class="icon"><i class="fas fa-landmark"></i></div><h5>Public Policy</h5></div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate-on-scroll">
+                    <div class="card skill-card"><div class="icon"><i class="fas fa-handshake"></i></div><h5>Community Engagement</h5></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="section" style="background-color: #e9ecef;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title animate-on-scroll">Selected Publications & Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 animate-on-scroll">
+                    <div class="accordion" id="pubsAccordion">
+                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#pub1">The Economic Burden of Road Traffic Injuries in Egypt</button></h2><div id="pub1" class="accordion-collapse collapse show" data-bs-parent="#pubsAccordion"><div class="accordion-body"><strong>Journal of Global Health, 2017:</strong> A pioneering national study quantifying the socioeconomic impact of RTIs, influencing road safety policy discussions.</div></div></div>
+                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#pub2">Cost-Effectiveness of Gene-Xpert for MDR-TB Diagnosis</button></h2><div id="pub2" class="accordion-collapse collapse" data-bs-parent="#pubsAccordion"><div class="accordion-body"><strong>The Lancet Infectious Diseases, 2018:</strong> Delivered a compelling economic case for adopting advanced diagnostic technology in high-burden settings.</div></div></div>
+                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#pub3">Impact of Community Health Worker Education in Rural Egypt</button></h2><div id="pub3" class="accordion-collapse collapse" data-bs-parent="#pubsAccordion"><div class="accordion-body"><strong>International Journal of Public Health, 2019:</strong> Evaluated and confirmed the profound positive impact of community-level health education on maternal and child health outcomes.</div></div></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -520,25 +393,20 @@
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            
             // Loading Animation
             const loadingOverlay = document.getElementById('loadingOverlay');
-            setTimeout(() => {
-                loadingOverlay.classList.add('hidden');
-            }, 500);
+            setTimeout(() => { loadingOverlay.classList.add('hidden'); }, 500);
 
             // Navbar Scroll Effect
             const navbar = document.getElementById('mainNavbar');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
+            window.addEventListener('scroll', () => {
+                navbar.classList.toggle('scrolled', window.scrollY > 50);
             });
 
-            // Smooth Scrolling & Active Link
+            // Active Link & Smooth Scroll
             const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const sections = document.querySelectorAll('section[id]');
+            
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -547,17 +415,10 @@
                     if (targetElement) {
                         const offsetTop = targetElement.offsetTop - 70;
                         window.scrollTo({ top: offsetTop, behavior: 'smooth' });
-                        
-                        const navbarCollapse = document.getElementById('navbarNav');
-                        if (navbarCollapse.classList.contains('show')) {
-                            new bootstrap.Collapse(navbarCollapse).hide();
-                        }
                     }
                 });
             });
 
-            // Update Active Link on Scroll
-            const sections = document.querySelectorAll('section[id]');
             function updateActiveLink() {
                 let current = 'home';
                 sections.forEach(section => {
@@ -565,12 +426,8 @@
                         current = section.getAttribute('id');
                     }
                 });
-
                 navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').includes(current)) {
-                        link.classList.add('active');
-                    }
+                    link.classList.toggle('active', link.getAttribute('href').includes(current));
                 });
             }
             window.addEventListener('scroll', updateActiveLink);
@@ -578,25 +435,463 @@
 
             // Scroll Animation Observer
             const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry, index) => {
+                entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.style.transitionDelay = `${index * 100}ms`;
                         entry.target.classList.add('animate');
                         observer.unobserve(entry.target);
                     }
                 });
             }, { threshold: 0.1 });
-
             document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The professional portfolio of Prof. Dr. Amal Samir Sedrak, a leader in public health, health technology assessment (HTA), and community medicine in Egypt.">
+    <title>Prof. Dr. Amal Samir Sedrak | Public Health Leader</title>
 
-            // Parallax effect for the hero section background
-            const heroSection = document.querySelector('.hero-section');
-            window.addEventListener('scroll', function() {
-                if (window.innerWidth > 768) {
-                    const scrollPosition = window.pageYOffset;
-                    heroSection.style.backgroundPosition = `center ${scrollPosition * 0.5}px`;
-                }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* === FINAL ENHANCED CUSTOM STYLESHEET V2 === */
+
+        /* 1. CSS Variables & Global Styles */
+        :root {
+            --primary-gradient: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+            --secondary-gradient: linear-gradient(135deg, #4ca1af 0%, #6FB1FC 100%);
+            --accent-gradient: linear-gradient(135deg, #f09819 0%, #edde5d 100%);
+            --dark-gradient: linear-gradient(135deg, #232526 0%, #414345 100%);
+            
+            --primary-color: #2c3e50;
+            --secondary-color: #4ca1af;
+            --accent-color: #f09819;
+            --light-color: #F0F2F5;
+            --text-primary: #232526;
+            --text-secondary: #6c757d;
+            --text-light: #ffffff;
+            
+            --heading-font: 'Poppins', sans-serif;
+            --body-font: 'Inter', sans-serif;
+            
+            --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
+            --shadow-xl: 0 20px 40px rgba(0,0,0,0.2);
+            
+            --border-radius-lg: 20px;
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--body-font);
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--light-color);
+            overflow-x: hidden;
+        }
+
+        /* 2. Typography & Section Titles */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--heading-font);
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--accent-gradient);
+            border-radius: 2px;
+        }
+
+        /* 3. Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in-on-load {
+            animation: fadeIn 1s ease-out 0.5s forwards;
+            opacity: 0;
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 4. Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.9) !important;
+            backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            padding: 1rem 0;
+        }
+
+        .navbar.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .navbar-brand { color: var(--primary-color); }
+        .navbar .nav-link { color: var(--text-primary) !important; }
+        .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--secondary-color) !important; }
+
+        /* 5. Hero Section (No Profile Picture) */
+        .hero-section {
+            min-height: 95vh;
+            background: var(--primary-gradient);
+            position: relative;
+            display: flex;
+            align-items: center;
+            color: var(--text-light);
+            padding-bottom: 100px; /* Space for the divider */
+        }
+        
+        .hero-section-container { position: relative; z-index: 2; }
+
+        .hero-icon-bg {
+            font-size: 20rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.05;
+            z-index: 1;
+            color: white;
+            line-height: 1;
+        }
+
+        .hero-contact-item {
+            display: flex; align-items: center; gap: 0.75rem;
+            color: var(--text-light); text-decoration: none;
+            transition: var(--transition);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hero-contact-item:hover { transform: translateY(-3px) scale(1.05); background: rgba(255, 255, 255, 0.2); }
+
+        /* 6. Section Divider Visual */
+        .section-divider {
+            position: absolute;
+            bottom: -1px; /* Prevents tiny gaps */
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .section-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 100px;
+        }
+
+        .section-divider .shape-fill { fill: var(--light-color); }
+
+        /* 7. Components & Cards */
+        .card {
+            border: none;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            background: #ffffff;
+            height: 100%;
+        }
+        .card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); }
+        .card-meta { color: var(--secondary-color); font-weight: 600; text-transform: uppercase; }
+        
+        .value-card { text-align: center; padding: 2rem 1rem; }
+        .value-card .icon { font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem; }
+        
+        /* 8. Skills Section Visuals */
+        .skill-card { text-align: center; padding: 2rem; }
+        .skill-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: var(--secondary-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: var(--transition);
+        }
+        .skill-card:hover .icon { transform: scale(1.2); }
+
+        /* 9. Loading Animation */
+        .loading-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--primary-gradient); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.75s ease; }
+        .loading-overlay.hidden { opacity: 0; pointer-events: none; }
+        .loader { width: 50px; height: 50px; border: 4px solid rgba(255, 255, 255, 0.3); border-top-color: white; border-radius: 50%; animation: spin 1s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+    </style>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Dr. Amal Sedrak</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-icon-bg">
+            <i class="fa-solid fa-globe-africa"></i>
+        </div>
+        <div class="container hero-section-container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <div class="fade-in-on-load">
+                        <h1 class="display-4 fw-bold">Prof. Dr. Amal Samir Sedrak</h1>
+                        <p class="lead fs-4 my-4">Pioneering Healthier Futures through Strategic Public Health & HTA Leadership</p>
+                        <div class="d-flex justify-content-center flex-wrap gap-3">
+                            <a href="tel:+201203344637" class="hero-contact-item" aria-label="Call Dr. Amal Sedrak"><i class="fas fa-phone"></i><span>Call</span></a>
+                            <a href="mailto:amalnewlife82@gmail.com" class="hero-contact-item" aria-label="Email Dr. Amal Sedrak"><i class="fas fa-envelope"></i><span>Email</span></a>
+                            <a href="https://www.linkedin.com/in/amalsedrak/" class="hero-contact-item" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title animate-on-scroll">My Guiding Principles</h2>
+                </div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="card value-card">
+                        <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                        <h5 class="card-title">Innovation</h5>
+                        <p>Leveraging cutting-edge research and technology to solve public health challenges.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-on-scroll">
+                     <div class="card value-card">
+                        <div class="icon"><i class="fas fa-users"></i></div>
+                        <h5 class="card-title">Collaboration</h5>
+                        <p>Building powerful alliances across sectors to drive collective impact and success.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-on-scroll">
+                     <div class="card value-card">
+                        <div class="icon"><i class="fas fa-balance-scale"></i></div>
+                        <h5 class="card-title">Equity</h5>
+                        <p>Striving for fair and just health outcomes for all communities, leaving no one behind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section" style="background-color: #e9ecef;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title animate-on-scroll">Professional Experience</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 animate-on-scroll">
+                    <div class="card p-4">
+                        <h3 class="card-title"><i class="fas fa-star text-warning me-2"></i>Director of Health Technology Assessment</h3>
+                        <p class="card-meta">Egyptian Authority for Unified Procurement</p>
+                        <p class="text-muted mb-0">Championing the national HTA strategy, orchestrating the systematic evaluation of health technologies, and innovating high-impact training programs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll">
+                    <div class="card p-4">
+                        <h3 class="card-title"><i class="fas fa-award text-info me-2"></i>Head of Training & Community Awareness</h3>
+                        <p class="card-meta">Egyptian Authority for Unified Procurement</p>
+                        <p class="text-muted mb-0">Engineered training modules for thousands of professionals and masterminded nationwide awareness campaigns, forging key strategic alliances.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title animate-on-scroll">Core Competencies</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6 animate-on-scroll">
+                    <div class="card skill-card"><div class="icon"><i class="fas fa-sitemap"></i></div><h5>Strategic Leadership</h5></div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate-on-scroll">
+                    <div class="card skill-card"><div class="icon"><i class="fas fa-microscope"></i></div><h5>Health Technology Assessment (HTA)</h5></div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate-on-scroll">
+                    <div class="card skill-card"><div class="icon"><i class="fas fa-tasks"></i></div><h5>Project Management</h5></div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate-on-scroll">
+                    <div class="card skill-card"><div class="icon"><i class="fas fa-chart-line"></i></div><h5>Data Analysis & SPSS</h5></div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate-on-scroll">
+                    <div class="card skill-card"><div class="icon"><i class="fas fa-landmark"></i></div><h5>Public Policy</h5></div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate-on-scroll">
+                    <div class="card skill-card"><div class="icon"><i class="fas fa-handshake"></i></div><h5>Community Engagement</h5></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="section" style="background-color: #e9ecef;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title animate-on-scroll">Selected Publications & Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 animate-on-scroll">
+                    <div class="accordion" id="pubsAccordion">
+                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#pub1">The Economic Burden of Road Traffic Injuries in Egypt</button></h2><div id="pub1" class="accordion-collapse collapse show" data-bs-parent="#pubsAccordion"><div class="accordion-body"><strong>Journal of Global Health, 2017:</strong> A pioneering national study quantifying the socioeconomic impact of RTIs, influencing road safety policy discussions.</div></div></div>
+                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#pub2">Cost-Effectiveness of Gene-Xpert for MDR-TB Diagnosis</button></h2><div id="pub2" class="accordion-collapse collapse" data-bs-parent="#pubsAccordion"><div class="accordion-body"><strong>The Lancet Infectious Diseases, 2018:</strong> Delivered a compelling economic case for adopting advanced diagnostic technology in high-burden settings.</div></div></div>
+                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#pub3">Impact of Community Health Worker Education in Rural Egypt</button></h2><div id="pub3" class="accordion-collapse collapse" data-bs-parent="#pubsAccordion"><div class="accordion-body"><strong>International Journal of Public Health, 2019:</strong> Evaluated and confirmed the profound positive impact of community-level health education on maternal and child health outcomes.</div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="mb-4">Let's Connect</h3>
+                    <p class="lead mb-4">Ready to collaborate on transformative public health initiatives? Let's discuss how we can work together to create healthier communities.</p>
+                     <div class="d-flex justify-content-center gap-3 gap-md-4 mb-4">
+                        <a href="tel:+201203344637" class="hero-contact-item" aria-label="Call Dr. Amal Sedrak"><i class="fas fa-phone"></i><span>Call Me</span></a>
+                        <a href="mailto:amalnewlife82@gmail.com" class="hero-contact-item" aria-label="Email Dr. Amal Sedrak"><i class="fas fa-envelope"></i><span>Email Me</span></a>
+                         <a href="https://www.linkedin.com/in/amalsedrak/" class="hero-contact-item" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                    </div>
+                    <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+                    <p class="mb-0">&copy; 2025 Prof. Dr. Amal Samir Sedrak. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Loading Animation
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            setTimeout(() => { loadingOverlay.classList.add('hidden'); }, 500);
+
+            // Navbar Scroll Effect
+            const navbar = document.getElementById('mainNavbar');
+            window.addEventListener('scroll', () => {
+                navbar.classList.toggle('scrolled', window.scrollY > 50);
             });
+
+            // Active Link & Smooth Scroll
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const sections = document.querySelectorAll('section[id]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const offsetTop = targetElement.offsetTop - 70;
+                        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            function updateActiveLink() {
+                let current = 'home';
+                sections.forEach(section => {
+                    if (pageYOffset >= section.offsetTop - 80) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                navLinks.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href').includes(current));
+                });
+            }
+            window.addEventListener('scroll', updateActiveLink);
+            updateActiveLink();
+
+            // Scroll Animation Observer
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
         });
     </script>
 </body>

@@ -1,173 +1,829 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The professional portfolio of Prof. Dr. Amal Samir Sedrak, a leader in public health, health technology assessment (HTA), and community medicine in Egypt.">
     <title>Prof. Dr. Amal Samir Sedrak | Public Health Leader</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" /><style>
-    :root {
-        --primary-color: #2e3a59; /* Navy */
-        --secondary-color: #00a9a5; /* Teal */
-        --accent-color: #d1e8e2; /* Pale mint */
-        --text-dark: #1c1f26;
-        --text-light: #ffffff;
-        --bg-light: #f4f6f9;
-        --heading-font: 'Merriweather', serif;
-        --body-font: 'Inter', sans-serif;
-        --transition: all 0.3s ease-in-out;
-    }
 
-    body {
-        font-family: var(--body-font);
-        background: var(--bg-light);
-        color: var(--text-dark);
-    }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    h1, h2, h3, h4 {
-        font-family: var(--heading-font);
-        color: var(--primary-color);
-    }
+    <style>
+        /* === REFRESHED & ENHANCED CUSTOM STYLESHEET === */
 
-    .navbar {
-        background: var(--primary-color);
-    }
+        /* 1. CSS Variables & Global Styles (New Color Scheme) */
+        :root {
+            --primary-gradient: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%); /* Deep Purple to Violet */
+            --secondary-gradient: linear-gradient(135deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%); /* Rich Blue to Light Blue */
+            --accent-gradient: linear-gradient(135deg, #FFD200 0%, #F7971E 100%); /* Gold to Orange */
+            --dark-gradient: linear-gradient(135deg, #232526 0%, #414345 100%); /* Charcoal to Slate */
+            --light-gradient: linear-gradient(135deg, #F0F2F5 0%, #E9ECEF 100%); /* Off-white to Light Gray */
+            
+            --primary-color: #6A11CB;  /* Main Purple */
+            --secondary-color: #0052D4; /* Main Blue */
+            --accent-color: #FFD200;   /* Main Gold */
+            --dark-color: #232526;
+            --light-color: #F0F2F5;
+            --text-primary: #232526;
+            --text-secondary: #6c757d;
+            --text-light: #ffffff;
+            
+            --heading-font: 'Poppins', sans-serif;
+            --body-font: 'Inter', sans-serif;
+            
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.07);
+            --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
+            --shadow-xl: 0 20px 40px rgba(0,0,0,0.2);
+            
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
 
-    .navbar .nav-link {
-        color: var(--text-light);
-        transition: var(--transition);
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .navbar .nav-link:hover {
-        color: var(--secondary-color);
-    }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
 
-    .hero-section {
-        background: linear-gradient(120deg, #2e3a59, #00a9a5);
-        color: var(--text-light);
-        padding: 8rem 0 6rem;
-        text-align: center;
-    }
+        body {
+            font-family: var(--body-font);
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--light-color);
+            overflow-x: hidden;
+        }
 
-    .hero-title {
-        font-size: 2.8rem;
-        font-weight: 700;
-    }
+        /* 2. Enhanced Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--heading-font);
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
 
-    .hero-subtitle {
-        font-size: 1.25rem;
-        opacity: 0.9;
-    }
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+        }
 
-    .section {
-        padding: 5rem 0;
-    }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--accent-gradient);
+            border-radius: 2px;
+        }
 
-    .section-title {
-        font-size: 2.2rem;
-        position: relative;
-        margin-bottom: 3rem;
-    }
+        /* 3. Enhanced Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
 
-    .section-title::after {
-        content: "";
-        display: block;
-        width: 60px;
-        height: 4px;
-        background: var(--secondary-color);
-        margin: 0.5rem auto 0;
-    }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
 
-    .card {
-        border: none;
-        border-radius: 10px;
-        background: #ffffff;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        transition: var(--transition);
-    }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    }
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-    .icon-box {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background: var(--secondary-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        font-size: 1.5rem;
-        margin: 0 auto 1rem;
-    }
+        .float-animation { animation: float 3s ease-in-out infinite; }
+        .pulse-animation { animation: pulse 2s ease-in-out infinite; }
 
-    .footer {
-        background: var(--primary-color);
-        color: var(--text-light);
-        padding: 3rem 0;
-    }
+        /* 4. Enhanced Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.9) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            padding: 1rem 0;
+        }
 
-    .footer a {
-        color: var(--accent-color);
-        text-decoration: none;
-    }
+        .navbar.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: var(--shadow-lg);
+        }
 
-    .footer a:hover {
-        color: #fff;
-    }
-</style>
+        .navbar-brand {
+            font-family: var(--heading-font);
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
+        .navbar .nav-link {
+            color: var(--text-primary) !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+            margin: 0 0.25rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .navbar .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+
+        .navbar .nav-link:hover, .navbar .nav-link.active {
+            color: var(--primary-color) !important;
+            transform: translateY(-2px);
+        }
+
+        .navbar .nav-link:hover::before, .navbar .nav-link.active::before {
+            width: 80%;
+        }
+
+        /* 5. Enhanced Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            background: var(--primary-gradient);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            color: var(--text-light);
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="%23ffffff" fill-opacity="0.1"><circle cx="20" cy="20" r="2"/><circle cx="80" cy="20" r="2"/><circle cx="20" cy="80" r="2"/><circle cx="80" cy="80" r="2"/><circle cx="50" cy="50" r="3"/></g></svg>');
+            animation: move-dots 60s linear infinite;
+        }
+
+        @keyframes move-dots {
+            from { background-position: 0 0; }
+            to { background-position: 1000px 1000px; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-weight: 700;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.15);
+        }
+
+        .hero-subtitle {
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .hero-contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2.5rem;
+        }
+
+        .hero-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-contact-item:hover {
+            color: var(--text-light);
+            transform: translateY(-3px) scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: var(--shadow-md);
+        }
+
+        .hero-contact-item i { font-size: 1.2rem; }
+
+        /* 6. Enhanced Cards */
+        .card {
+            border: none;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            overflow: hidden;
+            background: #ffffff;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .card-meta {
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        /* 7. Enhanced Sections */
+        .section { padding: 6rem 0; position: relative; }
+        .section-alt { background: rgba(255, 255, 255, 0.5); }
+        
+        /* 8. Enhanced Icon Boxes */
+        .icon-box {
+            width: 80px; height: 80px;
+            border-radius: 50%;
+            background: var(--accent-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: var(--transition);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .icon-box:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .icon-box i { font-size: 2rem; color: var(--text-light); }
+        
+        /* 9. Enhanced Accordion */
+        .accordion {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .accordion-item { border: none; background-color: #ffffff; }
+        
+        .accordion-button {
+            background-color: #ffffff;
+            border: none;
+            font-weight: 600;
+            color: var(--text-primary);
+            padding: 1.5rem;
+            transition: var(--transition);
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background: var(--primary-gradient);
+            color: var(--text-light);
+            box-shadow: none;
+        }
+
+        .accordion-button:focus { box-shadow: none; border: none; }
+        
+        .accordion-body { padding: 1.5rem; background: var(--light-color); }
+        
+        /* 10. Enhanced List Items */
+        .enhanced-list { list-style: none; padding: 0; }
+
+        .enhanced-list-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            background: #ffffff;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            border-left: 5px solid transparent;
+        }
+
+        .enhanced-list-item:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-md);
+            border-left-color: var(--primary-color);
+        }
+
+        .enhanced-list-item i {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: var(--secondary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        /* 11. Enhanced Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .skill-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            background: #ffffff;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 5px;
+            background: var(--accent-gradient);
+        }
+
+        .skill-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+
+        /* 12. Enhanced Footer */
+        .footer {
+            background: var(--dark-gradient);
+            color: var(--text-light);
+            padding: 4rem 0 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        /* 13. Responsive Design */
+        @media (max-width: 768px) {
+            .hero-contact { flex-direction: column; align-items: center; gap: 1rem; }
+            .section { padding: 4rem 0; }
+            .skills-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+        }
+
+        /* 14. Loading Animation */
+        .loading-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.75s ease;
+        }
+
+        .loading-overlay.hidden { opacity: 0; pointer-events: none; }
+
+        .loader {
+            width: 50px; height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="#">Dr. Amal Sedrak</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#home">Dr. Amal Sedrak</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </nav><header class="hero-section">
-    <div class="container">
-        <h1 class="hero-title">Prof. Dr. Amal Samir Sedrak</h1>
-        <p class="hero-subtitle">Pioneering Healthier Futures through Public Health & HTA Excellence</p>
-    </div>
-</header>
+    </nav>
 
-<section id="about" class="section">
-    <div class="container">
-        <h2 class="section-title text-center">About Me</h2>
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <p>A dynamic public health leader with over 20 years of experience in designing transformative training programs, health policy, and evidence-based strategies. Proven excellence in HTA, economic evaluation, and community engagement.</p>
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <div class="hero-content animate-on-scroll">
+                        <h1 class="hero-title">Prof. Dr. Amal Samir Sedrak</h1>
+                        <p class="hero-subtitle">Pioneering Healthier Futures through Strategic Public Health & HTA Leadership</p>
+                        <div class="hero-contact">
+                            <a href="tel:+201203344637" class="hero-contact-item" aria-label="Call Dr. Amal Sedrak">
+                                <i class="fas fa-phone"></i>
+                                <span>(+20) 1203344637</span>
+                            </a>
+                            <a href="mailto:amalnewlife82@gmail.com" class="hero-contact-item" aria-label="Email Dr. Amal Sedrak">
+                                <i class="fas fa-envelope"></i>
+                                <span>amalnewlife82@gmail.com</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/amalsedrak/" class="hero-contact-item" target="_blank" rel="noopener noreferrer" aria-label="View LinkedIn Profile">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <div class="hero-contact-item" aria-label="Location: Giza, Egypt">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Giza, Egypt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Additional sections: Experience, Education, Projects, Skills, Footer go here -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title animate-on-scroll">About Me</h2>
+                </div>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-8">
+                    <div class="animate-on-scroll">
+                        <p class="lead mb-4">A dynamic public health leader dedicated to architecting transformative training programs and captivating community awareness campaigns. I thrive on translating complex data into evidence-based strategies, driving successful projects and forging powerful community alliances.</p>
+                        <p>With over two decades of experience in public health and community medicine, I have consistently demonstrated excellence in leadership, strategic planning, and innovative program development. My expertise spans health technology assessment, economic evaluation, and community engagement, making me a trusted voice in Egypt's healthcare transformation journey.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-4">
+                        <div class="col-12 animate-on-scroll" data-wow-delay="0.2s">
+                            <div class="text-center">
+                                <div class="icon-box float-animation"> <i class="fas fa-bullseye"></i> </div>
+                                <h5>Strategic Leadership</h5>
+                                <p class="text-muted">Driving excellence through visionary leadership and strategic planning.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 animate-on-scroll" data-wow-delay="0.4s">
+                            <div class="text-center">
+                                <div class="icon-box float-animation" style="animation-delay: 0.5s;"> <i class="fas fa-people-group"></i> </div>
+                                <h5>Community Engagement</h5>
+                                <p class="text-muted">Building bridges between healthcare systems and communities.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 animate-on-scroll" data-wow-delay="0.6s">
+                            <div class="text-center">
+                                <div class="icon-box float-animation" style="animation-delay: 1s;"> <i class="fas fa-lightbulb"></i> </div>
+                                <h5>Evidence-Based Strategy</h5>
+                                <p class="text-muted">Transforming complex data into actionable insights and decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer class="footer text-center">
-    <div class="container">
-        <h5>Contact</h5>
-        <p>Email: <a href="mailto:amalnewlife82@gmail.com">amalnewlife82@gmail.com</a> | Phone: <a href="tel:+201203344637">+20 120 334 4637</a></p>
-        <p>Location: Giza, Egypt</p>
-        <p class="mt-3 small">&copy; 2025 Prof. Dr. Amal Samir Sedrak. All Rights Reserved.</p>
-    </div>
-</footer>
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title animate-on-scroll">Professional Experience</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 animate-on-scroll">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <h3 class="card-title">Director of Health Technology Assessment</h3>
+                            <p class="card-meta">Egyptian Authority for Unified Procurement</p>
+                            <p class="text-muted mb-3">January 2025 - Present</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Championing the national HTA strategy and governance.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Orchestrating systematic evaluation of health technologies.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Innovating high-impact training and awareness programs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <h3 class="card-title">Head of Training and Community Awareness</h3>
+                            <p class="card-meta">Egyptian Authority for Unified Procurement</p>
+                            <p class="text-muted mb-3">October 2020 - December 2024</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Engineered training modules for thousands of professionals.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Masterminded nationwide awareness campaigns.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Forged strategic alliances with MOHP, UHIA, and universities.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <section id="education" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title animate-on-scroll">Education & Certifications</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 animate-on-scroll">
+                    <div class="card h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="icon-box mb-3"><i class="fas fa-graduation-cap"></i></div>
+                            <h5 class="card-title">MD, Public Health</h5>
+                            <p class="card-meta">Cairo University</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll">
+                    <div class="card h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="icon-box mb-3"><i class="fas fa-chart-line"></i></div>
+                            <h5 class="card-title">MS, Health Economics</h5>
+                            <p class="card-meta">Cairo University</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll">
+                    <div class="card h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="icon-box mb-3"><i class="fas fa-heartbeat"></i></div>
+                            <h5 class="card-title">MS, Public Health</h5>
+                            <p class="card-meta">Cairo University</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 animate-on-scroll">
+                    <div class="card h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="icon-box mb-3"><i class="fas fa-user-md"></i></div>
+                            <h5 class="card-title">MBBS</h5>
+                            <p class="card-meta">Cairo University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="projects" class="section section-alt">
+        <div class="container">
+             <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title animate-on-scroll">Key Projects & Achievements</h2>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="accordion animate-on-scroll" id="projectsAccordion">
+                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#p1"><i class="fas fa-globe me-3"></i>UPA HTA Leadership & Global Engagement</button></h2><div id="p1" class="accordion-collapse collapse show" data-bs-parent="#projectsAccordion"><div class="accordion-body">Activated INAHTA membership, leading team engagement in international activities to elevate Egypt's global HTA standing.</div></div></div>
+                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p2"><i class="fas fa-virus me-3"></i>HCV Screening Economic Analysis</button></h2><div id="p2" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion"><div class="accordion-body">Conducted pivotal economic valuation of HCV screening algorithms, shaping Egypt's national eradication strategy.</div></div></div>
+                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p3"><i class="fas fa-baby me-3"></i>Project: "Give Every Baby a Story"</button></h2><div id="p3" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion"><div class="accordion-body">Evaluated the impact of community health education on maternal and child health outcomes across Egyptian communities.</div></div></div>
+                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p4"><i class="fas fa-microscope me-3"></i>TB Diagnostics Cost-Benefit Analysis</button></h2><div id="p4" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion"><div class="accordion-body">Delivered a compelling economic case for adopting Gene-Xpert technology in diagnosing multi-drug resistant TB.</div></div></div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <ul class="enhanced-list animate-on-scroll">
+                        <li class="enhanced-list-item"><i class="fas fa-award"></i><div><strong>Outstanding Contributions Recognition</strong><br><span class="text-muted">Honored by Cairo University</span></div></li>
+                        <li class="enhanced-list-item"><i class="fas fa-certificate"></i><div><strong>Diploma in Health Technology Assessment</strong><br><span class="text-muted">Syreon Research Institute</span></div></li>
+                        <li class="enhanced-list-item"><i class="fas fa-university"></i><div><strong>Cost-Effectiveness Modelling Training</strong><br><span class="text-muted">The London School of Economics</span></div></li>
+                        <li class="enhanced-list-item"><i class="fas fa-microphone"></i><div><strong>Invited Speaker</strong><br><span class="text-muted">Tri-Country Training Program (TCTP)</span></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title animate-on-scroll">Selected Publications</h2>
+                    <p class="lead animate-on-scroll">A selection of my contributions to public health research. For a full list, please visit my academic profiles.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="enhanced-list animate-on-scroll">
+                        <li class="enhanced-list-item"><i class="fas fa-book-open"></i><div><strong>The Economic Burden of Road Traffic Injuries in Egypt.</strong><br><span class="text-muted">Journal of Global Health, 2017. <a href="#" class="text-decoration-none fw-bold">View ›</a></span></div></li>
+                        <li class="enhanced-list-item"><i class="fas fa-book-open"></i><div><strong>Cost-Effectiveness of Gene-Xpert for MDR-TB Diagnosis.</strong><br><span class="text-muted">The Lancet Infectious Diseases, 2018. <a href="#" class="text-decoration-none fw-bold">View ›</a></span></div></li>
+                        <li class="enhanced-list-item"><i class="fas fa-book-open"></i><div><strong>Impact of Community Health Worker Education in Rural Egypt.</strong><br><span class="text-muted">International Journal of Public Health, 2019. <a href="#" class="text-decoration-none fw-bold">View ›</a></span></div></li>
+                         <li class="enhanced-list-item"><i class="fas fa-book-open"></i><div><strong>Comparative Analysis of HCV Screening Algorithms.</strong><br><span class="text-muted">Hepatology International, 2020. <a href="#" class="text-decoration-none fw-bold">View ›</a></span></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title animate-on-scroll">Core Competencies</h2>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card animate-on-scroll"><div class="icon-box pulse-animation"><i class="fas fa-sitemap"></i></div><h5>Strategic Leadership</h5><p class="text-muted">Visionary leadership in complex healthcare environments.</p></div>
+                <div class="skill-card animate-on-scroll"><div class="icon-box pulse-animation" style="animation-delay: 0.2s;"><i class="fas fa-tasks"></i></div><h5>Project Management</h5><p class="text-muted">Managing large-scale public health projects end-to-end.</p></div>
+                <div class="skill-card animate-on-scroll"><div class="icon-box pulse-animation" style="animation-delay: 0.4s;"><i class="fas fa-chart-line"></i></div><h5>Data Analysis (SPSS)</h5><p class="text-muted">Advanced analysis for evidence-based decision making.</p></div>
+                <div class="skill-card animate-on-scroll"><div class="icon-box pulse-animation" style="animation-delay: 0.6s;"><i class="fas fa-comments"></i></div><h5>Strategic Communication</h5><p class="text-muted">Communicating complex health concepts to diverse audiences.</p></div>
+                <div class="skill-card animate-on-scroll"><div class="icon-box pulse-animation" style="animation-delay: 0.8s;"><i class="fas fa-file-powerpoint"></i></div><h5>Microsoft Office Suite</h5><p class="text-muted">Advanced proficiency in presentations, reports, and data.</p></div>
+                <div class="skill-card animate-on-scroll"><div class="icon-box pulse-animation" style="animation-delay: 1s;"><i class="fas fa-landmark"></i></div><h5>Public Policy</h5><p class="text-muted">Developing and implementing health policies that drive change.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="mb-4">Let's Connect</h3>
+                    <p class="lead mb-4">Ready to collaborate on transformative public health initiatives? Let's discuss how we can work together to create healthier communities.</p>
+                     <div class="d-flex justify-content-center gap-3 gap-md-4 mb-4">
+                        <a href="tel:+201203344637" class="hero-contact-item" aria-label="Call Dr. Amal Sedrak"><i class="fas fa-phone"></i><span>Call Me</span></a>
+                        <a href="mailto:amalnewlife82@gmail.com" class="hero-contact-item" aria-label="Email Dr. Amal Sedrak"><i class="fas fa-envelope"></i><span>Email Me</span></a>
+                         <a href="https://www.linkedin.com/in/amalsedrak/" class="hero-contact-item" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                    </div>
+                    <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+                    <p class="mb-0">&copy; 2025 Prof. Dr. Amal Samir Sedrak. All Rights Reserved.</p>
+                    <p class="small mt-2 opacity-75">Pioneering Healthier Futures through Strategic Public Health Leadership</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Loading Animation
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            setTimeout(() => {
+                loadingOverlay.classList.add('hidden');
+            }, 500); // Faster fade out
+
+            // Navbar Scroll Effect
+            const navbar = document.getElementById('mainNavbar');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Smooth Scrolling for Navigation Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const offsetTop = targetElement.offsetTop - 70; // Adjusted offset for scrolled navbar
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                        // For mobile: close the navbar after clicking a link
+                        const navbarCollapse = document.getElementById('navbarNav');
+                        if (navbarCollapse.classList.contains('show')) {
+                            new bootstrap.Collapse(navbarCollapse).hide();
+                        }
+                    }
+                });
+            });
+
+            // Active Navigation Link on Scroll
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            
+            function updateActiveLink() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 80) { // Adjusted offset
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            window.addEventListener('scroll', updateActiveLink);
+            updateActiveLink(); // Set active link on page load
+
+            // Scroll Animation Observer (Optimized)
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        // Apply a staggered delay based on the element's order in the DOM
+                        entry.target.style.transitionDelay = `${index * 50}ms`;
+                        entry.target.classList.add('animate');
+                        observer.unobserve(entry.target); // Animate only once
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Parallax Effect (Optimized with requestAnimationFrame)
+            const heroSection = document.querySelector('.hero-section');
+            let isTicking = false;
+
+            function updateParallax() {
+                const scrolled = window.pageYOffset;
+                if (heroSection) {
+                    heroSection.style.transform = `translateY(${scrolled * 0.3}px)`;
+                }
+                isTicking = false;
+            }
+
+            window.addEventListener('scroll', function() {
+                if (!isTicking) {
+                    window.requestAnimationFrame(updateParallax);
+                    isTicking = true;
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* === FINAL ENHANCED CUSTOM STYLESHEET V7 (HTML Image Fix) === */
+        /* === ENHANCED CUSTOM STYLESHEET WITH ADDITIONAL VISUALS === */
 
         /* 1. CSS Variables (Magenta Palette) */
         :root {
@@ -37,6 +37,7 @@
             
             --shadow-md: 0 4px 15px rgba(0,0,0,0.08);
             --shadow-lg: 0 10px 30px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 40px rgba(0,0,0,0.15);
             
             --border-radius-lg: 1rem;
             --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -67,26 +68,88 @@
             background: var(--accent-gradient); border-radius: 2px;
         }
 
-        /* 3. Animations */
+        /* 3. Enhanced Animations */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
         .fade-in-on-load { animation: fadeIn 1s ease-out 0.5s forwards; opacity: 0; }
         .animate-on-scroll { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
         .animate-on-scroll.animate { opacity: 1; transform: translateY(0); }
+        .slide-in-left { animation: slideInLeft 0.8s ease-out; }
+        .slide-in-right { animation: slideInRight 0.8s ease-out; }
+        .pulse-animation { animation: pulse 2s infinite; }
+        .float-animation { animation: float 3s ease-in-out infinite; }
 
-        /* 4. Navigation */
+        /* 4. Enhanced Navigation */
         .navbar {
             background: rgba(255, 255, 255, 0.85) !important; backdrop-filter: blur(20px);
             box-shadow: var(--shadow-md); transition: var(--transition); padding: 1rem 0;
+            border-bottom: 1px solid rgba(120, 47, 111, 0.1);
         }
-        .navbar.scrolled { padding: 0.5rem 0; background: rgba(255, 255, 255, 0.95) !important; }
-        .navbar-brand { color: var(--primary-color); font-weight: 700; }
-        .navbar .nav-link { color: var(--text-primary) !important; font-weight: 500; }
-        .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--primary-color) !important; }
+        .navbar.scrolled { 
+            padding: 0.5rem 0; 
+            background: rgba(255, 255, 255, 0.95) !important; 
+            box-shadow: var(--shadow-lg);
+        }
+        .navbar-brand { 
+            color: var(--primary-color); 
+            font-weight: 700; 
+            font-size: 1.5rem;
+            position: relative;
+        }
+        .navbar-brand::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-gradient);
+            transition: width 0.3s ease;
+        }
+        .navbar-brand:hover::after { width: 100%; }
+        .navbar .nav-link { 
+            color: var(--text-primary) !important; 
+            font-weight: 500; 
+            position: relative;
+            margin: 0 0.5rem;
+            transition: var(--transition);
+        }
+        .navbar .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        .navbar .nav-link:hover::before,
+        .navbar .nav-link.active::before { width: 100%; }
+        .navbar .nav-link:hover, 
+        .navbar .nav-link.active { color: var(--primary-color) !important; }
 
-        /* 5. Hero Section with HTML <img> Tag */
+        /* 5. Enhanced Hero Section */
         .hero-section {
             min-height: 100vh;
             color: var(--text-light);
@@ -94,7 +157,7 @@
             align-items: center;
             text-align: center;
             position: relative;
-            overflow: hidden; /* Important for containing absolute elements */
+            overflow: hidden;
         }
         .hero-background-image {
             position: absolute;
@@ -107,6 +170,7 @@
             height: auto;
             object-fit: cover;
             z-index: 1;
+            filter: brightness(0.7) contrast(1.1);
         }
         .hero-overlay {
             position: absolute;
@@ -124,47 +188,213 @@
             transition: var(--transition);
             padding: 0.75rem 1.5rem; border-radius: 50px;
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px); 
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
         }
-        .hero-contact-item:hover { transform: translateY(-3px) scale(1.05); background: var(--accent-color); color: var(--primary-color); }
+        .hero-contact-item::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .hero-contact-item:hover::before { left: 100%; }
+        .hero-contact-item:hover { 
+            transform: translateY(-3px) scale(1.05); 
+            background: var(--accent-color); 
+            color: var(--primary-color);
+            box-shadow: var(--shadow-lg);
+        }
 
-        /* 6. General Components */
-        .section { padding: var(--section-padding); }
-        .section-alt { background-color: var(--off-white-bg); }
+        /* 6. Enhanced Components */
+        .section { padding: var(--section-padding); position: relative; }
+        .section-alt { 
+            background: linear-gradient(135deg, var(--off-white-bg) 0%, #f0f4f8 100%);
+            position: relative;
+        }
+        .section-alt::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23782f6f" opacity="0.02"/><circle cx="75" cy="75" r="1" fill="%2348a9a6" opacity="0.02"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            pointer-events: none;
+        }
         
         .card {
             border: none; border-radius: var(--border-radius-lg);
             box-shadow: var(--shadow-md); transition: var(--transition);
             background: var(--light-color); height: 100%;
+            position: relative;
+            overflow: hidden;
         }
-        .card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
-        .card-meta { color: var(--secondary-color); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: var(--accent-gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .card:hover::before { transform: scaleX(1); }
+        .card:hover { 
+            transform: translateY(-8px); 
+            box-shadow: var(--shadow-xl);
+        }
+        .card-meta { 
+            color: var(--secondary-color); 
+            font-weight: 600; 
+            text-transform: uppercase; 
+            letter-spacing: 0.5px; 
+            font-size: 0.85rem;
+        }
         
-        .value-card { text-align: center; padding: 2.5rem; }
-        .value-card .icon { font-size: 3rem; color: var(--accent-color); margin-bottom: 1.5rem; }
+        .value-card { 
+            text-align: center; 
+            padding: 2.5rem;
+            position: relative;
+        }
+        .value-card .icon { 
+            font-size: 3rem; 
+            color: var(--accent-color); 
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        .value-card .icon::after {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px; height: 80px;
+            border: 2px solid var(--accent-color);
+            border-radius: 50%;
+            opacity: 0.2;
+            animation: pulse 2s infinite;
+        }
         
-        .skill-card { text-align: center; padding: 2rem; }
+        .skill-card { 
+            text-align: center; 
+            padding: 2rem;
+            position: relative;
+        }
         .skill-card .icon {
             font-size: 3.5rem; margin-bottom: 1.5rem;
             background: var(--secondary-gradient);
             -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
             transition: var(--transition);
+            position: relative;
+            display: inline-block;
         }
-        .skill-card:hover .icon { transform: scale(1.15); }
+        .skill-card .icon::before {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px; height: 100px;
+            background: radial-gradient(circle, rgba(120, 47, 111, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        .skill-card:hover .icon { transform: scale(1.15) rotate(5deg); }
+        .skill-card:hover .icon::before { transform: translate(-50%, -50%) scale(1.2); }
         
-        .accordion-button { font-weight: 600; }
-        .accordion-button:not(.collapsed) { background-color: var(--primary-color); color: var(--text-light); }
+        .accordion-button { 
+            font-weight: 600;
+            position: relative;
+            border: none;
+            background: var(--light-color);
+            transition: var(--transition);
+        }
+        .accordion-button::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 4px;
+            background: var(--accent-gradient);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+        .accordion-button:not(.collapsed)::before { transform: scaleY(1); }
+        .accordion-button:not(.collapsed) { 
+            background: linear-gradient(135deg, var(--primary-color), rgba(120, 47, 111, 0.9));
+            color: var(--text-light);
+        }
         .accordion-button:focus { box-shadow: none; }
         
-        /* 7. Footer */
-        .footer { background: var(--primary-color); color: var(--text-light); padding: 4rem 0 2rem; text-align: center; }
-        .footer .hero-contact-item:hover { background: var(--secondary-color); color: var(--text-light); }
+        /* 7. Enhanced Footer */
+        .footer { 
+            background: linear-gradient(135deg, var(--primary-color), rgba(60, 55, 145, 0.9));
+            color: var(--text-light); 
+            padding: 4rem 0 2rem; 
+            text-align: center;
+            position: relative;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+            pointer-events: none;
+        }
+        .footer .hero-contact-item:hover { 
+            background: var(--secondary-color); 
+            color: var(--text-light);
+            transform: translateY(-3px) scale(1.05);
+        }
         
         /* 8. Loading Animation */
-        .loading-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--primary-color); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.75s ease; }
+        .loading-overlay { 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+            background: linear-gradient(135deg, var(--primary-color), rgba(60, 55, 145, 0.9));
+            display: flex; align-items: center; justify-content: center; 
+            z-index: 9999; transition: opacity 0.75s ease; 
+        }
         .loading-overlay.hidden { opacity: 0; pointer-events: none; }
-        .loader { width: 50px; height: 50px; border: 4px solid rgba(255, 255, 255, 0.3); border-top-color: white; border-radius: 50%; animation: spin 1s linear infinite; }
+        .loader { 
+            width: 50px; height: 50px; 
+            border: 4px solid rgba(255, 255, 255, 0.3); 
+            border-top-color: white; border-radius: 50%; 
+            animation: spin 1s linear infinite; 
+        }
         @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* 9. Additional Visual Enhancements */
+        .floating-shapes {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .floating-shapes::before,
+        .floating-shapes::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(212, 180, 131, 0.1);
+            animation: float 6s ease-in-out infinite;
+        }
+        .floating-shapes::before {
+            width: 200px; height: 200px;
+            top: 20%; right: 10%;
+            animation-delay: -2s;
+        }
+        .floating-shapes::after {
+            width: 150px; height: 150px;
+            bottom: 20%; left: 10%;
+            animation-delay: -4s;
+        }
+
+        /* 10. Responsive Enhancements */
+        @media (max-width: 768px) {
+            .section { padding: 4rem 0; }
+            .hero-contact-item { padding: 0.5rem 1rem; font-size: 0.9rem; }
+            .value-card, .skill-card { padding: 1.5rem; }
+            .value-card .icon, .skill-card .icon { font-size: 2.5rem; }
+        }
     </style>
 </head>
 <body>
@@ -174,37 +404,52 @@
 
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="#home">Dr. Amal Sedrak</a>
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-user-md me-2"></i>Dr. Amal Sedrak
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#home"><i class="fas fa-home me-1"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-info-circle me-1"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience"><i class="fas fa-briefcase me-1"></i>Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-cogs me-1"></i>Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications"><i class="fas fa-book me-1"></i>Publications</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <section id="home" class="hero-section">
-        <img src="[attachment_0](attachment)" alt="An abstract medical background with a DNA helix and scientific data visualization." class="hero-background-image">
+        <img src="/home/ubuntu/upload/search_images/iqx7YLk1flCs.jpg" alt="Abstract medical technology background" class="hero-background-image">
         
         <div class="hero-overlay"></div>
+        <div class="floating-shapes"></div>
 
         <div class="container hero-content-container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="fade-in-on-load">
+                        <div class="mb-4">
+                            <i class="fas fa-stethoscope pulse-animation" style="font-size: 4rem; color: var(--accent-color); margin-bottom: 2rem;"></i>
+                        </div>
                         <h1 class="display-3 fw-bold">Prof. Dr. Amal Samir Sedrak</h1>
-                        <p class="lead fs-4 my-4">Pioneering Healthier Futures through Strategic Public Health & Health Economics</p>
+                        <p class="lead fs-4 my-4">
+                            <i class="fas fa-heart-pulse me-2"></i>
+                            Pioneering Healthier Futures through Strategic Public Health & Health Economics
+                        </p>
                         <div class="d-flex justify-content-center flex-wrap gap-3 mt-5">
-                            <a href="tel:+201203344637" class="hero-contact-item" aria-label="Call Dr. Amal Sedrak"><i class="fas fa-phone"></i><span>Call</span></a>
-                            <a href="mailto:amalnewlife82@gmail.com" class="hero-contact-item" aria-label="Email Dr. Amal Sedrak"><i class="fas fa-envelope"></i><span>Email</span></a>
-                            <a href="https://www.linkedin.com/in/amalsedrak/" class="hero-contact-item" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                            <a href="tel:+201203344637" class="hero-contact-item" aria-label="Call Dr. Amal Sedrak">
+                                <i class="fas fa-phone"></i><span>Call</span>
+                            </a>
+                            <a href="mailto:amalnewlife82@gmail.com" class="hero-contact-item" aria-label="Email Dr. Amal Sedrak">
+                                <i class="fas fa-envelope"></i><span>Email</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/amalsedrak/" class="hero-contact-item" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -213,31 +458,43 @@
     </section>
 
     <section id="about" class="section">
+        <div class="floating-shapes"></div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="section-title animate-on-scroll">My Guiding Principles</h2>
+                    <h2 class="section-title animate-on-scroll">
+                        <i class="fas fa-compass me-3"></i>My Guiding Principles
+                    </h2>
                 </div>
             </div>
             <div class="row g-4 text-center">
                 <div class="col-md-4 animate-on-scroll">
                     <div class="card value-card">
-                        <div class="icon"><i class="fas fa-lightbulb"></i></div>
-                        <h5 class="card-title">Innovation</h5>
+                        <div class="icon float-animation"><i class="fas fa-flask"></i></div>
+                        <h5 class="card-title">
+                            <i class="fas fa-lightbulb me-2" style="color: var(--secondary-color);"></i>
+                            Innovation
+                        </h5>
                         <p class="text-secondary">Leveraging cutting-edge research and technology to solve public health challenges.</p>
                     </div>
                 </div>
                 <div class="col-md-4 animate-on-scroll">
                      <div class="card value-card">
-                        <div class="icon"><i class="fas fa-users"></i></div>
-                        <h5 class="card-title">Collaboration</h5>
+                        <div class="icon float-animation" style="animation-delay: -1s;"><i class="fas fa-handshake-angle"></i></div>
+                        <h5 class="card-title">
+                            <i class="fas fa-users me-2" style="color: var(--secondary-color);"></i>
+                            Collaboration
+                        </h5>
                         <p class="text-secondary">Building powerful alliances across sectors to drive collective impact and success.</p>
                     </div>
                 </div>
                 <div class="col-md-4 animate-on-scroll">
                      <div class="card value-card">
-                        <div class="icon"><i class="fas fa-balance-scale"></i></div>
-                        <h5 class="card-title">Equity</h5>
+                        <div class="icon float-animation" style="animation-delay: -2s;"><i class="fas fa-balance-scale-left"></i></div>
+                        <h5 class="card-title">
+                            <i class="fas fa-heart me-2" style="color: var(--secondary-color);"></i>
+                            Equity
+                        </h5>
                         <p class="text-secondary">Striving for fair and just health outcomes for all communities, leaving no one behind.</p>
                     </div>
                 </div>
@@ -249,52 +506,124 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="section-title animate-on-scroll">Professional Experience</h2>
+                    <h2 class="section-title animate-on-scroll">
+                        <i class="fas fa-timeline me-3"></i>Professional Experience
+                    </h2>
                 </div>
             </div>
             <div class="row g-lg-5 g-4">
                 <div class="col-lg-6 animate-on-scroll">
                     <div class="card p-4 p-lg-5">
-                        <h3 class="card-title mb-1"><i class="fas fa-star me-2" style="color: var(--accent-color);"></i>Director of Health Technology Assessment</h3>
-                        <p class="card-meta">Egyptian Authority for Unified Procurement</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                <i class="fas fa-briefcase" style="font-size: 2rem; color: var(--accent-color);"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title mb-1">Director of Health Technology Assessment</h3>
+                                <p class="card-meta mb-0">Egyptian Authority for Unified Procurement</p>
+                            </div>
+                        </div>
                         <p class="mb-0">Championing the national HTA strategy, orchestrating the systematic evaluation of health technologies, and innovating high-impact training programs.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-primary me-2"><i class="fas fa-chart-line me-1"></i>Strategy</span>
+                            <span class="badge bg-secondary me-2"><i class="fas fa-microscope me-1"></i>HTA</span>
+                            <span class="badge bg-success"><i class="fas fa-graduation-cap me-1"></i>Training</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 animate-on-scroll">
                     <div class="card p-4 p-lg-5">
-                        <h3 class="card-title mb-1"><i class="fas fa-award me-2" style="color: var(--secondary-color);"></i>Head of Training & Community Awareness</h3>
-                        <p class="card-meta">Egyptian Authority for Unified Procurement</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                <i class="fas fa-certificate" style="font-size: 2rem; color: var(--secondary-color);"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title mb-1">Head of Training & Community Awareness</h3>
+                                <p class="card-meta mb-0">Egyptian Authority for Unified Procurement</p>
+                            </div>
+                        </div>
                         <p class="mb-0">Engineered training modules for thousands of professionals and masterminded nationwide awareness campaigns, forging key strategic alliances.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-info me-2"><i class="fas fa-users me-1"></i>Community</span>
+                            <span class="badge bg-warning me-2"><i class="fas fa-bullhorn me-1"></i>Awareness</span>
+                            <span class="badge bg-danger"><i class="fas fa-handshake me-1"></i>Partnerships</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
         
     <section id="skills" class="section">
+        <div class="floating-shapes"></div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="section-title animate-on-scroll">Core Competencies</h2>
+                    <h2 class="section-title animate-on-scroll">
+                        <i class="fas fa-star me-3"></i>Core Competencies
+                    </h2>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 animate-on-scroll">
-                    <div class="card skill-card"><div class="icon"><i class="fas fa-sitemap"></i></div><h5 class="mb-0">Strategic Leadership</h5></div>
+                    <div class="card skill-card">
+                        <div class="icon"><i class="fas fa-sitemap"></i></div>
+                        <h5 class="mb-2">
+                            <i class="fas fa-crown me-2" style="color: var(--accent-color); font-size: 1rem;"></i>
+                            Strategic Leadership
+                        </h5>
+                        <p class="text-secondary small mb-0">Driving organizational vision and transformation</p>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 animate-on-scroll">
-                    <div class="card skill-card"><div class="icon"><i class="fas fa-chart-pie"></i></div><h5 class="mb-0">Health Economics</h5></div>
+                    <div class="card skill-card">
+                        <div class="icon"><i class="fas fa-chart-pie"></i></div>
+                        <h5 class="mb-2">
+                            <i class="fas fa-dollar-sign me-2" style="color: var(--accent-color); font-size: 1rem;"></i>
+                            Health Economics
+                        </h5>
+                        <p class="text-secondary small mb-0">Analyzing cost-effectiveness and resource allocation</p>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 animate-on-scroll">
-                    <div class="card skill-card"><div class="icon"><i class="fas fa-microscope"></i></div><h5 class="mb-0">Health Technology Assessment (HTA)</h5></div>
+                    <div class="card skill-card">
+                        <div class="icon"><i class="fas fa-microscope"></i></div>
+                        <h5 class="mb-2">
+                            <i class="fas fa-search me-2" style="color: var(--accent-color); font-size: 1rem;"></i>
+                            Health Technology Assessment
+                        </h5>
+                        <p class="text-secondary small mb-0">Evaluating medical technologies and interventions</p>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 animate-on-scroll">
-                    <div class="card skill-card"><div class="icon"><i class="fas fa-tasks"></i></div><h5 class="mb-0">Project Management</h5></div>
+                    <div class="card skill-card">
+                        <div class="icon"><i class="fas fa-tasks"></i></div>
+                        <h5 class="mb-2">
+                            <i class="fas fa-project-diagram me-2" style="color: var(--accent-color); font-size: 1rem;"></i>
+                            Project Management
+                        </h5>
+                        <p class="text-secondary small mb-0">Leading complex initiatives from conception to completion</p>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 animate-on-scroll">
-                    <div class="card skill-card"><div class="icon"><i class="fas fa-landmark"></i></div><h5 class="mb-0">Public Policy</h5></div>
+                    <div class="card skill-card">
+                        <div class="icon"><i class="fas fa-landmark"></i></div>
+                        <h5 class="mb-2">
+                            <i class="fas fa-gavel me-2" style="color: var(--accent-color); font-size: 1rem;"></i>
+                            Public Policy
+                        </h5>
+                        <p class="text-secondary small mb-0">Shaping healthcare policies and regulations</p>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 animate-on-scroll">
-                    <div class="card skill-card"><div class="icon"><i class="fas fa-handshake"></i></div><h5 class="mb-0">Community Engagement</h5></div>
+                    <div class="card skill-card">
+                        <div class="icon"><i class="fas fa-handshake"></i></div>
+                        <h5 class="mb-2">
+                            <i class="fas fa-comments me-2" style="color: var(--accent-color); font-size: 1rem;"></i>
+                            Community Engagement
+                        </h5>
+                        <p class="text-secondary small mb-0">Building bridges between stakeholders and communities</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -304,15 +633,80 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="section-title animate-on-scroll">Selected Publications & Projects</h2>
+                    <h2 class="section-title animate-on-scroll">
+                        <i class="fas fa-book-open me-3"></i>Selected Publications & Projects
+                    </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 animate-on-scroll">
                     <div class="accordion" id="pubsAccordion">
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#pub1">The Economic Burden of Road Traffic Injuries in Egypt</button></h2><div id="pub1" class="accordion-collapse collapse show" data-bs-parent="#pubsAccordion"><div class="accordion-body"><strong>Journal of Global Health, 2017:</strong> A pioneering national study quantifying the socioeconomic impact of RTIs, influencing road safety policy discussions.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#pub2">Cost-Effectiveness of Gene-Xpert for MDR-TB Diagnosis</button></h2><div id="pub2" class="accordion-collapse collapse" data-bs-parent="#pubsAccordion"><div class="accordion-body"><strong>The Lancet Infectious Diseases, 2018:</strong> Delivered a compelling economic case for adopting advanced diagnostic technology in high-burden settings.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#pub3">Impact of Community Health Worker Education in Rural Egypt</button></h2><div id="pub3" class="accordion-collapse collapse" data-bs-parent="#pubsAccordion"><div class="accordion-body"><strong>International Journal of Public Health, 2019:</strong> Evaluated and confirmed the profound positive impact of community-level health education on maternal and child health outcomes.</div></div></div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#pub1">
+                                    <i class="fas fa-car-crash me-3" style="color: var(--accent-color);"></i>
+                                    The Economic Burden of Road Traffic Injuries in Egypt
+                                </button>
+                            </h2>
+                            <div id="pub1" class="accordion-collapse collapse show" data-bs-parent="#pubsAccordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-journal-whills me-3 mt-1" style="color: var(--secondary-color); font-size: 1.5rem;"></i>
+                                        <div>
+                                            <strong>Journal of Global Health, 2017:</strong> A pioneering national study quantifying the socioeconomic impact of RTIs, influencing road safety policy discussions.
+                                            <div class="mt-2">
+                                                <span class="badge bg-primary me-2">Health Economics</span>
+                                                <span class="badge bg-secondary">Policy Impact</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#pub2">
+                                    <i class="fas fa-dna me-3" style="color: var(--accent-color);"></i>
+                                    Cost-Effectiveness of Gene-Xpert for MDR-TB Diagnosis
+                                </button>
+                            </h2>
+                            <div id="pub2" class="accordion-collapse collapse" data-bs-parent="#pubsAccordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-microscope me-3 mt-1" style="color: var(--secondary-color); font-size: 1.5rem;"></i>
+                                        <div>
+                                            <strong>The Lancet Infectious Diseases, 2018:</strong> Delivered a compelling economic case for adopting advanced diagnostic technology in high-burden settings.
+                                            <div class="mt-2">
+                                                <span class="badge bg-success me-2">Diagnostics</span>
+                                                <span class="badge bg-info">Technology Assessment</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#pub3">
+                                    <i class="fas fa-users-medical me-3" style="color: var(--accent-color);"></i>
+                                    Impact of Community Health Worker Education in Rural Egypt
+                                </button>
+                            </h2>
+                            <div id="pub3" class="accordion-collapse collapse" data-bs-parent="#pubsAccordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-graduation-cap me-3 mt-1" style="color: var(--secondary-color); font-size: 1.5rem;"></i>
+                                        <div>
+                                            <strong>International Journal of Public Health, 2019:</strong> Evaluated and confirmed the profound positive impact of community-level health education on maternal and child health outcomes.
+                                            <div class="mt-2">
+                                                <span class="badge bg-warning me-2">Community Health</span>
+                                                <span class="badge bg-danger">Education Impact</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -323,15 +717,29 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h3 class="mb-4">Let's Connect</h3>
+                    <div class="mb-4">
+                        <i class="fas fa-handshake pulse-animation" style="font-size: 3rem; color: var(--accent-color);"></i>
+                    </div>
+                    <h3 class="mb-4">
+                        <i class="fas fa-network-wired me-2"></i>Let's Connect
+                    </h3>
                     <p class="lead mb-4">Ready to collaborate on transformative public health initiatives? Let's discuss how we can work together to create healthier communities.</p>
                      <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
-                        <a href="tel:+201203344637" class="hero-contact-item" aria-label="Call Dr. Amal Sedrak"><i class="fas fa-phone"></i><span>Call Me</span></a>
-                        <a href="mailto:amalnewlife82@gmail.com" class="hero-contact-item" aria-label="Email Dr. Amal Sedrak"><i class="fas fa-envelope"></i><span>Email Me</span></a>
-                         <a href="https://www.linkedin.com/in/amalsedrak/" class="hero-contact-item" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                        <a href="tel:+201203344637" class="hero-contact-item" aria-label="Call Dr. Amal Sedrak">
+                            <i class="fas fa-phone"></i><span>Call Me</span>
+                        </a>
+                        <a href="mailto:amalnewlife82@gmail.com" class="hero-contact-item" aria-label="Email Dr. Amal Sedrak">
+                            <i class="fas fa-envelope"></i><span>Email Me</span>
+                        </a>
+                         <a href="https://www.linkedin.com/in/amalsedrak/" class="hero-contact-item" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+                        </a>
                     </div>
                     <hr class="my-5" style="border-color: rgba(255,255,255,0.1);">
-                    <p class="mb-0">&copy; 2025 Prof. Dr. Amal Samir Sedrak. All Rights Reserved.</p>
+                    <p class="mb-0">
+                        <i class="fas fa-copyright me-2"></i>
+                        2025 Prof. Dr. Amal Samir Sedrak. All Rights Reserved.
+                    </p>
                 </div>
             </div>
         </div>
@@ -414,7 +822,56 @@
             }, { threshold: 0.1 });
 
             document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+            // --- ENHANCED INTERACTIONS ---
+            // Add hover effects to cards
+            document.querySelectorAll('.card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Add click effects to contact items
+            document.querySelectorAll('.hero-contact-item').forEach(item => {
+                item.addEventListener('click', function(e) {
+                    // Create ripple effect
+                    const ripple = document.createElement('span');
+                    ripple.style.position = 'absolute';
+                    ripple.style.borderRadius = '50%';
+                    ripple.style.background = 'rgba(255,255,255,0.6)';
+                    ripple.style.transform = 'scale(0)';
+                    ripple.style.animation = 'ripple 0.6s linear';
+                    ripple.style.left = '50%';
+                    ripple.style.top = '50%';
+                    ripple.style.width = '20px';
+                    ripple.style.height = '20px';
+                    ripple.style.marginLeft = '-10px';
+                    ripple.style.marginTop = '-10px';
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
         });
+
+        // Add ripple animation CSS
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
     </script>
 </body>
 </html>
+

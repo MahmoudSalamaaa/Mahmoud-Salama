@@ -1,180 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prof. Dr. Amal Samir Sedrak | Public Health Leader</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" /><style>
+    :root {
+        --primary-color: #2e3a59; /* Navy */
+        --secondary-color: #00a9a5; /* Teal */
+        --accent-color: #d1e8e2; /* Pale mint */
+        --text-dark: #1c1f26;
+        --text-light: #ffffff;
+        --bg-light: #f4f6f9;
+        --heading-font: 'Merriweather', serif;
+        --body-font: 'Inter', sans-serif;
+        --transition: all 0.3s ease-in-out;
+    }
 
-    <style>
-        /* --- CUSTOM STYLESHEET --- */
+    body {
+        font-family: var(--body-font);
+        background: var(--bg-light);
+        color: var(--text-dark);
+    }
 
-        /* 1. Variables & Global Styles */
-        :root {
-            --primary-color: #6a11cb; /* Deep Violet */
-            --secondary-color: #2575fc; /* Vibrant Blue */
-            --accent-color: #ff69b4; /* Hot Pink */
-            --background-color: #f5f7fa; /* Light Gray */
-            --text-color: #333;
-            --heading-font: 'Playfair Display', serif;
-            --body-font: 'Montserrat', sans-serif;
-        }
+    h1, h2, h3, h4 {
+        font-family: var(--heading-font);
+        color: var(--primary-color);
+    }
 
-        html {
-            scroll-behavior: smooth;
-        }
+    .navbar {
+        background: var(--primary-color);
+    }
 
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            font-family: var(--body-font);
-        }
-        
-        /* 2. Animation & Typography */
-        .fade-in-section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
+    .navbar .nav-link {
+        color: var(--text-light);
+        transition: var(--transition);
+    }
 
-        .fade-in-section.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .navbar .nav-link:hover {
+        color: var(--secondary-color);
+    }
 
-        h1, h2, .card-title {
-            font-family: var(--heading-font);
-        }
+    .hero-section {
+        background: linear-gradient(120deg, #2e3a59, #00a9a5);
+        color: var(--text-light);
+        padding: 8rem 0 6rem;
+        text-align: center;
+    }
 
-        h2.section-title {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            position: relative;
-            padding-bottom: 15px;
-        }
+    .hero-title {
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
 
-        h2.section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(270deg, var(--primary-color), var(--accent-color));
-            border-radius: 2px;
-        }
+    .hero-subtitle {
+        font-size: 1.25rem;
+        opacity: 0.9;
+    }
 
-        /* 3. Navigation Bar */
-        .navbar {
-            background-color: #fff !important;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .navbar .nav-link {
-            color: var(--primary-color) !important;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            margin: 0 5px;
-        }
+    .section {
+        padding: 5rem 0;
+    }
 
-        .navbar .nav-link:hover, .navbar .nav-link.active {
-            color: var(--accent-color) !important;
-            transform: translateY(-2px);
-        }
-        
-        /* 4. Hero & Section Styling */
-        .hero-header {
-            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-            color: #fff;
-            padding: 7rem 0;
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-        }
+    .section-title {
+        font-size: 2.2rem;
+        position: relative;
+        margin-bottom: 3rem;
+    }
 
-        .hero-header .display-3 { font-weight: 700; }
-        .hero-header .lead { font-size: 1.3rem; font-weight: 300; }
+    .section-title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: var(--secondary-color);
+        margin: 0.5rem auto 0;
+    }
 
-        .contact-info a {
-            color: #fff;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        .contact-info a:hover { opacity: 0.8; }
-        .contact-info i { margin-right: 8px; }
-        
-        .section-padding { padding: 80px 0; }
-        
-        /* 5. Card & Component Styling */
-        .card {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.07);
-            transition: all 0.3s ease-in-out;
-            height: 100%;
-        }
+    .card {
+        border: none;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        transition: var(--transition);
+    }
 
-        .card:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-        }
-        
-        .card-title { color: var(--primary-color); }
-        .card .meta {
-            color: var(--secondary-color);
-            font-weight: 700;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
-        }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
 
-        .list-group-item i {
-            color: var(--accent-color);
-            margin-right: 15px;
-            width: 20px;
-            text-align: center;
-        }
+    .icon-box {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: var(--secondary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 0 auto 1rem;
+    }
 
-        .icon-box {
-            font-size: 2.5rem;
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-        }
-        
-        footer {
-            background: linear-gradient(270deg, var(--primary-color), var(--secondary-color));
-        }
-    </style>
+    .footer {
+        background: var(--primary-color);
+        color: var(--text-light);
+        padding: 3rem 0;
+    }
+
+    .footer a {
+        color: var(--accent-color);
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        color: #fff;
+    }
+</style>
+
 </head>
-<body data-bs-spy="scroll" data-bs-target="#mainNav">
-
-    <header class="hero-header text-center">
-        <div class="container fade-in-section is-visible">
-            <h1 class="display-3">Prof. Dr. Amal Samir Sedrak</h1>
-            <p class="lead mt-3 mb-4">Pioneering Healthier Futures through Strategic Public Health & HTA Leadership</p>
-            <div class="contact-info d-flex justify-content-center flex-wrap gap-4 h5">
-                <span><a href="tel:+201203344637"><i class="fas fa-phone"></i> (+20) 1203344637</a></span>
-                <span><a href="mailto:amalnewlife82@gmail.com"><i class="fas fa-envelope"></i> amalnewlife82@gmail.com</a></span>
-                <span><i class="fas fa-map-marker-alt"></i> Giza, Egypt</span>
-            </div>
-        </div>
-    </header>
-
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="mainNav">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand d-lg-none" href="#">Dr. Amal Sedrak</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Dr. Amal Sedrak</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
@@ -183,177 +138,36 @@
                 </ul>
             </div>
         </div>
-    </nav>
-    
-    <section id="about" class="section-padding">
-        <div class="container">
-            <div class="text-center mb-5 fade-in-section">
-                <h2 class="section-title">About Me</h2>
-            </div>
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-8 fade-in-section">
-                    <p class="lead">A dynamic public health leader dedicated to architecting transformative training programs and captivating community awareness campaigns. I thrive on translating complex data into evidence-based strategies, driving successful projects and forging powerful community alliances.</p>
-                </div>
-                <div class="col-lg-4 text-center fade-in-section">
-                     <div class="icon-box"><i class="fas fa-bullseye"></i></div>
-                    <h5>Strategic Leadership</h5>
-                    
-                    <div class="icon-box mt-4"><i class="fas fa-people-group"></i></div>
-                    <h5>Community Engagement</h5>
-                    
-                    <div class="icon-box mt-4"><i class="fas fa-lightbulb"></i></div>
-                    <h5>Evidence-Based Strategy</h5>
-                </div>
-            </div>
-        </div>
-    </section>
+    </nav><header class="hero-section">
+    <div class="container">
+        <h1 class="hero-title">Prof. Dr. Amal Samir Sedrak</h1>
+        <p class="hero-subtitle">Pioneering Healthier Futures through Public Health & HTA Excellence</p>
+    </div>
+</header>
 
-    <section id="experience" class="section-padding bg-white">
-        <div class="container">
-            <div class="text-center mb-5 fade-in-section">
-                <h2 class="section-title">Professional Experience</h2>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-8 fade-in-section">
-                    <div class="card p-4">
-                        <div class="card-body">
-                            <h3 class="card-title">Director of Health Technology Assessment</h3>
-                            <p class="meta">Egyptian Authority for Unified Procurement, Medical Supplies and Medical Technology Management | January 2025 - Present</p>
-                            <ul>
-                                <li>Championing the national HTA strategy, providing visionary governance across four key administrations to shape the future of healthcare.</li>
-                                <li>Orchestrating the rigorous, systematic evaluation of cutting-edge health technologies to ensure safety, efficacy, and value.</li>
-                                <li>Innovating and launching high-impact training and awareness programs that demystify healthcare technology for professionals and the public.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 mt-4 fade-in-section">
-                    <div class="card p-4">
-                        <div class="card-body">
-                            <h3 class="card-title">Head of Training and Community Awareness</h3>
-                            <p class="meta">Egyptian Authority for Unified Procurement, Medical Supplies and Medical Technology Management | October 2020 - December 2024</p>
-                            <ul>
-                                <li>Engineered and successfully deployed comprehensive training modules that empowered thousands of healthcare professionals across the nation.</li>
-                                <li>Masterminded engaging training curricula and orchestrated nationwide awareness campaigns that resonated with diverse communities.</li>
-                                <li>Forged strategic alliances with critical stakeholders, including MOHP, UHIA, and leading universities, creating a unified front for public health advancement.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title text-center">About Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p>A dynamic public health leader with over 20 years of experience in designing transformative training programs, health policy, and evidence-based strategies. Proven excellence in HTA, economic evaluation, and community engagement.</p>
             </div>
         </div>
-    </section>
-    
-    <section id="education" class="section-padding">
-        <div class="container">
-            <div class="text-center mb-5 fade-in-section">
-                <h2 class="section-title">Education</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-6 fade-in-section">
-                    <div class="card p-3">
-                        <div class="card-body">
-                            <h4 class="card-title">MD in Public Health and Community Medicine</h4>
-                            <p class="meta">Cairo University, Faculty of Medicine | 2009 – 2012</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-6 col-lg-6 fade-in-section">
-                    <div class="card p-3">
-                        <div class="card-body">
-                            <h4 class="card-title">MS in Professional Master of Health Economics</h4>
-                            <p class="meta">Cairo University | 2001 – 2016</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 fade-in-section">
-                    <div class="card p-3">
-                        <div class="card-body">
-                            <h4 class="card-title">MS in Public Health and Community Medicine</h4>
-                            <p class="meta">Cairo University, Faculty of Medicine | 2001 – 2009</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 fade-in-section">
-                    <div class="card p-3">
-                        <div class="card-body">
-                            <h4 class="card-title">Bachelors of Medicine and Surgery</h4>
-                            <p class="meta">Cairo University, Faculty of Medicine | Graduated with Distinction</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <section id="projects" class="section-padding bg-white">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="text-center mb-5 fade-in-section">
-                        <h2 class="section-title">Key Projects</h2>
-                    </div>
-                    <div class="accordion fade-in-section" id="projectsAccordion">
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">UPA HTA Leadership & Global Engagement (2023 - Present)</button></h2><div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#projectsAccordion"><div class="accordion-body">Successfully activated INAHTA membership, spearheading team engagement in international activities and advanced training.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">HCV Screening: National Economic Impact Analysis (2019)</button></h2><div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion"><div class="accordion-body">Conducted a pivotal economic valuation of HCV screening algorithms, delivering critical evidence to shape Egypt's national eradication strategy.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">Project: "Give Every Baby a Story" (2018)</button></h2><div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion"><div class="accordion-body">Evaluated the profound impact of community health education on maternal and child health outcomes across diverse Egyptian communities.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">Tuberculosis Diagnostics: Gene-Xpert Cost-Benefit Analysis (2017)</button></h2><div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion"><div class="accordion-body">Delivered a compelling economic case for the adoption of Gene-Xpert technology in diagnosing multi-drug resistant TB, influencing national health policy.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">The True Cost of a Crash: National RTI Study (2016)</button></h2><div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion"><div class="accordion-body">Pioneered the application of international methodology to quantify the socioeconomic burden of road traffic injuries in Egypt, leading complex data collection and multi-agency collaboration.</div></div></div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                     <div class="text-center mb-5 fade-in-section">
-                        <h2 class="section-title">Achievements</h2>
-                    </div>
-                    <ul class="list-group list-group-flush fade-in-section">
-                        <li class="list-group-item bg-transparent"><i class="fas fa-award"></i><b>Recognized for Outstanding Contributions</b> by Cairo University.</li>
-                        <li class="list-group-item bg-transparent"><i class="fas fa-award"></i><b>Earned Professional Diploma in Health Technology Assessment</b> from the prestigious Syreon Research Institute.</li>
-                        <li class="list-group-item bg-transparent"><i class="fas fa-award"></i><b>Mastered Cost-Effectiveness Modelling in Healthcare</b> at The London School of Economics.</li>
-                        <li class="list-group-item bg-transparent"><i class="fas fa-award"></i><b>Certified in the Health Economics of Vaccines</b> (CPD) through AEC Partners.</li>
-                        <li class="list-group-item bg-transparent"><i class="fas fa-award"></i><b>Completed the elite Access to Innovation Forum</b> (AACME Certified).</li>
-                        <li class="list-group-item bg-transparent"><i class="fas fa-award"></i><b>Invited Speaker</b> at the influential Tri-Country Training Program (TCTP).</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="skills" class="section-padding">
-        <div class="container text-center">
-            <div class="text-center mb-5 fade-in-section">
-                <h2 class="section-title">Core Competencies</h2>
-            </div>
-            <div class="row g-4 fade-in-section">
-                <div class="col-md-4"><div class="card p-3"><div class="card-body"><i class="icon-box fas fa-sitemap"></i><h5 class="card-title">Leadership</h5></div></div></div>
-                <div class="col-md-4"><div class="card p-3"><div class="card-body"><i class="icon-box fas fa-tasks"></i><h5 class="card-title">Project Management</h5></div></div></div>
-                <div class="col-md-4"><div class="card p-3"><div class="card-body"><i class="icon-box fas fa-chart-line"></i><h5 class="card-title">Data Analysis (SPSS)</h5></div></div></div>
-                <div class="col-md-4"><div class="card p-3"><div class="card-body"><i class="icon-box fas fa-comments"></i><h5 class="card-title">Communication</h5></div></div></div>
-                <div class="col-md-4"><div class="card p-3"><div class="card-body"><i class="icon-box fas fa-file-powerpoint"></i><h5 class="card-title">Microsoft Office Suite</h5></div></div></div>
-                <div class="col-md-4"><div class="card p-3"><div class="card-body"><i class="icon-box fas fa-landmark"></i><h5 class="card-title">Public Policy</h5></div></div></div>
-            </div>
-        </div>
-    </section>
+<!-- Additional sections: Experience, Education, Projects, Skills, Footer go here -->
 
-    <footer class="text-white text-center p-4">
-        <div class="container">
-            <p class="mb-0">&copy; 2025 Prof. Dr. Amal Samir Sedrak. All Rights Reserved.</p>
-        </div>
-    </footer>
+<footer class="footer text-center">
+    <div class="container">
+        <h5>Contact</h5>
+        <p>Email: <a href="mailto:amalnewlife82@gmail.com">amalnewlife82@gmail.com</a> | Phone: <a href="tel:+201203344637">+20 120 334 4637</a></p>
+        <p>Location: Giza, Egypt</p>
+        <p class="mt-3 small">&copy; 2025 Prof. Dr. Amal Samir Sedrak. All Rights Reserved.</p>
+    </div>
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Simple Fade-in on Scroll Animation
-        const sections = document.querySelectorAll('.fade-in-section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                }
-            });
-        }, { threshold: 0.1 });
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

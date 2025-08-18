@@ -22,44 +22,15 @@
     <link rel="apple-touch-icon" href="img/ico-114.png" sizes="114x114">
     <link rel="apple-touch-icon" href="img/ico-144.png" sizes="144x144">
 
-    <!-- Styles -->
+    <!-- Base styles (keep your existing files if present) -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
-
-    <style>
-        .second-title {
-            font-size: 30px !important;
-        }
-
-        .navbar-brand .logo {
-            height: 34px;
-        }
-
-        .tp-banner .btn-lg {
-            padding: 12px 22px;
-        }
-
-        .fa-ul li {
-            margin-bottom: .35rem;
-        }
-
-        .name-title h5 {
-            margin-top: .25rem;
-        }
-
-        .portfolio-filter-list li a {
-            text-transform: none;
-        }
-    </style>
-
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Inline custom theme (can be moved to css/custom.css if you prefer) -->
     <!-- Structured data -->
     <script type="application/ld+json">
         {
@@ -99,6 +70,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Recent Works</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#skill">Skills</a></li>
                     <li><a href="#experience">Resume</a></li>
                     <li><a href="#achievements">Achievements</a></li>
@@ -141,7 +113,7 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="section-content bg1" aria-label="About Mahmoud">
+    <section id="about" class="section-content bg1 reveal" aria-label="About Mahmoud">
         <div class="container">
             <div class="row">
                 <div class="section-title item_bottom text-center">
@@ -205,7 +177,7 @@
     </section>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="section-content bg3" aria-label="Recent Works">
+    <section id="portfolio" class="section-content bg3 reveal" aria-label="Recent Works">
         <div class="container">
             <div class="row">
                 <div class="section-title item_bottom text-center">
@@ -226,11 +198,9 @@
                 </div>
             </div>
 
-            <!-- items (fixed typos: Educational, Crisis, Automotive) -->
             <div class="row">
                 <div class="col-md-12">
                     <div id="portfolio-items" class="portfolio-items item_fade_in">
-
                         <article class="design">
                             <a href="#!projects/Procurement.html" aria-label="Procurement System">
                                 <img src="images/portfolio/Procuerment.jpg" alt="Procurement system project" />
@@ -241,7 +211,6 @@
                                 </div>
                             </a>
                         </article>
-
                         <article class="design">
                             <a href="#!projects/tenders.html" aria-label="Tenders and Contracts">
                                 <img src="images/portfolio/Tenders.jpg" alt="Tenders" />
@@ -252,7 +221,6 @@
                                 </div>
                             </a>
                         </article>
-
                         <article class="design">
                             <a href="#!projects/correspondence.html" aria-label="Correspondence Management">
                                 <img src="images/portfolio/Correspondence.jpg" alt="Correspondence" />
@@ -263,7 +231,6 @@
                                 </div>
                             </a>
                         </article>
-
                         <article class="design">
                             <a href="#!projects/AssetManagement.html" aria-label="Asset Management">
                                 <img src="images/portfolio/AssetManagement.jpg" alt="Asset Management" />
@@ -274,7 +241,6 @@
                                 </div>
                             </a>
                         </article>
-
                         <article class="design">
                             <a href="#!projects/CrisisManagement.html" aria-label="Crisis Management">
                                 <img src="images/portfolio/CrisesManagement.jpg" alt="Crisis Management" />
@@ -285,7 +251,6 @@
                                 </div>
                             </a>
                         </article>
-
                         <article class="design">
                             <a href="#!projects/RecruitmentSystem.html" aria-label="Recruitment System">
                                 <img src="images/portfolio/RecruitmentSystem.jpg" alt="Recruitment" />
@@ -296,10 +261,9 @@
                                 </div>
                             </a>
                         </article>
-
                         <article class="photo">
                             <a href="#!projects/mohp.html" aria-label="Ministry of Health and Population of Egypt">
-                                <img src="images/portfolio/mohp.jpg" alt="Ministry of Health and Population of Egypt" />
+                                <img src="images/portfolio/mohp.jpg" alt="Ministry of Health and Population of Egypt website" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-medkit"></i><h3>Ministry of Health and Population of Egypt</h3><span>Website</span>
@@ -307,10 +271,9 @@
                                 </div>
                             </a>
                         </article>
-
                         <article class="photo">
                             <a href="#!projects/UPA.html" aria-label="UPA Website">
-                                <img src="images/portfolio/UPA.jpg" alt="UPA" />
+                                <img src="images/portfolio/UPA.jpg" alt="UPA website" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-bar-chart"></i><h3>UPA — Unified Procurement Authority</h3><span>Website</span>
@@ -318,7 +281,6 @@
                                 </div>
                             </a>
                         </article>
-
                         <article class="design">
                             <a href="#!projects/EducationalPortal.html" aria-label="Educational Portal of Oman">
                                 <img src="images/portfolio/EPortal.jpg" alt="Educational Portal of Oman" />
@@ -329,17 +291,105 @@
                                 </div>
                             </a>
                         </article>
-
-                        <!-- (Remaining portfolio items stay as in your file; only labels/typos corrected where needed) -->
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Featured Projects (new) -->
+    <section id="projects" class="section-content bg1 reveal" aria-label="Featured Projects">
+        <div class="container">
+            <div class="row">
+                <div class="section-title item_bottom text-center">
+                    <div><span class="fa fa-diagram-project fa-2x" aria-hidden="true"></span></div>
+                    <h1>Featured <span>Projects</span></h1>
+                    <p class="muted">A few high-impact deliveries aligned with the resume.</p>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project">
+                    <div class="card">
+                        <div class="thumb">
+                            <img src="images/portfolio/Procuerment.jpg" alt="National procurement & supply platform">
+                        </div>
+                        <div class="p-3 p-md-4">
+                            <div class="chips">
+                                <span class="chip">Dynamics 365</span>
+                                <span class="chip">Public Sector</span>
+                                <span class="chip">High Availability</span>
+                            </div>
+                            <h3 class="title">National Procurement & Supply of Medical Products</h3>
+                            <p class="meta">Impact: 12,000+ entities · 99.9% uptime · -40% cycle time</p>
+                            <p>Centralized tenders, contracts, and inventory flows with real-time analytics and strong governance.</p>
+                            <p class="cta"><a href="#!projects/Procurement.html" aria-label="Open case">View case <i class="fa fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="card">
+                        <div class="thumb">
+                            <img src="images/portfolio/Tenders.jpg" alt="Tenders and contract lifecycle platform">
+                        </div>
+                        <div class="p-3 p-md-4">
+                            <div class="chips">
+                                <span class="chip">Workflow</span>
+                                <span class="chip">Compliance</span>
+                                <span class="chip">BI</span>
+                            </div>
+                            <h3 class="title">Tenders & Contract Lifecycle</h3>
+                            <p class="meta">On-time delivery · Full audit · 70% faster reporting</p>
+                            <p>End-to-end tendering with approvals, e-signatures, and dashboards for transparent decision-making.</p>
+                            <p class="cta"><a href="#!projects/tenders.html">View case <i class="fa fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="card">
+                        <div class="thumb">
+                            <img src="images/portfolio/AssetManagement.jpg" alt="Enterprise asset management">
+                        </div>
+                        <div class="p-3 p-md-4">
+                            <div class="chips">
+                                <span class="chip">EAM</span>
+                                <span class="chip">IoT-Ready</span>
+                                <span class="chip">Barcode/RFID</span>
+                            </div>
+                            <h3 class="title">Enterprise Asset Management</h3>
+                            <p class="meta">Inventory accuracy ↑ · Losses ↓ · Better utilization</p>
+                            <p>Lifecycle tracking for medical assets with preventive maintenance and procurement links.</p>
+                            <p class="cta"><a href="#!projects/AssetManagement.html">View case <i class="fa fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="card">
+                        <div class="thumb">
+                            <img src="images/portfolio/EPortal.jpg" alt="Educational portal of Oman">
+                        </div>
+                        <div class="p-3 p-md-4">
+                            <div class="chips">
+                                <span class="chip">EdTech</span>
+                                <span class="chip">Scalable</span>
+                                <span class="chip">Full-Stack</span>
+                            </div>
+                            <h3 class="title">Educational Portal of Oman</h3>
+                            <p class="meta">High traffic · Secure · Maintainable</p>
+                            <p>Modernized e-learning experience with robust backend and accessible design patterns.</p>
+                            <p class="cta"><a href="#!projects/EducationalPortal.html">View case <i class="fa fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Achievements -->
-    <section id="achievements" class="section-content bg2" aria-label="Key Achievements">
+    <section id="achievements" class="section-content bg2 reveal" aria-label="Key Achievements">
         <div class="container">
             <div class="row">
                 <div class="section-title item_bottom text-center">
@@ -411,8 +461,8 @@
         </div>
     </section>
 
-    <!-- Skills (kept structure, reflects resume groupings) -->
-    <section id="skill" class="section-content bg2" aria-label="Skills">
+    <!-- Skills -->
+    <section id="skill" class="section-content bg2 reveal" aria-label="Skills">
         <div class="container">
             <div class="row">
                 <div class="section-title item_bottom text-center">
@@ -421,14 +471,35 @@
                 </div>
             </div>
 
-            <!-- (Existing skill grids retained; headings corrected & consistent) -->
-            <!-- ... keep your current skills HTML blocks here unchanged from the improved file ... -->
-
+            <!-- Keep your existing skill blocks; example grid -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="services-box">
+                        <div class="services-box-icon"><i class="fa fa-gears"></i></div>
+                        <h4>Architecture & Platforms</h4>
+                        <p>Microservices, REST, CI/CD, Docker, Kubernetes, Cloud (Azure), High Availability.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="services-box">
+                        <div class="services-box-icon"><i class="fa fa-code"></i></div>
+                        <h4>Development</h4>
+                        <p>C#, ASP.NET, JS/TS, React, SQL Server, PostgreSQL, Power BI, Superset.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="services-box">
+                        <div class="services-box-icon"><i class="fa fa-shield"></i></div>
+                        <h4>Security & Governance</h4>
+                        <p>IAM, MFA, RBAC, Data Protection, Auditing, Policy & Compliance.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Callout -->
-    <section class="fullwidth-section bg-callout" aria-label="Hire callout">
+    <section class="fullwidth-section bg-callout reveal" aria-label="Hire callout">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -441,7 +512,7 @@
     </section>
 
     <!-- Resume -->
-    <section id="experience" class="section-content bg2" aria-label="Resume">
+    <section id="experience" class="section-content bg2 reveal" aria-label="Resume">
         <div class="container">
             <div class="row">
                 <div class="section-title item_bottom text-center">
@@ -454,7 +525,6 @@
                 <ul class="timeline list-unstyled">
                     <li class="title">Present</li>
 
-                    <!-- CTDTO -->
                     <li class="note item_left">
                         <h4>The Egyptian Authority for Unified Procurement, Medical Supply and the Management of Medical Technology (UPA)</h4>
                         <h5>Chief Technology &amp; Digital Transformation Officer (CTDTO)</h5>
@@ -471,7 +541,6 @@
                         <span class="arrow fa fa-play" aria-hidden="true"></span>
                     </li>
 
-                    <!-- General Manager -->
                     <li class="note item_right">
                         <h4>UPA — Systems, Applications & Technical Support Dept.</h4>
                         <h5>General Manager</h5>
@@ -486,7 +555,6 @@
                         <span class="arrow fa fa-play" aria-hidden="true"></span>
                     </li>
 
-                    <!-- Integral Solutions -->
                     <li class="note item_left">
                         <h4>Integral Solutions LLC — Muscat, Oman</h4>
                         <h5>Development Team Leader & Senior Full-Stack Developer</h5>
@@ -501,7 +569,6 @@
                         <span class="arrow fa fa-play" aria-hidden="true"></span>
                     </li>
 
-                    <!-- Keyframe -->
                     <li class="note item_right">
                         <h4>Keyframe Egypt — Cairo, Egypt</h4>
                         <h5>Development Team Leader & Senior Full-Stack Developer</h5>
@@ -516,7 +583,6 @@
                         <span class="arrow fa fa-play" aria-hidden="true"></span>
                     </li>
 
-                    <!-- Education -->
                     <li class="title">Education</li>
                     <li class="note item_left">
                         <h4>Bachelor of Computer Science</h4>
@@ -526,7 +592,6 @@
                         <span class="arrow fa fa-play" aria-hidden="true"></span>
                     </li>
 
-                    <!-- Languages -->
                     <li class="title">Languages</li>
                     <li class="note item_left"><h4>Arabic</h4><h5>Native</h5><span class="arrow fa fa-play" aria-hidden="true"></span></li>
                     <li class="note item_right"><h4>English</h4><h5>Advanced</h5><span class="arrow fa fa-play" aria-hidden="true"></span></li>
@@ -536,7 +601,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section-content bg1" aria-label="Contact">
+    <section id="contact" class="section-content bg1 reveal" aria-label="Contact">
         <div class="container">
             <div class="row">
                 <div class="section-title item_bottom text-center">
@@ -550,14 +615,45 @@
         </div>
     </section>
 
-    <!-- Scripts (unchanged from your template) -->
+    <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- Reveal-on-scroll (tiny, dependency-free) -->
     <script>
-        // Ensure counters show actual values immediately on load
-        $('.counters-item strong').each(function () { var t = $(this).attr('data-to'); if (t) { $(this).text(t + (/\+$/.test(this.textContent) ? '+' : '')); } });
+        (function () {
+            var els = [].slice.call(document.querySelectorAll('.reveal'));
+            if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (ent) { if (ent.isIntersecting) { ent.target.classList.add('in'); io.unobserve(ent.target); } });
+            }, { rootMargin: '-10% 0px -10% 0px' });
+            els.forEach(function (e) { io.observe(e); });
+        })();
+    </script>
+
+    <!-- Active section highlight in navbar -->
+    <script>
+        (function () {
+            var links = [].slice.call(document.querySelectorAll('.navbar .nav a[href^="#"]'));
+            var secs = links.map(function (a) { try { return document.querySelector(a.getAttribute('href')); } catch (e) { return null; } }).filter(Boolean);
+            function onScroll() {
+                var y = window.scrollY + 120, cur = null;
+                secs.forEach(function (s) { if (s.offsetTop <= y) { cur = s.id; } });
+                links.forEach(function (a) { a.parentElement.classList.toggle('active', a.getAttribute('href') === '#' + cur); });
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        })();
+    </script>
+
+    <!-- Counter instant values -->
+    <script>
+        $('.counters-item strong').each(function () {
+            var t = $(this).attr('data-to');
+            if (t) { $(this).text(t + (/\+$/.test(this.textContent) ? '+' : '')); }
+        });
     </script>
 </body>
 </html>

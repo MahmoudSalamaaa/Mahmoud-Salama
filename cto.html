@@ -1718,53 +1718,314 @@
     </section>
     <!-- End Experience Timeline Section -->
     <!-- === Professional Involvements (rich, iconized, animated) === -->
-    <section id="professional-involvements" class="pi-section">
+    <!-- === Professional Involvements (Vertical Timeline) === -->
+    <!-- === Professional Involvements (Vertical Chronological Timeline) === -->
+    <section id="professional-involvements" class="pi-timeline">
         <h2 class="pi-title"><i class="fa-solid fa-handshake-angle"></i> Professional Involvements</h2>
-        <ul class="pi-grid">
-            <li class="pi-card reveal" style="--d:0ms">
-                <span class="pi-icon"><i class="fa-solid fa-microphone"></i></span>
-                <div>
-                    <h3>Conference Speaker</h3>
-                    <p>Delivered keynotes at technology and healthcare events on digital transformation and AI adoption.</p>
+
+        <ol class="tl">
+            <!-- 2023 -->
+            <li class="tl-item reveal" style="--d:0ms">
+                <div class="tl-marker"><i class="fa-solid fa-hospital"></i></div>
+                <div class="tl-content">
+                    <h3 class="tl-heading">Africa Health Excon – 2nd Edition</h3>
+                    <h5 class="tl-link"><a href="https://africahealthexcon.com" target="_blank">africahealthexcon.com</a></h5>
+                    <p>Actively contributed to discussions and decision‑making processes for organizing the conference.</p>
+                    <time class="tl-date">Jun 2023</time>
                 </div>
             </li>
-            <li class="pi-card reveal" style="--d:100ms">
-                <span class="pi-icon"><i class="fa-solid fa-chalkboard-user"></i></span>
-                <div>
-                    <h3>Industry Advisor</h3>
-                    <p>Advised government committees on e-procurement strategy, interoperability, and HTA digital standards.</p>
+
+            <!-- 2022 -->
+            <li class="tl-item reveal" style="--d:120ms">
+                <div class="tl-marker"><i class="fa-solid fa-microphone"></i></div>
+                <div class="tl-content">
+                    <h3 class="tl-heading">Manama Health – 1st Edition</h3>
+                    <h5 class="tl-link"><a href="https://www.manamahealth.com" target="_blank">manamahealth.com</a></h5>
+                    <p>Participated as a General Manager at UPA; delivered a lecture on bioinformatics as a featured speaker.</p>
+                    <time class="tl-date">Dec 2022</time>
                 </div>
             </li>
-            <li class="pi-card reveal" style="--d:200ms">
-                <span class="pi-icon"><i class="fa-solid fa-users"></i></span>
-                <div>
-                    <h3>Panelist &amp; Moderator</h3>
-                    <p>Moderated expert panels on national data platforms, cybersecurity, and digital health ecosystems.</p>
+
+            <li class="tl-item reveal" style="--d:240ms">
+                <div class="tl-marker"><i class="fa-solid fa-hospital-user"></i></div>
+                <div class="tl-content">
+                    <h3 class="tl-heading">Africa Health Excon – 1st Edition</h3>
+                    <h5 class="tl-link"><a href="https://africahealthexcon.com/Home/About" target="_blank">africahealthexcon.com/Home/About</a></h5>
+                    <p>Collaborated with UPA leadership to organize the inaugural conference and ensure operational success.</p>
+                    <time class="tl-date">Jun 2022</time>
                 </div>
             </li>
-            <li class="pi-card reveal" style="--d:300ms">
-                <span class="pi-icon"><i class="fa-solid fa-user-graduate"></i></span>
-                <div>
-                    <h3>Mentorship Programs</h3>
-                    <p>Mentored startups and early-career engineers in architecture, delivery practices, and analytics.</p>
+
+            <!-- 2021–2023 -->
+            <li class="tl-item reveal" style="--d:360ms">
+                <div class="tl-marker"><i class="fa-solid fa-syringe"></i></div>
+                <div class="tl-content">
+                    <h3 class="tl-heading">Track &amp; Trace for Pharmaceutical Products — Committee Member</h3>
+                    <p>Worked with UPA, the Drug Authority, and the Ministry of Health to define the project’s vision, governance, and roadmap.</p>
+                    <time class="tl-date">2021 – 2023</time>
                 </div>
             </li>
-            <li class="pi-card reveal" style="--d:400ms">
-                <span class="pi-icon"><i class="fa-solid fa-book-open"></i></span>
-                <div>
-                    <h3>Research Contributor</h3>
-                    <p>Co-authored articles on AI in supply chains, demand planning, and payer analytics.</p>
+
+            <!-- 2022–2023 -->
+            <li class="tl-item reveal" style="--d:480ms">
+                <div class="tl-marker"><i class="fa-solid fa-droplet"></i></div>
+                <div class="tl-content">
+                    <h3 class="tl-heading">Egypt’s Blood Operations Oversight Board — Member</h3>
+                    <p>Served under the direction of the Egyptian Minister of Health as a member of the national Blood Operations Control Board.</p>
+                    <time class="tl-date">2022 – 2023</time>
                 </div>
             </li>
-            <li class="pi-card reveal" style="--d:500ms">
-                <span class="pi-icon"><i class="fa-solid fa-network-wired"></i></span>
-                <div>
-                    <h3>Professional Networks</h3>
-                    <p>Active member of regional tech associations; organizes knowledge-sharing and standards workshops.</p>
-                </div>
-            </li>
-        </ul>
+        </ol>
     </section>
+
+    <style>
+        /* Section heading */
+        #professional-involvements.pi-timeline {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 32px 0;
+            box-shadow: 0 8px 24px rgba(0,0,0,.08)
+        }
+
+        #professional-involvements .pi-title {
+            font-size: 28px;
+            margin: 0 0 18px;
+            color: #0d6efd;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            border-bottom: 3px solid #0d6efd1a;
+            padding-bottom: 8px
+        }
+
+        /* Vertical timeline */
+        #professional-involvements .tl {
+            position: relative;
+            list-style: none;
+            margin: 0;
+            padding: 6px 0 0
+        }
+
+            #professional-involvements .tl:before {
+                content: "";
+                position: absolute;
+                left: 26px;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: linear-gradient(#0d6efd,#0d6efd33)
+            }
+
+        #professional-involvements .tl-item {
+            position: relative;
+            display: flex;
+            gap: 16px;
+            padding: 14px 12px 14px 64px
+        }
+
+            #professional-involvements .tl-item + .tl-item {
+                margin-top: 4px
+            }
+
+        /* Marker */
+        #professional-involvements .tl-marker {
+            position: absolute;
+            left: 14px;
+            top: 18px;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: #fff;
+            border: 3px solid #0d6efd;
+            color: #0d6efd;
+            box-shadow: 0 6px 16px rgba(13,110,253,.2)
+        }
+
+        /* Card */
+        #professional-involvements .tl-content {
+            flex: 1;
+            background: #f8fbff;
+            border: 1px solid #e6f0ff;
+            border-left: 6px solid #0d6efd;
+            border-radius: 12px;
+            padding: 14px 16px;
+            box-shadow: 0 6px 18px rgba(13,110,253,.06);
+            transition: transform .25s ease, box-shadow .25s ease, background .25s ease
+        }
+
+        #professional-involvements .tl-item:hover .tl-content {
+            transform: translateY(-3px);
+            background: #f1f7ff;
+            box-shadow: 0 12px 28px rgba(13,110,253,.12)
+        }
+
+        #professional-involvements .tl-heading {
+            margin: 0 0 6px;
+            font-size: 18px;
+            color: #0b5ed7
+        }
+
+        #professional-involvements .tl-link {
+            margin: 0 0 6px;
+            font-weight: 600
+        }
+
+            #professional-involvements .tl-link a {
+                color: #0d6efd;
+                text-decoration: none
+            }
+
+                #professional-involvements .tl-link a:hover {
+                    text-decoration: underline
+                }
+
+        #professional-involvements .tl-content p {
+            margin: 0 0 8px;
+            font-size: 14.5px;
+            line-height: 1.6;
+            color: #2f2f2f
+        }
+
+        #professional-involvements .tl-date {
+            display: inline-block;
+            font-size: 12.5px;
+            color: #2752a3;
+            background: #e9f2ff;
+            border-radius: 999px;
+            padding: 4px 10px
+        }
+
+        /* Reveal animation */
+        #professional-involvements .reveal {
+            opacity: 0;
+            transform: translateY(14px);
+            will-change: transform,opacity;
+            transition: opacity .55s ease var(--d,0ms),transform .55s ease var(--d,0ms)
+        }
+
+            #professional-involvements .reveal.in-view {
+                opacity: 1;
+                transform: none
+            }
+
+        @media (max-width:560px) {
+            #professional-involvements .tl:before {
+                left: 20px
+            }
+
+            #professional-involvements .tl-item {
+                padding-left: 56px
+            }
+
+            #professional-involvements .tl-marker {
+                left: 8px
+            }
+        }
+    </style>
+
+    <script>
+        (function () {
+            var nodes = document.querySelectorAll('#professional-involvements .reveal');
+            if (!('IntersectionObserver' in window)) { nodes.forEach(function (n) { n.classList.add('in-view'); }); return; }
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); } });
+            }, { threshold: 0.18 });
+            nodes.forEach(function (n) { io.observe(n); });
+        })();
+    </script>
+    <!-- /Professional Involvements vertical timeline -->
+
+    <style>
+        .pi-timeline-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 32px 0;
+            box-shadow: 0 8px 24px rgba(0,0,0,.08);
+        }
+
+            .pi-timeline-section .pi-title {
+                font-size: 28px;
+                margin: 0 0 30px;
+                color: #0d6efd;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                border-bottom: 3px solid #0d6efd1a;
+                padding-bottom: 8px;
+            }
+
+        .timeline {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            border-left: 3px solid #0d6efd33;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 20px 0 20px 40px;
+            padding-left: 20px;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            left: -33px;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #0d6efd;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            box-shadow: 0 0 0 4px #fff;
+        }
+
+        .timeline-content h3 {
+            margin: 0 0 5px;
+            font-size: 18px;
+            color: #0b5ed7;
+        }
+
+        .timeline-content h5 {
+            margin: 0 0 8px;
+            font-size: 14px;
+        }
+
+        .timeline-content p {
+            margin: 0 0 6px;
+            font-size: 14.5px;
+            line-height: 1.6;
+            color: #2f2f2f;
+        }
+
+        .timeline-content .date {
+            font-size: 13px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        /* reveal animation */
+        .timeline-item.reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: .6s ease all;
+        }
+
+            .timeline-item.reveal.in-view {
+                opacity: 1;
+                transform: none;
+            }
+    </style>
+
+
+
 
     <!-- Local styles (scoped) -->
     <style>
@@ -2661,6 +2922,16 @@
                 });
             }, { threshold: 0.15 });
             cards.forEach(function (c) { io.observe(c); });
+        })();
+    </script>
+    <script>
+        (function () {
+            var items = document.querySelectorAll('.timeline-item.reveal');
+            if (!('IntersectionObserver' in window)) { items.forEach(i => i.classList.add('in-view')); return; }
+            var io = new IntersectionObserver((entries) => {
+                entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); } });
+            }, { threshold: 0.15 });
+            items.forEach(i => io.observe(i));
         })();
     </script>
 </body>

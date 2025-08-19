@@ -1864,18 +1864,6 @@
     </style>
 
     <!-- Minimal JS: IntersectionObserver for scroll-in reveal (no dependencies) -->
-    <script>
-        (function () {
-            var cards = document.querySelectorAll('#professional-involvements .reveal');
-            if (!('IntersectionObserver' in window)) { cards.forEach(function (c) { c.classList.add('in-view'); }); return; }
-            var io = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) { entry.target.classList.add('in-view'); io.unobserve(entry.target); }
-                });
-            }, { threshold: 0.15 });
-            cards.forEach(function (c) { io.observe(c); });
-        })();
-    </script>
     <!-- Requires Font Awesome 6 on the page head -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
     <!-- /Professional Involvements -->
@@ -2663,5 +2651,17 @@
     <!-- END SLIDER REVOLUTION 4.x SCRIPTS  -->
     <script type="text/javascript" src="js/script.js"></script>
     <!-- Js Library -->
+    <script>
+        (function () {
+            var cards = document.querySelectorAll('#professional-involvements .reveal');
+            if (!('IntersectionObserver' in window)) { cards.forEach(function (c) { c.classList.add('in-view'); }); return; }
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) { entry.target.classList.add('in-view'); io.unobserve(entry.target); }
+                });
+            }, { threshold: 0.15 });
+            cards.forEach(function (c) { io.observe(c); });
+        })();
+    </script>
 </body>
 </html>

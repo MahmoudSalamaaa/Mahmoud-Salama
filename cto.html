@@ -1717,6 +1717,168 @@
         </div>
     </section>
     <!-- End Experience Timeline Section -->
+    <!-- === Professional Involvements (rich, iconized, animated) === -->
+    <section id="professional-involvements" class="pi-section">
+        <h2 class="pi-title"><i class="fa-solid fa-handshake-angle"></i> Professional Involvements</h2>
+        <ul class="pi-grid">
+            <li class="pi-card reveal" style="--d:0ms">
+                <span class="pi-icon"><i class="fa-solid fa-microphone"></i></span>
+                <div>
+                    <h3>Conference Speaker</h3>
+                    <p>Delivered keynotes at technology and healthcare events on digital transformation and AI adoption.</p>
+                </div>
+            </li>
+            <li class="pi-card reveal" style="--d:100ms">
+                <span class="pi-icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+                <div>
+                    <h3>Industry Advisor</h3>
+                    <p>Advised government committees on e-procurement strategy, interoperability, and HTA digital standards.</p>
+                </div>
+            </li>
+            <li class="pi-card reveal" style="--d:200ms">
+                <span class="pi-icon"><i class="fa-solid fa-users"></i></span>
+                <div>
+                    <h3>Panelist &amp; Moderator</h3>
+                    <p>Moderated expert panels on national data platforms, cybersecurity, and digital health ecosystems.</p>
+                </div>
+            </li>
+            <li class="pi-card reveal" style="--d:300ms">
+                <span class="pi-icon"><i class="fa-solid fa-user-graduate"></i></span>
+                <div>
+                    <h3>Mentorship Programs</h3>
+                    <p>Mentored startups and early-career engineers in architecture, delivery practices, and analytics.</p>
+                </div>
+            </li>
+            <li class="pi-card reveal" style="--d:400ms">
+                <span class="pi-icon"><i class="fa-solid fa-book-open"></i></span>
+                <div>
+                    <h3>Research Contributor</h3>
+                    <p>Co-authored articles on AI in supply chains, demand planning, and payer analytics.</p>
+                </div>
+            </li>
+            <li class="pi-card reveal" style="--d:500ms">
+                <span class="pi-icon"><i class="fa-solid fa-network-wired"></i></span>
+                <div>
+                    <h3>Professional Networks</h3>
+                    <p>Active member of regional tech associations; organizes knowledge-sharing and standards workshops.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Local styles (scoped) -->
+    <style>
+        /* container */
+        #professional-involvements.pi-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 32px 0;
+            box-shadow: 0 8px 24px rgba(0,0,0,.08);
+        }
+
+        #professional-involvements .pi-title {
+            font-size: 28px;
+            margin: 0 0 18px;
+            color: #0d6efd;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            border-bottom: 3px solid #0d6efd1a;
+            padding-bottom: 8px;
+        }
+
+        /* grid */
+        #professional-involvements .pi-grid {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2,minmax(280px,1fr));
+            gap: 18px;
+        }
+
+        @media (max-width: 992px) {
+            #professional-involvements .pi-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* cards */
+        #professional-involvements .pi-card {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            background: #f8fbff;
+            border-left: 6px solid #0d6efd;
+            border-radius: 12px;
+            padding: 16px;
+            transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+        }
+
+            #professional-involvements .pi-card:hover {
+                transform: translateY(-4px);
+                background: #f1f7ff;
+                box-shadow: 0 10px 26px rgba(13,110,253,.12);
+            }
+
+        /* icons */
+        #professional-involvements .pi-icon {
+            font-size: 22px;
+            line-height: 1;
+            color: #0d6efd;
+            flex: 0 0 auto;
+            width: 40px;
+            height: 40px;
+            display: grid;
+            place-items: center;
+            background: #0d6efd14;
+            border-radius: 10px;
+        }
+
+        #professional-involvements h3 {
+            margin: 0 0 4px;
+            font-size: 18px;
+            color: #0b5ed7;
+        }
+
+        #professional-involvements p {
+            margin: 0;
+            font-size: 14.5px;
+            line-height: 1.6;
+            color: #2f2f2f;
+        }
+
+        /* reveal-on-scroll animation */
+        #professional-involvements .reveal {
+            opacity: 0;
+            transform: translateY(14px);
+            will-change: transform, opacity;
+            transition: opacity .5s ease var(--d,0ms), transform .5s ease var(--d,0ms);
+        }
+
+            #professional-involvements .reveal.in-view {
+                opacity: 1;
+                transform: none;
+            }
+    </style>
+
+    <!-- Minimal JS: IntersectionObserver for scroll-in reveal (no dependencies) -->
+    <script>
+        (function () {
+            var cards = document.querySelectorAll('#professional-involvements .reveal');
+            if (!('IntersectionObserver' in window)) { cards.forEach(function (c) { c.classList.add('in-view'); }); return; }
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) { entry.target.classList.add('in-view'); io.unobserve(entry.target); }
+                });
+            }, { threshold: 0.15 });
+            cards.forEach(function (c) { io.observe(c); });
+        })();
+    </script>
+    <!-- Requires Font Awesome 6 on the page head -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+    <!-- /Professional Involvements -->
     <!-- Strengths Section -->
     <section id="strengths" class="section-content bg1">
         <div class="container">

@@ -1925,70 +1925,66 @@
 
 
     <!-- Achievements Section -->
-    <section id="achievements" class="section-content bg3">
+    <section id="achievements" class="section-content achievements-clean">
         <div class="container">
             <div class="row">
                 <div class="section-title item_bottom text-center">
                     <div><span class="fa fa-trophy fa-2x"></span></div>
                     <h1>Key <span>Achievements</span></h1>
-                    <p class="section-subtitle">Proven record of driving national-scale transformation, efficiency, and measurable business impact.</p>
+                    <p class="section-subtitle">Impact at scale through reliable delivery, measurable outcomes, and secure-by-design systems.</p>
                 </div>
             </div>
 
             <div class="row item_bottom">
-                <!-- Achievement 1 -->
+                <!-- 1 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="achievement-card">
-                        <i class="fa-solid fa-globe fa-3x"></i>
+                    <div class="achievement-card" tabindex="0">
+                        <i class="fa-solid fa-globe"></i>
                         <h4>Digital Transformation Leadership</h4>
-                        <p>Led national initiatives impacting <strong>12,000+ entities</strong>, modernizing core systems aligned with Egypt Vision 2030.</p>
+                        <p>Modernized core platforms across <strong>12,000+ entities</strong>, aligned to Egypt Vision 2030.</p>
                     </div>
                 </div>
-
-                <!-- Achievement 2 -->
+                <!-- 2 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="achievement-card">
-                        <i class="fa-solid fa-gears fa-3x"></i>
+                    <div class="achievement-card" tabindex="0">
+                        <i class="fa-solid fa-gears"></i>
                         <h4>Operational Efficiency</h4>
-                        <p>Redesigned procurement, inventory, and warehousing, reducing cycle times by <strong>40%</strong> and workload by <strong>60%</strong>.</p>
+                        <p>Reduced cycle times by <strong>40%</strong> and manual workload by <strong>60%</strong> across procurement and inventory.</p>
                     </div>
                 </div>
-
-                <!-- Achievement 3 -->
+                <!-- 3 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="achievement-card">
-                        <i class="fa-solid fa-people-group fa-3x"></i>
+                    <div class="achievement-card" tabindex="0">
+                        <i class="fa-solid fa-people-group"></i>
                         <h4>Team Building & Leadership</h4>
-                        <p>Built and mentored cross-functional teams of <strong>30+ developers</strong>, fostering an innovation-driven culture.</p>
+                        <p>Built and mentored cross-functional teams of <strong>30+ developers</strong> to ship reliably.</p>
                     </div>
                 </div>
             </div>
 
             <div class="row item_bottom">
-                <!-- Achievement 4 -->
+                <!-- 4 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="achievement-card">
-                        <i class="fa-solid fa-clipboard-check fa-3x"></i>
+                    <div class="achievement-card" tabindex="0">
+                        <i class="fa-solid fa-clipboard-check"></i>
                         <h4>Delivery Excellence</h4>
-                        <p>Oversaw digital projects worth <strong>EGP 150M+</strong>, ensuring on-time delivery with measurable ROI.</p>
+                        <p>Oversaw programs worth <strong>EGP 150M+</strong> with clear ROI and on-time delivery.</p>
                     </div>
                 </div>
-
-                <!-- Achievement 5 -->
+                <!-- 5 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="achievement-card">
-                        <i class="fa-solid fa-chart-pie fa-3x"></i>
-                        <h4>Data-Driven Decision Making</h4>
-                        <p>Deployed analytics platforms (Power BI, Superset), cutting reporting time by <strong>70%</strong> and improving visibility.</p>
+                    <div class="achievement-card" tabindex="0">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <h4>Data-Driven Decisions</h4>
+                        <p>Deployed real-time analytics (Power BI, Superset), cutting reporting time by <strong>70%</strong>.</p>
                     </div>
                 </div>
-
-                <!-- Achievement 6 -->
+                <!-- 6 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="achievement-card">
-                        <i class="fa-solid fa-shield-halved fa-3x"></i>
+                    <div class="achievement-card" tabindex="0">
+                        <i class="fa-solid fa-shield-halved"></i>
                         <h4>Enterprise Security & Compliance</h4>
-                        <p>Implemented encryption, MFA, and governance policies, achieving <strong>100% compliance</strong> with national standards.</p>
+                        <p>Encryption, MFA, and governance policies delivering <strong>100% compliance</strong>.</p>
                     </div>
                 </div>
             </div>
@@ -1996,71 +1992,163 @@
     </section>
 
     <style>
-        #achievements .section-subtitle {
-            max-width: 780px;
-            margin: 10px auto 0;
-            font-size: 16px;
-            opacity: .9;
+        /* ----- Section background (soft, readable) ----- */
+        .achievements-clean {
+            background: #f8f9fb; /* neutral light gray-blue */
+            padding-top: 60px;
+            padding-bottom: 60px;
         }
 
+            .achievements-clean .section-title h1,
+            .achievements-clean .section-title span {
+                color: #0f172a; /* near-slate for contrast */
+            }
+
+            .achievements-clean .section-subtitle {
+                max-width: 780px;
+                margin: 10px auto 0;
+                font-size: 16px;
+                line-height: 1.6;
+                color: #475569;
+                opacity: .95;
+            }
+
+        /* ----- Cards ----- */
         .achievement-card {
-            background: #fff;
-            padding: 26px;
-            margin: 15px 0;
+            background: #ffffff;
+            padding: 22px 20px;
+            margin: 14px 0;
             border-radius: 14px;
-            text-align: center;
-            min-height: 260px;
-            box-shadow: 0 6px 18px rgba(0,0,0,.08);
-            transition: transform .25s ease, box-shadow .25s ease;
+            border: 1px solid rgba(2,6,23,.06);
+            box-shadow: 0 2px 10px rgba(2,6,23,.05);
+            transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+            min-height: 220px;
+            text-align: left;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
+            gap: 10px;
         }
 
+            .achievement-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 22px rgba(2,6,23,.08);
+                border-color: rgba(13,110,253,.25);
+            }
+
+            .achievement-card:focus {
+                outline: 3px solid rgba(13,110,253,.35);
+                outline-offset: 3px;
+            }
+
+            /* ----- Icon, title, copy ----- */
             .achievement-card i {
-                margin-bottom: 16px;
+                font-size: 28px;
+                line-height: 1;
+                padding: 10px;
+                border-radius: 12px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;
+                background: #eef2ff; /* soft bg for icon chip */
+                color: #4f46e5; /* indigo-600 */
             }
 
             .achievement-card h4 {
-                margin-bottom: 10px;
+                margin: 2px 0 0;
                 font-weight: 700;
+                color: #0f172a;
+                font-size: 18px;
             }
 
             .achievement-card p {
+                margin: 0;
+                color: #334155; /* slate-700 */
                 font-size: 14.5px;
                 line-height: 1.6;
-                opacity: .9;
             }
 
-            .achievement-card:hover {
-                transform: translateY(-8px);
-                box-shadow: 0 12px 26px rgba(0,0,0,.12);
-            }
-            /* color accents for icons */
-            .achievement-card:nth-of-type(1) i {
-                color: #0d6efd;
+            .achievement-card strong {
+                color: #0f172a;
+                font-weight: 700;
             }
 
-            .achievement-card:nth-of-type(2) i {
-                color: #20c997;
+        /* ----- Subtle, consistent color accents per item (accessible contrast) ----- */
+        .row.item_bottom .col-sm-6:nth-of-type(1) .achievement-card i {
+            background: #e7f1ff;
+            color: #0d6efd;
+        }
+        /* primary */
+        .row.item_bottom .col-sm-6:nth-of-type(2) .achievement-card i {
+            background: #e8fff5;
+            color: #198754;
+        }
+        /* success */
+        .row.item_bottom .col-sm-6:nth-of-type(3) .achievement-card i {
+            background: #fff4e6;
+            color: #fd7e14;
+        }
+        /* orange */
+        .row.item_bottom .col-sm-6:nth-of-type(4) .achievement-card i {
+            background: #f2e8ff;
+            color: #6f42c1;
+        }
+        /* purple */
+        .row.item_bottom .col-sm-6:nth-of-type(5) .achievement-card i {
+            background: #e7f7ff;
+            color: #0aa2c0;
+        }
+        /* cyan-ish */
+        .row.item_bottom .col-sm-6:nth-of-type(6) .achievement-card i {
+            background: #ffe8ec;
+            color: #dc3545;
+        }
+        /* danger */
+
+        /* ----- Make sure it looks good on dark mode ----- */
+        @media (prefers-color-scheme: dark) {
+            .achievements-clean {
+                background: #0b1220;
             }
 
-            .achievement-card:nth-of-type(3) i {
-                color: #fd7e14;
+                .achievements-clean .section-title h1,
+                .achievements-clean .section-title span {
+                    color: #e5e7eb;
+                }
+
+                .achievements-clean .section-subtitle {
+                    color: #cbd5e1;
+                    opacity: .9;
+                }
+
+            .achievement-card {
+                background: #0f172a;
+                border-color: rgba(148,163,184,.15);
+                box-shadow: 0 2px 10px rgba(0,0,0,.35);
             }
 
-            .achievement-card:nth-of-type(4) i {
-                color: #6610f2;
-            }
+                .achievement-card:hover {
+                    box-shadow: 0 8px 22px rgba(0,0,0,.45);
+                    border-color: rgba(13,110,253,.45);
+                }
 
-            .achievement-card:nth-of-type(5) i {
-                color: #198754;
-            }
+                .achievement-card h4 {
+                    color: #e5e7eb;
+                }
 
-            .achievement-card:nth-of-type(6) i {
-                color: #dc3545;
-            }
+                .achievement-card p {
+                    color: #cbd5e1;
+                }
+
+                .achievement-card strong {
+                    color: #ffffff;
+                }
+
+                .achievement-card i {
+                    filter: saturate(1.1) brightness(1.05);
+                }
+        }
     </style>
 
 

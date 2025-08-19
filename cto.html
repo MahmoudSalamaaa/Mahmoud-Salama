@@ -1929,42 +1929,140 @@
         <div class="container">
             <div class="row">
                 <div class="section-title item_bottom text-center">
-                    <div>
-                        <span class="fa fa-trophy fa-2x"></span>
-                    </div>
+                    <div><span class="fa fa-trophy fa-2x"></span></div>
                     <h1>Key <span>Achievements</span></h1>
+                    <p class="section-subtitle">Proven record of driving national-scale transformation, efficiency, and measurable business impact.</p>
                 </div>
             </div>
+
             <div class="row item_bottom">
-                <div class="col-md-4">
-                    <h4>Digital Transformation Leadership</h4>
-                    <p>Led national‑scale digital initiatives across 12,000+ public entities, aligning with Egypt&nbsp;Vision&nbsp;2030 and modernizing core systems.</p>
+                <!-- Achievement 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="achievement-card">
+                        <i class="fa-solid fa-globe fa-3x"></i>
+                        <h4>Digital Transformation Leadership</h4>
+                        <p>Led national initiatives impacting <strong>12,000+ entities</strong>, modernizing core systems aligned with Egypt Vision 2030.</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Operational Efficiency</h4>
-                    <p>Streamlined procurement, inventory and warehousing systems, reducing cycle times by 40% and manual workload by 60%.</p>
+
+                <!-- Achievement 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="achievement-card">
+                        <i class="fa-solid fa-gears fa-3x"></i>
+                        <h4>Operational Efficiency</h4>
+                        <p>Redesigned procurement, inventory, and warehousing, reducing cycle times by <strong>40%</strong> and workload by <strong>60%</strong>.</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Team Building &amp; Leadership</h4>
-                    <p>Built and mentored cross‑functional teams of 30+ developers and analysts, fostering a high‑performance, innovation‑driven culture.</p>
+
+                <!-- Achievement 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="achievement-card">
+                        <i class="fa-solid fa-people-group fa-3x"></i>
+                        <h4>Team Building & Leadership</h4>
+                        <p>Built and mentored cross-functional teams of <strong>30+ developers</strong>, fostering an innovation-driven culture.</p>
+                    </div>
                 </div>
             </div>
+
             <div class="row item_bottom">
-                <div class="col-md-4">
-                    <h4>Delivery Excellence</h4>
-                    <p>Oversaw high‑impact projects worth over EGP&nbsp;150M, ensuring on‑time delivery, measurable ROI and strategic alignment.</p>
+                <!-- Achievement 4 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="achievement-card">
+                        <i class="fa-solid fa-clipboard-check fa-3x"></i>
+                        <h4>Delivery Excellence</h4>
+                        <p>Oversaw digital projects worth <strong>EGP 150M+</strong>, ensuring on-time delivery with measurable ROI.</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Data‑Driven Decision Making</h4>
-                    <p>Deployed real‑time analytics platforms (Power&nbsp;BI, Superset), cutting reporting time by 70% and enhancing executive visibility.</p>
+
+                <!-- Achievement 5 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="achievement-card">
+                        <i class="fa-solid fa-chart-pie fa-3x"></i>
+                        <h4>Data-Driven Decision Making</h4>
+                        <p>Deployed analytics platforms (Power BI, Superset), cutting reporting time by <strong>70%</strong> and improving visibility.</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h4>Enterprise Security &amp; Compliance</h4>
-                    <p>Implemented enterprise‑grade encryption, MFA and governance policies to ensure 100% compliance with national standards.</p>
+
+                <!-- Achievement 6 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="achievement-card">
+                        <i class="fa-solid fa-shield-halved fa-3x"></i>
+                        <h4>Enterprise Security & Compliance</h4>
+                        <p>Implemented encryption, MFA, and governance policies, achieving <strong>100% compliance</strong> with national standards.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+        #achievements .section-subtitle {
+            max-width: 780px;
+            margin: 10px auto 0;
+            font-size: 16px;
+            opacity: .9;
+        }
+
+        .achievement-card {
+            background: #fff;
+            padding: 26px;
+            margin: 15px 0;
+            border-radius: 14px;
+            text-align: center;
+            min-height: 260px;
+            box-shadow: 0 6px 18px rgba(0,0,0,.08);
+            transition: transform .25s ease, box-shadow .25s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+            .achievement-card i {
+                margin-bottom: 16px;
+            }
+
+            .achievement-card h4 {
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+
+            .achievement-card p {
+                font-size: 14.5px;
+                line-height: 1.6;
+                opacity: .9;
+            }
+
+            .achievement-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 26px rgba(0,0,0,.12);
+            }
+            /* color accents for icons */
+            .achievement-card:nth-of-type(1) i {
+                color: #0d6efd;
+            }
+
+            .achievement-card:nth-of-type(2) i {
+                color: #20c997;
+            }
+
+            .achievement-card:nth-of-type(3) i {
+                color: #fd7e14;
+            }
+
+            .achievement-card:nth-of-type(4) i {
+                color: #6610f2;
+            }
+
+            .achievement-card:nth-of-type(5) i {
+                color: #198754;
+            }
+
+            .achievement-card:nth-of-type(6) i {
+                color: #dc3545;
+            }
+    </style>
+
 
     <!-- Technical Skills Section -->
     <section id="technical" class="section-content bg2">

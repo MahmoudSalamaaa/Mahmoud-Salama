@@ -1,433 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CTO Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTO Resume</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 
-    <!-- Brand Palette -->
-    <style id="brand-vars">
-        :root {
-            --brand-100: #e0f0ff;
-            --brand-500: #0d6efd;
-            --brand-600: #0b5ed7;
-            --brand-700: #084298;
-            --brand-shadow: rgba(13,110,253,.06);
-        }
-    </style>
+  <!-- Brand Palette -->
+  <style id="brand-vars">
+  :root {
+    --brand-100: #e0f0ff;
+    --brand-500: #0d6efd;
+    --brand-600: #0b5ed7;
+    --brand-700: #084298;
+    --brand-shadow: rgba(13,110,253,.06);
+  }
 
-    <!-- Skills Section Styles -->
-    <style>
-        #skill .section-subtitle {
-            max-width: 880px;
-            margin: 8px auto 18px;
-            color: #2f2f2fd9
-        }
 
-        .skill-kpis {
-            margin: 6px 0 18px
-        }
+      /* Section Title Enhancements */
+      #skill .section-title h1 {
+          font-size: 2.2rem;
+          font-weight: 700;
+          color: var(--brand-700);
+          position: relative;
+          display: inline-block;
+      }
 
-        .kpi-card {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-            background: #fff;
-            border: 1px solid color-mix(in srgb, var(--brand-500) 12%, white);
-            border-left: 6px solid var(--brand-500);
-            border-radius: 14px;
-            padding: 12px 14px;
-            box-shadow: 0 8px 18px var(--brand-shadow)
-        }
+          #skill .section-title h1 span {
+              color: var(--brand-500);
+          }
 
-            .kpi-card i {
-                font-size: 22px;
-                color: var(--brand-500)
-            }
+          #skill .section-title h1::after {
+              content: "";
+              display: block;
+              width: 60%;
+              height: 4px;
+              margin: 8px auto 0;
+              background: linear-gradient(90deg, var(--brand-500), var(--brand-700));
+              border-radius: 2px;
+          }
 
-            .kpi-card strong {
-                display: block;
-                color: var(--brand-600)
-            }
+      /* KPI Hover */
+      .kpi-card {
+          transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
 
-            .kpi-card span {
-                font-size: 13px;
-                color: #3a3a3a
-            }
+          .kpi-card:hover {
+              transform: translateY(-5px) scale(1.02);
+              box-shadow: 0 10px 25px rgba(13, 110, 253, 0.18);
+          }
 
-        .charts-row {
-            margin: 6px 0 18px
-        }
+      /* Skill Cards Enhancements */
+      .skill-card {
+          position: relative;
+      }
 
-        .chart-card {
-            background: #fff;
-            border: 1px solid color-mix(in srgb, var(--brand-500) 12%, white);
-            border-left: 6px solid var(--brand-500);
-            border-radius: 14px;
-            padding: 14px;
-            box-shadow: 0 8px 18px var(--brand-shadow)
-        }
+          .skill-card .percent-badge {
+              position: absolute;
+              top: 12px;
+              right: 14px;
+              background: var(--brand-100);
+              color: var(--brand-700);
+              font-size: 12px;
+              padding: 4px 8px;
+              border-radius: 12px;
+          }
 
-        .chart-card__head {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 6px
-        }
+      .skill-tags li:hover {
+          background: var(--brand-500);
+          color: #fff;
+          cursor: pointer;
+          transition: all 0.2s ease;
+      }
 
-            .chart-card__head h3 {
-                margin: 0;
-                font-size: 18px;
-                color: var(--brand-600)
-            }
+      /* Tech Cloud Tags by Category */
+      .tech-cloud__tags li[data-cat="frontend"] {
+          background: #e3f2fd;
+          border-color: #90caf9;
+      }
 
-            .chart-card__head .hint {
-                font-size: 12px;
-                color: var(--brand-700);
-                background: var(--brand-100);
-                border-radius: 999px;
-                padding: 4px 10px
-            }
+      .tech-cloud__tags li[data-cat="backend"] {
+          background: #f1f8e9;
+          border-color: #aed581;
+      }
 
-        .skill-grid {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 18px;
-            margin-top: 12px
-        }
+      .tech-cloud__tags li[data-cat="db"] {
+          background: #f9fbe7;
+          border-color: #dce775;
+      }
 
-        @media (max-width:1200px) {
-            .skill-grid {
-                grid-template-columns: repeat(2,1fr)
-            }
-        }
+      .tech-cloud__tags li[data-cat="devops"] {
+          background: #fff8e1;
+          border-color: #ffecb3;
+      }
 
-        @media (max-width:780px) {
-            .skill-grid {
-                grid-template-columns: 1fr
-            }
-        }
+      /* Logo Hover Tooltip */
+      .logo-img {
+          position: relative;
+      }
 
-        .skill-card {
-            background: #fff;
-            border: 1px solid color-mix(in srgb, var(--brand-500) 12%, white);
-            border-left: 6px solid var(--brand-500);
-            border-radius: 14px;
-            padding: 16px 16px 14px;
-            box-shadow: 0 8px 18px var(--brand-shadow);
-            transition: transform .2s ease,box-shadow .2s ease,background .2s ease
-        }
+          .logo-img:hover::after {
+              content: attr(alt);
+              position: absolute;
+              bottom: -28px;
+              left: 50%;
+              transform: translateX(-50%);
+              background: var(--brand-600);
+              color: #fff;
+              padding: 4px 10px;
+              font-size: 12px;
+              border-radius: 6px;
+              white-space: nowrap;
+          }
 
-            .skill-card:hover {
-                transform: translateY(-3px);
-                background: #f8fbff;
-                box-shadow: 0 14px 30px rgba(13,110,253,.14)
-            }
+  </style>
 
-        .skill-card__head {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 8px
-        }
+  <!-- Skills Section Styles -->
+  <style>
+  #skill .section-subtitle{max-width:880px;margin:8px auto 18px;color:#2f2f2fd9}
+  .skill-kpis{margin:6px 0 18px}
+  .kpi-card{
+    display:flex;gap:12px;align-items:center;
+    background:#fff;border:1px solid color-mix(in srgb, var(--brand-500) 12%, white);
+    border-left:6px solid var(--brand-500);
+    border-radius:14px;padding:12px 14px;box-shadow:0 8px 18px var(--brand-shadow)
+  }
+  .kpi-card i{font-size:22px;color:var(--brand-500)}
+  .kpi-card strong{display:block;color:var(--brand-600)}
+  .kpi-card span{font-size:13px;color:#3a3a3a}
+  .charts-row{margin:6px 0 18px}
+  .chart-card{
+    background:#fff;border:1px solid color-mix(in srgb, var(--brand-500) 12%, white);
+    border-left:6px solid var(--brand-500);border-radius:14px;
+    padding:14px;box-shadow:0 8px 18px var(--brand-shadow)
+  }
+  .chart-card__head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+  .chart-card__head h3{margin:0;font-size:18px;color:var(--brand-600)}
+  .chart-card__head .hint{font-size:12px;color:var(--brand-700);background:var(--brand-100);border-radius:999px;padding:4px 10px}
+  .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:12px}
+  @media (max-width:1200px){.skill-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:780px){.skill-grid{grid-template-columns:1fr}}
+  .skill-card{
+    background:#fff;border:1px solid color-mix(in srgb, var(--brand-500) 12%, white);
+    border-left:6px solid var(--brand-500);border-radius:14px;
+    padding:16px 16px 14px;box-shadow:0 8px 18px var(--brand-shadow);
+    transition:transform .2s ease,box-shadow .2s ease,background .2s ease
+  }
+  .skill-card:hover{transform:translateY(-3px);background:#f8fbff;box-shadow:0 14px 30px rgba(13,110,253,.14)}
+  .skill-card__head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+  .skill-card__head h3{margin:0;font-size:18px;color:var(--brand-600)}
+  .rank-badge{display:inline-block;font-size:12.5px;color:var(--brand-700);background:var(--brand-100);border-radius:999px;padding:4px 10px;white-space:nowrap}
+  .skill-card__desc{margin:0 0 10px;color:#333;font-size:14.5px;line-height:1.55}
+  .skill-level{height:8px;background:#eef2fa;border-radius:999px;overflow:hidden;margin:6px 0 0}
+  .skill-level>span{display:block;height:100%;background:var(--brand-500)}
+  .skill-tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:8px 0 0}
+  .skill-tags li{font-size:12.5px;padding:6px 10px;background:color-mix(in srgb, var(--brand-100) 70%, white);
+    border:1px solid color-mix(in srgb, var(--brand-500) 15%, white);color:var(--brand-700);border-radius:999px}
+  .logos-row{margin-top:18px;align-items:center}
+  .logo-img{max-height:42px;width:auto;opacity:.9;filter:grayscale(20%);
+    transition:transform .2s ease,opacity .2s ease,filter .2s ease}
+  .logo-img:hover{transform:translateY(-2px);opacity:1;filter:none}
 
-            .skill-card__head h3 {
-                margin: 0;
-                font-size: 18px;
-                color: var(--brand-600)
-            }
+  /* Tech cloud */
+  #skill .tech-cloud{margin:16px 0 8px;background:#fff;
+    border:1px solid color-mix(in srgb, var(--brand-500) 12%, white);
+    border-left:6px solid var(--brand-500);border-radius:14px;
+    padding:14px;box-shadow:0 8px 18px var(--brand-shadow)}
+  #skill .tech-cloud__title{margin:0 0 10px;font-size:18px;color:var(--brand-600)}
+  #skill .tech-cloud__tags{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+  #skill .tech-cloud__tags li{font-size:12.5px;padding:6px 10px;background:color-mix(in srgb, var(--brand-100) 70%, white);
+    border:1px solid color-mix(in srgb, var(--brand-500) 15%, white);color:var(--brand-700);border-radius:999px}
+  </style>
 
-        .rank-badge {
-            display: inline-block;
-            font-size: 12.5px;
-            color: var(--brand-700);
-            background: var(--brand-100);
-            border-radius: 999px;
-            padding: 4px 10px;
-            white-space: nowrap
-        }
-
-        .skill-card__desc {
-            margin: 0 0 10px;
-            color: #333;
-            font-size: 14.5px;
-            line-height: 1.55
-        }
-
-        .skill-level {
-            height: 8px;
-            background: #eef2fa;
-            border-radius: 999px;
-            overflow: hidden;
-            margin: 6px 0 0
-        }
-
-            .skill-level > span {
-                display: block;
-                height: 100%;
-                background: var(--brand-500)
-            }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            list-style: none;
-            padding: 0;
-            margin: 8px 0 0
-        }
-
-            .skill-tags li {
-                font-size: 12.5px;
-                padding: 6px 10px;
-                background: color-mix(in srgb, var(--brand-100) 70%, white);
-                border: 1px solid color-mix(in srgb, var(--brand-500) 15%, white);
-                color: var(--brand-700);
-                border-radius: 999px
-            }
-
-        .logos-row {
-            margin-top: 18px;
-            align-items: center
-        }
-
-        .logo-img {
-            max-height: 42px;
-            width: auto;
-            opacity: .9;
-            filter: grayscale(20%);
-            transition: transform .2s ease,opacity .2s ease,filter .2s ease
-        }
-
-            .logo-img:hover {
-                transform: translateY(-2px);
-                opacity: 1;
-                filter: none
-            }
-
-        /* Tech cloud */
-        #skill .tech-cloud {
-            margin: 16px 0 8px;
-            background: #fff;
-            border: 1px solid color-mix(in srgb, var(--brand-500) 12%, white);
-            border-left: 6px solid var(--brand-500);
-            border-radius: 14px;
-            padding: 14px;
-            box-shadow: 0 8px 18px var(--brand-shadow)
-        }
-
-        #skill .tech-cloud__title {
-            margin: 0 0 10px;
-            font-size: 18px;
-            color: var(--brand-600)
-        }
-
-        #skill .tech-cloud__tags {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px
-        }
-
-            #skill .tech-cloud__tags li {
-                font-size: 12.5px;
-                padding: 6px 10px;
-                background: color-mix(in srgb, var(--brand-100) 70%, white);
-                border: 1px solid color-mix(in srgb, var(--brand-500) 15%, white);
-                color: var(--brand-700);
-                border-radius: 999px
-            }
-    </style>
-
-    <!-- Animations -->
-    <style id="reveal-anim">
-        #skill .kpi-card, #skill .chart-card, #skill .skill-card, #skill .logo-img, #skill .tech-cloud {
-            opacity: 0;
-            transform: translateY(12px);
-        }
-
-        #skill .in-view {
-            opacity: 1;
-            transform: none;
-            transition: opacity .6s ease, transform .6s ease;
-        }
-
-        #skill .skill-card.in-view {
-            transition-delay: .06s
-        }
-
-        #skill .chart-card.in-view {
-            transition-delay: .04s
-        }
-
-        #skill .kpi-card.in-view {
-            transition-delay: .02s
-        }
-
-        #skill .logo-img.in-view {
-            transition: opacity .6s ease, transform .6s ease .08s
-        }
-    </style>
+  <!-- Animations -->
+  <style id="reveal-anim">
+  #skill .kpi-card,#skill .chart-card,#skill .skill-card,#skill .logo-img,#skill .tech-cloud{
+    opacity:0; transform: translateY(12px);
+  }
+  #skill .in-view{ opacity:1; transform:none; transition: opacity .6s ease, transform .6s ease; }
+  #skill .skill-card.in-view{ transition-delay:.06s }
+  #skill .chart-card.in-view{ transition-delay:.04s }
+  #skill .kpi-card.in-view{ transition-delay:.02s }
+  #skill .logo-img.in-view{ transition: opacity .6s ease, transform .6s ease .08s }
+  </style>
 </head>
 <body>
 
-    <!-- Skills Section -->
-    <section id="skill" class="section-content bg2">
-        <div class="container">
-            <div class="row">
-                <div class="section-title item_bottom text-center">
-                    <div><span class="fas fa-chart-column fa-2x"></span></div>
-                    <h1>My <span>Skills</span></h1>
-                    <p class="section-subtitle">A visual snapshot of impact areas and depth of expertise.</p>
-                </div>
-            </div>
+<!-- Skills Section -->
+<section id="skill" class="section-content bg2">
+  <div class="container">
+    <div class="row">
+      <div class="section-title item_bottom text-center">
+        <div><span class="fas fa-chart-column fa-2x"></span></div>
+        <h1>My <span>Skills</span></h1>
+        <p class="section-subtitle">A visual snapshot of impact areas and depth of expertise.</p>
+      </div>
+    </div>
 
-            <!-- KPI Row -->
-            <div class="row skill-kpis">
-                <div class="col-sm-3"><div class="kpi-card"><i class="fa-solid fa-diagram-project"></i><div><strong>Digital Programs</strong><span>10+ platforms</span></div></div></div>
-                <div class="col-sm-3"><div class="kpi-card"><i class="fa-solid fa-gauge-high"></i><div><strong>Cycle Time</strong><span>↓ 40%</span></div></div></div>
-                <div class="col-sm-3"><div class="kpi-card"><i class="fa-solid fa-users-gear"></i><div><strong>Teams Led</strong><span>25+ engineers</span></div></div></div>
-                <div class="col-sm-3"><div class="kpi-card"><i class="fa-solid fa-signal"></i><div><strong>Uptime</strong><span>99.9%</span></div></div></div>
-            </div>
+    <!-- KPI Row -->
+    <div class="row skill-kpis">
+      <div class="col-sm-3"><div class="kpi-card"><i class="fa-solid fa-diagram-project"></i><div><strong>Digital Programs</strong><span>10+ platforms</span></div></div></div>
+      <div class="col-sm-3"><div class="kpi-card"><i class="fa-solid fa-gauge-high"></i><div><strong>Cycle Time</strong><span>↓ 40%</span></div></div></div>
+      <div class="col-sm-3"><div class="kpi-card"><i class="fa-solid fa-users-gear"></i><div><strong>Teams Led</strong><span>25+ engineers</span></div></div></div>
+      <div class="col-sm-3"><div class="kpi-card"><i class="fa-solid fa-signal"></i><div><strong>Uptime</strong><span>99.9%</span></div></div></div>
+    </div>
 
-            <!-- Charts -->
-            <div class="row charts-row">
-                <div class="col-md-6">
-                    <div class="chart-card">
-                        <div class="chart-card__head"><h3><i class="fa-solid fa-compass-drafting"></i> Capability Radar</h3><span class="hint">Hover</span></div>
-                        <canvas id="capabilityRadar" height="240"></canvas>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="chart-card">
-                        <div class="chart-card__head"><h3><i class="fa-solid fa-layer-group"></i> Stack Proficiency</h3><span class="hint">% by layer</span></div>
-                        <canvas id="stackBar" height="240"></canvas>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Technologies & Tools Cloud -->
-            <div class="tech-cloud reveal">
-                <h3 class="tech-cloud__title"><i class="fa-solid fa-toolbox"></i> Technologies & Tools (Merged)</h3>
-                <ul class="tech-cloud__tags">
-                    <li>.NET</li>
-                    <li>C#</li>
-                    <li>Node.js</li>
-                    <li>SQL Server</li>
-                    <li>PostgreSQL</li>
-                    <li>React</li>
-                    <li>Angular</li>
-                    <li>Docker</li>
-                    <li>Redis</li>
-                    <li>MongoDB</li>
-                    <li>Git</li>
-                    <li>Superset</li>
-                    <li>Kendo UI</li>
-                    <li>Swagger</li>
-                    <li>DevExpress</li>
-                    <li>Chart.js</li>
-                    <li>Umbraco</li>
-                    <li>Kentico</li>
-                </ul>
-            </div>
-
-            <!-- Skill Cards -->
-            <div class="skill-grid">
-                <article class="skill-card reveal"><header class="skill-card__head"><h3>Strategic Leadership</h3><span class="rank-badge">#1</span></header><p class="skill-card__desc">Governance, portfolio roadmaps, OKRs, operating models.</p><div class="skill-level"><span style="width:95%"></span></div><ul class="skill-tags"><li>Vision</li><li>Change Mgmt</li><li>KPIs</li></ul></article>
-
-                <article class="skill-card reveal"><header class="skill-card__head"><h3>Software Architecture & System Design</h3><span class="rank-badge">#2</span></header><p class="skill-card__desc">DDD, event-driven, secure, scalable systems.</p><div class="skill-level"><span style="width:92%"></span></div><ul class="skill-tags"><li>SOLID</li><li>Design Patterns</li><li>Security</li></ul></article>
-
-                <article class="skill-card reveal"><header class="skill-card__head"><h3>Backend Engineering</h3><span class="rank-badge">#3</span></header><p class="skill-card__desc">APIs & services in .NET and Node with observability.</p><div class="skill-level"><span style="width:90%"></span></div><ul class="skill-tags"><li>C#</li><li>.NET Core</li><li>ASP.NET</li><li>Node.js</li></ul></article>
-
-                <article class="skill-card reveal"><header class="skill-card__head"><h3>DevOps & Deployment</h3><span class="rank-badge">#4</span></header><p class="skill-card__desc">CI/CD pipelines, containers, cloud hosting.</p><div class="skill-level"><span style="width:88%"></span></div><ul class="skill-tags"><li>Docker</li><li>Jenkins</li><li>IIS</li><li>Nginx</li></ul></article>
-
-                <article class="skill-card reveal"><header class="skill-card__head"><h3>Data & Reporting</h3><span class="rank-badge">#5</span></header><p class="skill-card__desc">Exec dashboards & operational reports.</p><div class="skill-level"><span style="width:85%"></span></div><ul class="skill-tags"><li>Superset</li><li>DevExpress</li><li>Chart.js</li></ul></article>
-
-                <article class="skill-card reveal"><header class="skill-card__head"><h3>Databases & Data Access</h3><span class="rank-badge">#6</span></header><p class="skill-card__desc">SQL & NoSQL databases, ORM best practices.</p><div class="skill-level"><span style="width:83%"></span></div><ul class="skill-tags"><li>SQL Server</li><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li></ul></article>
-
-                <article class="skill-card reveal"><header class="skill-card__head"><h3>Frontend Engineering</h3><span class="rank-badge">#7</span></header><p class="skill-card__desc">Responsive UI, components, portals.</p><div class="skill-level"><span style="width:80%"></span></div><ul class="skill-tags"><li>React</li><li>Angular</li><li>Kendo UI</li></ul></article>
-
-                <article class="skill-card reveal"><header class="skill-card__head"><h3>API & Integration</h3><span class="rank-badge">#8</span></header><p class="skill-card__desc">REST, messaging, docs, automation.</p><div class="skill-level"><span style="width:78%"></span></div><ul class="skill-tags"><li>REST</li><li>SignalR</li><li>Swagger</li></ul></article>
-
-                <article class="skill-card reveal"><header class="skill-card__head"><h3>Version Control</h3><span class="rank-badge">#9</span></header><p class="skill-card__desc">Trunk-based dev, branching, reviews.</p><div class="skill-level"><span style="width:75%"></span></div><ul class="skill-tags"><li>Git</li><li>GitHub</li></ul></article>
-
-                <article class="skill-card reveal"><header class="skill-card__head"><h3>CMS & eCommerce</h3><span class="rank-badge">#10</span></header><p class="skill-card__desc">CMS customization and tuning.</p><div class="skill-level"><span style="width:68%"></span></div><ul class="skill-tags"><li>nopCommerce</li><li>Umbraco</li><li>Kentico</li></ul></article>
-
-                <article class="skill-card reveal"><header class="skill-card__head"><h3>Leadership & Collaboration</h3><span class="rank-badge">#11</span></header><p class="skill-card__desc">Coaching, communication, scaling teams.</p><div class="skill-level"><span style="width:65%"></span></div><ul class="skill-tags"><li>Problem Solving</li><li>Critical Thinking</li><li>Time Management</li></ul></article>
-            </div>
-
-            <!-- Logos -->
-            <div class="row logos-row">
-                <div class="col-sm-2 col-4"><img src="images/skills/dotnet.png" class="logo-img"></div>
-                <div class="col-sm-2 col-4"><img src="images/skills/react.png" class="logo-img"></div>
-                <div class="col-sm-2 col-4"><img src="images/skills/postgresql.png" class="logo-img"></div>
-                <div class="col-sm-2 col-4"><img src="images/skills/docker.png" class="logo-img"></div>
-                <div class="col-sm-2 col-4"><img src="images/skills/git.png" class="logo-img"></div>
-            </div>
+    <!-- Charts -->
+    <div class="row charts-row">
+      <div class="col-md-6">
+        <div class="chart-card"><div class="chart-card__head"><h3><i class="fa-solid fa-compass-drafting"></i> Capability Radar</h3><span class="hint">Hover</span></div>
+          <canvas id="capabilityRadar" height="240"></canvas>
         </div>
-    </section>
+      </div>
+      <div class="col-md-6">
+        <div class="chart-card"><div class="chart-card__head"><h3><i class="fa-solid fa-layer-group"></i> Stack Proficiency</h3><span class="hint">% by layer</span></div>
+          <canvas id="stackBar" height="240"></canvas>
+        </div>
+      </div>
+    </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        (function () {
-            Chart.defaults.font.family = "system-ui, Roboto, Arial";
-            Chart.defaults.plugins.legend.position = 'bottom';
+    <!-- Technologies & Tools Cloud -->
+    <div class="tech-cloud reveal">
+      <h3 class="tech-cloud__title"><i class="fa-solid fa-toolbox"></i> Technologies & Tools (Merged)</h3>
+      <ul class="tech-cloud__tags">
+        <li>.NET</li><li>C#</li><li>Node.js</li><li>SQL Server</li><li>PostgreSQL</li><li>React</li><li>Angular</li>
+        <li>Docker</li><li>Redis</li><li>MongoDB</li><li>Git</li><li>Superset</li><li>Kendo UI</li><li>Swagger</li>
+        <li>DevExpress</li><li>Chart.js</li><li>Umbraco</li><li>Kentico</li>
+      </ul>
+    </div>
 
-            new Chart(document.getElementById('capabilityRadar'), {
-                type: 'radar',
-                data: {
-                    labels: ['Leadership', 'Architecture', 'Backend', 'DevOps', 'Data', 'Frontend', 'Integration'],
-                    datasets: [{ label: 'Impact & Depth', data: [95, 92, 90, 88, 85, 80, 78], fill: true }]
-                },
-                options: {
-                    responsive: true,
-                    scales: { r: { beginAtZero: true, max: 100, ticks: { display: false }, grid: { circular: true } } }
-                }
-            });
+    <!-- Skill Cards -->
+    <div class="skill-grid">
+      <article class="skill-card reveal"><header class="skill-card__head"><h3>Strategic Leadership</h3><span class="rank-badge">#1</span></header><p class="skill-card__desc">Governance, portfolio roadmaps, OKRs, operating models.</p><div class="skill-level"><span style="width:95%"></span></div><ul class="skill-tags"><li>Vision</li><li>Change Mgmt</li><li>KPIs</li></ul></article>
 
-            new Chart(document.getElementById('stackBar'), {
-                type: 'bar',
-                data: {
-                    labels: ['.NET/C#', 'Node.js', 'SQL Server', 'PostgreSQL', 'React', 'DevOps'],
-                    datasets: [
-                        { label: 'Core', data: [85, 70, 80, 78, 72, 75], stack: 'stack' },
-                        { label: 'Advanced', data: [10, 15, 10, 10, 8, 10], stack: 'stack' },
-                        { label: 'Expert', data: [5, 5, 5, 5, 0, 3], stack: 'stack' }
-                    ]
-                },
-                options: {
-                    indexAxis: 'y',
-                    responsive: true,
-                    scales: {
-                        x: { stacked: true, suggestedMax: 100, ticks: { callback: v => v + '%' } },
-                        y: { stacked: true }
-                    }
-                }
-            });
+      <article class="skill-card reveal"><header class="skill-card__head"><h3>Software Architecture & System Design</h3><span class="rank-badge">#2</span></header><p class="skill-card__desc">DDD, event-driven, secure, scalable systems.</p><div class="skill-level"><span style="width:92%"></span></div><ul class="skill-tags"><li>SOLID</li><li>Design Patterns</li><li>Security</li></ul></article>
 
-            // IntersectionObserver for reveal animations
-            const reveals = document.querySelectorAll('#skill .skill-card, #skill .chart-card, #skill .kpi-card, #skill .logo-img, #skill .tech-cloud');
-            if ('IntersectionObserver' in window) {
-                const io = new IntersectionObserver(entries => {
-                    entries.forEach(e => {
-                        if (e.isIntersecting) {
-                            e.target.classList.add('in-view');
-                            io.unobserve(e.target);
-                        }
-                    });
-                }, { threshold: 0.15 });
-                reveals.forEach(n => io.observe(n));
-            } else {
-                reveals.forEach(n => n.classList.add('in-view'));
-            }
-        })();
-    </script>
+      <article class="skill-card reveal"><header class="skill-card__head"><h3>Backend Engineering</h3><span class="rank-badge">#3</span></header><p class="skill-card__desc">APIs & services in .NET and Node with observability.</p><div class="skill-level"><span style="width:90%"></span></div><ul class="skill-tags"><li>C#</li><li>.NET Core</li><li>ASP.NET</li><li>Node.js</li></ul></article>
+
+      <article class="skill-card reveal"><header class="skill-card__head"><h3>DevOps & Deployment</h3><span class="rank-badge">#4</span></header><p class="skill-card__desc">CI/CD pipelines, containers, cloud hosting.</p><div class="skill-level"><span style="width:88%"></span></div><ul class="skill-tags"><li>Docker</li><li>Jenkins</li><li>IIS</li><li>Nginx</li></ul></article>
+
+      <article class="skill-card reveal"><header class="skill-card__head"><h3>Data & Reporting</h3><span class="rank-badge">#5</span></header><p class="skill-card__desc">Exec dashboards & operational reports.</p><div class="skill-level"><span style="width:85%"></span></div><ul class="skill-tags"><li>Superset</li><li>DevExpress</li><li>Chart.js</li></ul></article>
+
+      <article class="skill-card reveal"><header class="skill-card__head"><h3>Databases & Data Access</h3><span class="rank-badge">#6</span></header><p class="skill-card__desc">SQL & NoSQL databases, ORM best practices.</p><div class="skill-level"><span style="width:83%"></span></div><ul class="skill-tags"><li>SQL Server</li><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li></ul></article>
+
+      <article class="skill-card reveal"><header class="skill-card__head"><h3>Frontend Engineering</h3><span class="rank-badge">#7</span></header><p class="skill-card__desc">Responsive UI, components, portals.</p><div class="skill-level"><span style="width:80%"></span></div><ul class="skill-tags"><li>React</li><li>Angular</li><li>Kendo UI</li></ul></article>
+
+      <article class="skill-card reveal"><header class="skill-card__head"><h3>API & Integration</h3><span class="rank-badge">#8</span></header><p class="skill-card__desc">REST, messaging, docs, automation.</p><div class="skill-level"><span style="width:78%"></span></div><ul class="skill-tags"><li>REST</li><li>SignalR</li><li>Swagger</li></ul></article>
+
+      <article class="skill-card reveal"><header class="skill-card__head"><h3>Version Control</h3><span class="rank-badge">#9</span></header><p class="skill-card__desc">Trunk-based dev, branching, reviews.</p><div class="skill-level"><span style="width:75%"></span></div><ul class="skill-tags"><li>Git</li><li>GitHub</li></ul></article>
+
+      <article class="skill-card reveal"><header class="skill-card__head"><h3>CMS & eCommerce</h3><span class="rank-badge">#10</span></header><p class="skill-card__desc">CMS customization and tuning.</p><div class="skill-level"><span style="width:68%"></span></div><ul class="skill-tags"><li>nopCommerce</li><li>Umbraco</li><li>Kentico</li></ul></article>
+
+      <article class="skill-card reveal"><header class="skill-card__head"><h3>Leadership & Collaboration</h3><span class="rank-badge">#11</span></header><p class="skill-card__desc">Coaching, communication, scaling teams.</p><div class="skill-level"><span style="width:65%"></span></div><ul class="skill-tags"><li>Problem Solving</li><li>Critical Thinking</li><li>Time Management</li></ul></article>
+    </div>
+
+    <!-- Logos -->
+    <div class="row logos-row">
+      <div class="col-sm-2 col-4"><img src="images/skills/dotnet.png" class="logo-img"></div>
+      <div class="col-sm-2 col-4"><img src="images/skills/react.png" class="logo-img"></div>
+      <div class="col-sm-2 col-4"><img src="images/skills/postgresql.png" class="logo-img"></div>
+      <div class="col-sm-2 col-4"><img src="images/skills/docker.png" class="logo-img"></div>
+      <div class="col-sm-2 col-4"><img src="images/skills/git.png" class="logo-img"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+(function(){
+  Chart.defaults.font.family = "system-ui, Roboto, Arial";
+  Chart.defaults.plugins.legend.position = 'bottom';
+
+  new Chart(document.getElementById('capabilityRadar'), {
+    type: 'radar',
+    data: {
+      labels: ['Leadership','Architecture','Backend','DevOps','Data','Frontend','Integration'],
+      datasets: [{ label: 'Impact & Depth', data: [95,92,90,88,85,80,78], fill: true }]
+    },
+    options: {
+      responsive:true,
+      scales: { r: { beginAtZero:true, max:100, ticks:{display:false}, grid:{circular:true} } }
+    }
+  });
+
+  new Chart(document.getElementById('stackBar'), {
+    type: 'bar',
+    data: {
+      labels: ['.NET/C#','Node.js','SQL Server','PostgreSQL','React','DevOps'],
+      datasets: [
+        { label: 'Core', data: [85,70,80,78,72,75], stack: 'stack' },
+        { label: 'Advanced', data: [10,15,10,10,8,10], stack: 'stack' },
+        { label: 'Expert', data: [5,5,5,5,0,3], stack: 'stack' }
+      ]
+    },
+    options: {
+      indexAxis:'y',
+      responsive:true,
+      scales: {
+        x: { stacked:true, suggestedMax:100, ticks:{ callback:v=>v+'%' } },
+        y: { stacked:true }
+      }
+    }
+  });
+
+  // IntersectionObserver for reveal animations
+  const reveals = document.querySelectorAll('#skill .skill-card, #skill .chart-card, #skill .kpi-card, #skill .logo-img, #skill .tech-cloud');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add('in-view');
+          io.unobserve(e.target);
+        }
+      });
+    },{ threshold:0.15 });
+    reveals.forEach(n=>io.observe(n));
+  } else {
+    reveals.forEach(n=>n.classList.add('in-view'));
+  }
+})();
+</script>
 
 </body>
 </html>

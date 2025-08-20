@@ -1623,51 +1623,479 @@
     </section>
 
 
-    <section id="skills" class="section-content bg2">
+    <!-- ===== Enhanced Skills Section (Prioritized) ===== -->
+    <section id="skill" class="section-content bg2">
         <div class="container">
-            <div class="section-title text-center">
-                <span class="fas fa-lightbulb fa-2x"></span>
+            <!-- Section Title -->
+            <div class="section-title item_bottom text-center">
+                <div><span class="fas fa-lightbulb fa-2x"></span></div>
                 <h1>My <span>Skills</span></h1>
+                <p class="section-subtitle">Prioritized for leadership impact, clarity, and quick scanning.</p>
             </div>
 
-            <!-- Leadership -->
-            <div class="skill-category">
-                <h2><i class="fas fa-user-tie"></i> Leadership & Strategic Skills</h2>
-                <ul class="skill-tags">
-                    <li data-cat="soft">Problem Solving</li>
-                    <li data-cat="soft">Leadership</li>
-                    <li data-cat="soft">Critical Thinking</li>
-                    <li data-cat="soft">Collaboration</li>
-                    <li data-cat="soft">Communication</li>
-                </ul>
-            </div>
+            <!-- Skill Category: Leadership & Strategic (Open by default) -->
+            <details class="skill-accordion open" open>
+                <summary>
+                    <i class="fas fa-user-tie"></i>
+                    <span>Leadership & Strategic Skills</span>
+                    <small>Top-priority soft skills for C-level ownership</small>
+                </summary>
 
-            <!-- Software Architecture -->
-            <div class="skill-category">
-                <h2><i class="fas fa-sitemap"></i> Software Architecture & Engineering</h2>
-                <ul class="skill-tags">
-                    <li data-cat="architecture">System Design</li>
-                    <li data-cat="architecture">OOP</li>
-                    <li data-cat="architecture">SOLID</li>
-                    <li data-cat="architecture">Design Patterns</li>
-                    <li data-cat="architecture">Security Best Practices</li>
-                </ul>
-            </div>
+                <div class="skill-body">
+                    <ul class="skill-tags">
+                        <li data-cat="soft" title="Making sound decisions under uncertainty">Problem Solving</li>
+                        <li data-cat="soft" title="Setting vision and aligning teams">Leadership</li>
+                        <li data-cat="soft" title="Structured reasoning & trade-offs">Critical Thinking</li>
+                        <li data-cat="soft" title="Bridging business, product, tech">Cross-Functional Collaboration</li>
+                        <li data-cat="soft" title="Influencing at executive level">Communication</li>
+                        <li data-cat="soft" title="Coaching & stakeholder empathy">Emotional Intelligence</li>
+                        <li data-cat="soft" title="Scaling habits & operating systems">Time & Organization</li>
+                    </ul>
+                </div>
+            </details>
 
-            <!-- Backend -->
-            <div class="skill-category">
-                <h2><i class="fas fa-code"></i> Backend Development</h2>
-                <ul class="skill-tags">
-                    <li data-cat="backend">C# / ASP.NET / .NET Core</li>
-                    <li data-cat="backend">Node.js</li>
-                </ul>
-            </div>
+            <!-- Skill Category: Architecture & Engineering Principles -->
+            <details class="skill-accordion">
+                <summary>
+                    <i class="fas fa-sitemap"></i>
+                    <span>Software Architecture & Engineering</span>
+                    <small>High-leverage technical foundations</small>
+                </summary>
 
-            <!-- (Repeat similar blocks for Frontend, Databases, DevOps, APIs, etc.) -->
+                <div class="skill-body">
+                    <div class="bars">
+                        <div class="bar">
+                            <label>Architecture & System Design</label>
+                            <div class="track"><div class="fill" data-progress="90"></div></div>
+                        </div>
+                        <div class="bar">
+                            <label>OOP, SOLID & Design Patterns</label>
+                            <div class="track"><div class="fill" data-progress="85"></div></div>
+                        </div>
+                        <div class="bar">
+                            <label>Security Best Practices</label>
+                            <div class="track"><div class="fill" data-progress="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Skill Category: Project & Program Management -->
+            <details class="skill-accordion">
+                <summary>
+                    <i class="fas fa-diagram-project"></i>
+                    <span>Project & Program Management</span>
+                    <small>Delivery, cadence & governance</small>
+                </summary>
+
+                <div class="skill-body">
+                    <ul class="skill-tags">
+                        <li data-cat="pm">Agile</li>
+                        <li data-cat="pm">Scrum</li>
+                        <li data-cat="pm">Jira</li>
+                        <li data-cat="pm">Stakeholder Management</li>
+                        <li data-cat="pm">Risk & Dependency Mapping</li>
+                    </ul>
+                </div>
+            </details>
+
+            <!-- Skill Category: Backend Development -->
+            <details class="skill-accordion">
+                <summary>
+                    <i class="fas fa-server"></i>
+                    <span>Backend Development</span>
+                    <small>Core delivery stack</small>
+                </summary>
+
+                <div class="skill-body">
+                    <div class="grid-logos">
+                        <div class="logo-chip" aria-label="C#, ASP.NET, .NET Core">
+                            <i class="fa-brands fa-microsoft"></i><span>C# / ASP.NET / .NET&nbsp;Core</span>
+                        </div>
+                        <div class="logo-chip" aria-label="Node.js">
+                            <i class="fa-brands fa-node"></i><span>Node.js</span>
+                        </div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="bar"><label>C# / ASP.NET / .NET Core</label><div class="track"><div class="fill" data-progress="90"></div></div></div>
+                        <div class="bar"><label>Node.js</label><div class="track"><div class="fill" data-progress="90"></div></div></div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Skill Category: Frontend Development -->
+            <details class="skill-accordion">
+                <summary>
+                    <i class="fas fa-code"></i>
+                    <span>Frontend Development</span>
+                    <small>Enterprise UI frameworks & patterns</small>
+                </summary>
+
+                <div class="skill-body">
+                    <ul class="skill-tags">
+                        <li data-cat="frontend">React.js</li>
+                        <li data-cat="frontend">JavaScript (ES6+)</li>
+                        <li data-cat="frontend">HTML5</li>
+                        <li data-cat="frontend">CSS3</li>
+                        <li data-cat="frontend">Angular</li>
+                        <li data-cat="frontend">Kendo UI</li>
+                        <li data-cat="frontend">Telerik / DevExpress / Infragistics / ComponentOne / Syncfusion</li>
+                        <li data-cat="frontend">jQuery</li>
+                    </ul>
+
+                    <div class="bars compact">
+                        <div class="bar"><label>React.js</label><div class="track"><div class="fill" data-progress="75"></div></div></div>
+                        <div class="bar"><label>JavaScript</label><div class="track"><div class="fill" data-progress="90"></div></div></div>
+                        <div class="bar"><label>Kendo UI</label><div class="track"><div class="fill" data-progress="95"></div></div></div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Skill Category: Databases & Data Access -->
+            <details class="skill-accordion">
+                <summary>
+                    <i class="fas fa-database"></i>
+                    <span>Databases & Data Access</span>
+                    <small>Transactional & caching layers</small>
+                </summary>
+
+                <div class="skill-body">
+                    <ul class="skill-tags">
+                        <li data-cat="db">SQL Server</li>
+                        <li data-cat="db">PostgreSQL</li>
+                        <li data-cat="db">MySQL</li>
+                        <li data-cat="db">MongoDB</li>
+                        <li data-cat="db">Redis</li>
+                        <li data-cat="db">Entity Framework</li>
+                        <li data-cat="db">LINQ</li>
+                        <li data-cat="db">ADO.NET</li>
+                    </ul>
+                    <div class="bars compact">
+                        <div class="bar"><label>SQL Server / PostgreSQL / MySQL</label><div class="track"><div class="fill" data-progress="80"></div></div></div>
+                        <div class="bar"><label>Entity Framework & LINQ</label><div class="track"><div class="fill" data-progress="90"></div></div></div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Skill Category: DevOps & Deployment -->
+            <details class="skill-accordion">
+                <summary>
+                    <i class="fas fa-gears"></i>
+                    <span>DevOps & Deployment</span>
+                    <small>Packaging, CI/CD, web servers</small>
+                </summary>
+
+                <div class="skill-body">
+                    <ul class="skill-tags">
+                        <li data-cat="devops">Docker</li>
+                        <li data-cat="devops">Jenkins</li>
+                        <li data-cat="devops">IIS</li>
+                        <li data-cat="devops">TFS</li>
+                        <li data-cat="devops">Nginx</li>
+                        <li data-cat="devops">Apache</li>
+                    </ul>
+
+                    <div class="bars compact">
+                        <div class="bar"><label>Docker</label><div class="track"><div class="fill" data-progress="80"></div></div></div>
+                        <div class="bar"><label>Jenkins / TFS</label><div class="track"><div class="fill" data-progress="80"></div></div></div>
+                        <div class="bar"><label>IIS</label><div class="track"><div class="fill" data-progress="90"></div></div></div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Skill Category: API Development & Integration -->
+            <details class="skill-accordion">
+                <summary>
+                    <i class="fas fa-plug"></i>
+                    <span>API Development & Integration</span>
+                    <small>Interfaces & interoperability</small>
+                </summary>
+
+                <div class="skill-body">
+                    <ul class="skill-tags">
+                        <li data-cat="api">RESTful APIs</li>
+                        <li data-cat="api">Web API</li>
+                        <li data-cat="api">SignalR</li>
+                        <li data-cat="api">Socket.IO</li>
+                        <li data-cat="api">Swagger</li>
+                        <li data-cat="api">Postman</li>
+                    </ul>
+                    <div class="bars compact">
+                        <div class="bar"><label>REST / Web API</label><div class="track"><div class="fill" data-progress="90"></div></div></div>
+                        <div class="bar"><label>SignalR / Socket.IO</label><div class="track"><div class="fill" data-progress="60"></div></div></div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Skill Category: Data Visualization & Reporting -->
+            <details class="skill-accordion">
+                <summary>
+                    <i class="fas fa-chart-column"></i>
+                    <span>Data Visualization & Reporting</span>
+                    <small>Dashboards & enterprise reporting</small>
+                </summary>
+
+                <div class="skill-body">
+                    <ul class="skill-tags">
+                        <li data-cat="viz">Kendo UI Charts</li>
+                        <li data-cat="viz">Telerik Reporting</li>
+                        <li data-cat="viz">Chart.js</li>
+                        <li data-cat="viz">Apache Superset</li>
+                        <li data-cat="viz">Crystal Reports</li>
+                    </ul>
+                    <div class="bars compact">
+                        <div class="bar"><label>Kendo UI Charts</label><div class="track"><div class="fill" data-progress="90"></div></div></div>
+                        <div class="bar"><label>Telerik Reporting</label><div class="track"><div class="fill" data-progress="90"></div></div></div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Skill Category: Version Control -->
+            <details class="skill-accordion">
+                <summary>
+                    <i class="fas fa-code-branch"></i>
+                    <span>Version Control</span>
+                    <small>Collaboration & governance</small>
+                </summary>
+
+                <div class="skill-body">
+                    <ul class="skill-tags">
+                        <li data-cat="vc">Git</li>
+                        <li data-cat="vc">GitHub</li>
+                    </ul>
+                    <div class="bars compact">
+                        <div class="bar"><label>Git</label><div class="track"><div class="fill" data-progress="90"></div></div></div>
+                        <div class="bar"><label>GitHub</label><div class="track"><div class="fill" data-progress="80"></div></div></div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Skill Category: CMS & eCommerce -->
+            <details class="skill-accordion">
+                <summary>
+                    <i class="fas fa-store"></i>
+                    <span>CMS & eCommerce Platforms</span>
+                    <small>Enterprise content & commerce</small>
+                </summary>
+
+                <div class="skill-body">
+                    <ul class="skill-tags">
+                        <li data-cat="cms">nopCommerce</li>
+                        <li data-cat="cms">Virto Commerce</li>
+                        <li data-cat="cms">Sitefinity</li>
+                        <li data-cat="cms">Umbraco</li>
+                        <li data-cat="cms">Kentico</li>
+                    </ul>
+                </div>
+            </details>
         </div>
     </section>
-
+    <!-- ===== End Enhanced Skills Section ===== -->
     <!-- End Skill Section -->
+    <style>
+        /* --- Skills: structure --- */
+        #skill .section-subtitle {
+            margin-top: 8px;
+            color: #667085;
+        }
+
+        /* Accordion container */
+        .skill-accordion {
+            border: 1px solid var(--brand-100, #e7eefc);
+            border-left: 6px solid var(--brand-500, #4f7cff);
+            border-radius: 12px;
+            margin: 14px 0;
+            background: #fff;
+            box-shadow: 0 6px 18px rgba(13,110,253,.06);
+            overflow: hidden;
+        }
+
+            .skill-accordion[open] {
+                box-shadow: 0 10px 28px rgba(13,110,253,.10);
+            }
+
+            /* Accordion header */
+            .skill-accordion > summary {
+                list-style: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                display: grid;
+                grid-template-columns: 28px 1fr auto;
+                align-items: center;
+                gap: 12px;
+                font-weight: 600;
+                color: var(--brand-700, #123a7d);
+            }
+
+                .skill-accordion > summary::-webkit-details-marker {
+                    display: none;
+                }
+
+                .skill-accordion > summary i {
+                    color: var(--brand-600, #2563eb);
+                }
+
+                .skill-accordion > summary small {
+                    color: #6b7280;
+                    font-weight: 500;
+                }
+
+            /* Accordion body */
+            .skill-accordion .skill-body {
+                padding: 10px 16px 16px;
+            }
+
+        /* Skill tags */
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+        }
+
+            .skill-tags li {
+                list-style: none;
+                border: 1px solid #e5e7eb;
+                padding: 8px 12px;
+                border-radius: 999px;
+                font-weight: 600;
+                font-size: 13px;
+                background: #f9fafb;
+                transition: transform .15s ease, background .15s ease, color .15s ease, border-color .15s ease;
+            }
+
+                .skill-tags li:hover {
+                    transform: translateY(-2px);
+                    background: var(--brand-500, #4f7cff);
+                    color: #fff;
+                    border-color: transparent;
+                }
+
+                /* Category tints */
+                .skill-tags li[data-cat="frontend"] {
+                    background: #eaf2ff;
+                    border-color: #cfe0ff;
+                }
+
+                .skill-tags li[data-cat="backend"] {
+                    background: #eefcf3;
+                    border-color: #cfeedd;
+                }
+
+                .skill-tags li[data-cat="db"] {
+                    background: #fff8e6;
+                    border-color: #ffe2a8;
+                }
+
+                .skill-tags li[data-cat="devops"] {
+                    background: #f5ecff;
+                    border-color: #e5d4ff;
+                }
+
+                .skill-tags li[data-cat="api"] {
+                    background: #e6fbff;
+                    border-color: #bdefff;
+                }
+
+                .skill-tags li[data-cat="viz"] {
+                    background: #f1f8ff;
+                    border-color: #dce9ff;
+                }
+
+                .skill-tags li[data-cat="pm"] {
+                    background: #f2fbf5;
+                    border-color: #dcf6e3;
+                }
+
+                .skill-tags li[data-cat="cms"] {
+                    background: #fff1f3;
+                    border-color: #ffd6dc;
+                }
+
+                .skill-tags li[data-cat="vc"] {
+                    background: #f6f7fb;
+                    border-color: #e9ebf5;
+                }
+
+                .skill-tags li[data-cat="soft"] {
+                    background: #f8fafc;
+                    border-color: #e5e7eb;
+                }
+
+        /* Progress bars */
+        .bars {
+            display: grid;
+            gap: 12px;
+            margin-top: 6px;
+        }
+
+            .bars.compact .bar {
+                margin-bottom: 0;
+            }
+
+        .bar label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #334155;
+        }
+
+        .track {
+            width: 100%;
+            height: 10px;
+            background: #f1f5f9;
+            border-radius: 999px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--brand-500, #4f7cff), var(--brand-700, #123a7d));
+            border-radius: 999px;
+            transition: width 900ms ease;
+        }
+
+        /* Logo chips */
+        .grid-logos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .logo-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f8fbff;
+            border: 1px solid #e6f0ff;
+            color: #0d2a6b;
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+            .logo-chip i {
+                color: var(--brand-600, #2563eb);
+            }
+
+        /* Better spacing on mobile */
+        @media (max-width: 768px) {
+            .skill-accordion > summary {
+                grid-template-columns: 24px 1fr;
+            }
+
+                .skill-accordion > summary small {
+                    display: none;
+                }
+        }
+    </style>
     <section class="fullwidth-section bg-callout">
         <div class="container">
             <div class="row">
@@ -3484,6 +3912,31 @@
     <!-- END SLIDER REVOLUTION 4.x SCRIPTS  -->
     <script type="text/javascript" src="js/script.js"></script>
     <!-- Js Library -->
+    <script>
+        // Animate progress bars when section enters viewport
+        (function () {
+            const el = document.querySelector('#skill');
+            if (!el) return;
+            const fills = el.querySelectorAll('.fill[data-progress]');
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        fills.forEach(f => { f.style.width = (f.dataset.progress || 0) + '%'; });
+                        io.disconnect();
+                    }
+                });
+            }, { threshold: 0.25 });
+            io.observe(el);
+        })();
+
+        // Add a class to <details> when open for subtle style changes
+        document.addEventListener('toggle', (e) => {
+            if (e.target.matches('.skill-accordion')) {
+                e.target.classList.toggle('open', e.target.open);
+            }
+        }, true);
+    </script>
+
     <script>
         (function () {
             var cards = document.querySelectorAll('#professional-involvements .reveal');

@@ -1347,6 +1347,191 @@
             </div>
         </div>
     </section>
+
+
+<!-- ============= Languages Section ============= -->
+<section class="section-content bg1" id="languages">
+  <div class="container">
+    <div class="row">
+      <!-- Section Title -->
+      <div class="section-title item_bottom text-center">
+        <div><span class="fa fa-language fa-2x"></span></div>
+        <h1>My <span>Languages</span></h1>
+        <p class="section-subtitle">Proficiency with clarity and confidence.</p>
+      </div>
+      <!-- /Section Title -->
+    </div>
+
+    <!-- Language Cards -->
+    <div class="row item_bottom">
+      <!-- Language Card -->
+      <div class="col-md-6">
+        <details class="skill-accordion" open>
+          <summary>
+            <i class="fa-solid fa-globe"></i>
+            Arabic <small>Native</small>
+            <i class="fa fa-chevron-down"></i>
+          </summary>
+          <div class="skill-body">
+            <ul class="skill-tags" style="margin-bottom:10px">
+              <li data-cat="soft">Speaking</li>
+              <li data-cat="soft">Reading</li>
+              <li data-cat="soft">Writing</li>
+              <li data-cat="soft">Presentation</li>
+            </ul>
+            <div class="bars compact">
+              <div class="bar">
+                <label>Overall</label>
+                <div class="track"><div class="fill" style="width: 100%"></div></div>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- Language Card -->
+      <div class="col-md-6">
+        <details class="skill-accordion" open>
+          <summary>
+            <i class="fa-solid fa-globe"></i>
+            English <small>Advanced (C1)</small>
+            <i class="fa fa-chevron-down"></i>
+          </summary>
+          <div class="skill-body">
+            <ul class="skill-tags" style="margin-bottom:10px">
+              <li data-cat="soft">Business</li>
+              <li data-cat="soft">Technical</li>
+              <li data-cat="soft">Email</li>
+              <li data-cat="soft">Presentations</li>
+            </ul>
+            <div class="bars compact">
+              <div class="bar">
+                <label>Speaking</label>
+                <div class="track"><div class="fill" style="width: 90%"></div></div>
+              </div>
+              <div class="bar">
+                <label>Reading</label>
+                <div class="track"><div class="fill" style="width: 95%"></div></div>
+              </div>
+              <div class="bar">
+                <label>Writing</label>
+                <div class="track"><div class="fill" style="width: 90%"></div></div>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <!-- /Language Cards -->
+  </div>
+</section>
+
+<!-- Quick enhancer: animate fills on scroll (optional) -->
+<script>
+  document.querySelectorAll('#languages .fill').forEach(el=>{
+    const w = el.style.width;
+    el.style.width = '0%';
+    const io = new IntersectionObserver(([e])=>{
+      if(e.isIntersecting){ el.style.width = w; io.disconnect(); }
+    }, {threshold: .3});
+    io.observe(el);
+  });
+</script>
+
+<!-- ============= Education Section ============= -->
+<section class="section-content bg2" id="education">
+  <div class="container">
+    <div class="row">
+      <!-- Section Title -->
+      <div class="section-title item_bottom text-center">
+        <div><span class="fa fa-graduation-cap fa-2x"></span></div>
+        <h1>My <span>Education</span></h1>
+        <p class="section-subtitle">Formal foundations & continuous learning.</p>
+      </div>
+      <!-- /Section Title -->
+    </div>
+
+    <!-- Education Grid -->
+    <div class="row item_bottom edu-grid">
+      <!-- Degree Card -->
+      <div class="col-md-6">
+        <div class="edu-card">
+          <div class="edu-header">
+            <div class="edu-badge"><i class="fa-solid fa-award"></i> Bachelor</div>
+            <time class="edu-time">2003 – 2007</time>
+          </div>
+          <h3 class="edu-title">Bachelor of Computer Science</h3>
+          <h5 class="edu-inst">Zagazig University</h5>
+          <ul class="edu-highlights">
+            <li>A+ in graduation project</li>
+            <li>Core: Algorithms, Data Structures, Databases, OS</li>
+            <li>Applied: Web Engineering, Networks, Software Eng.</li>
+          </ul>
+          <div class="grid-logos" aria-hidden="true">
+            <span class="logo-chip"><i class="fa-solid fa-code"></i> C# / .NET</span>
+            <span class="logo-chip"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="logo-chip"><i class="fa-solid fa-network-wired"></i> Networks</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- High School Card -->
+      <div class="col-md-6">
+        <div class="edu-card">
+          <div class="edu-header">
+            <div class="edu-badge"><i class="fa-solid fa-school"></i> High School</div>
+            <time class="edu-time">2007 – 2011</time>
+          </div>
+          <h3 class="edu-title">High School Degree</h3>
+          <h5 class="edu-inst">Altawfikia Secondary School</h5>
+          <ul class="edu-highlights">
+            <li>Strong STEM orientation</li>
+            <li>Early exposure to programming & problem solving</li>
+          </ul>
+          <div class="grid-logos" aria-hidden="true">
+            <span class="logo-chip"><i class="fa-solid fa-calculator"></i> Math</span>
+            <span class="logo-chip"><i class="fa-solid fa-flask"></i> Science</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Education Grid -->
+  </div>
+</section>
+
+<!-- Local styles scoped to Education cards -->
+<style>
+  #languages .section-subtitle,
+  #education .section-subtitle { margin-top:8px; color:#667085 }
+
+  /* Education cards */
+  #education .edu-grid { display:block }
+  #education .edu-card{
+    background:#fff; border:1px solid #e7eefc; border-left:6px solid var(--brand-500,#4f7cff);
+    border-radius:14px; padding:18px; margin-bottom:18px;
+    box-shadow:0 8px 20px rgba(13,110,253,.06);
+    transition:transform .18s ease, box-shadow .18s ease
+  }
+  #education .edu-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 14px 28px rgba(13,110,253,.10)
+  }
+  #education .edu-header{
+    display:flex; align-items:center; justify-content:space-between; margin-bottom:8px
+  }
+  #education .edu-badge{
+    display:inline-flex; align-items:center; gap:8px; font-weight:700; font-size:13px;
+    background:#eaf2ff; border:1px solid #cfe0ff; color:#0d2a6b; padding:6px 10px; border-radius:999px
+  }
+  #education .edu-time{ font-weight:600; color:#334155; font-size:13px }
+  #education .edu-title{ margin:.2rem 0; font-weight:700; color:#123a7d }
+  #education .edu-inst{ margin:0 0 .6rem; color:#475569; font-weight:600 }
+  #education .edu-highlights{ padding-left:18px; margin:0 0 .6rem }
+  #education .edu-highlights li{ margin:4px 0; color:#334155 }
+</style>
+
+
+
  
     <style>
         /* --- Skills: structure --- */

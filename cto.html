@@ -40,166 +40,6 @@
             float: left
         }
     </style>
-
-    <style>
-        :root {
-            --card: #0e1a2b;
-            --card-2: #0f223a;
-            --ink: #e9f1ff;
-            --ink-dim: #c8d6f4;
-            --brand: #29b6f6;
-            --ring: rgba(41,182,246,.35);
-            --line: rgba(255,255,255,.08);
-        }
-
-        body {
-            margin: 0;
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
-            color: var(--ink);
-            background: radial-gradient(1200px 600px at 10% -10%, #17345a 0%, #0a1524 40%, #040b14 100%);
-        }
-
-        .wrap {
-            max-width: 1100px;
-            margin-inline: auto;
-            padding: 40px 18px 70px;
-        }
-
-        /* Section frame */
-        #skill {
-            background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
-            border: 1px solid var(--line);
-            border-radius: 18px;
-            box-shadow: 0 10px 40px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.03);
-            padding: 22px 22px 8px;
-            backdrop-filter: blur(6px);
-        }
-
-            /* Demo "existing" headings/content structure you already have */
-            #skill h1.second-title {
-                font-size: 1.35rem;
-                line-height: 1.25;
-                margin: 18px 0 10px;
-                color: var(--ink);
-                font-weight: 700;
-                letter-spacing: .2px;
-            }
-
-            #skill h2, #skill h3, #skill .sub-title {
-                font-size: 1.05rem;
-                margin: 10px 0 6px;
-                color: var(--ink);
-                font-weight: 600;
-            }
-
-        .grid {
-            display: grid;
-            gap: 10px;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        }
-
-        .chip, .logo-chip {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            border: 1px solid var(--line);
-            background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-            border-radius: 12px;
-            padding: 10px 12px;
-            font-size: .95rem;
-            color: var(--ink-dim);
-        }
-
-            .logo-chip i {
-                opacity: .9;
-            }
-
-        /* ===== Accordions ===== */
-        .skill-accordion > summary,
-        .skill-subaccordion > summary {
-            position: relative;
-            list-style: none;
-            display: grid;
-            grid-template-columns: auto 1fr auto auto;
-            align-items: center;
-            gap: .7rem;
-            padding: 14px 14px;
-            margin: 6px 0 8px;
-            border-radius: 14px;
-            border: 1px solid var(--line);
-            background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
-            box-shadow: 0 0 0 0 rgba(41,182,246,0);
-            transition: box-shadow .2s ease, border-color .2s ease, background .2s ease;
-            cursor: pointer;
-        }
-
-            .skill-accordion > summary:hover,
-            .skill-subaccordion > summary:hover {
-                box-shadow: 0 0 0 3px var(--ring);
-            }
-
-            .skill-accordion > summary i.fa-chevron-down,
-            .skill-subaccordion > summary i.fa-chevron-down {
-                transition: transform .2s ease;
-                opacity: .9;
-            }
-
-        .skill-accordion[open] > summary i.fa-chevron-down,
-        .skill-subaccordion[open] > summary i.fa-chevron-down {
-            transform: rotate(180deg);
-        }
-
-        .skill-accordion > summary > i:first-child,
-        .skill-subaccordion > summary > i:first-child {
-            width: 28px;
-            height: 28px;
-            display: grid;
-            place-items: center;
-            border-radius: 9px;
-            background: radial-gradient(120% 120% at 20% 20%, rgba(41,182,246,.35), rgba(41,182,246,.08));
-            border: 1px solid rgba(41,182,246,.35);
-            color: #dff5ff;
-        }
-
-        .acc-meta, .sub-meta {
-            color: var(--ink-dim);
-            font-size: .85rem;
-            opacity: .85;
-            margin-right: 6px;
-        }
-
-        .skill-body {
-            padding: 4px 8px 14px;
-        }
-
-        .skill-subaccordion {
-            margin: .5rem 0 .35rem 0;
-            border-left: 3px solid rgba(41,182,246,.25);
-            padding-left: .75rem;
-        }
-
-        .skill-subbody {
-            padding: .4rem 0 .2rem;
-        }
-
-        /* Example progress bar (optional) */
-        .progress {
-            height: 8px;
-            border-radius: 999px;
-            background: rgba(255,255,255,.08);
-            overflow: hidden;
-            border: 1px solid var(--line);
-        }
-
-        .fill {
-            height: 100%;
-            width: 0;
-            background: linear-gradient(90deg, #29b6f6, #6dd5fa);
-            transition: width .7s ease;
-        }
-    </style>
-
-    </style>
 </head>
 <body>
     <!-- Pre-loader -->
@@ -245,7 +85,7 @@
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
-
+                   
                 </ul>
             </nav>
             <!--/.navbar-collapse -->
@@ -885,109 +725,18 @@
     </section>
     <!-- End Portfolio Section -->
     <!-- Skill Section -->
-    <section id="skill">
-
-        <!-- MAIN: Software Architecture -->
-        <h1 class="second-title">Software Architecture & Engineering</h1>
-        <h2>Architectural Styles</h2>
-        <div class="grid">
-            <span class="chip"><i class="fa-solid fa-cubes"></i> Microservices</span>
-            <span class="chip"><i class="fa-solid fa-diagram-project"></i> Event-Driven</span>
-            <span class="chip"><i class="fa-solid fa-network-wired"></i> SOA</span>
-            <span class="chip"><i class="fa-solid fa-layer-group"></i> Layered</span>
-        </div>
-
-        <h2>Quality Attributes</h2>
-        <div class="grid">
-            <div>
-                <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-                    <span>Scalability</span><span>90%</span>
-                </div>
-                <div class="progress"><div class="fill" data-width="90%"></div></div>
-            </div>
-            <div>
-                <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-                    <span>Resilience</span><span>85%</span>
-                </div>
-                <div class="progress"><div class="fill" data-width="85%"></div></div>
-            </div>
-            <div>
-                <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-                    <span>Security</span><span>80%</span>
-                </div>
-                <div class="progress"><div class="fill" data-width="80%"></div></div>
-            </div>
-        </div>
-
-        <!-- MAIN: Backend -->
-        <h1 class="second-title">Backend & APIs</h1>
-        <h2>Languages & Runtimes</h2>
-        <div class="grid">
-            <span class="logo-chip"><i class="fa-brands fa-python"></i> Python</span>
-            <span class="logo-chip"><i class="fa-brands fa-node-js"></i> Node.js</span>
-            <span class="logo-chip"><i class="fa-solid fa-feather"></i> FastAPI</span>
-            <span class="logo-chip"><i class="fa-solid fa-mug-hot"></i> Java / Spring</span>
-        </div>
-
-        <h3>API Styles</h3>
-        <div class="grid">
-            <span class="chip"><i class="fa-solid fa-plug"></i> REST</span>
-            <span class="chip"><i class="fa-solid fa-shuffle"></i> gRPC</span>
-            <span class="chip"><i class="fa-solid fa-diagram-predecessor"></i> GraphQL</span>
-        </div>
-
-        <!-- MAIN: Data -->
-        <h1 class="second-title">Databases & Warehousing</h1>
-        <h2>Core Engines</h2>
-        <div class="grid">
-            <span class="logo-chip"><i class="fa-solid fa-database"></i> PostgreSQL</span>
-            <span class="logo-chip"><i class="fa-solid fa-database"></i> MS SQL</span>
-            <span class="logo-chip"><i class="fa-solid fa-database"></i> MySQL</span>
-            <span class="logo-chip"><i class="fa-solid fa-warehouse"></i> Data Warehousing</span>
-        </div>
-
-        <h2 class="sub-title">ETL & BI</h2>
-        <div class="grid">
-            <span class="logo-chip"><i class="fa-solid fa-chart-column"></i> Power BI</span>
-            <span class="logo-chip"><i class="fa-solid fa-table"></i> Excel / Power Query</span>
-            <span class="logo-chip"><i class="fa-solid fa-cubes-stacked"></i> dbt (basics)</span>
-        </div>
-
-        <!-- MAIN: DevOps -->
-        <h1 class="second-title">DevOps & Cloud</h1>
-        <h3>CI/CD & Infra</h3>
-        <div class="grid">
-            <span class="chip"><i class="fa-solid fa-gears"></i> GitHub Actions</span>
-            <span class="chip"><i class="fa-solid fa-boxes-stacked"></i> Docker</span>
-            <span class="chip"><i class="fa-solid fa-cloud"></i> Azure / GCP (essentials)</span>
-        </div>
-
-        <h3>Observability</h3>
-        <div class="grid">
-            <span class="chip"><i class="fa-solid fa-chart-line"></i> Logging / Metrics</span>
-            <span class="chip"><i class="fa-solid fa-bell"></i> Alerts & SLOs</span>
-        </div>
-
-        <!-- MAIN: Personal -->
-        <h1 class="second-title">Personal & Communication</h1>
-        <h2>Leadership</h2>
-        <ul class="skill-tags">
-            <li class="chip"><i class="fa-solid fa-users-gear"></i> Team Enablement</li>
-            <li class="chip"><i class="fa-solid fa-sitemap"></i> Stakeholder Mapping</li>
-        </ul>
-
-        <h2>Communication</h2>
-        <ul class="skill-tags">
-            <li class="chip"><i class="fa-solid fa-file-lines"></i> Clear Docs</li>
-            <li class="chip"><i class="fa-solid fa-person-chalkboard"></i> Exec Briefings</li>
-        </ul>
-
-    </section>
-
-
     <section class="section-content bg2" id="skill">
         <div class="container">
-
+            <div class="row">
+                <!-- Section title -->
+                <div class="section-title item_bottom text-center">
+                    <div>
+                        <span class="fa fa-book fa-2x"></span>
+                    </div>
+                    <h1>My <span>Resume</span></h1>
+                </div>
+                <!-- End Section title -->
+            </div>
             <div class="row">
 
 
@@ -1598,7 +1347,7 @@
             </div>
         </div>
     </section>
-
+ 
     <style>
         /* --- Skills: structure --- */
         #skill .section-subtitle {
@@ -3624,129 +3373,5 @@
             items.forEach(i => io.observe(i));
         })();
     </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const skillRoot = document.querySelector('#skill');
-            if (!skillRoot) return;
-
-            const iconFor = (title) => {
-                const t = (title || '').toLowerCase();
-                if (t.includes('architecture') || t.includes('engineering')) return 'fa-solid fa-diagram-project';
-                if (t.includes('project') || t.includes('agile') || t.includes('management')) return 'fa-solid fa-clipboard-check';
-                if (t.includes('backend') || t.includes('server') || t.includes('api')) return 'fa-solid fa-server';
-                if (t.includes('frontend') || t.includes('ui') || t.includes('ux')) return 'fa-solid fa-code';
-                if (t.includes('database') || t.includes('data') || t.includes('warehouse') || t.includes('bi')) return 'fa-solid fa-database';
-                if (t.includes('devops') || t.includes('cloud') || t.includes('deployment') || t.includes('ci')) return 'fa-solid fa-gears';
-                if (t.includes('report') || t.includes('visualization')) return 'fa-solid fa-chart-column';
-                if (t.includes('version') || t.includes('git')) return 'fa-solid fa-code-branch';
-                if (t.includes('cms') || t.includes('commerce')) return 'fa-solid fa-store';
-                if (t.includes('personal') || t.includes('soft')) return 'fa-solid fa-user-check';
-                return 'fa-solid fa-layer-group';
-            };
-
-            // ===== MAIN ACCORDIONS (h1.second-title) =====
-            const mainTitles = Array.from(skillRoot.querySelectorAll('h1.second-title'));
-            mainTitles.forEach((h, idx) => {
-                const details = document.createElement('details');
-                details.className = 'skill-accordion';
-                if (idx === 0) details.setAttribute('open', '');
-
-                const summary = document.createElement('summary');
-                summary.innerHTML = `
-          <i class="${iconFor(h.textContent)}"></i>
-          <span>${h.innerHTML}</span>
-          <small class="acc-meta"></small>
-          <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-        `;
-                details.appendChild(summary);
-
-                const body = document.createElement('div');
-                body.className = 'skill-body';
-                let cursor = h.nextElementSibling;
-                while (cursor && !(cursor.matches('h1.second-title'))) {
-                    const next = cursor.nextElementSibling;
-                    body.appendChild(cursor);
-                    cursor = next;
-                }
-
-                details.appendChild(body);
-                h.replaceWith(details);
-
-                // Count items inside
-                const count = body.querySelectorAll('.chart, .skillBar li, .logo-chip, .skill-tags li, .progress, .badge, .chip').length;
-                const meta = summary.querySelector('.acc-meta');
-                if (meta) meta.textContent = count ? `${count} items` : '';
-            });
-
-            // One-open-at-a-time for main level
-            const mains = Array.from(skillRoot.querySelectorAll('.skill-accordion'));
-            mains.forEach(d => {
-                d.addEventListener('toggle', () => {
-                    if (d.open) mains.forEach(o => { if (o !== d) o.open = false; });
-                });
-            });
-
-            // ===== SUB ACCORDIONS (h2, h3, .sub-title inside each main) =====
-            const subHeadingSelector = 'h2, h3, .sub-title';
-            mains.forEach(main => {
-                const container = main.querySelector('.skill-body');
-                if (!container) return;
-
-                const subHeads = Array.from(container.querySelectorAll(subHeadingSelector))
-                    .filter(h => h.closest('.skill-subaccordion') === null);
-
-                subHeads.forEach((h, subIdx) => {
-                    const sub = document.createElement('details');
-                    sub.className = 'skill-subaccordion';
-                    if (subIdx === 0) sub.setAttribute('open', '');
-
-                    const subSummary = document.createElement('summary');
-                    subSummary.innerHTML = `
-            <i class="${iconFor(h.textContent)}"></i>
-            <span>${h.innerHTML}</span>
-            <small class="sub-meta"></small>
-            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-          `;
-                    sub.appendChild(subSummary);
-
-                    const subBody = document.createElement('div');
-                    subBody.className = 'skill-subbody';
-
-                    // Move nodes until next sub heading or container end
-                    let c = h.nextElementSibling;
-                    while (c && !(c.matches(subHeadingSelector)) && c.closest('.skill-body') === container) {
-                        const next = c.nextElementSibling;
-                        subBody.appendChild(c);
-                        c = next;
-                    }
-
-                    sub.appendChild(subBody);
-                    h.replaceWith(sub);
-
-                    const scount = subBody.querySelectorAll('.chart, .skillBar li, .logo-chip, .skill-tags li, .progress, .badge, .chip').length;
-                    const smeta = subSummary.querySelector('.sub-meta');
-                    if (smeta) smeta.textContent = scount ? `${scount} items` : '';
-                });
-
-                // One-open-at-a-time for sub level inside each main
-                const subs = Array.from(container.querySelectorAll('.skill-subaccordion'));
-                subs.forEach(sd => {
-                    sd.addEventListener('toggle', () => {
-                        if (sd.open) subs.forEach(o => { if (o !== sd) o.open = false; });
-                    });
-                });
-            });
-
-            // Optional: animate any progress bars (div.fill[data-width])
-            const fills = skillRoot.querySelectorAll('.fill[data-width]');
-            fills.forEach(f => {
-                const w = f.getAttribute('data-width');
-                requestAnimationFrame(() => { f.style.width = w; });
-            });
-        });
-    </script>
-
-
 </body>
 </html>

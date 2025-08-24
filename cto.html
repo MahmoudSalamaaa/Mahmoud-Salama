@@ -40,17 +40,43 @@
             float: left
         }
 
-        .skill-accordion > summary {
+        <style >
+        .skill-accordion > summary,
+        .skill-subaccordion > summary {
             position: relative;
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            align-items: center;
+            gap: .6rem;
+            cursor: pointer;
         }
 
-            .skill-accordion > summary .fa-chevron-down {
+            .skill-accordion > summary i.fa-chevron-down,
+            .skill-subaccordion > summary i.fa-chevron-down {
                 transition: transform .2s ease;
             }
 
-        .skill-accordion[open] > summary .fa-chevron-down {
+        .skill-accordion[open] > summary i.fa-chevron-down,
+        .skill-subaccordion[open] > summary i.fa-chevron-down {
             transform: rotate(180deg);
         }
+
+        .skill-subaccordion {
+            margin: .5rem 0 .25rem 0;
+            border-left: 3px solid rgba(0,0,0,.08);
+            padding-left: .75rem;
+        }
+
+        .skill-subbody {
+            padding: .4rem 0 .2rem;
+        }
+
+        .acc-meta, .sub-meta {
+            opacity: .7;
+            font-size: .85em;
+        }
+    </style>
+
     </style>
 </head>
 <body>
@@ -3383,30 +3409,28 @@
             if (!skillRoot) return;
 
             const iconFor = (title) => {
-                const t = title.toLowerCase();
+                const t = (title || '').toLowerCase();
                 if (t.includes('architecture') || t.includes('engineering')) return 'fa-solid fa-diagram-project';
-                if (t.includes('project') || t.includes('agile')) return 'fa-solid fa-clipboard-check';
-                if (t.includes('backend')) return 'fa-solid fa-server';
-                if (t.includes('frontend')) return 'fa-solid fa-code';
-                if (t.includes('database') || t.includes('technologies')) return 'fa-solid fa-database';
-                if (t.includes('devops') || t.includes('deployment')) return 'fa-solid fa-gears';
-                if (t.includes('api')) return 'fa-solid fa-plug';
-                if (t.includes('reporting') || t.includes('visualization')) return 'fa-solid fa-chart-column';
-                if (t.includes('version')) return 'fa-solid fa-code-branch';
-                if (t.includes('cms') || t.includes('ecommerce')) return 'fa-solid fa-store';
-                if (t.includes('personal') || t.includes('skills')) return 'fa-solid fa-user-check';
+                if (t.includes('project') || t.includes('agile') || t.includes('management')) return 'fa-solid fa-clipboard-check';
+                if (t.includes('backend') || t.includes('server')) return 'fa-solid fa-server';
+                if (t.includes('frontend') || t.includes('ui') || t.includes('ux')) return 'fa-solid fa-code';
+                if (t.includes('database') || t.includes('data') || t.includes('warehouse')) return 'fa-solid fa-database';
+                if (t.includes('devops') || t.includes('cloud') || t.includes('deployment') || t.includes('ci')) return 'fa-solid fa-gears';
+                if (t.includes('api') || t.includes('integration')) return 'fa-solid fa-plug';
+                if (t.includes('report') || t.includes('visualization') || t.includes('bi')) return 'fa-solid fa-chart-column';
+                if (t.includes('version') || t.includes('git')) return 'fa-solid fa-code-branch';
+                if (t.includes('cms') || t.includes('commerce')) return 'fa-solid fa-store';
+                if (t.includes('personal') || t.includes('soft')) return 'fa-solid fa-user-check';
                 return 'fa-solid fa-layer-group';
             };
 
-            // Collect all second-titles inside the Skills section
-            const titles = Array.from(skillRoot.querySelectorAll('h1.second-title'));
-            titles.forEach((h, idx) => {
-                // Create <details> wrapper
+            // ========= MAIN ACCORDIONS (wrap h1.second-title) =========
+            const mainTitles = Array.from(skillRoot.querySelectorAll('h1.second-title'));
+            mainTitles.forEach((h, idx) => {
                 const details = document.createElement('details');
                 details.className = 'skill-accordion';
-                if (idx === 0) details.setAttribute('open', ''); // open first by default
+                if (idx === 0) details.setAttribute('open', '');
 
-                // Build summary
                 const summary = document.createElement('summary');
                 summary.innerHTML = `
           <i class="${iconFor(h.textContent)}"></i>
@@ -3416,38 +3440,88 @@
         `;
                 details.appendChild(summary);
 
-                // Build body and move following siblings until next second-title (or end of section)
                 const body = document.createElement('div');
                 body.className = 'skill-body';
                 let cursor = h.nextElementSibling;
 
                 while (cursor && !(cursor.matches('h1.second-title'))) {
                     const next = cursor.nextElementSibling;
-                    body.appendChild(cursor); // moves the node
+                    body.appendChild(cursor);
                     cursor = next;
                 }
 
-                // Replace original heading with new accordion
                 details.appendChild(body);
                 h.replaceWith(details);
 
-                // Add a quick count of items (charts/skills) into the <small>
-                const count = body.querySelectorAll('.chart, .skillBar li, .logo-chip, .skill-tags li').length;
+                const count = body.querySelectorAll('.chart, .skillBar li, .logo-chip, .skill-tags li, .progress, .badge').length;
                 const meta = summary.querySelector('.acc-meta');
                 if (meta) meta.textContent = count ? `${count} items` : '';
             });
 
-            // Only one open at a time
-            const all = Array.from(skillRoot.querySelectorAll('.skill-accordion'));
-            all.forEach(d => {
+            // One-open-at-a-time for main level
+            const mains = Array.from(skillRoot.querySelectorAll('.skill-accordion'));
+            mains.forEach(d => {
                 d.addEventListener('toggle', () => {
-                    if (d.open) {
-                        all.forEach(o => { if (o !== d) o.open = false; });
-                    }
+                    if (d.open) mains.forEach(o => { if (o !== d) o.open = false; });
                 });
             });
 
-            // Optional: animate any linear progress bars with .fill[data-width]
+            // ========= SUB ACCORDIONS (wrap h2/h3/.sub-title inside each main) =========
+            const subHeadingSelector = 'h2, h3, .sub-title';
+            mains.forEach(main => {
+                const container = main.querySelector('.skill-body');
+                if (!container) return;
+
+                const subHeads = Array.from(container.querySelectorAll(subHeadingSelector))
+                    .filter(h => {
+                        // only top-level inside the main container (avoid catching nested ones twice)
+                        return h.closest('.skill-subaccordion') === null;
+                    });
+
+                // Build sub-accordions
+                subHeads.forEach((h, subIdx) => {
+                    const sub = document.createElement('details');
+                    sub.className = 'skill-subaccordion';
+                    if (subIdx === 0) sub.setAttribute('open', '');
+
+                    const subSummary = document.createElement('summary');
+                    subSummary.innerHTML = `
+            <i class="${iconFor(h.textContent)}"></i>
+            <span>${h.innerHTML}</span>
+            <small class="sub-meta"></small>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          `;
+                    sub.appendChild(subSummary);
+
+                    const subBody = document.createElement('div');
+                    subBody.className = 'skill-subbody';
+
+                    // Move content until next sub heading or end of main container
+                    let c = h.nextElementSibling;
+                    while (c && !(c.matches(subHeadingSelector)) && c.closest('.skill-body') === container) {
+                        const next = c.nextElementSibling;
+                        subBody.appendChild(c);
+                        c = next;
+                    }
+
+                    sub.appendChild(subBody);
+                    h.replaceWith(sub);
+
+                    const scount = subBody.querySelectorAll('.chart, .skillBar li, .logo-chip, .skill-tags li, .progress, .badge').length;
+                    const smeta = subSummary.querySelector('.sub-meta');
+                    if (smeta) smeta.textContent = scount ? `${scount} items` : '';
+                });
+
+                // One-open-at-a-time for sub level (within each main)
+                const subs = Array.from(container.querySelectorAll('.skill-subaccordion'));
+                subs.forEach(sd => {
+                    sd.addEventListener('toggle', () => {
+                        if (sd.open) subs.forEach(o => { if (o !== sd) o.open = false; });
+                    });
+                });
+            });
+
+            // Progress bars animation (optional)
             const fills = skillRoot.querySelectorAll('.fill[data-width]');
             fills.forEach(f => {
                 const w = f.getAttribute('data-width');
@@ -3455,6 +3529,7 @@
             });
         });
     </script>
+
 
 </body>
 </html>

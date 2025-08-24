@@ -39,6 +39,18 @@
             margin: 0px 2px 2px 0px;
             float: left
         }
+
+        .skill-accordion > summary {
+            position: relative;
+        }
+
+            .skill-accordion > summary .fa-chevron-down {
+                transition: transform .2s ease;
+            }
+
+        .skill-accordion[open] > summary .fa-chevron-down {
+            transform: rotate(180deg);
+        }
     </style>
 </head>
 <body>
@@ -85,7 +97,7 @@
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
-                   
+
                 </ul>
             </nav>
             <!--/.navbar-collapse -->
@@ -727,16 +739,7 @@
     <!-- Skill Section -->
     <section class="section-content bg2" id="skill">
         <div class="container">
-            <div class="row">
-                <!-- Section title -->
-                <div class="section-title item_bottom text-center">
-                    <div>
-                        <span class="fa fa-book fa-2x"></span>
-                    </div>
-                    <h1>My <span>Resume</span></h1>
-                </div>
-                <!-- End Section title -->
-            </div>
+
             <div class="row">
 
 
@@ -1347,7 +1350,7 @@
             </div>
         </div>
     </section>
- 
+
     <style>
         /* --- Skills: structure --- */
         #skill .section-subtitle {
@@ -3373,5 +3376,85 @@
             items.forEach(i => io.observe(i));
         })();
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const skillRoot = document.querySelector('#skill');
+            if (!skillRoot) return;
+
+            const iconFor = (title) => {
+                const t = title.toLowerCase();
+                if (t.includes('architecture') || t.includes('engineering')) return 'fa-solid fa-diagram-project';
+                if (t.includes('project') || t.includes('agile')) return 'fa-solid fa-clipboard-check';
+                if (t.includes('backend')) return 'fa-solid fa-server';
+                if (t.includes('frontend')) return 'fa-solid fa-code';
+                if (t.includes('database') || t.includes('technologies')) return 'fa-solid fa-database';
+                if (t.includes('devops') || t.includes('deployment')) return 'fa-solid fa-gears';
+                if (t.includes('api')) return 'fa-solid fa-plug';
+                if (t.includes('reporting') || t.includes('visualization')) return 'fa-solid fa-chart-column';
+                if (t.includes('version')) return 'fa-solid fa-code-branch';
+                if (t.includes('cms') || t.includes('ecommerce')) return 'fa-solid fa-store';
+                if (t.includes('personal') || t.includes('skills')) return 'fa-solid fa-user-check';
+                return 'fa-solid fa-layer-group';
+            };
+
+            // Collect all second-titles inside the Skills section
+            const titles = Array.from(skillRoot.querySelectorAll('h1.second-title'));
+            titles.forEach((h, idx) => {
+                // Create <details> wrapper
+                const details = document.createElement('details');
+                details.className = 'skill-accordion';
+                if (idx === 0) details.setAttribute('open', ''); // open first by default
+
+                // Build summary
+                const summary = document.createElement('summary');
+                summary.innerHTML = `
+          <i class="${iconFor(h.textContent)}"></i>
+          <span>${h.innerHTML}</span>
+          <small class="acc-meta"></small>
+          <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        `;
+                details.appendChild(summary);
+
+                // Build body and move following siblings until next second-title (or end of section)
+                const body = document.createElement('div');
+                body.className = 'skill-body';
+                let cursor = h.nextElementSibling;
+
+                while (cursor && !(cursor.matches('h1.second-title'))) {
+                    const next = cursor.nextElementSibling;
+                    body.appendChild(cursor); // moves the node
+                    cursor = next;
+                }
+
+                // Replace original heading with new accordion
+                details.appendChild(body);
+                h.replaceWith(details);
+
+                // Add a quick count of items (charts/skills) into the <small>
+                const count = body.querySelectorAll('.chart, .skillBar li, .logo-chip, .skill-tags li').length;
+                const meta = summary.querySelector('.acc-meta');
+                if (meta) meta.textContent = count ? `${count} items` : '';
+            });
+
+            // Only one open at a time
+            const all = Array.from(skillRoot.querySelectorAll('.skill-accordion'));
+            all.forEach(d => {
+                d.addEventListener('toggle', () => {
+                    if (d.open) {
+                        all.forEach(o => { if (o !== d) o.open = false; });
+                    }
+                });
+            });
+
+            // Optional: animate any linear progress bars with .fill[data-width]
+            const fills = skillRoot.querySelectorAll('.fill[data-width]');
+            fills.forEach(f => {
+                const w = f.getAttribute('data-width');
+                requestAnimationFrame(() => { f.style.width = w; });
+            });
+        });
+    </script>
+
 </body>
 </html>

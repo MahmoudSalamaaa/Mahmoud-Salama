@@ -30,7 +30,42 @@
                   <script src="js/respond.min.js"></script>
                 <![endif]-->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <style>
+        /* --- Circular progress matching attached image --- */
+        .circle-skill {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: conic-gradient(var(--blue) calc(var(--val) * 1%), #e6e6e6 0);
+        }
 
+            .circle-skill::before {
+                content: "";
+                position: absolute;
+                inset: 10px;
+                background: #fff;
+                border-radius: 50%;
+            }
+
+            .circle-skill span {
+                position: relative;
+                font-weight: 700;
+                font-size: 18px;
+                color: var(--blue-deep);
+            }
+
+        .caption {
+            margin-top: 8px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--ink);
+            font-weight: 500;
+        }
+    </style>
     <style>
         .counters-item {
             border: 1px solid #999999;
@@ -746,45 +781,8 @@
                     <!-- Panel 1 -->
                     <div class="panel" id="p-arch" role="tabpanel" aria-labelledby="t-arch" data-active="true">
                         <div class="skill-grid">
+                         
 
-                            <div class="row text-center item_bottom">
-                                <div class="col-md-2">
-                                    <div class="chart" data-percent="90">
-                                        <span class="percent">90</span>
-                                        <h4>Software Architecture</h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="chart" data-percent="90">
-                                        <span class="percent">90</span>
-                                        <h4>System Design</h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="chart" data-percent="90">
-                                        <span class="percent">90</span>
-                                        <h4>OOP</h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="chart" data-percent="80">
-                                        <span class="percent">80</span>
-                                        <h4>SOLID Principles</h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="chart" data-percent="80">
-                                        <span class="percent">80</span>
-                                        <h4>Design Patterns</h4>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="chart" data-percent="80">
-                                        <span class="percent">80</span>
-                                        <h4>Security Best Practices</h4>
-                                    </div>
-                                </div>
-                            </div>
 
 
 

@@ -3,9 +3,9 @@
 <html class="no-js" lang="en-US">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    
+    <meta content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no" name="viewport" />
     <!-- Updated page title to reflect current role -->
-    <title>Chief Technology & Digital Transformation Officer</title>
+    <title>Mahmoud Salama - Chief Technology &amp; Digital Transformation Officer</title>
     <!-- Favicons -->
     <link href="img/ico-16.png" rel="shortcut icon" />
     <link href="img/ico-57.png" rel="apple-touch-icon" sizes="57x57" />
@@ -31,205 +31,51 @@
                 <![endif]-->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <style>
-        /* Section Title Enhancements */
-        #skill .section-title h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: var(--brand-700);
+        /* --- Circular progress matching attached image --- */
+        .circle-skill {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
             position: relative;
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: conic-gradient(var(--blue) calc(var(--val) * 1%), #e6e6e6 0);
         }
 
-            #skill .section-title h1 span {
-                color: var(--brand-500);
-            }
-
-            #skill .section-title h1::after {
+            .circle-skill::before {
                 content: "";
-                display: block;
-                width: 60%;
-                height: 4px;
-                margin: 8px auto 0;
-                background: linear-gradient(90deg, var(--brand-500), var(--brand-700));
-                border-radius: 2px;
-            }
 
-        /* KPI Hover */
-        .kpi-card {
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
-
-            .kpi-card:hover {
-                transform: translateY(-5px) scale(1.02);
-                box-shadow: 0 10px 25px rgba(13, 110, 253, 0.18);
-            }
-
-        /* Skill Cards Enhancements */
-        .skill-card {
-            position: relative;
-        }
-
-            .skill-card .percent-badge {
                 position: absolute;
-                top: 12px;
-                right: 14px;
-                background: var(--brand-100);
-                color: var(--brand-700);
-                font-size: 12px;
-                padding: 4px 8px;
-                border-radius: 12px;
+                inset: 10px;
+                background: #fff;
+                border-radius: 50%;
             }
 
-        .skill-tags li:hover {
-            background: var(--brand-500);
-            color: #fff;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        /* Tech Cloud Tags by Category */
-        .tech-cloud__tags li[data-cat="frontend"] {
-            background: #e3f2fd;
-            border-color: #90caf9;
-        }
-
-        .tech-cloud__tags li[data-cat="backend"] {
-            background: #f1f8e9;
-            border-color: #aed581;
-        }
-
-        .tech-cloud__tags li[data-cat="db"] {
-            background: #f9fbe7;
-            border-color: #dce775;
-        }
-
-        .tech-cloud__tags li[data-cat="devops"] {
-            background: #fff8e1;
-            border-color: #ffecb3;
-        }
-
-        /* Logo Hover Tooltip */
-        .logo-img {
-            position: relative;
-        }
-
-            .logo-img:hover::after {
-                content: attr(alt);
-                position: absolute;
-                bottom: -28px;
-                left: 50%;
-                transform: translateX(-50%);
-                background: var(--brand-600);
-                color: #fff;
-                padding: 4px 10px;
-                font-size: 12px;
-                border-radius: 6px;
-                white-space: nowrap;
+            .circle-skill span {
+                position: relative;
+                font-weight: 700;
+                font-size: 18px;
+                color: var(--blue-deep);
             }
 
-        .second-title {
-            font-size: 30px !important;
+        .caption {
+            margin-top: 8px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--ink);
+            font-weight: 500;
         }
-
-        /* Section Title Enhancements */
-        #skill .section-title h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: var(--brand-700);
-            position: relative;
-            display: inline-block;
-        }
-
-            #skill .section-title h1 span {
-                color: var(--brand-500);
-            }
-
-            #skill .section-title h1::after {
-                content: "";
-                display: block;
-                width: 60%;
-                height: 4px;
-                margin: 8px auto 0;
-                background: linear-gradient(90deg, var(--brand-500), var(--brand-700));
-                border-radius: 2px;
-            }
-
-        /* KPI Hover */
-        .kpi-card {
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
-
-            .kpi-card:hover {
-                transform: translateY(-5px) scale(1.02);
-                box-shadow: 0 10px 25px rgba(13, 110, 253, 0.18);
-            }
-
-        /* Skill Cards Enhancements */
-        .skill-card {
-            position: relative;
-        }
-
-            .skill-card .percent-badge {
-                position: absolute;
-                top: 12px;
-                right: 14px;
-                background: var(--brand-100);
-                color: var(--brand-700);
-                font-size: 12px;
-                padding: 4px 8px;
-                border-radius: 12px;
-            }
-
-        .skill-tags li:hover {
-            background: var(--brand-500);
-            color: #fff;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        /* Tech Cloud Tags by Category */
-        .tech-cloud__tags li[data-cat="frontend"] {
-            background: #e3f2fd;
-            border-color: #90caf9;
-        }
-
-        .tech-cloud__tags li[data-cat="backend"] {
-            background: #f1f8e9;
-            border-color: #aed581;
-        }
-
-        .tech-cloud__tags li[data-cat="db"] {
-            background: #f9fbe7;
-            border-color: #dce775;
-        }
-
-        .tech-cloud__tags li[data-cat="devops"] {
-            background: #fff8e1;
-            border-color: #ffecb3;
-        }
-
-        /* Logo Hover Tooltip */
-        .logo-img {
-            position: relative;
-        }
-
-            .logo-img:hover::after {
-                content: attr(alt);
-                position: absolute;
-                bottom: -28px;
-                left: 50%;
-                transform: translateX(-50%);
-                background: var(--brand-600);
-                color: #fff;
-                padding: 4px 10px;
-                font-size: 12px;
-                border-radius: 6px;
-                white-space: nowrap;
-            }
     </style>
-    </link></link>
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Mahmoud Salama", "jobTitle": "Chief Technology & Digital Transformation Officer", "worksFor": {"@type": "Organization", "name": "Unified Procurement Authority (Egypt)"}, "url": "https://example.com", "sameAs": ["https://www.linkedin.com/in/"], "knowsAbout": ["Digital Transformation", "Enterprise Architecture", "Dynamics 365", "Power BI", "Data Analytics", "Governance", "Security", "DevOps"]}</script>
+    <style>
+        .counters-item {
+            border: 1px solid #999999;
+            width: 160px;
+            height: 120px;
+            margin: 0px 2px 2px 0px;
+            float: left
+        }
+    </style>
 </head>
 <body>
     <!-- Pre-loader -->
@@ -247,7 +93,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img alt="" class="logo" src="images/logo2.png" / loading="lazy"></a>
+                <a class="navbar-brand" href="#"><img alt="" class="logo" src="images/logo2.png" /></a>
             </div>
             <nav class="navbar-collapse collapse" id="my-nav" role="navigation">
                 <ul class="nav navbar-nav">
@@ -269,13 +115,11 @@
                     <li>
                         <a href="#clients">Clients</a>
                     </li>
-                    <li>
-                        <a href="#process">Process</a>
-                    </li>
+
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
-                   
+
                 </ul>
             </nav>
             <!--/.navbar-collapse -->
@@ -295,7 +139,7 @@
                     <!-- SLIDE  -->
                     <li data-masterspeed="500" data-saveperformance="on" data-slotamount="7" data-title="Slide 1" data-transition="fade">
                         <!-- MAIN IMAGE -->
-                        <img alt="slidebg1" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" src="images/slide1.jpg" / loading="lazy">
+                        <img alt="slidebg1" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" src="images/slide1.jpg" />
                         <!-- LAYERS -->
                         <!-- LAYER NR. 1 -->
                         <div class="tp-caption tp-resizeme sft sub-heading" data-captionhidden="off" data-easing="Power1.easeInOut" data-endeasing="Power1.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="300" data-start="1200" data-voffset="-50" data-x="center" data-y="center" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
@@ -309,7 +153,7 @@
                     <!-- SLIDE  -->
                     <li data-masterspeed="600" data-saveperformance="on" data-slotamount="7" data-title="Slide 2" data-transition="fade">
                         <!-- MAIN IMAGE -->
-                        <img alt="" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" src="images/slide2.jpg" / loading="lazy">
+                        <img alt="" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" src="images/slide2.jpg" />
                         <!-- LAYER NR. 1 -->
                         <div class="tp-caption tp-resizeme sft sub-heading" data-captionhidden="off" data-easing="Power1.easeInOut" data-endeasing="Power1.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="300" data-start="1200" data-voffset="-50" data-x="center" data-y="center" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
                             <!-- Updated slide tagline to better reflect personal brand -->
@@ -341,26 +185,6 @@
                     </div>
                 </div-->
     </section>
-
-<section id="kpi" data-kpi-strip class="kpi grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
-  <div class="kpi-card text-center">
-    <div class="text-3xl font-bold counter" data-to="12000" data-duration="1500">0</div>
-    <div class="text-sm opacity-80">Public Entities Impacted</div>
-  </div>
-  <div class="kpi-card text-center">
-    <div class="text-3xl font-bold counter" data-to="10" data-duration="1500">0</div>
-    <div class="text-sm opacity-80">Platforms Delivered</div>
-  </div>
-  <div class="kpi-card text-center">
-    <div class="text-3xl font-bold counter" data-to="999" data-duration="1500">0</div>
-    <div class="text-sm opacity-80">Uptime (‰ ~99.9%)</div>
-  </div>
-  <div class="kpi-card text-center">
-    <div class="text-3xl font-bold counter" data-to="39000" data-duration="1500">0</div>
-    <div class="text-sm opacity-80">Staff Trained</div>
-  </div>
-</section>
-
     <!-- Home Section -->
     <!-- About Section -->
     <section class="section-content bg1" id="about">
@@ -377,12 +201,12 @@
             </div>
             <div class="row">
                 <div class="col-md-4 text-center item_bottom">
-                    <img alt="My photo" class="img-center img-responsive" src="images/photo.jpg" loading="lazy">
+                    <img alt="My photo" class="img-center img-responsive" src="images/photo.jpg">
                     <!-- YOUR PHOTO -->
                     <div class="name-title">
                         <h2>Mahmoud Salama</h2>
                         <!-- Your Name -->
-                        <h5>Director of Enterprise Systems and Technology Services</h5>
+                        <h5>Chief Technology & Digital Transformation Officer (CTDTO)</h5>
                         <!-- Your Designation -->
                     </div>
                     </img>
@@ -405,7 +229,7 @@
                         I am passionate about creating ecosystems that accelerate growth, drive innovation, and leave a lasting impact.
                     </p>
                     <p class="text-right">
-                        <img alt="signature" src="images/signature.png" loading="lazy">
+                        <img alt="signature" src="images/signature.png">
                         </img>
                     </p>
                 </div>
@@ -414,14 +238,16 @@
                     <!-- some information list -->
                     <ul class="fa-ul">
                         <li><i class="fa fa-li fa-classic fa-solid fa-mobile"></i><strong>Phone</strong> : +20 01220156077</li>
-                        <li><i class="fa fa-li fa-envelope"></i><strong>Email</strong> : <a href="mailto:ma7moud.salamaaa@gmail.com" target="_blank" rel="noopener noreferrer"> ma7moud.salamaaa@gmail.com </a></li>
+                        <li><i class="fa fa-li fa-envelope"></i><strong>Email</strong> : <a href="mailto:ma7moud.salamaaa@gmail.com" target="_blank"> ma7moud.salamaaa@gmail.com </a></li>
                         <li><i class="fa fa-li fa-home"></i><strong>Address</strong> : New Administrative Capital,<br />Cairo, Egypt.</li>
                         <li><i class="fa fa-li fa-calendar"></i><strong>Birthdate</strong> : 10/03/1985</li>
-                        <li><i class="fa fa-li fab fa-github"></i><strong>Github</strong> :<a href="https://github.com/MahmoudSalamaaa" target="_blank" rel="noopener noreferrer"> https://github.com/MahmoudSalamaaa </a></li>
+                        <li><i class="fa fa-li fab fa-github"></i><strong>Github</strong> :<a href="https://github.com/MahmoudSalamaaa" target="_blank"> https://github.com/MahmoudSalamaaa </a></li>
+                        <li><i class="fa fa-li fab fa-linkedin"></i><strong>Linkedin</strong> :<a href="https://www.linkedin.com/in/mahmoud-salama-30249b34" target="_blank"> https://www.linkedin.com/in/mahmoud-salama-30249b34 </a></li>
+
                     </ul>
                     <!-- ./some information list -->
                     <!-- some number facts -->
-                    <div class="number-counters text-center new-line">
+                    <div class="number-counters text-center">
                         <div class="counters-item">
                             <i class="fa-classic fa-solid fa-thumbs-up fa-2x"></i>
                             <strong data-to="150">150 +</strong>
@@ -448,10 +274,26 @@
                         </div>
                         <div class="counters-item">
                             <i class="fa fa-flag fa-2x"></i>
-                            <strong data-to="3">0</strong>
+                            <strong data-to="2">0</strong>
                             <!--Set Your Number here. i,e. data-to="56"-->
                             <p>
                                 Countries Supported
+                            </p>
+                        </div>
+                        <div class="counters-item">
+                            <i class="fa fa-university fa-2x"></i>
+                            <strong data-to="12000">0</strong>
+                            <!--Set Your Number here. i,e. data-to="56"-->
+                            <p>
+                                Public Entities Impacted
+                            </p>
+                        </div>
+                        <div class="counters-item">
+                            <i class="fa fa-users fa-2x"></i>
+                            <strong data-to="39000">0</strong>
+                            <!--Set Your Number here. i,e. data-to="56"-->
+                            <p>
+                                Users Benefited
                             </p>
                         </div>
                     </div>
@@ -585,11 +427,11 @@
                     <div class="portfolio-items item_fade_in" id="portfolio-items">
                         <article class="design">
                             <a href="#!projects/EductationalGate.html">
-                                <img alt="Procurement" src="images/portfolio/Procurement.jpg" loading="lazy">
+                                <img alt="Procuerment" src="images/portfolio/Procuerment.jpg">
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-bank"></i>
-                                        <h3>Procurement</h3>
+                                        <h3>Procuerment</h3>
                                         <span>Web Application</span>
                                     </div>
                                 </div>
@@ -599,7 +441,7 @@
                         </article>
                         <article class="design">
                             <a href="#!projects/tenders.html">
-                                <img alt="Tenders" src="images/portfolio/Tenders.jpg" / loading="lazy">
+                                <img alt="Tenders" src="images/portfolio/Tenders.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-briefcase"></i>
@@ -612,7 +454,7 @@
                         </article>
                         <article class="design">
                             <a href="#!projects/correspondence.html">
-                                <img alt="Correspondence" src="images/portfolio/Correspondence.jpg" / loading="lazy">
+                                <img alt="Correspondence" src="images/portfolio/Correspondence.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-envelope"></i>
@@ -625,7 +467,7 @@
                         </article>
                         <article class="design">
                             <a href="#!projects/AssetManagement.html">
-                                <img alt="Assets" src="images/portfolio/AssetManagement.jpg" / loading="lazy">
+                                <img alt="Assets" src="images/portfolio/AssetManagement.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-barcode"></i>
@@ -638,7 +480,7 @@
                         </article>
                         <article class="design">
                             <a href="#!projects/CrisesManagement.html">
-                                <img alt="Crises" src="images/portfolio/CrisesManagement.jpg" / loading="lazy">
+                                <img alt="Crises" src="images/portfolio/CrisesManagement.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-heart"></i>
@@ -651,7 +493,7 @@
                         </article>
                         <article class="design">
                             <a href="#!projects/RecruitmentSystem.html">
-                                <img alt="Recruitment" src="images/portfolio/RecruitmentSystem.jpg" / loading="lazy">
+                                <img alt="Recruitment" src="images/portfolio/RecruitmentSystem.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-graduation-cap"></i>
@@ -664,7 +506,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/mohp.html">
-                                <img alt="mohp" src="images/portfolio/mohp.jpg" / loading="lazy">
+                                <img alt="mohp" src="images/portfolio/mohp.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-medkit"></i>
@@ -677,7 +519,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/UPA.html">
-                                <img alt="UPA" src="images/portfolio/UPA.jpg" / loading="lazy">
+                                <img alt="UPA" src="images/portfolio/UPA.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-bar-chart"></i>
@@ -690,7 +532,7 @@
                         </article>
                         <article class="design">
                             <a href="#!projects/EductationalGate.html">
-                                <img alt="Eductational gate of Oman" src="images/portfolio/EPortal.jpg" / loading="lazy">
+                                <img alt="Eductational gate of Oman" src="images/portfolio/EPortal.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-bank"></i>
@@ -703,7 +545,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/rateyourservices.html">
-                                <img alt="rateyourservices" src="images/portfolio/rateyourservices.jpg" / loading="lazy">
+                                <img alt="rateyourservices" src="images/portfolio/rateyourservices.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-star"></i>
@@ -716,7 +558,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/maf.html">
-                                <img alt="maf" src="images/portfolio/maf.jpg" / loading="lazy">
+                                <img alt="maf" src="images/portfolio/maf.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-tree"></i>
@@ -729,7 +571,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/bgicc.html">
-                                <img alt="bgicc" src="images/portfolio/bgicc.jpg" / loading="lazy">
+                                <img alt="bgicc" src="images/portfolio/bgicc.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-female"></i>
@@ -742,7 +584,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/bgics.html">
-                                <img alt="BGICS" src="images/portfolio/bgics.jpg" / loading="lazy">
+                                <img alt="BGICS" src="images/portfolio/bgics.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-female"></i>
@@ -755,7 +597,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/escd.html">
-                                <img alt="escd-egypt" src="images/portfolio/escd-egypt.jpg" / loading="lazy">
+                                <img alt="escd-egypt" src="images/portfolio/escd-egypt.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-book"></i>
@@ -768,7 +610,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/araborganizers.html">
-                                <img alt="araborganizers" src="images/portfolio/araborganizers.jpg" / loading="lazy">
+                                <img alt="araborganizers" src="images/portfolio/araborganizers.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-calendar"></i>
@@ -781,7 +623,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/tasheed.html">
-                                <img alt="tasheed" src="images/portfolio/01.jpg" / loading="lazy">
+                                <img alt="tasheed" src="images/portfolio/01.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-building"></i>
@@ -794,7 +636,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/arabmu.html">
-                                <img alt="tasheed" src="images/portfolio/02.jpg" / loading="lazy">
+                                <img alt="tasheed" src="images/portfolio/02.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-rss"></i>
@@ -807,7 +649,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/zayed.html">
-                                <img alt="zayed" src="images/portfolio/03.jpg" / loading="lazy">
+                                <img alt="zayed" src="images/portfolio/03.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-building"></i>
@@ -820,7 +662,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/igiluc.html">
-                                <img alt="igiluc" src="images/portfolio/5.jpg" / loading="lazy">
+                                <img alt="igiluc" src="images/portfolio/5.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-medkit"></i>
@@ -833,7 +675,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/alfouad.html">
-                                <img alt="tasheed" src="images/portfolio/6.jpg" / loading="lazy">
+                                <img alt="tasheed" src="images/portfolio/6.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-car"></i>
@@ -846,7 +688,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/catering.html">
-                                <img alt="tasheed" src="images/portfolio/8.jpg" / loading="lazy">
+                                <img alt="tasheed" src="images/portfolio/8.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-smile-o"></i>
@@ -859,7 +701,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/electrolux.html">
-                                <img alt="tasheed" src="images/portfolio/7.jpg" / loading="lazy">
+                                <img alt="tasheed" src="images/portfolio/7.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-shopping-cart"></i>
@@ -872,7 +714,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/alfacureCenter.html">
-                                <img alt="alfacureCenter" src="images/portfolio/9.jpg" / loading="lazy">
+                                <img alt="alfacureCenter" src="images/portfolio/9.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-medkit"></i>
@@ -885,7 +727,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/igta.html">
-                                <img alt="igta" src="images/portfolio/10.jpg" / loading="lazy">
+                                <img alt="igta" src="images/portfolio/10.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-plus"></i>
@@ -898,7 +740,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/alfacure.html">
-                                <img alt="alfacure" src="images/portfolio/4.jpg" / loading="lazy">
+                                <img alt="alfacure" src="images/portfolio/4.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-medkit"></i>
@@ -918,17 +760,130 @@
     <!-- End Portfolio Section -->
     <!-- Skill Section -->
     <section class="section-content bg2" id="skill">
-        <div class="container">
-            <div class="row">
-                <!-- Section title -->
-                <div class="section-title item_bottom text-center">
-                    <div>
-                        <span class="fa fa-book fa-2x"></span>
-                    </div>
-                    <h1>My <span>Resume</span></h1>
-                </div>
-                <!-- End Section title -->
+        <div class="wrap">
+
+            <!-- Title echoes your screenshot style -->
+            <div class="block-title">
+                <div class="bar"></div>
+                <h2>Software Architecture & <span class="chip">Engineering Principles</span></h2>
             </div>
+
+            <!-- Tabs -->
+            <section class="tabs" id="skills-tabs">
+                <div class="tablist" role="tablist" aria-label="Skills categories">
+                    <button class="tab" role="tab" aria-selected="true" aria-controls="p-arch" id="t-arch">Architecture</button>
+                    <button class="tab" role="tab" aria-selected="false" aria-controls="p-agile" id="t-agile">Project Mgmt & Agile</button>
+                    <button class="tab" role="tab" aria-selected="false" aria-controls="p-back" id="t-back">Backend Development</button>
+                    <button class="tab" role="tab" aria-selected="false" aria-controls="p-sec" id="t-sec">Security</button>
+                    <button class="tab" role="tab" aria-selected="false" aria-controls="p-cloud" id="t-cloud">Cloud & DevOps</button>
+                </div>
+
+                <div class="panels">
+                    <!-- Panel 1 -->
+                    <div class="panel" id="p-arch" role="tabpanel" aria-labelledby="t-arch" data-active="true">
+                        <div class="skill-grid">
+                            <div>
+                                <div class="circle-skill" style="--val:90">
+                                    <span>90%</span>
+                                </div>
+                                <div class="caption">Software Architecture</div>
+                            </div>
+                            <div>
+                                <div class="circle-skill" style="--val:80">
+                                    <span>80%</span>
+                                </div>
+                                <div class="caption">Design Patterns</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2 -->
+                    <div class="panel" id="p-agile" role="tabpanel" aria-labelledby="t-agile">
+                        <div class="skill-grid">
+                            <div>
+                                <div class="meter" style="--pct:70"><span>70%</span></div>
+                                <div class="caption">Scrum</div>
+                            </div>
+                            <div>
+                                <div class="meter" style="--pct:90"><span>90%</span></div>
+                                <div class="caption">Agile</div>
+                            </div>
+                            <div>
+                                <div class="meter" style="--pct:80"><span>80%</span></div>
+                                <div class="caption">Jira</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 3 -->
+                    <div class="panel" id="p-back" role="tabpanel" aria-labelledby="t-back">
+                        <div class="skill-grid">
+                            <div>
+                                <div class="meter" style="--pct:85"><span>85%</span></div>
+                                <div class="caption">REST / APIs</div>
+                            </div>
+                            <div>
+                                <div class="meter" style="--pct:80"><span>80%</span></div>
+                                <div class="caption">Databases</div>
+                            </div>
+                            <div>
+                                <div class="meter" style="--pct:75"><span>75%</span></div>
+                                <div class="caption">Microservices</div>
+                            </div>
+                            <div>
+                                <div class="meter" style="--pct:70"><span>70%</span></div>
+                                <div class="caption">Caching</div>
+                            </div>
+                            <div>
+                                <div class="meter" style="--pct:70"><span>70%</span></div>
+                                <div class="caption">Message Queues</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 4 -->
+                    <div class="panel" id="p-sec" role="tabpanel" aria-labelledby="t-sec">
+                        <div class="skill-grid">
+                            <div>
+                                <div class="meter" style="--pct:80"><span>80%</span></div>
+                                <div class="caption">OWASP Top 10</div>
+                            </div>
+                            <div>
+                                <div class="meter" style="--pct:75"><span>75%</span></div>
+                                <div class="caption">AuthN / AuthZ</div>
+                            </div>
+                            <div>
+                                <div class="meter" style="--pct:70"><span>70%</span></div>
+                                <div class="caption">Threat Modeling</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 5 -->
+                    <div class="panel" id="p-cloud" role="tabpanel" aria-labelledby="t-cloud">
+                        <div class="skill-grid">
+                            <div>
+                                <div class="meter" style="--pct:80"><span>80%</span></div>
+                                <div class="caption">CI/CD</div>
+                            </div>
+                            <div>
+                                <div class="meter" style="--pct:75"><span>75%</span></div>
+                                <div class="caption">Containers</div>
+                            </div>
+                            <div>
+                                <div class="meter" style="--pct:70"><span>70%</span></div>
+                                <div class="caption">Cloud Ops</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+        <div class="container">
+
             <div class="row">
 
 
@@ -945,44 +900,7 @@
             <div class="section-title item_bottom text-center">
                 <h1 class="second-title">Software Architecture &amp; <span>Engineering Principles </span></h1>
             </div>
-            <div class="row text-center item_bottom">
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>Software Architecture</h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>System Design</h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>OOP</h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>SOLID Principles</h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>Design Patterns</h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>Security Best Practices</h4>
-                    </div>
-                </div>
-            </div>
+           
             <div class="row text-center item_bottom">
                 <div class="section-title item_bottom text-center">
                     <h1 class="second-title">Project Management &amp; <span>Agile Methodologies </span></h1>
@@ -994,8 +912,8 @@
                         <span class="percent">70</span>
                         <h4>Scrum</h4>
                         <!--<p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </p>-->
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>-->
                     </div>
                 </div>
                 <div class="col-md-2">
@@ -1539,7 +1457,222 @@
             </div>
         </div>
     </section>
- 
+
+
+    <!-- ============= Languages Section ============= -->
+    <section class="section-content bg1" id="languages">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title -->
+                <div class="section-title item_bottom text-center">
+                    <div><span class="fa fa-language fa-2x"></span></div>
+                    <h1>My <span>Languages</span></h1>
+                    <p class="section-subtitle">Proficiency with clarity and confidence.</p>
+                </div>
+                <!-- /Section Title -->
+            </div>
+
+            <!-- Language Cards -->
+            <div class="row item_bottom">
+                <!-- Language Card -->
+                <div class="col-md-6">
+                    <details class="skill-accordion" open>
+                        <summary>
+                            <i class="fa-solid fa-globe"></i>
+                            Arabic <small>Native</small>
+                            <i class="fa fa-chevron-down"></i>
+                        </summary>
+                        <div class="skill-body">
+                            <ul class="skill-tags" style="margin-bottom:10px">
+                                <li data-cat="soft">Speaking</li>
+                                <li data-cat="soft">Reading</li>
+                                <li data-cat="soft">Writing</li>
+                                <li data-cat="soft">Presentation</li>
+                            </ul>
+                            <div class="bars compact">
+                                <div class="bar">
+                                    <label>Overall</label>
+                                    <div class="track"><div class="fill" style="width: 100%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Language Card -->
+                <div class="col-md-6">
+                    <details class="skill-accordion" open>
+                        <summary>
+                            <i class="fa-solid fa-globe"></i>
+                            English <small>Advanced (C1)</small>
+                            <i class="fa fa-chevron-down"></i>
+                        </summary>
+                        <div class="skill-body">
+                            <ul class="skill-tags" style="margin-bottom:10px">
+                                <li data-cat="soft">Business</li>
+                                <li data-cat="soft">Technical</li>
+                                <li data-cat="soft">Email</li>
+                                <li data-cat="soft">Presentations</li>
+                            </ul>
+                            <div class="bars compact">
+                                <div class="bar">
+                                    <label>Speaking</label>
+                                    <div class="track"><div class="fill" style="width: 90%"></div></div>
+                                </div>
+                                <div class="bar">
+                                    <label>Reading</label>
+                                    <div class="track"><div class="fill" style="width: 95%"></div></div>
+                                </div>
+                                <div class="bar">
+                                    <label>Writing</label>
+                                    <div class="track"><div class="fill" style="width: 90%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <!-- /Language Cards -->
+        </div>
+    </section>
+
+    <!-- Quick enhancer: animate fills on scroll (optional) -->
+    <script>
+        document.querySelectorAll('#languages .fill').forEach(el => {
+            const w = el.style.width;
+            el.style.width = '0%';
+            const io = new IntersectionObserver(([e]) => {
+                if (e.isIntersecting) { el.style.width = w; io.disconnect(); }
+            }, { threshold: .3 });
+            io.observe(el);
+        });
+    </script>
+
+    <!-- ============= Education Section ============= -->
+    <section class="section-content bg2" id="education">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title -->
+                <div class="section-title item_bottom text-center">
+                    <div><span class="fa fa-graduation-cap fa-2x"></span></div>
+                    <h1>My <span>Education</span></h1>
+                    <p class="section-subtitle">Formal foundations & continuous learning.</p>
+                </div>
+                <!-- /Section Title -->
+            </div>
+
+            <!-- Education Grid -->
+            <div class="row item_bottom edu-grid">
+                <!-- Degree Card -->
+                <div class="col-md-12">
+                    <div class="edu-card">
+                        <div class="edu-header">
+                            <div class="edu-badge"><i class="fa-solid fa-award"></i> Bachelor</div>
+                            <time class="edu-time">2003 – 2007</time>
+                        </div>
+                        <h3 class="edu-title">Bachelor of Computer Science</h3>
+                        <h5 class="edu-inst">Zagazig University</h5>
+                        <ul class="edu-highlights">
+                            <li>A+ in graduation project</li>
+                            <li>Core: Algorithms, Data Structures, Databases, OS</li>
+                            <li>Applied: Web Engineering, Networks, Software Eng.</li>
+                        </ul>
+                        <div class="grid-logos" aria-hidden="true">
+                            <span class="logo-chip"><i class="fa-solid fa-code"></i> C# / .NET</span>
+                            <span class="logo-chip"><i class="fa-solid fa-database"></i> SQL</span>
+                            <span class="logo-chip"><i class="fa-solid fa-network-wired"></i> Networks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High School Card -->
+
+            </div>
+            <!-- /Education Grid -->
+        </div>
+    </section>
+
+    <!-- Local styles scoped to Education cards -->
+    <style>
+        #languages .section-subtitle,
+        #education .section-subtitle {
+            margin-top: 8px;
+            color: #667085
+        }
+
+        /* Education cards */
+        #education .edu-grid {
+            display: block
+        }
+
+        #education .edu-card {
+            background: #fff;
+            border: 1px solid #e7eefc;
+            border-left: 6px solid var(--brand-500,#4f7cff);
+            border-radius: 14px;
+            padding: 18px;
+            margin-bottom: 18px;
+            box-shadow: 0 8px 20px rgba(13,110,253,.06);
+            transition: transform .18s ease, box-shadow .18s ease
+        }
+
+            #education .edu-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 14px 28px rgba(13,110,253,.10)
+            }
+
+        #education .edu-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px
+        }
+
+        #education .edu-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            font-size: 13px;
+            background: #eaf2ff;
+            border: 1px solid #cfe0ff;
+            color: #0d2a6b;
+            padding: 6px 10px;
+            border-radius: 999px
+        }
+
+        #education .edu-time {
+            font-weight: 600;
+            color: #334155;
+            font-size: 13px
+        }
+
+        #education .edu-title {
+            margin: .2rem 0;
+            font-weight: 700;
+            color: #123a7d
+        }
+
+        #education .edu-inst {
+            margin: 0 0 .6rem;
+            color: #475569;
+            font-weight: 600
+        }
+
+        #education .edu-highlights {
+            padding-left: 18px;
+            margin: 0 0 .6rem
+        }
+
+            #education .edu-highlights li {
+                margin: 4px 0;
+                color: #334155
+            }
+    </style>
+
+
+
+
     <style>
         /* --- Skills: structure --- */
         #skill .section-subtitle {
@@ -1748,7 +1881,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h1 class="white padBottom killMargin">I am available as a . <strong>Freelancer</strong></h1>
-                    <a class="scroll btn btn-trans btn-border-w btn-large" href="#contact">Hire Me</a>  <a class="btn btn-primary btn-lg" href="CVSalama.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-download"></i> Download CV</a>
+                    <a class="scroll btn btn-trans btn-border-w btn-large" href="#contact">Hire Me</a>  <a class="btn btn-primary btn-lg" href="CVSalama.pdf" target="_blank"><i class="fa fa-download"></i> Download CV</a>
                 </div>
             </div>
         </div>
@@ -1919,47 +2052,7 @@
                         </span>
                         <span class="arrow fa fa-play"></span>
                     </li>
-                    <!-- Education -->
-                    <li class="title">Languages</li>
-                    <li class="note item_left">
-                        <h4>Arabic </h4>
-                        <h5>Native</h5>
-                        <!--<p class="desc">
 
-                                                </p>-->
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-                    <li class="note item_right">
-                        <h4>English</h4>
-                        <h5>Advanced</h5>
-                        <!--<p class="desc">
-                                                    Lorem Ipsum. This is Photoshop's version Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                                                </p>-->
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-                    <li class="title">Education</li>
-                    <li class="note item_left">
-                        <h4>Bachelor of computer science </h4>
-                        <h5>Zagazig University</h5>
-                        <p class="desc">
-                            A+ in graduation project
-                        </p>
-                        <span class="date">
-                            2003 - 2007
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-                    <li class="note item_right">
-                        <h4>High school degree</h4>
-                        <h5>Altawfikia secondry school</h5>
-                        <!--<p class="desc">
-                                                    Lorem Ipsum. This is Photoshop's version Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                                                </p>-->
-                        <span class="date">
-                            2007 - 2011
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
                     <!-- Start icon -->
                     <li class="start fa fa-bookmark"></li>
                     <li class="clear"></li>
@@ -1967,10 +2060,7 @@
             </div>
         </div>
     </section>
-    <!-- End Experience Timeline Section -->
-    <!-- === Professional Involvements (Vertical Timeline) === -->
-    <!-- === Professional Involvements (Vertical Chronological Timeline) === -->
-    <!-- === Professional Involvements (2-column timeline) === -->
+
     <section class="pi-timeline" id="professional-involvements">
         <div class="section-title item_bottom text-center">
             <div><span class="fa fa-calendar-check fa-2x"></span></div>
@@ -1983,7 +2073,7 @@
                     <div class="tl-marker"><i class="fa-solid fa-hospital"></i></div>
                     <div class="tl-content">
                         <h3 class="tl-heading">Africa Health Excon – 2nd Edition</h3>
-                        <h5 class="tl-link"><a href="https://africahealthexcon.com" target="_blank" rel="noopener noreferrer">africahealthexcon.com</a></h5>
+                        <h5 class="tl-link"><a href="https://africahealthexcon.com" target="_blank">africahealthexcon.com</a></h5>
                         <p>Actively contributed to discussions and decision‑making processes for organizing the conference.</p>
                         <time class="tl-date">Jun 2023</time>
                     </div>
@@ -1992,7 +2082,7 @@
                     <div class="tl-marker"><i class="fa-solid fa-microphone"></i></div>
                     <div class="tl-content">
                         <h3 class="tl-heading">Manama Health – 1st Edition</h3>
-                        <h5 class="tl-link"><a href="https://www.manamahealth.com" target="_blank" rel="noopener noreferrer">manamahealth.com</a></h5>
+                        <h5 class="tl-link"><a href="https://www.manamahealth.com" target="_blank">manamahealth.com</a></h5>
                         <p>Participated as a General Manager at UPA; delivered a lecture on bioinformatics as a featured speaker.</p>
                         <time class="tl-date">Dec 2022</time>
                     </div>
@@ -2003,7 +2093,7 @@
                     <div class="tl-marker"><i class="fa-solid fa-hospital-user"></i></div>
                     <div class="tl-content">
                         <h3 class="tl-heading">Africa Health Excon – 1st Edition</h3>
-                        <h5 class="tl-link"><a href="https://africahealthexcon.com/Home/About" target="_blank" rel="noopener noreferrer">africahealthexcon.com/Home/About</a></h5>
+                        <h5 class="tl-link"><a href="https://africahealthexcon.com/Home/About" target="_blank">africahealthexcon.com/Home/About</a></h5>
                         <p>Collaborated with UPA leadership to organize the inaugural conference and ensure operational success.</p>
                         <time class="tl-date">Jun 2022</time>
                     </div>
@@ -2325,238 +2415,8 @@
         })();
     </script>
     <!-- /Professional Involvements vertical timeline -->
-    <style>
-        .pi-timeline-section {
-            background: #fff;
-            border-radius: 16px;
-            padding: 28px;
-            margin: 32px 0;
-            box-shadow: 0 8px 24px rgba(0,0,0,.08);
-        }
 
-            .pi-timeline-section .pi-title {
-                font-size: 28px;
-                margin: 0 0 30px;
-                color: #0d6efd;
-                display: flex;
-                gap: 10px;
-                align-items: center;
-                border-bottom: 3px solid #0d6efd1a;
-                padding-bottom: 8px;
-            }
 
-        .timeline {
-            position: relative;
-            margin: 0;
-            padding: 0;
-            border-left: 3px solid #0d6efd33;
-        }
-
-        .timeline-item {
-            position: relative;
-            margin: 20px 0 20px 40px;
-            padding-left: 20px;
-        }
-
-        .timeline-icon {
-            position: absolute;
-            left: -33px;
-            top: 0;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background: #0d6efd;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            box-shadow: 0 0 0 4px #fff;
-        }
-
-        .timeline-content h3 {
-            margin: 0 0 5px;
-            font-size: 18px;
-            color: #0b5ed7;
-        }
-
-        .timeline-content h5 {
-            margin: 0 0 8px;
-            font-size: 14px;
-        }
-
-        .timeline-content p {
-            margin: 0 0 6px;
-            font-size: 14.5px;
-            line-height: 1.6;
-            color: #2f2f2f;
-        }
-
-        .timeline-content .date {
-            font-size: 13px;
-            color: #555;
-            font-weight: 600;
-        }
-
-        /* reveal animation */
-        .timeline-item.reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: .6s ease all;
-        }
-
-            .timeline-item.reveal.in-view {
-                opacity: 1;
-                transform: none;
-            }
-    </style>
-    <style>
-        /* Section heading */
-        #professional-involvements.pi-timeline {
-            background: #fff;
-            border-radius: 16px;
-            padding: 28px;
-            margin: 32px 0;
-            box-shadow: 0 8px 24px rgba(0,0,0,.08)
-        }
-
-        #professional-involvements .pi-title {
-            font-size: 28px;
-            margin: 0 0 18px;
-            color: #0d6efd;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            border-bottom: 3px solid #0d6efd1a;
-            padding-bottom: 8px
-        }
-
-        /* Vertical timeline */
-        #professional-involvements .tl {
-            position: relative;
-            list-style: none;
-            margin: 0;
-            padding: 6px 0 0
-        }
-
-            #professional-involvements .tl:before {
-                content: "";
-                position: absolute;
-                left: 26px;
-                top: 0;
-                bottom: 0;
-                width: 2px;
-                background: linear-gradient(#0d6efd,#0d6efd33)
-            }
-
-        #professional-involvements .tl-item {
-            position: relative;
-            display: flex;
-            gap: 16px;
-            padding: 14px 12px 14px 64px
-        }
-
-            #professional-involvements .tl-item + .tl-item {
-                margin-top: 4px
-            }
-
-        /* Marker */
-        #professional-involvements .tl-marker {
-            position: absolute;
-            left: 14px;
-            top: 18px;
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
-            display: grid;
-            place-items: center;
-            background: #fff;
-            border: 3px solid #0d6efd;
-            color: #0d6efd;
-            box-shadow: 0 6px 16px rgba(13,110,253,.2)
-        }
-
-        /* Card */
-        #professional-involvements .tl-content {
-            flex: 1;
-            background: #f8fbff;
-            border: 1px solid #e6f0ff;
-            border-left: 6px solid #0d6efd;
-            border-radius: 12px;
-            padding: 14px 16px;
-            box-shadow: 0 6px 18px rgba(13,110,253,.06);
-            transition: transform .25s ease, box-shadow .25s ease, background .25s ease
-        }
-
-        #professional-involvements .tl-item:hover .tl-content {
-            transform: translateY(-3px);
-            background: #f1f7ff;
-            box-shadow: 0 12px 28px rgba(13,110,253,.12)
-        }
-
-        #professional-involvements .tl-heading {
-            margin: 0 0 6px;
-            font-size: 18px;
-            color: #0b5ed7
-        }
-
-        #professional-involvements .tl-link {
-            margin: 0 0 6px;
-            font-weight: 600
-        }
-
-            #professional-involvements .tl-link a {
-                color: #0d6efd;
-                text-decoration: none
-            }
-
-                #professional-involvements .tl-link a:hover {
-                    text-decoration: underline
-                }
-
-        #professional-involvements .tl-content p {
-            margin: 0 0 8px;
-            font-size: 14.5px;
-            line-height: 1.6;
-            color: #2f2f2f
-        }
-
-        #professional-involvements .tl-date {
-            display: inline-block;
-            font-size: 12.5px;
-            color: #2752a3;
-            background: #e9f2ff;
-            border-radius: 999px;
-            padding: 4px 10px
-        }
-
-        /* Reveal animation */
-        #professional-involvements .reveal {
-            opacity: 0;
-            transform: translateY(14px);
-            will-change: transform,opacity;
-            transition: opacity .55s ease var(--d,0ms),transform .55s ease var(--d,0ms)
-        }
-
-            #professional-involvements .reveal.in-view {
-                opacity: 1;
-                transform: none
-            }
-
-        @media (max-width:560px) {
-            #professional-involvements .tl:before {
-                left: 20px
-            }
-
-            #professional-involvements .tl-item {
-                padding-left: 56px
-            }
-
-            #professional-involvements .tl-marker {
-                left: 8px
-            }
-        }
-    </style>
     <script>
         (function () {
             var nodes = document.querySelectorAll('#professional-involvements .reveal');
@@ -2758,7 +2618,7 @@
         <div class="container">
             <div class="section-title item_bottom text-center">
                 <div><span class="fa fa-star fa-2x"></span></div>
-                <h1>Professional <span>Involvements</span></h1>
+                <h1>Core  <span>Competencie</span></h1>
                 <p class="section-subtitle">Human-centered leadership with measurable delivery—clear decisions, crisp communication, and systems that scale.</p>
             </div>
             <!-- Row 1 -->
@@ -3177,106 +3037,8 @@
                 }
         }
     </style>
-    <!-- Technical Skills Section -->
-    <section class="section-content bg2" id="technical">
-        <div class="container">
-            <div class="row">
-                <div class="section-title item_bottom text-center">
-                    <div>
-                        <span class="fa fa-code fa-2x"></span>
-                    </div>
-                    <h1>Technical <span>Skills</span></h1>
-                </div>
-            </div>
-            <div class="row item_bottom">
-                <div class="col-md-4">
-                    <h4>Enterprise Architecture &amp; Platforms</h4>
-                    <p>.NET Core, ASP.NET, Entity Framework, ADO.NET, ReactJS, Kendo UI, jQuery, Chart.js, Bootstrap, Sitefinity, Kentico</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Data, Reporting &amp; Analytics</h4>
-                    <p>PostgreSQL, SQL Server, MySQL, Apache Superset, SSRS, Crystal Reports, DevExpress, MongoDB, Redis, REST, GraphQL</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Security, Governance &amp; Optimisation</h4>
-                    <p>Web Security, Data Encryption, Data Compliance, Technical Documentation, Secure Coding Practices</p>
-                </div>
-            </div>
-            <div class="row item_bottom">
-                <div class="col-md-4">
-                    <h4>DevOps, Automation &amp; Tooling</h4>
-                    <p>Git, GitHub, Jenkins, Docker, Postman, CI/CD Pipelines, Performance Monitoring</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Software Engineering &amp; Methodologies</h4>
-                    <p>Agile, Scrum, SDLC, QA Strategy, Troubleshooting, Technical Audits, System Integration</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Programming Languages &amp; Technologies</h4>
-                    <p>C#, JavaScript, HTML, CSS, SQL, LINQ, OOP</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Projects Section -->
-    <section class="section-content bg1" id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="section-title item_bottom text-center">
-                    <div>
-                        <span class="fa fa-tasks fa-2x"></span>
-                    </div>
-                    <h1>Major <span>Projects</span></h1>
-                </div>
-            </div>
-            <div class="row item_bottom">
-                <div class="col-md-6">
-                    <h4>Procurement and Supply of Medical Products System</h4>
-                    <p>Designed and developed a scalable, secure web application to manage the procurement, inventory and distribution of medical products using ASP.NET, C#, React.js, Node.js, GraphQL and MySQL. Delivered a responsive, cross‑platform solution for desktop and mobile devices.</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Tenders and Contracts System</h4>
-                    <p>Built a secure tendering management system using ASP.NET, C#, MySQL and JavaScript, with full workflow support and user access control.</p>
-                </div>
-            </div>
-            <div class="row item_bottom">
-                <div class="col-md-6">
-                    <h4>Educational Portal for the Ministry of Education</h4>
-                    <p>Designed and developed an educational portal supporting digital learning initiatives across Oman, featuring a centralized content management system for academic resources and user access control.</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Correspondence Management System</h4>
-                    <p>Led the design and implementation of a correspondence management system to streamline organisational communication, with automated routing, e‑signature integration and role‑based access control.</p>
-                </div>
-            </div>
-            <div class="row item_bottom">
-                <div class="col-md-6">
-                    <h4>Asset Management System</h4>
-                    <p>Designed and developed an asset management system to streamline asset tracking and maintenance, with automated maintenance alerts and role‑based access controls.</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Crisis Management System</h4>
-                    <p>Delivered a real‑time collaboration platform with dynamic dashboards and communication tools, accelerating decision making and improving cross‑functional transparency.</p>
-                </div>
-            </div>
-            <div class="row item_bottom">
-                <div class="col-md-6">
-                    <h4>Recruitment System</h4>
-                    <p>Designed and developed a recruitment system to streamline hiring, including job posting management, applicant tracking and candidate assessments.</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Ministry of Health and Population of Egypt Website</h4>
-                    <p>Developed and maintained the official Ministry of Health and Population website, providing citizens with timely health information and public service resources.</p>
-                </div>
-            </div>
-            <div class="row item_bottom">
-                <div class="col-md-6">
-                    <h4>Ministry of Agriculture, Fisheries and Water Resources (Oman) Website</h4>
-                    <p>Led end‑to‑end development and launch of the official Ministry of Agriculture, Fisheries and Water Resources (Oman) website, deploying a scalable CMS with multimedia integration, increasing public engagement by 40% and reducing information request response time by 25%.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
     <!-- Clients Section -->
     <section class="clients parallax" id="clients" style="background-image: url(images/clients.jpg)">
         <div class="parallax-overlay">
@@ -3306,7 +3068,7 @@
                                         Actively contributed to discussions and decision-making processes regarding organizing the conference.
                                     </p>
                                     <p class="author">Jun 2023 </p>
-                                    <p class="company">Africa health Excon 2nd edition <a href="https://africahealthexcon.com" target="_blank" rel="noopener noreferrer">https://africahealthexcon.com</a></p>
+                                    <p class="company">Africa health Excon 2nd edition <a href="https://africahealthexcon.com" target="_blank">https://africahealthexcon.com</a></p>
                                 </div>-->
                 <!--Second Slide-->
                 <!--<div class="swiper-slide">
@@ -3333,13 +3095,13 @@
                         <div id="left_scroll"><a href="#"></a></div>
                         <div id="carousel_inner">
                             <ul class="clearfix" id="carousel_ul">
-                                <li><span><img alt="upa" src="images/clients/upa.png" / loading="lazy"></span></li>
-                                <li><span><img alt="moh" src="images/clients/moh.png" / loading="lazy"></span></li>
-                                <li><span><img alt="plan" src="images/clients/plan.png" / loading="lazy"></span></li>
-                                <li><span><img alt="plan" src="images/clients/om.png" / loading="lazy"></span></li>
-                                <li><span><img alt="plan" src="images/clients/escd.png" / loading="lazy"></span></li>
-                                <li><span><img alt="plan" src="images/clients/bgicc.png" / loading="lazy"></span></li>
-                                <li><span><img alt="plan" src="images/clients/araborg.png" / loading="lazy"></span></li>
+                                <li><span><img alt="upa" src="images/clients/upa.png" /></span></li>
+                                <li><span><img alt="moh" src="images/clients/moh.png" /></span></li>
+                                <li><span><img alt="plan" src="images/clients/plan.png" /></span></li>
+                                <li><span><img alt="plan" src="images/clients/om.png" /></span></li>
+                                <li><span><img alt="plan" src="images/clients/escd.png" /></span></li>
+                                <li><span><img alt="plan" src="images/clients/bgicc.png" /></span></li>
+                                <li><span><img alt="plan" src="images/clients/araborg.png" /></span></li>
                             </ul>
                         </div>
                         <div id="right_scroll"><a href="#"></a></div>
@@ -3351,18 +3113,18 @@
     </section>
     <!-- End Clients Section -->
     <!-- Process Section -->
-    <section class="section-content bg3" id="process">
+    <!--<section class="section-content bg3" id="process">
         <div class="container">
-            <div class="row">
-                <!-- Section title -->
-                <div class="section-title item_bottom text-center">
-                    <div>
-                        <span class="fa fa-cogs fa-2x"></span>
-                    </div>
-                    <h1 class="white">My <span>Process</span></h1>
-                </div>
-                <!-- End Section title -->
-                <ol class="process-flow list-unstyled">
+            <div class="row">-->
+    <!-- Section title -->
+    <!--<div class="section-title item_bottom text-center">
+        <div>
+            <span class="fa fa-cogs fa-2x"></span>
+        </div>
+        <h1 class="white">My <span>Process</span></h1>
+    </div>-->
+    <!-- End Section title -->
+    <!--<ol class="process-flow list-unstyled">
                     <li class="active">
                         <div class="process-node active">
                             <i class="fa fa-comments"></i>
@@ -3413,7 +3175,7 @@
                 </ol>
             </div>
         </div>
-    </section>
+    </section>-->
     <!-- End Process Section -->
     <!-- Contact Section -->
     <section class="section-content bg2" id="contact">
@@ -3442,12 +3204,12 @@
                     <!-- End Contact Details -->
                     <!-- Social Icon -->
                     <div class="social-icon">
-                        <a href="https://www.facebook.com/MahmoudSalamaaaa/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
+                        <a href="https://www.facebook.com/MahmoudSalamaaaa/" target="_blank"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
                         <a href="https://www.linkedin.com/in/mahmoud-salama-30249b34/"><i class="fa-brands fa-linkedin fa-3x" target="_blank"></i></a>
-                        <a href="https://www.upwork.com/freelancers/~0123da644850514f9e" target="_blank" rel="noopener noreferrer"><i class="fab fa-square-upwork fa-3x"></i></a>
-                        <a href="https://www.fiverr.com/mahmoudsalam34" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-red-river fa-3x" target="_blank"></i></a>
-                        <a href="https://profile.indeed.com/p/mahmouds-htcp24v" target="_blank" rel="noopener noreferrer"><i class="fa-classic fa-solid fa-circle-info fa-3x" target="_blank"></i></a>
-                        <a href="https://www.freelancer.com/u/mahmoudsSalama" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-pushed fa-fw fa-3x"></i></a>
+                        <a href="https://www.upwork.com/freelancers/~0123da644850514f9e" target="_blank"><i class="fab fa-square-upwork fa-3x"></i></a>
+                        <a href="https://www.fiverr.com/mahmoudsalam34" target="_blank"><i class="fa-brands fa-red-river fa-3x" target="_blank"></i></a>
+                        <a href="https://profile.indeed.com/p/mahmouds-htcp24v" target="_blank"><i class="fa-classic fa-solid fa-circle-info fa-3x" target="_blank"></i></a>
+                        <a href="https://www.freelancer.com/u/mahmoudsSalama" target="_blank"><i class="fa-brands fa-pushed fa-fw fa-3x"></i></a>
                     </div>
                     <!-- End Social Icon -->
                 </div>
@@ -3484,10 +3246,10 @@
     <!--<div id="map_canvas" class="item_fade_in">
         </div>-->
     <!-- End Google maps -->
-    <footer role="contentinfo" class="text-center">
+    <footer class="text-center">
         <!-- Footer Text -->
         <div class="container text-center item_top">
-            <img alt="footer logo" class="footer-logo" src="images/logo2.png" / loading="lazy"><br>
+            <img alt="footer logo" class="footer-logo" src="images/logo2.png" /><br>
             © Copyright 2025. All Rights Reserved.
             </br>
         </div>
@@ -3566,36 +3328,214 @@
         })();
     </script>
 
-<script>
-(function(){
-  var started=false;
-  function animateCount(el){
-    var to = parseInt(el.getAttribute('data-to') || el.textContent || '0', 10);
-    var dur = parseInt(el.getAttribute('data-duration') || '1200', 10);
-    var start = 0, t0=null;
-    function step(ts){
-      if(!t0) t0=ts;
-      var p = Math.min(1, (ts - t0)/dur);
-      var val = Math.floor(p * to);
-      el.textContent = val.toLocaleString();
-      if(p<1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-  }
-  function init(){
-    if(started) return;
-    started = true;
-    document.querySelectorAll('.counter, [data-counter]').forEach(animateCount);
-  }
-  var target = document.querySelector('#kpi, .kpi, .counters, .stats');
-  if('IntersectionObserver' in window && target){
-    var io = new IntersectionObserver(function(e){ if(e[0] && e[0].isIntersecting){ init(); io.disconnect(); }}, {threshold: 0.2});
-    io.observe(target);
-  } else {
-    window.addEventListener('load', init);
-  }
-})();
-</script>
 
-</body>
+
+
+    <style>
+        :root {
+            --bg: #f6f7f9;
+            --ink: #3c3c3c;
+            --muted: #7a7a7a;
+            --line: #d9d9df;
+            --blue: #2376c9; /* primary accent */
+            --blue-deep: #1a5aa0; /* darker accent */
+        }
+
+        html, body {
+            background: var(--bg);
+            color: var(--ink);
+            margin: 0;
+            font-family: Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 48px auto;
+            padding: 0 20px;
+        }
+
+        /* Section heading style to echo the screenshot */
+        .block-title {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin: 24px 0 18px;
+            font-family: Oswald, Impact, sans-serif;
+            letter-spacing: .02em;
+        }
+
+            .block-title .bar {
+                width: 28px;
+                height: 2px;
+                background: #222;
+                opacity: .7
+            }
+
+            .block-title h2 {
+                margin: 0;
+                font-size: 38px;
+                font-weight: 700;
+                text-transform: uppercase
+            }
+
+        .chip {
+            display: inline-block;
+            background: var(--blue);
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 8px;
+            margin-left: 10px;
+            box-shadow: 0 2px 0 var(--blue-deep);
+        }
+
+        /* Tabs */
+        .tabs {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0,0,0,.05);
+        }
+
+        .tablist {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 18px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .tab {
+            position: relative;
+            border: 1px solid var(--line);
+            background: #fff;
+            color: var(--ink);
+            padding: 10px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            font-family: Oswald, sans-serif;
+            font-size: 14px;
+            transition: all .18s ease;
+        }
+
+            .tab:hover {
+                border-color: var(--blue);
+                box-shadow: 0 2px 10px rgba(35,118,201,.12)
+            }
+
+            .tab[aria-selected="true"] {
+                background: linear-gradient(0deg,#fff, #fff) padding-box, linear-gradient(145deg, var(--blue), var(--blue-deep)) border-box;
+                border-color: transparent;
+                color: var(--blue-deep);
+            }
+
+                .tab[aria-selected="true"]::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -1px;
+                    height: 3px;
+                    background: var(--blue);
+                    border-bottom-left-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                }
+
+        .panels {
+            padding: 24px 22px 26px;
+        }
+
+        .panel {
+            display: none;
+            animation: fade .18s ease;
+        }
+
+            .panel[data-active="true"] {
+                display: block;
+            }
+
+        @keyframes fade {
+            from {
+                opacity: .4;
+                transform: translateY(4px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        /* Sample grid to host your circular meters or items */
+        .skill-grid {
+            display: grid;
+            gap: 26px;
+            grid-template-columns: repeat(6, minmax(120px,1fr));
+        }
+
+        @media (max-width:1024px) {
+            .skill-grid {
+                grid-template-columns: repeat(3, minmax(120px,1fr));
+            }
+        }
+
+        @media (max-width:600px) {
+            .skill-grid {
+                grid-template-columns: repeat(2, minmax(120px,1fr));
+            }
+        }
+
+        /* Placeholder meter circle (you can replace with your own) */
+        .meter {
+            width: 120px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background: conic-gradient(var(--blue) calc(var(--pct)*1%), #e8eef7 0), radial-gradient(#fff 55%, transparent 56%) center/100% 100% no-repeat;
+            display: grid;
+            place-items: center;
+            margin: auto;
+            box-shadow: inset 0 0 0 10px #e8eef7;
+        }
+
+            .meter span {
+                font-weight: 700;
+                color: var(--blue-deep)
+            }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 13px;
+            color: var(--muted);
+            text-align: center
+        }
+    </style>
+
+
+ 
+
+        <script>
+            // Accessible tabs
+            (function () {
+                const tablist = document.querySelector('#skills-tabs .tablist');
+                const tabs = [...tablist.querySelectorAll('[role="tab"]')];
+                const panels = [...document.querySelectorAll('#skills-tabs .panel')];
+
+                function activate(targetId) {
+                    tabs.forEach(t => t.setAttribute('aria-selected', String(t.id === ('t-' + targetId))));
+                    panels.forEach(p => p.dataset.active = String(p.id === ('p-' + targetId)));
+                }
+
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => activate(tab.id.replace('t-', '')));
+                    tab.addEventListener('keydown', (e) => {
+                        const i = tabs.indexOf(tab);
+                        if (e.key === 'ArrowRight') tabs[(i + 1) % tabs.length].focus();
+                        if (e.key === 'ArrowLeft') tabs[(i - 1 + tabs.length) % tabs.length].focus();
+                    });
+                });
+            })();
+        </script>
+    </body>
 </html>

@@ -1101,7 +1101,7 @@ padding-bottom:40px;
 }
 .social-icon a {
 	color: #3B3F50;
-	/*padding: 0 10px 20px 10px;*/
+	padding: 0 10px 20px 10px;
 	display: inline-block;
 }
 .social-icon a:hover {

@@ -1,42 +1,51 @@
+﻿
 <!DOCTYPE html>
-<html lang="en-US" class="no-js">
 
+<html class="no-js" lang="en-US">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no" />
+    <!-- Encoding first for fastest parse -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 
-    <title>Mahmoud Salama</title>
+    <title>Mahmoud Salama — Chief Technology & Digital Transformation Officer</title>
+    <meta name="description" content="Mahmoud Salama, Chief Technology & Digital Transformation Officer, leading large-scale digital transformation across healthcare, supply chain, ERP/CRM, and analytics." />
+    <link rel="canonical" href="https://your-domain.example/"> <!-- TODO: replace with your real URL -->
+    <!-- Open Graph / Twitter (optional but recommended) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mahmoud Salama — Chief Technology & Digital Transformation Officer">
+    <meta property="og:description" content="Driving digital transformation across healthcare, logistics, and government with ERP/CRM integration and data-driven analytics.">
+    <meta property="og:url" content="https://your-domain.example/"><!-- replace -->
+    <meta property="og:image" content="https://your-domain.example/img/og-cover.jpg"><!-- replace -->
+    <meta name="twitter:card" content="summary_large_image">
+
     <!-- Favicons -->
-    <link rel="shortcut icon" href="img/ico-16.png">
-    <link rel="apple-touch-icon" href="img/ico-57.png" sizes="57x57">
-    <link rel="apple-touch-icon" href="img/ico-72.png" sizes="72x72">
-    <link rel="apple-touch-icon" href="img/ico-114.png" sizes="114x114">
-    <link rel="apple-touch-icon" href="img/ico-144.png" sizes="144x144">
-    <!-- List of Stylesheet -->
-    <link type='text/css' href="css/normalize.css" rel="stylesheet">
-    <link type='text/css' href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="img/ico-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="img/ico-180.png" sizes="180x180">
 
-    <link type='text/css' href="css/style.css" rel="stylesheet">
-    <link type='text/css' href="css/style-responsive.css" rel="stylesheet">
-    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-    <!-- END SLIDER REVOLUTION 4.x CSS SETTINGS -->
-    <!-- Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-              <script src="js/html5shiv.js"></script>
-              <script src="js/respond.min.js"></script>
-            <![endif]-->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <style>
-        .second-title {
-            font-size: 30px !important;
-        }
-    </style>
+    <!-- Preconnect for faster fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts (deduped) -->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">-->
+    <!-- Vendor CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" referrerpolicy="no-referrer">
+
+    <!-- Your CSS (load critical early; keep order: base → overrides → responsive) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+
+    <!-- Slider Revolution (only keep if actually used on the page) -->
+    <!-- <link href="rs-plugin/css/settings.css" rel="stylesheet" media="screen"> -->
 </head>
+
 <body>
     <!-- Pre-loader -->
     <div class="mask">
@@ -48,14 +57,14 @@
     <div class="navbar navbar-transparent navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img class="logo" src="images/logo2.png" alt=""></a>
+                <a class="navbar-brand" href="#"><img alt="" class="logo" src="images/logo2.png" /></a>
             </div>
-            <nav id="my-nav" class="navbar-collapse collapse" role="navigation">
+            <nav class="navbar-collapse collapse" id="my-nav" role="navigation">
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="#home">Home</a>
@@ -63,26 +72,34 @@
                     <li>
                         <a href="#about">About</a>
                     </li>
+
                     <li>
-                        <a href="#portfolio">Recent	Works</a>
+                        <a href="#achievements">Key achievements</a>
                     </li>
+                    <li>
+                        <a href="#strengths">Core competencies</a>
+                    </li>
+
                     <li>
                         <a href="#skill">Skills</a>
                     </li>
+
+
                     <li>
                         <a href="#experience">Resume</a>
                     </li>
                     <li>
+                        <a href="#portfolio">Recent	Works</a>
+                    </li>
+                    <li>
+                        <a href="#professional-involvements">Involvements</a>
+                    </li>
+
+                    <li>
                         <a href="#clients">Clients</a>
                     </li>
                     <li>
-                        <a href="#process">Process</a>
-                    </li>
-                    <li>
                         <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="Deparment.html">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -91,123 +108,202 @@
     </div>
     <!-- End Navbar -->
     <!-- Home Section -->
-    <section id="home">
-        <!--
-        #################################
-            - THEMEPUNCH BANNER -
-        #################################
-        -->
-        <div class="tp-banner-container">
-            <div class="tp-banner">
-                <ul>
-                    <!-- SLIDE  -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Slide 1">
-                        <!-- MAIN IMAGE -->
-                        <img src="images/slide1.jpg" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption tp-resizeme sft sub-heading"
-                             data-x="center" data-hoffset="0"
-                             data-y="center" data-voffset="-50"
-                             data-speed="300"
-                             data-start="1200"
-                             data-easing="Power1.easeInOut"
-                             data-endeasing="Power1.easeInOut"
-                             data-captionhidden="off"
-                             data-endspeed="300"
-                             style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
-                            Welcome to my website
+    <!-- HERO: Dark Fullscreen Centered Intro (Portrait + Centered Counters) -->
+    <!-- HERO -->
+    <section id="home" class="hero-dark is-dark one-row" aria-labelledby="hero-title">
+        <!-- Decorative background -->
+        <div class="bg" aria-hidden="true">
+            <div class="bg-grid"></div>
+            <span class="bg-layer l1"></span>
+            <span class="bg-layer l2"></span>
+        </div>
+
+        <div class="inner">
+            <div class="hero-row">
+                <!-- Left: Portrait -->
+                <figure class="hero-photo hero-photo--bg" aria-label="Mahmoud Salama portrait">
+                    <picture>
+                        <source srcset="img/me1.png 1x, img/me1.png 2x" type="image/png" />
+                        <img src="img/me1.png" srcset="img/me1.png 2x"
+                             width="300" height="300" alt="Mahmoud Salama"
+                             loading="eager" decoding="async" />
+                    </picture>
+                    <span class="glow" aria-hidden="true"></span>
+                </figure>
+
+                <!-- Right: Content -->
+                <div class="hero-right">
+                    <header class="hero-copy fade-seq-1">
+                        <h1 id="hero-title" class="headline gradient-glow">
+                            Mahmoud <span class="accent">Salama</span>
+                        </h1>
+                        <p class="role">Chief Technology &amp; Digital Transformation Officer</p>
+                        <p class="tagline">Resilient architecture, data platforms, and AI at scale.</p>
+                        <p class="subline">Delivering outcomes across ERP/CRM, analytics, and operations.</p>
+                    </header>
+
+                    <!-- CTAs -->
+                    <nav class="actions" aria-label="Primary actions">
+                        <a class="btn-hero btn-primary-hero with-sheen" href="#portfolio">
+                            <i class="fas fa-briefcase" aria-hidden="true"></i><span>Portfolio</span>
+                        </a>
+
+                        <a class="btn-hero btn-ghost-hero with-sheen"
+                           href="https://www.linkedin.com/in/mahmoud-salama-30249b34"
+                           target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i><span>Connect</span>
+                        </a>
+
+                        <a class="btn-hero btn-outline-hero with-sheen" href="files/Mahmoud_Salama_CTO_Resume.pdf" download>
+                            <i class="fas fa-file-alt" aria-hidden="true"></i><span>Resume</span>
+                        </a>
+
+
+                        <a class="btn-hero btn-dualtone-hero with-sheen" href="#contact">
+                            <i class="fas fa-phone-volume" aria-hidden="true"></i><span>Book a Call</span>
+                        </a>
+                    </nav>
+
+                    <!-- Counters (inline grid) -->
+                    <section class="stat-rail fade-seq-3" aria-label="Career highlights">
+                        <div class="stat glassy">
+                            <span class="stat-value metric-number" data-target="150" data-suffix=""></span>
+                            <span class="stat-label"><i class="fas fa-diagram-project"></i> Digital Projects</span>
                         </div>
 
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption box-title sfb tp-fade tp-resizeme"
-                             data-x="center" data-hoffset="0"
-                             data-y="center" data-voffset="30"
-                             data-speed="300"
-                             data-start="1300"
-                             data-easing="Power1.easeInOut"
-                             data-endeasing="Power1.easeInOut"
-                             data-captionhidden="off"
-                             data-endspeed="300"
-                             style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">
-                            Mahmoud Salama
-                        </div>
-                    </li>
-                    <!-- SLIDE  -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="600" data-saveperformance="on" data-title="Slide 2">
-                        <!-- MAIN IMAGE -->
-                        <img src="images/slide2.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                        <div class="divider"></div>
 
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption tp-resizeme sft sub-heading"
-                             data-x="center" data-hoffset="0"
-                             data-y="center" data-voffset="-50"
-                             data-speed="300"
-                             data-start="1200"
-                             data-easing="Power1.easeInOut"
-                             data-endeasing="Power1.easeInOut"
-                             data-captionhidden="off"
-                             data-endspeed="300"
-                             style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
-                            Creative - Professional - Passionate
+                        <div class="stat glassy">
+                            <span class="stat-value metric-number" data-target="17">0</span>
+                            <span class="stat-label"><i class="fas fa-briefcase"></i> Years Experience</span>
                         </div>
 
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption box-title tp-fade sfb tp-resizeme"
-                             data-x="center" data-hoffset="0"
-                             data-y="center" data-voffset="30"
-                             data-speed="300"
-                             data-start="1300"
-                             data-easing="Power1.easeInOut"
-                             data-endeasing="Power1.easeInOut"
-                             data-captionhidden="off"
-                             data-endspeed="300"
-                             style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">
-                            Director of Enterprise Systems and Technology Services
+                        <div class="divider"></div>
+
+                        <div class="stat glassy">
+                            <span class="stat-value metric-number" data-target="25">0</span>
+                            <span class="stat-label"><i class="fas fa-users-line"></i> Team Size Led</span>
                         </div>
-                    </li>
-                </ul>
-                <div class="tp-bannertimer"></div>
+
+                        <!--<div class="divider"></div>-->
+
+                        <div class="stat glassy">
+                            <span class="stat-value metric-number" data-target="2">0</span>
+                            <span class="stat-label"><i class="fas fa-earth-africa"></i> Countries Supported</span>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="stat glassy">
+                            <span class="stat-value metric-number" data-target="12000" data-format="compact">0</span>
+                            <span class="stat-label"><i class="fas fa-building-columns"></i> Public Entities Impacted</span>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="stat glassy">
+                            <span class="stat-value metric-number" data-target="39000" data-format="compact">0</span>
+                            <span class="stat-label"><i class="fas fa-user-shield"></i> Users Benefited</span>
+                        </div>
+                    </section>
+
+
+
+
+                </div>
             </div>
         </div>
-        <!-- END REVOLUTION SLIDER -->
-        <!--div class="slide-content">
-            <div class="text-center">
-                <div class="header">
-                    <div class="heading">
-                        Welcome to my site
+    </section>
+
+
+
+
+
+
+
+    <!-- Font Awesome & Google Fonts -->
+    <!--<section id="home">-->
+    <!--
+    #################################
+        - THEMEPUNCH BANNER -
+    #################################
+    -->
+    <!--<div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>-->
+    <!-- SLIDE  -->
+    <!--<li data-masterspeed="500" data-saveperformance="on" data-slotamount="7" data-title="Slide 1" data-transition="fade">-->
+    <!-- MAIN IMAGE -->
+    <!--<img alt="slidebg1" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" src="images/slide1.jpg" />-->
+    <!-- LAYERS -->
+    <!-- LAYER NR. 1 -->
+    <!--<div class="tp-caption tp-resizeme sft sub-heading" data-captionhidden="off" data-easing="Power1.easeInOut" data-endeasing="Power1.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="300" data-start="1200" data-voffset="-50" data-x="center" data-y="center" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
+        Welcome to my website
+    </div>-->
+    <!-- LAYER NR. 2 -->
+    <!--<div class="tp-caption box-title sfb tp-fade tp-resizeme" data-captionhidden="off" data-easing="Power1.easeInOut" data-endeasing="Power1.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="300" data-start="1300" data-voffset="30" data-x="center" data-y="center" style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">
+            Mahmoud Salama
+        </div>
+    </li>-->
+    <!-- SLIDE  -->
+    <!--<li data-masterspeed="600" data-saveperformance="on" data-slotamount="7" data-title="Slide 2" data-transition="fade">-->
+    <!-- MAIN IMAGE -->
+    <!--<img alt="" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" src="images/slide2.jpg" />-->
+    <!-- LAYER NR. 1 -->
+    <!--<div class="tp-caption tp-resizeme sft sub-heading" data-captionhidden="off" data-easing="Power1.easeInOut" data-endeasing="Power1.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="300" data-start="1200" data-voffset="-50" data-x="center" data-y="center" style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">-->
+    <!-- Updated slide tagline to better reflect personal brand -->
+    <!--Innovative - Results driven - Visionary
+    </div>-->
+    <!-- LAYER NR. 2 -->
+    <!--<div class="tp-caption box-title tp-fade sfb tp-resizeme" data-captionhidden="off" data-easing="Power1.easeInOut" data-endeasing="Power1.easeInOut" data-endspeed="300" data-hoffset="0" data-speed="300" data-start="1300" data-voffset="30" data-x="center" data-y="center" style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">-->
+    <!-- Updated role to current position -->
+    <!--Chief Technology Officer
                     </div>
-                    <div class="box-heading">
-                        <div class="box-inner">
-                            Jonathan Doe
-                        </div>
+                </li>
+            </ul>
+            <div class="tp-bannertimer"></div>
+        </div>
+    </div>-->
+    <!-- END REVOLUTION SLIDER -->
+    <!--div class="slide-content">
+        <div class="text-center">
+            <div class="header">
+                <div class="heading">
+                    Welcome to my site
+                </div>
+                <div class="box-heading">
+                    <div class="box-inner">
+                        Jonathan Doe
                     </div>
                 </div>
             </div>
-        </div-->
-    </section>
+        </div>
+    </div-->
+    <!--</section>-->
     <!-- Home Section -->
     <!-- About Section -->
-    <section id="about" class="section-content bg1">
+
+
+
+
+
+
+    <section class="section-content bg1" id="about">
         <div class="container">
-            <div class="row">
-                <!-- Section Title -->
-                <div class="section-title item_bottom text-center">
-                    <div>
-                        <span class="fa fa-user fa-2x"></span>
-                    </div>
-                    <h1>About <span>Me</span></h1>
-                </div>
-                <!-- End Section Title -->
+            <div class="section-title item_bottom text-center">
+                <!-- <div><span class="fa fa-star fa-2x"></span></div>-->
+                <h1>About  <span>Me </span></h1>
+
             </div>
+
             <div class="row">
                 <div class="col-md-4 text-center item_bottom">
-                    <img src="images/photo.jpg" class="img-center img-responsive" alt="My photo" />
+                    <img alt="My photo" class="img-center img-responsive" src="images/photo.jpg" />
                     <!-- YOUR PHOTO -->
                     <div class="name-title">
                         <h2>Mahmoud Salama</h2>
                         <!-- Your Name -->
-                        <h5>Director of Enterprise Systems and Technology Services</h5>
+                        <h5>Chief Technology &amp; Digital Transformation Officer (CTDTO)</h5>
                         <!-- Your Designation -->
                     </div>
                 </div>
@@ -219,74 +315,165 @@
                     <!--Possess exceptional proficiency in both front-end and back-end technologies,
                     along with a deep understanding of software architecture and design principles.-->
                     <p>
-                        As a visionary technology leader, I specialize in driving digital transformation across healthcare, logistics, and government sectors. By combining strategic insight with hands-on leadership,
-                        I deliver scalable solutions that streamline operations and modernize systems, empowering organizations to thrive in a rapidly evolving tech landscape.
+                        Visionary technology leader driving digital transformation in healthcare, logistics, and government. I blend strategic insight with hands-on leadership to deliver scalable solutions that modernize systems, streamline operations, and enable organizations to thrive in a fast-evolving tech landscape.
                     </p>
                     <p>
-                        I excel at leading cross-functional teams and executing end-to-end projects using cutting-edge technologies such as C#,
-                        React, Node.js, and cloud services.
-                        Known for building resilient, user-centric systems and fostering operational excellence,
-                        I am passionate about creating ecosystems that accelerate growth, drive innovation, and leave a lasting impact.
+                        I lead cross-functional teams to deliver end-to-end projects with cutting-edge technologies (C#, React, Node.js, cloud). Renowned for building resilient, user-centric systems and driving operational excellence, I am passionate about creating ecosystems that fuel growth, spark innovation, and deliver lasting impact.
                     </p>
                     <p class="text-right">
-                        <img src="images/signature.png" alt="signature" />
+                        <img alt="signature" src="images/signature.png" />
                     </p>
                 </div>
                 <!-- ./some text about yourself -->
                 <div class="col-md-4 item_bottom">
                     <!-- some information list -->
-                    <ul class="fa-ul">
-                        <li><i class="fa fa-li fa-classic fa-solid fa-mobile"></i><strong>Phone</strong> : +20 01220156077</li>
-                        <li><i class="fa fa-li fa-envelope"></i><strong>Email</strong> : <a href="mailto:ma7moud.salamaaa@gmail.com" target="_blank"> ma7moud.salamaaa@gmail.com </a></li>
-                        <li><i class="fa fa-li fa-home"></i><strong>Address</strong> : New Administrative Capital,<br>Cairo, Egypt.</li>
-                        <li><i class="fa fa-li fa-calendar"></i><strong>Birthdate</strong> : 10/03/1985</li>
-                        <li><i class="fa fa-li fab fa-github"></i><strong>Github</strong> :<a href="https://github.com/MahmoudSalamaaa" target="_blank"> https://github.com/MahmoudSalamaaa </a></li>
+                    <ul class="contact-info list-unstyled">
 
+                        <li>
+                            <i class="fa-solid fa-mobile-screen me-2 text-primary"></i>
+                            <span class="label">Phone</span>
+                            <span class="value">+20 01220156077</span>
+                        </li>
 
+                        <li>
+                            <i class="fa-solid fa-envelope me-2 text-danger"></i>
+                            <span class="label">Email</span>
+                            <a class="value link" href="mailto:ma7moud.salamaaa@gmail.com" target="_blank">
+                                ma7moud.salamaaa@gmail.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-house me-2 text-success"></i>
+                            <span class="label">Address</span>
+                            <span class="value">New Administrative Capital, Cairo, Egypt</span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-calendar-day me-2 text-warning"></i>
+                            <span class="label">Birthdate</span>
+                            <span class="value">10/03/1985</span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-flag me-2 text-secondary"></i>
+                            <span class="label">Nationality</span>
+                            <span class="value">Egyptian</span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-industry me-2 text-info"></i>
+                            <span class="label">Key Industries</span>
+                            <span class="value">Healthcare • Supply Chain • Public Sector • Digital Transformation</span>
+                        </li>
+
+                        <li>
+                            <i class="fa-brands fa-github me-2 text-dark"></i>
+                            <span class="label">GitHub</span>
+                            <a class="value link" href="https://github.com/MahmoudSalamaaa" target="_blank">
+                                github.com/MahmoudSalamaaa
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-brands fa-linkedin me-2 text-info"></i>
+                            <span class="label">LinkedIn</span>
+                            <a class="value link" href="https://www.linkedin.com/in/mahmoud-salama-30249b34" target="_blank">
+                                linkedin.com/in/mahmoud-salama-30249b34
+                            </a>
+                        </li>
 
                     </ul>
-                    <!-- ./some information list -->
-                    <!-- some number facts -->
-                    <div class="number-counters text-center new-line">
-                        <div class="counters-item">
-                            <i class="fa-classic fa-solid fa-thumbs-up fa-2x"></i>
-                            <strong data-to="150">150 +</strong>
 
-                            <!-- Set Your Number here. i,e. data-to="56" -->
-                            <p>
-                                Projects Done
-                            </p>
-                        </div>
-                        <div class="counters-item">
-                            <i class="fa fa-calendar-days fa-2x"></i>
-                            <strong data-to="17">0</strong>
-                            <!-- Set Your Number here. i,e. data-to="56" -->
-                            <p>
-                                Year Experience
-                            </p>
-                        </div>
-                        <div class="counters-item">
-                            <i class="fa fa-trophy fa-2x"></i>
-                            <strong data-to="25">0</strong>
-                            <!--Set Your Number here. i,e. data-to="56"-->
-                            <p>
-                                Team Size Led
-                            </p>
-                        </div>
-                        <div class="counters-item">
-                            <i class="fa fa-flag fa-2x"></i>
-                            <strong data-to="3">0</strong>
-                            <!--Set Your Number here. i,e. data-to="56"-->
-                            <p>
-                                Countries Supported
-                            </p>
+                    <!-- ABOUT: Languages & Education -->
+                    <!-- ABOUT: Languages & Education (non-card design) -->
+                    <!-- ===== About: Languages & Education (Flat Alt Idea) ===== -->
+                    <div class="about-langs-edu alt-flat">
+                        <div class="row g-4">
+                            <!-- LANGUAGES -->
+                            <div class="col-12 col-lg-5">
+                                <h4 class="title">
+                                    <i class="fa-solid fa-language me-2"></i>Languages
+                                </h4>
+
+                                <ul class="lang-list">
+                                    <!-- Arabic -->
+                                    <li class="lang-item">
+                                        <div class="lang-name">
+
+                                            <strong>Arabic</strong>
+                                            <span class="tag tag-green">Native</span>
+                                        </div>
+                                        <div class="lang-meta">
+                                            <div class="dots">
+                                                <span class="dot filled"></span>
+                                                <span class="dot filled"></span>
+                                                <span class="dot filled"></span>
+                                                <span class="dot filled"></span>
+                                                <span class="dot filled"></span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <!-- English -->
+                                    <li class="lang-item">
+                                        <div class="lang-name">
+
+                                            <strong>English</strong>
+                                            <span class="tag tag-blue">Advanced</span>
+                                        </div>
+                                        <div class="lang-meta">
+                                            <div class="dots">
+                                                <span class="dot filled"></span>
+                                                <span class="dot filled"></span>
+                                                <span class="dot filled"></span>
+                                                <span class="dot "></span>
+                                                <span class="dot"></span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+
+                            <!-- EDUCATION -->
+                            <div class="col-12 col-lg-7">
+                                <h4 class="title">
+                                    <i class="fa-solid fa-graduation-cap me-2"></i>Education
+                                </h4>
+
+                                <ol class="edu-timeline">
+                                    <li class="edu-item">
+                                        <div class="node"></div>
+                                        <div class="content">
+                                            <div class="edu-head">
+                                                <strong>B.Sc. in Computer Science</strong>
+                                                <span class="years">2003–2017</span>
+                                            </div>
+                                            <!--<div class="edu-sub text-muted">Faculty / University (optional)</div>-->
+                                        </div>
+                                    </li>
+
+
+                                </ol>
+                            </div>
                         </div>
                     </div>
-                    <!-- ./some number facts -->
+
+
+
+
+
+
+
                 </div>
+
             </div>
             <!--<div class="row services">
-                <div class="col-md-4">-->
+            <div class="col-md-4">-->
             <!-- Service -->
             <!--<div class="services-box new-line item_left">
                 <h4>Customer Support</h4>
@@ -336,18 +523,502 @@
     </section>
     <!-- End About Section -->
     <!-- Portfolio Section -->
-    <section id="portfolio" class="section-content bg3">
+    <!-- Achievements Section -->
+    <section class="section-content achievements" id="achievements">
         <div class="container">
-            <div class="row">
-                <!-- Section title -->
-                <div class="section-title item_bottom text-center">
-                    <div>
-                        <span class="fa fa-briefcase fa-2x"></span>
-                    </div>
-                    <h1 class="white">Recent <span>Works</span></h1>
-                </div>
-                <!-- End Section title -->
+            <div class="section-title item_bottom text-center">
+                <!-- <div><span class="fa fa-star fa-2x"></span></div>-->
+                <h1>Key  <span>Achievements </span></h1>
+
             </div>
+
+            <div class="row item_bottom">
+                <!-- 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="achievement-card" tabindex="0">
+                        <i class="fa-solid fa-globe"></i>
+                        <h4>Digital Transformation Leadership</h4>
+                        <p>Modernized core platforms across <strong>12,000+ entities</strong>, aligned to Egypt Vision 2030.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="achievement-card" tabindex="0">
+                        <i class="fa-solid fa-gears"></i>
+                        <h4>Operational Efficiency</h4>
+                        <p>Reduced cycle times by <strong>40%</strong> and manual workload by <strong>60%</strong> across procurement and inventory.</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="achievement-card" tabindex="0">
+                        <i class="fa-solid fa-people-group"></i>
+                        <h4>Team Building &amp; Leadership</h4>
+                        <p>Built and mentored cross-functional teams of <strong>30+ developers</strong> to ship reliably.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row item_bottom">
+                <!-- 4 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="achievement-card" tabindex="0">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                        <h4>Delivery Excellence</h4>
+                        <p>Oversaw programs worth <strong>EGP 150M+</strong> with clear ROI and on-time delivery.</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="achievement-card" tabindex="0">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <h4>Data-Driven Decisions</h4>
+                        <p>Deployed real-time analytics (Power BI, Superset), cutting reporting time by <strong>70%</strong>.</p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="achievement-card" tabindex="0">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h4>Enterprise Security &amp; Compliance</h4>
+                        <p>Encryption, MFA, and governance policies delivering <strong>100% compliance</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Strengths Section -->
+    <section class="section-content bg1" id="strengths">
+        <div class="container">
+            <div class="section-title item_bottom text-center">
+                <!-- <div><span class="fa fa-star fa-2x"></span></div>-->
+                <h1>Core  <span>Competencies </span></h1>
+
+            </div>
+            <!-- Row 1 -->
+            <div class="row text-center item_bottom">
+                <div class="col-md-3 col-sm-6">
+                    <div class="strength-card">
+                        <i aria-hidden="true" class="fa-solid fa-puzzle-piece fa-3x"></i>
+                        <h4>Problem Solving</h4>
+                        <p class="strength-desc">Breaks complex, ambiguous issues into testable parts and ships pragmatic fixes fast, then iterates.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="strength-card">
+                        <i aria-hidden="true" class="fa-solid fa-lightbulb fa-3x"></i>
+                        <h4>Critical Thinking</h4>
+                        <p class="strength-desc">Separates signal from noise, challenges assumptions, and selects the simplest approach that works.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="strength-card">
+                        <i aria-hidden="true" class="fa-solid fa-comments fa-3x"></i>
+                        <h4>Communication</h4>
+                        <p class="strength-desc">Translates tech into business impact; sets crisp expectations and closes the loop with stakeholders.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="strength-card">
+                        <i aria-hidden="true" class="fa-solid fa-layer-group fa-3x"></i>
+                        <h4>Organizational Skills</h4>
+                        <p class="strength-desc">Creates scalable operating rhythms—prioritization, cadences, and clear ownership to move work forward.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row text-center item_bottom">
+                <div class="col-md-3 col-sm-6">
+                    <div class="strength-card">
+                        <i aria-hidden="true" class="fa-solid fa-users-gear fa-3x"></i>
+                        <h4>Leadership</h4>
+                        <p class="strength-desc">Builds accountable, high-trust teams; sets vision, unblocks execution, and celebrates outcomes.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="strength-card">
+                        <i aria-hidden="true" class="fa-regular fa-clock fa-3x"></i>
+                        <h4>Time Management</h4>
+                        <p class="strength-desc">Targets leverage—balances delivery vs. discovery and protects focus for critical path work.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="strength-card">
+                        <i aria-hidden="true" class="fa-solid fa-heart fa-3x"></i>
+                        <h4>Emotional Intelligence</h4>
+                        <p class="strength-desc">Reads the room, reduces friction, and aligns diverse viewpoints around shared goals.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="strength-card">
+                        <i aria-hidden="true" class="fa-solid fa-book-open-reader fa-3x"></i>
+                        <h4>Continuous Learning</h4>
+                        <p class="strength-desc">Stays current on tools and practices; turns learnings into playbooks and coaching.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 3 -->
+            <div class="row text-center item_bottom">
+                <div class="col-md-3 col-sm-6">
+                    <div class="strength-card">
+                        <i aria-hidden="true" class="fa-solid fa-diagram-project fa-3x"></i>
+                        <h4>Cross-Functional Collaboration</h4>
+                        <p class="strength-desc">Orchestrates product, ops, and security to ship reliable outcomes end-to-end.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="strength-card">
+                        <i aria-hidden="true" class="fa-solid fa-handshake-angle fa-3x"></i>
+                        <h4>Stakeholder Management</h4>
+                        <p class="strength-desc">Aligns execs and delivery teams with clear trade-offs, risks, and ROI-based plans.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="strength-card">
+                        <i aria-hidden="true" class="fa-solid fa-chess-knight fa-3x"></i>
+                        <h4>Strategic Planning</h4>
+                        <p class="strength-desc">Connects roadmap to mission; sequences bets to maximize compounding impact.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="strength-card">
+                        <i aria-hidden="true" class="fa-solid fa-chart-line fa-3x"></i>
+                        <h4>Data-Driven Decisions</h4>
+                        <p class="strength-desc">Defines the right metrics, instruments systems, and adjusts strategy from outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- End Portfolio Section -->
+    <!-- Skill Section -->
+    <section class="section-content achievements" id="skill">
+        <div class="wrap">
+            <!-- Title -->
+            <div class="section-title item_bottom text-center">
+                <!-- <div><span class="fas fa-chart-column fa-2x"></span></div>-->
+                <h1>My <span>Skills</span></h1>
+            </div>
+
+            <!-- Tabs -->
+            <section class="tabs" id="skills-tabs">
+                <div aria-label="Skills categories" class="tablist" role="tablist">
+                    <button aria-controls="p-arch" aria-selected="true" class="tab is-active" id="t-arch" role="tab">
+                        <span class="tab-text">Architecture &amp; Platform Strategy</span>
+                    </button>
+                    <button aria-controls="p-back" aria-selected="false" class="tab" id="t-back" role="tab">
+                        <span class="tab-text">Security &amp; Governance</span>
+                    </button>
+                    <button aria-controls="p-agile" aria-selected="false" class="tab" id="t-agile" role="tab">
+                        <span class="tab-text">Data Platforms &amp; Analytics</span>
+                    </button>
+                    <button aria-controls="p-sec" aria-selected="false" class="tab" id="t-sec" role="tab">
+                        <span class="tab-text">DevOps &amp; Reliability</span>
+                    </button>
+                    <button aria-controls="p-cloud" aria-selected="false" class="tab" id="t-cloud" role="tab">
+                        <span class="tab-text">Engineering Practices</span>
+                    </button>
+                    <button aria-controls="p-soft" aria-selected="false" class="tab" id="t-soft" role="tab">
+                        <span class="tab-text">Languages &amp; Core Tech</span>
+                    </button>
+                </div>
+
+                <div class="panels">
+                    <!-- Panel 1: Architecture & Platform Strategy -->
+                    <div aria-labelledby="t-arch" class="panel is-active" id="p-arch" role="tabpanel">
+                        <div class="skill-grid">
+                            <div class="skill-card" data-val="85"><div class="skill-header"><span>.NET Core</span><span class="skill-level">85%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="75"><div class="skill-header"><span>ASP.NET</span><span class="skill-level">75%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="70"><div class="skill-header"><span>Entity Framework</span><span class="skill-level">70%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="70"><div class="skill-header"><span>ReactJS</span><span class="skill-level">70%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="60"><div class="skill-header"><span>Kendo UI</span><span class="skill-level">60%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="55"><div class="skill-header"><span>jQuery</span><span class="skill-level">55%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="55"><div class="skill-header"><span>Chart.js</span><span class="skill-level">55%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="60"><div class="skill-header"><span>Bootstrap</span><span class="skill-level">60%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="55"><div class="skill-header"><span>Sitefinity</span><span class="skill-level">55%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="55"><div class="skill-header"><span>Kentico</span><span class="skill-level">55%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2: Security & Governance -->
+                    <div aria-labelledby="t-back" class="panel" id="p-back" role="tabpanel">
+                        <div class="skill-grid">
+                            <div class="skill-card" data-val="85"><div class="skill-header"><span>Web Security</span><span class="skill-level">85%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="80"><div class="skill-header"><span>Data Encryption</span><span class="skill-level">80%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="80"><div class="skill-header"><span>Data Compliance</span><span class="skill-level">80%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="80"><div class="skill-header"><span>Secure Coding Practice</span><span class="skill-level">80%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="78"><div class="skill-header"><span>Technical Documentation</span><span class="skill-level">78%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 3: Data Platforms & Analytics -->
+                    <div aria-labelledby="t-agile" class="panel" id="p-agile" role="tabpanel">
+                        <div class="skill-grid">
+                            <div class="skill-card" data-val="80"><div class="skill-header"><span>PostgreSQL</span><span class="skill-level">80%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="75"><div class="skill-header"><span>SQL Server</span><span class="skill-level">75%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="65"><div class="skill-header"><span>MySQL</span><span class="skill-level">65%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="60"><div class="skill-header"><span>Apache Superset</span><span class="skill-level">60%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="55"><div class="skill-header"><span>SSRS</span><span class="skill-level">55%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="55"><div class="skill-header"><span>Crystal Reports</span><span class="skill-level">55%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="55"><div class="skill-header"><span>DevExpress</span><span class="skill-level">55%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="60"><div class="skill-header"><span>MongoDB</span><span class="skill-level">60%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="55"><div class="skill-header"><span>Redis</span><span class="skill-level">55%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="80"><div class="skill-header"><span>REST</span><span class="skill-level">80%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="65"><div class="skill-header"><span>GraphQL</span><span class="skill-level">65%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 4: DevOps & Reliability -->
+                    <div aria-labelledby="t-sec" class="panel" id="p-sec" role="tabpanel">
+                        <div class="skill-grid">
+                            <div class="skill-card" data-val="85"><div class="skill-header"><span>Git</span><span class="skill-level">85%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="80"><div class="skill-header"><span>GitHub</span><span class="skill-level">80%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="65"><div class="skill-header"><span>Jenkins</span><span class="skill-level">65%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="70"><div class="skill-header"><span>Docker</span><span class="skill-level">70%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="60"><div class="skill-header"><span>Postman</span><span class="skill-level">60%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="75"><div class="skill-header"><span>CI/CD Pipelines</span><span class="skill-level">75%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="70"><div class="skill-header"><span>Performance Monitoring</span><span class="skill-level">70%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 5: Engineering Practices -->
+                    <div aria-labelledby="t-cloud" class="panel" id="p-cloud" role="tabpanel">
+                        <div class="skill-grid">
+                            <div class="skill-card" data-val="85"><div class="skill-header"><span>SDLC</span><span class="skill-level">85%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="85"><div class="skill-header"><span>System Integration</span><span class="skill-level">85%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="80"><div class="skill-header"><span>Technical Audits</span><span class="skill-level">80%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="80"><div class="skill-header"><span>Agile</span><span class="skill-level">80%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="80"><div class="skill-header"><span>Scrum</span><span class="skill-level">80%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="75"><div class="skill-header"><span>QA Strategy</span><span class="skill-level">75%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 6: Languages & Core Tech -->
+                    <div aria-labelledby="t-soft" class="panel" id="p-soft" role="tabpanel">
+                        <div class="skill-grid">
+                            <div class="skill-card" data-val="85"><div class="skill-header"><span>C#</span><span class="skill-level">85%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="80"><div class="skill-header"><span>JavaScript</span><span class="skill-level">80%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="75"><div class="skill-header"><span>HTML</span><span class="skill-level">75%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="70"><div class="skill-header"><span>CSS</span><span class="skill-level">70%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="85"><div class="skill-header"><span>SQL</span><span class="skill-level">85%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="75"><div class="skill-header"><span>LINQ</span><span class="skill-level">75%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                            <div class="skill-card" data-val="85"><div class="skill-header"><span>OOP</span><span class="skill-level">85%</span></div><div class="skill-bar" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div class="fill"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Scoped Styles (badges removed, titles improved) -->
+        <!-- Same script (no changes needed) -->
+
+    </section>
+
+
+    <section class="section-content bg2" id="experience">
+        <div class="container">
+
+            <!-- Section title -->
+            <div class="section-title item_bottom text-center">
+                <!--<div>
+                    <span class="fa fa-book fa-2x"></span>
+                </div>-->
+                <h1>My <span>Resume</span></h1>
+            </div>
+            <!-- End Section title -->
+
+            <div class="row">
+                <ul class="timeline list-unstyled">
+                    <!-- History Year -->
+                    <li class="title">Present</li>
+                    <!-- Current role -->
+                    <li class="note item_left">
+                        <h4>The Egyptian Authority for Unified Procurement, Medical Supply and the Management of medical technology 'UPA'</h4>
+                        <h5>Chief Technology &amp; Digital Transformation Officer (CTDTO)</h5>
+                        <p class="desc">
+                            <ul class="desc">
+                                <li><strong>Nationwide impact:</strong> led Egypt Vision 2030–aligned transformation across <strong>12,000+ public health entities</strong> and <strong>10+ core platforms</strong>.</li>
+                                <li><strong>Core systems:</strong> built/managed procurement, warehousing, and inventory solutions—<strong>40% faster cycles</strong>, higher transparency, and <strong>99.9% uptime</strong>.</li>
+                                <li><strong>ERP/CRM integration:</strong> implemented and integrated <strong>Microsoft Dynamics 365 (ERP &amp; CRM)</strong> to centralize operations and streamline workflows.</li>
+                                <li><strong>Data & teams:</strong> mentored <strong>20+ developers/analysts</strong>; launched real-time analytics dashboards cutting reporting time by <strong>70%</strong>.</li>
+                                <li><strong>Delivery & adoption:</strong> executed secure, compliant programs; trained <strong>39,000+ staff</strong> and boosted digital tool utilization by <strong>75%</strong>.</li>
+                                <li><strong>Strategic leadership:</strong> collaborated with senior stakeholders and government bodies to align digital initiatives with national health priorities and sustainability goals.</li>
+                            </ul>
+                        </p>
+                        <span class="date">May 2025 – Present</span>
+                        <span class="arrow fa fa-play"></span>
+                    </li>
+                    <li class="note item_right">
+                        <h4>The Egyptian Authority for Unified Procurement, Medical Supply and the Management of medical technology “UPA”</h4>
+                        <h5>General Manager of Systems, Applications and Technical Support Department</h5>
+                        <!-- Updated summary and dates to reflect responsibilities and tenure -->
+                        <p class="desc">
+                            <ul class="desc">
+                                <li><strong>Digital systems:</strong> directed implementation, maintenance, and support of all infrastructure, ensuring high availability and operational alignment.</li>
+                                <li><strong>Productivity:</strong> boosted departmental output by <strong>200%</strong> through mentoring and continuous team upskilling.</li>
+                                <li><strong>Stakeholder alignment:</strong> collaborated with key decision-makers to ensure initiatives matched strategic goals and tech demands.</li>
+                                <li><strong>Innovation:</strong> introduced new technologies and launched targeted training programs to foster a culture of improvement.</li>
+                                <li><strong>Best practices:</strong> led secure, scalable software development while documenting processes for cross-team knowledge sharing.</li>
+                                <li><strong>Change management:</strong> guided teams through digital transformation, ensuring smooth adoption and minimal disruption.</li>
+                                <li><strong>Client engagement:</strong> built strong relationships with stakeholders, translating business needs into technical solutions.</li>
+                                <li><strong>Continuous improvement:</strong> monitored performance metrics and introduced process enhancements to sustain long-term efficiency.</li>
+                            </ul>
+                        </p>
+                        <span class="date">
+                            Oct 2020 – May 2025
+                        </span>
+                        <span class="arrow fa fa-play"></span>
+                    </li>
+                    <li class="note item_left">
+                        <h4> Integral Solutions LLC (Muscat - Oman)</h4>
+                        <h5>Development team leader and senior web developer </h5>
+                        <p class="desc">
+                            <ul class="desc">
+                                <li><strong>Lead &amp; mentor:</strong> coached developers, conducted reviews, and built a collaborative team culture.</li>
+                                <li><strong>Deliver projects:</strong> managed multiple streams, allocated resources, and ensured on-time delivery.</li>
+                                <li><strong>Architecture &amp; standards:</strong> designed scalable, secure, maintainable systems and enforced best practices.</li>
+                                <li><strong>Problem solving:</strong> troubleshot, debugged, and safeguarded quality through robust testing/QA.</li>
+                                <li><strong>Collaboration:</strong> worked with designers, PMs, stakeholders, and clients to align requirements and updates.</li>
+                                <li><strong>Continuous improvement:</strong> evaluated tools/tech, optimized processes, trained teams, and maintained documentation.</li>
+                            </ul>
+                        </p>
+                        <span class="date">
+                            MAY 2016 to OCT 2020
+                        </span>
+                        <span class="arrow fa fa-play"></span>
+                    </li>
+                    <li class="note item_right">
+                        <h4>Keyframe Egypt</h4>
+                        <h5>Development team leader and senior web developer </h5>
+                        <p class="desc">
+                            <ul class="desc">
+                                <li><strong>Web Development:</strong> built complex applications using HTML, CSS, JavaScript, React, and Kendo UI.</li>
+                                <li><strong>UI/UX:</strong> delivered responsive layouts, interactive features, and optimized performance for better user experience.</li>
+                                <li><strong>Backend &amp; Databases:</strong> developed with ASP.NET and managed SQL Server, MySQL, and PostgreSQL for scalable data solutions.</li>
+                                <li><strong>Collaboration Tools:</strong> used Git and TFS for version control and effective team collaboration.</li>
+                                <li><strong>Security &amp; Support:</strong> applied security best practices, resolved technical issues, and ensured system reliability.</li>
+                                <li><strong>Documentation &amp; Knowledge Sharing:</strong> created technical docs, API references, and development guidelines.</li>
+                            </ul>
+                        </p>
+                        <span class="date">
+                            Jan 2012 MAY 2016
+                        </span>
+                        <span class="arrow fa fa-play"></span>
+                    </li>
+                    <li class="note item_left" style=" margin-top: 40px !important;">
+                        <h4> Information system department of Egyptian armed forces</h4>
+                        <h5>Linux and web developer </h5>
+                        <p class="desc">
+                            <ul class="desc">
+                                <li><strong>Linux Distribution:</strong> contributed to building the first Egyptian Linux-from-scratch distribution.</li>
+                                <li><strong>Kernel Development:</strong> developed Linux kernel modules and system optimizations.</li>
+                                <li><strong>Web Applications:</strong> built multiple applications using <strong>ASP.NET</strong> and <strong>SQL Server</strong>.</li>
+                            </ul>
+                        </p>
+                        <span class="date">
+                            APR 2008 – OCT 2010
+                        </span>
+                        <span class="arrow fa fa-play"></span>
+                    </li>
+                    <!-- Start icon -->
+                    <li class="start fa fa-bookmark"></li>
+                    <li class="clear"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--<section aria-label="Education and Languages" class="section-content bg1" id="lang-edu-combined">
+        <div class="wrap">-->
+    <!-- Section Title -->
+    <!--<div class="section-title item_bottom text-center">-->
+    <!--   <div><span class="fas fa-chart-column fa-2x"></span></div>-->
+    <!--<h1>Education &amp; <span>Languages</span></h1>
+
+    </div>-->
+    <!-- Grid Layout -->
+    <!--<div class="lec-grid">-->
+    <!-- Education Card -->
+    <!--<article aria-labelledby="lec-edu-title" class="lec-card">
+        <header class="lec-card-head">
+            <i aria-hidden="true" class="fa fa-graduation-cap"></i>
+            <h3 id="lec-edu-title">Education</h3>
+        </header>
+        <div class="lec-edu">
+            <div class="edu-item">
+                <div class="edu-top">
+                    <span class="edu-badge"><i aria-hidden="true" class="fa fa-award"></i> Bachelor</span>
+                    <time class="edu-time">2003–2007</time>
+                </div>
+                <h4 class="edu-title">B.Sc. in Computer Science</h4>
+                <div class="edu-inst">Zagazig University</div>
+                <ul class="edu-points">
+                    <li>Graduation Project: <strong>A+</strong></li>
+                    <li>Core: Algorithms, Data Structures, Databases, OS</li>
+                    <li>Applied: Web Engineering, Networks, Software Eng.</li>
+                </ul>
+            </div>
+        </div>
+    </article>-->
+    <!-- Languages Card -->
+    <!--<article aria-labelledby="lec-lang-title" class="lec-card">
+                    <header class="lec-card-head">
+                        <i aria-hidden="true" class="fa fa-language"></i>
+                        <h3 id="lec-lang-title">Languages</h3>
+                    </header>
+                    <ul class="lec-lang-list">
+                        <li class="lec-lang">
+                            <div class="lec-row">
+                                <span class="lec-name">Arabic</span>
+                                <span class="lec-level">Native</span>
+                            </div>
+                            <div class="lec-meter" role="progressbar" aria-label="Arabic proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+                                <span class="fill" style="--w:100%"></span>
+                            </div>
+                            <ul class="lec-tags">
+                                <li>Speaking</li>
+                                <li>Reading</li>
+                                <li>Writing</li>
+                                <li>Presentations</li>
+                            </ul>
+                        </li>
+
+                        <li class="lec-lang">
+                            <div class="lec-row">
+                                <span class="lec-name">English</span>
+                                <span class="lec-level">C1 (Advanced)</span>
+                            </div>
+                            <div class="lec-meter" role="progressbar" aria-label="English proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92">
+                                <span class="fill" style="--w:92%"></span>
+                            </div>
+                            <ul class="lec-tags">
+                                <li>Business</li>
+                                <li>Technical</li>
+                                <li>Email</li>
+                                <li>Presentations</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>-->
+
+    <section class="section-content bg3" id="portfolio">
+        <div class="container">
+
+            <!-- Section title -->
+            <div class="section-title item_bottom text-center">
+                <!--<div>
+                    <span class="fa fa-briefcase fa-2x"></span>
+                </div>-->
+                <h1 class="white">Recent <span>Works</span></h1>
+            </div>
+            <!-- End Section title -->
+
             <div class="portfolio-top">
             </div>
             <div id="portfolio-wrap" tabindex="1">
@@ -388,13 +1059,13 @@
                         <!--portfolio category-->
                         <ul class="portfolio-filter-list white">
                             <li>
-                                <a class="active" href="#" data-cat="*">ALL</a>
+                                <a class="active" data-cat="*" href="#">ALL</a>
                             </li>
                             <li>
-                                <a href="#" data-cat="design">Enterprise applications</a>
+                                <a data-cat="design" href="#">Enterprise applications</a>
                             </li>
                             <li>
-                                <a href="#" data-cat="photo">Websites & Portals</a>
+                                <a data-cat="photo" href="#">Websites &amp; Portals</a>
                             </li>
                         </ul>
                         <!--End portfolio category-->
@@ -409,12 +1080,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div id="portfolio-items" class="portfolio-items item_fade_in">
-
-
+                    <div class="portfolio-items item_fade_in" id="portfolio-items">
                         <article class="design">
                             <a href="#!projects/EductationalGate.html">
-                                <img src="images/portfolio/Procuerment.jpg" alt="Procuerment" />
+                                <img alt="Procuerment" src="images/portfolio/Procuerment.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-bank"></i>
@@ -427,7 +1096,7 @@
                         </article>
                         <article class="design">
                             <a href="#!projects/tenders.html">
-                                <img src="images/portfolio/Tenders.jpg" alt="Tenders" />
+                                <img alt="Tenders" src="images/portfolio/Tenders.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-briefcase"></i>
@@ -440,7 +1109,7 @@
                         </article>
                         <article class="design">
                             <a href="#!projects/correspondence.html">
-                                <img src="images/portfolio/Correspondence.jpg" alt="Correspondence" />
+                                <img alt="Correspondence" src="images/portfolio/Correspondence.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-envelope"></i>
@@ -453,7 +1122,7 @@
                         </article>
                         <article class="design">
                             <a href="#!projects/AssetManagement.html">
-                                <img src="images/portfolio/AssetManagement.jpg" alt="Assets" />
+                                <img alt="Assets" src="images/portfolio/AssetManagement.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-barcode"></i>
@@ -466,7 +1135,7 @@
                         </article>
                         <article class="design">
                             <a href="#!projects/CrisesManagement.html">
-                                <img src="images/portfolio/CrisesManagement.jpg" alt="Crises" />
+                                <img alt="Crises" src="images/portfolio/CrisesManagement.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-heart"></i>
@@ -479,7 +1148,7 @@
                         </article>
                         <article class="design">
                             <a href="#!projects/RecruitmentSystem.html">
-                                <img src="images/portfolio/RecruitmentSystem.jpg" alt="Recruitment" />
+                                <img alt="Recruitment" src="images/portfolio/RecruitmentSystem.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-graduation-cap"></i>
@@ -492,7 +1161,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/mohp.html">
-                                <img src="images/portfolio/mohp.jpg" alt="mohp" />
+                                <img alt="mohp" src="images/portfolio/mohp.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-medkit"></i>
@@ -505,7 +1174,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/UPA.html">
-                                <img src="images/portfolio/UPA.jpg" alt="UPA" />
+                                <img alt="UPA" src="images/portfolio/UPA.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-bar-chart"></i>
@@ -518,7 +1187,7 @@
                         </article>
                         <article class="design">
                             <a href="#!projects/EductationalGate.html">
-                                <img src="images/portfolio/EPortal.jpg" alt="Eductational gate of Oman" />
+                                <img alt="Eductational gate of Oman" src="images/portfolio/EPortal.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-bank"></i>
@@ -531,7 +1200,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/rateyourservices.html">
-                                <img src="images/portfolio/rateyourservices.jpg" alt="rateyourservices" />
+                                <img alt="rateyourservices" src="images/portfolio/rateyourservices.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-star"></i>
@@ -544,7 +1213,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/maf.html">
-                                <img src="images/portfolio/maf.jpg" alt="maf" />
+                                <img alt="maf" src="images/portfolio/maf.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-tree"></i>
@@ -557,7 +1226,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/bgicc.html">
-                                <img src="images/portfolio/bgicc.jpg" alt="bgicc" />
+                                <img alt="bgicc" src="images/portfolio/bgicc.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-female"></i>
@@ -568,22 +1237,22 @@
                                 <!-- End .overlay -->
                             </a>
                         </article>
-                        <article class="photo">
+                        <!--<article class="photo">
                             <a href="#!projects/bgics.html">
-                                <img src="images/portfolio/bgics.jpg" alt="BGICS" />
+                                <img alt="BGICS" src="images/portfolio/bgics.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-female"></i>
                                         <h3>BGICS</h3>
                                         <span>Website</span>
                                     </div>
-                                </div>
-                                <!-- End .overlay -->
-                            </a>
-                        </article>
+                                </div>-->
+                        <!-- End .overlay -->
+                        <!--</a>
+                        </article>-->
                         <article class="photo">
                             <a href="#!projects/escd.html">
-                                <img src="images/portfolio/escd-egypt.jpg" alt="escd-egypt" />
+                                <img alt="escd-egypt" src="images/portfolio/escd-egypt.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-book"></i>
@@ -596,7 +1265,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/araborganizers.html">
-                                <img src="images/portfolio/araborganizers.jpg" alt="araborganizers" />
+                                <img alt="araborganizers" src="images/portfolio/araborganizers.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-calendar"></i>
@@ -609,7 +1278,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/tasheed.html">
-                                <img src="images/portfolio/01.jpg" alt="tasheed" />
+                                <img alt="tasheed" src="images/portfolio/01.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-building"></i>
@@ -622,7 +1291,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/arabmu.html">
-                                <img src="images/portfolio/02.jpg" alt="tasheed" />
+                                <img alt="tasheed" src="images/portfolio/02.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-rss"></i>
@@ -635,7 +1304,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/zayed.html">
-                                <img src="images/portfolio/03.jpg" alt="zayed" />
+                                <img alt="zayed" src="images/portfolio/03.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-building"></i>
@@ -646,10 +1315,9 @@
                                 <!-- End .overlay -->
                             </a>
                         </article>
-
                         <article class="photo">
                             <a href="#!projects/igiluc.html">
-                                <img src="images/portfolio/5.jpg" alt="igiluc" />
+                                <img alt="igiluc" src="images/portfolio/5.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-medkit"></i>
@@ -660,10 +1328,9 @@
                                 <!-- End .overlay -->
                             </a>
                         </article>
-
                         <article class="photo">
                             <a href="#!projects/alfouad.html">
-                                <img src="images/portfolio/6.jpg" alt="tasheed" />
+                                <img alt="tasheed" src="images/portfolio/6.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-car"></i>
@@ -674,10 +1341,9 @@
                                 <!-- End .overlay -->
                             </a>
                         </article>
-
                         <article class="photo">
                             <a href="#!projects/catering.html">
-                                <img src="images/portfolio/8.jpg" alt="tasheed" />
+                                <img alt="tasheed" src="images/portfolio/8.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-smile-o"></i>
@@ -688,10 +1354,9 @@
                                 <!-- End .overlay -->
                             </a>
                         </article>
-
                         <article class="photo">
                             <a href="#!projects/electrolux.html">
-                                <img src="images/portfolio/7.jpg" alt="tasheed" />
+                                <img alt="tasheed" src="images/portfolio/7.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-shopping-cart"></i>
@@ -704,7 +1369,7 @@
                         </article>
                         <article class="photo">
                             <a href="#!projects/alfacureCenter.html">
-                                <img src="images/portfolio/9.jpg" alt="alfacureCenter" />
+                                <img alt="alfacureCenter" src="images/portfolio/9.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-medkit"></i>
@@ -715,10 +1380,9 @@
                                 <!-- End .overlay -->
                             </a>
                         </article>
-
                         <article class="photo">
                             <a href="#!projects/igta.html">
-                                <img src="images/portfolio/10.jpg" alt="igta" />
+                                <img alt="igta" src="images/portfolio/10.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-plus"></i>
@@ -729,10 +1393,9 @@
                                 <!-- End .overlay -->
                             </a>
                         </article>
-
                         <article class="photo">
                             <a href="#!projects/alfacure.html">
-                                <img src="images/portfolio/4.jpg" alt="alfacure" />
+                                <img alt="alfacure" src="images/portfolio/4.jpg" />
                                 <div class="overlay">
                                     <div class="item-info">
                                         <i class="fa fa-medkit"></i>
@@ -749,1247 +1412,753 @@
             </div>
         </div>
     </section>
-    <!-- End Portfolio Section -->
-    <!-- Skill Section -->
-    <section id="skill" class="section-content bg2">
-        <div class="container">
-            <div class="row">
-                <!-- Section Title -->
-                <div class="section-title item_bottom text-center">
-                    <div>
-                        <span class="fas fa-chart-column fa-2x"></span>
-                    </div>
-                    <h1>My <span>Skills</span></h1>
-                </div>
-                <!-- End Section Title -->
-            </div>
-            <div class="section-title item_bottom text-center">
-
-                <h1 class="second-title">Software Architecture & <span>Engineering Principles </span></h1>
-            </div>
-            <div class="row text-center item_bottom">
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>Software Architecture</h4>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>System Design</h4>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>OOP</h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>SOLID Principles</h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>Design Patterns</h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>Security Best Practices</h4>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-            <div class="row text-center item_bottom">
-                <div class="section-title item_bottom text-center">
-
-                    <h1 class="second-title">Project Management & <span>Agile Methodologies </span></h1>
-                </div>
-
-            </div>
-            <div class="row text-center item_bottom">
-                <div class="col-md-2">
-                    <div class="chart" data-percent="70">
-                        <span class="percent">70</span>
-                        <h4>Scrum</h4>
-                        <!--<p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>-->
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>Agile</h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>JIRA</h4>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="row text-center item_bottom">
-                <div class="section-title item_bottom text-center">
-
-                    <h1 class="second-title">Backend <span>Development</span></h1>
-                </div>
-
-            </div>
-
-            <div class="row text-center item_bottom">
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            C#
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            ASP.NET
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            .NET Core
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            Node.js
-                        </h4>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row text-center item_bottom">
-                <div class="section-title item_bottom text-center">
-
-                    <h1 class="second-title">Frontend <span>Development</span></h1>
-                </div>
-
-            </div>
-            <div class="row text-center item_bottom">
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            HTML5
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            CSS3
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            JavaScript
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="75">
-                        <span class="percent">75</span>
-                        <h4>
-                            React.js
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="60">
-                        <span class="percent">60</span>
-                        <h4>
-                            Angular
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="75">
-                        <span class="percent">75</span>
-                        <h4>
-                            jQuery
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="95">
-                        <span class="percent">95</span>
-                        <h4>
-                            Kendo UI
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            Telerik Rad Controls
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="70">
-                        <span class="percent">70</span>
-                        <h4>
-                            DevExpress
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="70">
-                        <span class="percent">70</span>
-                        <h4>
-                            ComponentOne
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="70">
-                        <span class="percent">70</span>
-                        <h4>
-                            Infragistics
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="60">
-                        <span class="percent">60</span>
-                        <h4>
-                            Syncfusion
-                        </h4>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row text-center item_bottom">
-                <div class="section-title item_bottom text-center">
-
-                    <h1 class="second-title">Database  <span>Technologies</span></h1>
-                </div>
-
-            </div>
-            <div class="row text-center item_bottom">
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>
-                            SQL Server
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>
-                            MySQL
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>
-                            PostgreSQL
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="60">
-                        <span class="percent">60</span>
-                        <h4>
-                            MongoDB
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="60">
-                        <span class="percent">60</span>
-                        <h4>
-                            Redis
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="65">
-                        <span class="percent">65</span>
-                        <h4>
-                            GraphQL
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            LINQ
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            Entity Framework
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            ADO.NET
-                        </h4>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="row text-center item_bottom">
-                <div class="section-title item_bottom text-center">
-
-                    <h1 class="second-title">DevOps &   <span>Deployment</span></h1>
-                </div>
-
-            </div>
-            <div class="row text-center item_bottom">
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>
-                            Docker
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            IIS
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>
-                            Jenkins
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>
-                            TFS
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="60">
-                        <span class="percent">60</span>
-                        <h4>
-                            Nginx
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="65">
-                        <span class="percent">65</span>
-                        <h4>
-                            Apache
-                        </h4>
-                    </div>
-                </div>
-
-
-
-
-
-            </div>
-
-
-            <div class="row text-center item_bottom">
-                <div class="section-title item_bottom text-center">
-
-                    <h1 class="second-title">API Development <span>Integration</span></h1>
-                </div>
-
-            </div>
-            <div class="row text-center item_bottom">
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>
-                            RESTful APIs
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            Web API
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="60">
-                        <span class="percent">60</span>
-                        <h4>
-                            SignalR
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="60">
-                        <span class="percent">60</span>
-                        <h4>
-                            Socket.IO
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="85">
-                        <span class="percent">85</span>
-                        <h4>
-                            Swagger
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="85">
-                        <span class="percent">85</span>
-                        <h4>
-                            Postman
-                        </h4>
-                    </div>
-                </div>
-
-
-
-
-
-            </div>
-
-
-            <div class="row text-center item_bottom">
-                <div class="section-title item_bottom text-center">
-
-                    <h1 class="second-title">Reporting &  <span>Data Visualization</span></h1>
-                </div>
-
-            </div>
-            <div class="row text-center item_bottom">
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>
-                            Crystal Reports
-
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            Telerik Reporting
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="60">
-                        <span class="percent">60</span>
-                        <h4>
-                            DevExpress Reporting
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="70">
-                        <span class="percent">70</span>
-                        <h4>
-                            Apache Superset
-
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="85">
-                        <span class="percent">85</span>
-                        <h4>
-                            Chart.js
-                        </h4>
-                    </div>
-                </div>
-
-
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            Kendo UI Charts
-                        </h4>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-            <div class="row text-center item_bottom">
-                <div class="section-title item_bottom text-center">
-
-                    <h1 class="second-title">Version <span>Control</span></h1>
-                </div>
-
-            </div>
-            <div class="row text-center item_bottom">
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            Git
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>
-                            GitHub
-                        </h4>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="row text-center item_bottom">
-                <div class="section-title item_bottom text-center">
-
-                    <h1 class="second-title">
-                        CMS &
-                        <span>eCommerce Platforms</span>
-                    </h1>
-                </div>
-
-            </div>
-            <div class="row text-center item_bottom">
-                <div class="col-md-2">
-                    <div class="chart" data-percent="70">
-                        <span class="percent">70</span>
-                        <h4>
-                            Umbraco
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>
-                            Sitefinity
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="70">
-                        <span class="percent">70</span>
-                        <h4>
-                            Kentico
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="90">
-                        <span class="percent">90</span>
-                        <h4>
-                            nopCommerce
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="chart" data-percent="80">
-                        <span class="percent">80</span>
-                        <h4>
-                            Virto Commerce
-                        </h4>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="row text-center item_bottom">
-                <div class="section-title item_bottom text-center">
-
-                    <h1 class="second-title">Personal &  <span>Skills</span></h1>
-                </div>
-
-            </div>
-            <div class="row new-line item_bottom">
-                <div class="col-md-6">
-                    <ul class="skillBar">
-                        <li>
-                            <div class="skillBg">
-                                <span data-width="95"><strong>Problem Solving</strong></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skillBg">
-                                <span data-width="95"><strong>Critical Thinking</strong></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skillBg">
-                                <span data-width="95"><strong>Leadership</strong></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul class="skillBar">
-                        <li>
-                            <div class="skillBg">
-                                <span data-width="90"><strong>Communication</strong></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skillBg">
-                                <span data-width="85"><strong>Organizational Skills </strong></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skillBg">
-                                <span data-width="85"><strong>Time Management</strong></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul class="skillBar">
-                        <li>
-                            <div class="skillBg">
-                                <span data-width="95"><strong>Emotional Intelligence</strong></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skillBg">
-                                <span data-width="85"><strong>Continuous Learning </strong></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skillBg">
-                                <span data-width="90"><strong>Cross-Functional Collaboration</strong></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- skills end -->
-            </div>
-        </div>
-    </section>
-    <!-- End Skill Section -->
-    <section class="fullwidth-section bg-callout">
+    <!--<section class="fullwidth-section bg-callout">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 class="white padBottom killMargin">I am available as a . <strong>Freelancer</strong></h1>
-                    <a href="#contact" class="scroll btn btn-trans btn-border-w btn-large">Hire Me</a>&nbsp;&nbsp;<a class="btn btn-primary btn-lg" href="CVSalama.pdf" target="_blank"><i class="fa fa-download"></i> Download CV</a>
+                    <h1 class="white padBottom killMargin">Freelancer  <strong>Available</strong></h1>
+                    <a class="scroll btn btn-trans btn-border-w btn-large" href="#contact">Hire Me</a>  <a class="btn btn-primary btn-lg" href="CVSalama.pdf" target="_blank"><i class="fa fa-download"></i> Download CV</a>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Resume Section -->
-    <section id="experience" class="section-content bg2">
+    </section>-->
+    <section id="professional-involvements" class="pi-grid-section" aria-labelledby="pi-title">
         <div class="container">
-            <div class="row">
-                <!-- Section title -->
-                <div class="section-title item_bottom text-center">
-                    <div>
-                        <span class="fa fa-book fa-2x"></span>
-                    </div>
-                    <h1>My <span>Resume</span></h1>
-                </div>
-                <!-- End Section title -->
+            <div class="section-title item_bottom text-center">
+                <!-- <div><span class="fa fa-star fa-2x"></span></div>-->
+                <h1>Professional  <span>Involvements </span></h1>
+
             </div>
-            <div class="row">
-                <ul class="timeline list-unstyled">
-                    <!-- History Year -->
-                    <li class="title">Present</li>
-                    <li class="note item_right">
-                        <h4>The Egyptian Authority for Unified Procurement, Medical Supply and the Management of medical technology “UPA”</h4>
-                        <h5>General Manager of Systems, Applications and Technical Support Department</h5>
-                        <p class="desc">
-                            <ul>
-                                <li>
-                                    Oversee the implementation, maintenance, and support of all systems, applications, and technical resources within the department.
-                                </li>
-                                <li>
-                                    Develop and implement strategic plans and objectives for the department, aligning with the organization's overall goals and objectives.
-                                </li>
-                                <li>
-                                    Manage the department's budget and resources effectively, ensuring maximum return on investment and cost efficiency.
-                                </li>
-                                <li>
-                                    Lead and manage a team of technical professionals, providing guidance, coaching, and support to optimize their performance and professional development.
-                                </li>
-                                <li>
-                                    Collaborate with other department heads and stakeholders to identify and understand the organization's technological needs and requirements.
-                                </li>
-                                <li>
-                                    Develop and enforce policies, procedures, and standards for the use of systems, applications, and technical resources.
-                                </li>
-                                <li>
-                                    Evaluate and recommend new technologies, tools, and solutions to enhance the efficiency and effectiveness of the department's operations.
-                                </li>
-                                <li>
-                                    Establish and maintain relationships with vendors and service providers, negotiating contracts and agreements to ensure quality and cost-effective services.
-                                </li>
-                                <li>
-                                    Ensure the availability, reliability, and security of systems, applications and technical resources, implementing appropriate measures to protect against data breaches and cyber threats.
-                                </li>
-                                <li>
-                                    Monitor and analyze system performance and usage, identifying areas for improvement and implementing necessary enhancements.
-                                </li>
-                                <li>
-                                    Coordinate and lead the resolution of technical issues and incidents, ensuring timely and effective solutions.
-                                </li>
-                                <li>
-                                    Develop and deliver training programs and materials to educate users on the proper use of systems, applications, and technical resources.
-                                </li>
-                                <li>
-                                    Stay updated with the latest advancements and trends in technology, recommending and implementing changes as appropriate.
-                                </li>
-                                <li>
-                                    Prepare and present reports to senior management and stakeholders, providing updates on the department's activities, achievements, and challenges.
-                                </li>
-                                <li>
-                                    Foster a culture of continuous improvement and innovation within the department, encouraging creativity and proactive problem-solving.
-                                </li>
-                                <li>
-                                    Take a hands-on approach in development, collaborating with the team on coding and development tasks. Write efficient and high-quality code following best practices.
-                                </li>
-                                <li>
-                                    Develop strategies to mitigate risks and ensure project success.
-                                </li>
-                            </ul>
-                        </p>
-                        <span class="date">
-                            OCT 2020 to Present
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-                    <li class="note item_left">
-                        <h4> Integral Solutions LLC (Muscat - Oman)</h4>
-                        <h5>Development team leader and senior web developer </h5>
-                        <p class="desc">
-                            <ul>
-                                <li>
-                                    Provide technical guidance and expertise to a team of web developers. Mentoring and coaching team members to enhance their technical skills and knowledge.
-                                </li>
-                                <li>
-                                    Oversee and manage multiple web development projects, ensuring timely delivery and adherence to project requirements and timelines.
-                                </li>
-                                <li>
-                                    Collaborate with designers and stakeholders to create and refine the overall architecture and design of web applications. Ensure scalability, security, and maintainability of web solutions.
-                                </li>
-                                <li>
-                                    Identify and resolve complex technical problems and challenges that arise during the development process. Offer innovative solutions and troubleshoot issues effectively.
-                                </li>
-                                <li>
-                                    Ensure the quality and reliability of web applications through thorough testing and debugging. Work with the team to implement and follow best practices for quality assurance processes.
-                                </li>
-                                <li>
-                                    Collaborate with cross-functional teams, such as designers, project managers, and stakeholders, to gather requirements, provide updates, and ensure smooth project execution.
-                                </li>
 
-                                <li>
-                                    Stay updated with the latest web development trends, tools and technologies. Evaluate and adopt new technologies to enhance the team's productivity and the quality of web applications.
-                                </li>
+            <div class="pi-grid">
+                <!-- 1 -->
+                <article class="pi-card reveal" style="--d:0ms">
+                    <span class="pi-icon bg-blue"><i class="fa-solid fa-hospital"></i></span>
+                    <h3 class="pi-heading">Africa Health ExCon — 2nd Edition</h3>
+                    <p class="pi-desc">Contributed to steering decisions and conference organization.</p>
+                    <ul class="pi-meta">
+                        <li><i class="fa-regular fa-calendar"></i> Jun 2023</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Cairo</li>
+                    </ul>
+                    <a class="pi-link" href="https://africahealthexcon.com" target="_blank" rel="noopener">africahealthexcon.com</a>
+                </article>
 
-                                <li>
-                                    Drive continuous improvement efforts within the team, suggesting process enhancements, tools and frameworks to improve efficiency and productivity.
-                                </li>
-                                <li>
-                                    Document project requirements, technical specifications and processes to facilitate knowledge sharing and ensure smooth project hand-offs.
-                                </li>
-                                <li>
-                                    Act as a team lead, responsible for team performance, resource allocation and fostering a positive and collaborative team culture.
-                                </li>
-                                <li>
-                                    Conduct performance reviews and provide feedback to team members.
-                                </li>
-                                <li>
-                                    Interact with clients to understand their needs, gather feedback, and provide updates on project progress.
-                                </li>
-                                <li>
-                                    Build and maintain strong client relationships.
-                                </li>
-                                <li>
-                                    Enforce coding standards and best practices within the team. Ensure adherence to industry standards and guidelines.
-                                </li>
-                                <li>
-                                    Identify training needs and organize training programs to enhance the technical skills and knowledge of team members.
-                                </li>
-                            </ul>
-                        </p>
-                        <span class="date">
-                            MAY 2016 to OCT 2020
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-                    <li class="note item_right">
-                        <h4>Keyframe Egypt</h4>
-                        <h5>Development team leader and senior web developer </h5>
-                        <p class="desc">
-                            <ul>
-                                <li>Design and develop complex web applications, websites and components using programming languages such as HTML, CSS, JavaScript and various frameworks (e.g., React, kendo UI).</li>
-                                <li>
-                                    Implement user interface (UI) designs and responsive layouts, enhance user experience (UX) by adding interactive elements and optimizing page load times.
-                                </li>
-                                <li>
-                                    Work with ASP.NET programming language to create server-side logic and integrate with databases and APIs.
-                                </li>
-                                <li>
-                                    Design and implement database schemas, queries, and transactions, Work with database technologies, such as SQL Server, MySQL OR PostgreSQL to store and retrieve data efficiently.
-                                </li>
-                                <li>
-                                    Use version control systems (git and TFS) to manage code repositories and collaborate effectively with team members.
-                                </li>
-                                <li>
-                                    Lead and work closely with cross-functional team members, such as designers, UX/UI specialists, and project managers, to gather requirements and ensure smooth project execution.
-                                </li>
-                                <li>
-                                    Applying security best practices in web development, including protecting against common web vulnerabilities (e.g., cross-site scripting, SQL injection) and ensuring data privacy and protection.
-                                </li>
-                                <li>
-                                    Assist in troubleshooting issues reported by users or customers. Provide timely support and resolve technical problems to maintain optimal systems performance.
-                                </li>
-                                <li>
-                                    Create and maintain technical documentation, including code comments, API documentation, and development guidelines.
-                                </li>
-                            </ul>
-                        </p>
-                        <span class="date">
-                            Jan 2012 MAY 2012
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
+                <!-- 2 -->
+                <article class="pi-card reveal" style="--d:120ms">
+                    <span class="pi-icon bg-green"><i class="fa-solid fa-microphone"></i></span>
+                    <h3 class="pi-heading">Manama Health — 1st Edition</h3>
+                    <p class="pi-desc">Delivered a lecture on bioinformatics as a featured speaker.</p>
+                    <ul class="pi-meta">
+                        <li><i class="fa-regular fa-calendar"></i> Dec 2022</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Manama</li>
+                    </ul>
+                    <a class="pi-link" href="https://www.manamahealth.com" target="_blank" rel="noopener">manamahealth.com</a>
+                </article>
 
-                    <li class="note item_left" style=" margin-top: 40px !important;">
-                        <h4> Information system department of Egyptian armed forces</h4>
-                        <h5>Linux and web developer </h5>
-                        <p class="desc">
-                            <ul>
-                                <li>
-                                    Contribute to the building of the first Egyptian Linux from-scratch distribution.
-                                </li>
-                                <li>
-                                    Contribute to the development of the Linux kernel by writing and implementing kernel modules and system optimizations.
-                                </li>
-                                <li>
-                                    Develop many web applications using ASP.NET and SQL Server.
-                                </li>
-                            </ul>
-                        </p>
-                        <span class="date">
-                            APR 2008 – OCT 2010
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
+                <!-- 3 -->
+                <article class="pi-card reveal" style="--d:240ms">
+                    <span class="pi-icon bg-orange"><i class="fa-solid fa-hospital-user"></i></span>
+                    <h3 class="pi-heading">Africa Health ExCon — 1st Edition</h3>
+                    <p class="pi-desc">Worked with UPA leadership to deliver the inaugural conference successfully.</p>
+                    <ul class="pi-meta">
+                        <li><i class="fa-regular fa-calendar"></i> Jun 2022</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Cairo</li>
+                    </ul>
+                    <a class="pi-link" href="https://africahealthexcon.com/Home/About" target="_blank" rel="noopener">africahealthexcon.com</a>
+                </article>
 
-                    <!-- Education -->
-                    <li class="title">Languages</li>
-                    <li class="note item_left">
-                        <h4>Arabic </h4>
-                        <h5>Native</h5>
-                        <!--<p class="desc">
+                <!-- 4 -->
+                <article class="pi-card reveal" style="--d:360ms">
+                    <span class="pi-icon bg-purple"><i class="fa-solid fa-syringe"></i></span>
+                    <h3 class="pi-heading">Track &amp; Trace for Pharmaceuticals</h3>
+                    <p class="pi-desc">Shaped project vision and roadmap with UPA, EDA, and MOH.</p>
+                    <ul class="pi-meta">
+                        <li><i class="fa-regular fa-calendar"></i> 2021–2023</li>
+                    </ul>
+                </article>
 
-                        </p>-->
+                <!-- 5 -->
+                <article class="pi-card reveal" style="--d:480ms">
+                    <span class="pi-icon bg-red"><i class="fa-solid fa-droplet"></i></span>
+                    <h3 class="pi-heading">Egypt’s Blood Operations Oversight Board</h3>
+                    <p class="pi-desc">Appointed to the national Blood Operations Control Board.</p>
+                    <ul class="pi-meta">
+                        <li><i class="fa-regular fa-calendar"></i> 2022–2023</li>
+                    </ul>
+                </article>
 
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-                    <li class="note item_right">
-                        <h4>English</h4>
-                        <h5>Professional</h5>
-                        <!--<p class="desc">
-                            Lorem Ipsum. This is Photoshop's version Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        </p>-->
-
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-                    <li class="title">Education</li>
-                    <li class="note item_left">
-                        <h4>Bachelor of computer science </h4>
-                        <h5>Zagazig University</h5>
-                        <p class="desc">
-                            A+ in graduation project
-                        </p>
-                        <span class="date">
-                            2003 - 2007
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-                    <li class="note item_right">
-                        <h4>High school degree</h4>
-                        <h5>Altawfikia secondry school</h5>
-                        <!--<p class="desc">
-                            Lorem Ipsum. This is Photoshop's version Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        </p>-->
-                        <span class="date">
-                            2007 - 2011
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-                    <li class="title" style="width:300px !important">Professional Involvements</li>
-                    <li class="note item_left">
-                        <h4>Africa health Excon 2nd edition </h4>
-                        <h5><a href="https://africahealthexcon.com" target="_blank">https://africahealthexcon.com</a></h5>
-                        <p class="desc">
-                            Actively contributed to discussions and decision-making processes regarding organizing the conference.
-                        </p>
-                        <span class="date">
-                            Jun 2023
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-                    <li class="note item_right">
-                        <h4>Manama health 1st edition</h4>
-                        <h5><a href="https://www.manamahealth.com" target="_blank">https://www.manamahealth.com</a></h5>
-                        <p class="desc">
-                            I participated as a general manager in the UPA, where I were a speaker in a lecture on bioinformatic.
-                        </p>
-                        <span class="date">
-                            Dec 2022
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-
-                    <li class="note item_left">
-                        <h4>Africa health Excon 1st edition </h4>
-                        <h5><a href="https://africahealthexcon.com/Home/About" target="_blank">https://africahealthexcon.com/Home/About</a></h5>
-                        <p class="desc">
-                            Collaborated with UPA’s top-level managers to organize a successful conference.
-                        </p>
-                        <span class="date">
-                            Jun 2022
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-                    <li class="note item_right">
-                        <h4>Track and trace for pharmaceutical products committee member</h4>
-                        <!--   <h5><a href="https://www.manamahealth.com" target="_blank">https://www.manamahealth.com</a></h5>-->
-                        <p class="desc">
-                            Collaborated with UPA, drug authority and ministry of health’s top-level managers to set the vision and goals for the project.
-                        </p>
-                        <span class="date">
-                            2021 - 2023
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-
-                    <li class="note item_left">
-                        <h4>Egypt’s Blood Operations Oversight Board Member </h4>
-                        <!--  <h5><a href="https://africahealthexcon.com/Home/About" target="_blank">https://africahealthexcon.com/Home/About</a></h5>-->
-                        <p class="desc">
-                            Under the direction of the Egyptian Minister of Health, I participate as a member of the Blood Operations Control Board in Egypt.
-                        </p>
-                        <span class="date">
-                            2022 - 2023
-                        </span>
-                        <span class="arrow fa fa-play"></span>
-                    </li>
-                    <!-- Start icon -->
-                    <li class="start fa fa-bookmark"></li>
-                    <li class="clear"></li>
-                </ul>
+                <!-- 6 -->
+                <article class="pi-card reveal" style="--d:600ms">
+                    <span class="pi-icon bg-teal"><i class="fa-solid fa-chalkboard-user"></i></span>
+                    <h3 class="pi-heading">UPA Academy — Instructor / Speaker</h3>
+                    <p class="pi-desc">Delivered training on BI, data governance, and procurement.</p>
+                    <ul class="pi-meta">
+                        <li><i class="fa-regular fa-calendar"></i> 2022–2024</li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
-    <!-- End Experience Timeline Section -->
-    <!-- Clients Section -->
-    <section id="clients" class="clients parallax" style="background-image: url(images/clients.jpg)">
-        <div class="parallax-overlay">
-            <div class="container">
-                <div class="row">
-                    <!-- Section title -->
-                    <div class="section-title item_bottom text-center">
-                        <div>
-                            <span class="fa fa-users fa-2x"></span>
-                        </div>
-                        <h1 class="white">My <span>Clients</span></h1>
-                    </div>
-                    <!-- End Section title -->
-                </div>
 
-                <!--<div class="row item_bottom">
 
-                    <h4 class="white">Professional  <strong> Involvements</strong></h4>
 
-                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
 
-                        <div class="swiper-testimonial">
 
-                            <div class="swiper-wrapper">-->
-                <!--First Slide-->
-                <!--<div class="swiper-slide">
-                    <p class="quote">
-                        Actively contributed to discussions and decision-making processes regarding organizing the conference.
-                    </p>
-                    <p class="author">Jun 2023 </p>
-                    <p class="company">Africa health Excon 2nd edition <a href="https://africahealthexcon.com" target="_blank">https://africahealthexcon.com</a></p>
-                </div>-->
-                <!--Second Slide-->
-                <!--<div class="swiper-slide">
-                    <p class="quote">"My website couldn’t look better after working with the him on the redesign. Now my site and corporate	branding is outstanding! He is awesome."</p>
-                    <p class="author">John Doe</p>
-                    <p class="company">Manager <a href="#">@Web Planet</a></p>
-                </div>-->
-                <!--Third Slide-->
-                <!--<div class="swiper-slide">
-                        <p class="quote">"I am incredibly happy with the increased traffic my site has received since working with you! He is the best at this job."</p>
-                        <p class="author">Jane Doe</p>
-                        <p class="company">Owner <a href="#">@Creative Agency</a></p>
-                    </div>
-                </div>-->
-                <!--/ .swiper-wrapper -->
-                <!--<div class="pagination-testimonial"></div>--> <!--/ swiper slider pagination -->
-                <!--</div>--><!--/ .swiper-testimonial -->
-                <!--</div>
-                </div>-->
-                <!--/ .row -->
 
-                <div class="row new-line item_fade_in">
-                    <h4 class="white">Some of <strong>my clients</strong></h4>
-                    <div class="carrousel-container">
-                        <div id="left_scroll"><a href="#"></a></div>
-                        <div id="carousel_inner">
-                            <ul class="clearfix" id="carousel_ul">
-                                <li><span><img src=images/clients/upa.png alt="upa"></span></li>
-                                <li><span><img src=images/clients/moh.png alt="moh"></span></li>
-                                <li><span><img src=images/clients/plan.png alt="plan"></span></li>
-                                <li><span><img src=images/clients/om.png alt="plan"></span></li>
-                                <li><span><img src=images/clients/escd.png alt="plan"></span></li>
-                                <li><span><img src=images/clients/bgicc.png alt="plan"></span></li>
-                                <li><span><img src=images/clients/araborg.png alt="plan"></span></li>
-                            </ul>
-                        </div>
-                        <div id="right_scroll"><a href="#"></a></div>
-                        <input type="hidden" id="hidden_auto_slide_seconds" value=0 />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Clients Section -->
-    <!-- Process Section -->
-    <section id="process" class="section-content bg3">
+
+
+
+
+
+
+
+
+    <section id="clients" class="section-content bg2" aria-labelledby="clients-title">
         <div class="container">
-            <div class="row">
-                <!-- Section title -->
-                <div class="section-title item_bottom text-center">
-                    <div>
-                        <span class="fa fa-cogs fa-2x"></span>
-                    </div>
-                    <h1 class="white">My <span>Process</span></h1>
-                </div>
-                <!-- End Section title -->
+            <header class="section-title item_bottom text-center">
+                <h1 id="clients-title">Trusted by <span>Leading Organizations</span></h1>
 
-                <ol class="process-flow list-unstyled">
-                    <li class="active">
-                        <div class="process-node active">
-                            <i class="fa fa-comments"></i>
-                        </div>
-                        <h4>Discussion</h4>
-                        <p>Set Goals and Identify risks.</p>
-                        <div class="line">
-                            <div class="progress"></div>
-                        </div>
-                    </li>
-                    <li class="active">
-                        <div class="process-node active">
-                            <i class="fa fa-lightbulb"></i>
-                        </div>
-                        <h4>Idea</h4>
-                        <p>Analyze requirements and Create a project plan</p>
-                        <div class="line">
-                            <div class="progress"></div>
-                        </div>
-                    </li>
-                    <li class="active">
-                        <div class="process-node active">
-                            <i class="fa fa-desktop"></i>
-                        </div>
-                        <h4>Implementation</h4>
-                        <p>Build the database and Develop the code.</p>
-                        <div class="line">
-                            <div class="progress"></div>
-                        </div>
-                    </li>
-                    <li class="active">
-                        <div class="process-node active">
-                            <i class="fa fa-eye"></i>
-                        </div>
-                        <h4>Review</h4>
-                        <p>Test and Fix any issues.</p>
-                        <div class="line">
-                            <div class="progress"></div>
-                        </div>
-                    </li>
-                    <li class="active">
-                        <div class="process-node active">
-                            <i class="fa fa-rocket"></i>
-                        </div>
-                        <h4>Deliver</h4>
-                        <p>Launch project and train.</p>
-                    </li>
-                </ol>
-            </div>
+            </header>
+
+            <ul class="client-grid" role="list">
+                <li class="client"><img src="images/clients/upa.png" alt="UPA" loading="lazy"></li>
+                <li class="client"><img src="images/clients/plan2.png" alt="Plan 2" loading="lazy"></li>
+                <li class="client"><img src="images/clients/plan.png" alt="Plan" loading="lazy"></li>
+                <li class="client"><img src="images/clients/clients/om.png" alt="OM" loading="lazy"></li>
+                <li class="client"><img src="images/clients/moh.png" alt="MOH" loading="lazy"></li>
+                <li class="client"><img src="images/clients/escd.png" alt="ESCD" loading="lazy"></li>
+                <li class="client"><img src="images/clients/bgicc.png" alt="BGICC" loading="lazy"></li>
+                <li class="client"><img src="images/clients/araborg.png" alt="Arab Org" loading="lazy"></li>
+
+                <!--<li class="client"><img src="img/clients/client-9.svg" alt="Client 9" loading="lazy"></li>
+                <li class="client"><img src="img/clients/client-10.svg" alt="Client 10" loading="lazy"></li>
+                <li class="client"><img src="img/clients/client-11.svg" alt="Client 11" loading="lazy"></li>
+                <li class="client"><img src="img/clients/client-12.svg" alt="Client 12" loading="lazy"></li>-->
+            </ul>
+
         </div>
     </section>
-    <!-- End Process Section -->
-    <!-- Contact Section -->
-    <section id="contact" class="section-content bg2">
+
+
+
+
+    <section class="section-content bg" id="contact" aria-labelledby="contact-title">
         <div class="container">
-            <div class="row">
-                <!-- Section title -->
-                <div class="section-title item_bottom text-center">
-                    <div>
-                        <span class="fa fa-envelope fa-2x"></span>
-                    </div>
-                    <h1>Get in <span>touch</span></h1>
-                </div>
-                <!-- End Section title -->
+
+            <!-- Title -->
+            <div class="section-title item_bottom text-center">
+                <h1 id="contact-title">Get in <span>touch</span></h1>
             </div>
+
+            <!-- Content -->
             <div class="row item_fade_in">
-                <div class="col-md-6 col-md-offset-3 text-center contact-block">
-                    <!-- Contact Details -->
-                    <i class="fa-classic fa-solid fa-map-location-dot fa-3x"></i>
-                    <p>
-                        New Administrative Capital <br>
-                        Cairo, Egypt
-                    </p>
-                    <p>
-                        +20 01220156077
-                    </p>
-                    <!-- End Contact Details -->
-                    <!-- Social Icon -->
-                    <div class="social-icon">
-                        <a href="https://www.facebook.com/MahmoudSalamaaaa/" target="_blank"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
-                        <a href="https://www.linkedin.com/in/mahmoud-salama-30249b34/"><i class="fa-brands fa-linkedin fa-3x" target="_blank"></i></a>
-                        <a href="https://www.upwork.com/freelancers/~0123da644850514f9e" target="_blank"><i class="fab fa-square-upwork fa-3x"></i></a>
-                        <a href="https://www.fiverr.com/mahmoudsalam34" target="_blank"><i class="fa-brands fa-red-river fa-3x" target="_blank"></i></a>
-                        <a href="https://profile.indeed.com/p/mahmouds-htcp24v" target="_blank"><i class="fa-classic fa-solid fa-circle-info fa-3x" target="_blank"></i></a>
+                <div class="col-12">
+                    <div class="contact-inner">
 
-                        <a href="https://www.freelancer.com/u/mahmoudsSalama" target="_blank"><i class="fa-brands fa-pushed fa-fw fa-3x"></i></a>
+                        <!-- Contact Chips -->
+                        <div class="contact-chips" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="" />
+                            <address class="chip chip--location" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <span class="chip-label">
+                                    <span itemprop="streetAddress">New Administrative Capital</span>,
+                                    <span itemprop="addressLocality">Cairo</span>, <span itemprop="addressCountry">Egypt</span>
+                                </span>
+                                <a class="chip-cta" href="https://maps.app.goo.gl/35XUrPrNzwRiVyXt6" target="_blank" rel="noopener">Open map</a>
+                            </address>
 
+                            <div class="chip chip--phone" itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+                                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                <span class="chip-label" itemprop="telephone">+20 01220156077</span>
+                                <a class="chip-cta" href="tel:+201220156077" aria-label="Call phone number">Call</a>
+                            </div>
+                        </div>
+                        <!-- /Contact Chips -->
+                        <!-- Socials -->
+                        <nav class="contact-socials" aria-label="Social profiles">
+                            <a href="https://www.linkedin.com/in/mahmoud-salama-30249b34/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.facebook.com/MahmoudSalamaaaa/" target="_blank" rel="noopener" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.upwork.com/freelancers/~0123da644850514f9e" target="_blank" rel="noopener" aria-label="Upwork">
+                                <i class="fa-brands fa-upwork"></i>
+                            </a>
+                            <a href="https://www.fiverr.com/mahmoudsalam34" target="_blank" rel="noopener" aria-label="Fiverr">
+                                <span class="text-icon">fi</span>
+                            </a>
+                            <a href="https://profile.indeed.com/p/mahmouds-htcp24v" target="_blank" rel="noopener" aria-label="Indeed">
+                                <span class="text-icon">i</span>
+                            </a>
+                            <a href="https://www.freelancer.com/u/mahmoudsSalama" target="_blank" rel="noopener" aria-label="Freelancer">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </a>
+                        </nav>
+                        <!-- /Socials -->
 
                     </div>
-                    <!-- End Social Icon -->
                 </div>
             </div>
-            <!--<div class="row item_fade_in">
-                <h4 class="text-center">Drop me a Line</h4>
-                <div class="col-md-6 col-md-offset-3" style="width: 58% !important; margin-left:22% !important">
-                    <div class="form-respond text-center">
-                    </div>
-                    <script type="text/javascript" src="https://form.procurment/jsform/232412612563044"></script>-->
-            <!--<form method="post" name="contactform" id="contactform" class="form validate item_bottom" role="form">
-                <div class="form-group">
-                    <input type="text" name="name" id="name" class="form-control required" placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" id="email" class="form-control required email" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <textarea name="message" id="message" class="form-control input-lg required" rows="9" placeholder="Enter Message"></textarea>
-                </div>
-                <div class="form-group text-center">
-                    <input type="submit" id="contactForm_submit" class="btn btn-trans btn-border btn-full" value="Submit">
-                </div>-->
-            <!-- antispam code -->
-            <!--<div class="antispam"><input type="text" value="" name="url" /></div>
-            </form>-->
-            <!--</div>
-            </div>-->
-            <!-- End form contact -->
         </div>
+
+        <!-- Scoped alignment styles -->
+
     </section>
-    <!-- End Contact Section -->
-    <!-- Google maps -->
-    <!--<div id="map_canvas" class="item_fade_in">
-    </div>-->
+
+
     <!-- End Google maps -->
     <footer class="text-center">
         <!-- Footer Text -->
         <div class="container text-center item_top">
-            <img class="footer-logo" src="images/logo2.png" alt="footer logo"><br />
-            &copy; Copyright 2025. All Rights Reserved.
+            <img alt="footer logo" class="footer-logo" src="images/logo2.png" /><br />
+            © Copyright 2025. All Rights Reserved.
+
         </div>
         <!-- End Footer Text -->
     </footer>
     <!-- Back to top -->
     <a href="#" id="back-top"><i class="fa fa-angle-up fa-2x"></i></a>
     <!-- Js Library -->
-    <script type="text/javascript" src="js/modernizr.js"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.sticky.js"></script>
-    <script type="text/javascript" src="js/jquery.easing-1.3.pack.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.appear.js"></script>
-    <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.sticky.js" type="text/javascript"></script>
+    <script src="js/jquery.easing-1.3.pack.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+    <script src="js/jquery.appear.js" type="text/javascript"></script>
+    <script src="js/jquery.flexslider.min.js" type="text/javascript"></script>
     <!--<script type="text/javascript" src="js/jquery.fitvids.js"></script>-->
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery-countTo.js"></script>
-    <script type="text/javascript" src="js/easyPieChart.js"></script>
-    <script type="text/javascript" src="js/smoothscroll.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-
+    <script src="js/swiper.min.js" type="text/javascript"></script>
+    <script src="js/waypoints.min.js" type="text/javascript"></script>
+    <script src="js/jquery-countTo.js" type="text/javascript"></script>
+    <script src="js/easyPieChart.js" type="text/javascript"></script>
+    <script src="js/smoothscroll.js" type="text/javascript"></script>
+    <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+    <script src="js/jquery.validate.min.js" type="text/javascript"></script>
     <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
-    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="rs-plugin/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
+    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
     <!-- END SLIDER REVOLUTION 4.x SCRIPTS  -->
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
     <!-- Js Library -->
+    <script>/* =========================================================================
+           One clean module for: reveals, counters, tabs, meters, tilt/ripple, chips,
+           rotating placeholder, parallax, sequential fades.
+           ========================================================================= */
+        (() => {
+            // ------- Setup & helpers -------
+            document.documentElement.classList.add('js');
+            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const hasIO = 'IntersectionObserver' in window;
+
+            // Cached number formatters
+            const NF_COMPACT = new Intl.NumberFormat(undefined, { notation: 'compact', maximumFractionDigits: 0 });
+            const NF_FULL = new Intl.NumberFormat(undefined, { useGrouping: true, maximumFractionDigits: 0 });
+
+            const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+            const easeInOutCubic = t => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+
+            function onceIntersection(el, opts, onEnter) {
+                if (!hasIO) { onEnter(el); return; }
+                const io = new IntersectionObserver(([entry], obs) => {
+                    if (entry.isIntersecting) { onEnter(el); obs.unobserve(el); }
+                }, Object.assign({ threshold: 0.25 }, opts || {}));
+                io.observe(el);
+            }
+
+            // ------- 1) Generic reveal-on-scroll -------
+            (function setupReveals() {
+                const list = document.querySelectorAll('.reveal');
+                if (!list.length) return;
+                if (!hasIO) { list.forEach(n => n.classList.add('in-view')); return; }
+                const io = new IntersectionObserver((entries) => {
+                    entries.forEach(e => {
+                        if (e.isIntersecting) {
+                            e.target.classList.add('in-view');
+                            io.unobserve(e.target);
+                        }
+                    });
+                }, { threshold: 0.3 });
+                list.forEach(n => io.observe(n));
+            })();
+
+            // ------- 2) Counters (unified) -------
+            function animateNumberText(el, target, { duration = 1200, format = 'full', suffix = '' } = {}) {
+                if (prefersReduced) {
+                    el.textContent = (format === 'compact' ? NF_COMPACT.format(target) : NF_FULL.format(target)) + suffix;
+                    return;
+                }
+                const t0 = performance.now();
+                function step(ts) {
+                    const p = Math.min(1, (ts - t0) / duration);
+                    const eased = easeOutCubic(p);
+                    const val = Math.round(target * eased);
+                    const shown = (format === 'compact' ? NF_COMPACT.format(val) : NF_FULL.format(val)) + suffix;
+                    el.textContent = shown;
+                    if (p < 1) requestAnimationFrame(step);
+                }
+                requestAnimationFrame(step);
+            }
+
+            // 2a) .counters-bar .num  (uses data-target, data-format, data-suffix)
+            (function countersBar() {
+                const nums = document.querySelectorAll('.counters-bar .num');
+                if (!nums.length) return;
+                const seen = new WeakSet();
+                function run(n) {
+                    const target = parseInt(n.dataset.target || '0', 10);
+                    const format = (n.dataset.format || 'compact').toLowerCase();
+                    const suffix = n.dataset.suffix || '';
+                    const duration = Math.max(300, Number(n.dataset.duration || (format === 'compact' ? 1200 : 900)));
+                    animateNumberText(n, target, { duration, format, suffix });
+                }
+                if (!hasIO) { nums.forEach(run); return; }
+                const io = new IntersectionObserver(es => {
+                    es.forEach(e => {
+                        if (e.isIntersecting && !seen.has(e.target)) { seen.add(e.target); run(e.target); io.unobserve(e.target); }
+                    });
+                }, { threshold: 0.5 });
+                nums.forEach(n => io.observe(n));
+            })();
+
+            // 2b) .number-counters strong[data-to] (kept for your About/side blocks)
+            (function numberCountersSimple() {
+                const els = document.querySelectorAll('.number-counters strong[data-to], .about-counters strong[data-to]');
+                if (!els.length) return;
+                function run(el) {
+                    const to = +el.dataset.to || 0;
+                    const suffix = el.dataset.suffix || '';
+                    animateNumberText(el, to, { duration: 1200, format: 'full', suffix });
+                }
+                if (!hasIO) { els.forEach(run); return; }
+                const io = new IntersectionObserver(es => {
+                    es.forEach(e => {
+                        if (e.isIntersecting) { run(e.target); io.unobserve(e.target); }
+                    });
+                }, { threshold: 0.35 });
+                els.forEach(el => { el.textContent = '0'; io.observe(el); });
+            })();
+
+            // 2c) .counters .metric-item > .metric-number (hero metrics)
+            (function heroMetrics() {
+                const items = document.querySelectorAll('.counters .metric-item .metric-number');
+                if (!items.length) return;
+                function run(el) {
+                    const target = Number(el.dataset.target || '0');
+                    const format = (el.dataset.format || 'compact').toLowerCase();
+                    const suffix = el.dataset.suffix || '';
+                    const duration = Math.max(300, Number(el.dataset.duration || 1200));
+                    animateNumberText(el, target, { duration, format, suffix });
+                }
+                if (!hasIO) { items.forEach(run); return; }
+                const io = new IntersectionObserver(es => {
+                    es.forEach(e => {
+                        if (e.isIntersecting) { run(e.target); io.unobserve(e.target); }
+                    });
+                }, { threshold: 0.35 });
+                items.forEach(n => io.observe(n));
+            })();
+
+            // ------- 3) Languages/Education meters (#lang-edu-combined) -------
+            (function meters() {
+                const section = document.getElementById('lang-edu-combined');
+                if (!section) return;
+                const fills = section.querySelectorAll('.lec-meter .fill');
+                function setWidth(el) {
+                    const target = getComputedStyle(el).getPropertyValue('--w').trim() || '0%';
+                    if (prefersReduced) { el.style.width = target; return; }
+                    el.style.width = '0%';
+                    requestAnimationFrame(() => { el.style.width = target; });
+                }
+                fills.forEach(el => onceIntersection(el, { threshold: .3, rootMargin: '0px 0px -10% 0px' }, setWidth));
+            })();
+
+            // ------- 4) Skills: accessible tabs + bar animate -------
+            (function skillTabs() {
+                const root = document.getElementById('skill');
+                if (!root) return;
+                const tablist = root.querySelector('.tablist');
+                const tabs = Array.from(tablist ? tablist.querySelectorAll('[role="tab"], .tab') : []);
+                const panels = Array.from(root.querySelectorAll('.panels .panel, .panel'));
+                if (!tabs.length || !panels.length) return;
+
+                tabs.forEach((t, i) => {
+                    t.setAttribute('role', 'tab');
+                    t.id ||= 'skill-tab-' + i;
+                    t.setAttribute('tabindex', t.classList.contains('is-active') ? '0' : '-1');
+                    t.setAttribute('aria-selected', t.classList.contains('is-active') ? 'true' : 'false');
+                });
+                panels.forEach((p, i) => {
+                    p.setAttribute('role', 'tabpanel');
+                    p.id ||= 'skill-panel-' + i;
+                    p.hidden = !p.classList.contains('is-active');
+                    const tab = tabs[i];
+                    if (tab) { tab.setAttribute('aria-controls', p.id); p.setAttribute('aria-labelledby', tab.id); }
+                });
+
+                function resetPanel(panel) {
+                    panel.querySelectorAll('.skill-card').forEach(card => {
+                        const val = +card.getAttribute('data-val') || 0;
+                        const bar = card.querySelector('.skill-bar');
+                        const fill = card.querySelector('.fill');
+                        const label = card.querySelector('.skill-level');
+                        if (prefersReduced) {
+                            if (fill) fill.style.width = val + '%';
+                            if (bar) bar.setAttribute('aria-valuenow', String(val));
+                            if (label) label.textContent = val + '%';
+                        } else {
+                            if (fill) fill.style.width = '0%';
+                            if (bar) bar.setAttribute('aria-valuenow', '0');
+                            if (label) label.textContent = '0%';
+                        }
+                    });
+                }
+                function animatePanel(panel) {
+                    if (prefersReduced) return;
+                    const cards = Array.from(panel.querySelectorAll('.skill-card'));
+                    cards.forEach((card, i) => {
+                        const val = +card.getAttribute('data-val') || 0;
+                        const bar = card.querySelector('.skill-bar');
+                        const fill = card.querySelector('.fill');
+                        const label = card.querySelector('.skill-level');
+                        setTimeout(() => {
+                            if (fill) fill.style.width = val + '%';
+                            if (bar) bar.setAttribute('aria-valuenow', String(val));
+                            if (label) {
+                                const t0 = performance.now(), dur = 700;
+                                (function step(ts) {
+                                    const p = Math.min(1, (ts - t0) / dur);
+                                    label.textContent = Math.round(p * val) + '%';
+                                    if (p < 1) requestAnimationFrame(step);
+                                })(t0);
+                            }
+                        }, i * 80);
+                    });
+                }
+                function setActive(idx) {
+                    tabs.forEach((t, i) => {
+                        const active = i === idx;
+                        t.classList.toggle('is-active', active);
+                        t.setAttribute('aria-selected', String(active));
+                        t.setAttribute('tabindex', active ? '0' : '-1');
+                        panels[i].classList.toggle('is-active', active);
+                        panels[i].hidden = !active;
+                    });
+                    resetPanel(panels[idx]);
+                    requestAnimationFrame(() => animatePanel(panels[idx]));
+                }
+
+                // Initial activation when section comes into view
+                let initialIdx = tabs.findIndex(t => t.classList.contains('is-active'));
+                if (initialIdx < 0) initialIdx = 0;
+                onceIntersection(root, { threshold: .25 }, () => {
+                    // ensure one active at start
+                    if (!tabs.some(t => t.classList.contains('is-active'))) {
+                        tabs[initialIdx].classList.add('is-active');
+                        panels[initialIdx].classList.add('is-active'); panels[initialIdx].hidden = false;
+                    }
+                    resetPanel(panels[initialIdx]);
+                    animatePanel(panels[initialIdx]);
+                });
+
+                tabs.forEach((tab, idx) => {
+                    tab.addEventListener('click', () => setActive(idx));
+                    tab.addEventListener('keydown', (e) => {
+                        const k = e.key;
+                        const cur = tabs.indexOf(document.activeElement);
+                        if (k === 'ArrowRight' || k === 'ArrowDown') { e.preventDefault(); const n = (cur + 1) % tabs.length; tabs[n].focus(); setActive(n); }
+                        if (k === 'ArrowLeft' || k === 'ArrowUp') { e.preventDefault(); const n = (cur - 1 + tabs.length) % tabs.length; tabs[n].focus(); setActive(n); }
+                        if (k === 'Home') { e.preventDefault(); tabs[0].focus(); setActive(0); }
+                        if (k === 'End') { e.preventDefault(); tabs[tabs.length - 1].focus(); setActive(tabs.length - 1); }
+                    });
+                });
+            })();
+
+            // ------- 5) Tilt + ripple for .pi-card[data-tilt] -------
+            (function tiltRipple() {
+                if (prefersReduced) return;
+                const cards = document.querySelectorAll('#professional-involvements .pi-card[data-tilt]');
+                if (!cards.length) return;
+
+                let rafId = null;
+                function onMove(e) {
+                    const c = e.currentTarget, r = c.getBoundingClientRect();
+                    const px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
+                    const rx = (py - 0.5) * 6, ry = (0.5 - px) * 6;
+                    if (rafId) cancelAnimationFrame(rafId);
+                    rafId = requestAnimationFrame(() => { c.style.transform = `translateY(-4px) rotateX(${rx}deg) rotateY(${ry}deg)`; });
+                }
+                function onLeave(e) { e.currentTarget.style.transform = ''; }
+                function ripple(e) {
+                    const c = e.currentTarget, r = document.createElement('span');
+                    r.className = 'pi-ripple';
+                    const rect = c.getBoundingClientRect(), size = Math.max(rect.width, rect.height) * 0.6;
+                    r.style.width = r.style.height = size + 'px';
+                    r.style.left = (e.clientX - rect.left - size / 2) + 'px';
+                    r.style.top = (e.clientY - rect.top - size / 2) + 'px';
+                    c.appendChild(r); setTimeout(() => r.remove(), 600);
+                }
+
+                cards.forEach(c => {
+                    c.addEventListener('pointermove', onMove);
+                    c.addEventListener('pointerleave', onLeave);
+                    c.addEventListener('click', ripple, { passive: true });
+                });
+            })();
+
+            // ------- 6) Contact chips → fill input + rotating placeholder -------
+            (function chipsAndPlaceholder() {
+                const input = document.getElementById('cmdInput');
+                if (input) {
+                    document.querySelectorAll('.chip').forEach(chip => {
+                        chip.addEventListener('click', () => {
+                            input.value = chip.dataset.fill || chip.textContent.trim();
+                            input.focus();
+                        });
+                    });
+                    const hints = [
+                        'optimize procurement cycles',
+                        'unify ERP, CRM, and data',
+                        'govern analytics at scale',
+                        'improve interoperability & security'
+                    ];
+                    if (!prefersReduced && hints.length) {
+                        let i = 0;
+                        setInterval(() => {
+                            i = (i + 1) % hints.length;
+                            input.setAttribute('placeholder', `Type a goal… (e.g., “${hints[i]}”)`);
+                        }, 3500);
+                    }
+                }
+            })();
+
+            // ------- 7) Background parallax for .bg .l1/.l2 (hero-dark) -------
+            (function parallax() {
+                if (prefersReduced) return;
+                const l1 = document.querySelector('.bg .l1'), l2 = document.querySelector('.bg .l2');
+                if (!l1 || !l2) return;
+                let mouseX = 0, targetMX = 0, ticking = false;
+                function apply() {
+                    const sy = window.scrollY || 0;
+                    const mx = mouseX * 0.02;
+                    l1.style.transform = `translate3d(${mx}px, ${sy * 0.03}px, 0)`;
+                    l2.style.transform = `translate3d(${mx * 1.5}px, ${sy * 0.06}px, 0)`;
+                    ticking = false;
+                }
+                function request() { if (!ticking) { ticking = true; requestAnimationFrame(apply); } }
+                window.addEventListener('scroll', request, { passive: true });
+                window.addEventListener('mousemove', (e) => {
+                    targetMX = (e.clientX - window.innerWidth / 2) / 10;
+                    mouseX += (targetMX - mouseX) * 0.08; request();
+                }, { passive: true });
+                request();
+            })();
+
+            // ------- 8) Sequential fades (.fade-seq-N → .in) -------
+            (function seqFades() {
+                const els = document.querySelectorAll('[class*="fade-seq-"]');
+                if (!els.length) return;
+                if (!hasIO) { els.forEach(el => el.classList.add('in')); return; }
+                const revealed = new WeakSet();
+                const io = new IntersectionObserver((entries) => {
+                    entries.forEach(e => {
+                        if (e.isIntersecting && !revealed.has(e.target)) {
+                            e.target.classList.add('in');
+                            revealed.add(e.target);
+                            io.unobserve(e.target);
+                        }
+                    });
+                }, { threshold: 0.35 });
+                els.forEach(el => io.observe(el));
+            })();
+
+        })();
+        setTimeout(() => {
+            entry.target.textContent = entry.target.textContent + suffix;
+        }, 1250);</script>
+    <script>(() => {
+            const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const hasIO = 'IntersectionObserver' in window;
+
+            const NF_COMPACT = new Intl.NumberFormat(undefined, { notation: 'compact', maximumFractionDigits: 1 });
+            const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+            function format(val, fmt, decimals) {
+                if (fmt === 'compact') return NF_COMPACT.format(val);
+                return new Intl.NumberFormat(undefined, {
+                    useGrouping: true, minimumFractionDigits: decimals, maximumFractionDigits: decimals
+                }).format(val);
+            }
+
+            function animateEl(el) {
+                const target = Number(el.dataset.target || '0');
+                const fmt = (el.dataset.format || (target >= 10000 ? 'compact' : 'full')).toLowerCase();
+                const decimals = Math.max(0, Number(el.dataset.decimals || (fmt === 'full' ? 0 : 1)));
+                const suffix = el.dataset.suffix || '';
+                const duration = Math.max(400, Number(el.dataset.duration || 1200));
+
+                if (prefersReduced) {
+                    el.textContent = format(target, fmt, decimals) + suffix;
+                    el.setAttribute('aria-label', `${(el.previousElementSibling?.textContent || 'Value')}: ${format(target, fmt, decimals)}${suffix}`);
+                    return;
+                }
+
+                const t0 = performance.now();
+                el.textContent = '0';
+                function step(ts) {
+                    const p = Math.min(1, (ts - t0) / duration);
+                    const eased = easeOutCubic(p);
+                    const val = target * eased;
+                    el.textContent = format(val, fmt, decimals) + suffix;
+                    if (p < 1) requestAnimationFrame(step);
+                    else {
+                        el.textContent = format(target, fmt, decimals) + suffix;
+                        el.setAttribute('aria-label', `${(el.previousElementSibling?.textContent || 'Value')}: ${format(target, fmt, decimals)}${suffix}`);
+                    }
+                }
+                requestAnimationFrame(step);
+            }
+
+            function init() {
+                const els = document.querySelectorAll('.metric-number, .stat-value.metric-number');
+                if (!els.length) return;
+
+                els.forEach(el => el.setAttribute('aria-live', 'polite'));
+
+                if (!hasIO) { els.forEach(animateEl); return; }
+
+                // Re-animate whenever element becomes visible again, with a small cooldown
+                const state = new WeakMap(); // { visible: bool, lastHidden: number }
+                const COOLDOWN_MS = 600;
+
+                const io = new IntersectionObserver((entries) => {
+                    const now = performance.now();
+                    entries.forEach(e => {
+                        const el = e.target;
+                        const s = state.get(el) || { visible: false, lastHidden: now };
+                        if (e.isIntersecting) {
+                            if (!s.visible && (now - s.lastHidden) > COOLDOWN_MS) {
+                                animateEl(el);
+                                s.visible = true;
+                                state.set(el, s);
+                            }
+                        } else {
+                            s.visible = false;
+                            s.lastHidden = now;
+                            state.set(el, s);
+                        }
+                    });
+                }, { threshold: 0.45 });
+
+                els.forEach(el => io.observe(el));
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();</script>
+    <script>(() => {
+            const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const hasIO = 'IntersectionObserver' in window;
+
+            const NF_COMPACT = new Intl.NumberFormat(undefined, { notation: 'compact', maximumFractionDigits: 1 });
+            const NF_FULL = new Intl.NumberFormat(undefined, { useGrouping: true, maximumFractionDigits: 2 });
+
+            const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+            function format(val, fmt, decimals) {
+                if (fmt === 'compact') return NF_COMPACT.format(val);
+                return new Intl.NumberFormat(undefined, { useGrouping: true, minimumFractionDigits: decimals, maximumFractionDigits: decimals }).format(val);
+            }
+
+            function animateEl(el) {
+                const target = Number(el.dataset.target || '0');
+                const fmt = (el.dataset.format || (target >= 10000 ? 'compact' : 'full')).toLowerCase();
+                const decimals = Math.max(0, Number(el.dataset.decimals || (fmt === 'full' ? 0 : 1)));
+                const suffix = el.dataset.suffix || '';
+                const duration = Math.max(400, Number(el.dataset.duration || 1200));
+
+                if (prefersReduced) {
+                    el.textContent = format(target, fmt, decimals) + suffix;
+                    el.setAttribute('aria-label', `${el.previousElementSibling?.textContent || 'Value'}: ${format(target, fmt, decimals)}${suffix}`);
+                    return;
+                }
+
+                const t0 = performance.now();
+                function step(ts) {
+                    const p = Math.min(1, (ts - t0) / duration);
+                    const eased = easeOutCubic(p);
+                    const val = target * eased;
+                    const shown = format(val, fmt, decimals);
+                    el.textContent = shown + suffix;
+                    if (p < 1) requestAnimationFrame(step);
+                    else {
+                        el.textContent = format(target, fmt, decimals) + suffix;
+                        el.setAttribute('aria-label', `${el.previousElementSibling?.textContent || 'Value'}: ${format(target, fmt, decimals)}${suffix}`);
+                    }
+                }
+                requestAnimationFrame(step);
+            }
+
+            function init() {
+                const els = document.querySelectorAll('.metric-number, .stat-value.metric-number');
+                if (!els.length) return;
+
+                // reset text for animation
+                els.forEach(el => { el.textContent = '0'; el.setAttribute('aria-live', 'polite'); });
+
+                if (!hasIO) { els.forEach(animateEl); return; }
+
+                const seen = new WeakSet();
+                const io = new IntersectionObserver((entries) => {
+                    entries.forEach(e => {
+                        if (e.isIntersecting && !seen.has(e.target)) {
+                            seen.add(e.target);
+                            animateEl(e.target);
+                            io.unobserve(e.target);
+                        }
+                    });
+                }, { threshold: 0.35 });
+
+                els.forEach(el => io.observe(el));
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();</script>
+    <script>(function () {
+            const cards = Array.from(document.querySelectorAll('#professional-involvements .pi-card'));
+            if (!cards.length) return;
+
+            // Graceful fallback: if IO isn't supported, just show them.
+            if (!('IntersectionObserver' in window)) {
+                cards.forEach(c => c.classList.add('in-view'));
+                return;
+            }
+
+            const seen = new WeakSet();
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !seen.has(entry.target)) {
+                        seen.add(entry.target);
+                        // Stagger based on index in the list
+                        const idx = cards.indexOf(entry.target);
+                        const delay = Math.max(0, idx) * 80; // 80ms per card
+                        setTimeout(() => entry.target.classList.add('in-view'), delay);
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.25 });
+
+            cards.forEach(c => io.observe(c));
+        })();</script>
+
 </body>
 </html>

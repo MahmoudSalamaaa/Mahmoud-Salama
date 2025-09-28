@@ -4288,3 +4288,83 @@ html, body {
                 font-size: 1.15rem; /* larger calendar icon */
                 color: var(--brand-600, #2563eb);
             }
+/* ========== EXTRA RESPONSIVE FIXES FOR MOBILE ========== */
+
+/* Navbar */
+@media (max-width: 767px) {
+    .navbar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-collapse {
+        background: var(--bg);
+        padding: 10px 15px;
+    }
+
+        .navbar-collapse .nav > li {
+            margin: 6px 0;
+        }
+}
+
+/* Hero */
+.hero-photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+#home .headline {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+#home .role, #home .tagline, #home .subline {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+}
+
+/* Counters */
+@media (max-width: 575px) {
+    .stat-rail {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .stat {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+/* Achievements + Strengths */
+@media (max-width: 575px) {
+    .achievement-card, .strength-card {
+        margin-bottom: 16px;
+    }
+}
+
+/* About section padding */
+@media (max-width: 480px) {
+    #about .col-md-4 {
+        padding: 10px 0;
+    }
+
+    #about p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+/* Contact chips + socials */
+@media (max-width: 480px) {
+    #contact .contact-chips {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #contact .contact-socials {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

@@ -399,7 +399,7 @@
     <script type="text/javascript">
         $(() => {
             heyzineDesign.load(flipbookcfg.design);
-            heyzine.load('https://cdnc.heyzine.com/files/uploaded/v3/11ce0db6966483ec5d2f8e63dcdb0b92331285ff.pdf', flipbookcfg).then(() => {				
+            heyzine.load('booklet.pdf', flipbookcfg).then(() => {				
                 heyzineDesign.afterLoad(flipbookcfg.design);
                 // initServiceWorker();
                 if (typeof app != 'undefined' && app != null && app.bus != null) {

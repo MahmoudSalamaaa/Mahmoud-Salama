@@ -4371,3 +4371,7 @@ html, body {
 .name-title {
     max-width: initial !important
 }
+.hero-photo hero-photo--bg
+{
+    left:20% !important
+}

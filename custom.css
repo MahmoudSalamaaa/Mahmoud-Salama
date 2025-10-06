@@ -4368,3 +4368,6 @@ html, body {
         gap: 10px;
     }
 }
+.name-title {
+    max-width: 515px !important
+}

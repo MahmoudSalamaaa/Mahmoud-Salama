@@ -4293,7 +4293,7 @@ html, body {
 /* Navbar */
 @media (max-width: 767px) {
     .navbar-header {
-        display: flex;
+        /*display: flex;*/
         justify-content: space-between;
         align-items: center;
     }

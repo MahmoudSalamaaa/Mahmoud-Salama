@@ -190,3 +190,49 @@ html, body {
         min-height: 44px
     }
 }
+/* ===== Header Fixes ===== */
+.navbar {
+    z-index: 1000;
+}
+
+    .navbar.navbar-fixed-top {
+        position: sticky;
+        top: 0;
+        background: #fff;
+    }
+
+.navbar-brand img.logo {
+    max-height: 40px;
+    width: auto;
+}
+
+.navbar-toggle {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: none;
+    background: transparent;
+}
+
+    .navbar-toggle .icon-bar {
+        background-color: #333;
+        height: 3px;
+        width: 24px;
+        margin: 4px 0;
+    }
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        max-height: calc(100vh - 56px);
+        overflow-y: auto;
+    }
+
+    .navbar .nav > li > a {
+        padding: 12px 10px;
+        display: block;
+    }
+
+    .navbar-brand img.logo {
+        max-height: 32px;
+    }
+}

@@ -54,58 +54,44 @@
     </div>
     <!-- End Pre-loader -->
     <!-- Navbar -->
-    <div class="navbar navbar-transparent navbar-fixed-top">
+    <!-- ======= HEADER / NAVBAR ======= -->
+    <header class="navbar navbar-default navbar-fixed-top" role="banner">
         <div class="container">
             <div class="navbar-header">
-                <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                <!-- Hamburger Button -->
+                <button type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#main-nav"
+                        aria-controls="main-nav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img alt="" class="logo" src="images/logo2.png" /></a>
+
+                <!-- Brand Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Logo" class="logo">
+                </a>
             </div>
-            <nav class="navbar-collapse collapse" id="my-nav" role="navigation">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
 
-                    <li>
-                        <a href="#achievements">Key achievements</a>
-                    </li>
-                    <li>
-                        <a href="#strengths">Core competencies</a>
-                    </li>
-
-                    <li>
-                        <a href="#skill">Skills</a>
-                    </li>
-
-
-                    <li>
-                        <a href="#experience">Resume</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Recent	Works</a>
-                    </li>
-                    <li>
-                        <a href="#professional-involvements">Involvements</a>
-                    </li>
-
-                    <li>
-                        <a href="#clients">Clients</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
+            <!-- Collapsible Navigation -->
+            <nav id="main-nav" class="collapse navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#skills-tabs">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <!--/.navbar-collapse -->
         </div>
-    </div>
+    </header>
+    <!-- ======= END HEADER ======= -->
     <!-- End Navbar -->
     <!-- Home Section -->
     <!-- HERO: Dark Fullscreen Centered Intro (Portrait + Centered Counters) -->
@@ -1644,10 +1630,10 @@
     <script src="js/script.js" type="text/javascript"></script>
     <!-- Js Library -->
     <script>
-    /* =========================================================================
-                   One clean module for: reveals, counters, tabs, meters, tilt/ripple, chips,
-                   rotating placeholder, parallax, sequential fades.
-                   ========================================================================= */
+        /* =========================================================================
+                       One clean module for: reveals, counters, tabs, meters, tilt/ripple, chips,
+                       rotating placeholder, parallax, sequential fades.
+                       ========================================================================= */
         (() => {
             // ------- Setup & helpers -------
             document.documentElement.classList.add('js');
@@ -1980,7 +1966,7 @@
             entry.target.textContent = entry.target.textContent + suffix;
         }, 1250);</script>
     <script>
-    (() => {
+        (() => {
             const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
             const hasIO = 'IntersectionObserver' in window;
 
@@ -2064,7 +2050,7 @@
             }
         })();</script>
     <script>
-    (() => {
+        (() => {
             const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
             const hasIO = 'IntersectionObserver' in window;
 
@@ -2137,7 +2123,7 @@
             }
         })();</script>
     <script>
-    (function () {
+        (function () {
             const cards = Array.from(document.querySelectorAll('#professional-involvements .pi-card'));
             if (!cards.length) return;
 
@@ -2171,7 +2157,27 @@
             if (btn && target) { btn.addEventListener('click', function () { target.classList.toggle('in'); }); }
         })();
     </script>
-
+    <script>
+        (function () {
+            var btn = document.querySelector('.navbar-toggle');
+            var target = document.querySelector(btn && btn.getAttribute('data-target') || '');
+            if (btn && target) {
+                btn.addEventListener('click', function () {
+                    var open = target.classList.contains('in');
+                    target.classList.toggle('in');
+                    btn.classList.toggle('collapsed', open);
+                    btn.setAttribute('aria-expanded', String(!open));
+                });
+                target.addEventListener('click', function (e) {
+                    if (e.target.tagName === 'A' && window.innerWidth < 768) {
+                        target.classList.remove('in');
+                        btn.classList.add('collapsed');
+                        btn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+        })();
+    </script>
 
 </body>
 </html>

@@ -4369,5 +4369,5 @@ html, body {
     }
 }
 .name-title {
-    max-width: 515px !important
+    max-width: initial !important
 }

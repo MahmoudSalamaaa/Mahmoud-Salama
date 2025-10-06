@@ -1,91 +1,192 @@
-/* =========================================================
-   RESPONSIVE FIXES (non-destructive)
-   - No color/section/style changes; only layout & wrapping
-   ========================================================= */
+/* ===== Mobile-first responsive add-ons (layout-only; no visual restyle) ===== */
 
-/* 1) Generic fluid media & containers */
-img, video, canvas, iframe {
-  max-width: 100%;
-  height: auto;
-}
-.section-content .container,
-.wrap { /* already exists; keep as safety */
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+/* 1) Global fluid media & containers */
+img, video, canvas {
+    max-width: 100%;
+    height: auto
 }
 
-/* Long strings/URLs won't overflow on narrow screens */
-.section-content, .section-content p, .section-content a, .contact-info .value {
-  overflow-wrap: anywhere;
-  word-break: break-word;
+.container, .wrap {
+    padding-left: 16px;
+    padding-right: 16px
 }
 
-/* 2) HERO layout: stack on tablets/phones without changing visuals */
-.hero-dark .inner { padding-left: 16px; padding-right: 16px; }
-.hero-dark .hero-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-}
-.hero-dark .hero-right .actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.stat-rail {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.stat-rail .stat {
-  min-width: 140px;
-  flex: 1 1 140px;
-}
-.hero-photo,
-.hero-photo img {
-  width: 100%;
-  max-width: 320px;
-  height: auto;
+/* 2) Navbar: keep brand & burger usable, prevent overflow */
+.navbar .navbar-header {
+    width: 100%
 }
 
-/* 3) Professional Involvements grid already uses auto-fit; just add safety gaps */
-#professional-involvements .pi-grid { row-gap: 22px; }
-
-/* 4) Achievements & Strengths cards: let them breathe and wrap */
-#strengths .row.text-center,
-#achievements .row.item_bottom,
-.section-content .row.item_bottom {
-  margin-left: 0; margin-right: 0;
-}
-#strengths .row.text-center > [class*="col-"],
-#achievements .row.item_bottom > [class*="col-"] {
-  padding-left: 12px; padding-right: 12px;
+.navbar .navbar-brand img.logo {
+    max-height: 40px;
+    width: auto
 }
 
-/* 5) Contact chips & socials wrap nicely */
-#contact .contact-chips, #contact .contact-socials {
-  flex-wrap: wrap;
+.navbar-toggle {
+    margin-top: 8px;
+    margin-bottom: 8px
 }
 
-/* 6) Navbar tweaks on mobile (Bootstrap v3) */
-@media (max-width: 991px) {
-  .navbar .navbar-nav > li > a { padding: 10px 12px; }
-  .navbar-brand img.logo { max-height: 36px; width: auto; }
+.navbar .nav > li > a {
+    padding: 12px 10px
 }
 
-/* 7) Tablet breakpoint */
+/* 3) Hero: stack columns, keep portrait first, allow stat rail to scroll */
 @media (max-width: 992px) {
-  .hero-dark .hero-row { flex-direction: column; text-align: center; }
-  .hero-dark .hero-right .stat-rail { justify-content: center; }
+    .hero-dark .inner {
+        padding: 24px 0
+    }
+
+    .hero-dark .hero-row {
+        display: block
+    }
+
+    .hero-dark .hero-photo {
+        margin: 0 auto 20px auto;
+        display: block;
+        text-align: center
+    }
+
+        .hero-dark .hero-photo img {
+            width: 220px;
+            height: auto
+        }
+
+    .hero-dark .hero-right {
+        text-align: center
+    }
 }
 
-/* 8) Phone breakpoint */
-@media (max-width: 575px) {
-  .stat-rail .divider { display: none; } /* purely layout; divider still exists but hidden on small screens */
-  .hero-photo, .hero-photo img { max-width: 260px; }
-  .contact-card { max-width: 100%; }
-  #skills-tabs .tablist { justify-content: flex-start; }
+@media (max-width: 576px) {
+    .hero-dark .hero-photo img {
+        width: 180px
+    }
+}
+
+.stat-rail {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin
+}
+
+    .stat-rail .divider {
+        display: none
+    }
+
+    .stat-rail .stat {
+        min-width: 180px
+    }
+
+/* 4) About: stack three columns cleanly */
+@media (max-width: 992px) {
+    #about .col-md-4 {
+        width: 100%;
+        float: none
+    }
+
+    #about .name-title h2, #about .name-title h5 {
+        text-align: center
+    }
+
+    #about .contact-info li {
+        display: flex;
+        gap: 8px;
+        align-items: flex-start;
+        flex-wrap: wrap
+    }
+
+    #about .about-langs-edu .row > [class*="col-"] {
+        width: 100%
+    }
+}
+
+/* 5) Achievements & Strengths: ensure 2-per-row then 1-per-row on small screens */
+@media (max-width: 992px) {
+    #achievements .col-md-4, #strengths .col-md-3 {
+        width: 50%;
+        float: left
+    }
+}
+
+@media (max-width: 576px) {
+    #achievements .col-md-4, #strengths .col-md-3 {
+        width: 100%;
+        float: none
+    }
+
+    .strength-card, .achievement-card {
+        margin-bottom: 12px
+    }
+}
+
+/* 6) Skills tabs & grids: make tab row wrap and grid auto-fit */
+#skills-tabs .tablist {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap
+}
+
+#skills-tabs .tab {
+    flex: 1 1 auto;
+    min-width: 220px
+}
+
+#skills-tabs .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap: 12px;
+}
+
+/* 7) Timeline: reduce side gutters and keep dates visible on narrow screens */
+@media (max-width: 992px) {
+    #experience .timeline {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    #experience .note {
+        margin-left: 0;
+        margin-right: 0
+    }
+}
+
+@media (max-width: 576px) {
+    #experience .date {
+        display: inline-block;
+        margin-top: 6px
+    }
+}
+
+/* 8) Portfolio filter + items: make filters scrollable and grid responsive */
+#portfolio-filter .portfolio-filter-list {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+    white-space: nowrap
+}
+
+#portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+    gap: 16px;
+}
+    /* Ensure legacy articles behave inside the grid */
+    #portfolio-items > article {
+        width: auto;
+        float: none
+    }
+
+/* 9) Utility: avoid horizontal scroll on tiny devices */
+html, body {
+    overflow-x: hidden
+}
+
+/* 10) Touch targets: slightly larger tap area on small screens */
+@media (max-width: 576px) {
+    a, button {
+        min-height: 44px
+    }
 }

@@ -4368,3 +4368,205 @@ html, body {
         gap: 10px;
     }
 }
+
+
+/* =========================================================
+   RESPONSIVE ENHANCEMENTS (non-destructive, mobile-first)
+   Keep original design; only adjust layout/spacing/typography for small screens.
+   ========================================================= */
+
+/* Typographic scaling */
+.section-title h1 {
+  font-size: clamp(1.4rem, 1.1rem + 2.2vw, 2.2rem);
+  line-height: 1.15;
+}
+
+/* Generic containers */
+.wrap, .container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Navbar tweaks */
+.navbar .navbar-brand img.logo {
+  max-height: 36px;
+}
+
+.navbar .navbar-toggle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* HERO layout */
+.hero-dark .inner {
+  padding: 40px 0;
+}
+
+.hero-dark .hero-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 991px) {
+  .hero-dark .hero-row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-dark .hero-right .actions {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .hero-dark .stat-rail {
+    justify-content: center;
+  }
+}
+
+.hero-dark .hero-right .headline {
+  font-size: clamp(1.6rem, 1.2rem + 2.5vw, 2.8rem);
+}
+
+.hero-dark .hero-right .role,
+.hero-dark .hero-right .tagline,
+.hero-dark .hero-right .subline {
+  font-size: clamp(0.95rem, 0.88rem + .6vw, 1.1rem);
+}
+
+/* HERO portrait */
+.hero-photo {
+  display: grid;
+  place-items: center;
+}
+.hero-photo img {
+  width: clamp(180px, 48vw, 300px);
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Primary actions (hero buttons) */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 575px) {
+  .actions a.btn-hero {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Stat rail in hero */
+.stat-rail {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.stat-rail .stat {
+  min-width: 140px;
+}
+.stat-rail .divider {
+  display: none;
+}
+
+/* ABOUT section: image + columns stack nicely on mobile */
+#about .img-center {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+#about .name-title h2 {
+  font-size: clamp(1.25rem, 1.05rem + 1.2vw, 1.6rem);
+  margin-bottom: 4px;
+}
+#about .name-title h5 {
+  font-size: clamp(0.9rem, 0.85rem + .5vw, 1rem);
+  margin-top: 0;
+}
+
+#about .contact-info .label {
+  min-width: 84px;
+}
+
+/* Achievements + Strengths grid spacing */
+#achievements .achievement-card,
+#strengths .strength-card {
+  min-height: auto;
+}
+
+/* Use CSS grid auto-fit where appropriate without touching existing markup */
+.row.item_bottom,
+.row.text-center {
+  row-gap: 16px;
+}
+
+/* Skills tabs: ensure horizontal scroll if buttons overflow */
+#skills-tabs .tablist {
+  overflow: auto hidden;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+#skills-tabs .tab {
+  flex: 0 0 auto;
+}
+
+/* Skill cards: allow smaller min width on phones */
+#skill .skill-grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+@media (max-width: 400px) {
+  #skill .skill-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Languages & Education (combined) cards spacing */
+#lang-edu-combined .lec-card-head h3,
+#lang-edu-combined .lec-name,
+#lang-edu-combined .edu-title {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Professional Involvements: ensure cards fill small screens */
+#professional-involvements .pi-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Contact chips + socials: tidy wrapping */
+#contact .contact-chips,
+#contact .contact-socials {
+  gap: 8px;
+}
+#contact .chip {
+  padding: 8px 10px;
+}
+
+/* Footer/social icon pulse stays but less aggressive on mobile */
+@media (max-width: 575px) {
+  .social-icon a { transform: none; }
+  .social-icon a:hover { transform: none; }
+}
+
+/* Utility: hide overflow issues on very narrow screens */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Bootstrap grid fallback for legacy rows when inside very narrow viewports */
+@media (max-width: 767px) {
+  .col-sm-6, .col-md-3, .col-md-4, .col-md-6, .col-md-8, .col-md-12 {
+    width: 100% !important;
+    float: none !important;
+  }
+}
+

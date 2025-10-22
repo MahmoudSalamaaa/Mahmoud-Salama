@@ -40,7 +40,7 @@ Assigned to: ThemeForest
 			this.popup_video();			
 			this.responsor_slider();			
 			this.world_map();
-			this.contact_form();
+			//this.contact_form();
 			this.goto_top();
 			this.page_scroll();
 			this.window_scroll();

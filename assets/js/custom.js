@@ -36,11 +36,11 @@ Assigned to: ThemeForest
 			this.isotop_gallery();
 			this.circle_progressbar();
 			this.magnific_popup();
-			//this.testimonial_slider();
+			this.testimonial_slider();
 			this.popup_video();			
-			//this.responsor_slider();			
+			this.responsor_slider();			
 			this.world_map();
-			//this.contact_form();
+			this.contact_form();
 			this.goto_top();
 			this.page_scroll();
 			this.window_scroll();
@@ -206,61 +206,61 @@ Assigned to: ThemeForest
 	},
 	/*------------------------------------------------------------------*/
 	// Start testimonial swipper slider
-	//testimonial_slider: function() {
-	//	if($('.port_testimonial_setions .swiper-container').length > 0){
-	//		var swiper = new Swiper('.port_testimonial_setions .swiper-container', {
-	//		  slidesPerView: 1,
-	//		  spaceBetween: 30,
-	//		  loop: true,
-	//		  speed:1000,
-	//		   navigation: {
-	//			nextEl: '.swiper-button-next',
-	//			prevEl: '.swiper-button-prev',
-	//			},
-	//		  autoplay: {
-	//				delay: 5500,
-	//				disableOnInteraction: false,
-	//			},
-	//		});
-	//	}
-	//},
+	testimonial_slider: function() {
+		if($('.port_testimonial_setions .swiper-container').length > 0){
+			var swiper = new Swiper('.port_testimonial_setions .swiper-container', {
+			  slidesPerView: 1,
+			  spaceBetween: 30,
+			  loop: true,
+			  speed:1000,
+			   navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+				},
+			  autoplay: {
+					delay: 5500,
+					disableOnInteraction: false,
+				},
+			});
+		}
+	},
 	// End testimonial swipper slider
 	/*------------------------------------------------------------------*/ 
 	
 	// Re sponsor swipper slider
-	//responsor_slider: function() {
-	//	if($('.port_responsor_setions .swiper-container').length > 0){
-	//		var swiper = new Swiper('.port_responsor_setions .swiper-container', {
-	//		  slidesPerView: 5,
-	//		  spaceBetween: 30,
-	//		  loop: true,
-	//		  speed:1000,
-	//		  autoplay: {
-	//				delay: 3500,
-	//			},
+	responsor_slider: function() {
+		if($('.port_responsor_setions .swiper-container').length > 0){
+			var swiper = new Swiper('.port_responsor_setions .swiper-container', {
+			  slidesPerView: 5,
+			  spaceBetween: 30,
+			  loop: true,
+			  speed:1000,
+			  autoplay: {
+					delay: 3500,
+				},
 				
-	//		// Responsive breakpoints
-	//		  breakpoints: {
-	//			// when window width is <= 320px
-	//			480: {
-	//			  slidesPerView: 1,
-	//			  spaceBetween: 10
-	//			},
-	//			// when window width is <= 480px
-	//			767: {
-	//			  slidesPerView: 3,
-	//			  spaceBetween: 20
-	//			},
-	//			// when window width is <= 640px
-	//			991: {
-	//			  slidesPerView: 4,
-	//			  spaceBetween: 30
-	//			}
-	//		  }
+			// Responsive breakpoints
+			  breakpoints: {
+				// when window width is <= 320px
+				480: {
+				  slidesPerView: 1,
+				  spaceBetween: 10
+				},
+				// when window width is <= 480px
+				767: {
+				  slidesPerView: 3,
+				  spaceBetween: 20
+				},
+				// when window width is <= 640px
+				991: {
+				  slidesPerView: 4,
+				  spaceBetween: 30
+				}
+			  }
 		 
-	//		});
-	//	}
-	//},
+			});
+		}
+	},
 	
 	// End Re sponsor swipper slider
 	/*------------------------------------------------------------------*/ 
@@ -464,78 +464,78 @@ Assigned to: ThemeForest
 	/*------------------------------------------------------------------*/
 	
 	// Contact Form Submission
-	//contact_form: function() {
-	//	if($('.submitForm').length > 0){
-	//		function checkRequire(formId , targetResp){
-	//			targetResp.html('');
-	//			var email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
-	//			var url = /(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/;
-	//			var image = /\.(jpe?g|gif|png|PNG|JPE?G)$/;
-	//			var mobile = /^[\s()+-]*([0-9][\s()+-]*){6,20}$/;
-	//			var facebook = /^(https?:\/\/)?(www\.)?facebook.com\/[a-zA-Z0-9(\.\?)?]/;
-	//			var twitter = /^(https?:\/\/)?(www\.)?twitter.com\/[a-zA-Z0-9(\.\?)?]/;
-	//			var google_plus = /^(https?:\/\/)?(www\.)?plus.google.com\/[a-zA-Z0-9(\.\?)?]/;
-	//			var check = 0;
-	//			$('#er_msg').remove();
-	//			var target = (typeof formId == 'object')? $(formId):$('#'+formId);
-	//			target.find('input , textarea , select').each(function(){
-	//				if($(this).hasClass('require')){
-	//					if($(this).val().trim() == ''){
-	//						check = 1;
-	//						$(this).focus();
-	//						targetResp.html('You missed out some fields.');
-	//						$(this).addClass('error');
-	//						return false;
-	//					}else{
-	//						$(this).removeClass('error');
-	//					}
-	//				}
-	//				if($(this).val().trim() != ''){
-	//					var valid = $(this).attr('data-valid');
-	//					if(typeof valid != 'undefined'){
-	//						if(!eval(valid).test($(this).val().trim())){
-	//							$(this).addClass('error');
-	//							$(this).focus();
-	//							check = 1;
-	//							targetResp.html($(this).attr('data-error'));
-	//							return false;
-	//						}else{
-	//							$(this).removeClass('error');
-	//						}
-	//					}
-	//				}
-	//			});
-	//			return check;
-	//		}
-	//		$('.submitForm').on('click', function() {
-	//			var _this = $(this);
-	//			console.log(_this.attr('data-type'));
-	//			var targetForm = _this.closest('form');
-	//			var errroTarget = targetForm.find('.response');
-	//			var check = checkRequire(targetForm , errroTarget);
-	//			if(check == 0){
-	//				var formDetail = new FormData(targetForm[0]);
- //   					formDetail.append('form_type' , _this.attr('data-type'));
-	//				$.ajax({
-	//					method : 'post',
-	//					url : 'ajax.php',
-	//					data:formDetail,
-	//					cache:false,
-	//					contentType: false,
-	//					processData: false
-	//				}).done(function(resp){
-	//					if(resp == 1){
-	//						targetForm.find('input').val('');
-	//						targetForm.find('textarea').val('');
-	//						errroTarget.html('<p style="color:green;">Mail has been sent successfully.</p>');
-	//					}else{
-	//						errroTarget.html('<p style="color:red;">Something went wrong please try again latter.</p>');
-	//					}
-	//				});
-	//			}
-	//		});
-	//	}
-	//},		
+	contact_form: function() {
+		if($('.submitForm').length > 0){
+			function checkRequire(formId , targetResp){
+				targetResp.html('');
+				var email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
+				var url = /(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/;
+				var image = /\.(jpe?g|gif|png|PNG|JPE?G)$/;
+				var mobile = /^[\s()+-]*([0-9][\s()+-]*){6,20}$/;
+				var facebook = /^(https?:\/\/)?(www\.)?facebook.com\/[a-zA-Z0-9(\.\?)?]/;
+				var twitter = /^(https?:\/\/)?(www\.)?twitter.com\/[a-zA-Z0-9(\.\?)?]/;
+				var google_plus = /^(https?:\/\/)?(www\.)?plus.google.com\/[a-zA-Z0-9(\.\?)?]/;
+				var check = 0;
+				$('#er_msg').remove();
+				var target = (typeof formId == 'object')? $(formId):$('#'+formId);
+				target.find('input , textarea , select').each(function(){
+					if($(this).hasClass('require')){
+						if($(this).val().trim() == ''){
+							check = 1;
+							$(this).focus();
+							targetResp.html('You missed out some fields.');
+							$(this).addClass('error');
+							return false;
+						}else{
+							$(this).removeClass('error');
+						}
+					}
+					if($(this).val().trim() != ''){
+						var valid = $(this).attr('data-valid');
+						if(typeof valid != 'undefined'){
+							if(!eval(valid).test($(this).val().trim())){
+								$(this).addClass('error');
+								$(this).focus();
+								check = 1;
+								targetResp.html($(this).attr('data-error'));
+								return false;
+							}else{
+								$(this).removeClass('error');
+							}
+						}
+					}
+				});
+				return check;
+			}
+			$('.submitForm').on('click', function() {
+				var _this = $(this);
+				console.log(_this.attr('data-type'));
+				var targetForm = _this.closest('form');
+				var errroTarget = targetForm.find('.response');
+				var check = checkRequire(targetForm , errroTarget);
+				if(check == 0){
+					var formDetail = new FormData(targetForm[0]);
+    					formDetail.append('form_type' , _this.attr('data-type'));
+					$.ajax({
+						method : 'post',
+						url : 'ajax.php',
+						data:formDetail,
+						cache:false,
+						contentType: false,
+						processData: false
+					}).done(function(resp){
+						if(resp == 1){
+							targetForm.find('input').val('');
+							targetForm.find('textarea').val('');
+							errroTarget.html('<p style="color:green;">Mail has been sent successfully.</p>');
+						}else{
+							errroTarget.html('<p style="color:red;">Something went wrong please try again latter.</p>');
+						}
+					});
+				}
+			});
+		}
+	},		
 	
 	
 	/*------------------------------------------------------------------*/

@@ -36,7 +36,7 @@ Assigned to: ThemeForest
 			this.isotop_gallery();
 			this.circle_progressbar();
 			this.magnific_popup();
-			this.testimonial_slider();
+			//this.testimonial_slider();
 			this.popup_video();			
 			this.responsor_slider();			
 			this.world_map();

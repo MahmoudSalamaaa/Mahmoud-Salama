@@ -228,39 +228,39 @@ Assigned to: ThemeForest
 	/*------------------------------------------------------------------*/ 
 	
 	// Re sponsor swipper slider
-	responsor_slider: function() {
-		if($('.port_responsor_setions .swiper-container').length > 0){
-			var swiper = new Swiper('.port_responsor_setions .swiper-container', {
-			  slidesPerView: 5,
-			  spaceBetween: 30,
-			  loop: true,
-			  speed:1000,
-			  autoplay: {
-					delay: 3500,
-				},
+	//responsor_slider: function() {
+	//	if($('.port_responsor_setions .swiper-container').length > 0){
+	//		var swiper = new Swiper('.port_responsor_setions .swiper-container', {
+	//		  slidesPerView: 5,
+	//		  spaceBetween: 30,
+	//		  loop: true,
+	//		  speed:1000,
+	//		  autoplay: {
+	//				delay: 3500,
+	//			},
 				
-			// Responsive breakpoints
-			  breakpoints: {
-				// when window width is <= 320px
-				480: {
-				  slidesPerView: 1,
-				  spaceBetween: 10
-				},
-				// when window width is <= 480px
-				767: {
-				  slidesPerView: 3,
-				  spaceBetween: 20
-				},
-				// when window width is <= 640px
-				991: {
-				  slidesPerView: 4,
-				  spaceBetween: 30
-				}
-			  }
+	//		// Responsive breakpoints
+	//		  breakpoints: {
+	//			// when window width is <= 320px
+	//			480: {
+	//			  slidesPerView: 1,
+	//			  spaceBetween: 10
+	//			},
+	//			// when window width is <= 480px
+	//			767: {
+	//			  slidesPerView: 3,
+	//			  spaceBetween: 20
+	//			},
+	//			// when window width is <= 640px
+	//			991: {
+	//			  slidesPerView: 4,
+	//			  spaceBetween: 30
+	//			}
+	//		  }
 		 
-			});
-		}
-	},
+	//		});
+	//	}
+	//},
 	
 	// End Re sponsor swipper slider
 	/*------------------------------------------------------------------*/ 

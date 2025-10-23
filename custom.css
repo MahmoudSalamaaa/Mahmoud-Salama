@@ -1122,3 +1122,238 @@
         height: 36px;
     width: 36px;
 }
+/* ========= Section shell ========= */
+.port_education_setions .education_section {
+    background: var(--surface);
+    padding: clamp(32px, 4vw, 72px) 0;
+}
+
+.port_education_setions .port_heading_wrapper .port_heading {
+    color: var(--ink-900);
+    margin-bottom: 10px;
+}
+
+.port_education_setions .port_heading_wrapper .port_sub_heading {
+    color: var(--brand-500);
+    opacity: .95;
+}
+
+/* ========= Grid / cards ========= */
+.education_main_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(14px,1.8vw,22px);
+}
+
+.education_box {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: clamp(16px,2vw,24px);
+    position: relative;
+    overflow: hidden;
+}
+
+/* soft alternating accent on desktop */
+@media (min-width: 992px) {
+    .education_box.firstbox,
+    .education_box.thirdbox {
+        border-left: 4px solid var(--brand-500);
+    }
+
+    .education_box.secondbox,
+    .education_box.fourthbox {
+        border-right: 4px solid var(--brand-500);
+    }
+}
+
+/* Year badge (left column) */
+.edu_mainyear h1 {
+    font-size: clamp(28px,4.2vw,44px);
+    line-height: 1;
+    margin: 0;
+    color: var(--ink-500);
+    letter-spacing: .5px;
+}
+
+/* Right/Left content area */
+.education_minfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.education_place {
+    margin: 6px 0 0 0;
+    font-size: clamp(18px,2.4vw,22px);
+    color: var(--ink-900);
+    font-weight: 700;
+}
+
+.education_minfo p {
+    color: var(--ink-700);
+    margin: 4px 0 0 0;
+}
+
+/* Title cluster (number & location chip) */
+.prt_rightside_title .left_title_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.left_title h4 {
+    margin: 0;
+    font-weight: 800;
+    color: var(--ink-500);
+}
+
+/* Location chip */
+.right_title {
+    display: inline-flex;
+    padding: 6px 12px;
+    border-radius: 999px;
+    line-height: 1;
+    align-items: center;
+    gap: 8px;
+    color: #003244;
+    background: var(--brand-400);
+}
+
+    .right_title h4 {
+        margin: 0;
+        font-size: 13.5px;
+        letter-spacing: .2px;
+        color: #003244;
+        font-weight: 700;
+    }
+
+/* Color helpers */
+.bg-cyan {
+    background: var(--brand-400) !important;
+    color: #003244;
+}
+
+.bg-pink {
+    background: var(--pink-500) !important;
+    color: #fff;
+}
+
+.bg-yellow {
+    background: var(--yellow-500) !important;
+    color: #3a2a00;
+}
+
+.bg-orange {
+    background: var(--orange-500) !important;
+    color: #fff;
+}
+
+/* Read more link/button */
+.blog_readmore {
+    margin-top: 6px;
+}
+
+.readmore_btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid var(--brand-500);
+    color: var(--brand-500);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform .18s ease, background .18s ease, color .18s ease;
+    word-break: break-word;
+}
+
+    .readmore_btn i {
+        transform: translateX(0);
+        transition: transform .18s ease;
+    }
+
+    .readmore_btn:hover {
+        background: var(--brand-500);
+        color: #00202a;
+        transform: translateY(-1px);
+    }
+
+        .readmore_btn:hover i {
+            transform: translateX(3px);
+        }
+
+/* ========== Responsive rules ========== */
+/* Hide the duplicated year blocks properly */
+.DesktopNone {
+    display: none !important;
+}
+/* hidden on >= md */
+.resNone {
+    display: block !important;
+}
+/* visible on >= md */
+
+@media (max-width: 991.98px) {
+    .DesktopNone {
+        display: block !important;
+    }
+    /* show on mobile */
+    .resNone {
+        display: none !important;
+    }
+    /* hide on mobile */
+
+    .education_box {
+        padding: 16px;
+    }
+
+    .prt_rightside_title .left_title_box {
+        gap: 8px;
+    }
+
+    .right_title {
+        padding: 6px 10px;
+    }
+
+    .left_title h4 {
+        font-size: 14px;
+    }
+}
+
+/* Stack columns nicely & fix col spacing on tablets/phones */
+@media (max-width: 767.98px) {
+    .education_box .row > [class*="col-"] {
+        margin-bottom: 12px;
+    }
+
+    .blog_readmore {
+        margin-top: 2px;
+    }
+}
+
+/* Micro-typography on very small phones */
+@media (max-width: 420px) {
+    .edu_mainyear h1 {
+        font-size: 26px;
+    }
+
+    .education_place {
+        font-size: 18px;
+    }
+
+    .right_title h4 {
+        font-size: 12.5px;
+    }
+}
+
+/* Hover for cards (desktop only) */
+@media (hover:hover) {
+    .education_box:hover {
+        box-shadow: 0 10px 28px rgba(13,202,240,.12);
+        border-color: rgba(13,202,240,.35);
+    }
+}

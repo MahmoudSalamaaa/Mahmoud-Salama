@@ -1126,9 +1126,9 @@
 
 .education_box.fourthbox .edu_mainyear h1:after
 {
-Specificity: (0,3,2) {
+
     border-right-color: transparent;
-    border-top-color: rgb(0, 200, 218);
+    border-top-color: rgb(0, 200, 218) !important;
 }
 
 
@@ -1146,6 +1146,6 @@ Specificity: (0,3,2) {
         border-left: 15px solid transparent;
         position: absolute;
         left: 48px;
-        top: 113px;
+        top: 113px !important;
     }
 }

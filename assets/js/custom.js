@@ -35,12 +35,12 @@ Assigned to: ThemeForest
 			this.about_opendetails();
 			this.isotop_gallery();
 			this.circle_progressbar();
-			this.magnific_popup();
+			/*this.magnific_popup();*/
 			this.testimonial_slider();
 			this.popup_video();			
 			this.responsor_slider();			
 			this.world_map();
-			this.contact_form();
+			//this.contact_form();
 			this.goto_top();
 			this.page_scroll();
 			this.window_scroll();
@@ -354,81 +354,81 @@ Assigned to: ThemeForest
 					backgroundColor: '#fff',
 					markers: [
 						{
-							latLng: [31.230391, 121.473701],
-							name: 'Shanghai',
+							latLng: [30.06263 , 31.24967],
+							name: 'Cairo',
 						},
 						{
-							latLng: [39.904202, 116.407394],
-							name: 'Beijing',
+							latLng: [23.31667 , 58.66667],
+							name: 'Muscat',
 						},
 						{
-							latLng: [28.70406, 77.102493],
-							name: 'Delhi',
+							latLng: [25.0 , 55.3333],
+							name: 'Dubai',
 						},
 						{
-							latLng: [6.524379, 3.379206],
-							name: 'Lagos',
+							latLng: [26.2167 , 50.5833],
+							name: 'Manama',
 						},
-						{
-							latLng: [39.343357, 117.361649],
-							name: 'Tianjin',
-						},
-						{
-							latLng: [24.860735, 67.001137],
-							name: 'Karachi',
-						},
-						{
-							latLng: [41.00824, 28.978359],
-							name: 'Istanbul',
-						},
-						{
-							latLng: [35.689487, 139.691711],
-							name: 'Tokyo',
-						},
-						{
-							latLng: [23.12911, 113.264381],
-							name: 'Guangzhou',
-						},
-						{
-							latLng: [19.075983, 72.877655],
-							name: 'Mumbai',
-						},
-						{
-							latLng: [40.7127837, -74.0059413],
-							name: 'New York',
-						},
-						{
-							latLng: [34.052235, -118.243683],
-							name: 'Los Angeles',
-						},
-						{
-							latLng: [41.878113, -87.629799],
-							name: 'Chicago',
-						},
-						{
-							latLng: [29.760427, -95.369804],
-							name: 'Houston',
-						},
-						{
-							latLng: [33.448376, -112.074036],
-							name: 'Phoenix',
-						},
-						{
-							latLng: [51.507351, -0.127758],
-							name: 'London',
-						},
-						{
-							latLng: [48.856613, 2.352222],
-							name: 'Paris',
-						},
-						{
-							latLng: [55.755825, 37.617298],
-							name: 'Moscow',
-						},
-						{
-							latLng: [40.416775, -3.70379],
-							name: 'Madrid',
-						},
+						//{
+						//	latLng: [39.343357, 117.361649],
+						//	name: 'Tianjin',
+						//},
+						//{
+						//	latLng: [24.860735, 67.001137],
+						//	name: 'Karachi',
+						//},
+						//{
+						//	latLng: [41.00824, 28.978359],
+						//	name: 'Istanbul',
+						//},
+						//{
+						//	latLng: [35.689487, 139.691711],
+						//	name: 'Tokyo',
+						//},
+						//{
+						//	latLng: [23.12911, 113.264381],
+						//	name: 'Guangzhou',
+						//},
+						//{
+						//	latLng: [19.075983, 72.877655],
+						//	name: 'Mumbai',
+						//},
+						//{
+						//	latLng: [40.7127837, -74.0059413],
+						//	name: 'New York',
+						//},
+						//{
+						//	latLng: [34.052235, -118.243683],
+						//	name: 'Los Angeles',
+						//},
+						//{
+						//	latLng: [41.878113, -87.629799],
+						//	name: 'Chicago',
+						//},
+						//{
+						//	latLng: [29.760427, -95.369804],
+						//	name: 'Houston',
+						//},
+						//{
+						//	latLng: [33.448376, -112.074036],
+						//	name: 'Phoenix',
+						//},
+						//{
+						//	latLng: [51.507351, -0.127758],
+						//	name: 'London',
+						//},
+						//{
+						//	latLng: [48.856613, 2.352222],
+						//	name: 'Paris',
+						//},
+						//{
+						//	latLng: [55.755825, 37.617298],
+						//	name: 'Moscow',
+						//},
+						//{
+						//	latLng: [40.416775, -3.70379],
+						//	name: 'Madrid',
+						//},
 					]
 				  });
 				});
@@ -464,78 +464,78 @@ Assigned to: ThemeForest
 	/*------------------------------------------------------------------*/
 	
 	// Contact Form Submission
-	contact_form: function() {
-		if($('.submitForm').length > 0){
-			function checkRequire(formId , targetResp){
-				targetResp.html('');
-				var email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
-				var url = /(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/;
-				var image = /\.(jpe?g|gif|png|PNG|JPE?G)$/;
-				var mobile = /^[\s()+-]*([0-9][\s()+-]*){6,20}$/;
-				var facebook = /^(https?:\/\/)?(www\.)?facebook.com\/[a-zA-Z0-9(\.\?)?]/;
-				var twitter = /^(https?:\/\/)?(www\.)?twitter.com\/[a-zA-Z0-9(\.\?)?]/;
-				var google_plus = /^(https?:\/\/)?(www\.)?plus.google.com\/[a-zA-Z0-9(\.\?)?]/;
-				var check = 0;
-				$('#er_msg').remove();
-				var target = (typeof formId == 'object')? $(formId):$('#'+formId);
-				target.find('input , textarea , select').each(function(){
-					if($(this).hasClass('require')){
-						if($(this).val().trim() == ''){
-							check = 1;
-							$(this).focus();
-							targetResp.html('You missed out some fields.');
-							$(this).addClass('error');
-							return false;
-						}else{
-							$(this).removeClass('error');
-						}
-					}
-					if($(this).val().trim() != ''){
-						var valid = $(this).attr('data-valid');
-						if(typeof valid != 'undefined'){
-							if(!eval(valid).test($(this).val().trim())){
-								$(this).addClass('error');
-								$(this).focus();
-								check = 1;
-								targetResp.html($(this).attr('data-error'));
-								return false;
-							}else{
-								$(this).removeClass('error');
-							}
-						}
-					}
-				});
-				return check;
-			}
-			$('.submitForm').on('click', function() {
-				var _this = $(this);
-				console.log(_this.attr('data-type'));
-				var targetForm = _this.closest('form');
-				var errroTarget = targetForm.find('.response');
-				var check = checkRequire(targetForm , errroTarget);
-				if(check == 0){
-					var formDetail = new FormData(targetForm[0]);
-    					formDetail.append('form_type' , _this.attr('data-type'));
-					$.ajax({
-						method : 'post',
-						url : 'ajax.php',
-						data:formDetail,
-						cache:false,
-						contentType: false,
-						processData: false
-					}).done(function(resp){
-						if(resp == 1){
-							targetForm.find('input').val('');
-							targetForm.find('textarea').val('');
-							errroTarget.html('<p style="color:green;">Mail has been sent successfully.</p>');
-						}else{
-							errroTarget.html('<p style="color:red;">Something went wrong please try again latter.</p>');
-						}
-					});
-				}
-			});
-		}
-	},		
+	//contact_form: function() {
+	//	if($('.submitForm').length > 0){
+	//		function checkRequire(formId , targetResp){
+	//			targetResp.html('');
+	//			var email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
+	//			var url = /(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/;
+	//			var image = /\.(jpe?g|gif|png|PNG|JPE?G)$/;
+	//			var mobile = /^[\s()+-]*([0-9][\s()+-]*){6,20}$/;
+	//			var facebook = /^(https?:\/\/)?(www\.)?facebook.com\/[a-zA-Z0-9(\.\?)?]/;
+	//			var twitter = /^(https?:\/\/)?(www\.)?twitter.com\/[a-zA-Z0-9(\.\?)?]/;
+	//			var google_plus = /^(https?:\/\/)?(www\.)?plus.google.com\/[a-zA-Z0-9(\.\?)?]/;
+	//			var check = 0;
+	//			$('#er_msg').remove();
+	//			var target = (typeof formId == 'object')? $(formId):$('#'+formId);
+	//			target.find('input , textarea , select').each(function(){
+	//				if($(this).hasClass('require')){
+	//					if($(this).val().trim() == ''){
+	//						check = 1;
+	//						$(this).focus();
+	//						targetResp.html('You missed out some fields.');
+	//						$(this).addClass('error');
+	//						return false;
+	//					}else{
+	//						$(this).removeClass('error');
+	//					}
+	//				}
+	//				if($(this).val().trim() != ''){
+	//					var valid = $(this).attr('data-valid');
+	//					if(typeof valid != 'undefined'){
+	//						if(!eval(valid).test($(this).val().trim())){
+	//							$(this).addClass('error');
+	//							$(this).focus();
+	//							check = 1;
+	//							targetResp.html($(this).attr('data-error'));
+	//							return false;
+	//						}else{
+	//							$(this).removeClass('error');
+	//						}
+	//					}
+	//				}
+	//			});
+	//			return check;
+	//		}
+	//		$('.submitForm').on('click', function() {
+	//			var _this = $(this);
+	//			console.log(_this.attr('data-type'));
+	//			var targetForm = _this.closest('form');
+	//			var errroTarget = targetForm.find('.response');
+	//			var check = checkRequire(targetForm , errroTarget);
+	//			if(check == 0){
+	//				var formDetail = new FormData(targetForm[0]);
+ //   					formDetail.append('form_type' , _this.attr('data-type'));
+	//				$.ajax({
+	//					method : 'post',
+	//					url : 'ajax.php',
+	//					data:formDetail,
+	//					cache:false,
+	//					contentType: false,
+	//					processData: false
+	//				}).done(function(resp){
+	//					if(resp == 1){
+	//						targetForm.find('input').val('');
+	//						targetForm.find('textarea').val('');
+	//						errroTarget.html('<p style="color:green;">Mail has been sent successfully.</p>');
+	//					}else{
+	//						errroTarget.html('<p style="color:red;">Something went wrong please try again latter.</p>');
+	//					}
+	//				});
+	//			}
+	//		});
+	//	}
+	//},		
 	
 	
 	/*------------------------------------------------------------------*/

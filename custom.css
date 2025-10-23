@@ -1122,3 +1122,7 @@
         height: 36px;
     width: 36px;
 }
+.jvmap-smart svg {
+    margin-top: -100px !important;
+}
+

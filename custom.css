@@ -1122,3 +1122,30 @@
         height: 36px;
     width: 36px;
 }
+
+
+.education_box.fourthbox .edu_mainyear h1:after
+{
+Specificity: (0,3,2) {
+    border-right-color: transparent;
+    border-top-color: rgb(0, 200, 218);
+}
+
+
+
+.education_box.fourthbox .edu_mainyear h1:after {
+    border-right-color: rgb(0, 200, 218);
+}
+
+@media (max-width: 767px) {
+    .education_secondbox .edu_mainyear h1:after {
+        content: '';
+        border-right: 15px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-top: 12px solid transparent;
+        border-left: 15px solid transparent;
+        position: absolute;
+        left: 48px;
+        top: 113px;
+    }
+}

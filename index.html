@@ -18,7 +18,7 @@ Purchase:
     <meta name="description" content="Mahmoud Salama, Chief Technology & Digital Transformation Officer, leading large-scale digital transformation across healthcare, supply chain, ERP/CRM, and analytics.">
     <meta name="keywords"
           content="Creative, minimal, Portfolio, cv, business, Resume, Information, personal portfolio, Professional">
-    <meta name="author" content="kamleshyadav">
+    <meta name="author" content="">
     <meta name="MobileOptimized" content="320">
     <!--Start Style -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -1546,139 +1546,143 @@ Purchase:
                 </div>
             </div>
         </div><!-- End Experience section  -->
+        <!-- Add these in your <head> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
         <section class="port_projects_setions port_projects_setions01 page_scroll" id="works" data-scroll="5">
             <style>
-                /* ========= TOKENS ========= */
+                /* ========= LIGHT THEME TOKENS + TYPOGRAPHY ========= */
                 :root {
-                    --design: #0fb9c9; /* cyan */
-                    --dev: #ea4a78; /* rose */
-                    --all: #f1713b; /* orange */
-
-                    --ink: #111827;
-                    --muted: #6b7280;
-                    --bg: #f7f7fb;
+                    --web: #fb923c; /* Websites & Portals (was #06b6d4) */
+                    --app: #06b6d4; /* Applications (was #ec4899)       */
+                    --all: #ec4899;
+                    --ink: #0f172a;
+                    --muted: #475569;
+                    --bg: #f8fafc;
                     --card: #ffffff;
-                    --line: #e6e9f0;
-                    --radius: 12px;
-                    --shadow: 0 6px 16px rgba(16,24,40,.06);
+                    --line: #e5e7eb;
+                    --radius: 14px;
+                    --shadow: 0 8px 18px rgba(15,23,42,.06);
                     --gap: 16px;
                     --pad: 16px;
-                    --tab-h: 38px;
+                    --tab-h: 40px;
                     --speed: .18s;
+                    --font: "Josefin Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
                 }
 
-                /* ========= SECTION ========= */
-                #works .pcs-wrap {
-                    background: var(--bg);
-                    padding: 56px 0 64px
+                #works, #works * {
+                    font-family: var(--font);
                 }
 
-                #works .pcs-header {
-                    max-width: 1000px;
-                    margin: 0 auto;
-                    text-align: center;
-                    padding: 0 var(--pad)
-                }
+                    /* ========= SECTION ========= */
+                    #works .pcs-wrap {
+                        background: var(--bg);
+                        padding: 56px 0 64px
+                    }
 
-                    #works .pcs-header .port_sub_heading {
-                        color: var(--all);
+                    #works .pcs-header {
+                        max-width: 1000px;
+                        margin: 0 auto;
+                        text-align: center;
+                        padding: 0 var(--pad)
+                    }
+
+                        #works .pcs-header .port_sub_heading {
+                            color: var(--all);
+                            font-weight: 800;
+                            letter-spacing: .12em;
+                            text-transform: uppercase;
+                            margin: 0
+                        }
+
+                        #works .pcs-header .port_heading {
+                            color: var(--ink);
+                            margin: 8px 0 10px;
+                            font-size: clamp(28px,3.6vw,44px);
+                            font-weight: 800;
+                            line-height: 1.1;
+                            text-wrap: balance
+                        }
+
+                    /* ========= TABS ========= */
+                    #works .pcs-tabs {
+                        max-width: 1000px;
+                        margin: 18px auto 22px;
+                        padding: 0 var(--pad);
+                        display: flex;
+                        gap: 10px;
+                        justify-content: center;
+                        flex-wrap: wrap
+                    }
+
+                        #works .pcs-tabs a {
+                            --chip: var(--all);
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 10px;
+                            height: var(--tab-h);
+                            padding: 0 16px;
+                            border-radius: 999px;
+                            font-weight: 700;
+                            color: var(--ink);
+                            text-decoration: none;
+                            background: #fff;
+                            border: 1px solid var(--line);
+                            transition: transform var(--speed), box-shadow var(--speed), background var(--speed);
+                            box-shadow: 0 2px 5px rgba(2,6,23,.05)
+                        }
+
+                            #works .pcs-tabs a:hover {
+                                transform: translateY(-1px)
+                            }
+
+                            #works .pcs-tabs a[aria-current="true"] {
+                                background: color-mix(in srgb, var(--chip) 14%, #fff);
+                                border-color: color-mix(in srgb, var(--chip) 40%, var(--line));
+                                box-shadow: 0 6px 16px color-mix(in srgb, var(--chip) 25%, transparent);
+                                color: #0b1220
+                            }
+
+                            #works .pcs-tabs a[data-filter="*"] {
+                                --chip: var(--all)
+                            }
+
+                            #works .pcs-tabs a[data-filter=".design"] {
+                                --chip: var(--web)
+                            }
+
+                            #works .pcs-tabs a[data-filter=".development"] {
+                                --chip: var(--app)
+                            }
+
+                    #works .pcs-count {
+                        min-width: 18px;
+                        height: 18px;
+                        padding: 0 6px;
+                        border-radius: 999px;
+                        background: rgba(15,23,42,.15);
+                        color: #0b1220;
+                        font-size: 11px;
                         font-weight: 800;
-                        letter-spacing: .12em;
-                        text-transform: uppercase;
-                        margin: 0
-                    }
-
-                    #works .pcs-header .port_heading {
-                        color: var(--ink);
-                        margin: 8px 0 10px;
-                        font-size: clamp(28px,3.6vw,44px);
-                        font-weight: 900;
-                        line-height: 1.15
-                    }
-
-                #works .pcs-lead {
-                    max-width: 760px;
-                    margin: 0 auto;
-                    color: var(--muted)
-                }
-
-                /* ========= TABS ========= */
-                #works .pcs-tabs {
-                    max-width: 1000px;
-                    margin: 18px auto 22px;
-                    padding: 0 var(--pad);
-                    display: flex;
-                    gap: 8px;
-                    justify-content: center;
-                    flex-wrap: wrap
-                }
-
-                    #works .pcs-tabs a {
-                        --chip: var(--all);
                         display: inline-flex;
                         align-items: center;
-                        gap: 8px;
-                        height: var(--tab-h);
-                        padding: 0 14px;
-                        border-radius: 999px;
-                        font-weight: 800;
-                        color: var(--ink);
-                        text-decoration: none;
-                        background: #fff;
-                        border: 1px solid var(--line);
-                        transition: background var(--speed), transform var(--speed)
+                        justify-content: center
                     }
 
-                        #works .pcs-tabs a:hover {
-                            transform: translateY(-1px)
-                        }
+                    #works .pcs-tabs a[aria-current="true"] .pcs-count {
+                        background: color-mix(in srgb, var(--chip) 25%, #0000)
+                    }
 
-                        #works .pcs-tabs a[aria-current="true"] {
-                            background: var(--chip);
-                            color: #fff;
-                            border-color: transparent
-                        }
-
-                        #works .pcs-tabs a[data-filter="*"] {
-                            --chip: var(--all)
-                        }
-
-                        #works .pcs-tabs a[data-filter=".design"] {
-                            --chip: var(--design)
-                        }
-
-                        #works .pcs-tabs a[data-filter=".development"] {
-                            --chip: var(--dev)
-                        }
-
-                #works .pcs-count {
-                    min-width: 18px;
-                    height: 18px;
-                    padding: 0 6px;
-                    border-radius: 999px;
-                    background: rgba(0,0,0,.18);
-                    color: #fff;
-                    font-size: 11px;
-                    font-weight: 900;
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center
-                }
-
-                #works .pcs-tabs a[aria-current="true"] .pcs-count {
-                    background: rgba(255,255,255,.22)
-                }
-
-                /* ========= GRID ========= */
-                #works .pcs-grid {
-                    max-width: 1100px;
-                    margin: 0 auto;
-                    padding: 0 var(--pad);
-                    display: grid;
-                    gap: var(--gap);
-                    grid-template-columns: repeat(12,1fr)
-                }
+                    /* ========= GRID ========= */
+                    #works .pcs-grid {
+                        max-width: 1100px;
+                        margin: 0 auto;
+                        padding: 0 var(--pad);
+                        display: grid;
+                        gap: var(--gap);
+                        grid-template-columns: repeat(12,1fr)
+                    }
 
                 @media (max-width:1199px) {
                     #works .pcs-grid {
@@ -1696,7 +1700,7 @@ Purchase:
                     grid-column: span 4
                 }
 
-                /* ========= POSTCARD ========= */
+                /* ========= CARD ========= */
                 #works .pc {
                     display: flex;
                     flex-direction: column;
@@ -1708,21 +1712,23 @@ Purchase:
                     overflow: hidden;
                     text-decoration: none;
                     color: inherit;
-                    transition: transform var(--speed), box-shadow var(--speed)
+                    transition: transform var(--speed), box-shadow var(--speed), border-color var(--speed);
+                    position: relative
                 }
 
                     #works .pc:hover {
-                        transform: translateY(-3px);
-                        box-shadow: 0 10px 26px rgba(16,24,40,.10)
+                        transform: translateY(-4px);
+                        box-shadow: 0 14px 30px rgba(15,23,42,.1);
+                        border-color: color-mix(in srgb, var(--all) 25%, var(--line))
                     }
 
-                /* photo */
+                /* image */
                 #works .pc-photo {
                     position: relative;
                     width: 100%;
                     aspect-ratio: 4/3;
                     overflow: hidden;
-                    /*background: #0b1220*/
+                    background: #eef2ff
                 }
 
                     #works .pc-photo img {
@@ -1730,40 +1736,40 @@ Purchase:
                         height: 100%;
                         object-fit: cover;
                         display: block;
-                        filter: saturate(.85) contrast(1.02) brightness(.98);
+                        filter: saturate(.96) contrast(1.02) brightness(.995);
                         transition: transform .35s ease
                     }
 
                 #works .pc:hover .pc-photo img {
                     transform: scale(1.03)
                 }
-                /* small corner stamp (category) */
+
+                /* corner stamp */
                 #works .pc-stamp {
                     position: absolute;
                     top: 10px;
                     right: 10px;
-                    padding: 6px 8px;
-                    border-radius: 10px;
-                    font-size: 11px;
-                    font-weight: 900;
-                    color: #fff;
-                    background: var(--all);
-                    box-shadow: 0 2px 10px rgba(0,0,0,.18)
+                    padding: 5px 8px;
+                    border-radius: 9px;
+                    font-size: 10.5px;
+                    font-weight: 800;
+                    color: color-mix(in srgb, #000 10%, #fff);
+                    background: color-mix(in srgb, var(--all) 92%, #fff 8%);
+                    box-shadow: 0 2px 10px rgba(15,23,42,.12)
                 }
 
                 #works .pcs-item.design .pc-stamp {
-                    background: var(--design)
+                    background: color-mix(in srgb, var(--web) 92%, #fff 8%)
                 }
 
                 #works .pcs-item.development .pc-stamp {
-                    background: var(--dev)
+                    background: color-mix(in srgb, var(--app) 92%, #fff 8%)
                 }
 
-                /* title strip */
+                /* title strip — removed <p class="pc-sub">, so title centers its space */
                 #works .pc-title {
                     display: flex;
-                    justify-content: space-between;
-                    align-items: baseline;
+                    align-items: center;
                     gap: 10px;
                     padding: 12px 14px;
                     border-top: 1px solid var(--line);
@@ -1772,20 +1778,18 @@ Purchase:
 
                 #works .pc-ttl {
                     margin: 0;
-                    font-weight: 900;
-                    font-size: 17px;
-                    color: var(--ink)
+                    color: var(--ink);
+                    font-weight: 800;
+                    font-size: clamp(16px,1.8vw,18px);
+                    line-height: 1.2;
+                    text-wrap: balance;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden
                 }
 
-                #works .pc-sub {
-                    margin: 0;
-                    font-size: 12px;
-                    letter-spacing: .06em;
-                    text-transform: uppercase;
-                    color: var(--muted)
-                }
-
-                /* notes/footer row */
+                /* footer (kept small descriptor spans) */
                 #works .pc-foot {
                     display: flex;
                     justify-content: space-between;
@@ -1798,19 +1802,29 @@ Purchase:
 
                 #works .pc-tag {
                     font-size: 11px;
-                    font-weight: 900;
+                    font-weight: 800;
                     padding: 6px 10px;
                     border-radius: 999px;
-                    color: #fff;
-                    background: var(--all)
+                    color: var(--ink);
+                    background: color-mix(in srgb, var(--all) 18%, #fff);
+                    border: 1px solid color-mix(in srgb, var(--all) 35%, var(--line))
                 }
 
                 #works .pcs-item.design .pc-tag {
-                    background: var(--design)
+                    background: color-mix(in srgb, var(--web) 16%, #fff);
+                    border-color: color-mix(in srgb, var(--web) 35%, var(--line))
                 }
 
                 #works .pcs-item.development .pc-tag {
-                    background: var(--dev)
+                    background: color-mix(in srgb, var(--app) 16%, #fff);
+                    border-color: color-mix(in srgb, var(--app) 35%, var(--line))
+                }
+
+                #works .pc-foot .pc-sub {
+                    margin: 0;
+                    font-size: 12px;
+                    letter-spacing: .02em;
+                    color: var(--muted)
                 }
 
                 /* filter hide */
@@ -1825,7 +1839,7 @@ Purchase:
                     display: none;
                     align-items: center;
                     justify-content: center;
-                    background: rgba(7,14,24,.65);
+                    background: rgba(15,23,42,.45);
                     backdrop-filter: blur(2px);
                     z-index: 9999
                 }
@@ -1842,9 +1856,10 @@ Purchase:
                     border-radius: 16px;
                     overflow: hidden;
                     border: 2px solid var(--accent);
-                    box-shadow: 0 24px 66px rgba(0,0,0,.26);
+                    box-shadow: 0 24px 66px rgba(15,23,42,.18);
                     display: grid;
-                    grid-template-rows: 8px auto 1fr
+                    grid-template-rows: 8px auto 1fr;
+                    position: relative
                 }
 
                 #works .bar {
@@ -1852,10 +1867,10 @@ Purchase:
                 }
 
                 #works .view {
-                    /*background: #000;*/
                     display: flex;
                     align-items: center;
-                    justify-content: center
+                    justify-content: center;
+                    background: #fff
                 }
 
                     #works .view img {
@@ -1871,9 +1886,10 @@ Purchase:
 
                 #works .ltitle {
                     margin: 0 0 4px;
-                    font-size: 19px;
-                    font-weight: 900;
-                    color: var(--ink)
+                    font-size: 20px;
+                    font-weight: 800;
+                    color: var(--ink);
+                    text-wrap: balance
                 }
 
                 #works .lsub {
@@ -1882,13 +1898,13 @@ Purchase:
                     letter-spacing: .12em;
                     text-transform: uppercase;
                     color: var(--accent);
-                    font-weight: 900
+                    font-weight: 800
                 }
 
                 #works .ldesc {
                     margin: 0;
                     color: var(--muted);
-                    line-height: 1.55
+                    line-height: 1.6
                 }
 
                 #works .close, #works .navbtn {
@@ -1897,9 +1913,9 @@ Purchase:
                     border: 2px solid var(--accent);
                     border-radius: 10px;
                     padding: 6px 9px;
-                    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+                    box-shadow: 0 8px 20px rgba(15,23,42,.12);
                     cursor: pointer;
-                    font-weight: 900;
+                    font-weight: 800;
                     color: var(--ink)
                 }
 
@@ -1923,343 +1939,338 @@ Purchase:
                 #works .close:focus-visible, #works .navbtn:focus-visible {
                     outline: 3px solid #111
                 }
+
+                @media (prefers-reduced-motion: reduce) {
+                    #works .pc, #works .pc * {
+                        transition: none !important
+                    }
+                }
             </style>
 
             <div class="pcs-wrap">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="pcs-header">
-                                <div class="port_sub_heading_wrapper"><h2 class="port_sub_heading">Quality Work</h2></div>
+                            <div class="port_heading_wrapper text-center ">
+                                <div class="port_sub_heading_wrapper">
+                                    <h2 class="port_sub_heading">Quality Work</h2>
+                                </div>
                                 <h1 class="port_heading">My Projects</h1>
-                                
                             </div>
                         </div>
                     </div>
+                 
+                </div>
 
-                    <!-- Tabs -->
-                    <div class="pcs-tabs" role="tablist" aria-label="Project categories">
-                        <a href="#" data-filter="*" aria-current="true" role="tab">All <span class="pcs-count">0</span></a>
-                        <a href="#" data-filter=".design" role="tab">Portals <span class="pcs-count">0</span></a>
-                        <a href="#" data-filter=".development" role="tab">Applications <span class="pcs-count">0</span></a>
-                    </div>
+                <!-- Tabs -->
+                <div class="pcs-tabs" role="tablist" aria-label="Project categories">
+                    <a href="#" data-filter="*" aria-current="true" role="tab">All <span class="pcs-count">0</span></a>
+                    <a href="#" data-filter=".design" role="tab">Websites &amp; Portals <span class="pcs-count">0</span></a>
+                    <a href="#" data-filter=".development" role="tab">Applications <span class="pcs-count">0</span></a>
+                </div>
 
-                    <!-- Grid -->
-                    <div class="pcs-grid">
-                        <!-- ===== DESIGN ===== -->
-                        <article class="pcs-item design">
-                            <a class="pc view" href="images/portfolio/Procuerment.jpg"
-                               data-title="Procurement" data-sub="Web Application"
-                               data-desc="End-to-end procurement platform: vendor onboarding, RFP/RFQ workflows, evaluation, approvals, and full audit trail.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/Procuerment.jpg" alt="Procurement web application">
-                                    <span class="pc-stamp">Design</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Procurement</h3><p class="pc-sub">Web Application</p></div>
-                                <div class="pc-foot"><span class="pc-tag">App</span><span class="pc-sub">RFP · Approvals</span></div>
-                            </a>
-                        </article>
+                <!-- Grid -->
+                <div class="pcs-grid">
+                    <!-- ===== WEBSITES & PORTALS ===== -->
+                    <article class="pcs-item design">
+                        <a class="pc view" href="images/portfolio/Procuerment.jpg"
+                           data-title="Procurement" data-sub="Website & Portal"
+                           data-desc="End-to-end procurement: vendor onboarding, RFP/RFQ workflows, evaluation, approvals, and audit trail.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" fetchpriority="low" src="images/portfolio/Procuerment.jpg" alt="Procurement portal" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Web / Portal</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Procurement</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Web/Portal</span><span class="pc-sub">RFP · Approvals</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item design">
-                            <a class="pc view" href="images/portfolio/Tenders.jpg"
-                               data-title="Tenders" data-sub="Web Application"
-                               data-desc="Centralized tender management with eligibility checks, scoring matrices, and a public disclosure portal.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/Tenders.jpg" alt="Tenders management">
-                                    <span class="pc-stamp">Design</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Tenders</h3><p class="pc-sub">Web Application</p></div>
-                                <div class="pc-foot"><span class="pc-tag">App</span><span class="pc-sub">Scoring · Portal</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item design">
+                        <a class="pc view" href="images/portfolio/Tenders.jpg"
+                           data-title="Tenders" data-sub="Website & Portal"
+                           data-desc="Centralized tender management with eligibility checks, scoring matrices, and public disclosure.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/Tenders.jpg" alt="Tenders portal" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Web / Portal</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Tenders</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Web/Portal</span><span class="pc-sub">Scoring · Public</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item design">
-                            <a class="pc view" href="images/portfolio/Correspondence.jpg"
-                               data-title="Correspondence Management" data-sub="Web Application"
-                               data-desc="Official correspondence registry with SLA tracking, attachments, and secure routing with permissions.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/Correspondence.jpg" alt="Correspondence tool">
-                                    <span class="pc-stamp">Design</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Correspondence&nbsp;Management</h3><p class="pc-sub">Web Application</p></div>
-                                <div class="pc-foot"><span class="pc-tag">App</span><span class="pc-sub">SLA · Routing</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item design">
+                        <a class="pc view" href="images/portfolio/Correspondence.jpg"
+                           data-title="Correspondence Management" data-sub="Website & Portal"
+                           data-desc="Official registry with SLA tracking, attachments, and secure routing with permissions.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/Correspondence.jpg" alt="Correspondence portal" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Web / Portal</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Correspondence Management</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Web/Portal</span><span class="pc-sub">SLA · Routing</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item design">
-                            <a class="pc view" href="images/portfolio/AssetManagement.jpg"
-                               data-title="Asset Management" data-sub="Web Application"
-                               data-desc="Lifecycle tracking for medical assets with preventive maintenance schedules and depreciation analytics.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/AssetManagement.jpg" alt="Asset dashboard">
-                                    <span class="pc-stamp">Design</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Asset&nbsp;Management</h3><p class="pc-sub">Web Application</p></div>
-                                <div class="pc-foot"><span class="pc-tag">App</span><span class="pc-sub">Lifecycle · PM</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item design">
+                        <a class="pc view" href="images/portfolio/AssetManagement.jpg"
+                           data-title="Asset Management" data-sub="Website & Portal"
+                           data-desc="Lifecycle tracking for medical assets with PM schedules and depreciation analytics.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/AssetManagement.jpg" alt="Asset management portal" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Web / Portal</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Asset Management</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Web/Portal</span><span class="pc-sub">Lifecycle · PM</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item design">
-                            <a class="pc view" href="images/portfolio/CrisesManagement.jpg"
-                               data-title="Crises Management" data-sub="Web Application"
-                               data-desc="Emergency command center with incident logs, resource allocation, and live status boards.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/CrisesManagement.jpg" alt="Crisis interface">
-                                    <span class="pc-stamp">Design</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Crises&nbsp;Management</h3><p class="pc-sub">Web Application</p></div>
-                                <div class="pc-foot"><span class="pc-tag">App</span><span class="pc-sub">Incidents · Status</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item design">
+                        <a class="pc view" href="images/portfolio/CrisesManagement.jpg"
+                           data-title="Crises Management" data-sub="Website & Portal"
+                           data-desc="Emergency command center with incident logs, resource allocation, and live status boards.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/CrisesManagement.jpg" alt="Crisis management portal" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Web / Portal</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Crises Management</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Web/Portal</span><span class="pc-sub">Incidents · Status</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item design">
-                            <a class="pc view" href="images/portfolio/RecruitmentSystem.jpg"
-                               data-title="Recruitment" data-sub="Web Application"
-                               data-desc="Applicant tracking with job postings, skill matching, pipeline stages, and interview scheduling.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/RecruitmentSystem.jpg" alt="Recruitment UI">
-                                    <span class="pc-stamp">Design</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Recruitment</h3><p class="pc-sub">Web Application</p></div>
-                                <div class="pc-foot"><span class="pc-tag">App</span><span class="pc-sub">ATS · Interviews</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item design">
+                        <a class="pc view" href="images/portfolio/RecruitmentSystem.jpg"
+                           data-title="Recruitment" data-sub="Website & Portal"
+                           data-desc="Applicant tracking with job postings, skill matching, pipeline stages, and interview scheduling.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/RecruitmentSystem.jpg" alt="Recruitment portal" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Web / Portal</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Recruitment</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Web/Portal</span><span class="pc-sub">ATS · Interviews</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item design">
-                            <a class="pc view" href="images/portfolio/EPortal.jpg"
-                               data-title="Educational Gate of Oman" data-sub="Web Application"
-                               data-desc="National education portal for content delivery, assessments, services, and guardians’ access.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/EPortal.jpg" alt="Education portal Oman">
-                                    <span class="pc-stamp">Design</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Educational&nbsp;Gate&nbsp;of&nbsp;Oman</h3><p class="pc-sub">Web Application</p></div>
-                                <div class="pc-foot"><span class="pc-tag">App</span><span class="pc-sub">Students · Content</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item design">
+                        <a class="pc view" href="images/portfolio/EPortal.jpg"
+                           data-title="Educational Gate of Oman" data-sub="Website & Portal"
+                           data-desc="National education portal for content delivery, assessments, and guardians’ access.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/EPortal.jpg" alt="Oman education portal" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Web / Portal</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Educational Gate of Oman</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Web/Portal</span><span class="pc-sub">Students · Content</span></div>
+                        </a>
+                    </article>
 
-                        <!-- ===== DEVELOPMENT ===== -->
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/mohp.jpg"
-                               data-title="Ministry of Health and Population of Egypt" data-sub="Website"
-                               data-desc="Corporate MOHP site with services directory, news, accessibility support, and performance care.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/mohp.jpg" alt="MOHP website">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Ministry&nbsp;of&nbsp;Health&nbsp;and&nbsp;Population&nbsp;of&nbsp;Egypt</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Services · News</span></div>
-                            </a>
-                        </article>
+                    <!-- ===== APPLICATIONS ===== -->
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/mohp.jpg"
+                           data-title="Ministry of Health and Population of Egypt" data-sub="Application"
+                           data-desc="Service directory, news modules, and accessibility—delivered via application engine.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/mohp.jpg" alt="MOHP application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Ministry of Health and Population of Egypt</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Services · News</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/UPA.jpg"
-                               data-title="The Egyptian Authority for Unified Procurement (UPA)" data-sub="Website"
-                               data-desc="Institutional website with procurement calendars, announcements, and transparency pages.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/UPA.jpg" alt="UPA website">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">The&nbsp;Egyptian&nbsp;Authority&nbsp;for&nbsp;Unified&nbsp;Procurement&nbsp;&quot;UPA&quot;</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Transparency</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/UPA.jpg"
+                           data-title="Egyptian Authority for Unified Procurement (UPA)" data-sub="Application"
+                           data-desc="Procurement calendars, announcements, and transparency components as app modules.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/UPA.jpg" alt="UPA application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Egyptian Authority for Unified Procurement “UPA”</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Transparency</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/rateyourservices.jpg"
-                               data-title="Rate Your Services" data-sub="Website"
-                               data-desc="Feedback portal with public ratings, dashboards, and sentiment insights.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/rateyourservices.jpg" alt="Ratings portal">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Rate&nbsp;Your&nbsp;Services</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Feedback</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/rateyourservices.jpg"
+                           data-title="Rate Your Services" data-sub="Application"
+                           data-desc="Feedback collection with dashboards and sentiment insights.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/rateyourservices.jpg" alt="Rate Your Services app" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Rate Your Services</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Feedback</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/maf.jpg"
-                               data-title="Ministry Of Agriculture Of Oman" data-sub="Website"
-                               data-desc="Ministry portal integrating permits, forms, and GIS overlays.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/maf.jpg" alt="MAF Oman">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Ministry&nbsp;Of&nbsp;Agriculture&nbsp;Of&nbsp;Oman</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Permits · GIS</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/maf.jpg"
+                           data-title="Ministry Of Agriculture Of Oman" data-sub="Application"
+                           data-desc="Permits, forms, and GIS overlays delivered via app layer.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/maf.jpg" alt="MAF Oman app" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Ministry Of Agriculture Of Oman</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Permits · GIS</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/bgicc.jpg"
-                               data-title="BGICC" data-sub="Website"
-                               data-desc="Conference website with agenda, speakers, and online registration.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/bgicc.jpg" alt="BGICC">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">BGICC</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Conference</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/bgicc.jpg"
+                           data-title="BGICC" data-sub="Application"
+                           data-desc="Conference modules: agenda, speakers, registration.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/bgicc.jpg" alt="BGICC application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">BGICC</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Conference</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/escd-egypt.jpg"
-                               data-title="ESCD" data-sub="Website"
-                               data-desc="Society website with publications, events, and membership features.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/escd-egypt.jpg" alt="ESCD">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">ESCD</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Society</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/escd-egypt.jpg"
+                           data-title="ESCD" data-sub="Application"
+                           data-desc="Publications, events, and membership features on an app shell.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/escd-egypt.jpg" alt="ESCD application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">ESCD</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Society</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/araborganizers.jpg"
-                               data-title="Arab Organizers" data-sub="Website"
-                               data-desc="Events company portfolio with ticketing integrations.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/araborganizers.jpg" alt="Arab Organizers">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Arab&nbsp;Organizers</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Events</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/araborganizers.jpg"
+                           data-title="Arab Organizers" data-sub="Application"
+                           data-desc="Events portfolio with ticketing integrations.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/araborganizers.jpg" alt="Arab Organizers application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Arab Organizers</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Events</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/01.jpg"
-                               data-title="Egyptian Federation for Construction and Building" data-sub="Website"
-                               data-desc="Federation website with sector updates and member services.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/01.jpg" alt="EFCB">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Egyptian&nbsp;Federation&nbsp;for&nbsp;Construction&nbsp;and&nbsp;Building</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Members</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/01.jpg"
+                           data-title="Egyptian Federation for Construction and Building" data-sub="Application"
+                           data-desc="Member services and sector updates.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/01.jpg" alt="EFCB application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Egyptian Federation for Construction and Building</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Members</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/02.jpg"
-                               data-title="Arab Medical Union" data-sub="Website"
-                               data-desc="Union website with resources, publications, and directory.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/02.jpg" alt="Arab Medical Union">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Arab&nbsp;Medical&nbsp;Union</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Directory</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/02.jpg"
+                           data-title="Arab Medical Union" data-sub="Application"
+                           data-desc="Resources, publications, and directory.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/02.jpg" alt="Arab Medical Union application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Arab Medical Union</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Directory</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/03.jpg"
-                               data-title="Zayed Dunes" data-sub="Website"
-                               data-desc="Residential compound marketing site with project information and contact forms.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/03.jpg" alt="Zayed Dunes">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Zayed&nbsp;Dunes</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Real Estate</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/03.jpg"
+                           data-title="Zayed Dunes" data-sub="Application"
+                           data-desc="Real-estate marketing and contact flow.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/03.jpg" alt="Zayed Dunes application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Zayed Dunes</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Real Estate</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/5.jpg"
-                               data-title="International Gastrointestinal, Liver & Uro-Oncology Conference" data-sub="Website"
-                               data-desc="Medical conference website including abstract submissions and agenda.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/5.jpg" alt="IGILUC">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">International&nbsp;Gastrointestinal,&nbsp;Liver&nbsp;&amp;&nbsp;Uro-Oncology&nbsp;Conference</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Medical</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/5.jpg"
+                           data-title="International Gastrointestinal, Liver & Uro-Oncology Conference" data-sub="Application"
+                           data-desc="Abstract submissions and agenda—app experience.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/5.jpg" alt="IGILUC application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">International Gastrointestinal, Liver &amp; Uro-Oncology Conference</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Medical</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/6.jpg"
-                               data-title="Alfouad for Automotive Spare Parts" data-sub="Website"
-                               data-desc="E-commerce catalog for automotive spare parts with inquiry flow.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/6.jpg" alt="Alfouad auto parts">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Alfouad&nbsp;for&nbsp;Automotive&nbsp;Spare&nbsp;Parts</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">E-commerce</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/6.jpg"
+                           data-title="Alfouad for Automotive Spare Parts" data-sub="Application"
+                           data-desc="E-commerce catalog with inquiry flow.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/6.jpg" alt="Alfouad app" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Alfouad for Automotive Spare Parts</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">E-commerce</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/8.jpg"
-                               data-title="The Catering Co Kitchen" data-sub="Website"
-                               data-desc="Restaurant site with menus, reservations, and gallery.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/8.jpg" alt="Catering Co">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">The&nbsp;Catering&nbsp;Co&nbsp;Kitchen</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Restaurant</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/8.jpg"
+                           data-title="The Catering Co Kitchen" data-sub="Application"
+                           data-desc="Menus, reservations, and gallery as an app-like flow.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/8.jpg" alt="Catering Co application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">The Catering Co Kitchen</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Restaurant</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/7.jpg"
-                               data-title="Electrolux Saudi Arabia" data-sub="Website"
-                               data-desc="Regional brand presence with product catalogs and support.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/7.jpg" alt="Electrolux Saudi Arabia">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Electrolux&nbsp;Saudi&nbsp;Arabia</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Catalog</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/7.jpg"
+                           data-title="Electrolux Saudi Arabia" data-sub="Application"
+                           data-desc="Regional product catalogs and support experience.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/7.jpg" alt="Electrolux KSA application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Electrolux Saudi Arabia</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Catalog</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/9.jpg"
-                               data-title="Alfa Cure Center" data-sub="Website"
-                               data-desc="Clinic website with services, booking, and contacts.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/9.jpg" alt="Alfa Cure Center">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Alfa&nbsp;Cure&nbsp;Center</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Clinic</span></div>
-                            </a>
-                        </article>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/9.jpg"
+                           data-title="Alfa Cure Center" data-sub="Application"
+                           data-desc="Clinic services, booking, and contacts.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/9.jpg" alt="Alfa Cure application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">Alfa Cure Center</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Clinic</span></div>
+                        </a>
+                    </article>
 
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/10.jpg"
-                               data-title="International Group for Accounting and Auditing" data-sub="Website"
-                               data-desc="Corporate site with services overview and contact.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/10.jpg" alt="IGAA corporate">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">International&nbsp;Group&nbsp;for&nbsp;Accounting&nbsp;and&nbsp;Auditing</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Corporate</span></div>
-                            </a>
-                        </article>
-
-                        <article class="pcs-item development">
-                            <a class="pc view" href="images/portfolio/4.jpg"
-                               data-title="Alfacure" data-sub="Website"
-                               data-desc="Pharma company presence with product catalogue and inquiries.">
-                                <div class="pc-photo">
-                                    <img loading="lazy" src="images/portfolio/4.jpg" alt="Alfacure">
-                                    <span class="pc-stamp">Dev</span>
-                                </div>
-                                <div class="pc-title"><h3 class="pc-ttl">Alfacure</h3><p class="pc-sub">Website</p></div>
-                                <div class="pc-foot"><span class="pc-tag">Site</span><span class="pc-sub">Pharma</span></div>
-                            </a>
-                        </article>
-                    </div>
+                    <article class="pcs-item development">
+                        <a class="pc view" href="images/portfolio/10.jpg"
+                           data-title="International Group for Accounting and Auditing" data-sub="Application"
+                           data-desc="Corporate services and contact modules.">
+                            <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/10.jpg" alt="IGAA application" onerror="this.src='images/placeholder.jpg'">
+                                <span class="pc-stamp">Application</span>
+                            </div>
+                            <div class="pc-title"><h3 class="pc-ttl">International Group for Accounting and Auditing</h3></div>
+                            <div class="pc-foot"><span class="pc-tag">Application</span><span class="pc-sub">Corporate</span></div>
+                        </a>
+                    </article>
                 </div>
             </div>
 
@@ -2280,7 +2291,7 @@ Purchase:
             </div>
 
             <script>
-                (function PostcardShowcaseLB() {
+                (function ProjectSectionLight() {
                     const root = document.getElementById('works');
                     const tabs = [...root.querySelectorAll('.pcs-tabs a')];
                     const tiles = [...root.querySelectorAll('.pcs-item')];
@@ -2288,88 +2299,54 @@ Purchase:
                     // Counters
                     function updateCounts() {
                         const all = tiles.length;
-                        const design = tiles.filter(t => t.classList.contains('design')).length;
-                        const dev = tiles.filter(t => t.classList.contains('development')).length;
-                        const map = { '*': all, '.design': design, '.development': dev };
+                        const web = tiles.filter(t => t.classList.contains('design')).length;
+                        const app = tiles.filter(t => t.classList.contains('development')).length;
+                        const map = { '*': all, '.design': web, '.development': app };
                         tabs.forEach(t => { const sel = t.getAttribute('data-filter'); t.querySelector('.pcs-count').textContent = map[sel] ?? 0; });
                     }
-
                     function applyFilter(sel) {
                         tiles.forEach(el => { const show = sel === '*' || el.matches(sel); el.classList.toggle('is-hidden', !show); });
                     }
-
                     tabs.forEach(a => {
                         a.addEventListener('click', e => {
-                            e.preventDefault();
-                            tabs.forEach(x => x.removeAttribute('aria-current'));
-                            a.setAttribute('aria-current', 'true');
-                            applyFilter(a.getAttribute('data-filter'));
+                            e.preventDefault(); tabs.forEach(x => x.removeAttribute('aria-current'));
+                            a.setAttribute('aria-current', 'true'); applyFilter(a.getAttribute('data-filter'));
                         });
                     });
-
                     updateCounts(); applyFilter('*');
 
-                    // -------- Lightbox --------
-                    const lb = root.querySelector('.lb');
-                    const dlg = lb.querySelector('.dlg');
-                    const img = lb.querySelector('img');
-                    const t = lb.querySelector('.ltitle');
-                    const s = lb.querySelector('.lsub');
-                    const d = lb.querySelector('.ldesc');
-                    const btnClose = lb.querySelector('.close');
-                    const btnPrev = lb.querySelector('.prev');
-                    const btnNext = lb.querySelector('.next');
+                    // Lightbox
+                    const lb = root.querySelector('.lb'), dlg = lb.querySelector('.dlg');
+                    const img = lb.querySelector('img'), t = lb.querySelector('.ltitle'), s = lb.querySelector('.lsub'), d = lb.querySelector('.ldesc');
+                    const btnClose = lb.querySelector('.close'), btnPrev = lb.querySelector('.prev'), btnNext = lb.querySelector('.next');
 
                     const cardsAll = [...root.querySelectorAll('.pc.view')];
-                    function visibleCards() {
-                        return cardsAll.filter(card => !card.closest('.pcs-item').classList.contains('is-hidden'));
-                    }
+                    const visibleCards = () => cardsAll.filter(c => !c.closest('.pcs-item').classList.contains('is-hidden'));
 
-                    function accentFrom(article) {
-                        if (article.classList.contains('design')) return getVar('--design');
-                        if (article.classList.contains('development')) return getVar('--dev');
-                        return getVar('--all');
-                    }
-                    function getVar(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+                    const getVar = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+                    const accent = (art) => art.classList.contains('design') ? getVar('--web') : art.classList.contains('development') ? getVar('--app') : getVar('--all');
 
-                    let currentIndex = -1;
-
-                    function openLB(index) {
-                        const cards = visibleCards();
-                        if (!cards.length) return;
-
-                        currentIndex = (index + cards.length) % cards.length;
-                        const card = cards[currentIndex];
-                        const art = card.closest('.pcs-item');
-
-                        img.src = card.getAttribute('href');
-                        img.alt = card.querySelector('img')?.alt || card.dataset.title || 'Preview';
-                        t.textContent = card.dataset.title || '';
-                        s.textContent = card.dataset.sub || '';
-                        d.textContent = card.dataset.desc || '';
-                        dlg.style.setProperty('--accent', accentFrom(art));
-
+                    let idx = -1;
+                    function openLB(i) {
+                        const list = visibleCards(); if (!list.length) return;
+                        idx = (i + list.length) % list.length; const card = list[idx]; const art = card.closest('.pcs-item');
+                        img.src = card.getAttribute('href'); img.alt = card.querySelector('img')?.alt || card.dataset.title || 'Preview';
+                        t.textContent = card.dataset.title || ''; s.textContent = card.dataset.sub || ''; d.textContent = card.dataset.desc || '';
+                        dlg.style.setProperty('--accent', accent(art));
                         lb.classList.add('is-open'); lb.removeAttribute('hidden'); document.body.style.overflow = 'hidden';
                     }
-                    function closeLB() {
-                        lb.classList.remove('is-open'); lb.setAttribute('hidden', ''); img.removeAttribute('src'); document.body.style.overflow = '';
-                    }
-                    function step(dir) { openLB(currentIndex + dir); }
+                    function closeLB() { lb.classList.remove('is-open'); lb.setAttribute('hidden', ''); img.removeAttribute('src'); document.body.style.overflow = ''; }
+                    function step(dir) { openLB(idx + dir); }
 
-                    // Open on card click
-                    root.querySelector('.pcs-grid').addEventListener('click', (e) => {
+                    root.querySelector('.pcs-grid').addEventListener('click', e => {
                         const card = e.target.closest('.pc.view'); if (!card) return;
-                        e.preventDefault();
-                        const list = visibleCards();
-                        openLB(list.indexOf(card));
+                        e.preventDefault(); const list = visibleCards(); openLB(list.indexOf(card));
                     });
 
-                    // Controls
                     btnClose.addEventListener('click', closeLB);
                     lb.addEventListener('click', e => { if (e.target === lb) closeLB(); });
                     btnPrev.addEventListener('click', () => step(-1));
                     btnNext.addEventListener('click', () => step(1));
-
                     document.addEventListener('keydown', e => {
                         if (!lb.classList.contains('is-open')) return;
                         if (e.key === 'Escape') closeLB();
@@ -2379,6 +2356,8 @@ Purchase:
                 })();
             </script>
         </section>
+
+
 
 
 

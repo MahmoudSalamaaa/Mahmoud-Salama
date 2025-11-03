@@ -2324,53 +2324,226 @@ Purchase:
 
         <!-- start contact wrapper  -->
         <!-- === Fancy Accordion Gallery (Scoped) === -->
-        <section id="gallery" data- class="gallery-section" data-scroll="8" aria-labelledby="gallery-title">
+        <section id="gallery" class="gallery-section" data-scroll="8" aria-labelledby="gallery-title">
+            <style>
+                /* ===== Scoped fixes for this section only ===== */
+                #gallery .preview .meta {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 12px;
+                    flex-wrap: wrap;
+                }
 
+                #gallery .preview .left {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                #gallery .pill {
+                    display: inline-block;
+                    padding: .35rem .6rem;
+                    border-radius: 999px;
+                    font-size: .8rem;
+                    line-height: 1;
+                }
+
+                #gallery .preview .actions {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                    #gallery .preview .actions .btn {
+                        appearance: none;
+                        border: 1px solid var(--line, #e6e9f0);
+                        background: #fff;
+                        padding: .6rem .9rem;
+                        border-radius: 12px;
+                        line-height: 1;
+                        font: inherit;
+                        cursor: pointer;
+                        min-width: 44px;
+                        height: 44px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        writing-mode: horizontal-tb !important;
+                        transform: none !important;
+                    }
+
+                        #gallery .preview .actions .btn.primary {
+                            background: var(--brand, #06b6d4);
+                            color: #fff;
+                            border-color: transparent;
+                            /* Some themes rotate CTAs; force horizontal here */
+                            rotate: 0deg !important;
+                            writing-mode: horizontal-tb !important;
+                        }
+
+                #gallery .preview .stage {
+                    width: 100%;
+                    aspect-ratio: 16/10;
+                    background: #f5f7fb;
+                    border-radius: 18px;
+                    overflow: hidden;
+                }
+
+                #gallery #preview-image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    opacity: 0;
+                    transition: opacity .2s ease;
+                }
+
+                    #gallery #preview-image.active {
+                        opacity: 1;
+                    }
+
+                /* Accordion minor tweaks */
+                #gallery .acc-header {
+                    width: 100%;
+                    text-align: left;
+                    padding: 14px 16px;
+                    border-radius: 14px;
+                }
+
+                #gallery .acc-item .thumbs {
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 10px;
+                }
+
+                #gallery .thumb {
+                    display: inline-block;
+                    border: 0;
+                    padding: 0;
+                    background: none;
+                    cursor: pointer;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    position: relative;
+                    outline-offset: 2px;
+                    width: 100%;
+                }
+
+                    #gallery .thumb img {
+                        width: 100%;
+                        height: 120px;
+                        object-fit: cover;
+                        display: block;
+                    }
+
+                    #gallery .thumb .tag {
+                        position: absolute;
+                        left: 8px;
+                        top: 8px;
+                        padding: .2rem .45rem;
+                        border-radius: 999px;
+                        background: #111827;
+                        color: #fff;
+                        font-size: .7rem;
+                        line-height: 1;
+                    }
+
+                /* Lightbox */
+                #gallery .lightbox {
+                    position: fixed;
+                    inset: 0;
+                    background: rgba(0,0,0,.75);
+                    display: none;
+                    place-items: center;
+                    z-index: 9999;
+                    padding: 24px;
+                }
+
+                    #gallery .lightbox.open {
+                        display: grid;
+                    }
+
+                #gallery #lb-img {
+                    max-width: min(1100px, 96vw);
+                    max-height: 80vh;
+                    width: auto;
+                    height: auto;
+                    border-radius: 16px;
+                }
+
+                #gallery #lb-close {
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 12px;
+                    border: 0;
+                    background: #fff;
+                    cursor: pointer;
+                    font-size: 18px;
+                }
+
+                /* Responsive */
+                @media (min-width: 992px) {
+                    #gallery .gallery-grid {
+                        display: grid;
+                        grid-template-columns: 1.1fr 1fr;
+                        gap: 24px;
+                    }
+
+                    #gallery .acc-item .thumbs {
+                        grid-template-columns: repeat(3,1fr);
+                    }
+
+                    #gallery .thumb img {
+                        height: 110px;
+                    }
+                }
+            </style>
 
             <div class="container">
-                <div class="port_heading_wrapper text-center ">
+                <div class="port_heading_wrapper text-center">
                     <div class="port_sub_heading_wrapper">
                         <h2 class="port_sub_heading">Moments That Tell My Story</h2>
                     </div>
-                    <h1 class="port_heading">Image Gallery</h1>
+                    <h1 class="port_heading" id="gallery-title">Image Gallery</h1>
                 </div>
-
-
 
                 <div class="gallery-grid">
                     <!-- Left: Accordion -->
                     <div class="card">
                         <div class="accordion" id="gallery-accordion">
-
                             <!-- 🌍 Global Engagements & Signature Summits (8) -->
                             <div class="acc-item open" data-color="cyan">
-                                <button class="acc-header" aria-expanded="true">
+                                <button class="acc-header" type="button" aria-expanded="true">
                                     <span class="dot"></span> Global Engagements & Signature Summits (8)
                                 </button>
                                 <div class="acc-panel" role="region">
                                     <div class="thumbs">
-                                        <button class="thumb" data-full="assets/images/gallery/excon3.jpg" data-title="EXCON — Day Highlights" data-tag="Event">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/excon3.jpg" data-title="EXCON — Day Highlights" data-tag="Event">
                                             <img loading="lazy" src="assets/images/gallery/excon3.jpg" alt=""><span class="tag">Event</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/exconfinal.jpg" data-title="EXCON — Closing Moments" data-tag="Event">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/exconfinal.jpg" data-title="EXCON — Closing Moments" data-tag="Event">
                                             <img loading="lazy" src="assets/images/gallery/exconfinal.jpg" alt=""><span class="tag">Event</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/manama.jpg" data-title="Manama Summit" data-tag="Conference">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/manama.jpg" data-title="Manama Summit" data-tag="Conference">
                                             <img loading="lazy" src="assets/images/gallery/manama.jpg" alt=""><span class="tag">Conf</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/manama22.jpg" data-title="Manama Delegation" data-tag="Conference">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/manama22.jpg" data-title="Manama Delegation" data-tag="Conference">
                                             <img loading="lazy" src="assets/images/gallery/manama22.jpg" alt=""><span class="tag">Conf</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/manama32.jpg" data-title="Manama Exhibition" data-tag="Conference">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/manama32.jpg" data-title="Manama Exhibition" data-tag="Conference">
                                             <img loading="lazy" src="assets/images/gallery/manama32.jpg" alt=""><span class="tag">Conf</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/mohp.jpg" data-title="MoHP Session" data-tag="Event">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/mohp.jpg" data-title="MoHP Session" data-tag="Event">
                                             <img loading="lazy" src="assets/images/gallery/mohp.jpg" alt=""><span class="tag">Event</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/medIq.jpg" data-title="MedIQ Launch" data-tag="Event">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/medIq.jpg" data-title="MedIQ Launch" data-tag="Event">
                                             <img loading="lazy" src="assets/images/gallery/medIq.jpg" alt=""><span class="tag">Event</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/mediq2.jpg" data-title="MedIQ Showcase" data-tag="Expo">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/mediq2.jpg" data-title="MedIQ Showcase" data-tag="Expo">
                                             <img loading="lazy" src="assets/images/gallery/mediq2.jpg" alt=""><span class="tag">Expo</span>
                                         </button>
                                     </div>
@@ -2379,21 +2552,21 @@ Purchase:
 
                             <!-- 🤝 Leaders, Delegations & Strategic Alliances (4) -->
                             <div class="acc-item" data-color="vio">
-                                <button class="acc-header" aria-expanded="false">
+                                <button class="acc-header" type="button" aria-expanded="false">
                                     <span class="dot"></span> Leaders, Delegations & Strategic Alliances (4)
                                 </button>
                                 <div class="acc-panel" role="region">
                                     <div class="thumbs">
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20250120-WA0004.jpg" data-title="Leaders Meeting II" data-tag="Leaders">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20250120-WA0004.jpg" data-title="Leaders Meeting II" data-tag="Leaders">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20250120-WA0004.jpg" alt=""><span class="tag">Leaders</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/FB_IMG_1716539707914.jpg" data-title="Official Visit" data-tag="Leaders">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/FB_IMG_1716539707914.jpg" data-title="Official Visit" data-tag="Leaders">
                                             <img loading="lazy" src="assets/images/gallery/FB_IMG_1716539707914.jpg" alt=""><span class="tag">Leaders</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/FB_IMG_1721926748450.jpg" data-title="Stakeholder Roundtable" data-tag="Leaders">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/FB_IMG_1721926748450.jpg" data-title="Stakeholder Roundtable" data-tag="Leaders">
                                             <img loading="lazy" src="assets/images/gallery/FB_IMG_1721926748450.jpg" alt=""><span class="tag">Leaders</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/mediq3.jpg" data-title="Program Walkthrough" data-tag="Leaders">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/mediq3.jpg" data-title="Program Walkthrough" data-tag="Leaders">
                                             <img loading="lazy" src="assets/images/gallery/mediq3.jpg" alt=""><span class="tag">Leaders</span>
                                         </button>
                                     </div>
@@ -2402,27 +2575,27 @@ Purchase:
 
                             <!-- 👥 Team Moments & Professional Bonds (6) -->
                             <div class="acc-item" data-color="green">
-                                <button class="acc-header" aria-expanded="false">
+                                <button class="acc-header" type="button" aria-expanded="false">
                                     <span class="dot"></span> Team Moments & Professional Bonds (6)
                                 </button>
                                 <div class="acc-panel" role="region">
                                     <div class="thumbs">
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20230607-WA0004.jpg" data-title="Team Moment I" data-tag="People">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20230607-WA0004.jpg" data-title="Team Moment I" data-tag="People">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20230607-WA0004.jpg" alt=""><span class="tag">People</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20230607-WA0007.jpg" data-title="Team Moment II" data-tag="People">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20230607-WA0007.jpg" data-title="Team Moment II" data-tag="People">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20230607-WA0007.jpg" alt=""><span class="tag">People</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20230607-WA0007 (1).jpg" data-title="Team Moment III" data-tag="People">
-                                            <img loading="lazy" src="assets/images/gallery/IMG-20230607-WA0007 (1).jpg" alt=""><span class="tag">People</span>
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20230607-WA0007%20(1).jpg" data-title="Team Moment III" data-tag="People">
+                                            <img loading="lazy" src="assets/images/gallery/IMG-20230607-WA0007%20(1).jpg" alt=""><span class="tag">People</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20240603-WA0005.jpg" data-title="Colleagues Meetup" data-tag="People">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20240603-WA0005.jpg" data-title="Colleagues Meetup" data-tag="People">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20240603-WA0005.jpg" alt=""><span class="tag">People</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20220606-WA0000.jpg" data-title="Office Candid I" data-tag="People">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20220606-WA0000.jpg" data-title="Office Candid I" data-tag="People">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20220606-WA0000.jpg" alt=""><span class="tag">People</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20220605-WA0018.jpg" data-title="Colleagues Gathering" data-tag="People">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20220605-WA0018.jpg" data-title="Colleagues Gathering" data-tag="People">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20220605-WA0018.jpg" alt=""><span class="tag">People</span>
                                         </button>
                                     </div>
@@ -2431,27 +2604,27 @@ Purchase:
 
                             <!-- 💡 Digital Vision & Innovation in Action (6) -->
                             <div class="acc-item" data-color="cyan">
-                                <button class="acc-header" aria-expanded="false">
+                                <button class="acc-header" type="button" aria-expanded="false">
                                     <span class="dot"></span> Digital Vision & Innovation in Action (6)
                                 </button>
                                 <div class="acc-panel" role="region">
                                     <div class="thumbs">
-                                        <button class="thumb" data-full="assets/images/gallery/gantt.jpg" data-title="Program Gantt" data-tag="Digital">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/gantt.jpg" data-title="Program Gantt" data-tag="Digital">
                                             <img loading="lazy" src="assets/images/gallery/gantt.jpg" alt=""><span class="tag">Digital</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/gs1.png" data-title="Portal UI — v1" data-tag="App">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/gs1.png" data-title="Portal UI — v1" data-tag="App">
                                             <img loading="lazy" src="assets/images/gallery/gs1.png" alt=""><span class="tag">App</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/gs1_2.png" data-title="Portal UI — v1.2" data-tag="App">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/gs1_2.png" data-title="Portal UI — v1.2" data-tag="App">
                                             <img loading="lazy" src="assets/images/gallery/gs1_2.png" alt=""><span class="tag">App</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/mediq_.jpg" data-title="MedIQ Dashboard" data-tag="BI">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/mediq_.jpg" data-title="MedIQ Dashboard" data-tag="BI">
                                             <img loading="lazy" src="assets/images/gallery/mediq_.jpg" alt=""><span class="tag">BI</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/investments.jpg" data-title="Investments Overview" data-tag="BI">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/investments.jpg" data-title="Investments Overview" data-tag="BI">
                                             <img loading="lazy" src="assets/images/gallery/investments.jpg" alt=""><span class="tag">BI</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20230321-WA0007.jpg" data-title="System Snapshot" data-tag="Digital">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20230321-WA0007.jpg" data-title="System Snapshot" data-tag="Digital">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20230321-WA0007.jpg" alt=""><span class="tag">Digital</span>
                                         </button>
                                     </div>
@@ -2460,27 +2633,27 @@ Purchase:
 
                             <!-- 📰 Press Coverage & Social Spotlights (6) -->
                             <div class="acc-item" data-color="vio">
-                                <button class="acc-header" aria-expanded="false">
+                                <button class="acc-header" type="button" aria-expanded="false">
                                     <span class="dot"></span> Press Coverage & Social Spotlights (6)
                                 </button>
                                 <div class="acc-panel" role="region">
                                     <div class="thumbs">
-                                        <button class="thumb" data-full="assets/images/gallery/news 67-1.jpg" data-title="News Feature" data-tag="Media">
-                                            <img loading="lazy" src="assets/images/gallery/news 67-1.jpg" alt=""><span class="tag">Media</span>
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/news%2067-1.jpg" data-title="News Feature" data-tag="Media">
+                                            <img loading="lazy" src="assets/images/gallery/news%2067-1.jpg" alt=""><span class="tag">Media</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/FB_IMG_1634568712441.jpg" data-title="Social Highlight I" data-tag="Media">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/FB_IMG_1634568712441.jpg" data-title="Social Highlight I" data-tag="Media">
                                             <img loading="lazy" src="assets/images/gallery/FB_IMG_1634568712441.jpg" alt=""><span class="tag">Media</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/FB_IMG_1721926753111.jpg" data-title="Social Highlight II" data-tag="Media">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/FB_IMG_1721926753111.jpg" data-title="Social Highlight II" data-tag="Media">
                                             <img loading="lazy" src="assets/images/gallery/FB_IMG_1721926753111.jpg" alt=""><span class="tag">Media</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20220220-WA0012.jpg" data-title="Coverage — Feb 2022" data-tag="Media">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20220220-WA0012.jpg" data-title="Coverage — Feb 2022" data-tag="Media">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20220220-WA0012.jpg" alt=""><span class="tag">Media</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20220315-WA0013.jpg" data-title="Coverage — Mar 2022" data-tag="Media">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20220315-WA0013.jpg" data-title="Coverage — Mar 2022" data-tag="Media">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20220315-WA0013.jpg" alt=""><span class="tag">Media</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20210315-WA0018.jpg" data-title="Interview / Panel" data-tag="Media">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20210315-WA0018.jpg" data-title="Interview / Panel" data-tag="Media">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20210315-WA0018.jpg" alt=""><span class="tag">Media</span>
                                         </button>
                                     </div>
@@ -2489,30 +2662,29 @@ Purchase:
 
                             <!-- 🏆 Achievements, Exhibitions & Honors (5) -->
                             <div class="acc-item" data-color="green">
-                                <button class="acc-header" aria-expanded="false">
+                                <button class="acc-header" type="button" aria-expanded="false">
                                     <span class="dot"></span> Achievements, Exhibitions & Honors (5)
                                 </button>
                                 <div class="acc-panel" role="region">
                                     <div class="thumbs">
-                                        <button class="thumb" data-full="assets/images/gallery/20221210_201041.jpg" data-title="Exhibition — Booth" data-tag="Award">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/20221210_201041.jpg" data-title="Exhibition — Booth" data-tag="Award">
                                             <img loading="lazy" src="assets/images/gallery/20221210_201041.jpg" alt=""><span class="tag">Award</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20221212-WA0000.jpg" data-title="Recognition — I" data-tag="Recognition">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20221212-WA0000.jpg" data-title="Recognition — I" data-tag="Recognition">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20221212-WA0000.jpg" alt=""><span class="tag">Recog.</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20221212-WA0011.jpg" data-title="Recognition — II" data-tag="Recognition">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20221212-WA0011.jpg" data-title="Recognition — II" data-tag="Recognition">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20221212-WA0011.jpg" alt=""><span class="tag">Recog.</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20210929-WA0015.jpg" data-title="Award Photo I" data-tag="Award">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20210929-WA0015.jpg" data-title="Award Photo I" data-tag="Award">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20210929-WA0015.jpg" alt=""><span class="tag">Award</span>
                                         </button>
-                                        <button class="thumb" data-full="assets/images/gallery/IMG-20210929-WA0024.jpg" data-title="Award Photo III" data-tag="Award">
+                                        <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20210929-WA0024.jpg" data-title="Award Photo III" data-tag="Award">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20210929-WA0024.jpg" alt=""><span class="tag">Award</span>
                                         </button>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -2522,27 +2694,23 @@ Purchase:
                             <img id="preview-image" class="active" src="assets/images/gallery/excon3.jpg" alt="Preview">
                         </div>
                         <div class="meta">
-                            <div class="left d-flex align-items-center gap-2">
+                            <div class="left">
                                 <span class="pill" id="preview-pill">Event</span>
                                 <h3 id="preview-title" class="m-0">EXCON — Day Highlights</h3>
                             </div>
-                            <div class="actions d-flex gap-2">
-                                <button class="btn" id="btn-prev" aria-label="Previous">◀</button>
-                                <button class="btn" id="btn-next" aria-label="Next">▶</button>
-                                <button class="btn primary" id="btn-view" aria-label="Open full screen">View Full</button>
+                            <div class="actions">
+                                <button class="btn" id="btn-prev" type="button" aria-label="Previous">◀</button>
+                                <button class="btn" id="btn-next" type="button" aria-label="Next">▶</button>
+                                <button class="btn primary" id="btn-view" type="button" aria-label="Open full screen">View Full</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
 
             <!-- Lightbox -->
             <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
-                <button class="close" id="lb-close" aria-label="Close">✕</button>
+                <button class="close" id="lb-close" type="button" aria-label="Close">✕</button>
                 <img id="lb-img" src="" alt="">
             </div>
 
@@ -2572,10 +2740,7 @@ Purchase:
                             el.classList.remove('open');
                             const h = el.querySelector('.acc-header'); if (h) h.setAttribute('aria-expanded', 'false');
                         });
-                        if (!open) {
-                            item.classList.add('open');
-                            header.setAttribute('aria-expanded', 'true');
-                        }
+                        if (!open) { item.classList.add('open'); header.setAttribute('aria-expanded', 'true'); }
                     });
 
                     function setPreviewFromThumb(t) {
@@ -2612,9 +2777,7 @@ Purchase:
                         idx = (idx + delta + list.length) % list.length;
                         const next = list[idx];
                         const ownerItem = next.closest('.acc-item');
-                        if (!ownerItem.classList.contains('open')) {
-                            ownerItem.querySelector('.acc-header').click();
-                        }
+                        if (!ownerItem.classList.contains('open')) ownerItem.querySelector('.acc-header').click();
                         setPreviewFromThumb(next);
                         next.focus({ preventScroll: false });
                     }
@@ -2633,6 +2796,7 @@ Purchase:
                         setTimeout(() => { lbImg.src = ''; }, 200);
                     }
                     btnView.addEventListener('click', openLightbox);
+                    document.getElementById('preview-stage').addEventListener('click', openLightbox);
                     lbClose.addEventListener('click', closeLightbox);
                     lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
                     document.addEventListener('keydown', (e) => {
@@ -2646,6 +2810,7 @@ Purchase:
                 })();
             </script>
         </section>
+
 
 
 
@@ -2784,13 +2949,13 @@ Purchase:
                                                 <div class="col-12">
                                                     <div class="banner_btn" style="display:flex; gap:.6rem; flex-wrap:wrap">
                                                         <!-- زر الإرسال العادي الموجود -->
-                                                       
-                                                            <button type="button" data-type="contact" class="portfolio_btn btn_red submitForm" id="mail-send">
-                                                                <span class="first_text">Submit</span>
-                                                                <span class="second_text">Send</span>
-                                                            </button>
 
-                                                          
+                                                        <button type="button" data-type="contact" class="portfolio_btn btn_red submitForm" id="mail-send">
+                                                            <span class="first_text">Submit</span>
+                                                            <span class="second_text">Send</span>
+                                                        </button>
+
+
                                                     </div>
                                                 </div>
 

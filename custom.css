@@ -2728,3 +2728,109 @@ img, video, canvas, svg {
         background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M19.11 17.27c-.29-.14-1.68-.83-1.94-.92-.26-.1-.45-.14-.64.14-.19.29-.73.92-.9 1.1-.17.19-.35.21-.64.07-.29-.14-1.21-.45-2.3-1.43-.85-.76-1.42-1.7-1.58-1.99-.16-.29-.02-.45.12-.59.12-.12.29-.31.43-.47.14-.16.19-.26.29-.45.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.76.36-.26.29-1 1-1 2.43 0 1.43 1.02 2.81 1.16 3 .14.19 2.01 3.06 4.87 4.29.68.29 1.21.46 1.62.59.68.22 1.29.19 1.78.12.54-.08 1.68-.69 1.92-1.35.24-.66.24-1.22.17-1.35-.07-.12-.26-.19-.55-.33z"/><path fill="white" d="M16.02 5.33c-5.86 0-10.62 4.76-10.62 10.62 0 1.87.49 3.63 1.35 5.16L5 27l6.05-1.59c1.5.82 3.21 1.29 5.03 1.29 5.86 0 10.62-4.76 10.62-10.62s-4.76-10.75-10.68-10.75zm6.31 16.92c-.27.77-1.57 1.47-2.19 1.57-.6.09-1.38.13-2.24-.14-.52-.16-1.2-.39-2.07-.76-3.63-1.57-5.98-5.22-6.17-5.47-.18-.26-1.47-1.95-1.47-3.73 0-1.78.92-2.64 1.25-3 .34-.36.74-.45.99-.45.24 0 .49 0 .71.01.23.01.54-.08.85.65.32.77 1.1 2.65 1.2 2.84.1.19.16.42.03.68-.13.26-.2.42-.4.65-.19.22-.42.49-.6.66-.2.2-.41.41-.18.8.23.39 1.02 1.67 2.19 2.7 1.51 1.34 2.78 1.76 3.16 1.95.39.19.62.17.85-.1.23-.26.98-1.14 1.24-1.53.26-.39.52-.33.85-.2.33.13 2.09.99 2.44 1.17.36.18.6.26.69.4.08.14.08.8-.18 1.58z"/></svg>') center/contain no-repeat;
         filter: drop-shadow(0 0 0 rgba(0,0,0,0)); /* يحافظ على نفس نقاء الأيقونة */
     }
+/* ----- Card layout ----- */
+.gallery-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: start;
+    border-radius: 18px;
+}
+
+    /* image */
+    .gallery-card .gallery-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 18px;
+    }
+
+    /* right-side controls (arrows + vertical ViewFull) */
+    .gallery-card .side-controls {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* arrow buttons */
+    .gallery-card .nav {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        border: 1px solid rgba(0,0,0,.08);
+        background: #fff;
+        display: grid;
+        place-items: center;
+        font-size: 18px;
+    }
+
+    /* vertical "ViewFull" pill (desktop) */
+    .gallery-card .view-btn {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        border-radius: 16px;
+        padding: 12px 10px;
+        background: #06b6d4; /* your cyan */
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: .08em;
+    }
+
+    /* chip + title area */
+    .gallery-card .meta .chip {
+        background: #06b6d4;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 600;
+        display: inline-block;
+    }
+
+    .gallery-card .meta .title {
+        margin: 10px 0 0;
+        line-height: 1.2;
+        word-break: break-word; /* avoid ugly breaks */
+        hyphens: auto;
+    }
+
+/* ----- Mobile fixes ----- */
+@media (max-width: 576px) {
+    .gallery-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+        /* stack content, move controls below meta */
+        .gallery-card .side-controls {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            order: 3; /* after image + meta */
+        }
+
+        /* arrows: bigger tap targets */
+        .gallery-card .nav {
+            width: 56px;
+            height: 56px;
+            font-size: 20px;
+        }
+
+        /* View Full becomes horizontal full-width button */
+        .gallery-card .view-btn {
+            writing-mode: horizontal-tb;
+            transform: none;
+            padding: 14px 16px;
+            border-radius: 14px;
+            width: 100%;
+            text-align: center;
+            letter-spacing: .02em;
+        }
+
+        /* tighten title for small screens */
+        .gallery-card .meta .title {
+            font-size: 18px; /* or clamp(...) if you use it */
+        }
+}

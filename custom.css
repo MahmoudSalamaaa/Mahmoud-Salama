@@ -2726,3 +2726,187 @@ img, video, canvas, svg {
         background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M19.11 17.27c-.29-.14-1.68-.83-1.94-.92-.26-.1-.45-.14-.64.14-.19.29-.73.92-.9 1.1-.17.19-.35.21-.64.07-.29-.14-1.21-.45-2.3-1.43-.85-.76-1.42-1.7-1.58-1.99-.16-.29-.02-.45.12-.59.12-.12.29-.31.43-.47.14-.16.19-.26.29-.45.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.76.36-.26.29-1 1-1 2.43 0 1.43 1.02 2.81 1.16 3 .14.19 2.01 3.06 4.87 4.29.68.29 1.21.46 1.62.59.68.22 1.29.19 1.78.12.54-.08 1.68-.69 1.92-1.35.24-.66.24-1.22.17-1.35-.07-.12-.26-.19-.55-.33z"/><path fill="white" d="M16.02 5.33c-5.86 0-10.62 4.76-10.62 10.62 0 1.87.49 3.63 1.35 5.16L5 27l6.05-1.59c1.5.82 3.21 1.29 5.03 1.29 5.86 0 10.62-4.76 10.62-10.62s-4.76-10.75-10.68-10.75zm6.31 16.92c-.27.77-1.57 1.47-2.19 1.57-.6.09-1.38.13-2.24-.14-.52-.16-1.2-.39-2.07-.76-3.63-1.57-5.98-5.22-6.17-5.47-.18-.26-1.47-1.95-1.47-3.73 0-1.78.92-2.64 1.25-3 .34-.36.74-.45.99-.45.24 0 .49 0 .71.01.23.01.54-.08.85.65.32.77 1.1 2.65 1.2 2.84.1.19.16.42.03.68-.13.26-.2.42-.4.65-.19.22-.42.49-.6.66-.2.2-.41.41-.18.8.23.39 1.02 1.67 2.19 2.7 1.51 1.34 2.78 1.76 3.16 1.95.39.19.62.17.85-.1.23-.26.98-1.14 1.24-1.53.26-.39.52-.33.85-.2.33.13 2.09.99 2.44 1.17.36.18.6.26.69.4.08.14.08.8-.18 1.58z"/></svg>') center/contain no-repeat;
         filter: drop-shadow(0 0 0 rgba(0,0,0,0)); /* يحافظ على نفس نقاء الأيقونة */
     }
+
+/* ===== Header always above everything ===== */
+.site-header, .main-navbar, header[role="banner"] {
+    position: sticky; /* or fixed if your site uses fixed header */
+    top: 0;
+    z-index: 1000; /* higher than any section */
+}
+
+/* ===== Anchor offset so the section title isn't hidden under sticky header ===== */
+#Involvements {
+    scroll-margin-top: 96px; /* adjust to your header height */
+}
+
+/* ===== Section & stacking fixes ===== */
+.involvements_timeline_section {
+    position: relative;
+    z-index: 0; /* ensure it never floats above the header */
+    overflow: visible;
+}
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    display: grid;
+    gap: 24px;
+    margin: 40px 0 0;
+}
+
+/* Colored spine behind cards */
+.timeline_spine {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, var(--port-cyan, #06b6d4), var(--port-pink, #ec4899), var(--port-orange, #fb923c));
+    opacity: .25;
+    z-index: 0; /* behind everything */
+}
+
+/* Items on two columns (desktop) */
+.tl_item {
+    position: relative;
+    width: 50%;
+    padding-inline: 24px;
+}
+
+.tl_left {
+    justify-self: start;
+    text-align: left;
+}
+
+.tl_right {
+    justify-self: end;
+    text-align: left;
+}
+
+/* Dot on the spine */
+.tl_dot {
+    position: absolute;
+    top: 24px;
+    left: calc(100% + 20px);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid var(--port-cyan, #06b6d4);
+    box-shadow: 0 0 0 6px rgba(6,182,212,.12);
+    z-index: 1;
+}
+
+.tl_right .tl_dot {
+    left: auto;
+    right: calc(100% + 20px);
+}
+
+/* Card */
+.tl_card {
+    position: relative;
+    z-index: 1; /* above spine */
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 16px;
+    padding: 18px 18px 14px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.06);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+    .tl_card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 28px rgba(0,0,0,.1);
+        border-color: rgba(0,0,0,.12);
+    }
+
+/* Head */
+.tl_head {
+    display: grid;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.tl_year {
+    display: inline-block;
+    font: 600 12px/1.2 system-ui, sans-serif;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(6,182,212,.10);
+    color: var(--port-cyan, #06b6d4);
+}
+
+.tl_title {
+    font: 700 18px/1.3 system-ui, sans-serif;
+    margin: 0;
+}
+
+.tl_place {
+    margin: 0;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Body + meta */
+.tl_desc {
+    margin: 6px 0 10px;
+    color: #374151;
+}
+
+.tl_meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.tl_link {
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px dashed currentColor;
+}
+
+.tl_tag {
+    font: 600 11px/1 system-ui, sans-serif;
+    padding: 6px 8px;
+    border-radius: 999px;
+    background: rgba(59,130,246,.10);
+    color: #2563eb;
+}
+
+    .tl_tag.alt {
+        background: rgba(236,72,153,.10);
+        color: #db2777;
+    }
+
+/* ===== Responsive (stacked on mobile) ===== */
+@media (max-width: 992px) {
+    .timeline_spine {
+        left: 8px;
+        transform: none;
+    }
+
+    .tl_item {
+        width: 100%;
+        padding-left: 28px;
+    }
+
+    .tl_dot {
+        left: -10px;
+        right: auto;
+    }
+
+    .tl_right {
+        justify-self: start;
+    }
+}
+
+/* ===== Reduced motion ===== */
+@media (prefers-reduced-motion: reduce) {
+    .tl_card {
+        transition: none;
+    }
+}

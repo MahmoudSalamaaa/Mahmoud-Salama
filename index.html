@@ -2742,65 +2742,57 @@ Purchase:
 
                                 <div class="col-12">
                                     <div class="port_contact_form">
-                                        <!-- ضع رقم واتساب بصيغة E.164 في data-wa-phone (بدون +) -->
-                                        <form id="contactForm" data-wa-phone="201220156077" novalidate>
+                                        <!-- ضع رقم واتساب بصيغة E.164 في data-wa-phone (مثال مصر: 201234567890 بدون +) -->
+                                        <form id="contactForm" data-wa-phone="201220156077">
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
                                                         <input type="text" name="first_name" class="form-control require" id="firstName" placeholder="First name">
-                                                        <small class="invalid-feedback">First name is required.</small>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
                                                         <input type="text" name="last_name" class="form-control require" id="lastName" placeholder="Last name">
-                                                        <small class="invalid-feedback">Last name is required.</small>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
                                                         <input type="email" name="email" class="form-control require" id="email" placeholder="Email Address" data-valid="email" data-error="Email should be valid.">
-                                                        <small class="invalid-feedback">Please enter a valid email.</small>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <!-- type=tel أفضل من number لأرقام الهاتف -->
-                                                        <input type="tel" name="phone" class="form-control require" id="phone" placeholder="Phone number" data-valid="phone" data-error="Phone should be valid.">
-                                                        <small class="invalid-feedback">Please enter a valid phone number.</small>
+                                                        <input type="number" name="phone" class="form-control require" id="phone" placeholder="Phone number" data-valid="phone" data-error="phone should be valid.">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
                                                         <input type="text" name="subject" class="form-control require" id="subject" placeholder="Subject">
-                                                        <small class="invalid-feedback">Subject is required.</small>
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="form-group">
                                                         <textarea name="message" class="form-control require" rows="3" id="message" placeholder="Message"></textarea>
-                                                        <small class="invalid-feedback">Message is required.</small>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-12">
                                                     <div class="banner_btn" style="display:flex; gap:.6rem; flex-wrap:wrap">
                                                         <!-- زر الإرسال العادي الموجود -->
-                                                        <button type="button" data-type="contact" class="portfolio_btn btn_red submitForm" id="mail-send">
+                                                        <button type="button" data-type="contact" class="portfolio_btn btn_red submitForm">
                                                             <span class="first_text">Submit</span>
                                                             <span class="second_text">Send</span>
                                                         </button>
 
-                                                        <!-- زر واتساب بشكل مختلف -->
-                                                        <a href="#" id="wa-send" class="portfolio_btn btn_whatsapp" aria-label="Send via WhatsApp">
-                                                            <span class="wa_icon" aria-hidden="true">🟢</span>
+                                                        <!-- زر واتساب بنفس الـstyle والألوان -->
+                                                        <a href="#" id="wa-send" class="portfolio_btn btn_red btn_whatsapp" aria-label="Send via WhatsApp">
                                                             <span class="first_text">WhatsApp</span>
                                                             <span class="second_text">Send</span>
                                                         </a>
                                                     </div>
                                                 </div>
 
-                                                <div class="response" role="status" aria-live="polite"></div>
+                                                <div class="response"></div>
                                             </div>
                                         </form>
                                     </div>
@@ -2811,157 +2803,6 @@ Purchase:
                     </div>
                 </div>
             </div>
-
-            <!-- فرق ألوان وستايل لزر واتساب -->
-            <style>
-                .btn_whatsapp {
-                    background: linear-gradient(180deg, #25D366, #128C7E);
-                    border: none;
-                    box-shadow: 0 6px 16px rgba(18, 140, 126, 0.35);
-                }
-
-                    .btn_whatsapp:hover {
-                        transform: translateY(-1px);
-                        box-shadow: 0 10px 22px rgba(18, 140, 126, 0.45);
-                    }
-
-                    .btn_whatsapp .first_text, .btn_whatsapp .second_text {
-                        color: #fff !important;
-                    }
-
-                    .btn_whatsapp .wa_icon {
-                        margin-inline-end: .35rem;
-                        font-size: 1rem;
-                        line-height: 1;
-                    }
-
-                /* تحسين مظهر الأخطاء */
-                .form-control.is-invalid {
-                    border-color: #dc3545 !important;
-                    box-shadow: 0 0 0 .1rem rgba(220, 53, 69, .15);
-                }
-
-                .invalid-feedback {
-                    display: none;
-                    color: #dc3545;
-                    font-size: .85rem;
-                    margin-top: .25rem;
-                }
-
-                .form-control.is-invalid ~ .invalid-feedback {
-                    display: block;
-                }
-            </style>
-
-            <script>
-                (function () {
-                    const form = document.getElementById('contactForm');
-                    const waBtn = document.getElementById('wa-send');
-                    const mailBtn = document.getElementById('mail-send');
-                    const resp = form.querySelector('.response');
-
-                    // Regex بسيطة للبريد والهاتف
-                    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-                    // أرقام فقط من 8 إلى 15 رقم (تعمل دوليًا بشكل عام)
-                    const phoneDigitsRe = /^\d{8,15}$/;
-
-                    function getVal(id) {
-                        return (form.querySelector('#' + id)?.value || '').trim();
-                    }
-
-                    function setInvalid(input, invalid) {
-                        if (!input) return;
-                        if (invalid) input.classList.add('is-invalid');
-                        else input.classList.remove('is-invalid');
-                    }
-
-                    function validateForm() {
-                        let ok = true;
-                        resp.textContent = '';
-
-                        const firstName = form.querySelector('#firstName');
-                        const lastName = form.querySelector('#lastName');
-                        const email = form.querySelector('#email');
-                        const phone = form.querySelector('#phone');
-                        const subject = form.querySelector('#subject');
-                        const message = form.querySelector('#message');
-
-                        // required checks
-                        [firstName, lastName, email, phone, subject, message].forEach(inp => {
-                            const empty = !inp.value.trim();
-                            setInvalid(inp, empty);
-                            ok = ok && !empty;
-                        });
-
-                        // email format
-                        if (!emailRe.test(email.value.trim())) {
-                            setInvalid(email, true);
-                            ok = false;
-                        }
-
-                        // phone cleanup then validate
-                        const phoneRaw = phone.value.replace(/[^\d]/g, '');
-                        if (!phoneDigitsRe.test(phoneRaw)) {
-                            setInvalid(phone, true);
-                            ok = false;
-                        }
-
-                        return ok;
-                    }
-
-                    function buildWhatsAppURL() {
-                        const waNumber = form.getAttribute('data-wa-phone') || '201220156077'; // fallback لرقمك
-                        // جمع البيانات
-                        const firstName = getVal('firstName');
-                        const lastName = getVal('lastName');
-                        const email = getVal('email');
-                        const phone = getVal('phone');
-                        const subject = getVal('subject');
-                        const message = getVal('message');
-
-                        const fullName = [firstName, lastName].filter(Boolean).join(' ');
-                        const lines = [
-                            '*New Contact Form*',
-                            `Name: ${fullName}`,
-                            `Email: ${email}`,
-                            `Phone: ${phone}`,
-                            `Subject: ${subject}`,
-                            '—',
-                            message
-                        ];
-
-                        const text = encodeURIComponent(lines.join('\n'));
-                        return `https://wa.me/${waNumber}?text=${text}`;
-                    }
-
-                    // إرسال واتساب بعد التحقق
-                    waBtn.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        if (!validateForm()) {
-                            resp.textContent = 'Please correct the highlighted fields before sending via WhatsApp.';
-                            return;
-                        }
-                        const url = buildWhatsAppURL();
-                        window.open(url, '_blank', 'noopener');
-                    });
-
-                    // مثال: الإرسال العادي (لو عندك هاندلر جاهز للـ submitForm)
-                    mailBtn?.addEventListener('click', function () {
-                        if (!validateForm()) {
-                            resp.textContent = 'Please correct the highlighted fields before sending the message.';
-                            return;
-                        }
-                        // هنا يكمّل سكريبت الإرسال بالبريد عندك (Ajax/Fetch) إن وُجد.
-                        // لو عندك كود جاهز، هيشتغل لأنه نفس زر .submitForm السابق.
-                    });
-
-                    // إزالة حالة الخطأ أثناء الكتابة
-                    form.querySelectorAll('.form-control').forEach(inp => {
-                        inp.addEventListener('input', () => setInvalid(inp, false));
-                    });
-                })();
-            </script>
-
             <!-- End Contact section  -->
 
             <div class="port_footer_setions ">

@@ -683,6 +683,12 @@ transform: translate(-50%,-50%);
 .social_list li a .nav_insta {
     color: #e4405f;
 }
+
+
+.social_list li a .nav_tg {
+    color: #24A1DE;
+}
+
 /* ---- End Social icon ---- */
 
 /*================== 03 End sidebar css ==================  */

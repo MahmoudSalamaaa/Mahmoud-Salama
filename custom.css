@@ -279,6 +279,7 @@
 /* Styling for Professional Involvements timeline */
 .professional_involvements_section {
     margin-top: 60px;
+    z-index:0;
 }
 /* Timeline container with central line */
 .involvement_timeline {

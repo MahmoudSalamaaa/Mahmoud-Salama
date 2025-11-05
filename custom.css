@@ -1899,6 +1899,7 @@
     }
 
     #gallery .thumb .tag {
+        display:none;
         position: absolute;
         left: 8px;
         bottom: 8px;
@@ -2834,3 +2835,4 @@ img, video, canvas, svg {
             font-size: 18px; /* or clamp(...) if you use it */
         }
 }
+

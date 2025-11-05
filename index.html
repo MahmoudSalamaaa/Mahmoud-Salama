@@ -1726,6 +1726,426 @@ Purchase:
                 </div>
             </div>
         </div><!-- End Experience section  -->
+        <!-- ================== Education & Languages — Brand-Match / Scoped ================== -->
+        <section id="edu-lang-match" class="page_scroll" data-scroll="4.5" aria-labelledby="elMatchTitle">
+            <div class="container">
+
+                <div class="row">
+     <div class="col-md-12">
+         <div class="port_heading_wrapper text-center ">
+             <div class="port_sub_heading_wrapper">
+                 <h2 class="port_sub_heading">Academic Journey</h2>
+             </div>
+             <h1 class="port_heading">Education and Languages</h1>
+         </div>
+     </div>
+ </div>
+
+                <div class="elm-card">
+                    <span class="elm-stripe"></span>
+                    <span class="elm-glow"></span>
+
+                    <div class="elm-grid">
+                        <!-- ===== Education ===== -->
+                        <article class="elm-col">
+                            <!--<header class="elm-head">
+                                <span class="elm-ico">🎓</span>
+                                <h3 class="elm-title">Academic Journey</h3>
+                            </header>-->
+
+                            <div class="elm-line">
+                                <span class="elm-dot" aria-hidden="true"></span>
+                                <span class="elm-degree">B.Sc. Computer Science</span>
+                                <span class="elm-sep">•</span>
+                                <span class="elm-org">Zagazig University</span>
+                                <span class="elm-sep">•</span>
+                                <span class="elm-badge">2003–2007</span>
+                            </div>
+
+                            <p class="elm-desc">
+                                Focus on <b>algorithms</b>, <b>data structures</b>, <b>databases</b>, and <b>operating systems</b>. Graduation project graded <b>A+</b>.
+                            </p>
+
+                            <ul class="elm-chips">
+                                <li class="elm-chip elm-cyan">Algorithms</li>
+                                <li class="elm-chip elm-blue">Databases</li>
+                                <li class="elm-chip elm-pink">A+ Project</li>
+                                <li class="elm-chip elm-orange">Operating Systems</li>
+                            </ul>
+                        </article>
+
+                        <!-- ===== Languages (filled dials) ===== -->
+                        <article class="elm-col">
+                            <!--<header class="elm-head">
+                                <span class="elm-ico">🌍</span>
+                                <h3 class="elm-title">Language Proficiency</h3>
+                            </header>-->
+
+                            <div class="elm-dials">
+                                <!-- Arabic -->
+                                <div class="dial" data-value="100" data-color="var(--elm-green)">
+                                    <svg viewBox="0 0 120 120" class="dial-svg" aria-hidden="true">
+                                        <circle class="dial-track" cx="60" cy="60" r="46"></circle>
+                                        <circle class="dial-bar" cx="60" cy="60" r="46"></circle>
+                                    </svg>
+                                    <div class="dial-meta">
+                                        <span class="dial-name">Arabic</span>
+                                        <span class="dial-tag dial-tag--green">Native</span>
+                                    </div>
+                                </div>
+
+                                <!-- English -->
+                                <div class="dial" data-value="78" data-color="var(--elm-pink)">
+                                    <svg viewBox="0 0 120 120" class="dial-svg" aria-hidden="true">
+                                        <circle class="dial-track" cx="60" cy="60" r="46"></circle>
+                                        <circle class="dial-bar" cx="60" cy="60" r="46"></circle>
+                                    </svg>
+                                    <div class="dial-meta">
+                                        <span class="dial-name">English</span>
+                                        <span class="dial-tag dial-tag--pink">Upper-Intermediate (B2)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="elm-chips mt-1">
+                                <li class="elm-chip elm-soft elm-outline-cyan">Technical Writing</li>
+                                <li class="elm-chip elm-soft elm-outline-orange">Presentations</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            /* ========= Scoped palette (fallbacks included) ========= */
+            #edu-lang-match {
+                --elm-cyan: var(--c-cyan, #06b6d4);
+                --elm-pink: var(--c-pink, #ec4899);
+                --elm-blue: var(--c-blue, #3b82f6);
+                --elm-orange: var(--c-orange, #fb923c);
+                --elm-green: var(--c-green, #22c55e);
+                --elm-text: var(--c-dark, #0f172a);
+                --elm-muted: #6b7280;
+                --elm-card: var(--surface, #ffffff);
+                --elm-ring: 0 14px 36px rgba(2,6,23,.10);
+                --elm-r: 16px;
+            }
+
+            [data-theme="dark"] #edu-lang-match {
+                --elm-text: #e5e7eb;
+                --elm-muted: #9aa4b2;
+                --elm-card: #0b1220;
+                --elm-ring: 0 16px 40px rgba(0,0,0,.55);
+            }
+
+            /* ========= Headings: force color (scoped) ========= */
+            #edu-lang-match .port_sub_heading {
+                color: var(--elm-cyan) !important;
+                margin-bottom: .25rem;
+            }
+
+            #edu-lang-match .port_heading {
+                color: var(--elm-text) !important;
+            }
+
+            /* ========= Card wrapper (high specificity) ========= */
+            #edu-lang-match .elm-card {
+                position: relative;
+                border-radius: var(--elm-r);
+                background: var(--elm-card);
+                color: var(--elm-text);
+                box-shadow: var(--elm-ring);
+                border: 1px solid color-mix(in oklab, var(--elm-text) 10%, transparent);
+                padding: 16px;
+                overflow: hidden;
+                isolation: isolate;
+            }
+
+            #edu-lang-match .elm-stripe {
+                position: absolute;
+                inset: 0 0 auto 0;
+                height: 4px;
+                z-index: 2;
+                background: linear-gradient(90deg, var(--elm-cyan), var(--elm-blue), var(--elm-pink), var(--elm-orange)) !important;
+            }
+
+            #edu-lang-match .elm-glow {
+                position: absolute;
+                inset: -28% -15% auto -15%;
+                height: 110px;
+                z-index: 0;
+                pointer-events: none;
+                background: radial-gradient(70% 90% at 15% 50%, color-mix(in oklab, var(--elm-cyan) 18%, transparent), transparent 70%), radial-gradient(70% 90% at 85% 50%, color-mix(in oklab, var(--elm-pink) 16%, transparent), transparent 70%);
+                filter: blur(20px);
+                opacity: .6;
+            }
+
+            /* ========= Grid ========= */
+            #edu-lang-match .elm-grid {
+                position: relative;
+                z-index: 1;
+                display: grid;
+                gap: 14px;
+                grid-template-columns: 1.1fr .9fr;
+            }
+
+            @media (max-width: 991.98px) {
+                #edu-lang-match .elm-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            #edu-lang-match .elm-col {
+                background: color-mix(in oklab, var(--elm-card) 94%, transparent);
+                border-radius: 12px;
+                padding: 14px;
+            }
+
+            /* ========= Section heads ========= */
+            #edu-lang-match .elm-head {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 6px;
+            }
+
+            #edu-lang-match .elm-title {
+                margin: 0;
+                font-weight: 900;
+                letter-spacing: .2px;
+                color: var(--elm-text);
+            }
+
+            #edu-lang-match .elm-ico {
+                font-size: 1.05rem;
+            }
+
+            /* ========= Education line ========= */
+            #edu-lang-match .elm-line {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 8px;
+                padding-left: 22px;
+                position: relative;
+                margin-bottom: .35rem;
+            }
+
+            #edu-lang-match .elm-dot {
+                position: absolute;
+                left: 0;
+                top: .35rem;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: conic-gradient(from 180deg, var(--elm-cyan), var(--elm-blue), var(--elm-pink), var(--elm-orange), var(--elm-cyan));
+                box-shadow: 0 0 0 3px color-mix(in oklab, var(--elm-card) 80%, transparent);
+            }
+
+            #edu-lang-match .elm-degree {
+                font-weight: 900;
+                letter-spacing: .2px;
+                background: linear-gradient(90deg, var(--elm-orange), var(--elm-pink));
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent !important;
+            }
+
+            #edu-lang-match .elm-org {
+                color: var(--elm-muted) !important;
+                font-weight: 700;
+            }
+
+            #edu-lang-match .elm-badge {
+                color: #fff !important;
+                background: linear-gradient(90deg, var(--elm-blue), var(--elm-cyan)) !important;
+                padding: .22rem .48rem;
+                border-radius: 999px;
+                font-weight: 900;
+                font-size: .72rem;
+                box-shadow: 0 6px 14px color-mix(in oklab, var(--elm-blue) 28%, transparent);
+                white-space: nowrap;
+            }
+
+            #edu-lang-match .elm-sep {
+                opacity: .5;
+            }
+
+            #edu-lang-match .elm-desc {
+                margin: .25rem 0 .55rem;
+                color: color-mix(in oklab, var(--elm-text) 86%, #000);
+            }
+
+            /* ========= Chips ========= */
+            #edu-lang-match .elm-chips {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            #edu-lang-match .elm-chip {
+                --bg: var(--elm-cyan);
+                --shadow: var(--elm-cyan);
+                color: #fff !important;
+                font-weight: 800;
+                font-size: .74rem;
+                letter-spacing: .2px;
+                padding: .38rem .56rem;
+                border-radius: 999px;
+                white-space: nowrap;
+                background: linear-gradient(145deg, color-mix(in oklab, var(--bg) 92%, #fff), var(--bg)) !important;
+                box-shadow: 0 6px 14px color-mix(in oklab, var(--shadow) 28%, transparent);
+                border: 0 !important;
+            }
+
+            #edu-lang-match .elm-cyan {
+                --bg: var(--elm-cyan);
+            }
+
+            #edu-lang-match .elm-blue {
+                --bg: var(--elm-blue);
+            }
+
+            #edu-lang-match .elm-pink {
+                --bg: var(--elm-pink);
+            }
+
+            #edu-lang-match .elm-orange {
+                --bg: var(--elm-orange);
+            }
+
+            #edu-lang-match .elm-soft {
+                background: color-mix(in oklab, var(--elm-card) 90%, #000) !important;
+                color: var(--elm-text) !important;
+                box-shadow: none;
+            }
+
+            #edu-lang-match .elm-outline-cyan {
+                border: 1px solid var(--elm-cyan) !important;
+            }
+
+            #edu-lang-match .elm-outline-orange {
+                border: 1px solid var(--elm-orange) !important;
+            }
+
+            /* ========= Dials ========= */
+            #edu-lang-match .elm-dials {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+
+            @media (max-width: 520px) {
+                #edu-lang-match .elm-dials {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            #edu-lang-match .dial {
+                display: grid;
+                grid-template-columns: 94px 1fr;
+                gap: 10px;
+                align-items: center;
+                padding: 10px;
+                border-radius: 12px;
+                background: color-mix(in oklab, var(--elm-card) 94%, transparent);
+                border: 1px solid color-mix(in oklab, var(--elm-text) 12%, transparent);
+            }
+
+            #edu-lang-match .dial-svg {
+                width: 94px;
+                height: 94px;
+                transform: rotate(-90deg);
+            }
+
+            #edu-lang-match .dial-track {
+                fill: none;
+                stroke: color-mix(in oklab, var(--elm-text) 12%, transparent) !important;
+                stroke-width: 12;
+                opacity: .35;
+            }
+
+            #edu-lang-match .dial-bar {
+                fill: none;
+                stroke: var(--elm-cyan) !important;
+                stroke-width: 12;
+                stroke-linecap: round;
+                stroke-dasharray: 289;
+                stroke-dashoffset: 289;
+                filter: drop-shadow(0 2px 6px rgba(0,0,0,.15));
+            }
+
+            #edu-lang-match .dial-meta {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            #edu-lang-match .dial-name {
+                font-weight: 900;
+                letter-spacing: .2px;
+                color: var(--elm-text) !important;
+            }
+
+            #edu-lang-match .dial-tag {
+                font-size: .72rem;
+                font-weight: 900;
+                color: #fff !important;
+                padding: .26rem .5rem;
+                border-radius: 999px;
+                white-space: nowrap;
+                background: linear-gradient(90deg, var(--elm-cyan), var(--elm-blue)) !important;
+                box-shadow: 0 6px 14px color-mix(in oklab, var(--elm-blue) 28%, transparent);
+                align-self: flex-start;
+            }
+
+            #edu-lang-match .dial-tag--green {
+                background: linear-gradient(90deg, var(--elm-green), color-mix(in oklab, var(--elm-green) 85%, #fff)) !important;
+            }
+
+            #edu-lang-match .dial-tag--pink {
+                background: linear-gradient(90deg, var(--elm-pink), color-mix(in oklab, var(--elm-pink) 85%, #fff)) !important;
+            }
+        </style>
+
+        <script>
+            // ========= Dial animation (scoped, resilient) =========
+            (function () {
+                const root = document.getElementById('edu-lang-match');
+                if (!root) return;
+                const dials = root.querySelectorAll('.dial');
+                const CIRC = 2 * Math.PI * 46; // r=46
+
+                function animate(bar, target) {
+                    let start = null;
+                    function step(ts) {
+                        if (!start) start = ts;
+                        const p = Math.min(1, (ts - start) / 850);
+                        const eased = p < .5 ? 2 * p * p : -1 + (4 - 2 * p) * p;
+                        const current = CIRC - (CIRC - target) * eased;
+                        bar.style.strokeDasharray = CIRC.toFixed(2);
+                        bar.style.strokeDashoffset = current.toFixed(2);
+                        if (p < 1) requestAnimationFrame(step);
+                    }
+                    requestAnimationFrame(step);
+                }
+
+                dials.forEach(dial => {
+                    const val = Math.max(0, Math.min(100, Number(dial.dataset.value || 0)));
+                    const color = dial.dataset.color || 'var(--elm-cyan)';
+                    const bar = dial.querySelector('.dial-bar');
+                    bar.style.stroke = color;
+                    animate(bar, CIRC * (1 - val / 100));
+                });
+            })();
+        </script>
+
+
+
         <!-- Add these in your <head> -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -2064,6 +2484,8 @@ Purchase:
                            data-desc="Professional services site for accounting, assurance, tax, and training—structured for credibility and lead capture."
                            data-link="https://igta.net">
                             <div class="pc-photo">
+                                <img loading="lazy" decoding="async" src="images/portfolio/10.jpg" alt="IGTA website" onerror="this.src='images/placeholder.jpg'">
+
                                 <span class="pc-stamp">Web / Portal</span>
                             </div>
                             <div class="pc-title"><h3 class="pc-ttl">International Group for Accounting and Auditing</h3></div>
@@ -2189,6 +2611,7 @@ Purchase:
                 })();
             </script>
         </section>
+
 
 
 
@@ -2523,7 +2946,7 @@ Purchase:
                                 <div class="acc-panel" role="region">
                                     <div class="thumbs">
                                         <button class="thumb" type="button" data-full="assets/images/gallery/excon3.jpg" data-title="EXCON — Day Highlights" data-tag="Event">
-                                            <img loading="lazy" src="assets/images/gallery/excon3.jpg" alt=""><span class="tag">Event</span>
+                                            <img loading="lazy" src="assets/images/gallery/excon3.jpg" alt="">
                                         </button>
                                         <button class="thumb" type="button" data-full="assets/images/gallery/exconfinal.jpg" data-title="EXCON — Closing Moments" data-tag="Event">
                                             <img loading="lazy" src="assets/images/gallery/exconfinal.jpg" alt=""><span class="tag">Event</span>
@@ -2553,16 +2976,14 @@ Purchase:
                             <!-- 🤝 Leaders, Delegations & Strategic Alliances (4) -->
                             <div class="acc-item" data-color="vio">
                                 <button class="acc-header" type="button" aria-expanded="false">
-                                    <span class="dot"></span> Leaders, Delegations & Strategic Alliances (4)
+                                    <span class="dot"></span> Leaders, Delegations & Strategic Alliances (3)
                                 </button>
                                 <div class="acc-panel" role="region">
                                     <div class="thumbs">
                                         <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20250120-WA0004.jpg" data-title="Leaders Meeting II" data-tag="Leaders">
                                             <img loading="lazy" src="assets/images/gallery/IMG-20250120-WA0004.jpg" alt=""><span class="tag">Leaders</span>
                                         </button>
-                                        <button class="thumb" type="button" data-full="assets/images/gallery/FB_IMG_1716539707914.jpg" data-title="Official Visit" data-tag="Leaders">
-                                            <img loading="lazy" src="assets/images/gallery/FB_IMG_1716539707914.jpg" alt=""><span class="tag">Leaders</span>
-                                        </button>
+
                                         <button class="thumb" type="button" data-full="assets/images/gallery/FB_IMG_1721926748450.jpg" data-title="Stakeholder Roundtable" data-tag="Leaders">
                                             <img loading="lazy" src="assets/images/gallery/FB_IMG_1721926748450.jpg" alt=""><span class="tag">Leaders</span>
                                         </button>
@@ -2668,19 +3089,19 @@ Purchase:
                                 <div class="acc-panel" role="region">
                                     <div class="thumbs">
                                         <button class="thumb" type="button" data-full="assets/images/gallery/20221210_201041.jpg" data-title="Exhibition — Booth" data-tag="Award">
-                                            <img loading="lazy" src="assets/images/gallery/20221210_201041.jpg" alt=""><span class="tag">Award</span>
+                                            <img loading="lazy" src="assets/images/gallery/20221210_201041.jpg" alt="">
                                         </button>
                                         <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20221212-WA0000.jpg" data-title="Recognition — I" data-tag="Recognition">
-                                            <img loading="lazy" src="assets/images/gallery/IMG-20221212-WA0000.jpg" alt=""><span class="tag">Recog.</span>
+                                            <img loading="lazy" src="assets/images/gallery/IMG-20221212-WA0000.jpg" alt="">
                                         </button>
                                         <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20221212-WA0011.jpg" data-title="Recognition — II" data-tag="Recognition">
-                                            <img loading="lazy" src="assets/images/gallery/IMG-20221212-WA0011.jpg" alt=""><span class="tag">Recog.</span>
+                                            <img loading="lazy" src="assets/images/gallery/IMG-20221212-WA0011.jpg" alt="">
                                         </button>
                                         <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20210929-WA0015.jpg" data-title="Award Photo I" data-tag="Award">
-                                            <img loading="lazy" src="assets/images/gallery/IMG-20210929-WA0015.jpg" alt=""><span class="tag">Award</span>
+                                            <img loading="lazy" src="assets/images/gallery/IMG-20210929-WA0015.jpg" alt="">
                                         </button>
                                         <button class="thumb" type="button" data-full="assets/images/gallery/IMG-20210929-WA0024.jpg" data-title="Award Photo III" data-tag="Award">
-                                            <img loading="lazy" src="assets/images/gallery/IMG-20210929-WA0024.jpg" alt=""><span class="tag">Award</span>
+                                            <img loading="lazy" src="assets/images/gallery/IMG-20210929-WA0024.jpg" alt="">
                                         </button>
                                     </div>
                                 </div>
@@ -2810,10 +3231,6 @@ Purchase:
                 })();
             </script>
         </section>
-
-
-
-
 
         <!-- start responsers section  -->
         <div class="row">

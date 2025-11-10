@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omar's Cosmic Adventure</title>
+  <!-- Google font for a playful look -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    /* Basic reset and box sizing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Nunito', sans-serif;
+      line-height: 1.5;
+      color: #ffffff;
+      background: linear-gradient(180deg, #0a0135 0%, #150246 50%, #0a0135 100%);
+      overflow-x: hidden;
+    }
+    h1, h2, h3 {
+      font-family: 'Fredoka One', cursive;
+    }
+    /* Navigation styling */
+    nav {
+      width: 100%;
+      background: rgba(0, 0, 50, 0.6);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav li {
+      margin: 0 15px;
+    }
+    nav a {
+      color: #f0eaff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffbc42;
+    }
+    /* Hero section */
+    header {
+      padding: 120px 20px 80px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #f9db61;
+      text-shadow: 0 0 10px rgba(255, 188, 66, 0.8);
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #e3e6f3;
+    }
+    /* Sections */
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 2.2rem;
+      color: #ffbc42;
+      text-align: center;
+    }
+    section p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: #f5f5f5;
+    }
+    /* Starfield background elements */
+    #starfield {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: twinkle ease-in-out infinite;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+    /* Favorites grid */
+    .favorites-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .favorite-item {
+      flex: 1 1 250px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .favorite-item h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #ffbc42;
+    }
+    /* Game section */
+    #game {
+      text-align: center;
+      color: #ffffff;
+    }
+    #game-container {
+      margin-top: 30px;
+      position: relative;
+      padding: 20px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.08);
+      display: inline-block;
+      backdrop-filter: blur(6px);
+      min-width: 280px;
+    }
+    /* Rocket and progress bar */
+    #progress-track {
+      position: relative;
+      width: 90%;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.3);
+      margin: 20px auto 30px;
+      border-radius: 3px;
+    }
+    #progress-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, #ffbc42, #ff6f61);
+      border-radius: 3px;
+      transition: width 0.5s ease;
+    }
+    #rocket {
+      font-size: 2rem;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      transition: left 0.5s ease;
+    }
+    #question-container {
+      margin-top: 10px;
+    }
+    #question {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    #options {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .option-btn {
+      padding: 10px 18px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #6226ee;
+      color: #fff;
+      transition: background 0.3s ease;
+    }
+    .option-btn:hover {
+      background: #783af7;
+    }
+    #game-message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    #start-game {
+      margin-top: 15px;
+      padding: 12px 22px;
+      font-size: 1rem;
+      background: #ff6f61;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    #start-game:hover {
+      background: #e05950;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-wrap: wrap;
+      }
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Starfield container for animated stars -->
+  <div id="starfield"></div>
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#favorites">Favorites</a></li>
+      <li><a href="#game">Space Game</a></li>
+    </ul>
+  </nav>
+  <!-- Hero section -->
+  <header>
+    <h1>Welcome to Omar's Cosmic Adventure!</h1>
+    <p>Journey through the universe with Omar as he explores his favorite things.</p>
+  </header>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Omar</h2>
+    <p>Omar Mahmoud is a curious and energetic 10‑year‑old boy who attends Anglo American School in Cairo. He loves discovering new things about the world around him and beyond. Whether it’s learning about the planets, drawing colorful pictures, or building with Legos, Omar’s imagination never stops.</p>
+    <p>At school, he enjoys science and math, and he often dreams of becoming an astronaut or an engineer so he can build rockets that soar beyond the stars. His cheerful personality and love for adventure make every day an exciting journey!</p>
+  </section>
+  <!-- Hobbies Section -->
+  <section id="hobbies">
+    <h2>Hobbies & Lifestyle</h2>
+    <p>When Omar isn’t busy with schoolwork, you can find him playing soccer with his friends or zooming around the house pretending to be Sonic the Hedgehog. He loves drawing cartoon characters, reading comics, and solving puzzles.</p>
+    <p>Omar also enjoys spending time outdoors, exploring nature, and going on family trips. With a heart full of curiosity and a mind ready for adventure, there’s never a dull moment in Omar’s life!</p>
+  </section>
+  <!-- Favorites Section -->
+  <section id="favorites">
+    <h2>Favorites</h2>
+    <div class="favorites-grid">
+      <div class="favorite-item">
+        <h3>Favorite Book</h3>
+        <p>Omar’s favorite book is <em>“The Wild Robot”</em> by Peter Brown. He loves how Roz the robot learns to survive in the wild and make friends with the animals on the island. The book sparks his imagination about friendly robots and adventures in nature.</p>
+      </div>
+      <div class="favorite-item">
+        <h3>Favorite Characters</h3>
+        <p>He is a big fan of Sonic the Hedgehog and the Minions. Sonic’s speed and bravery inspire Omar to run fast and be heroic, while the silly antics of the Minions always make him laugh.</p>
+      </div>
+      <div class="favorite-item">
+        <h3>Favorite Quote</h3>
+        <p>“To infinity and beyond!” – this famous line from Buzz Lightyear sums up Omar’s spirit of exploration and adventure.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Game Section -->
+  <section id="game">
+    <h2>Space Mission Game</h2>
+    <p>Help Omar’s rocket reach the end of its journey by answering fun questions! Each correct answer moves the rocket forward through the stars.</p>
+    <div id="game-container" style="display:none;">
+      <div id="progress-track">
+        <div id="progress-bar"></div>
+        <div id="rocket">🚀</div>
+      </div>
+      <div id="question-container">
+        <p id="question"></p>
+        <div id="options"></div>
+      </div>
+      <p id="game-message"></p>
+    </div>
+    <button id="start-game">Start Mission</button>
+  </section>
+  <!-- JavaScript for interactive elements -->
+  <script>
+    // Generate starfield for a magical space background
+    function createStars() {
+      const starfield = document.getElementById('starfield');
+      // create 120 stars with varying sizes and animations
+      for (let i = 0; i < 120; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        const size = Math.random() * 3 + 1; // between 1px and 4px
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.animationDuration = `${Math.random() * 5 + 3}s`;
+        starfield.appendChild(star);
+      }
+    }
+    createStars();
+
+    // Game variables
+    const questions = [
+      {
+        q: 'Which planet is known as the Red Planet?',
+        opts: ['Earth', 'Mars', 'Jupiter', 'Venus'],
+        answer: 1
+      },
+      {
+        q: 'What is 8 × 7?',
+        opts: ['54', '56', '64', '58'],
+        answer: 1
+      },
+      {
+        q: 'Which animal is known for building dams?',
+        opts: ['Beaver', 'Tiger', 'Elephant', 'Rabbit'],
+        answer: 0
+      },
+      {
+        q: 'What force pulls objects toward the Earth?',
+        opts: ['Magnetism', 'Gravity', 'Friction', 'Electricity'],
+        answer: 1
+      },
+      {
+        q: 'Which hero runs at the speed of sound?',
+        opts: ['Superman', 'Spiderman', 'Sonic the Hedgehog', 'Batman'],
+        answer: 2
+      }
+    ];
+    let currentIndex = 0;
+    let correctCount = 0;
+    const gameContainer = document.getElementById('game-container');
+    const startBtn = document.getElementById('start-game');
+    const questionEl = document.getElementById('question');
+    const optionsEl = document.getElementById('options');
+    const messageEl = document.getElementById('game-message');
+    const progressBar = document.getElementById('progress-bar');
+    const rocket = document.getElementById('rocket');
+
+    function showQuestion(index) {
+      // display question text
+      questionEl.textContent = questions[index].q;
+      // remove previous options
+      optionsEl.innerHTML = '';
+      // create buttons for each option
+      questions[index].opts.forEach((option, i) => {
+        const btn = document.createElement('button');
+        btn.classList.add('option-btn');
+        btn.textContent = option;
+        btn.onclick = () => selectAnswer(i);
+        optionsEl.appendChild(btn);
+      });
+    }
+
+    function selectAnswer(choice) {
+      const question = questions[currentIndex];
+      if (choice === question.answer) {
+        correctCount++;
+        messageEl.textContent = 'Correct! 🚀';
+        messageEl.style.color = '#7fffd4';
+      } else {
+        messageEl.textContent = 'Oops! Try the next one.';
+        messageEl.style.color = '#ff6f61';
+      }
+      // update progress
+      const progressPercent = (correctCount / questions.length) * 100;
+      progressBar.style.width = `${progressPercent}%`;
+      rocket.style.left = `calc(${progressPercent}% - 10px)`;
+      currentIndex++;
+      // if more questions remain, show next after a short delay
+      if (currentIndex < questions.length) {
+        setTimeout(() => {
+          messageEl.textContent = '';
+          showQuestion(currentIndex);
+        }, 1000);
+      } else {
+        // game over
+        setTimeout(() => {
+          messageEl.textContent = 'Mission complete! You helped the rocket reach its destination! 🎉';
+          messageEl.style.color = '#ffde7d';
+          // disable options
+          optionsEl.innerHTML = '';
+          startBtn.textContent = 'Play Again';
+          startBtn.style.display = 'inline-block';
+        }, 800);
+      }
+    }
+
+    // Initialize and start the game
+    function startGame() {
+      currentIndex = 0;
+      correctCount = 0;
+      progressBar.style.width = '0%';
+      rocket.style.left = '-10px';
+      messageEl.textContent = '';
+      gameContainer.style.display = 'block';
+      startBtn.style.display = 'none';
+      showQuestion(currentIndex);
+    }
+    startBtn.addEventListener('click', startGame);
+  </script>
+</body>
+</html>

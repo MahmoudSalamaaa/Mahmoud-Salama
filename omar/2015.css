@@ -1,0 +1,340 @@
+/* ========== GLOBAL THEME VARIABLES ========== */
+:root {
+    --brand-blue: #4f8aff;
+    --brand-gold: #fcd34d;
+    --bg-dark: #0a0f2b;
+    --text-light: #e4e6eb;
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --blur: 15px;
+}
+
+/* Dark Mode Preferences */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-dark: #06091a;
+        --glass-bg: rgba(255, 255, 255, 0.06);
+        --glass-border: rgba(255, 255, 255, 0.12);
+    }
+}
+
+/* ========== GLOBAL RESETS ========== */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--text-light);
+    background: var(--bg-dark);
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: "Orbitron", sans-serif;
+    color: var(--brand-gold);
+    letter-spacing: 0.5px;
+}
+
+.text-gold {
+    color: var(--brand-gold);
+}
+
+section {
+    position: relative;
+    padding: 80px 0;
+    z-index: 2;
+}
+
+.section-title {
+    color: var(--brand-gold);
+    font-weight: 700;
+}
+
+/* ========== STARFIELD CANVAS ========== */
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: transparent;
+}
+
+/* ========== PRELOADER ========== */
+#preloader {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at center, #0b1030, #06091a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.8s ease;
+}
+
+    #preloader.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+.loader-title {
+    color: var(--brand-gold);
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 0 10px var(--brand-gold);
+    animation: fadeInText 2s ease infinite alternate;
+}
+
+.loader-stars span {
+    display: inline-block;
+    font-size: 1.5rem;
+    animation: twinkle 1.5s infinite alternate;
+}
+
+    .loader-stars span:nth-child(2) {
+        animation-delay: 0.3s;
+    }
+
+    .loader-stars span:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+@keyframes fadeInText {
+    from {
+        opacity: 0.6;
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0.3;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+    .navbar .nav-link {
+        color: var(--text-light);
+        margin: 0 10px;
+        transition: color 0.3s;
+    }
+
+        .navbar .nav-link:hover {
+            color: var(--brand-gold);
+        }
+
+/* ========== HERO SECTION ========== */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(var(--blur));
+    border-radius: 1rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+    .glass:hover {
+        transform: translateY(-5px);
+    }
+
+.btn-gold {
+    background-color: var(--brand-gold);
+    color: #111;
+    font-weight: 600;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+    .btn-gold:hover {
+        background-color: #ffe066;
+    }
+
+.btn-outline-gold {
+    border: 2px solid var(--brand-gold);
+    color: var(--brand-gold);
+}
+
+    .btn-outline-gold:hover {
+        background-color: var(--brand-gold);
+        color: #111;
+    }
+
+/* ========== GAME CANVAS PLACEHOLDER ========== */
+.game-canvas {
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ========== CARDS & SECTIONS ========== */
+.section.glass {
+    margin-top: 60px;
+    padding: 50px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+    ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+/* ========== FRIENDS & PARENTS CARDS ========== */
+.parent-card, .friend-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(var(--blur));
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .parent-card:hover, .friend-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+    }
+
+/* ========== DREAMS SECTION ========== */
+.asmarto {
+    font-family: "Orbitron", sans-serif;
+    color: var(--brand-gold);
+    text-shadow: 0 0 15px #fcd34d, 0 0 25px #ffe599;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+}
+
+/* ========== GALLERY ========== */
+.gallery-grid img {
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+    .gallery-grid img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    }
+
+.gallery-img {
+    cursor: pointer;
+}
+
+/* ========== FOOTER ========== */
+.footer-section {
+    background: rgba(0, 0, 20, 0.4);
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    position: relative;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--brand-gold);
+    color: #111;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    display: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .back-to-top:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 25px rgba(255, 230, 100, 0.5);
+    }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .section.glass {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+/* ========== MOBILE GAME CONTROLS ========== */
+.mobile-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+    .mobile-controls .btn {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        border: 2px solid var(--brand-gold);
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--brand-gold);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.15);
+    }
+
+        .mobile-controls .btn:hover,
+        .mobile-controls .btn:active {
+            background: var(--brand-gold);
+            color: #111;
+            box-shadow: 0 0 20px rgba(255, 230, 100, 0.4);
+            transform: scale(1.05);
+        }
+
+/* Hide mobile controls on larger screens */
+@media (min-width: 768px) {
+    .mobile-controls {
+        display: none;
+    }
+}

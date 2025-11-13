@@ -132,9 +132,10 @@ function resizeGames() {
     asteroidGameCanvas.height = 220;
     starCollectorCanvas.height = 220;
 
-    // recenter players on resize
-    playerA.reset();
-    playerS.reset();
+    if (playerA && playerS) {
+        playerA.reset();
+        playerS.reset();
+    }
 }
 window.addEventListener("resize", resizeGames);
 
@@ -171,13 +172,16 @@ const playerS = new Player(ctxS, "#fcd34d");
 
 resizeGames();
 
-/* ========== DIFFICULTY CONFIGURATIONS ========== */
+/* ========== DIFFICULTY CONFIGURATIONS (5 LEVELS) ========== */
+// Asteroid game
 const ASTEROID_LEVELS = {
-    easy: { spawnRate: 0.02, speed: 2.0, lives: 7 },
-    normal: { spawnRate: 0.03, speed: 2.5, lives: 5 },
-    hard: { spawnRate: 0.045, speed: 3.5, lives: 3 },
+    kid: { label: "Kid", spawnRate: 0.015, speed: 1.6, lives: 8 },
+    easy: { label: "Easy", spawnRate: 0.02, speed: 2.0, lives: 7 },
+    normal: { label: "Normal", spawnRate: 0.03, speed: 2.7, lives: 5 },
+    hard: { label: "Hard", spawnRate: 0.045, speed: 3.5, lives: 3 },
+    insane: { label: "Insane", spawnRate: 0.06, speed: 4.2, lives: 2 },
 };
-let asteroidLevel = "easy";
+let asteroidLevel = "kid";
 let asteroidConfig = ASTEROID_LEVELS[asteroidLevel];
 
 function setAsteroidDifficulty(level) {
@@ -185,12 +189,15 @@ function setAsteroidDifficulty(level) {
     asteroidConfig = ASTEROID_LEVELS[level];
 }
 
+// Star collector game
 const STAR_LEVELS = {
-    easy: { starSpawn: 0.09, asteroidSpawn: 0.015, starSpeed: 1.6, asteroidSpeed: 2.5, winScore: 40, penalty: 1 },
-    normal: { starSpawn: 0.07, asteroidSpawn: 0.02, starSpeed: 1.8, asteroidSpeed: 2.8, winScore: 50, penalty: 2 },
-    hard: { starSpawn: 0.06, asteroidSpawn: 0.03, starSpeed: 2.2, asteroidSpeed: 3.2, winScore: 70, penalty: 3 },
+    kid: { label: "Kid", starSpawn: 0.1, asteroidSpawn: 0.01, starSpeed: 1.4, asteroidSpeed: 2.2, winScore: 30, penalty: 1 },
+    easy: { label: "Easy", starSpawn: 0.09, asteroidSpawn: 0.015, starSpeed: 1.6, asteroidSpeed: 2.5, winScore: 40, penalty: 1 },
+    normal: { label: "Normal", starSpawn: 0.07, asteroidSpawn: 0.02, starSpeed: 1.8, asteroidSpeed: 2.8, winScore: 50, penalty: 2 },
+    hard: { label: "Hard", starSpawn: 0.06, asteroidSpawn: 0.03, starSpeed: 2.2, asteroidSpeed: 3.2, winScore: 70, penalty: 3 },
+    insane: { label: "Insane", starSpawn: 0.055, asteroidSpawn: 0.04, starSpeed: 2.6, asteroidSpeed: 3.6, winScore: 90, penalty: 4 },
 };
-let starLevel = "easy";
+let starLevel = "kid";
 let starConfig = STAR_LEVELS[starLevel];
 
 function setStarDifficulty(level) {
@@ -198,32 +205,34 @@ function setStarDifficulty(level) {
     starConfig = STAR_LEVELS[level];
 }
 
-/* Helper to create difficulty buttons */
-function createDifficultyButtons(container, onChange, defaultLevel) {
+/* Helper to create difficulty buttons (multi-level) */
+function createDifficultyButtons(container, levelsConfig, defaultLevel, onChange) {
     if (!container) return;
     const wrapper = document.createElement("div");
     wrapper.className = "difficulty-controls mt-2";
-    wrapper.innerHTML = `
-        <span class="me-2 fw-bold text-light small">Difficulty:</span>
-        <button class="btn btn-sm btn-outline-gold me-1" data-level="easy">Easy</button>
-        <button class="btn btn-sm btn-outline-gold me-1" data-level="normal">Normal</button>
-        <button class="btn btn-sm btn-outline-gold" data-level="hard">Hard</button>
-    `;
+    wrapper.innerHTML = `<span class="me-2 fw-bold text-light small">Difficulty:</span>`;
     container.appendChild(wrapper);
 
-    const buttons = wrapper.querySelectorAll("button[data-level]");
-    buttons.forEach((btn) => {
-        if (btn.dataset.level === defaultLevel) btn.classList.add("active");
+    const levels = Object.keys(levelsConfig); // ["kid","easy","normal","hard","insane"]
+    levels.forEach((lvl) => {
+        const btn = document.createElement("button");
+        btn.className = "btn btn-sm btn-outline-gold me-1";
+        btn.dataset.level = lvl;
+        btn.textContent = levelsConfig[lvl].label;
+        if (lvl === defaultLevel) btn.classList.add("active");
         btn.addEventListener("click", () => {
-            buttons.forEach((b) => b.classList.remove("active"));
+            wrapper.querySelectorAll("button[data-level]").forEach((b) =>
+                b.classList.remove("active")
+            );
             btn.classList.add("active");
-            onChange(btn.dataset.level);
+            onChange(lvl);
         });
+        wrapper.appendChild(btn);
     });
 }
 
-createDifficultyButtons(asteroidGameContainer, setAsteroidDifficulty, asteroidLevel);
-createDifficultyButtons(starCollectorContainer, setStarDifficulty, starLevel);
+createDifficultyButtons(asteroidGameContainer, ASTEROID_LEVELS, asteroidLevel, setAsteroidDifficulty);
+createDifficultyButtons(starCollectorContainer, STAR_LEVELS, starLevel, setStarDifficulty);
 
 /* ========== ASTEROID GAME (DODGE) ========== */
 let asteroids = [];
@@ -292,6 +301,7 @@ function gameLoopA() {
     ctxA.font = "16px Inter";
     ctxA.fillText(`Lives: ${lives} | Score: ${scoreA}`, 10, 22);
     ctxA.fillText(`Use ⬅️ ➡️ or mouse to move`, 10, 42);
+    ctxA.fillText(`Level: ${ASTEROID_LEVELS[asteroidLevel].label}`, 10, 62);
 
     requestAnimationFrame(gameLoopA);
 }
@@ -375,6 +385,7 @@ function gameLoopS() {
     ctxS.fillText(`Score: ${scoreS} | Stars: ${collected}⭐`, 10, 22);
     ctxS.fillText(`Reach ${starConfig.winScore} points to win!`, 10, 42);
     ctxS.fillText(`Use ⬅️ ➡️ or mouse to move`, 10, 62);
+    ctxS.fillText(`Level: ${STAR_LEVELS[starLevel].label}`, 10, 82);
 
     if (scoreS >= starConfig.winScore) {
         runningS = false;

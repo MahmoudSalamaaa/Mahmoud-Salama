@@ -1,197 +1,230 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Omar Mahmoud</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="2015.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omar Mahmoud</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="2015.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Make difficulty active button visible */
+        .difficulty-controls button.active {
+            background-color: #fbbf24;
+            color: #000;
+            border-color: #fbbf24;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- 🌠 Starfield Canvas -->
-  <canvas id="starfield"></canvas>
+    <!-- 🌠 Starfield Canvas -->
+    <canvas id="starfield"></canvas>
 
-  <!-- ✨ Preloader -->
-  <div id="preloader">
-    <div class="loader-content">
-      <h1 class="loader-title">Omar Mahmoud Here!</h1>
-      <div class="loader-stars">
-        <span>⭐</span><span>🌟</span><span>✨</span>
-      </div>
+    <!-- ✨ Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 class="loader-title">Omar Mahmoud Here!</h1>
+            <div class="loader-stars">
+                <span>⭐</span><span>🌟</span><span>✨</span>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- 🧭 Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-gold" href="#hero">OMAR</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
-          <li class="nav-item"><a class="nav-link" href="#parents">Parents</a></li>
-          <li class="nav-item"><a class="nav-link" href="#friends">Friends</a></li>
-          <li class="nav-item"><a class="nav-link" href="#celebrities">Celebrities</a></li>
-          <li class="nav-item"><a class="nav-link" href="#dreams">Dreams</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+    <!-- 🧭 Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-gold" href="#hero">OMAR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#parents">Parents</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#friends">Friends</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#celebrities">Celebrities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dreams">Dreams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🪩 Hero -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center text-center hero-section">
+        <div class="glass p-5 rounded-4">
+            <p class="display-4 fw-bold mb-3">You have arrived to 🥁🥁🥁 🌌</p>
+            <h1 class="lead mb-4">Omar Mahmoud's Website!</h1>
+            <a href="#games" class="btn btn-gold btn-lg px-4">Start Adventure 🚀</a>
+        </div>
+    </section>
+
+    <!-- 🕹️ Game Section -->
+    <section id="games" class="container py-5 text-center">
+        <h2 class="section-title">🎮 Choose Your Game Mode</h2>
+        <div class="row mt-4 g-4">
+            <div class="col-md-6">
+                <div class="glass p-4 rounded-4">
+                    <h3>🚀 Dodge the Asteroids</h3>
+                    <p>Avoid falling asteroids and survive as long as you can!</p>
+                    <button class="btn btn-outline-gold" id="startAsteroids">Play Now</button>
+
+                    <!-- Difficulty buttons for Asteroid game -->
+                    <div class="difficulty-controls mt-2 small">
+                        <span class="me-2 fw-bold text-light">Difficulty:</span>
+                        <button class="btn btn-sm btn-outline-gold me-1 active" data-game="asteroid" data-level="kid">Kid</button>
+                        <button class="btn btn-sm btn-outline-gold me-1" data-game="asteroid" data-level="easy">Easy</button>
+                        <button class="btn btn-sm btn-outline-gold me-1" data-game="asteroid" data-level="normal">Normal</button>
+                        <button class="btn btn-sm btn-outline-gold me-1" data-game="asteroid" data-level="hard">Hard</button>
+                        <button class="btn btn-sm btn-outline-gold" data-game="asteroid" data-level="insane">Insane</button>
+                    </div>
+
+                    <div id="asteroidGame" class="game-canvas mt-3"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="glass p-4 rounded-4">
+                    <h3>⭐ Star Collector</h3>
+                    <p>Collect golden stars and reach the target score to win!</p>
+                    <button class="btn btn-outline-gold" id="startStars">Play Now</button>
+
+                    <!-- Difficulty buttons for Star Collector -->
+                    <div class="difficulty-controls mt-2 small">
+                        <span class="me-2 fw-bold text-light">Difficulty:</span>
+                        <button class="btn btn-sm btn-outline-gold me-1 active" data-game="stars" data-level="kid">Kid</button>
+                        <button class="btn btn-sm btn-outline-gold me-1" data-game="stars" data-level="easy">Easy</button>
+                        <button class="btn btn-sm btn-outline-gold me-1" data-game="stars" data-level="normal">Normal</button>
+                        <button class="btn btn-sm btn-outline-gold me-1" data-game="stars" data-level="hard">Hard</button>
+                        <button class="btn btn-sm btn-outline-gold" data-game="stars" data-level="insane">Insane</button>
+                    </div>
+
+                    <div id="starCollectorGame" class="game-canvas mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 👦 About -->
+    <section id="about" class="container section glass">
+        <h2>👦 About Me</h2>
+        <p>Hi! I’m <strong>Omar Mahmoud</strong>, a 10-year-old explorer who loves technology, space, and creative ideas. I believe curiosity can change the world! 💡</p>
+        <p>I dream of building amazing apps and helpful tools that make life better for everyone 🌍✨</p>
+    </section>
+
+    <!-- 📖 Education -->
+    <section id="education" class="container section glass">
+        <h2>📚 My Present Education</h2>
+        <p>I study at <strong>Anglo American School</strong> in Egypt. My favorite subjects are Physical Education, Music, and Computer Studies. Our teachers make learning fun and creative! 🎵⚽💻</p>
+    </section>
+
+    <!-- 🏫 Schools -->
+    <section id="schools" class="container section glass">
+        <h2>📕 My Previous Education/Schools</h2>
+        <ul>
+            <li><strong>Muscat, Oman</strong> – The Egyptian School. Begin: KG1 👶 [2019-2020] End: KG2 [2020-2021] (I was homeschooled in KG2 because of COVID-19/Coronavirus 🦠)</li>
+            <li><strong>El Shorouk, Egypt</strong> – Amjad School. Begin: Primary 1 🧒 [2021-2022] End: Primary 2 [2022-2023]</li>
+            <li><strong>Maadi, Egypt</strong> – Orman Smart School (simply: OSS). Begin: Primary 3 [2023] End: Primary 3 [2024]</li>
+            <li><strong>New Capital, Egypt</strong> – Anglo American School. Begin: Grade 4 [2024-2025] Present: Grade 5 [2025-2026]</li>
         </ul>
-      </div>
-    </div>
-  </nav>
+    </section>
 
-  <!-- 🪩 Hero -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center text-center hero-section">
-    <div class="glass p-5 rounded-4">
-      <p="display-4 fw-bold mb-3">You have arrived to 🥁🥁🥁 🌌<p>
-      <h1 class="lead mb-4">Omar Mahmoud's Website! </h1>
-      <a href="#games" class="btn btn-gold btn-lg px-4">Start Adventure 🚀</a>
-    </div>
-  </section>
+    <!-- 🎨 Hobbies -->
+    <section id="hobbies" class="container section glass">
+        <h2>🎨 My Hobbies</h2>
+        <ul>
+            <li>🎮 Video Games – exploring new worlds and adventures.</li>
+            <li>💻 Coding – creating mini games and apps.</li>
+            <li>🎵 Music – listening and making rhythms that spark ideas.</li>
+            <li>🎥 YouTube – watching videos from YouTubers I like, especially <strong>26mph</strong> and <strong>Dylan Grogan</strong>!</li>
+        </ul>
+    </section>
 
-  <!-- 🕹️ Game Section -->
-  <section id="games" class="container py-5 text-center">
-    <h2 class="section-title">🎮 Choose Your Game Mode</h2>
-    <div class="row mt-4 g-4">
-      <div class="col-md-6">
-        <div class="glass p-4 rounded-4">
-          <h3>🚀 Dodge the Asteroids</h3>
-          <p>Avoid falling asteroids and survive as long as you can!</p>
-          <button class="btn btn-outline-gold" id="startAsteroids">Play Now</button>
-          <div id="asteroidGame" class="game-canvas mt-3"></div>
+    <!-- 👨‍👩‍👦 Parents -->
+    <section id="parents" class="container section glass">
+        <h2>👨‍👩‍👦 My Parents</h2>
+        <div class="row g-4 text-center">
+            <div class="col-md-6">
+                <div class="parent-card p-4 rounded-4">
+                    <h3>👨 Mahmoud Salama</h3>
+                    <p><strong>Software Engineer 💻</strong></p>
+                    <p>My dad teaches me about technology and coding and helps me build cool projects!</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="parent-card p-4 rounded-4">
+                    <h3>👩 Dina Hassan</h3>
+                    <p><strong>Doctor 🩺</strong></p>
+                    <p>My mom inspires me to be kind and help others every day ❤️</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="glass p-4 rounded-4">
-          <h3>⭐ Star Collector</h3>
-          <p>Collect golden stars and reach 100 points to win!</p>
-          <button class="btn btn-outline-gold" id="startStars">Play Now</button>
-          <div id="starCollectorGame" class="game-canvas mt-3"></div>
+    </section>
+
+    <!-- 🧑‍🤝‍🧑 Friends -->
+    <section id="friends" class="container section glass">
+        <h2>🧑‍🤝‍🧑 My Friends</h2>
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="friend-card p-4 rounded-4">
+                    <h3>😎 Abdullah Mohammed</h3>
+                    <p>Always ready for fun and games! 🎮</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="friend-card p-4 rounded-4">
+                    <h3>🤩 Malik Emad</h3>
+                    <p>Creative and curious about everything 🔭</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="friend-card p-4 rounded-4">
+                    <h3>😊 Younes Abdallah</h3>
+                    <p>My neighbor and one of my best friends! 🚴⚽</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 👦 About -->
-  <section id="about" class="container section glass">
-    <h2>👦 About Me</h2>
-    <p>Hi! I’m <strong>Omar Mahmoud</strong>, a 10-year-old explorer who loves technology, space, and creative ideas. I believe curiosity can change the world! 💡</p>
-    <p>I dream of building amazing apps and helpful tools that make life better for everyone 🌍✨</p>
-  </section>
-
-  <!-- 📖 Education -->
-  <section id="education" class="container section glass">
-    <h2>📚 My Present Education</h2>
-    <p>I study at <strong>Anglo American School</strong> in Egypt. My favorite subjects are Physical Education, Music, and Computer Studies. Our teachers make learning fun and creative! 🎵⚽💻</p>
-  </section>
-
-   <!-- 🏫 Schools -->
-   <section id="schools" class="container section glass">
-    <h2>📕 My Previous Education/Schools</h2>
-       <ul>
-        <li><strong>Muscat, Oman</strong> The Egyptian School. Begin: KG1 👶 [2019-2020] End: KG2 [2020-2021] (I was homeschooled in KG2 because of COVID-19/Coronavirus 🦠)
-        <li><strong>El Shorouk, Egypt</strong> Amjad School. Begin: Primary 1 🧒 [2021-2022] End: Primary 2 [2022-2023]
-        <li><strong>Maadi, Egypt</strong> Orman Smart School (simply: OSS). Begin: Primary 3 [2023] End: Primary 3 [2024]
-        <li><strong>New Capital, Egypt</strong> Anglo American School. Begin: Grade 4 [2024-2025] Present: Grade 5 [2025-2026]
-   </ul>
-           </section>
-
-  <!-- 🎨 Hobbies -->
-  <section id="hobbies" class="container section glass">
-    <h2>🎨 My Hobbies</h2>
-    <ul>
-      <li>🎮 Video Games – exploring new worlds and adventures.</li>
-      <li>💻 Coding – creating mini games and apps.</li>
-      <li>🎵 Music – listening and making rhythms that spark ideas.</li>
-      <li>🎥 YouTube – Watching videos from YouTubers I like, and I like <strong>26mph</strong><li> and </strong>Dylan Grogan<strong>!
-
-    </ul>
-  </section>
-
-  <!-- 👨‍👩‍👦 Parents -->
-  <section id="parents" class="container section glass">
-    <h2>👨‍👩‍👦 My Parents</h2>
-    <div class="row g-4 text-center">
-      <div class="col-md-6">
-        <div class="parent-card p-4 rounded-4">
-          <h3>👨 Mahmoud Salama</h3>
-          <p><strong>Software Engineer 💻</strong></p>
-          <p>My dad teaches me about technology and coding and helps me build cool projects!</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="parent-card p-4 rounded-4">
-          <h3>👩 Dina Hassan</h3>
-          <p><strong>Doctor 🩺</strong></p>
-          <p>My mom inspires me to be kind and help others every day ❤️</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 🧑‍🤝‍🧑 Friends -->
-  <section id="friends" class="container section glass">
-    <h2>🧑‍🤝‍🧑 My Friends</h2>
-    <div class="row g-4 text-center">
-      <div class="col-md-4">
-        <div class="friend-card p-4 rounded-4">
-          <h3>😎 Abdullah Mohammed</h3>
-          <p>Always ready for fun and games! 🎮</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="friend-card p-4 rounded-4">
-          <h3>🤩 Malik Emad</h3>
-          <p>Creative and curious about everything 🔭</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="friend-card p-4 rounded-4">
-          <h3>😊 Younes Abdallah</h3>
-          <p>My neighbor and one of my best friends! 🚴⚽</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
     <!-- 🎤 Celebrities -->
     <section id="celebrities" class="container section glass">
-     <h2>My Favorite Celebrities</h2>
-     <ul>
-         <li>Hamza Namira (Born: November 1980) </li>
-         <li>Maher Zain (Born: 1980-1981)</li>
-     </ul>
-  </section>
+        <h2>My Favorite Celebrities</h2>
+        <ul>
+            <li>Hamza Namira (Born: November 1980)</li>
+            <li>Maher Zain (Born: 1980-1981)</li>
+        </ul>
+    </section>
 
-   <!-- 💭 Dreams -->
-  <section id="dreams" class="container section glass text-center">
-    <h2>💭 My Dreams</h2>
-    <p>I want to build a smart tech company called <strong class="asmarto">Asmarto</strong> 🚀 to make apps and tools that help people and spread creativity! 🌟</p>
-  </section>
+    <!-- 💭 Dreams -->
+    <section id="dreams" class="container section glass text-center">
+        <h2>💭 My Dreams</h2>
+        <p>I want to build a smart tech company called <strong class="asmarto">Asmarto</strong> 🚀 to make apps and tools that help people and spread creativity! 🌟</p>
+    </section>
 
-  <!-- 📸 Gallery -->
-  <section id="gallery" class="container section glass">
-    <h2>📸 My Gallery</h2>
-    <div class="row g-3 gallery-grid">
-      <div class="col-sm-6 col-md-4"><img src="images/omar/20251030_194107.jpg" alt="Family Day" class="img-fluid rounded-4 gallery-img"></div>
-      <div class="col-sm-6 col-md-4"><img src="images/omar/20251015_144933.jpg" alt="At School" class="img-fluid rounded-4 gallery-img"></div>
-      <div class="col-sm-6 col-md-4"><img src="images/omar/20250923_074854.jpg" alt="Fun Moments" class="img-fluid rounded-4 gallery-img"></div>
-    </div>
-  </section>
+    <!-- 📸 Gallery -->
+    <section id="gallery" class="container section glass">
+        <h2>📸 My Gallery</h2>
+        <div class="row g-3 gallery-grid">
+            <div class="col-sm-6 col-md-4"><img src="images/omar/20251030_194107.jpg" alt="Family Day" class="img-fluid rounded-4 gallery-img"></div>
+            <div class="col-sm-6 col-md-4"><img src="images/omar/20251015_144933.jpg" alt="At School" class="img-fluid rounded-4 gallery-img"></div>
+            <div class="col-sm-6 col-md-4"><img src="images/omar/20250923_074854.jpg" alt="Fun Moments" class="img-fluid rounded-4 gallery-img"></div>
+        </div>
+    </section>
 
-  <!-- 🌌 Footer -->
-  <footer class="footer-section text-center py-5">
-    <p class="mb-2">Thanks for seeing till now! Have a nice day ahead of you. Bye! ✨</p>
-    <p class="text-gold mb-0">— Omar Mahmoud 🚀 - ©️ All Copyrights Reserved.</p>
-    <button id="backToTop" class="back-to-top" title="Back to top">⬆️</button>
-  </footer>
+    <!-- 🌌 Footer -->
+    <footer class="footer-section text-center py-5">
+        <p class="mb-2">Thanks for seeing till now! Have a nice day ahead of you. Bye! ✨</p>
+        <p class="text-gold mb-0">— Omar Mahmoud 🚀 - ©️ All Copyrights Reserved.</p>
+        <button id="backToTop" class="back-to-top" title="Back to top">⬆️</button>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 🔥 MAIN SCRIPT (starfield + gallery + games) -->
+    
 </body>
 </html>

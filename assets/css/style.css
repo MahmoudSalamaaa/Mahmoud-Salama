@@ -1213,6 +1213,7 @@ transform: scale(1)!important;
 }
 .personal_details p.ps_designation {
     color: #b9b9b9;
+    font-size:14px;
 }
 
 span.title {

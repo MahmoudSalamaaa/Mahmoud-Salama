@@ -1427,7 +1427,7 @@
 
 #works .dlg {
     --accent: var(--all);
-    width: min(980px,92vw);
+    width: min(648px,72vw);
     max-height: 90vh;
     background: #fff;
     border-radius: 16px;
@@ -1446,7 +1446,7 @@
 #works .view {
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
+   /* justify-content: center;*/
     background: #fff
 }
 

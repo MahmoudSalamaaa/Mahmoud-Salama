@@ -3018,3 +3018,427 @@ img, video, canvas, svg {
         border: 1px solid #bae6fd;
         font-weight: 700;
     }
+
+/* ===== Scoped fixes for this section only ===== */
+#gallery .preview .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+#gallery .preview .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#gallery .pill {
+    display: inline-block;
+    padding: .35rem .6rem;
+    border-radius: 999px;
+    font-size: .8rem;
+    line-height: 1;
+}
+
+#gallery .preview .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    #gallery .preview .actions .btn {
+        appearance: none;
+        border: 1px solid var(--line, #e6e9f0);
+        background: #fff;
+        padding: .6rem .9rem;
+        border-radius: 12px;
+        line-height: 1;
+        font: inherit;
+        cursor: pointer;
+        min-width: 44px;
+        height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        writing-mode: horizontal-tb !important;
+        transform: none !important;
+    }
+
+        #gallery .preview .actions .btn.primary {
+            background: var(--brand, #06b6d4);
+            color: #fff;
+            border-color: transparent;
+            /* Some themes rotate CTAs; force horizontal here */
+            rotate: 0deg !important;
+            writing-mode: horizontal-tb !important;
+        }
+
+#gallery .preview .stage {
+    width: 100%;
+    aspect-ratio: 16/10;
+    background: #f5f7fb;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+#gallery #preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+    #gallery #preview-image.active {
+        opacity: 1;
+    }
+
+/* Accordion minor tweaks */
+#gallery .acc-header {
+    width: 100%;
+    text-align: left;
+    padding: 14px 16px;
+    border-radius: 14px;
+}
+
+#gallery .acc-item .thumbs {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+#gallery .thumb {
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    outline-offset: 2px;
+    width: 100%;
+}
+
+    #gallery .thumb img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+    }
+
+    #gallery .thumb .tag {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        padding: .2rem .45rem;
+        border-radius: 999px;
+        background: #111827;
+        color: #fff;
+        font-size: .7rem;
+        line-height: 1;
+    }
+
+/* Lightbox */
+#gallery .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.75);
+    display: none;
+    place-items: center;
+    z-index: 9999;
+    padding: 24px;
+}
+
+    #gallery .lightbox.open {
+        display: grid;
+    }
+
+#gallery #lb-img {
+    max-width: min(1100px, 96vw);
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    border-radius: 16px;
+}
+
+#gallery #lb-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    border: 0;
+    background: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+    #gallery .gallery-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 24px;
+    }
+
+    #gallery .acc-item .thumbs {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    /* #gallery .thumb img {
+                        height: 110px;
+                    }*/
+}
+
+/* ================================
+   HOBBIES SECTION
+================================ */
+.hobbies_section {
+    margin-top: 90px;
+}
+
+.hobbies_grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+}
+
+/* CARD BASE STYLE */
+.hobby_card {
+    background: #2b2d42;
+    border-radius: 16px;
+    padding: 30px 25px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+    transition: transform .35s ease, box-shadow .35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+    .hobby_card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 32px rgba(0,0,0,0.25);
+    }
+
+/* ICON CIRCLE */
+.hobby_icon {
+    width: 70px;
+    height: 70px;
+    margin: -10px auto 15px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .hobby_icon i {
+        font-size: 32px;
+        color: #fff;
+    }
+
+/* CARD TEXT */
+.hobby_card h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hobby_card p {
+    font-size: 14.5px;
+    margin-top: 10px;
+    line-height: 1.6;
+    opacity: .95;
+    color:white;
+}
+
+/* COLOR THEMES (using your website color palette) */
+.h1 {
+    background: linear-gradient(145deg, #06b6d4, #0891b2);
+}
+
+.h2 {
+    background: linear-gradient(145deg, #4caf50, #66bb6a);
+}
+
+.h3 {
+    background: linear-gradient(145deg, #ec4899, #ef5fa8);
+}
+
+.h4 {
+    background: linear-gradient(145deg, #2196f3, #21c1f3);
+}
+
+.h5 {
+    background: linear-gradient(145deg, #fb923c, #ffb74d);
+}
+
+.h6 {
+    background: linear-gradient(145deg, #9c27b0, #b560c3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hobby_card {
+        padding: 25px 20px;
+    }
+}
+/* === Enhanced Hobbies Section Styling === */
+.hobbies_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.hobby_card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 28px 22px;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.35s ease;
+    backdrop-filter: blur(6px);
+    position: relative;
+    overflow: hidden;
+}
+
+    .hobby_card:hover {
+        transform: translateY(-8px) scale(1.03);
+        border-color: rgba(255,255,255,0.20);
+        box-shadow: 0px 10px 40px rgba(0,0,0,0.25);
+    }
+
+.hobby_icon {
+    font-size: 36px;
+    margin-bottom: 18px;
+    color: var(--brand-500, #06b6d4);
+    text-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+}
+
+/* Colored Glow Variations */
+.h1:hover .hobby_icon {
+    color: #06b6d4;
+    text-shadow: 0 0 12px #06b6d4;
+}
+
+.h2:hover .hobby_icon {
+    color: #4f7cff;
+    text-shadow: 0 0 12px #4f7cff;
+}
+
+.h3:hover .hobby_icon {
+    color: #fb923c;
+    text-shadow: 0 0 12px #fb923c;
+}
+
+.h4:hover .hobby_icon {
+    color: #ec4899;
+    text-shadow: 0 0 12px #ec4899;
+}
+
+.h5:hover .hobby_icon {
+    color: #9c27b0;
+    text-shadow: 0 0 12px #9c27b0;
+}
+
+.h6:hover .hobby_icon {
+    color: #4caf50;
+    text-shadow: 0 0 12px #4caf50;
+}
+
+.h7:hover .hobby_icon {
+    color: #00c8da;
+    text-shadow: 0 0 12px #00c8da;
+}
+
+.h8:hover .hobby_icon {
+    color: #f06449;
+    text-shadow: 0 0 12px #f06449;
+}
+/* ========================= */
+/* HOBBIES SECTION */
+/* ========================= */
+
+.hobbies_section {
+    margin-top: 80px;
+}
+
+.hobby_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.hobby_card {
+    padding: 25px 20px;
+    border-radius: 14px;
+    color: #fff;
+    text-align: center;
+    background: #2b2d42;
+    box-shadow: 0 6px 18px rgba(0,0,0,.15);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+    .hobby_card i {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    .hobby_card h4 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+
+    .hobby_card p {
+        font-size: 14px;
+        opacity: 0.9;
+    }
+
+    /* Hover effect */
+    .hobby_card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 24px rgba(0,0,0,.20);
+    }
+
+/* Color variations matching your global palette */
+.h1 {
+    background-color: #06b6d4;
+}
+
+.h2 {
+    background-color: #ec4899;
+}
+
+.h3 {
+    background-color: #fb923c;
+}
+
+.h4 {
+    background-color: #9c27b0;
+}
+
+.h5 {
+    background-color: #4caf50;
+}
+
+.h6 {
+    background-color: #2196f3;
+}
+/* Extra colors for card 7 & 8 */
+.h7 {
+    background-color: #00bcd4;
+}
+/* cyan tone */
+.h8 {
+    background-color: #795548;
+}
+/* brown tone */

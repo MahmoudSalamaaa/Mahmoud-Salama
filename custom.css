@@ -3814,3 +3814,84 @@ img, video, canvas, svg {
         padding: 18px;
     }
 }
+/* ---------- HOW I THINK SECTION RESPONSIVE FIX ---------- */
+#think .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#think .col-lg-4,
+#think .col-lg-8 {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    #think .col-lg-4 {
+        width: 33.333%;
+    }
+
+    #think .col-lg-8 {
+        width: 66.666%;
+    }
+}
+
+#think .dt_think_card {
+    height: auto !important;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+#think img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* ---------- DIGITAL TRANSFORMATION PLAYBOOK RESPONSIVE FIX ---------- */
+#playbook .dt_intro_card {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 992px) {
+    #playbook .dt_intro_card {
+        width: auto;
+    }
+}
+
+#playbook .dt_playbook_intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+    #playbook .dt_playbook_intro .col-lg-5,
+    #playbook .dt_playbook_intro .col-lg-7 {
+        width: 100%;
+    }
+
+@media (min-width: 992px) {
+    #playbook .dt_playbook_intro .col-lg-5 {
+        width: 40%;
+    }
+
+    #playbook .dt_playbook_intro .col-lg-7 {
+        width: 60%;
+    }
+}
+
+/* Fix Playbook steps cards */
+#playbook .dt_step_card {
+    padding: 25px !important;
+    height: auto !important;
+    margin-bottom: 20px;
+}
+
+    #playbook .dt_step_card h3 {
+        font-size: 20px;
+    }
+
+#playbook img {
+    max-width: 100%;
+    height: auto;
+}

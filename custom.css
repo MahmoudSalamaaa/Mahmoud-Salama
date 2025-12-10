@@ -400,23 +400,23 @@
 }
 
 .bg-green {
-    background: linear-gradient(135deg, #4caf50, #66bb6a);
+    background: linear-gradient(135deg, #4caf50, #66bb6a) !important;
 }
 
 .bg-orange {
-    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    background: linear-gradient(135deg, #ff9800, #ffb74d) !important;
 }
 
 .bg-purple {
-    background: linear-gradient(135deg, #9c27b0, #b560c3);
+    background: linear-gradient(135deg, #9c27b0, #b560c3) !important;
 }
 
 .bg-red {
-    background: linear-gradient(135deg, #e53935, #ef5350);
+    background: linear-gradient(135deg, #e53935, #ef5350) !important;
 }
 
 .bg-teal {
-    background: linear-gradient(135deg, #009688, #26a69a);
+    background: linear-gradient(135deg, #009688, #26a69a) !important;
 }
 
 /* Specific solid colors for timeline icons */
@@ -3667,7 +3667,7 @@ img, video, canvas, svg {
 
 .cto_compact {
     background: #f8fafc;
-    padding:80px;
+    padding:70px;
 }
 
 .cto_box {
@@ -3895,133 +3895,3892 @@ img, video, canvas, svg {
     max-width: 100%;
     height: auto;
 }
-@media (max-width: 576px) {
-    #think .section_tagline {
-        font-size: 18px !important;
-        padding: 6px 14px !important;
-        line-height: 1.3;
-        display: inline-block;
-        margin-bottom: 10px;
+/* Compact CTO Operating System */
+.cto_os_compact {
+    padding: 70px;
+}
+
+.cto_header {
+    margin-bottom: 30px;
+}
+
+.cto_tagline {
+    background: #ffcd66;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.cto_title {
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 12px;
+    color: #374151;
+}
+
+/* Grid */
+.cto_grid {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 992px) {
+    .cto_grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 576px) {
-    #think h1.port_heading {
-        font-size: 26px !important;
-        line-height: 1.25 !important;
+    .cto_grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card */
+.cto_card {
+    padding: 18px 20px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    transition: 0.25s;
+}
+
+    .cto_card:hover {
+        transform: translateY(-4px);
+    }
+
+    .cto_card h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 12px 0;
+    }
+
+/* Icon */
+.cto_icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.bg-cyan {
+    background: #06b6d4;
+}
+
+.bg-orange {
+    background: #fb923c;
+}
+
+.bg-purple {
+    background: #9c27b0;
+}
+
+.bg-green {
+    background: #4caf50;
+}
+
+/* Lists */
+.cto_card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0 0;
+}
+
+.cto_card li {
+    font-size: 14px;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+    .cto_card li i {
+        color: #06b6d4;
+    }
+
+/* Steps */
+.cto_steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+    .cto_steps span {
+        background: #e0f7fa;
+        padding: 4px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+/* Layers */
+.cto_layers div {
+    margin: 6px 0;
+}
+
+.cto_layers strong {
+    font-size: 14px;
+}
+
+.cto_layers span {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Cases */
+.cto_cases div {
+    margin-bottom: 10px;
+}
+
+.cto_cases h4 {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.cto_cases p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+/* Architecture Blueprint Section */
+.arch_section {
+    background: #f8fafc;
+   /* padding-top: 80px;*/
+    /*padding-bottom: 100px;*/
+}
+
+.arch_intro {
+    max-width: 680px;
+    margin: 0 auto 40px auto;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.arch_grid {
+    margin-top: 30px;
+}
+
+/* Cards */
+.arch_card {
+    background: white;
+    border-radius: 18px;
+    padding: 28px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid transparent;
+    transition: all 0.35s ease;
+}
+
+    .arch_card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+        border-left: 6px solid var(--brand-500);
+    }
+
+/* Tag */
+.arch_tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #06b6d4, #4f46e5);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+    .arch_tag i {
+        margin-right: 6px;
+    }
+
+/* Card Text */
+.arch_card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.arch_card ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+    .arch_card ul li {
+        padding: 3px 0;
+        font-size: 15px;
+        opacity: 0.85;
+        line-height: 1.4;
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .arch_card {
+        padding: 22px;
+    }
+
+        .arch_card h3 {
+            font-size: 18px;
+        }
+}
+/* =======================
+   TECH-OS SECTION
+   ======================= */
+
+.techos_section {
+    background: linear-gradient(180deg, #f7fbff, #eef4ff);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* --------- TABS ---------- */
+.techos-tabs .nav-link {
+    border: none;
+    padding: 12px 22px;
+    margin: 0 8px;
+    font-weight: 600;
+    border-radius: 50px;
+    color: #0f172a;
+    background: #e2e8f0;
+    transition: 0.3s ease;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+    .techos-tabs .nav-link:hover {
+        transform: translateY(-2px);
+        background: #cbd5e1;
+    }
+
+    .techos-tabs .nav-link.active {
+        color: white;
+        transform: translateY(-2px);
+    }
+
+/* Unique tab colors */
+.tab-playbook.active {
+    background: #f06449 !important;
+}
+
+.tab-thinking.active {
+    background: #00c8da !important;
+}
+
+.tab-blueprint.active {
+    background: #9c27b0 !important;
+}
+
+.tab-cases.active {
+    background: #2196f3 !important;
+}
+
+/* ---------- CONTENT AREA ----------- */
+.techos-card {
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    animation: fadeIn 0.4s ease;
+}
+
+    .techos-card h3 {
+        font-size: 26px;
+        font-weight: 800;
+        margin-bottom: 18px;
+    }
+
+    .techos-card p {
+        font-size: 15px;
+        opacity: 0.9;
+        margin-bottom: 18px;
+    }
+
+/* ------- Unique Backgrounds ------- */
+
+.playbook-card {
+    border-left: 6px solid #f06449;
+}
+
+.thinking-card {
+    border-left: 6px solid #00c8da;
+    background: linear-gradient(145deg, #ffffff, #f0fbfc);
+}
+
+.blueprint-card {
+    border-left: 6px solid #9c27b0;
+    background: linear-gradient(145deg, #ffffff, #faf0ff);
+}
+
+.cases-card {
+    border-left: 6px solid #2196f3;
+    background: linear-gradient(145deg, #ffffff, #eef7ff);
+}
+
+/* -------- LIST STYLE -------- */
+
+.techos-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .techos-list li {
+        padding: 10px 0;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #0f172a;
+    }
+
+    .techos-list i {
+        color: #4caf50;
+        font-size: 16px;
+    }
+
+/* -------- THINKING GRID -------- */
+
+.thinking-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.t-item {
+    padding: 18px;
+    background: #ffffffaa;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.25s ease;
+}
+
+    .t-item i {
+        font-size: 22px;
+        margin-bottom: 8px;
+        color: #00aebf;
+    }
+
+    .t-item:hover {
+        transform: translateY(-4px);
+    }
+
+/* -------- BLUEPRINT FLOW -------- */
+
+.blueprint-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.bp-node {
+    padding: 12px 22px;
+    background: #ede9fe;
+    border: 2px solid #9c27b0;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #5b21b6;
+}
+
+/* -------- CASE GRID -------- */
+
+.case-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.case-item {
+    padding: 18px;
+    background: white;
+    border-radius: 14px;
+    border-left: 4px solid #2196f3;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.25s ease;
+}
+
+    .case-item:hover {
+        transform: translateY(-4px);
+    }
+
+/* -------- Animation -------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 991px) {
+    .thinking-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .case-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* ================================
+   Architecture Blueprint – Sub Section
+   ================================ */
+
+.blueprint-sub {
+    margin-top: 40px;
+}
+
+.bp_sub_title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.bp_sub_desc {
+    font-size: 15px;
+    opacity: .85;
+    margin-bottom: 30px;
+}
+
+/* ===== Layers ===== */
+
+.bp_layers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.bp_layer {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 22px 24px;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+    border-left: 5px solid #e2e8f0;
+    transition: .25s ease;
+}
+
+    .bp_layer:hover {
+        transform: translateY(-4px);
+    }
+
+    .bp_layer h4 {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+/* dots */
+.bp_dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_exp {
+    background: #00c8da;
+}
+
+.dot_svc {
+    background: #2196f3;
+}
+
+.dot_data {
+    background: #9c27b0;
+}
+
+.dot_ai {
+    background: #4caf50;
+}
+
+.dot_sec {
+    background: #f06449;
+}
+
+.bp_layer p {
+    opacity: .8;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.bp_layer ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+    .bp_layer ul li {
+        font-size: 14px;
+        opacity: .9;
+        margin-bottom: 4px;
+    }
+
+/* ===== Flow Diagram ===== */
+
+.bp_flow_map {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.bp_flow_node {
+    padding: 12px 20px;
+    border-radius: 14px;
+    font-weight: 700;
+    color: white;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+    .bp_flow_node.exp {
+        background: #00c8da;
+    }
+
+    .bp_flow_node.svc {
+        background: #2196f3;
+    }
+
+    .bp_flow_node.data {
+        background: #9c27b0;
+    }
+
+    .bp_flow_node.ai {
+        background: #4caf50;
+    }
+
+    .bp_flow_node.sec {
+        background: #f06449;
+    }
+
+/* Responsive */
+@media(max-width: 768px) {
+    .bp_layers {
+        grid-template-columns: 1fr;
+    }
+
+    .bp_flow_map {
+        flex-direction: column;
+    }
+}
+/* =========================================
+   Case Studies – Polished, Colorful Version
+   ========================================= */
+
+.cases-sub.refined {
+    margin-top: 40px;
+}
+
+.cs_title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.cs_desc {
+    font-size: 15px;
+    opacity: .85;
+    margin-bottom: 25px;
+}
+
+/* GRID */
+.cs_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* MINI CARDS */
+.cs_mini_card {
+    padding: 26px;
+    border-radius: 20px;
+    background: white;
+    color: #0f172a;
+    box-shadow: 0 10px 24px rgba(0,0,0,.06);
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+    .cs_mini_card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 30px rgba(0,0,0,.10);
+    }
+
+/* TOP ICON */
+.cs_icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+/* COLOR THEMES */
+.cs_orange .cs_icon {
+    background: #f06449;
+}
+
+.cs_blue .cs_icon {
+    background: #2196f3;
+}
+
+.cs_purple .cs_icon {
+    background: #9c27b0;
+}
+
+/* TITLE + TEXT */
+.cs_mini_card h4 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.cs_mini_card p {
+    font-size: 14px;
+    opacity: .85;
+    margin-bottom: 16px;
+}
+
+/* FOOTER METRICS */
+.cs_mini_footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .85;
+}
+
+    .cs_mini_footer span i {
+        margin-right: 6px;
+    }
+
+/* Responsive */
+@media (max-width: 992px) {
+    .cs_grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===========================
+   Compact Architecture Blueprint
+   =========================== */
+
+.blueprint-compact {
+    margin-top: 30px;
+}
+
+.bp_c_title {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+/* Compact grid */
+.bp_c_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.bp_c_item {
+    padding: 18px 20px;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .25s ease;
+}
+
+    .bp_c_item:hover {
+        transform: translateY(-4px);
+    }
+
+    /* Titles */
+    .bp_c_item h4 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .bp_c_item p {
+        font-size: 13px;
+        opacity: .9;
+        margin: 0;
+    }
+
+    /* GRADIENT COLORS */
+    .bp_c_item.exp {
+        background: linear-gradient(135deg, #00c8da, #009bb5);
+    }
+
+    .bp_c_item.svc {
+        background: linear-gradient(135deg, #2196f3, #1769aa);
+    }
+
+    .bp_c_item.data {
+        background: linear-gradient(135deg, #9c27b0, #6d1a7b);
+    }
+
+    .bp_c_item.ai {
+        background: linear-gradient(135deg, #4caf50, #2f7d32);
+    }
+
+    .bp_c_item.gov {
+        background: linear-gradient(135deg, #f06449, #c44a33);
+    }
+
+/* Responsive */
+@media(max-width: 992px) {
+    .bp_c_grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===========================
+   Operating Models – Compact Section
+   =========================== */
+
+.operating-models {
+    margin-top: 40px;
+}
+
+.op_title {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.op_desc {
+    font-size: 15px;
+    opacity: .85;
+    margin-bottom: 25px;
+}
+
+/* Grid */
+.op_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+/* Items */
+.op_item {
+    padding: 20px 22px;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 10px 24px rgba(0,0,0,.08);
+    transition: .25s ease;
+}
+
+    .op_item:hover {
+        transform: translateY(-4px);
+    }
+
+    .op_item h4 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .op_item p {
+        font-size: 13px;
+        opacity: .9;
+        margin: 0;
+        color:white;
+    }
+
+/* Color themes */
+.op_green {
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+}
+
+.op_blue {
+    background: linear-gradient(135deg, #2196f3, #1769aa);
+}
+
+.op_orange {
+    background: linear-gradient(135deg, #f06449, #c44a33);
+}
+
+.op_purple {
+    background: linear-gradient(135deg, #9c27b0, #6d1a7b);
+}
+
+.op_red {
+    background: linear-gradient(135deg, #e53935, #b71c1c);
+}
+
+/* Responsive */
+@media(max-width: 992px) {
+    .op_grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ======================================
+   Operating Models — Enhanced & Polished
+   ====================================== */
+
+.operating-models {
+    margin-top: 40px;
+}
+
+.op_title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.op_desc {
+    font-size: 15px;
+    opacity: .85;
+    margin-bottom: 28px;
+    max-width: 720px;
+}
+
+/* Grid */
+.op_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* Card */
+.op_item {
+    padding: 22px 24px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 12px 28px rgba(0,0,0,.12);
+    transition: .35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+    /* Glow highlight */
+    .op_item::after {
+        content: "";
+        position: absolute;
+        top: -40%;
+        right: -40%;
+        width: 220px;
+        height: 220px;
+        background: radial-gradient(circle, rgba(255,255,255,.25), transparent 65%);
+        border-radius: 50%;
+        opacity: .4;
+        transition: .5s ease;
+    }
+
+    .op_item:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px rgba(0,0,0,.20);
+    }
+
+        .op_item:hover::after {
+            transform: scale(1.3);
+        }
+
+    /* Titles */
+    .op_item h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .op_item p {
+        font-size: 13px;
+        opacity: .92;
+        margin: 0;
+        line-height: 1.45;
+    }
+
+/* ======================
+   Premium Gradient Sets
+   ====================== */
+
+/* Refresh of brand palette (better contrast + elevation) */
+
+.op_green {
+    background: linear-gradient(135deg, #00b36b, #008f55);
+}
+
+.op_blue {
+    background: linear-gradient(135deg, #3a7bff, #1e53d6);
+}
+
+.op_orange {
+    background: linear-gradient(135deg, #ff6a3d, #d4451c);
+}
+
+.op_purple {
+    background: linear-gradient(135deg, #b14bff, #7f2cd4);
+}
+
+.op_red {
+    background: linear-gradient(135deg, #ff4e50, #c61c22);
+}
+
+/* Responsive */
+@media(max-width: 992px) {
+    .op_grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =======================
+   TECH-OS SECTION
+   ======================= */
+
+.techos_section {
+    background: linear-gradient(180deg, #f7fbff, #eef4ff);
+}
+
+/* TAB PILLS */
+
+.techos-tabs {
+    border-bottom: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+    .techos-tabs .nav-link {
+        border: none;
+        padding: 10px 18px;
+        margin: 0 4px;
+        font-weight: 600;
+        border-radius: 999px;
+        color: #0f172a;
+        background: #e2e8f0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: 0.25s ease;
+    }
+
+        .techos-tabs .nav-link i {
+            font-size: 14px;
+        }
+
+        .techos-tabs .nav-link:hover {
+            transform: translateY(-2px);
+            background: #cbd5e1;
+        }
+
+        /* Active states with distinct colors */
+
+        .techos-tabs .nav-link.active {
+            color: #ffffff;
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.25);
+        }
+
+.tab-playbook.active {
+    background: #f06449 !important;
+}
+
+.tab-thinking.active {
+    background: #00c8da !important;
+}
+
+.tab-blueprint.active {
+    background: #9c27b0 !important;
+}
+
+.tab-cases.active {
+    background: #2196f3 !important;
+}
+
+.tab-operating.active {
+    background: #4caf50 !important;
+}
+
+/* CARD WRAPPER */
+
+.techos-card {
+    border-radius: 24px;
+    padding: 32px 28px;
+    background: #ffffff;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+    margin-bottom: 10px;
+}
+
+/* Sub-card variants (if you want subtle differences) */
+
+.playbook-card {
+    border-top: 4px solid #f06449;
+}
+
+.thinking-card {
+    border-top: 4px solid #00c8da;
+}
+
+.blueprint-card {
+    border-top: 4px solid #9c27b0;
+}
+
+.cases-card {
+    border-top: 4px solid #2196f3;
+}
+
+.operating-card {
+    border-top: 4px solid #4caf50;
+}
+
+/* =======================
+   THINKING TAB
+   ======================= */
+
+.thinking-card h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.thinking_intro {
+    font-size: 15px;
+    opacity: .85;
+    margin-bottom: 22px;
+}
+
+.thinking-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.t-item {
+    padding: 18px;
+    border-radius: 16px;
+    background: #f8fafc;
+    text-align: left;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    transition: .25s ease;
+}
+
+    .t-item i {
+        font-size: 18px;
+        margin-bottom: 6px;
+        color: #00aebf;
+    }
+
+    .t-item span {
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .t-item p {
+        font-size: 13px;
+        margin: 0;
+        opacity: .85;
+    }
+
+    .t-item:hover {
+        transform: translateY(-4px);
+    }
+
+/* =======================
+   BLUEPRINT COMPACT
+   ======================= */
+
+.blueprint-compact {
+    margin-top: 10px;
+}
+
+.bp_c_title {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+/* Compact grid */
+.bp_c_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.bp_c_item {
+    padding: 18px 20px;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .25s ease;
+}
+
+    .bp_c_item:hover {
+        transform: translateY(-4px);
+    }
+
+    /* Titles */
+    .bp_c_item h4 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .bp_c_item p {
+        font-size: 13px;
+        opacity: .9;
+        margin: 0;
+    }
+
+    /* GRADIENT COLORS */
+    .bp_c_item.exp {
+        background: linear-gradient(135deg, #00c8da, #009bb5);
+    }
+
+    .bp_c_item.svc {
+        background: linear-gradient(135deg, #2196f3, #1769aa);
+    }
+
+    .bp_c_item.data {
+        background: linear-gradient(135deg, #9c27b0, #6d1a7b);
+    }
+
+    .bp_c_item.ai {
+        background: linear-gradient(135deg, #4caf50, #2f7d32);
+    }
+
+    .bp_c_item.gov {
+        background: linear-gradient(135deg, #f06449, #c44a33);
+    }
+
+/* =======================
+   CASE STUDIES REFINED
+   ======================= */
+
+.cases-sub.refined {
+    margin-top: 10px;
+}
+
+.cs_title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.cs_desc {
+    font-size: 15px;
+    opacity: .85;
+    margin-bottom: 25px;
+}
+
+/* GRID */
+.cs_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* MINI CARDS */
+.cs_mini_card {
+    padding: 26px;
+    border-radius: 20px;
+    background: white;
+    color: #0f172a;
+    box-shadow: 0 10px 24px rgba(0,0,0,.06);
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+    .cs_mini_card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 30px rgba(0,0,0,.10);
+    }
+
+/* TOP ICON */
+.cs_icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+/* COLOR THEMES */
+.cs_orange .cs_icon {
+    background: #f06449;
+}
+
+.cs_blue .cs_icon {
+    background: #2196f3;
+}
+
+.cs_purple .cs_icon {
+    background: #9c27b0;
+}
+
+/* TITLE + TEXT */
+.cs_mini_card h4 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.cs_mini_card p {
+    font-size: 14px;
+    opacity: .85;
+    margin-bottom: 16px;
+}
+
+/* FOOTER METRICS */
+.cs_mini_footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .85;
+}
+
+    .cs_mini_footer span i {
+        margin-right: 6px;
+    }
+
+/* =======================
+   OPERATING MODELS – ENHANCED
+   ======================= */
+
+.operating-models {
+    margin-top: 10px;
+}
+
+.op_title {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.op_desc {
+    font-size: 15px;
+    opacity: .85;
+    margin-bottom: 25px;
+}
+
+/* Grid */
+.op_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+/* Items */
+.op_item {
+    padding: 20px 22px;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 12px 28px rgba(0,0,0,.12);
+    transition: .35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+    .op_item::after {
+        content: "";
+        position: absolute;
+        top: -40%;
+        right: -40%;
+        width: 220px;
+        height: 220px;
+        background: radial-gradient(circle, rgba(255,255,255,.25), transparent 65%);
+        border-radius: 50%;
+        opacity: .4;
+        transition: .5s ease;
+    }
+
+    .op_item:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px rgba(0,0,0,.20);
+    }
+
+        .op_item:hover::after {
+            transform: scale(1.3);
+        }
+
+    .op_item h4 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .op_item p {
+        font-size: 13px;
+        opacity: .92;
+        margin: 0;
+    }
+
+/* Color themes */
+.op_green {
+    background: linear-gradient(135deg, #00b36b, #008f55);
+}
+
+.op_blue {
+    background: linear-gradient(135deg, #3a7bff, #1e53d6);
+}
+
+.op_orange {
+    background: linear-gradient(135deg, #ff6a3d, #d4451c);
+}
+
+.op_purple {
+    background: linear-gradient(135deg, #b14bff, #7f2cd4);
+}
+
+.op_red {
+    background: linear-gradient(135deg, #ff4e50, #c61c22);
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+
+@media (max-width: 992px) {
+    .thinking-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bp_c_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cs_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .op_grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Reduce ONLY the outer spacing of the old Playbook section */
+#tab-playbook .dt_playbook_section {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
+    /* Remove the extra top margin inside container */
+    #tab-playbook .dt_playbook_section .container {
+        padding-top: 0 !important;
         margin-top: 0 !important;
-        margin-bottom: 15px !important;
-    }
-}
-@media (max-width: 576px) {
-    #think .port_heading_wrapper {
-        margin-bottom: 10px !important;
     }
 
-    #think .dt_think_section {
-        padding-top: 10px !important;
-    }
+/* Prevent oversized spacing at top of tab card */
+.playbook-card {
+    padding-top: 20px !important;
 }
-@media (max-width: 576px) {
-    #think .dt_think_card {
-        padding: 18px 18px !important;
-        margin-top: 12px !important;
-        border-radius: 16px !important;
+/* ==========================
+   ROADMAP TAB
+   ========================== */
+
+.roadmap-card {
+    border-top: 4px solid #ff8a3d; /* roadmap color */
+}
+
+.roadmap_title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.roadmap_desc {
+    font-size: 15px;
+    opacity: .85;
+    margin-bottom: 25px;
+}
+
+.roadmap_timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    border-left: 4px solid #e2e8f0;
+    padding-left: 28px;
+    margin-top: 10px;
+}
+
+/* Phase Block */
+.rm_phase {
+    position: relative;
+    padding: 12px 0;
+}
+
+    .rm_phase h4 {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 6px;
     }
 
-        #think .dt_think_card h3 {
-            font-size: 20px !important;
-            line-height: 1.3;
+    .rm_phase p {
+        font-size: 14px;
+        opacity: .85;
+        margin-bottom: 8px;
+    }
+
+    .rm_phase ul {
+        margin: 0;
+        padding-left: 18px;
+    }
+
+        .rm_phase ul li {
+            font-size: 13px;
+            opacity: .9;
+            margin-bottom: 4px;
         }
 
-        #think .dt_think_card p,
-        #think .dt_think_card li {
-            font-size: 15px !important;
+/* Timeline Marker */
+.rm_marker {
+    width: 16px;
+    height: 16px;
+    background: #ff8a3d;
+    border-radius: 50%;
+    position: absolute;
+    left: -36px;
+    top: 4px;
+    box-shadow: 0 0 14px rgba(255,138,61,0.45);
+}
+
+/* Colored accent for each phase */
+.rm_p1 .rm_marker {
+    background: #00c8da;
+}
+
+.rm_p2 .rm_marker {
+    background: #2196f3;
+}
+
+.rm_p3 .rm_marker {
+    background: #9c27b0;
+}
+
+.rm_p4 .rm_marker {
+    background: #4caf50;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .roadmap_timeline {
+        padding-left: 18px;
+        border-left-width: 3px;
+    }
+
+    .rm_marker {
+        left: -28px;
+    }
+}
+/* ============================================
+   ENHANCED CTO ROADMAP (PREMIUM VISUAL DESIGN)
+   ============================================ */
+
+.roadmap-card {
+    border-top: 4px solid #ff8a3d;
+}
+
+.roadmap_title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.roadmap_desc {
+    font-size: 15px;
+    opacity: .85;
+    margin-bottom: 30px;
+}
+
+/* Roadmap Vertical Layout */
+.roadmap_visual {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    padding-left: 35px;
+}
+
+    /* Timeline spine */
+    .roadmap_visual::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(180deg, #00c8da, #2196f3, #9c27b0, #4caf50);
+        border-radius: 4px;
+        opacity: .35;
+    }
+
+/* Roadmap block */
+.rm_block {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 18px 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.08);
+    border-left: 4px solid transparent;
+    transition: .35s ease;
+}
+
+    /* Hover effect */
+    .rm_block:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px rgba(0,0,0,.14);
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+/* Circle icon */
+.rm_icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* Phase colors */
+.rm_b1 .rm_icon {
+    background: #00c8da;
+}
+
+.rm_b2 .rm_icon {
+    background: #2196f3;
+}
+
+.rm_b3 .rm_icon {
+    background: #9c27b0;
+}
+
+.rm_b4 .rm_icon {
+    background: #4caf50;
+}
+
+/* Phase header */
+.rm_content h4 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+/* Phase description */
+.rm_content p {
+    font-size: 14px;
+    opacity: .85;
+    margin-bottom: 8px;
+}
+
+/* Tags */
+.rm_tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+    .rm_tags span {
+        background: #f1f5f9;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #475569;
+        border: 1px solid #e2e8f0;
+        transition: .25s ease;
+    }
+
+        .rm_tags span:hover {
+            background: #e2e8f0;
+        }
+
+/* Timeline connection dot */
+.rm_block::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 24px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 3px solid #475569;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+}
+
+/* Colored dot per phase */
+.rm_b1::before {
+    border-color: #00c8da;
+}
+
+.rm_b2::before {
+    border-color: #2196f3;
+}
+
+.rm_b3::before {
+    border-color: #9c27b0;
+}
+
+.rm_b4::before {
+    border-color: #4caf50;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .roadmap_visual {
+        padding-left: 25px;
+    }
+
+    .rm_block {
+        flex-direction: column;
+    }
+
+        .rm_block::before {
+            left: -18px;
         }
 }
-/* --- FIX TAGLINE FULL WIDTH ON MOBILE --- */
-@media (max-width: 576px) {
-    #think .section_tagline {
-        display: block !important; /* Make it full-width */
-        width: 100% !important; /* Stretch across the screen */
-        text-align: center !important; /* Center text */
-        font-size: 18px !important; /* Reduce font size */
-        padding: 10px 0 !important; /* Height padding only */
-        margin: 0 auto 10px auto !important;
-        line-height: 1.3 !important;
+/* ==========================
+   TECH STACK TAB
+   ========================== */
+
+.techstack-card {
+    border-top: 4px solid #6366f1; /* Indigo accent */
+}
+
+.ts_title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.ts_desc {
+    font-size: 15px;
+    opacity: .85;
+    margin-bottom: 25px;
+}
+
+/* GRID */
+.ts_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+/* BLOCK CARD */
+.ts_block {
+    padding: 22px;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 10px 24px rgba(0,0,0,.08);
+    transition: .3s ease;
+    position: relative;
+}
+
+    .ts_block:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 16px 32px rgba(0,0,0,.12);
     }
 
-        /* Optional: fix inner span if exists */
-        #think .section_tagline span {
-            display: block !important;
-            width: 100% !important;
+/* ICON */
+.ts_icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* CATEGORY COLORS */
+.ts_frontend .ts_icon {
+    background: #f06449;
+}
+
+.ts_backend .ts_icon {
+    background: #00c8da;
+}
+
+.ts_data .ts_icon {
+    background: #2196f3;
+}
+
+.ts_cloud .ts_icon {
+    background: #9c27b0;
+}
+
+.ts_devops .ts_icon {
+    background: #4caf50;
+}
+
+.ts_ai .ts_icon {
+    background: #f59e0b;
+}
+
+.ts_platform .ts_icon {
+    background: #6366f1;
+}
+
+.ts_tools .ts_icon {
+    background: #475569;
+}
+
+/* TITLE */
+.ts_block h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* TAGS */
+.ts_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+    .ts_tags span {
+        padding: 5px 10px;
+        font-size: 12px;
+        background: #f1f5f9;
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+        font-weight: 600;
+        color: #475569;
+    }
+
+        .ts_tags span:hover {
+            background: #e2e8f0;
         }
-}
-@media (max-width: 576px) {
-    #think h1.port_heading {
-        font-size: 24px !important;
-        line-height: 1.25 !important;
-        margin-bottom: 12px !important;
-    }
-}
-/* --- FIX CTO Leadership tagline full width on mobile --- */
-@media (max-width: 576px) {
 
-    /* force the wrapper to become full width */
-    .port_sub_heading_wrapper {
-        width: 100% !important;
-        display: block !important;
-        text-align: center !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
-    /* fix the yellow ribbon */
-    h2.port_sub_heading {
-        display: block !important;
-        width: 100% !important;
-        background-color: #f7b948 !important; /* your yellow ribbon */
-        padding: 10px 0 !important;
-        margin: 0 auto !important;
-        text-align: center !important;
-        font-size: 20px !important;
-        line-height: 1.3 !important;
-        border-radius: 0 !important;
+/* Responsive */
+@media (max-width: 992px) {
+    .ts_grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 576px) {
-    .port_heading_wrapper {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+    .ts_grid {
+        grid-template-columns: 1fr;
     }
 }
-/* --- FIX CTO Leadership tagline full width on mobile --- */
-@media (max-width: 576px) {
+/* ===========================================
+   TECH STACK WHEEL
+=========================================== */
 
-    /* force the wrapper to become full width */
-    .port_sub_heading_wrapper {
-        width: 100% !important;
-        display: block !important;
-        text-align: center !important;
-        padding: 0 !important;
-        margin: 0 !important;
+.wheel-card {
+    border-top: 4px solid #6366f1;
+}
+
+.wheel_title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.wheel_desc {
+    font-size: 15px;
+    opacity: .85;
+    margin-bottom: 30px;
+}
+
+.wheel_container {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/* INNER CORE */
+.wheel_center {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: white;
+    border: 4px solid #6366f1;
+    top: 110px;
+    left: 110px;
+    text-align: center;
+    padding: 14px;
+    box-shadow: 0 10px 24px rgba(0,0,0,.12);
+}
+
+    .wheel_center span {
+        font-weight: 800;
+        font-size: 13px;
     }
 
-    /* fix the yellow ribbon */
-    h2.port_sub_heading {
-        display: block !important;
-        width: 100% !important;
-        background-color: #f7b948 !important; /* your yellow ribbon */
-        padding: 10px 0 !important;
-        margin: 0 auto !important;
-        text-align: center !important;
-        font-size: 20px !important;
-        line-height: 1.3 !important;
-        border-radius: 0 !important;
+    .wheel_center ul {
+        padding: 0;
+        margin: 6px 0 0;
+        list-style: none;
+    }
+
+    .wheel_center li {
+        font-size: 11px;
+        opacity: .75;
+    }
+
+/* MIDDLE RING */
+.wheel_middle {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+    border: 3px solid #c7d2fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wm_item {
+    position: absolute;
+    padding: 8px 14px;
+    background: white;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.wm_cloud {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wm_devops {
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wm_data {
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wm_security {
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Colors */
+.wm_cloud i {
+    color: #00c8da;
+}
+
+.wm_devops i {
+    color: #4caf50;
+}
+
+.wm_data i {
+    color: #2196f3;
+}
+
+.wm_security i {
+    color: #9c27b0;
+}
+
+/* OUTER RING */
+.wheel_outer {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    border: 3px solid #e2e8f0;
+    top: 0;
+    left: 0;
+}
+
+.wo_item {
+    position: absolute;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+.wo_frontend {
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wo_backend {
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wo_integrations {
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wo_tools {
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Matrix layout */
+.stack_advanced {
+    margin-top: 40px;
+}
+
+    .stack_advanced h4 {
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 18px;
+    }
+
+.stack_matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.stack_col h5 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.stack_col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.stack_col li {
+    font-size: 13px;
+    opacity: .85;
+    margin-bottom: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .wheel_container {
+        transform: scale(.8);
+    }
+
+    .stack_matrix {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 576px) {
-    .port_heading_wrapper {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+    .wheel_container {
+        transform: scale(.7);
     }
+
+    .stack_matrix {
+        grid-template-columns: 1fr;
+    }
+}
+/* =====================================================
+   TECH STACK WHEEL — PREMIUM ANIMATED CTO VISUALIZATION
+   ===================================================== */
+
+.wheel-card {
+    border-top: 4px solid #6366f1;
+}
+
+.wheel_title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.wheel_desc {
+    opacity: .85;
+    margin-bottom: 30px;
+}
+
+/* Main container */
+.wheel_container {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin: auto;
+    margin-bottom: 40px;
+    animation: fade_in_smooth 1.2s ease-out;
+}
+
+/* ==========================
+   INNER CORE
+========================== */
+
+.wheel_center {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: white;
+    border: 4px solid #6366f1;
+    top: 110px;
+    left: 110px;
+    text-align: center;
+    padding: 14px;
+    box-shadow: 0 10px 24px rgba(0,0,0,.12);
+}
+
+    .wheel_center span {
+        font-weight: 800;
+        font-size: 13px;
+    }
+
+    .wheel_center ul {
+        list-style: none;
+        padding: 0;
+        margin: 8px 0 0;
+    }
+
+    .wheel_center li {
+        font-size: 11px;
+        opacity: .75;
+    }
+
+/* Pulse Animation */
+@keyframes pulse_core {
+    0% {
+        box-shadow: 0 0 12px rgba(99,102,241,0.35);
+    }
+
+    50% {
+        box-shadow: 0 0 22px rgba(99,102,241,0.65);
+    }
+
+    100% {
+        box-shadow: 0 0 12px rgba(99,102,241,0.35);
+    }
+}
+
+.wheel_pulse {
+    animation: pulse_core 4s ease-in-out infinite;
+}
+
+/* ==========================
+   MIDDLE RING
+========================== */
+
+.wheel_middle {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 3px solid #d0d7ff;
+    top: 50px;
+    left: 50px;
+}
+
+/* ROTATION ANIMATION */
+@keyframes rotate_slow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.wheel_rotate_slow {
+    animation: rotate_slow 40s linear infinite;
+}
+
+    .wheel_rotate_slow:hover {
+        animation-play-state: paused;
+    }
+
+/* ITEMS AROUND RING */
+.wm_item {
+    position: absolute;
+    padding: 8px 14px;
+    border-radius: 12px;
+    background: white;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    gap: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    transition: .25s ease;
+}
+
+    /* Hover pop */
+    .wm_item:hover {
+        transform: scale(1.15);
+        z-index: 10;
+    }
+
+/* Item positions */
+.wm_cloud {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wm_devops {
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wm_data {
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wm_security {
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Colors */
+.wm_cloud i {
+    color: #00c8da;
+}
+
+.wm_devops i {
+    color: #4caf50;
+}
+
+.wm_data i {
+    color: #2196f3;
+}
+
+.wm_security i {
+    color: #9c27b0;
+}
+
+/* ==========================
+   OUTER RING
+========================== */
+
+.wheel_outer {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    border: 3px solid #e2e8f0;
+    animation: glow_ring 6s ease-in-out infinite;
+}
+
+/* Reverse rotation */
+@keyframes rotate_slow_reverse {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.wheel_rotate_slow_reverse {
+    animation: rotate_slow_reverse 55s linear infinite;
+}
+
+    .wheel_rotate_slow_reverse:hover {
+        animation-play-state: paused;
+    }
+
+/* Glow animation */
+@keyframes glow_ring {
+    0% {
+        box-shadow: 0 0 12px rgba(148,163,184,.15);
+    }
+
+    50% {
+        box-shadow: 0 0 22px rgba(148,163,184,.40);
+    }
+
+    100% {
+        box-shadow: 0 0 12px rgba(148,163,184,.15);
+    }
+}
+
+/* Outer ring labels */
+.wo_item {
+    position: absolute;
+    padding: 6px 12px;
+    background: white;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+    transition: .25s ease;
+}
+
+    /* Hover pop */
+    .wo_item:hover {
+        transform: scale(1.15);
+    }
+
+/* Label positions */
+.wo_frontend {
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wo_backend {
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wo_integrations {
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wo_tools {
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ==========================
+   ADVANCED MATRIX
+========================== */
+
+.stack_advanced h4 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.stack_matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.stack_col h5 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.stack_col li {
+    font-size: 13px;
+    opacity: .85;
+    margin-bottom: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .wheel_container {
+        transform: scale(.8);
+    }
+
+    .stack_matrix {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .wheel_container {
+        transform: scale(.7);
+    }
+
+    .stack_matrix {
+        grid-template-columns: 1fr;
+    }
+}
+/* =====================================================
+   GOVERNANCE SECTION — COMPACT & COLORFUL
+===================================================== */
+
+.governance-card {
+    border-top: 4px solid #475569;
+}
+
+.gov_title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.gov_desc {
+    opacity: .85;
+    margin-bottom: 28px;
+}
+
+/* Grid */
+.gov_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+/* Item Card */
+.gov_item {
+    padding: 22px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 8px 22px rgba(0,0,0,.08);
+    transition: .3s ease;
+    position: relative;
+}
+
+    .gov_item:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 30px rgba(0,0,0,.12);
+    }
+
+/* Icon */
+.gov_icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Color Themes */
+.gov_sec .gov_icon {
+    background: #ef4444;
+}
+/* Red */
+.gov_data .gov_icon {
+    background: #3b82f6;
+}
+/* Blue */
+.gov_platform .gov_icon {
+    background: #10b981;
+}
+/* Green */
+.gov_risk .gov_icon {
+    background: #f59e0b;
+}
+/* Amber */
+
+.gov_item h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.gov_item p {
+    font-size: 14px;
+    opacity: .85;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .gov_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .gov_grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =====================================================
+   INNOVATION & R&D LAB — MODERN CTO SECTION
+===================================================== */
+
+.innovation-card {
+    border-top: 4px solid #7c3aed; /* Purple accent */
+}
+
+.inno_title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.inno_desc {
+    opacity: .85;
+    margin-bottom: 28px;
+}
+
+/* Grid Layout */
+.inno_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* Item Card */
+.inno_item {
+    padding: 22px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 8px 22px rgba(0,0,0,.08);
+    transition: .3s ease;
+    position: relative;
+}
+
+.inno_item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0,0,0,.12);
+}
+
+/* Icon */
+.inno_icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Color Themes */
+.inno_blue   .inno_icon { background: #3b82f6; }
+.inno_green  .inno_icon { background: #10b981; }
+.inno_orange .inno_icon { background: #f97316; }
+.inno_purple .inno_icon { background: #8b5cf6; }
+.inno_red    .inno_icon { background: #ef4444; }
+.inno_teal   .inno_icon { background: #14b8a6; }
+
+.inno_item h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.inno_item p {
+    font-size: 14px;
+    opacity: .85;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .inno_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .inno_grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ============================================================
+   FIXED — ABOUT SECTION
+   Makes new blocks visible, styled, spaced, and responsive
+   ============================================================ */
+
+#about_sec .about_card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    display: block !important;
+}
+
+    #about_sec .about_card h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #0f172a;
+    }
+
+    #about_sec .about_card p {
+        font-size: 15px;
+        line-height: 1.55;
+        color: #444;
+    }
+
+#about_sec .about_tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+/* Colored tags matching your palette */
+#about_sec .philosophy_card .about_tag {
+    background: #2196f3;
+}
+
+#about_sec .mission_card .about_tag {
+    background: #4caf50;
+}
+
+#about_sec .current_work_card .about_tag {
+    background: #ff9800;
+}
+
+/* List styling */
+#about_sec .current_list {
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+}
+
+    #about_sec .current_list li {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 12px;
+        font-size: 15px;
+        color: #333;
+        line-height: 1.45;
+    }
+
+        #about_sec .current_list li i {
+            color: #ff9800;
+            font-size: 15px;
+            margin-top: 3px;
+        }
+
+/* Reveal animation fallback */
+#about_sec .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* Proper spacing between new blocks and counters */
+#about_sec .about_counters {
+    margin-top: 40px !important;
+}
+/* -------------------------------------------------------------
+   FIX SPACING & ALIGNMENT FOR NEW ABOUT CARDS (More whitespace)
+   ------------------------------------------------------------- */
+
+#about_sec .about_card {
+    margin-top: 30px;          /* Add space above each card */
+    margin-bottom: 32px;       /* Add clean space between cards */
+    padding: 26px 28px;        /* Slightly increased internal padding */
+}
+
+/* Extra space before the first card */
+#about_sec .philosophy_card {
+    margin-top: 45px !important;
+}
+
+/* Add breathing space below the last card (before counters) */
+#about_sec .current_work_card {
+    margin-bottom: 45px !important;
+}
+
+/* Adjust right section spacing to balance layout */
+#about_sec .right_section {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Improve vertical spacing under About intro paragraphs */
+#about_sec .about_tophead {
+    margin-bottom: 18px;
+}
+
+#about_sec p {
+    margin-bottom: 14px;
+}
+
+/* Increase space before counters */
+#about_sec .about_counters {
+    margin-top: 50px !important;
+}
+.leadership-card {
+    border-top: 4px solid #0ea5e9; /* Light blue accent */
+}
+
+#cto-leadership {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+/* ============================================================
+   TECH-OS — GLOBAL SECTION REFINEMENTS
+============================================================ */
+
+#tech-os {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+
+    /* Section Heading */
+    #tech-os .port_heading_wrapper {
+        margin-bottom: 35px;
+    }
+
+    #tech-os .port_heading {
+        font-size: 32px;
+        font-weight: 800;
+        margin-top: 5px;
+    }
+
+/* ============================================================
+   TAB BAR — PREMIUM STYLE
+============================================================ */
+
+.techos-tabs {
+    border-bottom: none;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+    .techos-tabs .nav-link {
+        font-weight: 600;
+        padding: 10px 18px;
+        border-radius: 30px;
+        background: #f1f5f9;
+        color: #475569;
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: .25s ease;
+    }
+
+        .techos-tabs .nav-link i {
+            font-size: 15px;
+        }
+
+        .techos-tabs .nav-link:hover {
+            background: #e2e8f0;
+            color: #0f172a;
+            transform: translateY(-2px);
+        }
+
+        .techos-tabs .nav-link.active {
+            background: #6366f1;
+            color: white;
+            box-shadow: 0 6px 14px rgba(99,102,241,0.35);
+        }
+
+/* ============================================================
+   TAB PANES
+============================================================ */
+
+.techos-card {
+    background: white;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.compact {
+    padding: 10px 0;
+}
+
+/* Global adjustments for internal grids */
+.row.g-4 {
+    margin: 0;
+}
+
+    .row.g-4 > [class*="col"] {
+        padding: 10px;
+    }
+
+/* ============================================================
+   THINKING GRID
+============================================================ */
+
+.thinking-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+    .thinking-grid .t-item {
+        background: #f8fafc;
+        padding: 22px;
+        border-radius: 16px;
+        text-align: center;
+        transition: .25s ease;
+        box-shadow: 0 4px 14px rgba(0,0,0,.05);
+    }
+
+        .thinking-grid .t-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,.10);
+        }
+
+        .thinking-grid .t-item i {
+            font-size: 26px;
+            color: #6366f1;
+            margin-bottom: 10px;
+        }
+
+/* ============================================================
+   BLUEPRINT COMPACT GRID
+============================================================ */
+
+.bp_c_grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.bp_c_item {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 16px;
+    transition: .25s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,.05);
+}
+
+    .bp_c_item:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(0,0,0,.12);
+    }
+
+    .bp_c_item h4 i {
+        color: #6366f1;
+        margin-right: 6px;
+    }
+
+/* ============================================================
+   CASE STUDIES
+============================================================ */
+
+.cs_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* ============================================================
+   OPERATING MODELS
+============================================================ */
+
+.op_grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.op_item {
+    border-radius: 18px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 6px 20px rgba(0,0,0,.08);
+    transition: .25s ease;
+}
+
+    .op_item:hover {
+        transform: translateY(-5px);
+    }
+
+/* ============================================================
+   ROADMAP
+============================================================ */
+
+.roadmap-card {
+    padding: 30px;
+}
+
+.roadmap_visual {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.rm_block {
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 18px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.08);
+    transition: .25s ease;
+}
+
+    .rm_block:hover {
+        transform: translateY(-5px);
+    }
+
+.rm_icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #6366f1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+/* ============================================================
+   TECH STACK WHEEL
+============================================================ */
+
+.wheel-card {
+    padding-top: 20px;
+}
+
+.wheel_container {
+    margin-top: 22px;
+}
+
+/* ============================================================
+   GOVERNANCE
+============================================================ */
+
+.gov_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+/* ============================================================
+   INNOVATION LAB
+============================================================ */
+
+.inno_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* ============================================================
+   LEADERSHIP & STRATEGY
+============================================================ */
+
+.leadership-card section {
+    padding-top: 10px !important;
+}
+
+/* Compact CTO cards */
+.cto_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.cto_card {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .25s ease;
+}
+
+    .cto_card:hover {
+        transform: translateY(-5px);
+    }
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+============================================================ */
+
+@media (max-width: 992px) {
+    .thinking-grid,
+    .bp_c_grid,
+    .op_grid,
+    .cs_grid,
+    .gov_grid,
+    .inno_grid,
+    .cto_grid,
+    .roadmap_visual {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .thinking-grid,
+    .bp_c_grid,
+    .op_grid,
+    .cs_grid,
+    .gov_grid,
+    .inno_grid,
+    .cto_grid,
+    .roadmap_visual {
+        grid-template-columns: 1fr;
+    }
+
+    .techos-tabs .nav-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* Compact Blueprint Styling */
+#architecture-blueprint {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.compact_intro {
+    max-width: 650px;
+    margin: 0 auto 25px auto;
+    font-size: 15px;
+}
+
+.compact_arch {
+    row-gap: 20px;
+}
+
+.compact_card {
+    padding: 18px 20px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+    transition: .25s ease;
+}
+
+    .compact_card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    }
+
+.arch_card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.arch_card ul li {
+    font-size: 14px;
+}
+.arch_tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Use your brand color palette */
+.bg-cyan {
+    background: var(--c-cyan);
+}
+
+.bg-orange {
+    background: var(--c-orange);
+}
+
+.bg-purple {
+    background: var(--c-purple);
+}
+
+.bg-blue {
+    background: var(--c-blue);
+}
+
+.bg-green {
+    background: var(--c-green);
+}
+
+.bg-pink {
+    background: var(--c-pink);
+}
+/* ===== ARCHITECTURE BLUEPRINT TITLES COLORS ===== */
+#tab-blueprint .arch_card h3 {
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Cyan Title */
+#tab-blueprint .arch_card .title-cyan {
+    color: var(--cyan) !important;
+}
+
+/* Orange Title */
+#tab-blueprint .arch_card .title-orange {
+    color: var(--orange) !important;
+}
+
+/* Purple Title */
+#tab-blueprint .arch_card .title-purple {
+    color: var(--purple) !important;
+}
+
+/* Blue Title */
+#tab-blueprint .arch_card .title-blue {
+    color: var(--blue) !important;
+}
+
+/* Green Title */
+#tab-blueprint .arch_card .title-green {
+    color: var(--green) !important;
+}
+
+/* Pink Title */
+#tab-blueprint .arch_card .title-pink {
+    color: var(--pink) !important;
+}
+/* ===== ARCHITECTURE BLUEPRINT — TAG COLORS ===== */
+#tab-blueprint .arch_card .arch_tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+/* Base tag styling */
+#tab-blueprint .arch_card .arch_tag {
+    display: inline-flex !important;
+    align-items: center;
+    padding: 6px 14px !important;
+    border-radius: 10px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 1;
+}
+
+    /* Pseudo-element — always wins over theme CSS */
+    #tab-blueprint .arch_card .arch_tag::before {
+        content: "" !important;
+        position: absolute !important;
+        inset: 0 !important;
+        border-radius: 10px !important;
+        z-index: -1 !important;
+    }
+
+/* Cyan */
+#tab-blueprint .arch_card .bg-cyan::before {
+    background: #1cc5dc !important; /* cyan */
+}
+
+/* Orange */
+#tab-blueprint .arch_card .bg-orange::before {
+    background: #ff8c42 !important; /* orange */
+}
+
+/* Purple */
+#tab-blueprint .arch_card .bg-purple::before {
+    background: #8e44ad !important; /* purple */
+}
+
+/* Blue */
+#tab-blueprint .arch_card .bg-blue::before {
+    background: #3498db !important; /* blue */
+}
+
+/* Green */
+#tab-blueprint .arch_card .bg-green::before {
+    background: #2ecc71 !important; /* green */
+}
+
+/* Pink */
+#tab-blueprint .arch_card .bg-pink::before {
+    background: #e84393 !important; /* pink */
+}
+/* ===== ARCHITECTURE BLUEPRINT — TITLES COLORS ===== */
+#tab-blueprint .arch_card h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.2px;
+}
+
+#tab-blueprint .arch_card .title-cyan {
+    color: var(--c-cyan) !important;
+}
+
+#tab-blueprint .arch_card .title-orange {
+    color: var(--c-orange) !important;
+}
+
+#tab-blueprint .arch_card .title-purple {
+    color: var(--c-purple) !important;
+}
+
+#tab-blueprint .arch_card .title-blue {
+    color: var(--c-blue) !important;
+}
+
+#tab-blueprint .arch_card .title-green {
+    color: var(--c-green) !important;
+}
+
+#tab-blueprint .arch_card .title-pink {
+    color: var(--c-pink) !important;
+}
+/* ---------------------------------
+   TITLES
+--------------------------------- */
+#tab-operating-models .op_title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+}
+
+#tab-operating-models .op_desc {
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+    max-width: 620px;
+    margin: 0 auto 32px;
+    line-height: 1.55;
+}
+
+
+/* ---------------------------------
+   GRID
+--------------------------------- */
+#tab-operating-models .op_grid.polished {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 26px;
+}
+
+
+/* ---------------------------------
+   CARDS
+--------------------------------- */
+#tab-operating-models .op_item {
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px 22px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.05);
+    /* layered premium shadow */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05), 0 12px 28px rgba(0,0,0,0.04);
+    transition: 0.35s ease;
+}
+
+    /* Hover animations */
+    #tab-operating-models .op_item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.06), 0 16px 30px rgba(0,0,0,0.09);
+    }
+
+    /* Glow Border Animation */
+    #tab-operating-models .op_item::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 18px;
+        padding: 2px;
+        background: linear-gradient( 120deg, rgba(0, 214, 255, 0.35), rgba(255, 0, 128, 0.30), rgba(255, 165, 0, 0.35) );
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        opacity: 0;
+        transition: 0.35s ease;
+    }
+
+    #tab-operating-models .op_item:hover::before {
+        opacity: 1;
+    }
+
+
+/* ---------------------------------
+   ICONS (Premium Halo Style)
+--------------------------------- */
+.op_icon {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    margin: 0 auto 14px;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* halo glow */
+    box-shadow: 0 0 14px rgba(0,0,0,0.12);
+}
+
+/* color variations */
+.op_green .op_icon {
+    background: #2ecc71;
+}
+
+.op_blue .op_icon {
+    background: #3498db;
+}
+
+.op_orange .op_icon {
+    background: #f39c12;
+}
+
+.op_purple .op_icon {
+    background: #9b59b6;
+}
+
+.op_red .op_icon {
+    background: #e74c3c;
+}
+
+
+/* ---------------------------------
+   TEXT
+--------------------------------- */
+#tab-operating-models h4 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+}
+
+#tab-operating-models p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.45;
+    margin: 0;
+}
+/* Reduce padding of the entire operating models card */
+#tab-operating-models .operating-card.compact {
+    padding: 25px 28px !important; /* previously big, now tighter */
+}
+
+/* Reduce spacing around the grid */
+#tab-operating-models .op_grid {
+    margin-top: 10px !important;
+    gap: 20px !important; /* smaller gaps between cards */
+}
+
+/* Compact cards themselves */
+#tab-operating-models .op_item {
+    padding: 18px 18px !important; /* reduced from 28px */
+}
+
+    /* Compact titles and paragraphs */
+    #tab-operating-models .op_item h4 {
+        margin-top: 8px !important;
+        margin-bottom: 4px !important;
+    }
+
+    #tab-operating-models .op_item p {
+        margin-top: 4px !important;
+    }
+
+/* Smaller icon spacing */
+#tab-operating-models .op_icon {
+    margin-bottom: 10px !important;
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+}
+/* ------------------------------
+   Section Titles
+------------------------------ */
+#tab-roadmap .roadmap_title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+#tab-roadmap .roadmap_desc {
+    text-align: center;
+    color: #666;
+    max-width: 640px;
+    margin: 0 auto 30px;
+    font-size: 14.5px;
+}
+
+
+/* ------------------------------
+   Timeline Layout
+------------------------------ */
+#tab-roadmap .roadmap_timeline {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 30px;
+    border-left: 3px solid #eaeaea;
+}
+
+/* Each phase block */
+#tab-roadmap .rm_phase {
+    position: relative;
+    padding-bottom: 35px;
+}
+
+    /* Timeline marker circles */
+    #tab-roadmap .rm_phase .rm_marker {
+        position: absolute;
+        left: -11px;
+        top: 6px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        box-shadow: 0 0 0 4px rgba(0,0,0,0.06);
+    }
+
+/* Color-coded markers per phase */
+#tab-roadmap .phase1 .rm_marker {
+    background: #2ecc71;
+}
+
+#tab-roadmap .phase2 .rm_marker {
+    background: #3498db;
+}
+
+#tab-roadmap .phase3 .rm_marker {
+    background: #9b59b6;
+}
+
+#tab-roadmap .phase4 .rm_marker {
+    background: #f39c12;
+}
+
+/* Phase Content */
+#tab-roadmap .rm_content {
+    margin-left: 25px;
+    padding: 16px 18px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05), 0 10px 20px rgba(0,0,0,0.04);
+    transition: 0.3s ease;
+}
+
+    /* Hover elevation */
+    #tab-roadmap .rm_content:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.08), 0 16px 28px rgba(0,0,0,0.06);
+    }
+
+/* Icons */
+#tab-roadmap .rm_icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+/* Color-coded icons */
+#tab-roadmap .phase1 .rm_icon {
+    background: #2ecc71;
+}
+
+#tab-roadmap .phase2 .rm_icon {
+    background: #3498db;
+}
+
+#tab-roadmap .phase3 .rm_icon {
+    background: #9b59b6;
+}
+
+#tab-roadmap .phase4 .rm_icon {
+    background: #f39c12;
+}
+
+#tab-roadmap h4 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+#tab-roadmap p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+/* ------------------------------
+   Badges
+------------------------------ */
+#tab-roadmap .rm_badges span {
+    display: inline-block;
+    background: #f5f5f5;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    color: #333;
+    border: 1px solid #eee;
+    transition: 0.2s ease;
+}
+
+    #tab-roadmap .rm_badges span:hover {
+        background: #111;
+        color: #fff;
+        border-color: #111;
+    }
+/* ---------------------------
+   GRID LAYOUT (2 per row)
+---------------------------- */
+#tab-roadmap .roadmap_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin-top: 15px;
+}
+
+/* ---------------------------
+   CARD STYLE
+---------------------------- */
+#tab-roadmap .rm_phase_card {
+    background: #fff;
+    padding: 20px 18px;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05), 0 12px 20px rgba(0,0,0,0.04);
+    transition: 0.28s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+    /* Hover elevation */
+    #tab-roadmap .rm_phase_card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.08), 0 14px 28px rgba(0,0,0,0.06);
+    }
+
+/* ---------------------------
+   ICONS (halo style)
+---------------------------- */
+#tab-roadmap .rm_icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+/* Color coding */
+#tab-roadmap .phase1 .rm_icon {
+    background: #2ecc71;
+}
+
+#tab-roadmap .phase2 .rm_icon {
+    background: #3498db;
+}
+
+#tab-roadmap .phase3 .rm_icon {
+    background: #9b59b6;
+}
+
+#tab-roadmap .phase4 .rm_icon {
+    background: #f39c12;
+}
+
+/* ---------------------------
+   TEXT
+---------------------------- */
+#tab-roadmap h4 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+#tab-roadmap p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* ---------------------------
+   BADGES
+---------------------------- */
+#tab-roadmap .rm_badges span {
+    display: inline-block;
+    padding: 4px 9px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    font-size: 12px;
+    margin: 3px 4px 0 0;
+    border: 1px solid #eee;
+    color: #444;
+    transition: 0.2s ease;
+}
+
+    #tab-roadmap .rm_badges span:hover {
+        background: #111;
+        color: #fff;
+        border-color: #111;
+    }
+/* Wrapper: wheel + text side-by-side */
+#tab-wheel .wheel_flex_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 5px;
+}
+
+/* Make entire section compact */
+#tab-wheel .compact_wheel {
+    padding: 25px !important;
+}
+
+/* Stack text aligned perfectly */
+#tab-wheel .aligned_right {
+    max-width: 420px;
+}
+
+/* Title styling */
+#tab-wheel .stack_title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+/* Matrix grid */
+#tab-wheel .compact_matrix {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: 16px 24px;
+}
+
+/* Column titles */
+#tab-wheel .stack_col h5 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+/* List styling */
+#tab-wheel .stack_col ul {
+    padding-left: 15px;
+}
+
+#tab-wheel .stack_col li {
+    font-size: 13.5px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+/* Responsive Fix: Mobile → vertical stack */
+@media (max-width: 900px) {
+    #tab-wheel .wheel_flex_wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #tab-wheel .aligned_right {
+        max-width: 100%;
+    }
+
+    #tab-wheel .compact_matrix {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+#tab-wheel .improved_stack {
+    padding: 0 5px;
+}
+#tab-wheel .compact_matrix {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 18px 20px;
+}
+#tab-wheel .stack_col {
+    background: #fff;
+    padding: 12px 15px;
+    border-radius: 14px;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05), 0 10px 18px rgba(0,0,0,0.04);
+    transition: 0.25s ease;
+}
+
+    #tab-wheel .stack_col:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.08), 0 14px 28px rgba(0,0,0,0.05);
+    }
+    #tab-wheel .stack_col h5 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        padding-left: 8px;
+        border-left: 4px solid;
+    }
+
+/* Color assignments */
+.sc_cyan h5 {
+    border-color: #00BCD4;
+    color: #00BCD4;
+}
+
+.sc_orange h5 {
+    border-color: #FF9800;
+    color: #FF9800;
+}
+
+.sc_purple h5 {
+    border-color: #9C27B0;
+    color: #9C27B0;
+}
+
+.sc_blue h5 {
+    border-color: #2196F3;
+    color: #2196F3;
+}
+
+.sc_green h5 {
+    border-color: #4CAF50;
+    color: #4CAF50;
+}
+
+.sc_pink h5 {
+    border-color: #E91E63;
+    color: #E91E63;
+}
+#tab-wheel .stack_col ul {
+    padding-left: 12px;
+    margin: 0;
+}
+
+#tab-wheel .stack_col li {
+    font-size: 13.5px;
+    margin-bottom: 4px;
+    color: #444;
+}
+#tab-wheel .stack_title {
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: -0.4px;
+}
+@media (max-width: 900px) {
+    #tab-wheel .wheel_flex_wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #tab-wheel .compact_matrix {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Layout improvements */
+#tab-leadership .compact-lead {
+    padding: 25px 25px !important;
+}
+
+#tab-leadership .improved_leadership {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+/* Card styling */
+#tab-leadership .lead_card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px 18px;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05), 0 12px 20px rgba(0,0,0,0.04);
+    transition: 0.28s ease;
+    position: relative;
+}
+
+    /* Color top bar using your brand colors */
+    #tab-leadership .lead_card::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 16px 16px 0 0;
+        background: var(--lead-color);
+    }
+
+/* Assign card colors */
+.sc_cyan {
+    --lead-color: #00BCD4;
+}
+
+.sc_orange {
+    --lead-color: #FF9800;
+}
+
+.sc_purple {
+    --lead-color: #9C27B0;
+}
+
+.sc_green {
+    --lead-color: #4CAF50;
+}
+
+/* Hover elegance */
+#tab-leadership .lead_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 16px rgba(0,0,0,0.08), 0 14px 28px rgba(0,0,0,0.05);
+}
+
+/* Icon style */
+#tab-leadership .cto_icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Titles */
+#tab-leadership .lead_title {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+#tab-leadership .lead_list li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+#tab-leadership .lead_list i {
+    color: var(--lead-color);
+    margin-right: 6px;
+}
+
+/* Steps row */
+#tab-leadership .lead_steps {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+    #tab-leadership .lead_steps span {
+        font-size: 12px;
+        background: rgba(0,0,0,0.04);
+        padding: 4px 8px;
+        border-radius: 6px;
+        color: #444;
+        border: 1px solid rgba(0,0,0,0.07);
+    }
+
+/* Architecture mini lines */
+#tab-leadership .lead_layers div {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+#tab-leadership .lead_layers strong {
+    color: var(--lead-color);
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+/* Impact Cases */
+#tab-leadership .lead_cases h4 {
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: var(--lead-color);
+}
+
+#tab-leadership .lead_cases p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 8px;
+}
+/* ============================================
+   FIX CTO LEADERSHIP ICONS
+   Ensures icons + background colors always show
+   Overrides any conflicting styles from other tabs
+============================================ */
+
+#tab-leadership .cto_icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+
+    font-size: 22px !important;
+    color: #fff !important;          /* icon color always white */
+    line-height: 1 !important;
+    z-index: 10;
+}
+
+/* Restore your colors */
+#tab-leadership .bg-cyan   { background: #00BCD4 !important; }
+#tab-leadership .bg-orange { background: #FF9800 !important; }
+#tab-leadership .bg-purple { background: #9C27B0 !important; }
+#tab-leadership .bg-green  { background: #4CAF50 !important; }
+
+/* Fix Font Awesome not rendering */
+#tab-leadership .cto_icon i {
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+    color: #fff !important;
+    display: block !important;
 }

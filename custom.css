@@ -8170,3 +8170,269 @@ img, video, canvas, svg {
             min-width: max-content;
         }
 }
+/* =======================
+   Tech-OS Tabs (Perfect Responsive)
+   ======================= */
+
+.techos-tabs-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+/* scroll container */
+.techos-tabs-scroll {
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 6px 2px;
+}
+
+    .techos-tabs-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+/* tabs list */
+.techos-tabs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap; /* Desktop default */
+    justify-content: center; /* Desktop nice */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    /* pill */
+    .techos-tabs .nav-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border: 0;
+        border-radius: 999px;
+        padding: 14px 18px;
+        font-weight: 700;
+        white-space: nowrap;
+        transition: .2s ease;
+        background: rgba(0,0,0,.04);
+        box-shadow: 0 10px 25px rgba(0,0,0,.06);
+    }
+
+        .techos-tabs .nav-link i {
+            font-size: 16px;
+            opacity: .9;
+        }
+
+        .techos-tabs .nav-link.active {
+            background: #5c63ff; /* keep your brand color if you want */
+            color: #fff;
+            box-shadow: 0 14px 35px rgba(92,99,255,.25);
+        }
+
+/* scroll buttons */
+.tab-scroll-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: 0;
+    background: rgba(0,0,0,.06);
+    display: none; /* show on mobile */
+    align-items: center;
+    justify-content: center;
+}
+
+/* fade edges to hint scroll */
+.tabs-fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 36px;
+    pointer-events: none;
+    opacity: 0; /* will be toggled by JS */
+    transition: .2s ease;
+}
+
+    .tabs-fade.left {
+        left: 44px;
+        background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+    }
+
+    .tabs-fade.right {
+        right: 44px;
+        background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+    }
+
+/* =======================
+   Mobile / Tablet behavior
+   ======================= */
+@media (max-width: 991.98px) {
+    .techos-tabs {
+        flex-wrap: nowrap; /* one line */
+        justify-content: flex-start;
+        scroll-snap-type: x mandatory;
+    }
+
+        .techos-tabs .nav-item {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+        }
+
+        .techos-tabs .nav-link {
+            padding: 12px 16px;
+            font-size: 14px;
+        }
+
+    .tab-scroll-btn {
+        display: inline-flex;
+    }
+}
+
+/* Extra small: make pills a bit tighter */
+@media (max-width: 420px) {
+    .techos-tabs .nav-link {
+        padding: 11px 14px;
+        gap: 8px;
+    }
+
+        .techos-tabs .nav-link i {
+            font-size: 15px;
+        }
+}
+/* =======================
+   Tech-OS Tabs (Perfect Responsive)
+   ======================= */
+
+.techos-tabs-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+/* scroll container */
+.techos-tabs-scroll {
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 6px 2px;
+}
+
+    .techos-tabs-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+/* tabs list */
+.techos-tabs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap; /* Desktop default */
+    justify-content: center; /* Desktop nice */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    /* pill */
+    .techos-tabs .nav-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border: 0;
+        border-radius: 999px;
+        padding: 14px 18px;
+        font-weight: 700;
+        white-space: nowrap;
+        transition: .2s ease;
+        background: rgba(0,0,0,.04);
+        box-shadow: 0 10px 25px rgba(0,0,0,.06);
+    }
+
+        .techos-tabs .nav-link i {
+            font-size: 16px;
+            opacity: .9;
+        }
+
+        .techos-tabs .nav-link.active {
+            background: #5c63ff; /* keep your brand color if you want */
+            color: #fff;
+            box-shadow: 0 14px 35px rgba(92,99,255,.25);
+        }
+
+/* scroll buttons */
+.tab-scroll-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: 0;
+    background: rgba(0,0,0,.06);
+    display: none; /* show on mobile */
+    align-items: center;
+    justify-content: center;
+}
+
+/* fade edges to hint scroll */
+.tabs-fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 36px;
+    pointer-events: none;
+    opacity: 0; /* will be toggled by JS */
+    transition: .2s ease;
+}
+
+    .tabs-fade.left {
+        left: 44px;
+        background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+    }
+
+    .tabs-fade.right {
+        right: 44px;
+        background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+    }
+
+/* =======================
+   Mobile / Tablet behavior
+   ======================= */
+@media (max-width: 991.98px) {
+    .techos-tabs {
+        flex-wrap: nowrap; /* one line */
+        justify-content: flex-start;
+        scroll-snap-type: x mandatory;
+    }
+
+        .techos-tabs .nav-item {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+        }
+
+        .techos-tabs .nav-link {
+            padding: 12px 16px;
+            font-size: 14px;
+        }
+
+    .tab-scroll-btn {
+        display: inline-flex;
+    }
+}
+
+/* Extra small: make pills a bit tighter */
+@media (max-width: 420px) {
+    .techos-tabs .nav-link {
+        padding: 11px 14px;
+        gap: 8px;
+    }
+
+        .techos-tabs .nav-link i {
+            font-size: 15px;
+        }
+}

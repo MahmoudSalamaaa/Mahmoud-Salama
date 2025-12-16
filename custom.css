@@ -8144,3 +8144,29 @@ img, video, canvas, svg {
         grid-template-columns: 1fr
     }
 }
+@media (max-width: 768px) {
+    .techos-tabs {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 8px 6px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+        .techos-tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        .techos-tabs .nav-item {
+            flex: 0 0 auto;
+        }
+
+        .techos-tabs .nav-link {
+            white-space: nowrap;
+            padding: 12px 16px;
+            border-radius: 999px;
+            min-width: max-content;
+        }
+}

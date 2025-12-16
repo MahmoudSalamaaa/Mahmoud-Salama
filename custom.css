@@ -8144,101 +8144,110 @@ img, video, canvas, svg {
         grid-template-columns: 1fr
     }
 }
+/* =========================================================
+   PERSONAL DETAILS (About Card) - Responsive Fix (FINAL)
+   Fix:
+   - Bad wrapping (email/links) => remove break-all
+   - Too tall on mobile => ellipsis / better grid
+   - Keep social icons from overlapping
+   ========================================================= */
 
-/* ===== CV Banner – Personal Details responsive fix ===== */
-/* Fixes: ugly wrapping (email/links), alignment, and too-tall layout on mobile */
-#cv_container .personal_details .ps_name{
-  font-size: clamp(28px, 4.5vw, 54px);
-  line-height: 1.05;
-  margin-bottom: 8px;
-}
-#cv_container .personal_details .ps_designation{
-  font-size: clamp(14px, 2.2vw, 20px);
-  line-height: 1.35;
-  margin-bottom: 18px;
-  opacity: .9;
-}
-
-/* Details list layout */
-#cv_container .personal_details .info-list{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 10px;
+.personal_details .ps_name {
+    font-size: clamp(28px, 5.2vw, 56px);
+    line-height: 1.05;
+    margin: 0 0 10px;
 }
 
-/* Default: 2-column label/value with clean wrapping */
-#cv_container .personal_details .info-list > li{
-  display: grid !important;
-  grid-template-columns: minmax(120px, 170px) minmax(0, 1fr);
-  column-gap: 18px;
-  row-gap: 4px;
-  align-items: baseline;
-}
-
-/* Ensure links behave like the spans (so the grid works in items that wrap <a>) */
-#cv_container .personal_details .info-list > li > a{
-  display: block;
-  min-width: 0;
-}
-
-/* Labels */
-#cv_container .personal_details .info-list .title{
-  white-space: nowrap;
-}
-
-/* Values: allow wrap but avoid "break-all" style ugly splits */
-#cv_container .personal_details .info-list .value,
-#cv_container .personal_details .info-list .value a{
-  min-width: 0;
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-break: normal;
-}
-
-/* Social buttons: prevent absolute/fixed overlap on small screens */
-#cv_container .personal_details .social-links{
-  position: static !important;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 18px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Mobile: stack label above value to reduce height + improve readability */
-@media (max-width: 575.98px){
-  #cv_container .personal_details{
-    padding-bottom: 16px;
-  }
-
-  #cv_container .personal_details .info-list{
-    gap: 8px;
-  }
-
-  #cv_container .personal_details .info-list > li{
-    grid-template-columns: 1fr;
-    column-gap: 0;
-  }
-
-  #cv_container .personal_details .info-list .title{
-    white-space: normal;
-    opacity: .85;
-    font-size: 13px;
-    margin-bottom: 2px;
-  }
-
-  #cv_container .personal_details .info-list .value,
-  #cv_container .personal_details .info-list .value a{
-    font-size: 14px;
+.personal_details .ps_designation {
+    font-size: clamp(14px, 2.6vw, 20px);
     line-height: 1.35;
-  }
+    margin: 0 0 18px;
+    opacity: .9;
+}
 
-  /* Keep icons from sticking to edges / overlapping other UI */
-  #cv_container .personal_details .social-links{
-    margin-top: 14px;
-    gap: 10px;
-  }
+/* list layout */
+.personal_details ul.info-list {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    display: grid !important;
+    gap: 12px;
+}
+
+    .personal_details ul.info-list > li {
+        margin: 0 !important;
+        display: grid !important;
+        grid-template-columns: minmax(130px, 180px) minmax(0, 1fr) !important;
+        column-gap: 18px;
+        row-gap: 2px;
+        align-items: baseline;
+    }
+
+    .personal_details ul.info-list .title {
+        white-space: nowrap;
+    }
+
+    /* IMPORTANT: kill break-all if template uses it */
+    .personal_details ul.info-list .value,
+    .personal_details ul.info-list .value a {
+        min-width: 0;
+        overflow-wrap: break-word !important;
+        word-break: normal !important;
+    }
+
+    .personal_details ul.info-list > li > a {
+        min-width: 0;
+        display: block;
+    }
+
+/* Social: prevent absolute positioning overlap */
+.personal_details ul.social-links {
+    position: static !important;
+    inset: auto !important;
+    margin: 16px 0 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* ---------- Mobile: keep it compact ---------- */
+@media (max-width: 575.98px) {
+    .personal_details ul.info-list {
+        gap: 10px;
+    }
+
+        .personal_details ul.info-list > li {
+            grid-template-columns: 110px minmax(0, 1fr) !important;
+            column-gap: 12px;
+        }
+
+        /* Make long values 1-line (no ugly breaks) */
+        .personal_details ul.info-list .value,
+        .personal_details ul.info-list .value a {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+}
+
+/* Extra small: stack label فوق value */
+@media (max-width: 420px) {
+    .personal_details ul.info-list > li {
+        grid-template-columns: 1fr !important;
+    }
+
+    .personal_details ul.info-list .title {
+        white-space: normal;
+        opacity: .85;
+        font-size: 13px;
+    }
+
+    .personal_details ul.info-list .value,
+    .personal_details ul.info-list .value a {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+    }
 }

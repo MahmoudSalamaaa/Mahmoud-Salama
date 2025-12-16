@@ -8425,6 +8425,7 @@ img, video, canvas, svg {
     }
 }
 
+
 /* Extra small: make pills a bit tighter */
 @media (max-width: 420px) {
     .techos-tabs .nav-link {

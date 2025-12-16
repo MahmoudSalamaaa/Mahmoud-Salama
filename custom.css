@@ -7784,3 +7784,461 @@ img, video, canvas, svg {
     color: #fff !important;
     display: block !important;
 }
+.techos-accordion {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Accordion Button */
+.acc-btn {
+    width: 100%;
+    padding: 18px 22px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: 0.02em;
+    background: linear-gradient(135deg, #111, #222);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+    .acc-btn i {
+        font-size: 20px;
+    }
+
+    .acc-btn::after {
+        content: "\f078"; /* fa-chevron-down */
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-left: auto;
+        transition: transform 0.25s ease;
+    }
+
+    /* Active state */
+    .acc-btn.active {
+        transform: translateY(-1px) scale(1.01);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+    }
+
+        .acc-btn.active::after {
+            transform: rotate(180deg);
+        }
+
+/* Color themes (match your palette) */
+.acc-cyan {
+    background: linear-gradient(135deg, #00e5ff, #008cff);
+}
+
+.acc-purple {
+    background: linear-gradient(135deg, #b100ff, #6500ff);
+}
+
+.acc-orange {
+    background: linear-gradient(135deg, #ff8a00, #ff5200);
+}
+
+.acc-blue {
+    background: linear-gradient(135deg, #007bff, #00a6ff);
+}
+
+.acc-green {
+    background: linear-gradient(135deg, #00c46b, #00934e);
+}
+
+.acc-pink {
+    background: linear-gradient(135deg, #ff4bb5, #ff2d7a);
+}
+
+.acc-red {
+    background: linear-gradient(135deg, #ff0055, #d4003f);
+}
+
+.acc-teal {
+    background: linear-gradient(135deg, #00c2a8, #008c7f);
+}
+
+.acc-yellow {
+    background: linear-gradient(135deg, #ffcf33, #ff9900);
+}
+
+.acc-indigo {
+    background: linear-gradient(135deg, #4b6fff, #3b3bff);
+}
+
+/* Content Panel */
+.acc-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #0c0f18;
+    border-radius: 14px;
+    padding: 0 20px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+    transition: max-height 0.45s ease, padding 0.3s ease;
+}
+
+    /* When open */
+    .acc-content.open {
+        padding: 20px 24px;
+        max-height: 2000px; /* enough for inner content */
+    }
+
+    /* Neutralize inner card padding/background so accordion feels unified */
+    .acc-content .techos-card {
+        background: transparent !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+
+    /* Small tweaks for grids inside to breathe */
+    .acc-content .dt_playbook_intro,
+    .acc-content .arch_grid,
+    .acc-content .cs_grid,
+    .acc-content .op_grid,
+    .acc-content .roadmap_grid,
+    .acc-content .wheel_flex_wrapper,
+    .acc-content .gov_grid,
+    .acc-content .inno_grid,
+    .acc-content .cto_grid {
+        margin-top: 6px;
+    }
+
+/* Responsive */
+@media (max-width: 767.98px) {
+    .acc-btn {
+        font-size: 16px;
+        padding: 14px 16px;
+    }
+
+    .acc-content.open {
+        padding: 16px 16px;
+    }
+}
+/* PANELS GRID */
+.techos-panels {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.panel-card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 18px;
+    box-shadow: 0 14px 40px rgba(0,0,0,.08);
+    cursor: pointer;
+    text-align: center;
+    transition: .3s;
+}
+
+    .panel-card i {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .panel-card:hover {
+        transform: translateY(-6px);
+    }
+
+/* DRAWER */
+.techos-drawer {
+    display: none;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 30px 80px rgba(0,0,0,.15);
+    animation: slideUp .4s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+    .drawer-header button {
+        border: none;
+        background: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+.drawer-content {
+    padding: 30px;
+}
+
+.drawer-section {
+    display: none;
+}
+
+/* ACTIVE */
+.techos-drawer.active {
+    display: block;
+}
+
+.drawer-section.active {
+    display: block;
+}
+
+/* Responsive */
+@media(max-width:992px) {
+    .techos-panels {
+        grid-template-columns: 1fr
+    }
+}
+.techos-panels {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+.panel-card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 18px;
+    box-shadow: 0 14px 40px rgba(0,0,0,.08);
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+    .panel-card:hover {
+        transform: translateY(-6px)
+    }
+
+    .panel-card i {
+        font-size: 26px;
+        margin-bottom: 10px
+    }
+
+.techos-drawer {
+    display: none;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 30px 80px rgba(0,0,0,.15);
+}
+
+    .techos-drawer.active {
+        display: block
+    }
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.drawer-content {
+    padding: 30px
+}
+
+.drawer-section {
+    display: none
+}
+
+    .drawer-section.active {
+        display: block
+    }
+
+@media(max-width:992px) {
+    .techos-panels {
+        grid-template-columns: 1fr
+    }
+}
+.techos-panels {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+.panel-card {
+    background: #fff;
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 14px 40px rgba(0,0,0,.08);
+    text-align: center;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+    .panel-card:hover {
+        transform: translateY(-6px)
+    }
+
+    .panel-card i {
+        font-size: 26px;
+        margin-bottom: 10px
+    }
+
+.techos-drawer {
+    display: none;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 30px 80px rgba(0,0,0,.15);
+}
+
+    .techos-drawer.active {
+        display: block
+    }
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+    .drawer-header button {
+        border: none;
+        background: none;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+.drawer-content {
+    padding: 30px
+}
+
+.drawer-section {
+    display: none
+}
+
+    .drawer-section.active {
+        display: block
+    }
+
+@media(max-width:992px) {
+    .techos-panels {
+        grid-template-columns: 1fr
+    }
+}
+
+/* ===== CV Banner – Personal Details responsive fix ===== */
+/* Fixes: ugly wrapping (email/links), alignment, and too-tall layout on mobile */
+#cv_container .personal_details .ps_name{
+  font-size: clamp(28px, 4.5vw, 54px);
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+#cv_container .personal_details .ps_designation{
+  font-size: clamp(14px, 2.2vw, 20px);
+  line-height: 1.35;
+  margin-bottom: 18px;
+  opacity: .9;
+}
+
+/* Details list layout */
+#cv_container .personal_details .info-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+/* Default: 2-column label/value with clean wrapping */
+#cv_container .personal_details .info-list > li{
+  display: grid !important;
+  grid-template-columns: minmax(120px, 170px) minmax(0, 1fr);
+  column-gap: 18px;
+  row-gap: 4px;
+  align-items: baseline;
+}
+
+/* Ensure links behave like the spans (so the grid works in items that wrap <a>) */
+#cv_container .personal_details .info-list > li > a{
+  display: block;
+  min-width: 0;
+}
+
+/* Labels */
+#cv_container .personal_details .info-list .title{
+  white-space: nowrap;
+}
+
+/* Values: allow wrap but avoid "break-all" style ugly splits */
+#cv_container .personal_details .info-list .value,
+#cv_container .personal_details .info-list .value a{
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Social buttons: prevent absolute/fixed overlap on small screens */
+#cv_container .personal_details .social-links{
+  position: static !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Mobile: stack label above value to reduce height + improve readability */
+@media (max-width: 575.98px){
+  #cv_container .personal_details{
+    padding-bottom: 16px;
+  }
+
+  #cv_container .personal_details .info-list{
+    gap: 8px;
+  }
+
+  #cv_container .personal_details .info-list > li{
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  #cv_container .personal_details .info-list .title{
+    white-space: normal;
+    opacity: .85;
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+
+  #cv_container .personal_details .info-list .value,
+  #cv_container .personal_details .info-list .value a{
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  /* Keep icons from sticking to edges / overlapping other UI */
+  #cv_container .personal_details .social-links{
+    margin-top: 14px;
+    gap: 10px;
+  }
+}

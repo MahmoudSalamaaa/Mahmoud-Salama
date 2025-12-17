@@ -8144,296 +8144,159 @@ img, video, canvas, svg {
         grid-template-columns: 1fr
     }
 }
+.techos-mobile-nav {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+@media(max-width:420px) {
+    .techos-mobile-nav {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tm_card {
+    border: 0;
+    padding: 14px;
+    border-radius: 14px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    box-shadow: 0 8px 22px rgba(0,0,0,.08);
+}
+
+    .tm_card.active {
+        background: linear-gradient(135deg,#00c8da,#ff4da6);
+        color: #fff;
+    }
+
+    .tm_card i {
+        width: 36px;
+        height: 36px;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+        background: #e2e8f0;
+    }
+/* MOBILE ONLY */
 @media (max-width: 768px) {
+
     .techos-tabs {
-        display: flex !important;
-        flex-wrap: nowrap !important;
-        overflow-x: auto;
-        gap: 10px;
-        padding: 8px 6px;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
+        display: none !important;
     }
 
-        .techos-tabs::-webkit-scrollbar {
-            display: none;
-        }
-
-        .techos-tabs .nav-item {
-            flex: 0 0 auto;
-        }
-
-        .techos-tabs .nav-link {
-            white-space: nowrap;
-            padding: 12px 16px;
-            border-radius: 999px;
-            min-width: max-content;
-        }
-}
-/* =======================
-   Tech-OS Tabs (Perfect Responsive)
-   ======================= */
-
-.techos-tabs-bar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0 auto;
-}
-
-/* scroll container */
-.techos-tabs-scroll {
-    flex: 1;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    padding: 6px 2px;
-}
-
-    .techos-tabs-scroll::-webkit-scrollbar {
-        display: none;
+    .mobile-stack .tab-pane {
+        display: block !important;
+        opacity: 1 !important;
     }
 
-/* tabs list */
-.techos-tabs {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap; /* Desktop default */
-    justify-content: center; /* Desktop nice */
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-    /* pill */
-    .techos-tabs .nav-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        border: 0;
-        border-radius: 999px;
-        padding: 14px 18px;
-        font-weight: 700;
-        white-space: nowrap;
-        transition: .2s ease;
-        background: rgba(0,0,0,.04);
-        box-shadow: 0 10px 25px rgba(0,0,0,.06);
+    .mobile-card {
+        border-radius: 16px;
+        padding: 14px;
+        margin-bottom: 14px;
+        background: #fff;
+        box-shadow: 0 6px 20px rgba(0,0,0,.06);
     }
 
-        .techos-tabs .nav-link i {
-            font-size: 16px;
-            opacity: .9;
-        }
-
-        .techos-tabs .nav-link.active {
-            background: #5c63ff; /* keep your brand color if you want */
-            color: #fff;
-            box-shadow: 0 14px 35px rgba(92,99,255,.25);
-        }
-
-/* scroll buttons */
-.tab-scroll-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 999px;
-    border: 0;
-    background: rgba(0,0,0,.06);
-    display: none; /* show on mobile */
-    align-items: center;
-    justify-content: center;
-}
-
-/* fade edges to hint scroll */
-.tabs-fade {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 36px;
-    pointer-events: none;
-    opacity: 0; /* will be toggled by JS */
-    transition: .2s ease;
-}
-
-    .tabs-fade.left {
-        left: 44px;
-        background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
-    }
-
-    .tabs-fade.right {
-        right: 44px;
-        background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
-    }
-
-/* =======================
-   Mobile / Tablet behavior
-   ======================= */
-@media (max-width: 991.98px) {
-    .techos-tabs {
-        flex-wrap: nowrap; /* one line */
-        justify-content: flex-start;
-        scroll-snap-type: x mandatory;
-    }
-
-        .techos-tabs .nav-item {
-            flex: 0 0 auto;
-            scroll-snap-align: start;
-        }
-
-        .techos-tabs .nav-link {
-            padding: 12px 16px;
-            font-size: 14px;
-        }
-
-    .tab-scroll-btn {
-        display: inline-flex;
-    }
-}
-
-/* Extra small: make pills a bit tighter */
-@media (max-width: 420px) {
-    .techos-tabs .nav-link {
-        padding: 11px 14px;
-        gap: 8px;
-    }
-
-        .techos-tabs .nav-link i {
+        .mobile-card::before {
+            content: attr(data-title);
+            display: block;
+            font-weight: 600;
             font-size: 15px;
-        }
-}
-/* =======================
-   Tech-OS Tabs (Perfect Responsive)
-   ======================= */
-
-.techos-tabs-bar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0 auto;
-}
-
-/* scroll container */
-.techos-tabs-scroll {
-    flex: 1;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    padding: 6px 2px;
-}
-
-    .techos-tabs-scroll::-webkit-scrollbar {
-        display: none;
-    }
-
-/* tabs list */
-.techos-tabs {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap; /* Desktop default */
-    justify-content: center; /* Desktop nice */
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-    /* pill */
-    .techos-tabs .nav-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        border: 0;
-        border-radius: 999px;
-        padding: 14px 18px;
-        font-weight: 700;
-        white-space: nowrap;
-        transition: .2s ease;
-        background: rgba(0,0,0,.04);
-        box-shadow: 0 10px 25px rgba(0,0,0,.06);
-    }
-
-        .techos-tabs .nav-link i {
-            font-size: 16px;
-            opacity: .9;
+            margin-bottom: 6px;
         }
 
-        .techos-tabs .nav-link.active {
-            background: #5c63ff; /* keep your brand color if you want */
-            color: #fff;
-            box-shadow: 0 14px 35px rgba(92,99,255,.25);
+    .mobile-preview {
+        font-size: 13px;
+        opacity: .75;
+        margin-bottom: 6px;
+    }
+
+    .mobile-body {
+        position: relative;
+        transition: all .3s ease;
+    }
+
+        .mobile-body.collapsed {
+            max-height: 180px;
+            overflow: hidden;
         }
 
-/* scroll buttons */
-.tab-scroll-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 999px;
-    border: 0;
-    background: rgba(0,0,0,.06);
-    display: none; /* show on mobile */
-    align-items: center;
-    justify-content: center;
-}
+            .mobile-body.collapsed::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 40px;
+                background: linear-gradient(to bottom, transparent, #fff);
+            }
 
-/* fade edges to hint scroll */
-.tabs-fade {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 36px;
-    pointer-events: none;
-    opacity: 0; /* will be toggled by JS */
-    transition: .2s ease;
-}
-
-    .tabs-fade.left {
-        left: 44px;
-        background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+    .view-more-btn {
+        margin-top: 8px;
+        background: none;
+        border: none;
+        font-size: 13px;
+        font-weight: 600;
+        color: #007bff;
     }
+}
+@media (max-width: 768px) {
 
-    .tabs-fade.right {
-        right: 44px;
-        background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
-    }
-
-/* =======================
-   Mobile / Tablet behavior
-   ======================= */
-@media (max-width: 991.98px) {
     .techos-tabs {
-        flex-wrap: nowrap; /* one line */
-        justify-content: flex-start;
-        scroll-snap-type: x mandatory;
+        display: none !important;
     }
 
-        .techos-tabs .nav-item {
-            flex: 0 0 auto;
-            scroll-snap-align: start;
+    .techos-content .tab-pane {
+        display: block !important;
+        opacity: 1 !important;
+    }
+
+    .techos-card {
+        margin-bottom: 16px;
+        position: relative;
+    }
+
+        .techos-card > * {
+            max-height: 220px;
+            overflow: hidden;
+            position: relative;
         }
 
-        .techos-tabs .nav-link {
-            padding: 12px 16px;
-            font-size: 14px;
+            .techos-card > *::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 40px;
+                background: linear-gradient(to bottom, transparent, #fff);
+            }
+
+        .techos-card.expanded > * {
+            max-height: none;
         }
 
-    .tab-scroll-btn {
-        display: inline-flex;
-    }
-}
+            .techos-card.expanded > *::after {
+                display: none;
+            }
 
+        .techos-card::after {
+            content: "View Details";
+            display: block;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            color: #007bff;
+            margin-top: 10px;
+            cursor: pointer;
+        }
 
-/* Extra small: make pills a bit tighter */
-@media (max-width: 420px) {
-    .techos-tabs .nav-link {
-        padding: 11px 14px;
-        gap: 8px;
-    }
-
-        .techos-tabs .nav-link i {
-            font-size: 15px;
+        .techos-card.expanded::after {
+            content: "Hide Details";
         }
 }

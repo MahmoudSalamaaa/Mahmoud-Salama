@@ -8428,3 +8428,34 @@ img, video, canvas, svg {
         transform: none;
     }
 }
+/* =============================== */
+/* MOBILE – FORCE SINGLE TIMELINE */
+/* =============================== */
+@media (max-width: 768px) {
+
+    /* ❌ Disable old decorative spine */
+    .timeline_spine {
+        display: none !important;
+    }
+
+    /* ✅ Single spine */
+    .timeline::before {
+        left: 28px;
+        width: 4px;
+        transform: none;
+    }
+
+    /* ✅ Dots centered on the SAME line */
+    .tl_dot {
+        left: 28px;
+        transform: translateX(-50%);
+    }
+
+    /* Cards spacing */
+    .tl_left .tl_card,
+    .tl_right .tl_card {
+        margin-left: 72px;
+        width: calc(100% - 92px);
+        transform: none;
+    }
+}

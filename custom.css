@@ -8300,3 +8300,58 @@ img, video, canvas, svg {
             content: "Hide Details";
         }
 }
+@media (max-width: 768px) {
+
+    .techos-tabs {
+        display: none !important;
+    }
+
+    .techos-content .tab-pane {
+        display: block !important;
+        opacity: 1 !important;
+    }
+
+    .techos-card {
+        margin-bottom: 16px;
+        position: relative;
+    }
+
+        .techos-card > * {
+            max-height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+
+            .techos-card > *::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 40px;
+                background: linear-gradient(to bottom, transparent, #fff);
+            }
+
+        .techos-card.expanded > * {
+            max-height: none;
+        }
+
+            .techos-card.expanded > *::after {
+                display: none;
+            }
+
+        .techos-card::after {
+            content: "View Details";
+            display: block;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            color: #007bff;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .techos-card.expanded::after {
+            content: "Hide Details";
+        }
+}

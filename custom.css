@@ -8355,38 +8355,76 @@ img, video, canvas, svg {
             content: "Hide Details";
         }
 }
-/* ===================================== */
-/* MOBILE – PERFECT LINE / CIRCLE ALIGN  */
-/* ===================================== */
+/* ========================= */
+/* MASTER TIMELINE SYSTEM   */
+/* ========================= */
+
+.timeline {
+    position: relative;
+}
+
+    /* CENTER LINE (desktop untouched) */
+    .timeline::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 4px;
+        transform: translateX(-50%);
+        background: linear-gradient(to bottom, #ff8a5c, #ff5fa2);
+        border-radius: 2px;
+    }
+
+/* DOT – GLOBAL, NOT ITEM-RELATIVE */
+.tl_dot {
+    position: absolute;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    border: 4px solid #ff5fa2;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+/* Each item controls ONLY vertical position */
+.tl_item {
+    position: relative;
+}
+
+    .tl_item .tl_dot {
+        top: 34px;
+    }
+
+/* ========================= */
+/* MOBILE – SINGLE AXIS     */
+/* ========================= */
+
 @media (max-width: 768px) {
 
-    /* Exact visual center of the ring */
     :root {
-        --timeline-x: 30px;
+        --axis-x: 28px;
     }
 
-    /* Vertical line */
+    /* Line */
     .timeline::before {
-        left: calc(var(--timeline-x) + 13px);
+        left: var(--axis-x);
         transform: none;
     }
 
-    /* Circle (ring) */
+    /* Dot */
     .tl_dot {
-        left: var(--timeline-x);
-        transform: none;
-        width: 18px;
-        height: 18px;
-        border: 4px solid #ff5fa2;
-        background: #fff;
-        box-sizing: content-box; /* IMPORTANT */
+        left: var(--axis-x);
+        transform: translateX(-50%);
     }
 
     /* Cards */
     .tl_left .tl_card,
     .tl_right .tl_card {
-        margin-left: 80px;
-        width: calc(100% - 100px);
+        margin-left: 72px;
+        width: calc(100% - 92px);
         transform: none;
     }
 }

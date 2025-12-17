@@ -8459,3 +8459,26 @@ img, video, canvas, svg {
         transform: none;
     }
 }
+/* ================================= */
+/* MOBILE – PERFECT DOT CENTERING   */
+/* ================================= */
+@media (max-width: 768px) {
+
+    /* Single axis for both line & dot */
+    :root {
+        --timeline-x: 28px;
+    }
+
+    /* Line */
+    .timeline::before {
+        left: var(--timeline-x);
+    }
+
+    /* Dot – visually centered on the line */
+    .tl_dot {
+        left: calc(var(--timeline-x) - 13px + 2px);
+        /* 13px = half of (18 + 4 + 4)
+           2px  = half of line width (4px) */
+        transform: none;
+    }
+}

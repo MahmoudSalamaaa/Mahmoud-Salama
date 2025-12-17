@@ -8355,94 +8355,34 @@ img, video, canvas, svg {
             content: "Hide Details";
         }
 }
-/* ===== TIMELINE WRAPPER ===== */
-.timeline {
-    position: relative;
-    display: grid;
-    gap: 60px;
-    padding: 60px 0;
-}
-
-    /* ===== VERTICAL SPINE (CENTERED) ===== */
-    .timeline::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        width: 4px;
-        transform: translateX(-50%);
-        background: linear-gradient( to bottom, #ff8a5c, #ff5fa2, #6bc5d2 );
-        border-radius: 2px;
-    }
-
-/* ===== TIMELINE ITEM ===== */
-.tl_item {
-    position: relative;
-    display: flex;
-}
-
-/* ===== DOT (LOCKED TO SPINE) ===== */
-.tl_dot {
-    position: absolute;
-    left: 50%;
-    top: 32px; /* aligns with card header */
-    transform: translateX(-50%);
-    width: 18px;
-    height: 18px;
-    background: #fff;
-    border: 4px solid #ff5fa2;
-    border-radius: 50%;
-    z-index: 2;
-}
-
-/* ===== LEFT / RIGHT CARD POSITIONING ===== */
-.tl_left {
-    justify-content: flex-start;
-}
-
-    .tl_left .tl_card {
-        margin-right: auto;
-        transform: translateX(-60px);
-    }
-
-.tl_right {
-    justify-content: flex-end;
-}
-
-    .tl_right .tl_card {
-        margin-left: auto;
-        transform: translateX(60px);
-    }
-
-/* ===== CARD ===== */
-.tl_card {
-    background: #fff;
-    border-radius: 20px;
-    padding: 28px;
-    width: min(480px, 90%);
-    box-shadow: 0 20px 40px rgba(0,0,0,.08);
-    position: relative;
-    z-index: 1;
-}
-
-/* ===== MOBILE (STACKED, STILL ALIGNED) ===== */
+/* ============================= */
+/* MOBILE ONLY – FIX TIMELINE    */
+/* ============================= */
 @media (max-width: 768px) {
 
+    /* Use ONE shared X-axis */
+    :root {
+        --mobile-line-x: 28px;
+    }
+
+    /* Vertical line */
     .timeline::before {
-        left: 20px;
+        left: var(--mobile-line-x);
         transform: none;
     }
 
+    /* Timeline dot – FORCE center on the line */
     .tl_dot {
-        left: 20px;
-        transform: none;
+        left: var(--mobile-line-x);
+        transform: translateX(-50%);
+        top: 34px; /* aligns with card header */
     }
 
+    /* Cards spacing */
     .tl_left .tl_card,
     .tl_right .tl_card {
+        margin-left: 72px;
+        width: calc(100% - 92px);
         transform: none;
-        margin-left: 60px;
-        width: calc(100% - 80px);
     }
 }

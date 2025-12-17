@@ -8355,34 +8355,38 @@ img, video, canvas, svg {
             content: "Hide Details";
         }
 }
-/* ============================= */
-/* MOBILE ONLY – FIX TIMELINE    */
-/* ============================= */
+/* ===================================== */
+/* MOBILE – PERFECT LINE / CIRCLE ALIGN  */
+/* ===================================== */
 @media (max-width: 768px) {
 
-    /* Use ONE shared X-axis */
+    /* Exact visual center of the ring */
     :root {
-        --mobile-line-x: 28px;
+        --timeline-x: 30px;
     }
 
     /* Vertical line */
     .timeline::before {
-        left: var(--mobile-line-x);
+        left: calc(var(--timeline-x) + 13px);
         transform: none;
     }
 
-    /* Timeline dot – FORCE center on the line */
+    /* Circle (ring) */
     .tl_dot {
-        left: var(--mobile-line-x);
-        transform: translateX(-50%);
-        top: 34px; /* aligns with card header */
+        left: var(--timeline-x);
+        transform: none;
+        width: 18px;
+        height: 18px;
+        border: 4px solid #ff5fa2;
+        background: #fff;
+        box-sizing: content-box; /* IMPORTANT */
     }
 
-    /* Cards spacing */
+    /* Cards */
     .tl_left .tl_card,
     .tl_right .tl_card {
-        margin-left: 72px;
-        width: calc(100% - 92px);
+        margin-left: 80px;
+        width: calc(100% - 100px);
         transform: none;
     }
 }

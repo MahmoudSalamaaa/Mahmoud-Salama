@@ -4461,3 +4461,22 @@ html, body {
         height: 16px;
     }
 }
+@media (max-width: 768px) {
+
+    .timeline_spine {
+        left: 24px;
+        transform: none;
+    }
+
+    .tl_dot {
+        left: 24px;
+        transform: translateX(-50%);
+    }
+
+    .tl_left,
+    .tl_right {
+        padding-left: 60px;
+        padding-right: 0;
+        text-align: left;
+    }
+}

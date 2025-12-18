@@ -1580,7 +1580,7 @@
     }
 
 /* Dot */
-/*.tl_dot {
+.tl_dot {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -1589,8 +1589,8 @@
     height: 18px;
     border-radius: 50%;
     background: #fff;
-    border: 3px solid #ff517e;*/ /* pink dot */
-    /*box-shadow: 0 0 0 6px rgba(255,81,126,.15);
+    border: 3px solid #ff517e; /* pink dot */
+    box-shadow: 0 0 0 6px rgba(255,81,126,.15);
 }
 
 @media(max-width:991.98px) {
@@ -1598,7 +1598,7 @@
         left: 20px;
         transform: none
     }
-}*/
+}
 
 /* Card */
 .tl_card {
@@ -1747,10 +1747,11 @@
 }
 
 /* Pill + primary button: single brand color (cyan); tweak if your theme uses another */
-#gallery .pill {
-    background: #06b6d4 !important;
-    border: 0 !important;
-}
+    #gallery .pill {
+        background: #06b6d4 !important;
+        border: 0 !important;
+        min-width:fit-content
+    }
 
 #gallery .actions .btn.primary {
     background: #06b6d4 !important;
@@ -1952,7 +1953,7 @@
     gap: 10px;
 }
 
-#gallery .pill {
+/*#gallery .pill {
     font-size: .8rem;
     padding: 6px 10px;
     border-radius: 999px;
@@ -1960,7 +1961,7 @@
     color: #fff;
     border: 1px solid rgba(255,255,255,.4);
 }
-
+*/
 #gallery .actions .btn {
     appearance: none;
     border: 1px solid #e2e8f0;
@@ -3034,13 +3035,13 @@ img, video, canvas, svg {
     gap: 10px;
 }
 
-#gallery .pill {
+/*#gallery .pill {
     display: inline-block;
     padding: .35rem .6rem;
     border-radius: 999px;
     font-size: .8rem;
     line-height: 1;
-}
+}*/
 
 #gallery .preview .actions {
     display: flex;

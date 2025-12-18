@@ -8477,3 +8477,34 @@ img, video, canvas, svg {
     }
 
 }
+/* Mobile title before View Details */
+.mobile-card-title {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+    /* Title text */
+    .mobile-card-title h4 {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0;
+        color: var(--cyan); /* نفس لون Tech-OS */
+        letter-spacing: 0.3px;
+    }
+
+    /* Small accent dot */
+    .mobile-card-title .accent-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--cyan), var(--purple));
+    }
+
+/* Show only on mobile */
+@media (max-width: 768px) {
+    .mobile-card-title {
+        display: flex;
+    }
+}

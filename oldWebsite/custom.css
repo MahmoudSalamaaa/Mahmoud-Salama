@@ -4411,3 +4411,53 @@ html, body {
         transform: none;
     }
 }
+.timeline {
+    position: relative;
+    padding-left: 60px; /* مساحة الكروت */
+}
+
+/* الخط */
+.timeline-line {
+    position: absolute;
+    left: 30px; /* مكان الخط */
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #f28c6b, #e85d8c);
+    border-radius: 2px;
+}
+
+/* كل عنصر */
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* الدائرة */
+.timeline-dot {
+    position: absolute;
+    left: 30px; /* نفس مكان الخط */
+    top: 24px; /* يتحكم في ارتفاعها */
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 4px solid #e85d8c;
+    border-radius: 50%;
+    transform: translateX(-50%); /* ⭐ التمركز الحقيقي */
+    z-index: 2;
+}
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 50px;
+    }
+
+    .timeline-line {
+        left: 24px;
+    }
+
+    .timeline-dot {
+        left: 24px;
+        width: 16px;
+        height: 16px;
+    }
+}

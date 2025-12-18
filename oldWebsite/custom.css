@@ -4387,8 +4387,8 @@ html, body {
 
     /* Vertical line */
     .timeline::before {
-        left: var(--timeline-x);
-        transform: none;
+        left: 21px;
+        /*transform: none;*/
     }
 
     /* Dot – TRUE visual centering */

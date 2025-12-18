@@ -8539,3 +8539,40 @@ img, video, canvas, svg {
         display: flex;
     }
 }
+/* العنوان داخل بطاقات Tech-OS في نسخة الجوال */
+.mobile-card-title {
+    display: none; /* إخفاء افتراضي على الشاشات الكبيرة */
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+    /* النص داخل العنوان */
+    .mobile-card-title h4 {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0;
+        /* استخدم لون الخط الداكن لضمان تباين واضح مع الخلفية */
+        color: var(--ink);
+        letter-spacing: 0.3px;
+    }
+
+    /* الدائرة الصغيرة المميّزة */
+    .mobile-card-title .accent-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--cyan), var(--purple));
+    }
+
+/* إظهار العنوان على الأجهزة ذات العرض 768px فأقل، مع منع اقتطاعه */
+@media (max-width: 768px) {
+    .mobile-card-title {
+        display: flex;
+    }
+
+    .techos-card .mobile-card-title {
+        max-height: none;
+        overflow: visible;
+    }
+}

@@ -4393,7 +4393,7 @@ html, body {
 
     /* Dot – TRUE visual centering */
     .tl_dot {
-        left: var(--timeline-x);
+        left: 21px;
         width: 26px; /* final visual size */
         height: 26px;
         border: 4px solid #ff5fa2;

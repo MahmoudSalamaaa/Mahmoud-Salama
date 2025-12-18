@@ -4392,16 +4392,16 @@ html, body {
     }
 
     /* Dot – TRUE visual centering */
-    .tl_dot {
+    /*.tl_dot {
         left: 21px;
-        width: 26px; /* final visual size */
-        height: 26px;
+        width: 26px;*/ /* final visual size */
+        /*height: 26px;
         border: 4px solid #ff5fa2;
         background: #fff;
         border-radius: 50%;
-        box-sizing: border-box; /* 🔥 THIS FIXES EVERYTHING */
-        transform: translateX(-50%);
-    }
+        box-sizing: border-box;*/ /* 🔥 THIS FIXES EVERYTHING */
+        /*transform: translateX(-50%);
+    }*/
 
     /* Cards */
     .tl_left .tl_card,
@@ -4459,73 +4459,5 @@ html, body {
         left: 24px;
         width: 16px;
         height: 16px;
-    }
-}
-@media (max-width: 768px) {
-
-    .timeline_spine {
-        left: 24px;
-        transform: none;
-    }
-
-    .tl_dot {
-        left: 24px;
-        transform: translateX(-50%);
-    }
-
-    .tl_left,
-    .tl_right {
-        padding-left: 60px;
-        padding-right: 0;
-        text-align: left;
-    }
-}
-/* Samsung Galaxy S24 / Small modern Android screens */
-@media screen and (max-width: 390px) {
-
-    /* الخط */
-    .timeline_spine {
-        left: 20px;
-        width: 3px;
-    }
-
-    /* الدائرة */
-    .tl_dot {
-        left: 20px;
-        width: 16px;
-        height: 16px;
-        border-width: 3px;
-        transform: translateX(-50%);
-    }
-
-    /* العناصر */
-    .tl_item {
-        margin-bottom: 32px;
-    }
-
-    /* الكروت */
-    .tl_left,
-    .tl_right {
-        padding-left: 56px;
-        padding-right: 0;
-        text-align: left;
-    }
-
-    .tl_card {
-        border-radius: 16px;
-    }
-
-    .tl_year {
-        font-size: 13px;
-    }
-
-    .tl_title {
-        font-size: 16px;
-        line-height: 1.35;
-    }
-
-    .tl_desc {
-        font-size: 14px;
-        line-height: 1.6;
     }
 }

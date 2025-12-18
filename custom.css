@@ -1747,11 +1747,11 @@
 }
 
 /* Pill + primary button: single brand color (cyan); tweak if your theme uses another */
-    #gallery .pill {
-        background: #06b6d4 !important;
-        border: 0 !important;
-        min-width:fit-content
-    }
+#gallery .pill {
+    background: #06b6d4 !important;
+    border: 0 !important;
+    min-width:fit-content
+}
 
 #gallery .actions .btn.primary {
     background: #06b6d4 !important;
@@ -1953,7 +1953,7 @@
     gap: 10px;
 }
 
-/*#gallery .pill {
+#gallery .pill {
     font-size: .8rem;
     padding: 6px 10px;
     border-radius: 999px;
@@ -1961,7 +1961,7 @@
     color: #fff;
     border: 1px solid rgba(255,255,255,.4);
 }
-*/
+
 #gallery .actions .btn {
     appearance: none;
     border: 1px solid #e2e8f0;
@@ -3035,13 +3035,13 @@ img, video, canvas, svg {
     gap: 10px;
 }
 
-/*#gallery .pill {
+#gallery .pill {
     display: inline-block;
     padding: .35rem .6rem;
     border-radius: 999px;
     font-size: .8rem;
     line-height: 1;
-}*/
+}
 
 #gallery .preview .actions {
     display: flex;

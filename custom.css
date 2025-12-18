@@ -3041,6 +3041,7 @@ img, video, canvas, svg {
     border-radius: 999px;
     font-size: .8rem;
     line-height: 1;
+    background: linear-gradient(90deg, #06b6d4, #ec4899);
 }
 
 #gallery .preview .actions {

@@ -8377,7 +8377,7 @@ img, video, canvas, svg {
     }
 
 /* DOT – GLOBAL, NOT ITEM-RELATIVE */
-/*.tl_dot {
+.tl_dot {
     position: absolute;
     left: 50%;
     width: 18px;
@@ -8387,16 +8387,16 @@ img, video, canvas, svg {
     border-radius: 50%;
     transform: translateX(-50%);
     z-index: 3;
-}*/
+}
 
 /* Each item controls ONLY vertical position */
-/*.tl_item {
+.tl_item {
     position: relative;
 }
 
     .tl_item .tl_dot {
         top: 34px;
-    }*/
+    }
 
 /* ========================= */
 /* MOBILE – SINGLE AXIS     */
@@ -8415,11 +8415,11 @@ img, video, canvas, svg {
     }
 
     /* Dot */
-   /* .tl_dot {
+    .tl_dot {
         left: var(--axis-x);
         transform: translateX(-50%);
     }
-*/
+
     /* Cards */
     .tl_left .tl_card,
     .tl_right .tl_card {
@@ -8446,11 +8446,11 @@ img, video, canvas, svg {
     }
 
     /* ✅ Dots centered on the SAME line */
-   /* .tl_dot {
+    .tl_dot {
         left: 28px;
         transform: translateX(-50%);
     }
-*/
+
     /* Cards spacing */
     .tl_left .tl_card,
     .tl_right .tl_card {

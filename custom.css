@@ -9734,3 +9734,20 @@ img, video, canvas, svg {
     .mobile-card-title {
         margin-bottom: 12px;
     }
+
+    .t-item {
+        padding: 14px 12px;
+    }
+
+        .t-item i {
+            font-size: 20px;
+        }
+
+        .t-item span {
+            font-size: 14px;
+        }
+
+        .t-item p {
+            font-size: 12.5px;
+        }
+}

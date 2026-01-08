@@ -10181,3 +10181,93 @@ img, video, canvas, svg {
         padding: 7px 12px;
     }
 }
+/* =====================================
+   REMOVE COLORED BORDERS – INNER TAB CONTENT
+===================================== */
+
+/* Remove any borders inside tab content cards */
+.techos-content .techos-card,
+.techos-content .arch_card,
+.techos-content .t-item,
+.techos-content .cs_mini_card,
+.techos-content .op_item,
+.techos-content .rm_phase_card,
+.techos-content .gov_item,
+.techos-content .inno_item,
+.techos-content .cto_card {
+    border: none !important;
+    outline: none !important;
+}
+
+/* Remove colored left/top borders if exist */
+.techos-content [class*="border"],
+.techos-content [class*="outline"] {
+    border-color: transparent !important;
+}
+
+/* Remove any accent pseudo borders */
+.techos-content .techos-card::before,
+.techos-content .techos-card::after,
+.techos-content .arch_card::before,
+.techos-content .arch_card::after {
+    content: none !important;
+}
+
+/* Keep shadow neutral (no color glow) */
+.techos-content .techos-card,
+.techos-content .arch_card,
+.techos-content .t-item {
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08) !important;
+}
+/* =====================================
+   INNER TAB TITLES – CENTERED & CLEAN
+===================================== */
+
+/* Hide the accent dot completely */
+.techos-content .mobile-card-title .accent-dot {
+    display: none !important;
+}
+
+/* Center the title container */
+.techos-content .mobile-card-title {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+    /* Enhance the inner tab title */
+    .techos-content .mobile-card-title h4 {
+        font-size: 18px;
+        font-weight: 900;
+        letter-spacing: -0.015em;
+        color: #0f172a;
+        margin: 0;
+        position: relative;
+    }
+
+        /* Subtle underline (clean, not a dot) */
+        .techos-content .mobile-card-title h4::after {
+            content: '';
+            display: block;
+            width: 42px;
+            height: 3px;
+            margin: 8px auto 0;
+            border-radius: 999px;
+            background: linear-gradient( 90deg, var(--cyan), var(--purple) );
+        }
+
+/* Mobile fine-tuning */
+@media (max-width: 768px) {
+    .techos-content .mobile-card-title {
+        margin-bottom: 14px;
+    }
+
+        .techos-content .mobile-card-title h4 {
+            font-size: 17px;
+        }
+
+            .techos-content .mobile-card-title h4::after {
+                width: 36px;
+                margin-top: 6px;
+            }
+}

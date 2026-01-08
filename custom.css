@@ -10271,3 +10271,41 @@ img, video, canvas, svg {
                 margin-top: 6px;
             }
 }
+/* =====================================
+   FIX: VIEW DETAILS BUTTON NOT VISIBLE (MOBILE)
+===================================== */
+
+/* Force button visibility */
+.techos-content .view-details-btn {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Ensure parent does not hide it */
+.techos-content .techos-card,
+.techos-content .dt_intro_card,
+.techos-content .t-item,
+.techos-content .cs_mini_card,
+.techos-content .op_item {
+    overflow: visible !important;
+}
+
+/* Mobile-specific placement */
+@media (max-width: 768px) {
+
+    .techos-content .view-details-btn {
+        margin-top: 12px;
+        font-size: 12.5px;
+        padding: 7px 14px;
+        align-self: center;
+    }
+
+    /* If inside flex container */
+    .techos-content .dt_intro_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -8617,3 +8617,638 @@ img, video, canvas, svg {
         overflow: visible;
     }
 }
+/* ===============================
+   Education & Languages – Modern
+=============================== */
+
+.edu-modern {
+    padding: 80px 0;
+    background: #ffffff;
+    font-family: 'Inter', sans-serif;
+    color: #1f2937;
+}
+
+/* Header */
+.edu-header {
+    margin-bottom: 60px;
+}
+
+.edu-eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #f4a300;
+    margin-bottom: 12px;
+}
+
+.edu-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Grid */
+.edu-grid {
+    row-gap: 50px;
+}
+
+/* Columns */
+.edu-col-heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #00c6ff;
+}
+
+/* Item */
+.edu-item {
+    margin-bottom: 28px;
+}
+
+    .edu-item:last-child {
+        margin-bottom: 0;
+    }
+
+/* Meta line */
+.edu-item-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+    .edu-item-meta h4 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+        color: #111827;
+    }
+
+.edu-period {
+    margin-left: auto;
+    font-size: 13px;
+    color: #6b7280;
+    white-space: nowrap;
+}
+
+/* Marker */
+.edu-marker {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+    .edu-marker.cyan {
+        background: #00c6ff;
+    }
+
+    .edu-marker.pink {
+        background: #ff5da2;
+    }
+
+    .edu-marker.green {
+        background: #22c55e;
+    }
+
+    .edu-marker.purple {
+        background: #7c5cff;
+    }
+
+/* Text */
+.edu-org {
+    font-size: 14px;
+    font-weight: 500;
+    color: #f4a300;
+    margin: 0 0 4px;
+}
+
+.edu-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4b5563;
+    max-width: 95%;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .edu-modern {
+        padding: 60px 20px;
+    }
+
+    .edu-title {
+        font-size: 30px;
+    }
+}
+/* ===== Section Base ===== */
+#edu-lang {
+    padding: 120px 0;
+    position: relative;
+}
+
+    #edu-lang::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 10% 20%, rgba(0,255,255,.08), transparent 40%), radial-gradient(circle at 90% 80%, rgba(255,0,200,.07), transparent 40%);
+        pointer-events: none;
+    }
+
+/* ===== Heading ===== */
+.section-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-radius: 999px;
+    color: #00f6ff;
+    background: rgba(0,246,255,.1);
+    margin-bottom: 12px;
+}
+
+.section-subtext {
+    max-width: 560px;
+    margin: 14px auto 0;
+    font-size: 16px;
+    color: #b8c4d9;
+}
+
+/* ===== Column Titles ===== */
+.edu-col-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.gradient-cyan {
+    background: linear-gradient(90deg, #00f6ff, #00c3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-purple {
+    background: linear-gradient(90deg, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== Timeline ===== */
+.edu-timeline {
+    position: relative;
+    padding-left: 28px;
+}
+
+    .edu-timeline::before {
+        content: "";
+        position: absolute;
+        left: 8px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(to bottom, #00f6ff, transparent);
+        opacity: .4;
+    }
+
+/* ===== Item ===== */
+.edu-exp-item {
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 22px 24px;
+    margin-bottom: 26px;
+    transition: all .35s ease;
+}
+
+    .edu-exp-item:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 50px rgba(0,0,0,.35);
+        border-color: rgba(0,246,255,.35);
+    }
+
+/* ===== Head ===== */
+.edu-exp-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+    .edu-exp-head h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+        flex: 1;
+    }
+
+.edu-date {
+    font-size: 13px;
+    opacity: .7;
+}
+
+/* ===== Dots ===== */
+.edu-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+    .edu-dot::after {
+        content: "";
+        position: absolute;
+        inset: -6px;
+        border-radius: 50%;
+        opacity: .4;
+    }
+
+    .edu-dot.cyan {
+        background: #00f6ff;
+    }
+
+        .edu-dot.cyan::after {
+            background: rgba(0,246,255,.25);
+        }
+
+    .edu-dot.pink {
+        background: #ec4899;
+    }
+
+        .edu-dot.pink::after {
+            background: rgba(236,72,153,.25);
+        }
+
+    .edu-dot.green {
+        background: #22c55e;
+    }
+
+        .edu-dot.green::after {
+            background: rgba(34,197,94,.25);
+        }
+
+    .edu-dot.purple {
+        background: #a855f7;
+    }
+
+        .edu-dot.purple::after {
+            background: rgba(168,85,247,.25);
+        }
+
+/* ===== Body ===== */
+.edu-org {
+    font-size: 14px;
+    color: #9bdcff;
+    margin-bottom: 6px;
+}
+
+.edu-exp-body p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    color: #cdd6e3;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    #edu-lang {
+        padding: 80px 0;
+    }
+
+    .edu-col-title {
+        font-size: 22px;
+    }
+}
+/* ===== Education & Languages – Modern Compact ===== */
+
+.edu-exp {
+    position: relative;
+}
+
+.edu-col-title {
+    margin-bottom: 14px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.edu-card {
+    /*background: rgba(255,255,255,.85);*/
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(148,163,184,.18);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 12px 28px rgba(15,23,42,.08);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.edu-item {
+    display: flex;
+    gap: 14px;
+    position: relative;
+}
+
+.edu-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 6px rgba(0,0,0,.04);
+}
+
+.edu-content {
+    flex: 1;
+}
+
+.edu-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+
+    .edu-head h4 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--ink);
+    }
+
+.edu-date {
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.edu-org {
+    margin: 4px 0 2px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.edu-desc {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #334155;
+}
+
+/* Hover polish */
+.edu-card .edu-item:hover {
+    transform: translateY(-2px);
+    transition: transform .2s ease;
+}
+/* ===== Ultra Compact – Education & Languages ===== */
+
+/* Section spacing */
+#edu-lang {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+    /* Heading */
+    #edu-lang .port_heading_wrapper {
+        margin-bottom: 24px !important;
+    }
+
+    #edu-lang .port_heading {
+        font-size: clamp(26px, 3vw, 34px);
+        margin-bottom: 6px;
+    }
+
+    #edu-lang .section-subtext {
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    /* Columns title */
+    #edu-lang .edu-col-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    /* Card container */
+    #edu-lang .edu-card {
+        padding: 14px;
+        border-radius: 14px;
+        gap: 10px;
+    }
+
+    /* Item row */
+    #edu-lang .edu-item {
+        gap: 10px;
+    }
+
+    /* Dots smaller */
+    #edu-lang .edu-dot {
+        width: 8px;
+        height: 8px;
+        margin-top: 5px;
+        box-shadow: 0 0 0 4px rgba(0,0,0,.05);
+    }
+
+    /* Header row */
+    #edu-lang .edu-head {
+        gap: 8px;
+    }
+
+        /* Title */
+        #edu-lang .edu-head h4 {
+            font-size: 15px;
+            line-height: 1.3;
+        }
+
+    /* Date */
+    #edu-lang .edu-date {
+        font-size: 11.5px;
+    }
+
+    /* Org line */
+    #edu-lang .edu-org {
+        font-size: 12.5px;
+        margin: 2px 0 0;
+    }
+
+    /* Description */
+    #edu-lang .edu-desc {
+        font-size: 12.5px;
+        line-height: 1.45;
+    }
+
+    /* Remove extra hover lift */
+    #edu-lang .edu-item:hover {
+        transform: none;
+    }
+
+    /* Row gutters */
+    #edu-lang .row {
+        --bs-gutter-y: 1rem;
+    }
+/* ===== Clean Section Background ===== */
+#edu-lang {
+    background: #ffffff !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+#edu-lang {
+    background: #f8fafc !important; /* subtle light */
+}
+/* =========================================================
+   Education & Languages – Final Compact Clean Version
+   ========================================================= */
+
+/* ===== Section Background ===== */
+#edu-lang {
+    background: #ffffff !important;
+    padding: 40px 0;
+    position: relative;
+}
+
+    /* ===== Heading ===== */
+    #edu-lang .port_heading_wrapper {
+        margin-bottom: 24px !important;
+    }
+
+    #edu-lang .port_heading {
+        font-size: clamp(26px, 3vw, 34px);
+        margin-bottom: 6px;
+        font-weight: 800;
+    }
+
+    #edu-lang .section-subtext {
+        font-size: 14px;
+        line-height: 1.45;
+        color: #475569;
+    }
+
+    /* ===== Column Titles ===== */
+    #edu-lang .edu-col-title {
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    /* ===== Cards ===== */
+    #edu-lang .edu-card {
+        background: #ffffff;
+        border-radius: 14px;
+        padding: 14px;
+        border: 1px solid rgba(148,163,184,.18);
+        box-shadow: 0 10px 24px rgba(15,23,42,.06);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+    }
+
+        /* Accent strip */
+        #edu-lang .edu-card::before {
+            content: "";
+            position: absolute;
+            top: 14px;
+            bottom: 14px;
+            left: 0;
+            width: 4px;
+            border-radius: 4px;
+            background: linear-gradient( 180deg, var(--cyan), var(--pink), var(--purple) );
+        }
+
+    /* ===== Item Row ===== */
+    #edu-lang .edu-item {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* ===== Dots ===== */
+    #edu-lang .edu-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-top: 5px;
+        flex-shrink: 0;
+        box-shadow: 0 0 0 4px rgba(0,0,0,.04);
+    }
+
+        #edu-lang .edu-dot.cyan {
+            background: var(--cyan);
+        }
+
+        #edu-lang .edu-dot.pink {
+            background: var(--pink);
+        }
+
+        #edu-lang .edu-dot.purple {
+            background: var(--purple);
+        }
+
+        #edu-lang .edu-dot.green {
+            background: var(--green);
+        }
+
+    /* ===== Content ===== */
+    #edu-lang .edu-content {
+        flex: 1;
+    }
+
+    /* Head row */
+    #edu-lang .edu-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+    }
+
+        /* Title */
+        #edu-lang .edu-head h4 {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 800;
+            line-height: 1.3;
+            color: var(--ink);
+        }
+
+    /* Date */
+    #edu-lang .edu-date {
+        font-size: 11.5px;
+        font-weight: 700;
+        color: var(--cyan);
+        white-space: nowrap;
+    }
+
+    /* Organization */
+    #edu-lang .edu-org {
+        margin: 2px 0 0;
+        font-size: 12.5px;
+        font-weight: 700;
+        color: var(--pink);
+    }
+
+    /* Description */
+    #edu-lang .edu-desc {
+        margin: 0;
+        font-size: 12.5px;
+        line-height: 1.45;
+        color: #334155;
+    }
+
+    /* ===== Row spacing ===== */
+    #edu-lang .row {
+        --bs-gutter-y: 1rem;
+    }
+
+    /* ===== Remove unnecessary motion ===== */
+    #edu-lang .edu-item:hover {
+        transform: none;
+    }
+    #edu-lang,
+#edu-lang::before,
+#edu-lang::after {
+    /*background: #f8fafc !important;*/
+    background-image: none !important;
+}

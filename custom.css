@@ -9424,3 +9424,313 @@ img, video, canvas, svg {
     .lb-nav.next {
         right: 20px;
     }
+/* =====================================================
+   TECH-OS – GLOBAL
+===================================================== */
+
+.techos_section {
+    background: #ffffff;
+    padding: 60px 0;
+    position: relative;
+}
+
+    .techos_section .port_heading_wrapper {
+        margin-bottom: 40px;
+    }
+
+    .techos_section .port_heading {
+        font-size: clamp(26px, 4vw, 36px);
+    }
+
+    .techos_section .port_sub_heading {
+        font-size: 14px;
+        letter-spacing: .08em;
+        font-weight: 700;
+    }
+
+/* =====================================================
+   TABS
+===================================================== */
+
+.techos-tabs {
+    border: none;
+    gap: 8px;
+}
+
+    .techos-tabs .nav-link {
+        border: none;
+        border-radius: 999px;
+        padding: 8px 14px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #475569;
+        background: #f1f5f9;
+    }
+
+        .techos-tabs .nav-link i {
+            margin-right: 6px;
+        }
+
+        .techos-tabs .nav-link.active {
+            background: var(--cyan);
+            color: #ffffff;
+        }
+
+/* =====================================================
+   CARD BASE
+===================================================== */
+
+.techos-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, .08);
+    margin-bottom: 28px;
+}
+
+/* =====================================================
+   MOBILE CARD TITLE
+===================================================== */
+
+.mobile-card-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+    .mobile-card-title h4 {
+        font-size: 16px;
+        font-weight: 800;
+        margin: 0;
+    }
+
+.accent-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--cyan);
+}
+
+/* =====================================================
+   THINKING MODEL (FIXED HEIGHT)
+===================================================== */
+
+.thinking-card {
+    padding: 20px;
+}
+
+.thinking-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.t-item {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 16px 14px;
+    text-align: center;
+}
+
+    .t-item i {
+        font-size: 22px;
+        color: #6366f1;
+        margin-bottom: 6px;
+    }
+
+    .t-item span {
+        display: block;
+        font-size: 15px;
+        font-weight: 800;
+        margin-bottom: 4px;
+    }
+
+    .t-item p {
+        font-size: 13px;
+        line-height: 1.45;
+        color: #64748b;
+        margin: 0;
+    }
+
+/* =====================================================
+   ARCHITECTURE BLUEPRINT
+===================================================== */
+
+.arch_grid.compact_arch {
+    row-gap: 20px;
+}
+
+.arch_card.compact_card {
+    background: #f8fafc;
+    border-radius: 18px;
+    padding: 18px;
+}
+
+.arch_tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 10px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.arch_card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.arch_card ul {
+    padding-left: 16px;
+    margin: 0;
+}
+
+.arch_card li {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =====================================================
+   CASE STUDIES
+===================================================== */
+
+.cs_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.cs_mini_card {
+    padding: 18px;
+    border-radius: 18px;
+}
+
+    .cs_mini_card h4 {
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .cs_mini_card p {
+        font-size: 13px;
+    }
+
+/* =====================================================
+   OPERATING MODELS
+===================================================== */
+
+.op_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+}
+
+.op_item {
+    background: #f8fafc;
+    padding: 18px;
+    border-radius: 18px;
+}
+
+    .op_item h4 {
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .op_item p {
+        font-size: 13px;
+    }
+
+/* =====================================================
+   ROADMAP
+===================================================== */
+
+.roadmap_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.rm_phase_card {
+    padding: 18px;
+    border-radius: 18px;
+    background: #f8fafc;
+}
+
+    .rm_phase_card h4 {
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .rm_phase_card p {
+        font-size: 13px;
+    }
+
+/* =====================================================
+   STACK WHEEL LAYOUT FIX
+===================================================== */
+
+.wheel_flex_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+}
+
+@media (min-width: 992px) {
+    .wheel_flex_wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* =====================================================
+   GOVERNANCE / INNOVATION / LEADERSHIP
+===================================================== */
+
+.gov_item,
+.inno_item,
+.cto_card {
+    background: #f8fafc;
+    padding: 18px;
+    border-radius: 18px;
+}
+
+    .gov_item h4,
+    .inno_item h4,
+    .lead_title {
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .gov_item p,
+    .inno_item p {
+        font-size: 13px;
+    }
+
+/* =====================================================
+   MOBILE COMPACT MODE (KEY FIX)
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .techos_section {
+        padding: 32px 0;
+    }
+
+    .techos-card {
+        padding: 18px 14px;
+        margin-bottom: 20px;
+    }
+
+    .techos-tabs {
+        gap: 6px;
+    }
+
+        .techos-tabs .nav-link {
+            font-size: 12px;
+            padding: 6px 12px;
+        }
+
+    .mobile-card-title {
+        margin-bottom: 12px;
+    }

@@ -202,6 +202,7 @@
         width: 33.3333%;
     }
 
+
     .skills_tabs_section .row > [class*='col-md-6'] {
         flex: 0 0 50%;
         max-width: 50%;

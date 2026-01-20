@@ -202,7 +202,6 @@
         width: 33.3333%;
     }
 
-
     .skills_tabs_section .row > [class*='col-md-6'] {
         flex: 0 0 50%;
         max-width: 50%;
@@ -1129,7 +1128,6 @@
     margin-top: -100px !important;
 }
 
-
 /* ========= LIGHT THEME TOKENS + TYPOGRAPHY ========= */
 :root {
     --web: #fb923c; /* Websites & Portals (was #06b6d4) */
@@ -1524,7 +1522,6 @@
     }
 }
 
-
 /* Clean white background */
 .clean_bg {
     background-color: #fff;
@@ -1717,8 +1714,6 @@
     }
 }
 
-
-
 /* Section background: match site, no gradient */
 #gallery {
     background: var(--bg, #f8fafc) !important;
@@ -1758,7 +1753,6 @@
         background: #06b6d4 !important;
         border: 0 !important;
     }
-
 
 /* ===== Scoped styles: won't leak due to #gallery root selectors ===== */
 #gallery {
@@ -2040,7 +2034,6 @@
     }
 }
 
-
 /* ====== COLOR TOKENS (from your palette) ====== */
 :root {
     --cyan: #06b6d4;
@@ -2257,7 +2250,6 @@
     }
 }
 
-
 /* ======= Palette (your colors) ======= */
 :root {
     --cyan: #06b6d4;
@@ -2421,7 +2413,6 @@
         animation: none !important;
     }
 }
-
 
 /* ====== COLOR TOKENS (from your palette) ====== */
 :root {
@@ -7106,7 +7097,6 @@ img, video, canvas, svg {
     line-height: 1.55;
 }
 
-
 /* ---------------------------------
    GRID
 --------------------------------- */
@@ -7115,7 +7105,6 @@ img, video, canvas, svg {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 26px;
 }
-
 
 /* ---------------------------------
    CARDS
@@ -7159,7 +7148,6 @@ img, video, canvas, svg {
         opacity: 1;
     }
 
-
 /* ---------------------------------
    ICONS (Premium Halo Style)
 --------------------------------- */
@@ -7197,7 +7185,6 @@ img, video, canvas, svg {
 .op_red .op_icon {
     background: #e74c3c;
 }
-
 
 /* ---------------------------------
    TEXT
@@ -7265,7 +7252,6 @@ img, video, canvas, svg {
     margin: 0 auto 30px;
     font-size: 14.5px;
 }
-
 
 /* ------------------------------
    Timeline Layout
@@ -7370,7 +7356,6 @@ img, video, canvas, svg {
     color: #555;
     margin-bottom: 10px;
 }
-
 
 /* ------------------------------
    Badges
@@ -8227,7 +8212,6 @@ img, video, canvas, svg {
     }
 /* MOBILE ONLY */
 @media (max-width: 768px) {
-
     .techos-tabs {
         display: none !important;
     }
@@ -8290,7 +8274,6 @@ img, video, canvas, svg {
 }
 
 @media (max-width: 768px) {
-
     .techos-tabs {
         display: none !important;
     }
@@ -8346,7 +8329,6 @@ img, video, canvas, svg {
 }
 
 @media (max-width: 768px) {
-
     .techos-tabs {
         display: none !important;
     }
@@ -8448,7 +8430,6 @@ img, video, canvas, svg {
 /* ========================= */
 
 @media (max-width: 768px) {
-
     :root {
         --axis-x: 28px;
     }
@@ -8477,7 +8458,6 @@ img, video, canvas, svg {
 /* MOBILE – FORCE SINGLE TIMELINE */
 /* =============================== */
 @media (max-width: 768px) {
-
     /* ❌ Disable old decorative spine */
     .timeline_spine {
         display: none !important;
@@ -8508,7 +8488,6 @@ img, video, canvas, svg {
 /* MOBILE – PERFECT DOT CENTERING   */
 /* ================================= */
 @media (max-width: 768px) {
-
     /* Single axis for both line & dot */
     :root {
         --timeline-x: 28px;
@@ -9097,6 +9076,7 @@ img, video, canvas, svg {
     padding-bottom: 40px;
     position: relative;
 }
+
 #edu-lang {
     background: #f8fafc !important; /* subtle light */
 }
@@ -9247,12 +9227,13 @@ img, video, canvas, svg {
     #edu-lang .edu-item:hover {
         transform: none;
     }
+
     #edu-lang,
-#edu-lang::before,
-#edu-lang::after {
-    /*background: #f8fafc !important;*/
-    background-image: none !important;
-}
+    #edu-lang::before,
+    #edu-lang::after {
+        /*background: #f8fafc !important;*/
+        background-image: none !important;
+    }
 /* ===== Impact Gallery Switcher ===== */
 .impact-switcher {
     background: #fff;
@@ -9713,7 +9694,6 @@ img, video, canvas, svg {
 ===================================================== */
 
 @media (max-width: 768px) {
-
     .techos_section {
         padding: 32px 0;
     }
@@ -10142,7 +10122,6 @@ img, video, canvas, svg {
 ===================================================== */
 
 @media(max-width:768px) {
-
     .techos_section {
         padding: 32px 0;
     }
@@ -10294,7 +10273,6 @@ img, video, canvas, svg {
 
 /* Mobile-specific placement */
 @media (max-width: 768px) {
-
     .techos-content .view-details-btn {
         margin-top: 12px;
         font-size: 12.5px;
@@ -10360,4 +10338,980 @@ img, video, canvas, svg {
         align-items: center;
         text-align: center;
     }
+}
+/* Philosophy Section Accent */
+#cto-philosophy {
+    background: #f8fafc;
+}
+
+    #cto-philosophy .philosophy-card {
+        border-top: 4px solid #0ea5e9;
+    }
+/* ================= CTO OS WHEEL ================= */
+
+.cto-wheel-wrapper {
+    position: relative;
+    height: 420px;
+    margin: 40px auto 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cto-wheel {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+}
+
+.cto-wheel-center {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #0f172a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 20px 40px rgba(0,0,0,.25);
+}
+
+    .cto-wheel-center span {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+/* Wheel Items */
+.wheel-item {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 12px 28px rgba(0,0,0,.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+    .wheel-item i {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    .wheel-item span {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    /* Hover Motion */
+    .wheel-item:hover {
+        transform: scale(1.12);
+        box-shadow: 0 20px 40px rgba(0,0,0,.25);
+    }
+
+/* Positions */
+.strategy {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.architecture {
+    top: 70px;
+    right: -10px;
+}
+
+.people {
+    bottom: 70px;
+    right: -10px;
+}
+
+.governance {
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.delivery {
+    bottom: 70px;
+    left: -10px;
+}
+
+.evolution {
+    top: 70px;
+    left: -10px;
+}
+
+/* Color Mapping */
+.strategy i {
+    color: #06b6d4;
+}
+
+.architecture i {
+    color: #2563eb;
+}
+
+.people i {
+    color: #16a34a;
+}
+
+.governance i {
+    color: #dc2626;
+}
+
+.delivery i {
+    color: #f97316;
+}
+
+.evolution i {
+    color: #7c3aed;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .cto-wheel-wrapper {
+        height: auto;
+    }
+
+    .cto-wheel {
+        transform: scale(.85);
+    }
+}
+/* ================= CTO OS WHEEL PANE ================= */
+
+.cto-wheel-pane {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Description Panel */
+.wheel-description {
+    max-width: 360px;
+}
+
+    .wheel-description h3 {
+        font-size: 26px;
+        font-weight: 800;
+        margin-bottom: 12px;
+        color: #0f172a;
+    }
+
+    .wheel-description p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #475569;
+    }
+
+/* Active State */
+.wheel-item.active {
+    transform: scale(1.15);
+    box-shadow: 0 24px 48px rgba(0,0,0,.28);
+    border: 3px solid #0ea5e9;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+    .cto-wheel-pane {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .wheel-description {
+        text-align: center;
+    }
+}
+/* ================================
+   Strategic Decisions – Decision Compass
+================================ */
+
+.dcmp-title {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 6px;
+}
+
+.dcmp-sub {
+    font-size: 14px;
+    opacity: 0.7;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* Grid */
+.dcmp-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 26px;
+}
+
+/* Item */
+.dcmp-item {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 22px 20px;
+    border: 1px solid rgba(0,0,0,0.06);
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+    .dcmp-item:hover {
+        transform: translateY(-6px);
+    }
+
+/* Icon */
+.dcmp-icon {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* Title */
+.dcmp-item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Text */
+.dcmp-item p {
+    font-size: 13px;
+    opacity: 0.75;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+/* Tag */
+.dcmp-tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: #f1f5f9;
+    color: #334155;
+}
+
+/* Color themes */
+.dcmp-blue .dcmp-icon {
+    background: #0ea5e9;
+}
+
+.dcmp-purple .dcmp-icon {
+    background: #a855f7;
+}
+
+.dcmp-green .dcmp-icon {
+    background: #22c55e;
+}
+
+.dcmp-orange .dcmp-icon {
+    background: #fb923c;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+    .dcmp-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .dcmp-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===============================
+   Strategic Decisions – Decision Wheel
+================================ */
+
+.decision-wheel-wrapper {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 40px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* Wheel */
+.decision-wheel {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    margin: auto;
+}
+
+.wheel-center {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #0f172a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Items */
+.wheel-item {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    text-align: center;
+    transition: transform 0.25s ease;
+}
+
+    .wheel-item i {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+/* Positions */
+.wi-scale {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wi-governance {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wi-delivery {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wi-evolution {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wheel-item:hover {
+    transform: scale(1.06);
+}
+
+/* Color accents */
+.wi-scale i {
+    color: #0ea5e9;
+}
+
+.wi-governance i {
+    color: #8b5cf6;
+}
+
+.wi-delivery i {
+    color: #22c55e;
+}
+
+.wi-evolution i {
+    color: #f97316;
+}
+
+/* Right content */
+.decision-wheel-content {
+    display: grid;
+    gap: 18px;
+}
+
+.dw-item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.dw-item p {
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 1.5;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+    .decision-wheel-wrapper {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .decision-wheel {
+        width: 300px;
+        height: 300px;
+    }
+}
+/* =========================================================
+   Decision Wheel (Polished) — scoped by .dw-polished
+   Uses your :root tokens (--ink, --muted, --bg, --card, etc.)
+   ========================================================= */
+
+.decision-wheel-wrapper.dw-polished {
+    --dw-ink: var(--ink, #0f172a);
+    --dw-muted: var(--muted, #475569);
+    --dw-card: var(--card, #ffffff);
+    --dw-line: var(--line, #e5e7eb);
+    --dw-shadow: var(--shadow, 0 8px 18px rgba(15,23,42,.06));
+    --dw-radius: 20px;
+    /* default accent (updated by JS when selecting items) */
+    --dw-accent: var(--app, #06b6d4);
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 42px;
+    align-items: center;
+    padding: 18px 8px 6px;
+    /* soft colorful backdrop like other sections */
+    background: radial-gradient(900px 520px at 10% 10%, color-mix(in srgb, var(--dw-accent) 16%, transparent) 0%, transparent 60%), radial-gradient(700px 480px at 90% 30%, color-mix(in srgb, var(--all, #ec4899) 12%, transparent) 0%, transparent 60%);
+    border-radius: var(--dw-radius);
+}
+
+    /* Wheel container */
+    .decision-wheel-wrapper.dw-polished .decision-wheel {
+        position: relative;
+        width: 360px;
+        height: 360px;
+        margin: auto;
+        isolation: isolate;
+    }
+
+        /* Rotating rim (subtle) */
+        .decision-wheel-wrapper.dw-polished .decision-wheel::before {
+            content: "";
+            position: absolute;
+            inset: 10px;
+            border-radius: 50%;
+            background: conic-gradient( from 180deg, color-mix(in srgb, var(--dw-accent) 75%, #ffffff) 0%, color-mix(in srgb, var(--web, #fb923c) 75%, #ffffff) 25%, color-mix(in srgb, var(--all, #ec4899) 75%, #ffffff) 55%, color-mix(in srgb, #7c3aed 75%, #ffffff) 78%, color-mix(in srgb, var(--dw-accent) 75%, #ffffff) 100% );
+            filter: blur(.2px);
+            opacity: .16;
+            animation: dwSpin 34s linear infinite;
+            z-index: 0;
+        }
+
+        .decision-wheel-wrapper.dw-polished .decision-wheel::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: radial-gradient(circle at 50% 50%, rgba(255,255,255,.75) 0%, rgba(255,255,255,0) 58%), radial-gradient(420px 420px at 50% 55%, color-mix(in srgb, var(--dw-accent) 18%, transparent) 0%, transparent 60%);
+            z-index: 0;
+        }
+
+@keyframes dwSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Center */
+.decision-wheel-wrapper.dw-polished .wheel-center {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%,-50%);
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 55%), linear-gradient(135deg, #0b1220, #0f172a);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.14);
+    box-shadow: 0 18px 50px rgba(15,23,42,.18);
+}
+
+    .decision-wheel-wrapper.dw-polished .wheel-center span {
+        font-weight: 800;
+        letter-spacing: .2px;
+        line-height: 1.05;
+    }
+
+/* Items -> make them “glass chips” */
+.decision-wheel-wrapper.dw-polished .wheel-item {
+    /* keep your absolute positioning from existing CSS */
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    border-radius: 999px;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,.65);
+    background: rgba(255,255,255,.82);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 12px 30px rgba(2,6,23,.10);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    padding: 0;
+}
+
+    .decision-wheel-wrapper.dw-polished .wheel-item i {
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #fff;
+        background: linear-gradient(135deg, color-mix(in srgb, var(--dw-accent) 92%, #ffffff), color-mix(in srgb, var(--dw-accent) 62%, #000000) );
+        box-shadow: 0 10px 22px color-mix(in srgb, var(--dw-accent) 22%, transparent);
+    }
+
+    .decision-wheel-wrapper.dw-polished .wheel-item span {
+        font-size: 12.5px;
+        font-weight: 800;
+        color: var(--dw-ink);
+        letter-spacing: .2px;
+    }
+
+/* Per-item accent via CSS var */
+.decision-wheel-wrapper.dw-polished .wi-scale {
+    --dw-accent: #0ea5e9;
+}
+
+.decision-wheel-wrapper.dw-polished .wi-governance {
+    --dw-accent: #7c3aed;
+}
+
+.decision-wheel-wrapper.dw-polished .wi-delivery {
+    --dw-accent: #22c55e;
+}
+
+.decision-wheel-wrapper.dw-polished .wi-evolution {
+    --dw-accent: var(--web, #fb923c);
+}
+
+.decision-wheel-wrapper.dw-polished .wheel-item:hover {
+    transform: translateY(-2px) scale(1.06);
+    box-shadow: 0 18px 44px rgba(2,6,23,.14);
+    border-color: color-mix(in srgb, var(--dw-accent) 40%, rgba(255,255,255,.65));
+}
+
+/* Active */
+.decision-wheel-wrapper.dw-polished .wheel-item.is-active {
+    transform: translateY(-3px) scale(1.10);
+    border-color: color-mix(in srgb, var(--dw-accent) 55%, rgba(255,255,255,.75));
+    box-shadow: 0 24px 60px rgba(2,6,23,.18), 0 0 0 6px color-mix(in srgb, var(--dw-accent) 18%, transparent);
+}
+
+/* Content side */
+.decision-wheel-wrapper.dw-polished .decision-wheel-content {
+    display: grid;
+    gap: 14px;
+}
+
+.decision-wheel-wrapper.dw-polished .dw-hint {
+    margin: 0 0 6px;
+    color: var(--dw-muted);
+    font-weight: 700;
+    font-size: 13px;
+    opacity: .9;
+}
+
+.decision-wheel-wrapper.dw-polished .dw-item {
+    position: relative;
+    border-radius: 18px;
+    padding: 16px 16px 14px;
+    background: rgba(255,255,255,.86);
+    border: 1px solid rgba(15,23,42,.06);
+    box-shadow: 0 10px 30px rgba(17,42,128,.08);
+    overflow: hidden;
+    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+    .decision-wheel-wrapper.dw-polished .dw-item::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 4px;
+        background: var(--dw-accent);
+        opacity: .9;
+    }
+
+.decision-wheel-wrapper.dw-polished .dw-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.decision-wheel-wrapper.dw-polished .dw-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--dw-ink);
+    background: color-mix(in srgb, var(--dw-accent) 12%, #ffffff);
+    border: 1px solid color-mix(in srgb, var(--dw-accent) 25%, rgba(15,23,42,.08));
+}
+
+.decision-wheel-wrapper.dw-polished .dw-mini {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--dw-muted);
+    opacity: .85;
+}
+
+.decision-wheel-wrapper.dw-polished .dw-item h4 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--dw-ink);
+}
+
+.decision-wheel-wrapper.dw-polished .dw-item p {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: color-mix(in srgb, var(--dw-ink) 84%, var(--dw-muted));
+    opacity: .95;
+}
+
+/* Active content card */
+.decision-wheel-wrapper.dw-polished .dw-item.is-active {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--dw-accent) 35%, rgba(15,23,42,.10));
+    box-shadow: 0 18px 54px rgba(2,6,23,.12), 0 0 0 6px color-mix(in srgb, var(--dw-accent) 12%, transparent);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .decision-wheel-wrapper.dw-polished {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 14px 8px 6px;
+    }
+
+        .decision-wheel-wrapper.dw-polished .decision-wheel {
+            width: 310px;
+            height: 310px;
+        }
+
+        .decision-wheel-wrapper.dw-polished .wheel-item {
+            width: 104px;
+            height: 104px;
+        }
+}
+/* ===========================
+   Decision Wheel — Compact Mode
+   (append AFTER dw-polished CSS)
+   =========================== */
+
+.decision-wheel-wrapper.dw-polished.dw-compact {
+    grid-template-columns: 340px 1fr;
+    gap: 22px;
+    padding: 10px 6px 6px;
+}
+
+    /* wheel size */
+    .decision-wheel-wrapper.dw-polished.dw-compact .decision-wheel {
+        width: 300px;
+        height: 300px;
+    }
+
+        /* softer rim */
+        .decision-wheel-wrapper.dw-polished.dw-compact .decision-wheel::before {
+            inset: 8px;
+            opacity: .12;
+        }
+
+    /* center smaller */
+    .decision-wheel-wrapper.dw-polished.dw-compact .wheel-center {
+        width: 104px;
+        height: 104px;
+        box-shadow: 0 14px 40px rgba(15,23,42,.16);
+    }
+
+        .decision-wheel-wrapper.dw-polished.dw-compact .wheel-center span {
+            font-size: 13px;
+        }
+
+    /* items smaller + tighter */
+    .decision-wheel-wrapper.dw-polished.dw-compact .wheel-item {
+        width: 92px;
+        height: 92px;
+        gap: 5px;
+        box-shadow: 0 10px 24px rgba(2,6,23,.10);
+    }
+
+        .decision-wheel-wrapper.dw-polished.dw-compact .wheel-item i {
+            width: 34px;
+            height: 34px;
+            font-size: 15px;
+        }
+
+        .decision-wheel-wrapper.dw-polished.dw-compact .wheel-item span {
+            font-size: 11.5px;
+        }
+
+    /* content side tighter */
+    .decision-wheel-wrapper.dw-polished.dw-compact .decision-wheel-content {
+        gap: 10px;
+    }
+
+    .decision-wheel-wrapper.dw-polished.dw-compact .dw-hint {
+        font-size: 12.5px;
+        margin: 0 0 2px;
+    }
+
+    .decision-wheel-wrapper.dw-polished.dw-compact .dw-item {
+        padding: 12px 12px 11px;
+        border-radius: 16px;
+        box-shadow: 0 8px 22px rgba(17,42,128,.07);
+    }
+
+    .decision-wheel-wrapper.dw-polished.dw-compact .dw-head {
+        margin-bottom: 6px;
+    }
+
+    .decision-wheel-wrapper.dw-polished.dw-compact .dw-pill {
+        padding: 5px 9px;
+        font-size: 11.5px;
+    }
+
+    .decision-wheel-wrapper.dw-polished.dw-compact .dw-mini {
+        font-size: 11.5px;
+    }
+
+    .decision-wheel-wrapper.dw-polished.dw-compact .dw-item h4 {
+        font-size: 14.5px;
+        margin: 0 0 4px;
+    }
+
+    .decision-wheel-wrapper.dw-polished.dw-compact .dw-item p {
+        font-size: 12.8px;
+        line-height: 1.55;
+    }
+
+    /* active less “bulky” */
+    .decision-wheel-wrapper.dw-polished.dw-compact .wheel-item.is-active {
+        transform: translateY(-2px) scale(1.07);
+        box-shadow: 0 18px 44px rgba(2,6,23,.16), 0 0 0 5px color-mix(in srgb, var(--dw-accent) 16%, transparent);
+    }
+
+    .decision-wheel-wrapper.dw-polished.dw-compact .dw-item.is-active {
+        transform: translateY(-1px);
+        box-shadow: 0 14px 42px rgba(2,6,23,.11), 0 0 0 5px color-mix(in srgb, var(--dw-accent) 12%, transparent);
+    }
+
+/* mobile */
+@media (max-width: 992px) {
+    .decision-wheel-wrapper.dw-polished.dw-compact {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 10px 6px 6px;
+    }
+
+        .decision-wheel-wrapper.dw-polished.dw-compact .decision-wheel {
+            width: 280px;
+            height: 280px;
+        }
+
+        .decision-wheel-wrapper.dw-polished.dw-compact .wheel-item {
+            width: 88px;
+            height: 88px;
+        }
+}
+/* Case Studies - Option A (cards -> modal details) */
+.cs_mini_card {
+    position: relative;
+}
+
+.cs_open {
+    margin-top: 14px;
+    width: 100%;
+    border: 0;
+    border-radius: 14px;
+    padding: 11px 12px;
+    font-weight: 800;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(15,23,42,.06);
+    color: #0f172a;
+    transition: .22s ease;
+}
+
+    .cs_open:hover {
+        transform: translateY(-1px);
+        background: rgba(15,23,42,.09);
+    }
+
+.cs-modal .modal-content {
+    border: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 18px 55px rgba(0,0,0,.18);
+}
+
+.cs_modal_head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 18px 12px;
+    background: radial-gradient(700px 280px at 20% 0%, rgba(6,182,212,.18), transparent 55%), radial-gradient(700px 280px at 85% 10%, rgba(236,72,153,.16), transparent 55%), #fff;
+    border-bottom: 1px solid rgba(15,23,42,.08);
+}
+
+.cs_modal_kicker {
+    font-weight: 900;
+    font-size: 12px;
+    opacity: .7;
+    letter-spacing: .2px;
+}
+
+.cs_modal_title {
+    margin: 3px 0 2px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.cs_modal_sub {
+    margin: 0;
+    opacity: .82;
+    font-size: 13.5px;
+}
+
+.cs_modal_close {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    border: 0;
+    background: rgba(15,23,42,.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cs_modal_body {
+    padding: 16px 18px 18px;
+}
+
+.cs_badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+    .cs_badges span {
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 800;
+        background: rgba(6,182,212,.10);
+        border: 1px solid rgba(6,182,212,.20);
+    }
+
+.cs_modal_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.cs_block {
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 16px;
+    padding: 12px 12px 10px;
+    background: #fff;
+}
+
+    .cs_block h5 {
+        margin: 0 0 6px;
+        font-weight: 900;
+        font-size: 13.5px;
+    }
+
+    .cs_block p, .cs_block li {
+        font-size: 13px;
+        opacity: .88;
+    }
+
+    .cs_block ul {
+        margin: 0;
+        padding-left: 18px;
+    }
+
+.cs_stack {
+    margin-top: 12px;
+}
+
+    .cs_stack h5 {
+        margin: 0 0 8px;
+        font-weight: 900;
+        font-size: 13.5px;
+    }
+
+.cs_stack_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+    .cs_stack_tags span {
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 800;
+        background: rgba(15,23,42,.06);
+        border: 1px solid rgba(15,23,42,.08);
+    }
+
+/* Mobile */
+@media (max-width: 768px) {
+    .cs_modal_grid {
+        grid-template-columns: 1fr;
+    }
+}
+.cs_mini_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.cs_open {
+    margin-top: auto;
 }

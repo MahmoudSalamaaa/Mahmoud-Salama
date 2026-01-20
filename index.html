@@ -2,7 +2,6 @@
 
 <html lang="en">
 
-<!-- Mirrored from kamleshyadav.com/html/portfolio/html/bootstrap5/color_version/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Oct 2025 06:57:45 GMT -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,12 +41,12 @@
         <div class="ms-stage">
             <!-- Neon logo -->
             <div class="ms-logo-wrap" aria-hidden="true">
-                <img src="/mnt/data/logo.png" alt="" class="ms-logo" />
+                <img src="assets/images/logo.png" alt="" class="ms-logo" />
             </div>
 
             <!-- Typing headline -->
             <h1 class="ms-headline" aria-label="Mahmoud Salama">
-                <span class="ms-tag">&lt; /</span><span class="ms-type">MS</span><span class="ms-tag">&gt;</span>
+                <span class="ms-tag">&lt; /</span><span class="ms-type">Mahmoud Salama</span><span class="ms-tag">&gt;</span>
             </h1>
 
             <!-- Three dots -->
@@ -61,15 +60,21 @@
 
 
 
+
+
+
     <script>
         (function () {
             const overlay = document.getElementById('ms-intro');
             const canvas = document.getElementById('ms-particles');
+
+            // لو الـ intro مش موجود، متكملش
+            if (!overlay || !canvas) return;
+
             const skipBtn = overlay.querySelector('.ms-skip');
             const ctx = canvas.getContext('2d');
 
-            // Palette from your JSON
-            const COLORS = ["#06b6d4", "#ec4899", "#fb923c", "#9c27b0", "#4caf50", "#2196f3", "#00c8da", "#f06449"]; /* :contentReference[oaicite:1]{index=1} */
+            const COLORS = ["#06b6d4", "#ec4899", "#fb923c", "#9c27b0", "#4caf50", "#2196f3", "#00c8da", "#f06449"];
 
             let W = canvas.width = window.innerWidth;
             let H = canvas.height = window.innerHeight;
@@ -82,29 +87,31 @@
             }
             window.addEventListener('resize', resize);
 
-            function rnd(n) { return Math.random() * n; }
-            function pick(arr) { return arr[(Math.random() * arr.length) | 0]; }
+            const rnd = (n) => Math.random() * n;
+            const pick = (arr) => arr[(Math.random() * arr.length) | 0];
 
-            //function spawnBurst(cx, cy, n = 90) {
-            //    for (let i = 0; i < n; i++) {
-            //        const a = Math.random() * Math.PI * 2;
-            //        particles.push({
-            //            x: cx, y: cy,
-            //            vx: Math.cos(a) * (1.5 + rnd(2.5)),
-            //            vy: Math.sin(a) * (1.5 + rnd(2.5)),
-            //            r: 1 + rnd(3.5),
-            //            life: 50 + (Math.random() * 40 | 0),
-            //            color: pick(COLORS),
-            //            glow: 10 + rnd(25)
-            //        });
-            //    }
-            //}
+            // ✅ دي كانت متعطلة عندك، وده سبب الكسر
+            function spawnBurst(cx, cy, n = 90) {
+                for (let i = 0; i < n; i++) {
+                    const a = Math.random() * Math.PI * 2;
+                    particles.push({
+                        x: cx, y: cy,
+                        vx: Math.cos(a) * (1.5 + rnd(2.5)),
+                        vy: Math.sin(a) * (1.5 + rnd(2.5)),
+                        r: 1 + rnd(3.5),
+                        life: 50 + ((Math.random() * 40) | 0),
+                        color: pick(COLORS),
+                        glow: 10 + rnd(25)
+                    });
+                }
+            }
 
             function tick() {
                 if (!running) return;
+
                 ctx.clearRect(0, 0, W, H);
 
-                // gentle ambient fog
+                // ambient fog
                 const grd = ctx.createRadialGradient(W / 2, H * 0.42, 0, W / 2, H * 0.42, Math.max(W, H) * 0.6);
                 grd.addColorStop(0, "rgba(6,182,212,.12)");
                 grd.addColorStop(1, "rgba(15,23,42,0)");
@@ -113,8 +120,11 @@
 
                 for (let i = particles.length - 1; i >= 0; i--) {
                     const p = particles[i];
-                    p.x += p.vx; p.y += p.vy; p.vy += 0.01; // slight gravity
-                    p.life--; p.r *= 0.992;
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.vy += 0.01;
+                    p.life--;
+                    p.r *= 0.992;
 
                     ctx.beginPath();
                     ctx.fillStyle = p.color;
@@ -123,132 +133,40 @@
                     ctx.globalAlpha = Math.max(p.life / 90, 0);
                     ctx.arc(p.x, p.y, Math.max(p.r, 0), 0, Math.PI * 2);
                     ctx.fill();
-                    ctx.shadowBlur = 0; ctx.globalAlpha = 1;
+                    ctx.shadowBlur = 0;
+                    ctx.globalAlpha = 1;
 
-                    if (p.life <= 0 || p.r <= 0 || p.x < -50 || p.x > W + 50 || p.y > H + 50) particles.splice(i, 1);
+                    if (p.life <= 0 || p.r <= 0 || p.x < -50 || p.x > W + 50 || p.y > H + 50) {
+                        particles.splice(i, 1);
+                    }
                 }
-                requestAnimationFrame(tick);
-            }
 
-            // Schedule two bursts: one small, one big finale
-            function sequence() {
-                const midX = window.innerWidth / 2, midY = window.innerHeight * 0.42;
-                setTimeout(() => spawnBurst(midX, midY, 55), 950);   // after logo pop
-                setTimeout(() => spawnBurst(midX, midY, 180), 2000); // finale
-                setTimeout(finish, 3200); // end of intro
+                requestAnimationFrame(tick);
             }
 
             function finish() {
                 overlay.classList.add('is-done');
                 running = false;
-                // Re-enable page scroll if you disabled it elsewhere
                 setTimeout(() => overlay.remove(), 900);
             }
 
-            skipBtn.addEventListener('click', finish);
+            function sequence() {
+                const midX = window.innerWidth / 2;
+                const midY = window.innerHeight * 0.42;
+
+                setTimeout(() => spawnBurst(midX, midY, 55), 950);
+                setTimeout(() => spawnBurst(midX, midY, 180), 2000);
+                setTimeout(finish, 3200);
+            }
+
+            if (skipBtn) skipBtn.addEventListener('click', finish);
             window.addEventListener('keydown', (e) => { if (e.key === 'Escape') finish(); });
 
-            // Start
-            tick(); sequence();
-        })();
-    </script>
-
-
-
-
-    <script>
-        (function () {
-            // === Select Elements ===
-            const overlay = document.getElementById('intro');
-            const canvas = document.getElementById('particles');
-            const ctx = canvas.getContext('2d');
-            const skipBtn = overlay.querySelector('.skip');
-
-            // === Color Palette ===
-            const COLORS = ["#06b6d4", "#ec4899", "#fb923c", "#9c27b0",
-                "#4caf50", "#2196f3", "#00c8da", "#f06449"];
-
-            // === Canvas Setup ===
-            let W = canvas.width = window.innerWidth;
-            let H = canvas.height = window.innerHeight;
-            let particles = [];
-            let running = true;
-
-            function resize() {
-                W = canvas.width = window.innerWidth;
-                H = canvas.height = window.innerHeight;
-            }
-            window.addEventListener('resize', resize);
-
-            // === Utilities ===
-            const rnd = n => Math.random() * n;
-            const pick = a => a[(Math.random() * a.length) | 0];
-
-            // === Spawn Particles ===
-            function spawn(cx = W / 2, cy = H / 2, n = 100) {
-                for (let i = 0; i < n; i++) {
-                    const a = Math.random() * Math.PI * 2;
-                    particles.push({
-                        x: cx, y: cy,
-                        vx: Math.cos(a) * (1 + rnd(2)),
-                        vy: Math.sin(a) * (1 + rnd(2)),
-                        r: 1 + rnd(2),
-                        life: 80 + rnd(40),
-                        color: pick(COLORS),
-                        glow: 8 + rnd(18)
-                    });
-                }
-            }
-
-            // === Animation Loop ===
-            function tick() {
-                if (!running) return;
-                ctx.clearRect(0, 0, W, H);
-                // soft ambient mist
-                const grad = ctx.createRadialGradient(W / 2, H * 0.4, 0, W / 2, H * 0.4, Math.max(W, H) * 0.6);
-                grad.addColorStop(0, "rgba(6,182,212,.08)");
-                grad.addColorStop(1, "rgba(255,255,255,0)");
-                ctx.fillStyle = grad;
-                ctx.fillRect(0, 0, W, H);
-
-                for (let i = particles.length - 1; i >= 0; i--) {
-                    const p = particles[i];
-                    p.x += p.vx;
-                    p.y += p.vy;
-                    p.life--;
-                    p.r *= 0.986;
-                    ctx.beginPath();
-                    ctx.fillStyle = p.color;
-                    ctx.globalAlpha = Math.max(p.life / 100, 0);
-                    ctx.shadowColor = p.color;
-                    ctx.shadowBlur = p.glow;
-                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-                    ctx.fill();
-                    ctx.shadowBlur = 0;
-                    ctx.globalAlpha = 1;
-                    if (p.life <= 0) particles.splice(i, 1);
-                }
-                requestAnimationFrame(tick);
-            }
-
-            // === Finish Sequence ===
-            function finish() {
-                overlay.classList.add('done');
-                running = false;
-                setTimeout(() => overlay.remove(), 900);
-            }
-
-            // === Event Listeners ===
-            skipBtn.addEventListener('click', finish);
-            window.addEventListener('keydown', e => { if (e.key === 'Escape') finish(); });
-
-            // === Launch ===
             tick();
-            spawn(W / 2, H / 2, 80);              // initial light burst
-            setTimeout(() => spawn(W / 2, H / 2, 150), 1200); // follow-up shimmer
-            setTimeout(finish, 3200);         // auto close
+            sequence();
         })();
     </script>
+
     <!-- start side bar -->
     <div class="port_sidebar_wrapper mport_sidebar_wrapper">
         <div class="port_sidebar_profile">
@@ -737,23 +655,31 @@
                 </div>
             </div>
         </div>
+
+
+
+
         <!-- End about section  -->
         <section id="tech-os" class="techos_section ptb-60" data-scroll="17">
             <div class="container">
-
-                <!-- Section Heading -->
-                <div class="port_heading_wrapper text-center mb-40">
+                <div class="port_heading_wrapper text-center ">
                     <div class="port_sub_heading_wrapper">
-                        <h2 class="port_sub_heading">My CTO Operating System</h2>
+                        <h2 class="port_sub_heading">Strategic Technology Operating System (Tech-OS)</h2>
                     </div>
-                    <h1 class="port_heading">Strategic Technology Operating System (Tech-OS)</h1>
+                    <h1 class="port_heading">My CTO Operating System</h1>
                 </div>
+
                 <!-- Mobile section overview removed; mobile titles now included in each card -->
                 <!-- Tabs -->
                 <ul class="nav nav-tabs techos-tabs justify-content-center mb-40" id="techOsTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#tab-decisions" role="tab">
+                            <i class="fas fa-chess"></i> Strategic Decisions
+                        </a>
+                    </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="tab" href="#tab-playbook">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-playbook">
                             <i class="fas fa-bolt"></i> Playbook
                         </a>
                     </li>
@@ -811,14 +737,145 @@
                             <i class="fas fa-user-tie"></i> Leadership
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-Philosophy">
+                            <i class="fas fa-book"></i> Philosophy
+                        </a>
+                    </li>
 
                 </ul>
 
                 <!-- Tab Content -->
                 <div class="tab-content techos-content">
+                    <div class="tab-pane fade show active" id="tab-decisions">
+                        <div class="techos-card">
+
+                            <!-- Mobile title -->
+                            <div class="mobile-card-title">
+                                <span class="accent-dot"></span>
+                                <h4>Strategic Decisions</h4>
+                            </div>
+
+                            <div class="decision-wheel-wrapper dw-polished dw-compact" id="decisionWheel">
+                                <!-- Left: Wheel -->
+                                <div class="decision-wheel" aria-label="Strategic decision wheel">
+                                    <div class="wheel-center" aria-hidden="true">
+                                        <span>Decision<br>Core</span>
+                                    </div>
+
+                                    <button class="wheel-item wi-scale" type="button" data-key="scale" aria-controls="dwContent" aria-label="Scale">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                        <span>Scale</span>
+                                    </button>
+
+                                    <button class="wheel-item wi-governance" type="button" data-key="governance" aria-controls="dwContent" aria-label="Governance">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Governance</span>
+                                    </button>
+
+                                    <button class="wheel-item wi-delivery" type="button" data-key="delivery" aria-controls="dwContent" aria-label="Delivery">
+                                        <i class="fas fa-rocket"></i>
+                                        <span>Delivery</span>
+                                    </button>
+
+                                    <button class="wheel-item wi-evolution" type="button" data-key="evolution" aria-controls="dwContent" aria-label="Evolution">
+                                        <i class="fas fa-sync-alt"></i>
+                                        <span>Evolution</span>
+                                    </button>
+                                </div>
+
+                                <!-- Right: Explanation -->
+                                <div class="decision-wheel-content" id="dwContent">
+
+
+                                    <div class="dw-item" data-key="scale">
+                                        <div class="dw-head">
+                                            <span class="dw-pill"><i class="fas fa-expand-arrows-alt"></i> Scale</span>
+                                            <span class="dw-mini">Modular by default</span>
+                                        </div>
+                                        <h4>Scale Orientation</h4>
+                                        <p>When scope grows across entities or nationally, I bias decisions toward modular, extensible architectures that survive scale.</p>
+                                    </div>
+
+                                    <div class="dw-item" data-key="governance">
+                                        <div class="dw-head">
+                                            <span class="dw-pill"><i class="fas fa-shield-alt"></i> Governance</span>
+                                            <span class="dw-mini">Traceable ownership</span>
+                                        </div>
+                                        <h4>Governance First</h4>
+                                        <p>In regulated environments, traceability, ownership, and compliance outweigh short-term speed.</p>
+                                    </div>
+
+                                    <div class="dw-item" data-key="delivery">
+                                        <div class="dw-head">
+                                            <span class="dw-pill"><i class="fas fa-rocket"></i> Delivery</span>
+                                            <span class="dw-mini">Value early</span>
+                                        </div>
+                                        <h4>Value Delivery</h4>
+                                        <p>Decisions favor phased MVPs that deliver value early while preserving long-term direction.</p>
+                                    </div>
+
+                                    <div class="dw-item" data-key="evolution">
+                                        <div class="dw-head">
+                                            <span class="dw-pill"><i class="fas fa-sync-alt"></i> Evolution</span>
+                                            <span class="dw-mini">Low lock-in</span>
+                                        </div>
+                                        <h4>Evolution Readiness</h4>
+                                        <p>I minimize lock-in by externalizing change and keeping platform cores clean.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <script>
+                        (function DecisionWheelUI() {
+                            const root = document.getElementById('decisionWheel');
+                            if (!root) return;
+
+                            const wheelItems = [...root.querySelectorAll('.wheel-item[data-key]')];
+                            const cards = [...root.querySelectorAll('.dw-item[data-key]')];
+
+                            const setActive = (key) => {
+                                const btn = wheelItems.find(b => b.dataset.key === key);
+                                const card = cards.find(c => c.dataset.key === key);
+                                if (!btn || !card) return;
+
+                                wheelItems.forEach(b => b.classList.remove('is-active'));
+                                cards.forEach(c => c.classList.remove('is-active'));
+
+                                btn.classList.add('is-active');
+                                card.classList.add('is-active');
+
+                                // update wrapper accent from the clicked item
+                                const accent = getComputedStyle(btn).getPropertyValue('--dw-accent').trim();
+                                if (accent) root.style.setProperty('--dw-accent', accent);
+
+                                // soft scroll on mobile so the highlighted card is visible
+                                if (window.matchMedia('(max-width: 992px)').matches) {
+                                    card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                                }
+                            };
+
+                            wheelItems.forEach(btn => {
+                                btn.addEventListener('click', () => setActive(btn.dataset.key));
+                                btn.addEventListener('keydown', (e) => {
+                                    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setActive(btn.dataset.key); }
+                                });
+                            });
+
+                            // default selection
+                            setActive(wheelItems[0]?.dataset.key || 'scale');
+                        })();
+                    </script>
+
+
+
 
                     <!-- PLAYBOOK -->
-                    <div class="tab-pane fade show active" id="tab-playbook">
+                    <div class="tab-pane fade show " id="tab-playbook">
                         <div class="techos-card">
                             <!-- Mobile title for Playbook -->
                             <div class="mobile-card-title">
@@ -1042,42 +1099,495 @@
                                 <h4>Case Studies</h4>
                             </div>
 
+                            <!-- =========================
+    Case Studies Grid (Option A)
+    Compact cards + 1 shared modal
+    ========================= -->
+
                             <div class="cs_grid">
 
+                                <!-- 1) MedIQ -->
                                 <div class="cs_mini_card cs_orange">
                                     <div class="cs_icon"><i class="fas fa-network-wired"></i></div>
                                     <h4>MedIQ Procurement Engine</h4>
                                     <p>Unified procurement workflows & automated validations.</p>
+
                                     <div class="cs_mini_footer">
                                         <span><i class="fas fa-chart-line"></i> 74% Faster</span>
                                         <span><i class="fas fa-sync"></i> 320K+ Automated</span>
                                     </div>
+
+                                    <button class="cs_open" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#csModal"
+                                            data-case="mediq">
+                                        <span>View details</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
                                 </div>
 
+                                <!-- 2) Warehouse -->
                                 <div class="cs_mini_card cs_blue">
                                     <div class="cs_icon"><i class="fas fa-warehouse"></i></div>
                                     <h4>National Warehouse Analytics</h4>
                                     <p>Modern pipelines & real-time operational KPIs.</p>
+
                                     <div class="cs_mini_footer">
                                         <span><i class="fas fa-database"></i> 12M+ Daily</span>
                                         <span><i class="fas fa-bullseye"></i> 98% Accuracy</span>
                                     </div>
+
+                                    <button class="cs_open" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#csModal"
+                                            data-case="warehouse">
+                                        <span>View details</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
                                 </div>
 
+                                <!-- 3) HTA -->
                                 <div class="cs_mini_card cs_purple">
                                     <div class="cs_icon"><i class="fas fa-file-medical"></i></div>
                                     <h4>HTA Digital Framework</h4>
                                     <p>End-to-end evidence review with full traceability.</p>
+
                                     <div class="cs_mini_footer">
                                         <span><i class="fas fa-stopwatch"></i> 3× Faster</span>
                                         <span><i class="fas fa-check-circle"></i> Consistent</span>
                                     </div>
+
+                                    <button class="cs_open" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#csModal"
+                                            data-case="hta">
+                                        <span>View details</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+
+                                <!-- 4) Order Tracking -->
+                                <div class="cs_mini_card cs_orange">
+                                    <div class="cs_icon"><i class="fas fa-route"></i></div>
+                                    <h4>Order Tracking & SLA Visibility</h4>
+                                    <p>End-to-end tracking with SLA alerts and ownership.</p>
+
+                                    <div class="cs_mini_footer">
+                                        <span><i class="fas fa-bell"></i> -30% Delays</span>
+                                        <span><i class="fas fa-clock"></i> SLA Alerts</span>
+                                    </div>
+
+                                    <button class="cs_open" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#csModal"
+                                            data-case="tracking">
+                                        <span>View details</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+
+                                <!-- 5) Demand Planning -->
+                                <div class="cs_mini_card cs_blue">
+                                    <div class="cs_icon"><i class="fas fa-chart-area"></i></div>
+                                    <h4>Demand Planning & Forecasting</h4>
+                                    <p>Forecast-led procurement to reduce shortages & overstock.</p>
+
+                                    <div class="cs_mini_footer">
+                                        <span><i class="fas fa-box-open"></i> -25% Stockouts</span>
+                                        <span><i class="fas fa-layer-group"></i> +Accuracy</span>
+                                    </div>
+
+                                    <button class="cs_open" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#csModal"
+                                            data-case="demand">
+                                        <span>View details</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+
+                                <!-- 6) Procurement Governance -->
+                                <div class="cs_mini_card cs_purple">
+                                    <div class="cs_icon"><i class="fas fa-shield-alt"></i></div>
+                                    <h4>Procurement Governance & Audit Trail</h4>
+                                    <p>Traceability-by-design across approvals, changes, and vendors.</p>
+
+                                    <div class="cs_mini_footer">
+                                        <span><i class="fas fa-user-check"></i> Ownership</span>
+                                        <span><i class="fas fa-clipboard-check"></i> Audit-Ready</span>
+                                    </div>
+
+                                    <button class="cs_open" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#csModal"
+                                            data-case="governance">
+                                        <span>View details</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+
+                                <!-- 7) DevEx -->
+                                <div class="cs_mini_card cs_orange">
+                                    <div class="cs_icon"><i class="fas fa-code-branch"></i></div>
+                                    <h4>Release Engineering & DevEx</h4>
+                                    <p>CI/CD, quality gates, and faster safer releases.</p>
+
+                                    <div class="cs_mini_footer">
+                                        <span><i class="fas fa-rocket"></i> 3× Releases</span>
+                                        <span><i class="fas fa-bug"></i> -40% Defects</span>
+                                    </div>
+
+                                    <button class="cs_open" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#csModal"
+                                            data-case="devex">
+                                        <span>View details</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+
+                                <!-- 8) Vendor Performance -->
+                                <!--<div class="cs_mini_card cs_blue">
+                                    <div class="cs_icon"><i class="fas fa-handshake"></i></div>
+                                    <h4>Vendor Performance & Cost Control</h4>
+                                    <p>Scorecards, SLA enforcement, and spend optimization.</p>
+
+                                    <div class="cs_mini_footer">
+                                        <span><i class="fas fa-coins"></i> -15% Cost</span>
+                                        <span><i class="fas fa-star"></i> Scorecards</span>
+                                    </div>
+
+                                    <button class="cs_open" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#csModal"
+                                            data-case="vendor">
+                                        <span>View details</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>-->
+
+                                <!-- 9) Security -->
+                                <div class="cs_mini_card cs_purple">
+                                    <div class="cs_icon"><i class="fas fa-user-shield"></i></div>
+                                    <h4>Security & Access Governance</h4>
+                                    <p>RBAC, least privilege, and continuous access reviews.</p>
+
+                                    <div class="cs_mini_footer">
+                                        <span><i class="fas fa-lock"></i> RBAC</span>
+                                        <span><i class="fas fa-search"></i> Reviews</span>
+                                    </div>
+
+                                    <button class="cs_open" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#csModal"
+                                            data-case="security">
+                                        <span>View details</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
                                 </div>
 
                             </div>
 
+
+                            <!-- =========================
+         One shared Case Study Modal
+         ========================= -->
+                            <div class="modal fade cs-modal" id="csModal" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+
+                                        <div class="cs_modal_head">
+                                            <div>
+                                                <div class="cs_modal_kicker" id="csModalKicker">Case Study</div>
+                                                <h3 class="cs_modal_title" id="csModalTitle">Title</h3>
+                                                <p class="cs_modal_sub" id="csModalSub">Subtitle</p>
+                                            </div>
+
+                                            <button type="button" class="cs_modal_close" data-bs-dismiss="modal" aria-label="Close">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+
+                                        <div class="cs_modal_body">
+                                            <div class="cs_badges" id="csModalBadges"></div>
+
+                                            <div class="cs_modal_grid">
+                                                <div class="cs_block">
+                                                    <h5>Context</h5>
+                                                    <p id="csModalContext"></p>
+                                                </div>
+
+                                                <div class="cs_block">
+                                                    <h5>Challenge</h5>
+                                                    <ul id="csModalChallenge"></ul>
+                                                </div>
+
+                                                <div class="cs_block">
+                                                    <h5>Approach</h5>
+                                                    <ul id="csModalApproach"></ul>
+                                                </div>
+
+                                                <div class="cs_block">
+                                                    <h5>Outcomes</h5>
+                                                    <ul id="csModalOutcomes"></ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="cs_stack">
+                                                <h5>Stack</h5>
+                                                <div class="cs_stack_tags" id="csModalStack"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- =========================
+         Full Script (modal population)
+         Notes:
+         - Requires Bootstrap Bundle JS (modal)
+         - Requires FontAwesome for icons
+         ========================= -->
+                            <script>
+                                (function () {
+                                    const modalEl = document.getElementById('csModal');
+                                    if (!modalEl) return;
+
+                                    const byId = (id) => document.getElementById(id);
+
+                                    const CASES = {
+                                        mediq: {
+                                            title: "MedIQ Procurement Engine",
+                                            sub: "Unified procurement workflows & automated validations.",
+                                            badges: ["Platform", "Workflow", "Scale"],
+                                            context: "Unified procurement workflows across entities with standardized validations and automation.",
+                                            challenge: [
+                                                "Different processes across entities",
+                                                "High-volume validations with audit needs",
+                                                "Scaling without losing governance"
+                                            ],
+                                            approach: [
+                                                "Modular workflow design + reusable validation services",
+                                                "Role-based approvals and traceable decision logs",
+                                                "Operational dashboards for continuous improvement"
+                                            ],
+                                            outcomes: [
+                                                "74% faster turnaround time (define baseline in your final copy)",
+                                                "320K+ validations automated",
+                                                "Improved compliance visibility and ownership"
+                                            ],
+                                            stack: ["Workflow", "APIs", "Analytics", "Data Quality"]
+                                        },
+
+                                        warehouse: {
+                                            title: "National Warehouse Analytics",
+                                            sub: "Modern pipelines & real-time operational KPIs.",
+                                            badges: ["Data Platform", "Ops KPIs", "Real-time"],
+                                            context: "Operational intelligence layer for warehouse & supply performance monitoring.",
+                                            challenge: [
+                                                "Data fragmentation across sources",
+                                                "Latency and inconsistent KPI definitions",
+                                                "Need actionable drilldowns and alerts"
+                                            ],
+                                            approach: [
+                                                "Standard KPI model + entity/category hierarchy",
+                                                "Automated pipelines with data quality checks",
+                                                "Dashboards with drilldowns and anomaly signals"
+                                            ],
+                                            outcomes: [
+                                                "12M+ records/day processed (replace with your verified metric)",
+                                                "98% KPI accuracy/consistency (define how measured)",
+                                                "Faster operational decision-making"
+                                            ],
+                                            stack: ["Data Pipelines", "KPI Model", "BI Dashboards", "Governance"]
+                                        },
+
+                                        hta: {
+                                            title: "HTA Digital Framework",
+                                            sub: "End-to-end evidence review with full traceability.",
+                                            badges: ["Governance", "Traceability", "Decision Support"],
+                                            context: "A structured framework to manage evidence, appraisal steps, and full review traceability.",
+                                            challenge: [
+                                                "Evidence sprawl and inconsistent reviews",
+                                                "No clear audit trail and version control",
+                                                "Need standardized appraisal steps"
+                                            ],
+                                            approach: [
+                                                "Templates + workflow gates for each stage",
+                                                "Versioned evidence repository + decision logs",
+                                                "Reporting for consistency and audit readiness"
+                                            ],
+                                            outcomes: [
+                                                "3× faster review cycles (define baseline in your final copy)",
+                                                "Higher consistency across reviewers",
+                                                "Audit-ready traceability end-to-end"
+                                            ],
+                                            stack: ["Workflow", "Document Control", "Analytics", "Governance"]
+                                        },
+
+                                        tracking: {
+                                            title: "Order Tracking & SLA Visibility",
+                                            sub: "End-to-end tracking with SLA alerts and ownership.",
+                                            badges: ["Operations", "Governance", "Real-time"],
+                                            context: "Create a unified tracking layer across request → PO → delivery, with SLA clocks and escalation paths.",
+                                            challenge: [
+                                                "Limited end-to-end visibility across stages",
+                                                "SLA breaches discovered too late",
+                                                "Unclear accountability during delays"
+                                            ],
+                                            approach: [
+                                                "Single timeline model + event-based statuses",
+                                                "SLA rules + alerts + escalation routing",
+                                                "Drilldowns by entity/vendor/category"
+                                            ],
+                                            outcomes: [
+                                                "Reduced delays and improved SLA compliance (replace with your numbers)",
+                                                "Clear ownership and faster escalation",
+                                                "Operational visibility across all stages"
+                                            ],
+                                            stack: ["Workflow", "APIs", "Dashboards", "Alerts/Rules"]
+                                        },
+
+                                        demand: {
+                                            title: "Demand Planning & Forecasting",
+                                            sub: "Forecast-led procurement to reduce shortages & overstock.",
+                                            badges: ["Data", "Planning", "Optimization"],
+                                            context: "Build demand signals and forecasting workflow to guide procurement quantities and reduce supply risk.",
+                                            challenge: [
+                                                "Reactive ordering and inconsistent demand signals",
+                                                "Shortages / overstock due to noisy consumption patterns",
+                                                "Multiple entities with varying seasonality"
+                                            ],
+                                            approach: [
+                                                "Standard demand model + segmentation",
+                                                "Forecast pipeline with backtesting + accuracy tracking",
+                                                "Scenario levers (lead time, MOQ, safety stock)"
+                                            ],
+                                            outcomes: [
+                                                "Reduced stockouts/waste (replace with your numbers)",
+                                                "Improved forecast accuracy and planning discipline",
+                                                "Better alignment between demand and procurement"
+                                            ],
+                                            stack: ["Data Pipelines", "Forecasting", "Planning KPIs", "BI"]
+                                        },
+
+                                        governance: {
+                                            title: "Procurement Governance & Audit Trail",
+                                            sub: "Traceability-by-design across approvals, changes, and vendors.",
+                                            badges: ["Compliance", "Traceability", "Ownership"],
+                                            context: "Introduce governance controls so every decision and change has an owner, reason, and approval trail.",
+                                            challenge: [
+                                                "Audit gaps and unclear change provenance",
+                                                "Inconsistent approvals and exception handling",
+                                                "Need regulated-ready traceability"
+                                            ],
+                                            approach: [
+                                                "Approval workflows with role-based gates",
+                                                "Decision logs + versioned records",
+                                                "Compliance dashboards + exception reporting"
+                                            ],
+                                            outcomes: [
+                                                "Audit-ready process and improved accountability",
+                                                "Reduced exceptions and faster investigations",
+                                                "Consistent governance across entities"
+                                            ],
+                                            stack: ["RBAC", "Workflow", "Audit Logs", "Compliance Reporting"]
+                                        },
+
+                                        devex: {
+                                            title: "Release Engineering & DevEx",
+                                            sub: "CI/CD, quality gates, and faster safer releases.",
+                                            badges: ["Engineering", "Quality", "Velocity"],
+                                            context: "Standardize release pipelines and developer workflows to improve speed while protecting stability.",
+                                            challenge: [
+                                                "Manual releases and inconsistent environments",
+                                                "Higher defect rates due to weak gates",
+                                                "Slow feedback loops during development"
+                                            ],
+                                            approach: [
+                                                "CI/CD with automated tests + linting + security checks",
+                                                "Release policies (branching, approvals, versioning)",
+                                                "Observability-driven rollout (rollback/canary patterns)"
+                                            ],
+                                            outcomes: [
+                                                "More frequent releases with fewer incidents (replace with your numbers)",
+                                                "Reduced defects and faster feedback loops",
+                                                "Predictable delivery cadence"
+                                            ],
+                                            stack: ["CI/CD", "Testing", "Release Policy", "Observability"]
+                                        },
+
+                                       
+                                        security: {
+                                            title: "Security & Access Governance",
+                                            sub: "RBAC, least privilege, and continuous access reviews.",
+                                            badges: ["Security", "Governance", "Risk"],
+                                            context: "Harden platform access and reduce operational risk through strong identity and authorization controls.",
+                                            challenge: [
+                                                "Role sprawl and inconsistent permissions",
+                                                "High-risk access without periodic review",
+                                                "Need separation of duties"
+                                            ],
+                                            approach: [
+                                                "RBAC model aligned to job functions",
+                                                "Least privilege enforcement + approval workflows",
+                                                "Periodic access review reports and anomaly checks"
+                                            ],
+                                            outcomes: [
+                                                "Reduced access risk and improved compliance posture",
+                                                "Cleaner ownership and permission structure",
+                                                "Faster audits and easier investigations"
+                                            ],
+                                            stack: ["RBAC", "IAM", "Auditing", "Security Monitoring"]
+                                        }
+                                    };
+
+                                    function fillList(ul, items) {
+                                        ul.innerHTML = "";
+                                        items.forEach(text => {
+                                            const li = document.createElement("li");
+                                            li.textContent = text;
+                                            ul.appendChild(li);
+                                        });
+                                    }
+
+                                    function fillTags(el, items) {
+                                        el.innerHTML = "";
+                                        items.forEach(text => {
+                                            const tag = document.createElement("span");
+                                            tag.textContent = text;
+                                            el.appendChild(tag);
+                                        });
+                                    }
+
+                                    function detectAccent(btn) {
+                                        const card = btn.closest(".cs_mini_card");
+                                        if (!card) return "blue";
+                                        if (card.classList.contains("cs_orange")) return "orange";
+                                        if (card.classList.contains("cs_purple")) return "purple";
+                                        if (card.classList.contains("cs_blue")) return "blue";
+                                        return "blue";
+                                    }
+
+                                    modalEl.addEventListener("show.bs.modal", function (ev) {
+                                        const btn = ev.relatedTarget;
+                                        const key = btn?.dataset?.case;
+                                        const data = CASES[key];
+                                        if (!btn || !data) return;
+
+                                        // Optional: set accent on modal root (if you add CSS for it)
+                                        modalEl.setAttribute("data-accent", detectAccent(btn));
+
+                                        byId("csModalTitle").textContent = data.title;
+                                        byId("csModalSub").textContent = data.sub;
+                                        byId("csModalContext").textContent = data.context;
+
+                                        fillTags(byId("csModalBadges"), data.badges);
+                                        fillList(byId("csModalChallenge"), data.challenge);
+                                        fillList(byId("csModalApproach"), data.approach);
+                                        fillList(byId("csModalOutcomes"), data.outcomes);
+                                        fillTags(byId("csModalStack"), data.stack);
+                                    });
+                                })();
+                            </script>
+
+
                         </div>
                     </div>
+                  
 
                     <!-- OPERATING MODELS -->
                     <div class="tab-pane fade" id="tab-operating-models">
@@ -1476,11 +1986,124 @@
                         </div>
                     </div>
 
+                    <div class="tab-pane fade" id="tab-Philosophy">
+                        <!-- =====================================================
+                             PHILOSOPHY & PRINCIPLES — STANDALONE SECTION
+                        ===================================================== -->
+                        <!-- Section Heading -->
+                        <div class="mobile-card-title">
+                            <span class="accent-dot"></span>
+                            <h4>Philosophy</h4>
+                        </div>
 
+
+
+                        <!-- ================= CTO OS WHEEL ================= -->
+                        <div class="cto-wheel-pane">
+
+                            <!-- Description Panel -->
+                            <div class="wheel-description">
+                                <h3 id="wheel-title">Strategy</h3>
+                                <p id="wheel-text">
+                                    Align technology direction with organizational objectives,
+                                    national priorities, and long-term value creation.
+                                </p>
+                            </div>
+
+                            <!-- Wheel -->
+                            <div class="cto-wheel-wrapper">
+
+                                <div class="cto-wheel-center">
+                                    <span>My<br>Philosophy</span>
+                                </div>
+
+                                <div class="cto-wheel">
+
+                                    <div class="wheel-item strategy active"
+                                         data-title="Strategy"
+                                         data-desc="Align technology direction with organizational objectives, national priorities, and long-term value creation.">
+                                        <i class="fas fa-chess-king"></i>
+                                        <span>Strategy</span>
+                                    </div>
+
+                                    <div class="wheel-item architecture"
+                                         data-title="Architecture"
+                                         data-desc="Design scalable, interoperable, and resilient platforms that support growth, governance, and sustainability.">
+                                        <i class="fas fa-layer-group"></i>
+                                        <span>Architecture</span>
+                                    </div>
+
+                                    <div class="wheel-item people"
+                                         data-title="People"
+                                         data-desc="Build empowered teams, clear ownership models, and leadership capabilities that amplify technology outcomes.">
+                                        <i class="fas fa-users-cog"></i>
+                                        <span>People</span>
+                                    </div>
+
+                                    <div class="wheel-item governance"
+                                         data-title="Governance"
+                                         data-desc="Embed security, compliance, risk management, and accountability into every system and process.">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Governance</span>
+                                    </div>
+
+                                    <div class="wheel-item delivery"
+                                         data-title="Delivery"
+                                         data-desc="Ensure predictable execution, operational excellence, and continuous value delivery at scale.">
+                                        <i class="fas fa-rocket"></i>
+                                        <span>Delivery</span>
+                                    </div>
+
+                                    <div class="wheel-item evolution"
+                                         data-title="Evolution"
+                                         data-desc="Continuously improve platforms, processes, and teams through data, feedback, and innovation.">
+                                        <i class="fas fa-sync-alt"></i>
+                                        <span>Evolution</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
 
             </div>
         </section>
+
+        <script>
+            document.querySelectorAll('.wheel-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const tab = item.dataset.tab;
+                    const btn = document.querySelector(`[data-bs-target="#tab-${tab}"]`);
+                    if (btn) {
+                        btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        btn.click();
+                    }
+                });
+            });
+        </script>
+        <script>
+            const items = document.querySelectorAll('.wheel-item');
+            const title = document.getElementById('wheel-title');
+            const text = document.getElementById('wheel-text');
+
+            items.forEach(item => {
+                item.addEventListener('mouseenter', activate);
+                item.addEventListener('click', activate);
+            });
+
+            function activate(e) {
+                items.forEach(i => i.classList.remove('active'));
+                const el = e.currentTarget;
+                el.classList.add('active');
+                title.textContent = el.dataset.title;
+                text.textContent = el.dataset.desc;
+            }
+        </script>
+
+
         <!-- Start Key Achievements section -->
         <div class="achievements_section" id="achievements" data-scroll="1">
             <div class="container">
@@ -3516,7 +4139,7 @@
                     </div>
                     <h1 class="port_heading">Milestones, Systems & Stories</h1>
                 </div>
-             
+
 
                 <!-- Album Tabs -->
                 <div class="album-tabs">
@@ -4414,6 +5037,96 @@
         }
     </script>
 
+    <script>
+        (function () {
+            const modalEl = document.getElementById('csModal');
+            if (!modalEl) return;
+
+            const $ = (id) => document.getElementById(id);
+
+            const CASES = {
+                mediq: {
+                    title: "MedIQ Procurement Engine",
+                    sub: "Unified procurement workflows & automated validations.",
+                    badges: ["Platform", "Regulated", "Scale-ready"],
+                    context: "Unified procurement across entities with standardized validation and workflow automation.",
+                    challenge: [
+                        "Multiple process variations across entities",
+                        "High validation load + audit requirements",
+                        "Need for scale without breaking governance"
+                    ],
+                    approach: [
+                        "Modular workflow design + reusable validation services",
+                        "Role-based approvals + traceability by design",
+                        "Operational dashboards for continuous improvement"
+                    ],
+                    outcomes: [
+                        "Reduced turnaround time by ~74%",
+                        "Automated 320K+ checks and validations",
+                        "Improved compliance visibility and ownership"
+                    ],
+                    stack: ["ERP/Workflow", "APIs", "Analytics", "Data Quality"]
+                },
+
+                warehouse: {
+                    title: "National Warehouse Analytics",
+                    sub: "Modern pipelines & real-time operational KPIs.",
+                    badges: ["Data Platform", "Real-time", "Ops Excellence"],
+                    context: "Operational intelligence layer for warehouse & supply performance monitoring.",
+                    challenge: ["Data fragmentation", "Latency in reporting", "Inconsistent KPI definitions"],
+                    approach: ["Standard KPI model", "Automated pipelines", "Dashboards with drilldowns"],
+                    outcomes: ["12M+ records/day processed", "98% KPI consistency", "Faster operational decisions"],
+                    stack: ["Data Pipelines", "Warehouse KPIs", "BI Dashboards", "Governance"]
+                },
+
+                hta: {
+                    title: "HTA Digital Framework",
+                    sub: "End-to-end evidence review with full traceability.",
+                    badges: ["Governance-first", "Traceability", "Decision Support"],
+                    context: "A structured framework to manage evidence, appraisal steps, and review traceability.",
+                    challenge: ["Evidence sprawl", "Inconsistent reviews", "Need audit trail"],
+                    approach: ["Templates + workflow gates", "Versioned evidence repository", "Decision logs"],
+                    outcomes: ["3× faster review cycles", "Higher consistency", "Clear audit trail"],
+                    stack: ["Workflow", "Document Control", "Analytics", "Policy Alignment"]
+                }
+            };
+
+            function fillList(ul, items) {
+                ul.innerHTML = "";
+                items.forEach(t => {
+                    const li = document.createElement("li");
+                    li.textContent = t;
+                    ul.appendChild(li);
+                });
+            }
+
+            function fillTags(el, items) {
+                el.innerHTML = "";
+                items.forEach(t => {
+                    const s = document.createElement("span");
+                    s.textContent = t;
+                    el.appendChild(s);
+                });
+            }
+
+            modalEl.addEventListener('show.bs.modal', function (ev) {
+                const btn = ev.relatedTarget;
+                const key = btn?.dataset?.case;
+                const data = CASES[key];
+                if (!data) return;
+
+                $("csModalTitle").textContent = data.title;
+                $("csModalSub").textContent = data.sub;
+                $("csModalContext").textContent = data.context;
+
+                fillTags($("csModalBadges"), data.badges.map(x => x));
+                fillList($("csModalChallenge"), data.challenge);
+                fillList($("csModalApproach"), data.approach);
+                fillList($("csModalOutcomes"), data.outcomes);
+                fillTags($("csModalStack"), data.stack);
+            });
+        })();
+    </script>
 
 </body>
 </html>

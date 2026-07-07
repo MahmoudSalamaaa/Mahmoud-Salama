@@ -41,91 +41,21 @@
         </div>
     </div>
 
-    <!-- 🧭 Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-gold" href="#hero">OMAR</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#parents">Parents</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#friends">Friends</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#celebrities">Celebrities</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#dreams">Dreams</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
 
     <!-- 🪩 Hero -->
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center text-center hero-section">
         <div class="glass p-5 rounded-4">
             <p class="display-4 fw-bold mb-3"><h1 style="font-size:25px !important">You have arrived to 🥁🥁🥁</h1></p>
-            <h1 class="lead mb-4"><h1 style="font-size:50px !important">Omar Mahmoud's Website!</h1></h1>
-            <a href="#games" class="btn btn-gold btn-lg px-4">Start Adventure 🚀</a>
-        </div>
-    </section>
-
-    <!-- 🕹️ Game Section -->
-    <section id="games" class="container py-5 text-center">
-        <h2 class="section-title">🎮 Choose Your Game Mode</h2>
-        <div class="row mt-4 g-4">
-            <!-- Asteroid Game Card -->
-            <div class="col-md-6">
-                <div class="glass p-4 rounded-4 h-100">
-                    <h3>🚀 Dodge the Asteroids</h3>
-                    <p>Avoid falling asteroids and survive as long as you can!</p>
-                    <button class="btn btn-outline-gold mb-2" id="startAsteroids">Play Now</button>
-
-                    <!-- Difficulty buttons (asteroid) -->
-                    <div class="difficulty-controls mt-2 small" id="asteroidDifficulty">
-                        <span class="me-2 fw-bold text-light">Difficulty:</span>
-                        <button class="btn btn-sm btn-outline-gold me-1 active" data-game="asteroid" data-level="kid">Kid</button>
-                        <button class="btn btn-sm btn-outline-gold me-1" data-game="asteroid" data-level="easy">Easy</button>
-                        <button class="btn btn-sm btn-outline-gold me-1" data-game="asteroid" data-level="normal">Normal</button>
-                        <button class="btn btn-sm btn-outline-gold me-1" data-game="asteroid" data-level="hard">Hard</button>
-                        <button class="btn btn-sm btn-outline-gold" data-game="asteroid" data-level="insane">Insane</button>
-                    </div>
-
-                    <!-- canvas will be injected here -->
-                    <div id="asteroidGame" class="game-area mt-3"></div>
-                </div>
-            </div>
-
-            <!-- Star Collector Game Card -->
-            <div class="col-md-6">
-                <div class="glass p-4 rounded-4 h-100">
-                    <h3>⭐ Star Collector</h3>
-                    <p>Collect golden stars and reach the target score to win!</p>
-                    <button class="btn btn-outline-gold mb-2" id="startStars">Play Now</button>
-
-                    <!-- Difficulty buttons (stars) -->
-                    <div class="difficulty-controls mt-2 small" id="starDifficulty">
-                        <span class="me-2 fw-bold text-light">Difficulty:</span>
-                        <button class="btn btn-sm btn-outline-gold me-1 active" data-game="stars" data-level="kid">Kid</button>
-                        <button class="btn btn-sm btn-outline-gold me-1" data-game="stars" data-level="easy">Easy</button>
-                        <button class="btn btn-sm btn-outline-gold me-1" data-game="stars" data-level="normal">Normal</button>
-                        <button class="btn btn-sm btn-outline-gold me-1" data-game="stars" data-level="hard">Hard</button>
-                        <button class="btn btn-sm btn-outline-gold" data-game="stars" data-level="insane">Insane</button>
-                    </div>
-
-                    <!-- canvas will be injected here -->
-                    <div id="starCollectorGame" class="game-area mt-3"></div>
-                </div>
-            </div>
+            <h1 class="lead mb-4"><h1 style="font-size:65px !important">Omar Mahmoud's Website!</h1></h1>
+            <a href="#about" class="btn btn-gold btn-lg px-4">Scroll down to start! 🚀</a>
         </div>
     </section>
 
     <!-- 👦 About -->
     <section id="about" class="container section glass">
         <h2>👦 About Me</h2>
-        <p>Hi! I’m <strong>Omar Mahmoud</strong>, a 10-year-old explorer who loves technology, space, and creative ideas. I believe curiosity can change the world! 💡</p>
+        <p>Hi! I’m <strong>Omar Mahmoud</strong>, an 11-year-old explorer who loves technology, space, and creative ideas. I believe curiosity can change the world! 💡</p>
         <p>I dream of building amazing apps and helpful tools that make life better for everyone 🌍✨</p>
     </section>
 
@@ -139,21 +69,45 @@
     <section id="schools" class="container section glass">
         <h2>📕 My Previous Education/Schools</h2>
         <ul>
+        <div class="school-card p-4 rounded-4">
             <li><strong>Muscat, Oman</strong> – The Egyptian School. Begin: KG1 👶 [2019-2020] End: KG2 [2020-2021] (I was homeschooled in KG2 because of COVID-19/Coronavirus 🦠)</li>
-            <li><strong>El Shorouk, Egypt</strong> – Amjad School. Begin: Primary 1 🧒 [2021-2022] End: Primary 2 [2022-2023]</li>
+        
+            <div class="school-card p-4 rounded-4">
+            <li><strong>El-Shorouk, Egypt</strong> – Amjad School. Begin: Primary 1 🧒 [2021-2022] End: Primary 2 [2022-2023]</li>
+        
+            <div class="school-card p-4 rounded-4">
             <li><strong>Maadi, Egypt</strong> – Orman Smart School (simply: OSS). Begin: Primary 3 [2023] End: Primary 3 [2024]</li>
-            <li><strong>New Capital, Egypt</strong> – Anglo American School. Begin: Grade 4 [2024-2025] Present: Grade 5 [2025-2026]</li>
+        
+            <div class="school-card p-4 rounded-4">
+            <li><strong>New Administritave Capital, Egypt</strong> – Anglo American School. Begin: Grade 4 [2024-2025] Present: Grade 6 [2025-2026]</li>
         </ul>
     </section>
 
     <!-- 🎨 Hobbies -->
     <section id="hobbies" class="container section glass">
         <h2>🎨 My Hobbies</h2>
-        <ul>
-            <li>🎮 Video Games – exploring new worlds and adventures.</li>
-            <li>💻 Coding – creating mini games and apps.</li>
-            <li>🎵 Music – listening and making rhythms that spark ideas.</li>
-            <li>🎥 YouTube – watching videos from YouTubers I like, especially <strong>26mph</strong> and <strong>Dylan Grogan</strong>!</li>
+        <div class="col-md-6"
+            <div class="hobby-card p-4 rounded-4">
+            <h3>🎮 Video Games</h3>
+            <p>Exploring new worlds and adventures!</p>
+                </div>
+            </div>
+               <div class="hobby-card p-4 rounded-4">
+            <h3>🧑‍💻 Coding</h3>
+            <li>Creating minigames and apps</li>
+                </div>
+            </div>
+            <div class="hobby-card p-4 rounded-4">
+            <h3>🎵 Music</h3>
+            <li>Listening and making rhythms that spark ideas.</li>
+                </div>
+            </div>
+             <div class="hobby-card p-4 rounded-4">
+            <h3>🎥 YouTube</h3>
+            <li>watching videos from YouTubers I like, especially <strong>Ahmed Mango</strong> and <strong>Straight Outta Sunnah</strong>!</li>
+                 </div>
+            </div>
+
         </ul>
     </section>
 
@@ -196,19 +150,38 @@
             </div>
             <div class="col-md-4">
                 <div class="friend-card p-4 rounded-4">
-                    <h3>😊 Younes Abdallah</h3>
-                    <p>My neighbor and one of my best friends! 🚴⚽</p>
+                    <h3>😊 Yassin Mahmoud</h3>
+                    <p>He is so funny and we always play tag before the line 🏃</p>
                 </div>
             </div>
         </div>
-    </section>
-
+        </div class="col-md-4">
+            <div class="friend-card p-4 rounded-4">
+                    <h3>😄 Yassin Akram</h3>
+                    <p>We look like brothers and we laugh together and play together"
+               </div>
+            </div>
+        </div
+     </section>
     <!-- 🎤 Celebrities -->
     <section id="celebrities" class="container section glass">
         <h2>My Favorite Celebrities</h2>
         <ul>
-            <li>Hamza Namira (Born: November 1980)</li>
-            <li>Maher Zain (Born: 1980-1981)</li>
+            <div class="celebrity-card p-4 rounded-4">
+                <h3>Hamza Namira</h3>
+            <li>He has a lot of albums like <strong>Ehlam Ma'aya'</strong> and <strong>Mawlood Sanat 80</strong>. His latest album is <strong>Ehky</strong> with 8 songs and a bonus song!</li>
+           
+            <div class="celebrity-card p-4 rounded-4">
+                <h3>Maher Zain</h3>
+            <li>He makes nasheeds (Islamic traditional songs) like <strong>Mawalaya</strong> and <strong>Rahmatun lil Alameen</strong></li>
+            </div>
+            </div>
+            <div class="celebrity-card p-4 rounded-4">
+            <h3>Mohamed Hamaki</h3>
+                <li>He makes a lot of songs and albums! His latest album is <strong>Samma3ouny</strong> with a whopping 18 songs!</li>
+               </div
+            </div>
+         </div>
         </ul>
     </section>
 
@@ -216,16 +189,6 @@
     <section id="dreams" class="container section glass text-center">
         <h2>💭 My Dreams</h2>
         <p>I want to build a smart tech company called <strong class="asmarto">Asmarto</strong> 🚀 to make apps and tools that help people and spread creativity! 🌟</p>
-    </section>
-
-    <!-- 📸 Gallery -->
-    <section id="gallery" class="container section glass">
-        <h2>📸 My Gallery</h2>
-        <div class="row g-3 gallery-grid">
-            <div class="col-sm-6 col-md-4"><img src="images/omar/20251030_194107.jpg" alt="Family Day" class="img-fluid rounded-4 gallery-img"></div>
-            <div class="col-sm-6 col-md-4"><img src="images/omar/20251015_144933.jpg" alt="At School" class="img-fluid rounded-4 gallery-img"></div>
-            <div class="col-sm-6 col-md-4"><img src="images/omar/20250923_074854.jpg" alt="Fun Moments" class="img-fluid rounded-4 gallery-img"></div>
-        </div>
     </section>
 
     <!-- 🌌 Footer -->

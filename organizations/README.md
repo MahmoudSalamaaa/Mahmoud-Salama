@@ -1,39 +1,35 @@
-# Mahmoud Salama Career Databases
+# GitHub deployment structure
 
-A standalone career research portal containing **600 organizations** across two searchable databases.
+Upload the single `organizations` folder exactly as shown:
 
-## Start
-Open `index.html`.
+```text
+organizations/
+├── index.html
+├── 404.html
+├── .nojekyll
+├── regional-employment.html
+├── organizations.html
+├── medical-companies.html
+├── gcc-vacancies.html
+├── egypt-vacancies.html
+├── remote-jobs.html
+├── recruitment-agencies.html
+├── government-jobs.html
+├── regional-private-companies.html
+├── *.csv
+└── mahmoud-salama-logo-optimized.png
+```
 
-## Databases
-- `organizations.html` — 300 global ICT, development, NGO, technology and consulting organizations.
-- `medical-companies.html` — 300 pharmaceutical, biotech, medical-device, diagnostics, CRO and digital-health companies.
-- `gcc-vacancies.html` — current/recent GCC vacancies plus live country and employer searches.
-- `egypt-vacancies.html` — current/recent Egypt vacancies plus live role searches and employer portals.
-- `remote-jobs.html` — current/recent global remote roles, eligibility filters, live searches and remote-employer portals.
+Open:
 
-## Data files
-- `organizations.csv`
-- `medical-companies.csv`
-- `gcc-vacancies.csv`
-- `egypt-vacancies.csv`
-- `remote-jobs.csv`
+```text
+/organizations/index.html
+```
 
-## Features
-- Search, filters, sorting and pagination
-- Favorites saved locally in the browser
-- Application status and private notes
-- CSV export of filtered results
-- JSON backup and import of tracking data
-- Dark/light theme
-- Print / Save as PDF
-- Mobile-responsive layout
+The index redirects internally to:
 
-## Data note
-Curated in July 2026. Company structures and career URLs can change. Verify each vacancy, eligibility requirement, work location, remote arrangement and sponsorship condition on the official company page before applying. Fit, remote and visa fields are directional indicators—not guarantees.
+```text
+./regional-employment.html
+```
 
-## Regional employment expansion
-- `regional-employment.html` — hub for the three regional directories.
-- `recruitment-agencies.html` / `.csv` — 200 recruitment agencies and job platforms.
-- `government-jobs.html` / `.csv` — 100 official government and public-sector portals.
-- `regional-private-companies.html` / `.csv` — 300 major private employers in Egypt, Arab countries and Africa.
+All page, image and CSV links are relative to the same `organizations` folder.

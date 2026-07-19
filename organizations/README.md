@@ -31,3 +31,9 @@ Open `index.html`.
 
 ## Data note
 Curated in July 2026. Company structures and career URLs can change. Verify each vacancy, eligibility requirement, work location, remote arrangement and sponsorship condition on the official company page before applying. Fit, remote and visa fields are directional indicators—not guarantees.
+
+## Regional employment expansion
+- `regional-employment.html` — hub for the three regional directories.
+- `recruitment-agencies.html` / `.csv` — 200 recruitment agencies and job platforms.
+- `government-jobs.html` / `.csv` — 100 official government and public-sector portals.
+- `regional-private-companies.html` / `.csv` — 300 major private employers in Egypt, Arab countries and Africa.

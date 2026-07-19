@@ -1,0 +1,101 @@
+﻿id,name,country,region,level,portal_type,url,eligibility,notes
+1,Egypt Government Jobs Portal,Egypt,Egypt,National,Official government vacancies,https://jobs.caoa.gov.eg/,Egyptian citizens; conditions vary by notice,Central Agency for Organization and Administration
+2,Jadarat National Employment Platform,Saudi Arabia,GCC,National,Unified employment platform,https://jadarat.sa/,Primarily Saudi citizens; private-sector listings may vary,Government-backed national employment platform
+3,Saudi Ministry of Human Resources Careers,Saudi Arabia,GCC,National Ministry,Government entity careers,https://www.hrsd.gov.sa/en/ministry/about-ministry/work-with-us,Verify nationality and role conditions,Official ministry careers page
+4,Federal Government Jobs Portal,United Arab Emirates,GCC,Federal,Federal government vacancies,https://www.fahr.gov.ae/Portal/en/careers.aspx,Many roles prioritize UAE nationals; verify each role,Federal Authority for Government Human Resources
+5,Abu Dhabi Government Careers,United Arab Emirates,GCC,Emirate,Government jobs portal,https://www.tamm.abudhabi/en/life-events/individual/Work-and-employment/Jobs,Eligibility varies; some roles open to expatriates,TAMM employment services
+6,Dubai Careers,United Arab Emirates,GCC,Emirate,Government jobs portal,https://dubaicareers.ae/,Eligibility varies by vacancy,Dubai Government careers portal
+7,Sharjah Government HR,United Arab Emirates,GCC,Emirate,Government jobs portal,https://dhr.gov.ae/,Often UAE-national focused; verify each vacancy,Sharjah Directorate of Human Resources
+8,Ajman Government Kawader,United Arab Emirates,GCC,Emirate,Government jobs portal,https://www.ajmanhr.gov.ae/,Often UAE-national focused; verify each vacancy,Ajman HR portal
+9,Ras Al Khaimah Government HR,United Arab Emirates,GCC,Emirate,Government jobs portal,https://hr.rak.ae/,Verify eligibility,RAK Human Resources Department
+10,Fujairah Government Careers,United Arab Emirates,GCC,Emirate,Government careers,https://fujairah.ae/en/Pages/careers.aspx,Verify eligibility,Official Fujairah government site
+11,Qatar Kawader / Government Employment,Qatar,GCC,National,Government jobs platform,https://www.kawader.gov.qa/,Primarily Qatari citizens; verify each announcement,National employment platform
+12,Qatar Government Hukoomi Employment Services,Qatar,GCC,National,Government service gateway,https://hukoomi.gov.qa/en/topic/employment-and-workplace,Eligibility varies,Official Qatar e-government portal
+13,Oman Government Vacancies Service,Oman,GCC,National,Government jobs service,https://gov.om/en/w/apply-for-vacant-government-positions-,Primarily Omani citizens; verify each vacancy,Ministry of Labour service
+14,Kuwait Civil Service Commission,Kuwait,GCC,National,Civil-service recruitment,https://www.csc.gov.kw/,Primarily Kuwaiti citizens,Civil Service Commission
+15,Kuwait Government Online Employment,Kuwait,GCC,National,Government employment services,https://www.e.gov.kw/sites/kgoEnglish/Pages/CitizensResidents/InfoSubPages/Employment.aspx,Citizens and residents depending on service,Official e-government portal
+16,Bahrain Civil Service Employment Application,Bahrain,GCC,National,Civil-service jobs,https://services.bahrain.bh/wps/portal/EmploymentApplication_en,Primarily Bahraini citizens; verify each vacancy,National portal service
+17,Jordan Public Sector Recruitment System,Jordan,Levant,National,Public-sector jobs portal,https://applyjobs.spac.gov.jo/Default.aspx,Usually Jordanian citizens,Service and Public Administration Commission
+18,Lebanon Civil Service Board,Lebanon,Levant,National,Civil-service competitions,https://www.csb.gov.lb/,Usually Lebanese citizens,Official Civil Service Board
+19,Iraq Federal Public Service Council,Iraq,Arab Region,National,Federal public-sector recruitment,https://fpsc.gov.iq/,Usually Iraqi citizens,Official federal council
+20,Palestine General Personnel Council,Palestine,Levant,National,Public-sector recruitment,https://www.gpc.pna.ps/,Usually Palestinian citizens,Official government personnel council
+21,Morocco Public Employment Portal,Morocco,North Africa,National,Public competitions and vacancies,https://www.emploi-public.ma/,Usually Moroccan citizens; verify competition rules,Official public employment portal
+22,Algeria Directorate General of Public Service,Algeria,North Africa,National,Civil-service information and competitions,https://www.dgfp.gov.dz/,Usually Algerian citizens,Official public-service authority
+23,Algeria Public Service Competitions,Algeria,North Africa,National,Public competitions portal,https://www.concours-fonction-publique.gov.dz/,Usually Algerian citizens,Official competitions gateway
+24,Tunisia Public Competitions Portal,Tunisia,North Africa,National,Government competitions,https://www.concours.gov.tn/,Usually Tunisian citizens,Official national competitions portal
+25,Mauritania Ministry of Civil Service,Mauritania,North Africa / Sahel,National,Civil-service information,https://www.fonctionpublique.gov.mr/,Usually Mauritanian citizens,Official ministry site
+26,Libya Ministry of Labour and Rehabilitation,Libya,North Africa,National,Employment and government notices,https://labour.gov.ly/,Verify current conditions and eligibility,Official ministry site
+27,Sudan Ministry of Labour and Administrative Reform,Sudan,North Africa,National,Employment and public-service notices,https://mol.gov.sd/,Verify availability and current conditions,Official ministry site
+28,Somalia National Civil Service Commission,Somalia,Horn of Africa,National,Civil-service recruitment,https://ncsc.gov.so/,Usually Somali citizens,Official commission
+29,Djibouti Ministry of Labour,Djibouti,Horn of Africa,National,Employment and public-service notices,https://travail.gouv.dj/,Usually Djiboutian citizens,Official ministry
+30,Comoros Public Service,Comoros,Indian Ocean,National,Civil-service information,https://fonctionpublique.gouv.km/,Usually Comorian citizens,Official public-service portal
+31,South African Government Jobs,South Africa,Southern Africa,National,Government vacancies,https://www.gov.za/jobs,South African citizens / permanent residents depending on role,Public Service Vacancy Circular and department vacancies
+32,South Africa Government Jobs This Week,South Africa,Southern Africa,National,Weekly vacancy circular,https://www.gov.za/government-jobs-week,Check each vacancy,Weekly official public-service circular
+33,South African Parliament Careers,South Africa,Southern Africa,Parliament,Parliamentary careers,https://www.parliament.gov.za/careers-parliament,Check each vacancy,Official parliament recruitment
+34,Kenya Public Service Commission Jobs,Kenya,East Africa,National,Public-service recruitment,https://www.publicservice.go.ke/,Usually Kenyan citizens,Official Public Service Commission
+35,Kenya Public Service Commission Jobs Portal,Kenya,East Africa,National,Online job applications,https://www.psckjobs.go.ke/,Usually Kenyan citizens,Official PSC recruitment portal
+36,Nigeria Federal Civil Service Commission,Nigeria,West Africa,National,Federal civil-service recruitment,https://fedcivilservice.gov.ng/,Usually Nigerian citizens,Official commission
+37,Nigeria Civil Service Job Portal,Nigeria,West Africa,National,Federal recruitment information,https://www.fedcivilservice.gov.ng/,Usually Nigerian citizens,Monitor official notices
+38,Ghana Public Services Commission,Ghana,West Africa,National,Public-service recruitment,https://psc.gov.gh/,Usually Ghanaian citizens,Official commission
+39,Rwanda Public Service Recruitment Portal,Rwanda,East Africa,National,Government e-recruitment,https://recruitment.mifotra.gov.rw/,Usually Rwandan citizens,Official MIFOTRA recruitment portal
+40,Uganda Public Service Commission,Uganda,East Africa,National,Public-service recruitment,https://www.psc.go.ug/,Usually Ugandan citizens,Official commission
+41,Uganda ESC Job Portal,Uganda,East Africa,Education Service,Education-sector recruitment,https://www.esc.go.ug/,Usually Ugandan citizens,Education Service Commission
+42,Tanzania Public Service Recruitment Secretariat,Tanzania,East Africa,National,Government jobs portal,https://www.ajira.go.tz/,Usually Tanzanian citizens,Official recruitment secretariat
+43,Tanzania Ajira Recruitment Portal,Tanzania,East Africa,National,Online government applications,https://portal.ajira.go.tz/,Usually Tanzanian citizens,Official application portal
+44,Ethiopia Federal Civil Service Commission,Ethiopia,Horn of Africa,National,Civil-service information,https://www.fsc.gov.et/,Usually Ethiopian citizens,Official federal commission
+45,Zambia Public Service Management Division,Zambia,Southern Africa,National,Public-service recruitment,https://www.psmd.gov.zm/,Usually Zambian citizens,Official public-service division
+46,Zambia Government e-Recruitment,Zambia,Southern Africa,National,Government recruitment portal,https://erecruitment.zambia.gov.zm/,Usually Zambian citizens,Official e-recruitment system
+47,Zimbabwe Public Service Commission,Zimbabwe,Southern Africa,National,Public-service recruitment,https://www.psc.gov.zw/,Usually Zimbabwean citizens,Official commission
+48,Botswana Government Vacancies,Botswana,Southern Africa,National,Government vacancies,https://www.gov.bw/vacancies,Usually Botswana citizens,Official government vacancy page
+49,Namibia Government Vacancies,Namibia,Southern Africa,National,Government vacancies,https://www.gov.na/vacancies,Usually Namibian citizens,Official government portal
+50,Malawi Civil Service Commission,Malawi,Southern Africa,National,Civil-service recruitment,https://www.csc.gov.mw/,Usually Malawian citizens,Official commission
+51,Mozambique Public Administration Portal,Mozambique,Southern Africa,National,Public-service information,https://www.portaldofuncionariopublico.gov.mz/,Usually Mozambican citizens,Official public-administration portal
+52,"Angola Ministry of Public Administration, Labour and Social Security",Angola,Southern Africa,National,Employment and public-service notices,https://www.mapess.gov.ao/,Usually Angolan citizens,Official ministry
+53,DR Congo Ministry of Public Service,Democratic Republic of the Congo,Central Africa,National,Public-service recruitment,https://fonctionpublique.gouv.cd/,Usually Congolese citizens,Official ministry
+54,Republic of Congo Public Service,Republic of the Congo,Central Africa,National,Civil-service information,https://fonction-publique.gouv.cg/,Usually Congolese citizens,Official portal
+55,Gabon Public Service,Gabon,Central Africa,National,Civil-service recruitment,https://fonction-publique.gouv.ga/,Usually Gabonese citizens,Official portal
+56,Cameroon Ministry of Public Service,Cameroon,Central Africa,National,Civil-service competitions,https://www.minfopra.gov.cm/,Usually Cameroonian citizens,Official ministry
+57,Côte d'Ivoire Ministry of Public Service,Côte d'Ivoire,West Africa,National,Civil-service recruitment,https://www.fonctionpublique.gouv.ci/,Usually Ivorian citizens,Official ministry
+58,Senegal Ministry of Public Service,Senegal,West Africa,National,Civil-service recruitment,https://www.fonctionpublique.gouv.sn/,Usually Senegalese citizens,Official ministry
+59,Mali Ministry of Public Service,Mali,West Africa / Sahel,National,Civil-service recruitment,https://www.fonctionpublique.gouv.ml/,Usually Malian citizens,Official ministry
+60,Burkina Faso e-Concours,Burkina Faso,West Africa / Sahel,National,Government competitions,https://www.econcours.gov.bf/,Usually Burkinabè citizens,Official competitions portal
+61,Benin Public Competitions Portal,Benin,West Africa,National,Government competitions,https://www.concours.bj/,Usually Beninese citizens,Official competitions portal
+62,Togo Ministry of Public Service,Togo,West Africa,National,Civil-service recruitment,https://fonctionpublique.gouv.tg/,Usually Togolese citizens,Official ministry
+63,Niger Ministry of Public Service,Niger,West Africa / Sahel,National,Civil-service information,https://www.fonctionpublique.gouv.ne/,Usually Nigerien citizens,Official ministry
+64,Guinea Ministry of Labour and Public Service,Guinea,West Africa,National,Civil-service recruitment,https://fonctionpublique.gov.gn/,Usually Guinean citizens,Official ministry
+65,Sierra Leone Public Service Commission,Sierra Leone,West Africa,National,Public-service recruitment,https://psc.gov.sl/,Usually Sierra Leonean citizens,Official commission
+66,Liberia Civil Service Agency,Liberia,West Africa,National,Civil-service recruitment,https://csa.gov.lr/,Usually Liberian citizens,Official agency
+67,Gambia Public Service Commission,Gambia,West Africa,National,Public-service recruitment,https://psc.gov.gm/,Usually Gambian citizens,Official commission
+68,Mauritius Public Service Commission,Mauritius,Indian Ocean,National,Public-service recruitment,https://psc.govmu.org/,Usually Mauritian citizens,Official commission
+69,Seychelles Public Service Bureau,Seychelles,Indian Ocean,National,Government careers,https://www.psb.gov.sc/,Usually Seychellois citizens,Official bureau
+70,Madagascar Ministry of Public Service,Madagascar,Indian Ocean,National,Civil-service information,https://www.fonction-publique.gov.mg/,Usually Malagasy citizens,Official ministry
+71,Burundi Ministry of Public Service,Burundi,East Africa,National,Civil-service information,https://fonctionpublique.gov.bi/,Usually Burundian citizens,Official ministry
+72,Central African Republic Public Service,Central African Republic,Central Africa,National,Civil-service information,https://fonctionpublique.gouv.cf/,Usually citizens,Official portal
+73,Chad Ministry of Public Service,Chad,Central Africa / Sahel,National,Civil-service information,https://fonctionpublique.gouv.td/,Usually Chadian citizens,Official ministry
+74,South Sudan Ministry of Public Service and HR Development,South Sudan,East Africa,National,Public-service recruitment,https://mpshrd.gov.ss/,Usually South Sudanese citizens,Official ministry
+75,Lesotho Public Service Commission,Lesotho,Southern Africa,National,Public-service recruitment,https://psc.gov.ls/,Usually Basotho citizens,Official commission
+76,Eswatini Government Jobs,Eswatini,Southern Africa,National,Government vacancies,https://www.gov.sz/,Usually Eswatini citizens,Use official government vacancy notices
+77,African Union Careers,Africa,Africa,Regional Organization,Regional public-sector careers,https://careers.au.int/,Open internationally depending on role,African Union career portal
+78,AUDA-NEPAD Careers,Africa,Africa,Regional Organization,Regional development careers,https://www.nepad.org/careers,Open internationally depending on role,Official AUDA-NEPAD careers
+79,African Development Bank Careers,Africa,Africa,Regional Development Bank,Public international institution careers,https://www.afdb.org/en/about-us/careers,Open internationally,Official careers portal
+80,Afreximbank Careers,Africa,Africa,Regional Bank,Regional finance careers,https://www.afreximbank.com/careers/,Open internationally depending on role,Official careers page
+81,BCEAO Recruitment,West Africa,West Africa,Regional Central Bank,Regional public institution careers,https://www.bceao.int/content/avis-de-recrutement,Citizens of member states and other eligibility rules,Official recruitment notices
+82,ECOWAS Careers,West Africa,West Africa,Regional Organization,Regional public-sector careers,https://ecowas.int/careers/,Member-state and international eligibility varies,Official careers page
+83,East African Community Jobs,East Africa,East Africa,Regional Organization,Regional public-sector careers,https://www.eac.int/opportunities/employment,Member-state eligibility varies,Official employment page
+84,COMESA Opportunities,Eastern & Southern Africa,Africa,Regional Organization,Regional public-sector careers,https://www.comesa.int/opportunities/,Member-state eligibility varies,Official opportunities page
+85,SADC Careers,Southern Africa,Southern Africa,Regional Organization,Regional public-sector careers,https://www.sadc.int/opportunities/employment,Member-state eligibility varies,Official employment page
+86,Arab Monetary Fund Careers,Arab Region,Arab Region,Regional Financial Institution,Regional public institution careers,https://www.amf.org.ae/en/career,Open to Arab and international candidates depending on role,Official careers
+87,Islamic Development Bank Careers,Arab / Member Countries,Global,Multilateral Development Bank,Development-bank careers,https://www.isdb.org/careers,Open internationally depending on role,Official careers portal
+88,GCC Secretariat Careers,GCC,GCC,Regional Organization,GCC institutional careers,https://www.gcc-sg.org/,Eligibility varies,Monitor official announcements
+89,Central Bank of Egypt Careers,Egypt,Egypt,Central Bank,Public financial institution careers,https://www.cbe.org.eg/en/careers,Eligibility varies; often Egyptian citizens,Official careers page
+90,Saudi Central Bank Careers,Saudi Arabia,GCC,Central Bank,Public financial institution careers,https://careers.sama.gov.sa/,Usually Saudi citizens,Official careers portal
+91,Central Bank of the UAE Careers,United Arab Emirates,GCC,Central Bank,Public financial institution careers,https://www.centralbank.ae/en/about/careers/,Eligibility varies,Official careers page
+92,Qatar Central Bank Careers,Qatar,GCC,Central Bank,Public financial institution careers,https://www.qcb.gov.qa/,Eligibility varies,Monitor official announcements
+93,Central Bank of Bahrain Careers,Bahrain,GCC,Central Bank,Public financial institution careers,https://www.cbb.gov.bh/careers/,Eligibility varies,Official careers page
+94,Bank of Ghana Careers,Ghana,West Africa,Central Bank,Public financial institution careers,https://www.bog.gov.gh/careers/,Usually Ghanaian citizens,Official careers page
+95,Central Bank of Kenya Careers,Kenya,East Africa,Central Bank,Public financial institution careers,https://www.centralbank.go.ke/careers/,Usually Kenyan citizens,Official careers page
+96,South African Reserve Bank Careers,South Africa,Southern Africa,Central Bank,Public financial institution careers,https://www.resbank.co.za/en/home/about-us/Careers,Eligibility varies,Official careers page
+97,Arab Fund for Economic and Social Development Careers,Arab Region,Arab Region,Regional Development Fund,Regional public institution careers,https://www.arabfund.org/careers/,Open to eligible Arab and international candidates depending on role,Official careers page
+98,OPEC Fund for International Development Careers,Global / MENA,Global,Multilateral Development Institution,Development finance careers,https://opecfund.org/careers,Open internationally depending on role,Official careers page
+99,West African Development Bank Careers,West Africa,West Africa,Regional Development Bank,Regional development careers,https://www.boad.org/en/careers/,Member-state and international eligibility varies,Official careers page
+100,IGAD Careers,Horn of Africa,East Africa,Regional Organization,Regional public-sector careers,https://igad.int/careers/,Member-state and international eligibility varies,Official careers page

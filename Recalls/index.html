@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A searchable, filterable medical recall library structured by category, year, country and centre." />
+  <meta name="theme-color" content="#07111f" />
+  <title>Medical Recall Explorer | Mahmoud Salama</title>
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#recallLibrary">Skip to recall library</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Medical Recall Explorer home">
+        <img src="assets/logo.png" alt="Mahmoud Salama MS logo" />
+        <span class="brand-copy">
+          <strong>Medical Recall Explorer</strong>
+          <small>Structured Exam Recall Library</small>
+        </span>
+      </a>
+
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="#recallLibrary">Library</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="https://mahmoud-salama.vercel.app" target="_blank" rel="noreferrer">Website</a>
+        <a href="https://mahmoud-salama.vercel.app/digital_card/index.html" target="_blank" rel="noreferrer">Digital Card</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+          <span aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse-dot"></span> Phase 1 • Pages 1–20 structured</div>
+          <h1>Turn handwritten recalls into a <span>searchable study system.</span></h1>
+          <p class="hero-lead">
+            Browse the source by History, Communication, Video, Clinical and Development;
+            then refine by year, country, centre, month or free-text search.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#recallLibrary">Explore recalls</a>
+            <a class="btn btn-secondary" href="assets/recalls-source.pdf" target="_blank">Open original PDF</a>
+          </div>
+
+          <div class="owner-strip">
+            <img src="assets/logo.png" alt="" />
+            <div>
+              <strong>Mahmoud Salama</strong>
+              <span>Chief Technology &amp; Digital Transformation Officer</span>
+            </div>
+            <div class="owner-links">
+              <a href="mailto:ma7moud.salamaaa@gmail.com">Email</a>
+              <a href="https://www.linkedin.com/in/mahmoud-salama-30249b34" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Project progress">
+          <div class="panel-heading">
+            <span>Digitisation progress</span>
+            <strong id="progressPercent">17%</strong>
+          </div>
+          <div class="progress-track" aria-label="20 of 116 pages transcribed">
+            <span id="progressBar"></span>
+          </div>
+          <div class="progress-labels">
+            <span><b id="transcribedPageCount">20</b> transcribed pages</span>
+            <span><b id="sourcePageCount">116</b> source pages</span>
+          </div>
+
+          <div class="mini-dashboard">
+            <article>
+              <span>Recall sessions</span>
+              <strong id="sessionCount">19</strong>
+            </article>
+            <article>
+              <span>Countries</span>
+              <strong id="countryCount">6</strong>
+            </article>
+            <article>
+              <span>Centres</span>
+              <strong id="centerCount">7</strong>
+            </article>
+            <article>
+              <span>Years</span>
+              <strong id="yearCount">2</strong>
+            </article>
+          </div>
+
+          <p class="medical-note">
+            <strong>Study notice:</strong> This is recall material, not a clinical guideline or patient-specific medical advice.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="category-overview" aria-label="Recall category summary">
+      <div class="shell category-grid" id="categoryStats"></div>
+    </section>
+
+    <section class="library-section" id="recallLibrary">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Interactive library</span>
+            <h2>Find the exact recall you need</h2>
+            <p>Filters work together. Search includes headings, medical terms, abbreviations, countries and centres.</p>
+          </div>
+          <div class="view-tools">
+            <button id="expandAll" class="text-btn" type="button">Expand all</button>
+            <button id="collapseAll" class="text-btn" type="button">Collapse all</button>
+            <button id="printResults" class="text-btn" type="button">Print results</button>
+          </div>
+        </div>
+
+        <div class="filter-panel" aria-label="Recall filters">
+          <div class="search-field">
+            <label for="searchInput">Search full text</label>
+            <div class="input-wrap">
+              <span aria-hidden="true">⌕</span>
+              <input id="searchInput" type="search" autocomplete="off" placeholder="Try: thalassaemia, croup, seizure, VSD…" />
+              <button id="clearSearch" type="button" aria-label="Clear search">×</button>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <div class="filter-field filter-category">
+              <span class="filter-label">Category</span>
+              <div class="chip-group" id="categoryFilters" role="group" aria-label="Filter by category"></div>
+            </div>
+          </div>
+
+          <div class="filter-row filter-selects">
+            <label>
+              <span>Year</span>
+              <select id="yearFilter"><option value="">All years</option></select>
+            </label>
+            <label>
+              <span>Country</span>
+              <select id="countryFilter"><option value="">All countries</option></select>
+            </label>
+            <label>
+              <span>Centre</span>
+              <select id="centerFilter"><option value="">All centres</option></select>
+            </label>
+            <label>
+              <span>Month</span>
+              <select id="monthFilter"><option value="">All months</option></select>
+            </label>
+            <label>
+              <span>Sort</span>
+              <select id="sortFilter">
+                <option value="newest">Newest first</option>
+                <option value="oldest">Oldest first</option>
+                <option value="center">Centre A–Z</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="filter-summary">
+            <div id="activeFilters" class="active-filters" aria-live="polite"></div>
+            <button id="resetFilters" class="reset-btn" type="button">Reset all filters</button>
+          </div>
+        </div>
+
+        <div class="results-toolbar">
+          <p><strong id="resultCount">0</strong> recall sessions shown</p>
+          <p class="transcription-key"><span>?</span> indicates text that needs later source verification.</p>
+        </div>
+
+        <div id="results" class="recall-grid" aria-live="polite"></div>
+
+        <div id="emptyState" class="empty-state" hidden>
+          <div>⌕</div>
+          <h3>No recalls match these filters</h3>
+          <p>Try clearing one filter or using a broader medical term.</p>
+          <button id="emptyReset" class="btn btn-primary" type="button">Reset filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap-section" id="roadmap">
+      <div class="shell">
+        <div class="section-heading roadmap-heading">
+          <div>
+            <span class="section-kicker">Gradual build plan</span>
+            <h2>Project roadmap</h2>
+            <p>The structure is ready for the remaining handwritten pages without redesigning the application.</p>
+          </div>
+        </div>
+
+        <div class="roadmap-grid">
+          <article class="roadmap-card done">
+            <span>01</span>
+            <h3>Foundation + Pages 1–20</h3>
+            <p>Branding, data model, source viewer, search and all requested filters.</p>
+            <strong>Completed</strong>
+          </article>
+          <article class="roadmap-card">
+            <span>02</span>
+            <h3>Pages 21–50</h3>
+            <p>Continue line-by-line transcription and add new centres, dates and medical tags.</p>
+            <strong>Next batch</strong>
+          </article>
+          <article class="roadmap-card">
+            <span>03</span>
+            <h3>Pages 51–85</h3>
+            <p>Expand the searchable library and improve abbreviation cross-references.</p>
+            <strong>Planned</strong>
+          </article>
+          <article class="roadmap-card">
+            <span>04</span>
+            <h3>Pages 86–116 + QA</h3>
+            <p>Complete the source, verify uncertain handwriting and prepare the final publishable release.</p>
+            <strong>Planned</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Mahmoud Salama logo" />
+        <div>
+          <strong>Mahmoud Salama</strong>
+          <span>Medical Recall Explorer</span>
+        </div>
+      </div>
+      <p>Built as a progressive, searchable study archive from a 116-page handwritten source.</p>
+      <div class="footer-links">
+        <a href="https://mahmoud-salama.vercel.app" target="_blank" rel="noreferrer">Website</a>
+        <a href="https://mahmoud-salama.vercel.app/digital_card/index.html" target="_blank" rel="noreferrer">Digital Card</a>
+        <a href="assets/recalls-source.pdf" target="_blank">Source PDF</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <div id="sourceModal" class="modal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <div>
+          <span>Original handwritten source</span>
+          <h2 id="modalTitle">Recall source page</h2>
+        </div>
+        <button id="closeModal" type="button" aria-label="Close source viewer">×</button>
+      </div>
+      <div class="modal-body">
+        <iframe id="sourceFrame" title="Original PDF source page"></iframe>
+      </div>
+      <div class="modal-footer">
+        <p id="modalPageNote"></p>
+        <a id="openPdfLink" class="btn btn-secondary" href="assets/recalls-source.pdf" target="_blank">Open in full PDF viewer</a>
+      </div>
+    </div>
+  </div>
+
+  <noscript>
+    <div class="noscript">JavaScript is required for filtering and expanding recall sessions.</div>
+  </noscript>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,12 +1,10 @@
-# GitHub deployment structure
+# Organizations folder only
 
-Upload the single `organizations` folder exactly as shown:
+There are no files required at repository root.
 
 ```text
 organizations/
 ├── index.html
-├── 404.html
-├── .nojekyll
 ├── regional-employment.html
 ├── organizations.html
 ├── medical-companies.html
@@ -16,20 +14,15 @@ organizations/
 ├── recruitment-agencies.html
 ├── government-jobs.html
 ├── regional-private-companies.html
-├── *.csv
-└── mahmoud-salama-logo-optimized.png
+├── CSV files
+├── logo
+└── .nojekyll
 ```
 
-Open:
+`organizations/index.html` is the actual homepage content.
 
-```text
-/organizations/index.html
-```
-
-The index redirects internally to:
-
-```text
-./regional-employment.html
-```
-
-All page, image and CSV links are relative to the same `organizations` folder.
+There is:
+- no meta refresh
+- no JavaScript redirect
+- no root redirect
+- no root-relative internal link

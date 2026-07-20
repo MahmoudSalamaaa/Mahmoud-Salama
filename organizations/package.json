@@ -1,0 +1,15 @@
+{
+  "name":"mahmoud-salama-career-ai",
+  "version":"3.0.0",
+  "private":true,
+  "type":"module",
+  "description":"AI-powered career, employer and project intelligence platform.",
+  "scripts":{
+    "dev":"vercel dev",
+    "serve":"python -m http.server 8080",
+    "sync-data":"node scripts/sync-legacy-data.mjs",
+    "validate":"node scripts/validate-project.mjs"
+  },
+  "engines":{"node":">=20"},
+  "dependencies":{"openai":"^6.48.0"}
+}

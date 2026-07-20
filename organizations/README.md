@@ -1,40 +1,24 @@
-# Complete career project
+# Mahmoud Salama Ultimate Career & Project Search
 
-Everything is inside one folder:
+All files remain inside the single `organizations` folder.
 
-```text
-organizations/
-├── index.html
-├── regional-employment.html
-├── organizations.html
-├── organizations.csv
-├── medical-companies.html
-├── medical-companies.csv
-├── gcc-vacancies.html
-├── gcc-vacancies.csv
-├── egypt-vacancies.html
-├── egypt-vacancies.csv
-├── remote-jobs.html
-├── remote-jobs.csv
-├── recruitment-agencies.html
-├── recruitment-agencies.csv
-├── government-jobs.html
-├── government-jobs.csv
-├── regional-private-companies.html
-├── regional-private-companies.csv
-├── mahmoud-salama-logo-optimized.png
-└── README.md
-```
+## Expansion
 
-Total records: **1,350**
+- Job-search platforms indexed: 168
+- Live multi-platform searches: 25,380
+- Priority role titles: 47
+- Search markets and regions: 40
+- Existing employer, vacancy and project databases are preserved.
 
-- ICT organizations: 300
-- Medical companies: 300
-- GCC vacancies: 50
-- Egypt vacancies: 50
-- Global remote jobs: 50
-- Recruitment agencies: 200
-- Government portals: 100
-- Regional private companies: 300
+## New files
 
-`organizations/index.html` is the real homepage. It does not redirect.
+- `job-search-platforms.html` / `.csv`
+- `platform-search-hub.html`
+- `platform-search-egypt.html` / `.csv`
+- `platform-search-gcc.html` / `.csv`
+- `platform-search-arab.html` / `.csv`
+- `platform-search-africa.html` / `.csv`
+- `platform-search-remote.html` / `.csv`
+- `all-platform-searches.csv`
+
+Platform-indexed Google searches are used only where a job board does not expose a stable public search URL. Always verify the original employer and posting date.

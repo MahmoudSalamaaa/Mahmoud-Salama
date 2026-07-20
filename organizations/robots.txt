@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mahmoud-salama.vercel.app/organizations/sitemap.xml

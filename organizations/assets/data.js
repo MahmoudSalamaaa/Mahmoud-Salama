@@ -1,5 +1,5 @@
 import {BUILD_DATE,DATASETS,LEGACY_BASE,PROFILE,ROLES,MARKETS,PLATFORM_TEMPLATES,MATRIX_TARGET} from './config.js';
-import {profileMatch} from './search-engine.js';
+import {profileMatch} from './scoring.js';
 
 const cache=new Map();
 let seedCache=null;

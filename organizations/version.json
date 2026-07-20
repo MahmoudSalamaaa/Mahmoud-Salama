@@ -1,6 +1,7 @@
 {
-  "version": "3.1.0-simple",
+  "version": "4.0.0-uiux",
   "buildDate": "2026-07-20",
-  "edition": "Simple Africa NGOs Edition",
-  "africaOrganizations": 148
+  "edition": "Enhanced UI/UX Africa NGOs Edition",
+  "africaOrganizations": 148,
+  "aiSearch": false
 }

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://mahmoud-salama.vercel.app/organizations/404.html</loc><lastmod>2026-07-20</lastmod></url>
 <url><loc>https://mahmoud-salama.vercel.app/organizations/admin.html</loc><lastmod>2026-07-20</lastmod></url>
-<url><loc>https://mahmoud-salama.vercel.app/organizations/alerts.html</loc><lastmod>2026-07-20</lastmod></url>
+<url><loc>https://mahmoud-salama.vercel.app/organizations/africa-ngos.html</loc><lastmod>2026-07-20</lastmod></url>
 <url><loc>https://mahmoud-salama.vercel.app/organizations/dashboard.html</loc><lastmod>2026-07-20</lastmod></url>
 <url><loc>https://mahmoud-salama.vercel.app/organizations/egypt-vacancies.html</loc><lastmod>2026-07-20</lastmod></url>
+<url><loc>https://mahmoud-salama.vercel.app/organizations/explore.html</loc><lastmod>2026-07-20</lastmod></url>
 <url><loc>https://mahmoud-salama.vercel.app/organizations/gcc-vacancies.html</loc><lastmod>2026-07-20</lastmod></url>
 <url><loc>https://mahmoud-salama.vercel.app/organizations/government-jobs.html</loc><lastmod>2026-07-20</lastmod></url>
 <url><loc>https://mahmoud-salama.vercel.app/organizations/index.html</loc><lastmod>2026-07-20</lastmod></url>
@@ -23,8 +25,6 @@
 <url><loc>https://mahmoud-salama.vercel.app/organizations/regional-employment.html</loc><lastmod>2026-07-20</lastmod></url>
 <url><loc>https://mahmoud-salama.vercel.app/organizations/regional-private-companies.html</loc><lastmod>2026-07-20</lastmod></url>
 <url><loc>https://mahmoud-salama.vercel.app/organizations/remote-jobs.html</loc><lastmod>2026-07-20</lastmod></url>
-<url><loc>https://mahmoud-salama.vercel.app/organizations/search.html</loc><lastmod>2026-07-20</lastmod></url>
 <url><loc>https://mahmoud-salama.vercel.app/organizations/sources.html</loc><lastmod>2026-07-20</lastmod></url>
 <url><loc>https://mahmoud-salama.vercel.app/organizations/tracker.html</loc><lastmod>2026-07-20</lastmod></url>
-  <url><loc>./africa-ngos.html</loc></url>
 </urlset>

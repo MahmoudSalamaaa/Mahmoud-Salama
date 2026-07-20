@@ -1,5 +1,5 @@
 export const BUILD_DATE = '2026-07-20';
-export const VERSION = '3.1.0-simple';
+export const VERSION = '4.0.0-uiux';
 export const LEGACY_COMMIT = '375dafd01dae682d4711deb26cb677eecc711b56';
 export const LEGACY_BASE = `https://raw.githubusercontent.com/MahmoudSalamaaa/Mahmoud-Salama/${LEGACY_COMMIT}/organizations/`;
 
@@ -38,14 +38,17 @@ export const DATASETS = {
 
 export const NAV_ITEMS = [
   ['index.html','Home','الرئيسية'],
-  ['search.html','AI Search','البحث الذكي'],
-  ['regional-private-companies.html','Jobs','الوظائف'],
+  ['explore.html','Explore','استكشاف'],
   ['africa-ngos.html','Africa NGOs','منظمات أفريقيا'],
+  ['regional-private-companies.html','Jobs','الوظائف'],
   ['organizations.html','Organizations','الجهات'],
   ['tracker.html','My Applications','متابعة التقديم']
 ];
 
 export const SECONDARY_NAV_ITEMS = [
+  ['egypt-vacancies.html','Egypt Jobs','وظائف مصر'],
+  ['gcc-vacancies.html','GCC Jobs','وظائف الخليج'],
+  ['remote-jobs.html','Remote Jobs','الوظائف عن بُعد'],
   ['medical-companies.html','Medical & Digital Health','الطبي والصحة الرقمية'],
   ['recruitment-agencies.html','Recruitment & Platforms','التوظيف والمنصات'],
   ['government-jobs.html','Government','الحكومي'],
@@ -53,7 +56,6 @@ export const SECONDARY_NAV_ITEMS = [
   ['project-opportunities.html','Projects & Consulting','المشروعات والاستشارات'],
   ['platform-search-hub.html','Search Matrix','مصفوفة البحث'],
   ['dashboard.html','Dashboard','لوحة المؤشرات'],
-  ['alerts.html','Alerts','التنبيهات'],
   ['admin.html','Data Manager','إدارة البيانات'],
   ['link-checker.html','Link Checker','فحص الروابط'],
   ['sources.html','Sources & Help','المصادر والمساعدة']

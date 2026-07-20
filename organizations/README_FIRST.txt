@@ -1,9 +1,8 @@
-Mahmoud Salama Career AI Project
-================================
+Mahmoud Salama Career & Opportunity Hub — UI/UX Edition
 
-1) Open the organizations folder.
-2) For local preview, run start-local.bat on Windows.
-3) For Vercel, set the Root Directory to organizations.
-4) The platform works without an OpenAI key using local semantic search.
-5) Add OPENAI_API_KEY in Vercel only to enable cloud AI reranking.
-6) Read organizations/README.md for full instructions.
+1) Keep the whole project inside the organizations folder.
+2) Run start-local.bat on Windows or start-local.sh on macOS/Linux.
+3) Open http://localhost:8080/index.html
+4) No AI service or API key is required.
+5) Set organizations as the Vercel Root Directory when deploying.
+6) The dedicated Africa NGOs directory contains 148 named organizations.

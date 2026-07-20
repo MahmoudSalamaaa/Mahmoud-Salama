@@ -18,7 +18,7 @@ export function renderCard(record,{query='',compact=false}={}){
     <div class="record-kicker"><span>${escapeHTML(record.type||record.recordType||'Organization')}</span></div>
     <h3>${escapeHTML(record.title)}</h3>
     <p class="record-subtitle">${escapeHTML(record.subtitle||'')}</p>
-    <div class="simple-meta"><span>⌖ ${escapeHTML(record.country||record.region||'Africa')}</span>${isOpportunity?`<span>◎ ${score}% ${t('profileMatch')}</span>`:''}<span>${escapeHTML(record.availability)}</span></div>
+    <div class="simple-meta"><span>⌖ ${escapeHTML(record.country||record.region||'Africa')}</span>${isOpportunity?`<span>◎ ${score}% ${t('profileMatch')}</span>`:''}<span class="status-pill ${badgeClass(record.availability)}">${escapeHTML(record.availability)}</span></div>
     ${note?`<p class="simple-note">${escapeHTML(note)}${(record.notes||'').length>180?'…':''}</p>`:''}
     ${link?`<span class="link-state ${badgeClass(link.state)}">${escapeHTML(link.state)}</span>`:''}
     <div class="card-actions simple-actions">

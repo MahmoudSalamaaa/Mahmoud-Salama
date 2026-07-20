@@ -12,28 +12,35 @@ export function renderShell(){
   const current=location.pathname.split('/').pop()||'index.html',lang=getLanguage();
   const header=document.querySelector('[data-app-header]');
   if(header)header.innerHTML=`<div class="header-inner">
-    <a class="brand" href="./index.html" aria-label="Mahmoud Salama Career Intelligence home">
+    <a class="brand" href="./index.html" aria-label="Mahmoud Salama Career Hub home">
       <img src="./mahmoud-salama-logo-optimized.png" alt="Mahmoud Salama logo" onerror="this.src='./icons/logo.svg'">
-      <span><strong>Mahmoud Salama</strong><small>${lang==='ar'?'منصة ذكاء التوظيف والمشروعات':'Career & Project Intelligence'}</small></span>
+      <span><strong>Mahmoud Salama</strong><small>${lang==='ar'?'دليل الوظائف والجهات':'Career & Opportunity Hub'}</small></span>
     </a>
-    <button class="mobile-menu-button" id="mobileMenuBtn" aria-expanded="false" aria-controls="mainNav">☰ <span data-i18n="menu">${t('menu')}</span></button>
-    <nav class="main-nav" id="mainNav" aria-label="Primary navigation">${NAV_ITEMS.map(([href,en,ar])=>`<a href="./${href}" class="${current===href?'active':''}">${lang==='ar'?ar:en}</a>`).join('')}<details class="more-menu"><summary>${lang==='ar'?'المزيد':'More'}</summary><div class="more-menu-panel">${SECONDARY_NAV_ITEMS.map(([href,en,ar])=>`<a href="./${href}" class="${current===href?'active':''}">${lang==='ar'?ar:en}</a>`).join('')}</div></details></nav>
-    <div class="header-actions"><button class="icon-button" id="languageBtn" aria-label="Change language">${lang==='ar'?'EN':'ع'}</button><button class="icon-button" id="themeBtn" aria-label="Change theme">◐</button></div>
+    <button class="mobile-menu-button" id="mobileMenuBtn" aria-expanded="false" aria-controls="mainNav"><span class="menu-icon" aria-hidden="true">☰</span><span>${t('menu')}</span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+      ${NAV_ITEMS.map(([href,en,ar])=>`<a href="./${href}" class="${current===href?'active':''}">${lang==='ar'?ar:en}</a>`).join('')}
+      <details class="more-menu" id="moreMenu"><summary>${lang==='ar'?'المزيد':'More'} <span aria-hidden="true">⌄</span></summary><div class="more-menu-panel">${SECONDARY_NAV_ITEMS.map(([href,en,ar])=>`<a href="./${href}" class="${current===href?'active':''}">${lang==='ar'?ar:en}</a>`).join('')}</div></details>
+    </nav>
+    <div class="header-actions"><button class="icon-button header-icon" id="languageBtn" aria-label="Change language">${lang==='ar'?'EN':'ع'}</button><button class="icon-button header-icon" id="themeBtn" aria-label="Change theme"><span id="themeIcon" aria-hidden="true">☾</span></button></div>
   </div>`;
   const footer=document.querySelector('[data-app-footer]');
-  if(footer)footer.innerHTML=`<div class="footer-inner"><p><strong>Mahmoud Salama Career Intelligence</strong> · v${VERSION}</p><p data-i18n="disclaimer">${t('disclaimer')}</p><div class="footer-links"><a href="${PROFILE.website}" target="_blank" rel="noopener">Portfolio</a><a href="${PROFILE.digitalCard}" target="_blank" rel="noopener">Digital Card</a><a href="${PROFILE.cv}" target="_blank" rel="noopener">CV</a><a href="${PROFILE.linkedin}" target="_blank" rel="noopener">LinkedIn</a></div></div>`;
+  if(footer)footer.innerHTML=`<div class="footer-inner"><div class="footer-brand"><strong>Mahmoud Salama Career & Opportunity Hub</strong><span>v${VERSION}</span></div><p data-i18n="disclaimer">${t('disclaimer')}</p><div class="footer-links"><a href="${PROFILE.website}" target="_blank" rel="noopener">Portfolio</a><a href="${PROFILE.digitalCard}" target="_blank" rel="noopener">Digital Card</a><a href="${PROFILE.cv}" target="_blank" rel="noopener">CV</a><a href="${PROFILE.linkedin}" target="_blank" rel="noopener">LinkedIn</a></div></div>`;
   bindShell();applyTranslations();
 }
 
 function bindShell(){
   const root=document.documentElement;
-  root.dataset.theme=localStorage.getItem('career-theme')||'dark';
-  document.getElementById('themeBtn')?.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';localStorage.setItem('career-theme',root.dataset.theme)});
+  root.dataset.theme=localStorage.getItem('career-theme')||'light';
+  updateThemeIcon();
+  document.getElementById('themeBtn')?.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';localStorage.setItem('career-theme',root.dataset.theme);updateThemeIcon()});
   document.getElementById('languageBtn')?.addEventListener('click',()=>setLanguage(getLanguage()==='ar'?'en':'ar'));
   const btn=document.getElementById('mobileMenuBtn'),nav=document.getElementById('mainNav');
-  btn?.addEventListener('click',()=>{const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',String(open))});
+  btn?.addEventListener('click',()=>{const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));btn.querySelector('.menu-icon').textContent=open?'×':'☰'});
+  nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');btn?.setAttribute('aria-expanded','false')}));
+  document.addEventListener('click',e=>{const menu=document.getElementById('moreMenu');if(menu?.open&&!menu.contains(e.target))menu.removeAttribute('open')});
   window.addEventListener('career-language-change',()=>location.reload());
 }
+function updateThemeIcon(){const icon=document.getElementById('themeIcon');if(icon)icon.textContent=document.documentElement.dataset.theme==='dark'?'☀':'☾'}
 
 export function showToast(message,type='info'){
   let toast=document.getElementById('appToast');

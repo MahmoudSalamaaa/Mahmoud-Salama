@@ -66,3 +66,21 @@ html[data-theme="dark"]{
 html[dir="rtl"] .more-menu-panel{right:auto;left:0}html[dir="rtl"] .input-with-icon>span{left:auto;right:13px}html[dir="rtl"] .input-with-icon input{padding-left:11px;padding-right:40px}html[dir="rtl"] .favorite,html[dir="rtl"] .modal-close{right:auto;left:13px}html[dir="rtl"] .record-kicker{padding-right:0;padding-left:44px}html[dir="rtl"] th,html[dir="rtl"] td{text-align:right}html[dir="rtl"] .trust-strip article{border-right:0;border-left:1px solid var(--border)}html[dir="rtl"] .trust-strip article:last-child{border-left:0}
 @media print{.app-header,.app-footer,.hero-actions,.simple-filter-bar,.card-actions,.pagination,.favorite,.view-switch{display:none!important}.page{width:100%;padding:0}.panel,.result-card,.stat-card{box-shadow:none;break-inside:avoid}.result-grid{grid-template-columns:repeat(2,1fr)}body{background:#fff;color:#000}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+/* Personal tracking status: Not Available = no suitable vacancy for the user now */
+.personal-status{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:9px;margin:2px 0 13px;padding:9px 10px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}
+.personal-status>span{color:var(--muted);font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.06em}
+.personal-status select{width:100%;min-width:0;height:36px;padding:5px 30px 5px 9px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);font-size:11px;font-weight:750}
+.personal-status.is-not-available{border-color:color-mix(in srgb,var(--danger) 32%,var(--border));background:var(--danger-soft)}
+.personal-status.is-not-available>span,.personal-status.is-not-available select{color:var(--danger)}
+.personal-status.is-not-available select{border-color:color-mix(in srgb,var(--danger) 36%,var(--border));background:var(--surface)}
+.status-guidance{display:block;margin-top:6px;color:var(--muted);font-size:10px;line-height:1.45;font-weight:500}
+.personal-status-badge{display:inline-flex;max-width:240px;padding:5px 8px;border-radius:999px;background:var(--surface-2);color:var(--muted);font-size:10px;font-weight:800;white-space:normal}
+.personal-status-badge.not-available{background:var(--danger-soft);color:var(--danger)}
+.not-available-stat{border-color:color-mix(in srgb,var(--danger) 30%,var(--border));background:linear-gradient(145deg,var(--surface),var(--danger-soft))}
+.not-available-stat strong{color:var(--danger)}
+.tracker-card.not-available-card{border-color:color-mix(in srgb,var(--danger) 35%,var(--border));background:linear-gradient(145deg,var(--surface),var(--danger-soft))}
+.tracker-status-note{display:grid;gap:2px;margin:9px 0;padding:9px;border-radius:10px;background:var(--danger-soft);color:var(--danger)}
+.tracker-status-note b{font-size:11px}.tracker-status-note span{font-size:11px;line-height:1.45}.tracker-status-note small{color:var(--muted);font-size:9px}
+@media(max-width:600px){.personal-status{grid-template-columns:1fr;gap:5px}.personal-status select{height:40px}}

@@ -7,9 +7,9 @@ function recordKey(record){return `${record.dataset || 'global'}:${record.id || 
 
 export function getTracker(){return read(KEYS.tracker,{})}
 export function getTracking(record){return getTracker()[recordKey(record)] || {status:'Not started',notes:'',applicationDate:'',deadline:'',followUp:'',contact:'',cvVersion:'',coverLetter:''}}
-export function saveTracking(record,values){const all=getTracker();all[recordKey(record)]={...getTracking(record),...values,updatedAt:new Date().toISOString(),recordSnapshot:{id:record.id,dataset:record.dataset,title:record.title,subtitle:record.subtitle,country:record.country,url:record.url,recordType:record.recordType}};write(KEYS.tracker,all);return all[recordKey(record)]}
+export function saveTracking(record,values){const all=getTracker(),now=new Date().toISOString(),previous=getTracking(record);const statusChanged=values.status&&values.status!==previous.status;all[recordKey(record)]={...previous,...values,updatedAt:now,lastStatusAt:statusChanged?now:(previous.lastStatusAt||''),notAvailableCheckedAt:values.status==='Not Available'?now:(values.status&&values.status!=='Not Available'?'':previous.notAvailableCheckedAt||''),recordSnapshot:{id:record.id,dataset:record.dataset,title:record.title,subtitle:record.subtitle,country:record.country,url:record.url,recordType:record.recordType}};write(KEYS.tracker,all);return all[recordKey(record)]}
 export function removeTracking(record){const all=getTracker();delete all[recordKey(record)];write(KEYS.tracker,all)}
-export function statusesFor(record){return record.recordType==='job' ? JOB_STATUSES : DIRECTORY_STATUSES}
+export function statusesFor(record){return ['job','search','project'].includes(record.recordType) ? JOB_STATUSES : DIRECTORY_STATUSES}
 
 export function getFavorites(){return new Set(read(KEYS.favorites,[]))}
 export function isFavorite(record){return getFavorites().has(recordKey(record))}

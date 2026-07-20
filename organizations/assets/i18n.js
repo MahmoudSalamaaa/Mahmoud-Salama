@@ -20,7 +20,7 @@ const translations = {
     workingOffline:'Offline-ready', home:'Home', about:'About', records:'records', generatedSearch:'Generated live search',
     official:'Official', established:'Established', unverified:'Unverified', viewGrid:'Grid', viewTable:'Table',
     favoriteOnly:'Favorites only', hideClosed:'Hide unavailable', english:'English', arabic:'العربية',
-    browseAll:'Browse all', startExploring:'Start exploring', africaDirectory:'Africa NGO directory'
+    browseAll:'Browse all', startExploring:'Start exploring', africaDirectory:'Africa NGO directory', myStatus:'My status', noSuitableVacancy:'No suitable vacancy currently', notAvailableHelp:'Use Not Available after checking the careers page and finding no vacancy that suits you right now.'
   },
   ar: {
     theme:'المظهر', language:'English', search:'بحث', explore:'استكشاف', clear:'مسح', filters:'الفلاتر',
@@ -43,7 +43,7 @@ const translations = {
     workingOffline:'جاهز دون اتصال', home:'الرئيسية', about:'عن المشروع', records:'سجل', generatedSearch:'بحث حي مولّد',
     official:'رسمي', established:'معروف', unverified:'غير متحقق', viewGrid:'بطاقات', viewTable:'جدول',
     favoriteOnly:'المفضلة فقط', hideClosed:'إخفاء غير المتاح', english:'English', arabic:'العربية',
-    browseAll:'تصفح الكل', startExploring:'ابدأ الاستكشاف', africaDirectory:'دليل منظمات أفريقيا'
+    browseAll:'تصفح الكل', startExploring:'ابدأ الاستكشاف', africaDirectory:'دليل منظمات أفريقيا', myStatus:'حالتي', noSuitableVacancy:'لا توجد وظيفة مناسبة حاليًا', notAvailableHelp:'اختر Not Available بعد فتح صفحة التوظيف والتأكد من عدم وجود وظيفة مناسبة لك حاليًا.'
   }
 };
 

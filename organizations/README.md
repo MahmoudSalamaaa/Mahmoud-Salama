@@ -82,3 +82,13 @@ npm run validate
 ## الخصوصية
 
 المفضلة، بيانات المتابعة والإعدادات تحفظ داخل `localStorage` في المتصفح. لا يتم إرسال عمليات البحث أو بيانات المستخدم إلى خدمة خارجية.
+
+## Personal status: Not Available
+
+A new personal tracking status is available on every result card and in the details modal:
+
+- **Not Available** means you opened the organization or employer careers page and did not find a vacancy suitable for you at that time.
+- It is saved only in your browser as part of your personal tracker.
+- It does **not** mean the organization has stopped hiring or that its careers page is unavailable.
+- The tracker records the date when you marked the item as Not Available.
+

@@ -1,5 +1,5 @@
 export const BUILD_DATE = '2026-07-20';
-export const VERSION = '4.0.0-uiux';
+export const VERSION = '4.1.0-status-update';
 export const LEGACY_COMMIT = '375dafd01dae682d4711deb26cb677eecc711b56';
 export const LEGACY_BASE = `https://raw.githubusercontent.com/MahmoudSalamaaa/Mahmoud-Salama/${LEGACY_COMMIT}/organizations/`;
 
@@ -61,8 +61,8 @@ export const SECONDARY_NAV_ITEMS = [
   ['sources.html','Sources & Help','المصادر والمساعدة']
 ];
 
-export const JOB_STATUSES = ['Not started','Saved','Planning to Apply','Applied','Assessment','Interview','Follow-up','Offer','Rejected','Closed'];
-export const DIRECTORY_STATUSES = ['Not started','Saved','Contacted','Applied','Interview','Closed'];
+export const JOB_STATUSES = ['Not started','Saved','Planning to Apply','Applied','Assessment','Interview','Follow-up','Offer','Rejected','Not Available','Closed'];
+export const DIRECTORY_STATUSES = ['Not started','Saved','Contacted','Applied','Interview','Not Available','Closed'];
 export const AVAILABILITY_STATUSES = ['Open','Closing Soon','Deadline Passed','Not Available','Needs Verification','Monitoring'];
 
 export const ROLES = [

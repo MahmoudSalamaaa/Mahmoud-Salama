@@ -7,6 +7,8 @@ const compareKey=record=>`${record.dataset}:${record.id}`;
 
 function badgeClass(value=''){return String(value).toLowerCase().replace(/[^a-z0-9]+/g,'-')}
 function formatDate(value){if(!value)return '—';const d=new Date(value);return Number.isNaN(d.getTime())?escapeHTML(value):new Intl.DateTimeFormat(getLanguage()==='ar'?'ar-EG':'en-GB',{dateStyle:'medium'}).format(d)}
+function statusLabel(value){if(value==='Not Available')return getLanguage()==='ar'?'Not Available — لا توجد وظيفة مناسبة حاليًا':'Not Available — no suitable vacancy now';return value}
+function personalStatusControl(record){const tracking=getTracking(record),statuses=statusesFor(record);return `<label class="personal-status ${tracking.status==='Not Available'?'is-not-available':''}"><span>${t('myStatus')}</span><select data-action="status" aria-label="${t('myStatus')}">${statuses.map(x=>`<option value="${escapeHTML(x)}" ${tracking.status===x?'selected':''}>${escapeHTML(statusLabel(x))}</option>`).join('')}</select></label>`}
 
 export function renderCard(record,{query='',compact=false}={}){
   const favorite=isFavorite(record),link=getLinkCheck(record);
@@ -21,6 +23,7 @@ export function renderCard(record,{query='',compact=false}={}){
     <div class="simple-meta"><span>⌖ ${escapeHTML(record.country||record.region||'Africa')}</span>${isOpportunity?`<span>◎ ${score}% ${t('profileMatch')}</span>`:''}<span class="status-pill ${badgeClass(record.availability)}">${escapeHTML(record.availability)}</span></div>
     ${note?`<p class="simple-note">${escapeHTML(note)}${(record.notes||'').length>180?'…':''}</p>`:''}
     ${link?`<span class="link-state ${badgeClass(link.state)}">${escapeHTML(link.state)}</span>`:''}
+    ${personalStatusControl(record)}
     <div class="card-actions simple-actions">
       <a class="button primary" href="${safeUrl(record.url)}" target="_blank" rel="noopener" data-action="open">${record.recordType==='directory'?(getLanguage()==='ar'?'فتح الموقع':'Open website'):t('openSource')} ↗</a>
       <button class="button secondary" data-action="details">${t('details')}</button>
@@ -37,7 +40,7 @@ export function bindCards(container,records,onChange=()=>{}){
     if(action==='compare')toggleComparison(record,e.target);
     if(action==='open')addRecentlyViewed(record);
   };
-  container.onchange=e=>{if(e.target.dataset.action==='status'){const card=e.target.closest('.result-card'),record=byKey.get(card.dataset.key);if(record){saveTracking(record,{status:e.target.value});onChange();showToast('Tracking updated')}}};
+  container.onchange=e=>{if(e.target.dataset.action==='status'){const card=e.target.closest('.result-card'),record=byKey.get(card.dataset.key);if(record){saveTracking(record,{status:e.target.value});card.querySelector('.personal-status')?.classList.toggle('is-not-available',e.target.value==='Not Available');onChange();showToast(e.target.value==='Not Available'?(getLanguage()==='ar'?'تم تسجيل أنه لا توجد وظيفة مناسبة حاليًا':'Marked as no suitable vacancy currently'):(getLanguage()==='ar'?'تم تحديث حالة المتابعة':'Tracking updated'))}}};
 }
 
 export function openRecordDetails(record,onChange=()=>{}){
@@ -53,7 +56,7 @@ export function openRecordDetails(record,onChange=()=>{}){
     </div>
     <p class="record-notes">${escapeHTML(record.notes||'No additional notes.')}</p>
     <form id="trackingForm" class="tracking-form">
-      <label>${t('status')}<select name="status">${statuses.map(x=>`<option ${tracking.status===x?'selected':''}>${escapeHTML(x)}</option>`).join('')}</select></label>
+      <label>${t('status')}<select name="status" id="personalStatusSelect">${statuses.map(x=>`<option value="${escapeHTML(x)}" ${tracking.status===x?'selected':''}>${escapeHTML(statusLabel(x))}</option>`).join('')}</select><small class="status-guidance">${t('notAvailableHelp')}</small></label>
       <label>${t('applicationDate')}<input type="date" name="applicationDate" value="${escapeHTML(tracking.applicationDate||'')}"></label>
       <label>${t('deadline')}<input type="date" name="deadline" value="${escapeHTML(tracking.deadline||'')}"></label>
       <label>${t('followUp')}<input type="date" name="followUp" value="${escapeHTML(tracking.followUp||'')}"></label>
@@ -67,7 +70,7 @@ export function openRecordDetails(record,onChange=()=>{}){
 }
 
 export function renderTable(records){
-  return `<div class="table-wrap"><table><thead><tr><th>${t('name')}</th><th>${t('country')}</th><th>${t('type')}</th><th>${t('profileMatch')}</th><th>${t('availability')}</th><th>${t('lastChecked')}</th><th>${t('source')}</th></tr></thead><tbody>${records.map(r=>`<tr><td><a href="${safeUrl(r.url)}" target="_blank" rel="noopener">${escapeHTML(r.title)}</a><small>${escapeHTML(r.subtitle||'')}</small></td><td>${escapeHTML(r.country||r.region||'')}</td><td>${escapeHTML(r.type)}</td><td>${r.profileMatch}%</td><td>${escapeHTML(r.availability)}</td><td>${formatDate(r.checked)}</td><td>${escapeHTML(r.source)}</td></tr>`).join('')}</tbody></table></div>`;
+  return `<div class="table-wrap"><table><thead><tr><th>${t('name')}</th><th>${t('country')}</th><th>${t('type')}</th><th>${t('profileMatch')}</th><th>${t('availability')}</th><th>${t('myStatus')}</th><th>${t('lastChecked')}</th><th>${t('source')}</th></tr></thead><tbody>${records.map(r=>{const personal=getTracking(r).status;return `<tr><td><a href="${safeUrl(r.url)}" target="_blank" rel="noopener">${escapeHTML(r.title)}</a><small>${escapeHTML(r.subtitle||'')}</small></td><td>${escapeHTML(r.country||r.region||'')}</td><td>${escapeHTML(r.type)}</td><td>${r.profileMatch}%</td><td>${escapeHTML(r.availability)}</td><td><span class="personal-status-badge ${personal==='Not Available'?'not-available':''}">${escapeHTML(statusLabel(personal))}</span></td><td>${formatDate(r.checked)}</td><td>${escapeHTML(r.source)}</td></tr>`}).join('')}</tbody></table></div>`;
 }
 
 function toggleComparison(record,button){

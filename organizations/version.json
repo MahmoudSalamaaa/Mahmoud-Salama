@@ -1,7 +1,7 @@
 {
-  "version": "4.0.0-uiux",
+  "version": "4.1.0-status-update",
   "buildDate": "2026-07-20",
-  "edition": "Enhanced UI/UX Africa NGOs Edition",
+  "edition": "Enhanced UI/UX Africa NGOs Edition + Not Available Personal Status",
   "africaOrganizations": 148,
   "aiSearch": false
 }

@@ -1,85 +1,87 @@
-path	size_bytes
-.gitignore	55
-404.html	925
-MIGRATION_NOTES.md	517
-PROJECT_TEST_REPORT_UIUX.md	2177
-README.md	3617
-README_FIRST.txt	407
-UIUX_EDITION_NOTES.md	1273
-admin.html	905
-africa-ngos.csv	53221
-africa-ngos.html	971
-all-platform-searches.csv	8125649
-api/check-link.js	2828
-assets/app.css	29365
-assets/config.js	8544
-assets/data.js	9699
-assets/i18n.js	6641
-assets/pages.js	41257
-assets/renderer.js	8802
-assets/scoring.js	896
-assets/shell.js	6454
-assets/tracker.js	3701
-dashboard.html	930
-data/methodology.json	7169
-data/offline/africa-ngos.csv	53221
-data/offline/all-platform-searches.csv	8125649
-data/offline/egypt-vacancies.csv	69696
-data/offline/gcc-vacancies.csv	207702
-data/offline/government-jobs.csv	119790
-data/offline/job-search-platforms.csv	68099
-data/offline/medical-companies.csv	254835
-data/offline/organizations.csv	279110
-data/offline/private-company-directory.csv	318549
-data/offline/project-opportunities.csv	154476
-data/offline/recruitment-agencies.csv	266025
-data/offline/regional-private-companies.csv	593226
-data/offline/remote-jobs.csv	184670
-data/project-index.json	741
-data/seed.json	140202
-egypt-vacancies.html	947
-explore.html	1001
-gcc-vacancies.html	941
-government-jobs.html	972
-icons/icon-192.svg	684
-icons/icon-512.svg	684
-icons/logo.svg	684
-index.html	965
-job-search-platforms.html	961
-legacy/README.md	241
-legacy/regional-hub-original-upload.html	9606
-link-checker.html	920
-mahmoud-salama-logo-optimized.png	22761
-manifest.webmanifest	533
-medical-companies.html	987
-organizations.html	959
-package.json	399
-platform-search-africa.csv	3081095
-platform-search-africa.html	956
-platform-search-arab.csv	2024111
-platform-search-arab.html	971
-platform-search-egypt.csv	199419
-platform-search-egypt.html	953
-platform-search-gcc.csv	1666169
-platform-search-gcc.html	947
-platform-search-hub.html	951
-platform-search-remote.csv	1180725
-platform-search-remote.html	956
-private-company-directory.html	971
-project-opportunities.html	962
-recruitment-agencies.html	987
-regional-employment.html	949
-regional-private-companies.html	948
-remote-jobs.html	940
-robots.txt	92
-scripts/build-offline-data.mjs	2284
-scripts/sync-legacy-data.mjs	1314
-scripts/validate-project.mjs	2916
-sitemap.xml	3348
-sources.html	938
-start-local.bat	172
-start-local.sh	116
-sw.js	1269
-tracker.html	934
-vercel.json	583
-version.json	161
+.gitignore	55 bytes
+404.html	925 bytes
+FILE_MANIFEST.tsv	0 bytes
+MIGRATION_NOTES.md	517 bytes
+PROJECT_TEST_REPORT_STATUS_UPDATE.md	1191 bytes
+PROJECT_TEST_REPORT_UIUX.md	2177 bytes
+README.md	4126 bytes
+README_FIRST.txt	407 bytes
+STATUS_UPDATE_NOTES.md	573 bytes
+UIUX_EDITION_NOTES.md	1273 bytes
+admin.html	905 bytes
+africa-ngos.csv	53221 bytes
+africa-ngos.html	971 bytes
+all-platform-searches.csv	8125649 bytes
+api/check-link.js	2828 bytes
+assets/app.css	31525 bytes
+assets/config.js	8585 bytes
+assets/data.js	9699 bytes
+assets/i18n.js	7088 bytes
+assets/pages.js	42259 bytes
+assets/renderer.js	10185 bytes
+assets/scoring.js	896 bytes
+assets/shell.js	6454 bytes
+assets/tracker.js	4027 bytes
+dashboard.html	930 bytes
+data/methodology.json	7169 bytes
+data/offline/africa-ngos.csv	53221 bytes
+data/offline/all-platform-searches.csv	8125649 bytes
+data/offline/egypt-vacancies.csv	69696 bytes
+data/offline/gcc-vacancies.csv	207702 bytes
+data/offline/government-jobs.csv	119790 bytes
+data/offline/job-search-platforms.csv	68099 bytes
+data/offline/medical-companies.csv	254835 bytes
+data/offline/organizations.csv	279110 bytes
+data/offline/private-company-directory.csv	318549 bytes
+data/offline/project-opportunities.csv	154476 bytes
+data/offline/recruitment-agencies.csv	266025 bytes
+data/offline/regional-private-companies.csv	593226 bytes
+data/offline/remote-jobs.csv	184670 bytes
+data/project-index.json	741 bytes
+data/seed.json	140202 bytes
+egypt-vacancies.html	947 bytes
+explore.html	1001 bytes
+gcc-vacancies.html	941 bytes
+government-jobs.html	972 bytes
+icons/icon-192.svg	684 bytes
+icons/icon-512.svg	684 bytes
+icons/logo.svg	684 bytes
+index.html	965 bytes
+job-search-platforms.html	961 bytes
+legacy/README.md	241 bytes
+legacy/regional-hub-original-upload.html	9606 bytes
+link-checker.html	920 bytes
+mahmoud-salama-logo-optimized.png	22761 bytes
+manifest.webmanifest	533 bytes
+medical-companies.html	987 bytes
+organizations.html	959 bytes
+package.json	438 bytes
+platform-search-africa.csv	3081095 bytes
+platform-search-africa.html	956 bytes
+platform-search-arab.csv	2024111 bytes
+platform-search-arab.html	971 bytes
+platform-search-egypt.csv	199419 bytes
+platform-search-egypt.html	953 bytes
+platform-search-gcc.csv	1666169 bytes
+platform-search-gcc.html	947 bytes
+platform-search-hub.html	951 bytes
+platform-search-remote.csv	1180725 bytes
+platform-search-remote.html	956 bytes
+private-company-directory.html	971 bytes
+project-opportunities.html	962 bytes
+recruitment-agencies.html	987 bytes
+regional-employment.html	949 bytes
+regional-private-companies.html	948 bytes
+remote-jobs.html	940 bytes
+robots.txt	92 bytes
+scripts/build-offline-data.mjs	2284 bytes
+scripts/sync-legacy-data.mjs	1314 bytes
+scripts/validate-project.mjs	2916 bytes
+sitemap.xml	3348 bytes
+sources.html	938 bytes
+start-local.bat	172 bytes
+start-local.sh	116 bytes
+sw.js	1273 bytes
+tracker.html	934 bytes
+vercel.json	583 bytes
+version.json	202 bytes

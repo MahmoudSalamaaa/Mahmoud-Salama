@@ -1,13 +1,15 @@
 {
   "name": "mahmoud-salama-career-hub",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "private": true,
   "type": "module",
-  "description": "Bilingual career and opportunity hub with a dedicated Africa NGO directory.",
+  "description": "Bilingual career and opportunity hub with Africa NGO directory and personal Not Available tracking status.",
   "scripts": {
     "serve": "python -m http.server 8080",
     "sync-data": "node scripts/sync-legacy-data.mjs",
     "validate": "node scripts/validate-project.mjs"
   },
-  "engines": {"node": ">=20"}
+  "engines": {
+    "node": ">=20"
+  }
 }

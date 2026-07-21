@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ngo-leadership-cv",
+    "name": "NGO Technology Leadership CV",
+    "category": "CV",
+    "description": "A leadership-focused CV for NGOs and development implementers.",
+    "content": "MAHMOUD SALAMA\nTechnology & Digital Transformation Leader\n\nPROFILE\nTechnology and digital transformation leader with 18+ years of experience across enterprise systems, healthcare, government and public-sector environments.\n\nSELECTED VALUE\n• Enterprise systems and digital transformation leadership\n• Healthcare technology and data-platform delivery\n• Governance, integration and stakeholder management\n\nAdapt the achievements and metrics to the target organization and vacancy."
+  },
+  {
+    "id": "un-personal-history",
+    "name": "UN Personal History Preparation Guide",
+    "category": "UN Form",
+    "description": "A structured worksheet for P11 / Personal History Profile preparation.",
+    "content": "PERSONAL HISTORY PREPARATION\n\n1. Employment history with exact dates\n2. Duties and quantified achievements for every role\n3. Supervisors and contact information\n4. Education and certifications\n5. Languages and proficiency\n6. References\n7. Geographic mobility and availability\n8. Publications and memberships\n\nVerify all entries against official documents before submission."
+  },
+  {
+    "id": "technical-proposal",
+    "name": "Consultancy Technical Proposal",
+    "category": "Proposal",
+    "description": "A reusable technical-proposal structure for consulting assignments.",
+    "content": "TECHNICAL PROPOSAL\n\n1. Understanding of the assignment\n2. Proposed methodology and approach\n3. Work plan and deliverables\n4. Governance and communication\n5. Risk management and quality assurance\n6. Relevant experience\n7. Team / consultant qualifications\n8. Availability and assumptions\n\nReplace every section with assignment-specific evidence."
+  },
+  {
+    "id": "financial-proposal",
+    "name": "Consultancy Financial Proposal",
+    "category": "Proposal",
+    "description": "A simple financial-proposal worksheet.",
+    "content": "FINANCIAL PROPOSAL\n\nProfessional fees: [amount / currency]\nEstimated days: [days]\nDaily rate: [rate]\nTravel and subsistence: [if allowed]\nOther reimbursable expenses: [if allowed]\nTaxes: [state treatment]\nTotal: [amount]\nValidity period: [days]\n\nFollow the solicitation format when one is provided."
+  },
+  {
+    "id": "development-cover-letter",
+    "name": "Digital Transformation Development Cover Letter",
+    "category": "Cover Letter",
+    "description": "Cover-letter structure for international development roles.",
+    "content": "Dear Hiring Committee,\n\nI am applying for [role] with [organization]. My background combines more than eighteen years of technology leadership, enterprise systems, healthcare technology and public-sector digital transformation.\n\nThe strongest alignment with this opportunity includes:\n• [relevant achievement]\n• [relevant domain experience]\n• [leadership / stakeholder outcome]\n\nI would welcome the opportunity to contribute this experience to [mission / programme].\n\nSincerely,\nMahmoud Salama"
+  },
+  {
+    "id": "executive-profile",
+    "name": "Executive One-Page Profile",
+    "category": "Profile",
+    "description": "A one-page summary for senior applications and consulting EOIs.",
+    "content": "MAHMOUD SALAMA\nTechnology, Enterprise Systems & Digital Transformation Leader\n\n18+ years | Healthcare | Government | Public Sector\n\nCORE CAPABILITIES\nDigital transformation · Enterprise architecture · Enterprise applications · Systems integration · Data platforms · IT governance · Programme delivery\n\nSELECTED IMPACT\n• [quantified achievement]\n• [quantified achievement]\n• [quantified achievement]"
+  },
+  {
+    "id": "expression-of-interest",
+    "name": "Expression of Interest",
+    "category": "Consulting",
+    "description": "A concise EOI for individual consulting opportunities.",
+    "content": "EXPRESSION OF INTEREST\n\nAssignment: [title / reference]\n\nI wish to express my interest in the above assignment. My experience includes [years] in [relevant areas], with direct relevance to the required deliverables through [evidence].\n\nRelevant qualifications:\n• [qualification / achievement]\n• [qualification / achievement]\n• [qualification / achievement]\n\nAvailability: [date]\nLocation / remote availability: [details]\n\nSupporting CV and requested documents are attached."
+  },
+  {
+    "id": "roster-statement",
+    "name": "Roster Availability Statement",
+    "category": "Roster",
+    "description": "A reusable statement for talent pools and expert rosters.",
+    "content": "ROSTER AVAILABILITY STATEMENT\n\nI am available for senior technology, enterprise systems, digital transformation, healthcare technology and programme-delivery assignments.\n\nPreferred modalities: [remote / on-site / hybrid]\nGeographic availability: [regions]\nEarliest start date: [date]\nTypical notice period: [period]\nAssignment duration: [range]\nLanguages: [languages]\n\nThis statement should be updated before each roster submission."
+  },
+  {
+    "id": "europass-cv",
+    "name": "Europass CV Preparation Checklist",
+    "category": "EU",
+    "description": "Checklist for roles requesting Europass format.",
+    "content": "EUROPASS PREPARATION CHECKLIST\n\n• Personal information and professional headline\n• Work experience in reverse chronology\n• Education and training\n• Language skills using CEFR levels\n• Digital skills\n• Management and leadership skills\n• Projects, publications and memberships\n• Data-processing consent where required\n\nUse the official Europass builder when the vacancy explicitly requests it."
+  },
+  {
+    "id": "healthcare-cv",
+    "name": "Healthcare Technology CV",
+    "category": "CV",
+    "description": "A CV positioning technology leadership within healthcare systems.",
+    "content": "HEALTHCARE TECHNOLOGY PROFILE\n\nTechnology and digital transformation leader with experience in healthcare procurement, health information systems, enterprise platforms, warehousing, reporting, data quality and stakeholder adoption.\n\nTailor with quantified outcomes related to health-sector systems, availability, adoption, integration and decision support."
+  }
+]

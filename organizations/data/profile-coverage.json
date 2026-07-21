@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "updated": "2026-07-21",
+  "tracks": [
+    {
+      "track": "Enterprise Systems Leadership",
+      "readiness": 94,
+      "strengths": [
+        "18+ years of enterprise systems and technical leadership",
+        "ERP, CRM, integration, data platforms and public-sector systems"
+      ],
+      "gaps": [
+        "Keep quantified executive achievements current"
+      ]
+    },
+    {
+      "track": "Digital Transformation",
+      "readiness": 92,
+      "strengths": [
+        "National-scale digital transformation and stakeholder management",
+        "Program delivery, governance and architecture"
+      ],
+      "gaps": [
+        "Complete TOGAF credential when ready"
+      ]
+    },
+    {
+      "track": "Healthcare Technology",
+      "readiness": 91,
+      "strengths": [
+        "Healthcare procurement, health information systems and digital health",
+        "Government and operational environment experience"
+      ],
+      "gaps": [
+        "Add quantified international-health outcomes"
+      ]
+    },
+    {
+      "track": "International NGOs",
+      "readiness": 78,
+      "strengths": [
+        "Health, public-sector and transformation relevance",
+        "Cross-functional leadership"
+      ],
+      "gaps": [
+        "Prepare NGO-focused CV",
+        "Frame results using development outcomes"
+      ]
+    },
+    {
+      "track": "UN Consultancies",
+      "readiness": 72,
+      "strengths": [
+        "Technical and program-management depth",
+        "Government and healthcare domain expertise"
+      ],
+      "gaps": [
+        "Prepare P11 / PHP",
+        "Prepare technical and financial proposal templates",
+        "Register on consultant portals"
+      ]
+    },
+    {
+      "track": "Rosters & Talent Pools",
+      "readiness": 75,
+      "strengths": [
+        "Broad senior technology profile"
+      ],
+      "gaps": [
+        "Prepare competency stories",
+        "Maintain an availability statement"
+      ]
+    },
+    {
+      "track": "EU / EEAS Opportunities",
+      "readiness": 58,
+      "strengths": [
+        "Technology governance and programme delivery"
+      ],
+      "gaps": [
+        "Verify nationality restrictions",
+        "Prepare Europass CV where requested"
+      ]
+    },
+    {
+      "track": "French-required Africa roles",
+      "readiness": 42,
+      "strengths": [
+        "Strong technology background"
+      ],
+      "gaps": [
+        "French language capability",
+        "Prioritize English-speaking roles"
+      ]
+    }
+  ]
+}

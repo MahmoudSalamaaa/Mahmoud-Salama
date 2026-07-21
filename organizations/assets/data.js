@@ -1,5 +1,7 @@
 import {BUILD_DATE,DATASETS,LEGACY_BASE,PROFILE,ROLES,MARKETS,PLATFORM_TEMPLATES,MATRIX_TARGET} from './config.js';
 import {profileMatch} from './scoring.js';
+import {assessEligibility,eligibilityAdjustedMatch} from './eligibility.js';
+import {sanitizeRecordInput} from './security.js';
 
 const cache=new Map();
 let seedCache=null;
@@ -43,8 +45,8 @@ function inferRecordType(dataset,row){
   return configured||'directory';
 }
 function inferTrust(row,dataset){
-  const source=clean(row.source).toLowerCase(),url=clean(row.url).toLowerCase();
-  if(dataset==='government'||/official|employer|government|ministry|authority/.test(source))return {label:'Official source',score:5};
+  const source=clean(row.source).toLowerCase(),url=clean(row.url).toLowerCase(),sourceClass=clean(row.sourceClass).toLowerCase();
+  if(/official employer|official multilateral|official regional|official development bank|official african|official government/.test(sourceClass)||dataset==='government'||/official employer|official multilateral|official government|ministry|authority/.test(source))return {label:'Official source',score:5};
   if(/linkedin|indeed|glassdoor|bayt|gulftalent|wuzzuf|devex|reliefweb|careerjet|jooble/.test(source+' '+url))return {label:'Established platform',score:4};
   if(dataset==='recruitment')return {label:'Recruitment source',score:3};
   if(/generated|google search|monitoring/.test(source))return {label:'Generated search',score:2};
@@ -56,19 +58,54 @@ function inferAvailability(row,recordType){
   if(recordType==='job'){
     if(/closing soon/.test(lower))return 'Closing Soon';
     if(/deadline passed|expired|closed/.test(lower))return 'Deadline Passed';
-    if(/not available|unavailable/.test(lower))return 'Not Available';
+    if(/not available|unavailable/.test(lower))return 'Needs Verification';
     if(/open|available|active/.test(lower))return 'Open';
     if(recordType==='search'||/search|monitor/.test(lower))return 'Monitoring';
     return posted?'Needs Verification':'Monitoring';
   }
+  if(/careers page available/.test(lower))return 'Careers Page Available';
+  if(/official website only/.test(lower))return 'Official Website Only';
+  if(/recruitment through platform/.test(lower))return 'Recruitment Through Platform';
+  if(/status unknown/.test(lower))return 'Status Unknown';
   if(!url)return 'Status Unknown';
   if(/linkedin|indeed|bayt|glassdoor|gulftalent|wuzzuf|naukri/.test(url))return 'Recruitment Through Platform';
   if(/career|jobs|work-with-us|vacanc/.test(url))return 'Careers Page Available';
   return 'Official Website Only';
 }
+function africaCategory(type='',notes=''){
+  const primary=String(type).toLowerCase(),text=`${type} ${notes}`.toLowerCase();
+  if(/un |united nations|multilateral/.test(primary))return 'UN & Multilateral';
+  if(/health|medical|digital health|disease|hospital/.test(primary))return 'Health & Digital Health';
+  if(/humanitarian|relief|refugee|emergency/.test(primary))return 'Humanitarian';
+  if(/civic|technology|innovation|digital|data|tech/.test(primary))return 'Technology & Civic Tech';
+  if(/foundation|funder|philanthrop/.test(primary))return 'Foundations';
+  if(/research|policy|think tank|institute/.test(primary))return 'Research & Policy';
+  if(/pan-african|regional economic|development finance|african development|african .*organization|african .*institution/.test(primary))return 'African-led Organizations';
+  if(/ngo/.test(primary))return /african/.test(primary)?'African-led Organizations':'International NGOs';
+  if(/health|medical|digital health/.test(text))return 'Health & Digital Health';
+  if(/technology|civic tech|digital innovation/.test(text))return 'Technology & Civic Tech';
+  return 'Governance & Development';
+}
+function africaRegion(region='',country=''){
+  const regionText=String(region).toLowerCase(),text=`${region} ${country}`.toLowerCase();
+  if(/africa-wide|pan-african|sub-saharan/.test(regionText))return 'Pan-African';
+  if(/north africa|egypt|morocco|tunisia|algeria|libya|sudan/.test(text))return 'North Africa';
+  if(/east africa|eastern|horn|kenya|ethiopia|uganda|tanzania|rwanda|djibouti|somalia/.test(text))return 'East Africa';
+  if(/west africa|western|nigeria|ghana|senegal|ivory|côte|sierra|liberia|gambia/.test(text))return 'West Africa';
+  if(/central africa|cameroon|congo|chad|gabon/.test(text))return 'Central Africa';
+  if(/southern africa|south africa|zimbabwe|zambia|botswana|malawi|mozambique|namibia/.test(text))return 'Southern Africa';
+  return 'Pan-African';
+}
+function careerLink(url='',source=''){
+  const text=`${url} ${source}`.toLowerCase();
+  return /career|jobs|opportunit|vacanc|work-with-us|recruit/.test(text)?url:'';
+}
+function officialWebsite(url=''){
+  try{const u=new URL(url);return `${u.protocol}//${u.host}/`}catch{return url}
+}
 function normalizeRow(dataset,row,index){
   const recordType=inferRecordType(dataset,row),trust=inferTrust(row,dataset);
-  const record={
+  const record={...row,
     id:clean(row.id)||`${dataset}-${index+1}`,dataset,
     title:clean(row.title||row.name||row.organization||row.company)||'Untitled record',
     subtitle:clean(row.subtitle||row.company||row.organization||row.category||row.focus),
@@ -79,7 +116,20 @@ function normalizeRow(dataset,row,index){
     url:clean(row.url||row.career),recordType,trust:trust.label,trustScore:trust.score,linkStatus:'Unknown'
   };
   record.availability=inferAvailability(record,recordType);
-  record.profileMatch=profileMatch(record);
+  record.africaCategory=dataset==='ngos'?(clean(row.africaCategory||row.africa_category)||africaCategory(record.type,record.notes)):'';
+  record.africaRegion=dataset==='ngos'?(clean(row.africaRegion||row.africa_region)||africaRegion(record.region,record.country)):'';
+  record.careersUrl=dataset==='ngos'?careerLink(record.url,record.source):'';
+  record.officialWebsite=dataset==='ngos'?(clean(row.officialWebsite||row.official_website)||officialWebsite(record.url)):'';
+  record.headquarters=dataset==='ngos'?clean(row.headquarters||row.hq||record.country):'';
+  record.fundingModel=dataset==='ngos'?clean(row.fundingModel||row.funding_model):'';
+  record.operatingStatus=dataset==='ngos'?clean(row.operatingStatus||row.operating_status):'';
+  record.careersLinkQuality=dataset==='ngos'?clean(row.careersLinkQuality||row.careers_link_quality):'';
+  record.activeInCountry=dataset==='ngos'?clean(row.activeInCountry||row.active_in_country):'';
+  record.regionalOffice=dataset==='ngos'?clean(row.regionalOffice||row.regional_office):'';
+  record.organizationClass=dataset==='ngos'?clean(row.organizationClass||row.organization_class||record.africaCategory):'';
+  record.sourceClass=clean(row.sourceClass||row.source_class);record.coverage=clean(row.coverage);record.specialism=clean(row.specialism);record.accountRequired=clean(row.accountRequired||row.account_required);record.alertsAvailable=clean(row.alertsAvailable||row.alerts_available);record.rssUrl=clean(row.rssUrl||row.rss_url);record.reviewFrequency=clean(row.reviewFrequency||row.review_frequency);record.priority=clean(row.priority);record.egyptEligibility=clean(row.egyptEligibility||row.egypt_eligibility);record.remoteScope=clean(row.remoteScope||row.remote_scope);record.officialApplyPolicy=clean(row.officialApplyPolicy||row.official_apply_policy);record.sourceRank=Number(row.sourceRank||row.source_rank||0);record.sourceGroup=clean(row.sourceGroup||row.source_group);record.careersLinkQuality=clean(row.careersLinkQuality||row.careers_link_quality||record.careersLinkQuality);
+  record.opportunityTrack=clean(row.opportunityTrack||row.opportunity_track);record.lifecycleStatus=clean(row.lifecycleStatus||row.lifecycle_status)||'Active';record.contractType=clean(row.contractType||row.contract_type);record.gradeLevel=clean(row.gradeLevel||row.grade_level);record.positionScope=clean(row.positionScope||row.position_scope);record.remoteEligibility=clean(row.remoteEligibility||row.remote_eligibility);record.nationalityRestrictions=clean(row.nationalityRestrictions||row.nationality_restrictions);record.languageRequirements=clean(row.languageRequirements||row.language_requirements);record.rosterOpportunity=clean(row.rosterOpportunity||row.roster_opportunity);record.deadlineTimezone=clean(row.deadlineTimezone||row.deadline_timezone);record.atsProvider=clean(row.atsProvider||row.ats_provider);record.atsJobId=clean(row.atsJobId||row.ats_job_id);record.atsIdentifier=clean(row.atsIdentifier||row.ats_identifier);record.department=clean(row.department);record.updatedAt=clean(row.updatedAt||row.updated_at);
+  record.skillMatch=profileMatch(record);record.eligibility=assessEligibility(record);record.profileMatch=eligibilityAdjustedMatch(record.skillMatch,record.eligibility);
   return record;
 }
 
@@ -113,11 +163,15 @@ export async function loadMany(names=Object.keys(DATASETS),options={}){
   return Object.fromEntries(results);
 }
 
+
+function internalSourceRank(record){const c=clean(record.sourceClass||record.source).toLowerCase();if(record.sourceRank)return Number(record.sourceRank);if(/official employer|official multilateral|official regional|official development bank|official government/.test(c))return 6;if(/specialist|official humanitarian/.test(c))return 5;if(/regional job board|remote platform/.test(c))return 4;if(/general platform/.test(c))return 3;if(/generated|monitoring/.test(c))return 1;return record.trustScore||2}
+function annotateOfficialSources(records){const groups=new Map();for(const r of records){if(!['job','project'].includes(r.recordType)||/generated/i.test(r.source||''))continue;const title=clean(r.title).toLowerCase().replace(/[^a-z0-9]+/g,' ').replace(/\b(senior|junior|consultant|officer|manager|lead)\b/g,'').trim();const org=clean(r.subtitle).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();const country=clean(r.country||r.location).toLowerCase();if(!title||!org)continue;const key=`${title.slice(0,90)}|${org.slice(0,60)}|${country}`;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(r)}for(const group of groups.values()){if(group.length<2)continue;const sorted=[...group].sort((a,b)=>internalSourceRank(b)-internalSourceRank(a)||b.trustScore-a.trustScore),primary=sorted[0],alternatives=sorted.map(x=>({title:x.title,url:x.url,source:x.source,dataset:x.dataset,rank:internalSourceRank(x)}));for(const r of group){r.primaryUrl=primary.url;r.primarySource=primary.source;r.isPrimarySource=r===primary;r.sourceAlternatives=alternatives}}return records}
+
 export async function loadGlobal({force=false}={}){
   const priority=['jobs','egypt','gcc','remote','ngos','organizations','medical','recruitment','government','companies','platforms','projects'];
   const datasets=await loadMany(priority,{force,fillTarget:true});
   const all=[];for(const [name,rows] of Object.entries(datasets))for(const row of rows)all.push(row);
-  return dedupe(all);
+  return annotateOfficialSources(dedupe(all));
 }
 
 function fillWithMonitoring(dataset,rows,target){
@@ -157,8 +211,8 @@ export function getCustomRecords(dataset=null){
 }
 export function saveCustomRecord(record){
   if(typeof localStorage==='undefined')throw new Error('Custom records require a browser');
-  const all=getCustomRecords();const value={...record,id:record.id||`custom-${Date.now()}`,dataset:record.dataset||'jobs',checked:record.checked||BUILD_DATE,source:record.source||'Personal data manager'};
+  const all=getCustomRecords();const cleaned=sanitizeRecordInput(record);const value={...cleaned,id:cleaned.id||`custom-${Date.now()}`,dataset:cleaned.dataset||'jobs',checked:cleaned.checked||BUILD_DATE,source:cleaned.source||'Personal data manager'};
   const index=all.findIndex(x=>x.id===value.id);if(index>=0)all[index]=value;else all.unshift(value);localStorage.setItem(CUSTOM_KEY,JSON.stringify(all));clearDataCache();return value;
 }
 export function deleteCustomRecord(id){if(typeof localStorage==='undefined')return;localStorage.setItem(CUSTOM_KEY,JSON.stringify(getCustomRecords().filter(x=>x.id!==id)));clearDataCache()}
-export function importCustomRecords(records){if(typeof localStorage==='undefined')return 0;const valid=(records||[]).filter(x=>x&&x.title&&x.dataset&&DATASETS[x.dataset]);localStorage.setItem(CUSTOM_KEY,JSON.stringify(valid));clearDataCache();return valid.length}
+export function importCustomRecords(records){if(typeof localStorage==='undefined')return 0;const valid=(records||[]).map(sanitizeRecordInput).filter(x=>x&&x.title&&x.dataset&&DATASETS[x.dataset]);localStorage.setItem(CUSTOM_KEY,JSON.stringify(valid));clearDataCache();return valid.length}

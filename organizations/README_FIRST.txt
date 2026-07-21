@@ -1,8 +1,9 @@
-Mahmoud Salama Career & Opportunity Hub — UI/UX Edition
+MAHMOUD SALAMA CAREER HUB — OPPORTUNITY INTELLIGENCE EDITION
 
-1) Keep the whole project inside the organizations folder.
-2) Run start-local.bat on Windows or start-local.sh on macOS/Linux.
-3) Open http://localhost:8080/index.html
-4) No AI service or API key is required.
-5) Set organizations as the Vercel Root Directory when deploying.
-6) The dedicated Africa NGOs directory contains 148 named organizations.
+1. Open the organizations folder.
+2. On Windows, run start-local.bat.
+3. On Linux/macOS, run ./start-local.sh.
+4. Open http://localhost:8080/index.html
+
+All tracking data stays local. Use the encrypted backup feature regularly.
+External ATS, feed and monitoring connectors require Vercel deployment.

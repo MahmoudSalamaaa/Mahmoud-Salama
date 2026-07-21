@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    theme:'Theme', language:'العربية', search:'Search', explore:'Explore', clear:'Clear', filters:'Filters',
+    theme:'Theme', language:'العربية', search:'Search', explore:'Search All', clear:'Clear', filters:'Filters',
     all:'All', country:'Country / market', region:'Region', type:'Type', fit:'Career fit', status:'Status', dataset:'Category',
     sort:'Sort', bestMatch:'Best fit', newest:'Newest', name:'Name', favorites:'Favorites', saved:'Saved',
     results:'results', openSource:'Open source', track:'Track', details:'Details', lastChecked:'Last checked',
@@ -23,7 +23,7 @@ const translations = {
     browseAll:'Browse all', startExploring:'Start exploring', africaDirectory:'Africa NGO directory', myStatus:'My status', noSuitableVacancy:'No suitable vacancy currently', notAvailableHelp:'Use Not Available after checking the careers page and finding no vacancy that suits you right now.'
   },
   ar: {
-    theme:'المظهر', language:'English', search:'بحث', explore:'استكشاف', clear:'مسح', filters:'الفلاتر',
+    theme:'المظهر', language:'English', search:'بحث', explore:'البحث في الكل', clear:'مسح', filters:'الفلاتر',
     all:'الكل', country:'الدولة / السوق', region:'المنطقة', type:'النوع', fit:'مدى الملاءمة', status:'الحالة', dataset:'القسم',
     sort:'الترتيب', bestMatch:'الأكثر ملاءمة', newest:'الأحدث', name:'الاسم', favorites:'المفضلة', saved:'محفوظ',
     results:'نتيجة', openSource:'فتح المصدر', track:'متابعة', details:'التفاصيل', lastChecked:'آخر تحقق',

@@ -1,5 +1,5 @@
-export const BUILD_DATE = '2026-07-20';
-export const VERSION = '4.1.0-status-update';
+export const BUILD_DATE = '2026-07-21';
+export const VERSION = '9.0.0-opportunity-intelligence';
 export const LEGACY_COMMIT = '375dafd01dae682d4711deb26cb677eecc711b56';
 export const LEGACY_BASE = `https://raw.githubusercontent.com/MahmoudSalamaaa/Mahmoud-Salama/${LEGACY_COMMIT}/organizations/`;
 
@@ -32,20 +32,43 @@ export const DATASETS = {
   gcc: {label:'GCC Jobs', labelAr:'وظائف الخليج', file:'gcc-vacancies.csv', kind:'job', target:530, icon:'GCC', page:'gcc-vacancies.html'},
   remote: {label:'Remote Jobs', labelAr:'الوظائف عن بُعد', file:'remote-jobs.csv', kind:'job', target:467, icon:'◎', page:'remote-jobs.html'},
   jobs: {label:'All Current Jobs', labelAr:'كل الوظائف الحالية', file:'regional-private-companies.csv', kind:'job', target:1507, icon:'Jobs', page:'regional-private-companies.html'},
-  platforms: {label:'Job Search Platforms', labelAr:'منصات البحث عن عمل', file:'job-search-platforms.csv', kind:'platform', target:168, icon:'↗', page:'job-search-platforms.html'},
+  platforms: {label:'Verified Job Sources', labelAr:'مصادر البحث الموثوقة', file:'job-search-platforms.csv', kind:'platform', target:95, icon:'SRC', page:'job-search-platforms.html'},
   projects: {label:'Projects & Consulting', labelAr:'المشروعات والاستشارات', file:'project-opportunities.csv', kind:'project', target:390, icon:'RFP', page:'project-opportunities.html'}
 };
 
 export const NAV_ITEMS = [
   ['index.html','Home','الرئيسية'],
-  ['explore.html','Explore','استكشاف'],
+  ['today.html','Today','اليوم'],
+  ['weekly-review.html','Weekly Review','المراجعة الأسبوعية'],
+  ['opportunities.html','Opportunity Tracks','مسارات الفرص'],
+  ['explore.html','Search All','البحث في الكل'],
   ['africa-ngos.html','Africa NGOs','منظمات أفريقيا'],
   ['regional-private-companies.html','Jobs','الوظائف'],
-  ['organizations.html','Organizations','الجهات'],
   ['tracker.html','My Applications','متابعة التقديم']
 ];
 
 export const SECONDARY_NAV_ITEMS = [
+  ['consulting.html','Consulting & EOIs','الاستشارات وطلبات الاهتمام'],
+  ['rosters.html','Rosters & Talent Pools','الروستر وقوائم المواهب'],
+  ['volunteer-secondments.html','Volunteer & Secondments','التطوع والانتداب'],
+  ['requirements.html','Application Requirements','متطلبات التقديم'],
+  ['templates.html','Application Templates','قوالب التقديم'],
+  ['email-importer.html','Email Alert Importer','استيراد تنبيهات البريد'],
+  ['profile-coverage.html','Profile Coverage','تغطية الملف المهني'],
+  ['rules.html','Rules Engine','محرك القواعد'],
+  ['archive.html','Opportunity Archive','أرشيف الفرص'],
+  ['vault.html','Encrypted Vault','الخزنة المشفرة'],
+  ['review-queue.html','Review Queue','قائمة المراجعة'],
+  ['ats-connectors.html','ATS Connectors','ربط أنظمة التوظيف'],
+  ['calendar.html','Calendar','التقويم'],
+  ['save-from-web.html','Save from Web','حفظ من الويب'],
+  ['version-history.html','Version History','سجل نسخ الوظائف'],
+  ['contacts.html','Contacts','جهات الاتصال'],
+  ['documents.html','Documents & Snapshots','المستندات واللقطات'],
+  ['analytics.html','Application Analytics','تحليلات التقديم'],
+  ['quality.html','Data Quality','جودة البيانات'],
+  ['africa-map.html','Africa Map','خريطة أفريقيا'],
+  ['settings.html','Settings','الإعدادات'],
   ['egypt-vacancies.html','Egypt Jobs','وظائف مصر'],
   ['gcc-vacancies.html','GCC Jobs','وظائف الخليج'],
   ['remote-jobs.html','Remote Jobs','الوظائف عن بُعد'],
@@ -58,12 +81,13 @@ export const SECONDARY_NAV_ITEMS = [
   ['dashboard.html','Dashboard','لوحة المؤشرات'],
   ['admin.html','Data Manager','إدارة البيانات'],
   ['link-checker.html','Link Checker','فحص الروابط'],
-  ['sources.html','Sources & Help','المصادر والمساعدة']
+  ['sources.html','Source Intelligence','ذكاء المصادر'],
+  ['methodology.html','Methodology & Help','المنهجية والمساعدة']
 ];
 
-export const JOB_STATUSES = ['Not started','Saved','Planning to Apply','Applied','Assessment','Interview','Follow-up','Offer','Rejected','Not Available','Closed'];
-export const DIRECTORY_STATUSES = ['Not started','Saved','Contacted','Applied','Interview','Not Available','Closed'];
-export const AVAILABILITY_STATUSES = ['Open','Closing Soon','Deadline Passed','Not Available','Needs Verification','Monitoring'];
+export const JOB_STATUSES = ['Not started','Saved','Job Found','Planning to Apply','Applied','Assessment','Interview','Follow-up','Offer','Rejected','Not Available','Closed'];
+export const DIRECTORY_STATUSES = ['Not started','Saved','Job Found','Contacted','Applied','Interview','Not Available','Closed'];
+export const AVAILABILITY_STATUSES = ['Open','Closing Soon','Deadline Passed','Needs Verification','Monitoring','Careers Page Available','Official Website Only','Recruitment Through Platform','Status Unknown'];
 
 export const ROLES = [
   'Chief Information Officer','Chief Technology Officer','IT Director','Director of Digital Transformation',

@@ -1,0 +1,2506 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="شرح تفصيلي ثنائي اللغة لمقدمة TOGAF Architecture Development Method: ADM cycle, iteration, tailoring, governance, scope, alternatives, and integration." name="description"/>
+<title>الفصل الخامس: مقدمة ADM | TOGAF Study Hub</title>
+<style>
+
+
+
+    :root{
+      --bg:#f4f7fb;
+      --surface:#ffffff;
+      --surface-2:#eef3f8;
+      --text:#16202a;
+      --muted:#5f6b76;
+      --primary:#0f6b68;
+      --primary-2:#0b4d4b;
+      --accent:#d99b2b;
+      --border:#dbe4ec;
+      --shadow:0 12px 35px rgba(20,41,61,.10);
+      --success:#2e7d32;
+      --danger:#a33b20;
+      --code:#0f1720;
+      --sidebar-w:320px;
+    }
+
+    [data-theme="dark"]{
+      --bg:#0d1319;
+      --surface:#151d25;
+      --surface-2:#1b2630;
+      --text:#edf4f8;
+      --muted:#aebbc5;
+      --primary:#62c5c0;
+      --primary-2:#9ae2de;
+      --accent:#f1bd5d;
+      --border:#2a3946;
+      --shadow:0 14px 38px rgba(0,0,0,.32);
+      --success:#7bd77f;
+      --danger:#ff9c7f;
+      --code:#0a0f14;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:"Segoe UI",Tahoma,Arial,sans-serif;
+      line-height:1.95;
+    }
+
+    a{color:inherit}
+    button,input{font:inherit}
+
+    .app{min-height:100vh}
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      height:70px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:0 20px;
+      background:color-mix(in srgb, var(--surface) 92%, transparent);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--border);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:240px;
+    }
+
+    .brand-mark{
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(145deg,var(--primary),var(--primary-2));
+      color:#fff;
+      font-weight:800;
+      letter-spacing:.5px;
+      box-shadow:var(--shadow);
+    }
+
+    .brand h1{
+      font-size:1.05rem;
+      margin:0;
+      line-height:1.25;
+    }
+
+    .brand small{color:var(--muted)}
+
+    .search-wrap{
+      flex:1;
+      max-width:720px;
+      margin-inline:auto;
+      position:relative;
+    }
+
+    #search{
+      width:100%;
+      border:1px solid var(--border);
+      background:var(--surface-2);
+      color:var(--text);
+      padding:11px 45px 11px 14px;
+      border-radius:14px;
+      outline:none;
+    }
+
+    .search-icon{
+      position:absolute;
+      right:15px;
+      top:50%;
+      transform:translateY(-50%);
+      color:var(--muted);
+    }
+
+    .top-actions{display:flex;gap:8px}
+
+    .icon-btn,.primary-btn{
+      border:1px solid var(--border);
+      background:var(--surface);
+      color:var(--text);
+      border-radius:12px;
+      padding:9px 12px;
+      cursor:pointer;
+      transition:.2s ease;
+    }
+
+    .icon-btn:hover,.primary-btn:hover{
+      transform:translateY(-1px);
+      box-shadow:0 7px 20px rgba(0,0,0,.08);
+    }
+
+    .primary-btn{
+      background:var(--primary);
+      color:#fff;
+      border-color:transparent;
+    }
+
+    .layout{
+      display:grid;
+      grid-template-columns:var(--sidebar-w) minmax(0,1fr);
+      min-height:calc(100vh - 70px);
+    }
+
+    .sidebar{
+      position:sticky;
+      top:70px;
+      height:calc(100vh - 70px);
+      overflow:auto;
+      padding:20px 16px 30px;
+      background:var(--surface);
+      border-left:1px solid var(--border);
+    }
+
+    .sidebar-section-title{
+      font-size:.82rem;
+      color:var(--muted);
+      margin:12px 10px 8px;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.6px;
+    }
+
+    .progress-card{
+      background:linear-gradient(145deg,var(--primary),var(--primary-2));
+      color:#fff;
+      border-radius:18px;
+      padding:16px;
+      margin-bottom:18px;
+    }
+
+    .progress-card p{margin:0 0 8px}
+    .progress-bar{
+      height:8px;
+      border-radius:99px;
+      background:rgba(255,255,255,.25);
+      overflow:hidden;
+    }
+    .progress-bar span{
+      display:block;
+      height:100%;
+      width:0%;
+      background:#fff;
+      transition:.35s ease;
+    }
+
+    .chapter-link{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+      padding:10px 12px;
+      margin:4px 0;
+      border-radius:12px;
+      color:var(--muted);
+      transition:.2s ease;
+    }
+
+    .chapter-link:hover,.chapter-link.active{
+      background:var(--surface-2);
+      color:var(--primary);
+    }
+
+    .chapter-link .num{
+      width:29px;
+      height:29px;
+      border-radius:9px;
+      display:grid;
+      place-items:center;
+      background:var(--surface-2);
+      border:1px solid var(--border);
+      font-weight:800;
+      font-size:.82rem;
+      flex:none;
+    }
+
+    .chapter-link.locked{opacity:.64}
+    .chapter-link small{display:block;color:var(--muted);font-size:.73rem}
+
+    .content{
+      width:min(1120px,100%);
+      margin:0 auto;
+      padding:32px 28px 80px;
+    }
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border-radius:28px;
+      background:
+        radial-gradient(circle at 15% 15%,rgba(255,255,255,.16),transparent 32%),
+        linear-gradient(135deg,#0b4d4b,#0f6b68 55%,#153d52);
+      color:#fff;
+      padding:44px;
+      box-shadow:var(--shadow);
+      margin-bottom:28px;
+    }
+
+    .hero:after{
+      content:"EA";
+      position:absolute;
+      left:28px;
+      bottom:-35px;
+      font-size:9rem;
+      font-weight:900;
+      color:rgba(255,255,255,.07);
+      line-height:1;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      background:rgba(255,255,255,.13);
+      border:1px solid rgba(255,255,255,.22);
+      padding:5px 12px;
+      border-radius:999px;
+      font-size:.84rem;
+      margin-bottom:12px;
+    }
+
+    .hero h2{
+      font-size:clamp(2rem,5vw,3.6rem);
+      line-height:1.2;
+      margin:0 0 12px;
+    }
+
+    .hero p{
+      max-width:760px;
+      margin:0;
+      color:rgba(255,255,255,.86);
+      font-size:1.04rem;
+    }
+
+    .hero-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:22px;
+    }
+
+    .pill{
+      padding:7px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.18);
+      font-size:.82rem;
+    }
+
+    .notice{
+      border:1px solid color-mix(in srgb,var(--accent) 40%,var(--border));
+      border-right:5px solid var(--accent);
+      background:color-mix(in srgb,var(--accent) 10%,var(--surface));
+      padding:16px 18px;
+      border-radius:15px;
+      margin:22px 0;
+    }
+
+    .chapter-header{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:16px;
+      margin:34px 0 18px;
+    }
+
+    .chapter-header h2{margin:0;font-size:2rem;line-height:1.3}
+    .chapter-header p{margin:4px 0 0;color:var(--muted)}
+    .chapter-badge{
+      flex:none;
+      border-radius:14px;
+      padding:8px 12px;
+      color:var(--primary);
+      background:var(--surface-2);
+      border:1px solid var(--border);
+      font-weight:800;
+    }
+
+    .section-card{
+      scroll-margin-top:92px;
+      background:var(--surface);
+      border:1px solid var(--border);
+      border-radius:20px;
+      box-shadow:0 8px 25px rgba(20,41,61,.05);
+      margin:18px 0;
+      overflow:hidden;
+    }
+
+    .section-head{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:15px;
+      padding:21px 22px;
+      cursor:pointer;
+      background:linear-gradient(180deg,var(--surface),color-mix(in srgb,var(--surface-2) 45%,var(--surface)));
+    }
+
+    .section-head h3{margin:0;font-size:1.28rem}
+    .section-head .en{display:block;color:var(--primary);font-size:.9rem;margin-top:3px;direction:ltr;text-align:right}
+    .toggle{font-size:1.2rem;color:var(--muted);transition:.2s}
+
+    .section-card.collapsed .section-body{display:none}
+    .section-card.collapsed .toggle{transform:rotate(-90deg)}
+
+    .section-body{padding:4px 24px 26px}
+    .section-body h4{
+      color:var(--primary);
+      font-size:1.08rem;
+      margin-top:24px;
+      margin-bottom:6px;
+    }
+
+    .section-body p{margin:9px 0}
+    .section-body ul{padding-right:24px}
+    .section-body li{margin:5px 0}
+
+    .term{
+      direction:ltr;
+      unicode-bidi:isolate;
+      font-weight:700;
+      color:var(--primary);
+    }
+
+    .quote{
+      direction:ltr;
+      text-align:left;
+      background:var(--code);
+      color:#e9f4f4;
+      border-radius:14px;
+      padding:16px 18px;
+      margin:16px 0;
+      border-left:4px solid var(--accent);
+      font-family:Consolas,monospace;
+      line-height:1.65;
+    }
+
+    .diagram{
+      direction:ltr;
+      text-align:center;
+      background:var(--surface-2);
+      border:1px dashed var(--border);
+      border-radius:16px;
+      padding:18px;
+      margin:16px 0;
+      font-family:Consolas,monospace;
+      white-space:pre-line;
+      line-height:1.7;
+      overflow:auto;
+    }
+
+    .comparison{
+      width:100%;
+      border-collapse:collapse;
+      margin:16px 0;
+      overflow:hidden;
+      border-radius:14px;
+    }
+    .comparison th,.comparison td{
+      border:1px solid var(--border);
+      padding:12px;
+      text-align:right;
+      vertical-align:top;
+    }
+    .comparison th{background:var(--surface-2);color:var(--primary)}
+
+    .exam-box,.example-box,.memory-box{
+      margin:17px 0;
+      border-radius:15px;
+      padding:16px 18px;
+    }
+    .exam-box{
+      background:color-mix(in srgb,var(--primary) 9%,var(--surface));
+      border:1px solid color-mix(in srgb,var(--primary) 30%,var(--border));
+    }
+    .example-box{
+      background:color-mix(in srgb,var(--success) 8%,var(--surface));
+      border:1px solid color-mix(in srgb,var(--success) 28%,var(--border));
+    }
+    .memory-box{
+      background:color-mix(in srgb,var(--accent) 10%,var(--surface));
+      border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
+    }
+
+    .check-row{
+      display:flex;
+      align-items:center;
+      gap:9px;
+      padding:12px 22px 18px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:.9rem;
+    }
+    .check-row input{width:18px;height:18px;accent-color:var(--primary)}
+
+    .quiz{
+      background:var(--surface-2);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:16px;
+      margin:14px 0;
+    }
+    .quiz h4{margin-top:0;color:var(--text)}
+    .options{display:grid;gap:8px}
+    .answer-btn{
+      text-align:right;
+      border:1px solid var(--border);
+      background:var(--surface);
+      color:var(--text);
+      border-radius:11px;
+      padding:10px 12px;
+      cursor:pointer;
+    }
+    .answer-btn.correct{border-color:var(--success);background:color-mix(in srgb,var(--success) 11%,var(--surface))}
+    .answer-btn.wrong{border-color:var(--danger);background:color-mix(in srgb,var(--danger) 10%,var(--surface))}
+    .explanation{display:none;margin-top:10px;color:var(--muted)}
+    .quiz.answered .explanation{display:block}
+
+    .future-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+      margin-top:20px;
+    }
+    .future-card{
+      border:1px solid var(--border);
+      background:var(--surface);
+      border-radius:17px;
+      padding:16px;
+    }
+    .future-card strong{color:var(--primary)}
+    .future-card p{margin:3px 0;color:var(--muted);font-size:.9rem}
+
+    .footer{
+      text-align:center;
+      color:var(--muted);
+      padding:28px 15px 50px;
+      border-top:1px solid var(--border);
+    }
+
+    mark{
+      background:#ffe48a;
+      color:#1a1a1a;
+      border-radius:4px;
+      padding:0 2px;
+    }
+
+    .mobile-menu{display:none}
+
+
+    /* Chapter 2 visual learning diagrams */
+    .hero.chapter-two{
+      margin-top:46px;
+      background:
+        radial-gradient(circle at 85% 12%,rgba(255,255,255,.16),transparent 30%),
+        linear-gradient(135deg,#173d5c,#155a6f 52%,#0f6b68);
+    }
+
+    .source-note{
+      color:var(--muted);
+      font-size:.86rem;
+      margin-top:12px;
+    }
+
+    .visual-title{
+      display:flex;
+      align-items:center;
+      gap:9px;
+      margin:22px 0 11px;
+      color:var(--primary);
+      font-weight:800;
+    }
+
+    .visual-title:before{
+      content:"";
+      width:10px;
+      height:10px;
+      border-radius:3px;
+      background:var(--accent);
+      flex:none;
+    }
+
+    .doc-ecosystem{
+      direction:ltr;
+      display:grid;
+      gap:14px;
+      padding:18px;
+      margin:18px 0;
+      border-radius:22px;
+      border:1px solid var(--border);
+      background:var(--surface-2);
+    }
+
+    .ecosystem-layer{
+      border:2px solid color-mix(in srgb,var(--primary) 38%,var(--border));
+      border-radius:20px;
+      padding:15px;
+      background:var(--surface);
+      text-align:center;
+    }
+
+    .ecosystem-layer > strong{
+      display:block;
+      color:var(--primary);
+      font-size:1.02rem;
+      margin-bottom:10px;
+    }
+
+    .ecosystem-standard{
+      display:grid;
+      grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);
+      gap:12px;
+      width:min(780px,100%);
+      margin:0 auto 12px;
+    }
+
+    .ecosystem-box{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:105px;
+      border-radius:15px;
+      padding:14px;
+      border:1px solid var(--border);
+      background:linear-gradient(145deg,color-mix(in srgb,var(--primary) 12%,var(--surface)),var(--surface));
+      color:var(--text);
+      font-weight:800;
+    }
+
+    .ecosystem-box.series{
+      background:linear-gradient(145deg,color-mix(in srgb,#7b4fa3 14%,var(--surface)),var(--surface));
+    }
+
+    .resource-strip{
+      display:grid;
+      grid-template-columns:repeat(5,minmax(0,1fr));
+      gap:8px;
+      margin-top:10px;
+    }
+
+    .resource-chip{
+      min-height:68px;
+      display:grid;
+      place-items:center;
+      padding:8px;
+      border-radius:12px;
+      background:var(--surface-2);
+      border:1px solid var(--border);
+      color:var(--muted);
+      font-size:.78rem;
+      font-weight:700;
+    }
+
+    .standard-system{
+      direction:ltr;
+      position:relative;
+      display:grid;
+      grid-template-columns:150px minmax(0,1fr) 150px;
+      gap:14px;
+      align-items:stretch;
+      padding:18px;
+      margin:18px 0;
+      border:1px solid var(--border);
+      border-radius:22px;
+      background:var(--surface-2);
+    }
+
+    .driver-rail{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      gap:8px;
+      padding:14px;
+      border-radius:16px;
+      background:linear-gradient(180deg,var(--primary-2),var(--primary));
+      color:#fff;
+      font-weight:800;
+      min-height:440px;
+      writing-mode:vertical-rl;
+      transform:rotate(180deg);
+    }
+
+    .standard-core{
+      display:grid;
+      grid-template-areas:
+        "concepts concepts concepts"
+        "content adm applying"
+        "techniques adm applying"
+        "governance governance governance"
+        "guides guides guides";
+      gap:10px;
+      min-width:0;
+    }
+
+    .core-node{
+      border:1px solid var(--border);
+      border-radius:15px;
+      padding:13px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:76px;
+      text-align:center;
+      background:var(--surface);
+      box-shadow:0 5px 15px rgba(20,41,61,.05);
+    }
+
+    .core-node strong{color:var(--primary)}
+    .core-node small{color:var(--muted)}
+    .node-concepts{grid-area:concepts}
+    .node-content{grid-area:content}
+    .node-adm{
+      grid-area:adm;
+      min-height:164px;
+      background:linear-gradient(145deg,var(--primary),var(--primary-2));
+      color:#fff;
+    }
+    .node-adm strong,.node-adm small{color:#fff}
+    .node-applying{grid-area:applying}
+    .node-techniques{grid-area:techniques}
+    .node-governance{grid-area:governance}
+    .node-guides{
+      grid-area:guides;
+      background:linear-gradient(145deg,color-mix(in srgb,#7b4fa3 18%,var(--surface)),var(--surface));
+    }
+
+    .flow-caption{
+      direction:rtl;
+      text-align:center;
+      padding:10px 14px;
+      margin-top:10px;
+      border-radius:12px;
+      color:var(--muted);
+      background:var(--surface);
+      border:1px dashed var(--border);
+    }
+
+    .six-docs{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:13px;
+      margin:17px 0;
+    }
+
+    .doc-card{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--border);
+      background:var(--surface);
+      border-radius:17px;
+      padding:17px 17px 17px 58px;
+      min-height:150px;
+    }
+
+    .doc-card .doc-no{
+      position:absolute;
+      left:13px;
+      top:14px;
+      width:34px;
+      height:34px;
+      display:grid;
+      place-items:center;
+      border-radius:11px;
+      background:var(--primary);
+      color:#fff;
+      font-weight:900;
+    }
+
+    .doc-card h5{
+      direction:ltr;
+      text-align:left;
+      color:var(--primary);
+      margin:0 0 6px;
+      font-size:.98rem;
+    }
+
+    .doc-card p{font-size:.9rem;color:var(--muted);line-height:1.7}
+
+    .adoption-path{
+      direction:ltr;
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:10px;
+      align-items:center;
+      margin:18px 0;
+    }
+
+    .path-step{
+      position:relative;
+      min-height:120px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:13px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background:var(--surface-2);
+    }
+
+    .path-step:not(:last-child):after{
+      content:"→";
+      position:absolute;
+      right:-18px;
+      top:50%;
+      transform:translateY(-50%);
+      width:26px;
+      height:26px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:var(--primary);
+      color:#fff;
+      z-index:3;
+      font-weight:900;
+    }
+
+    .path-step strong{color:var(--primary);margin-bottom:5px}
+    .path-step small{color:var(--muted)}
+
+    .standard-vs-library{
+      display:grid;
+      grid-template-columns:1fr 74px 1fr;
+      gap:14px;
+      align-items:stretch;
+      margin:18px 0;
+    }
+
+    .svl-card{
+      border-radius:18px;
+      border:1px solid var(--border);
+      background:var(--surface);
+      padding:18px;
+    }
+
+    .svl-card h5{
+      direction:ltr;
+      text-align:left;
+      margin:0 0 8px;
+      color:var(--primary);
+      font-size:1.05rem;
+    }
+
+    .svl-card ul{margin-bottom:0}
+    .svl-plus{
+      display:grid;
+      place-items:center;
+      font-size:2rem;
+      color:var(--accent);
+      font-weight:900;
+    }
+
+    .guide-cloud{
+      display:flex;
+      flex-wrap:wrap;
+      gap:9px;
+      margin:16px 0;
+    }
+
+    .guide-tag{
+      border:1px solid var(--border);
+      background:var(--surface-2);
+      border-radius:999px;
+      padding:8px 12px;
+      color:var(--text);
+      font-size:.86rem;
+    }
+
+    .continuum{
+      direction:ltr;
+      display:grid;
+      grid-template-columns:repeat(6,minmax(125px,1fr));
+      gap:8px;
+      overflow-x:auto;
+      padding:16px 4px 22px;
+      margin:18px 0;
+    }
+
+    .continuum-item{
+      position:relative;
+      min-height:176px;
+      border-radius:18px;
+      padding:14px 11px;
+      border:1px solid var(--border);
+      background:var(--surface);
+      text-align:center;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      box-shadow:0 8px 20px rgba(20,41,61,.05);
+    }
+
+    .continuum-item:not(:last-child):after{
+      content:"›";
+      position:absolute;
+      right:-10px;
+      top:50%;
+      transform:translateY(-50%);
+      color:var(--primary);
+      font-size:1.7rem;
+      font-weight:900;
+      z-index:4;
+    }
+
+    .continuum-item .ci-no{
+      width:34px;
+      height:34px;
+      border-radius:50%;
+      margin:0 auto 9px;
+      display:grid;
+      place-items:center;
+      background:var(--primary);
+      color:#fff;
+      font-weight:900;
+    }
+
+    .continuum-item strong{color:var(--primary);font-size:.89rem}
+    .continuum-item small{color:var(--muted);margin-top:7px;line-height:1.5}
+
+    .layered-equation{
+      direction:ltr;
+      display:grid;
+      grid-template-columns:1fr auto 1fr auto 1.15fr;
+      gap:9px;
+      align-items:center;
+      margin:18px 0;
+    }
+
+    .equation-box{
+      min-height:92px;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:12px;
+      border-radius:15px;
+      border:1px solid var(--border);
+      background:var(--surface-2);
+      font-weight:800;
+    }
+
+    .equation-symbol{
+      font-size:1.8rem;
+      color:var(--accent);
+      font-weight:900;
+    }
+
+    .trap-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:11px;
+      margin:16px 0;
+    }
+
+    .trap-card{
+      border:1px solid var(--border);
+      border-radius:15px;
+      padding:14px;
+      background:var(--surface);
+    }
+    .trap-card b{display:block;color:var(--danger);margin-bottom:4px}
+    .trap-card span{color:var(--muted)}
+
+
+    /* Chapter 3 visual components */
+    .hero.chapter-three{margin-top:46px;background:radial-gradient(circle at 18% 20%,rgba(255,255,255,.15),transparent 28%),radial-gradient(circle at 88% 75%,rgba(217,155,43,.18),transparent 32%),linear-gradient(135deg,#30275d,#155a6f 55%,#0f6b68)}
+    .c3-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin:18px 0}
+    .c3-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.c3-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .c3-card{border:1px solid var(--border);border-radius:17px;padding:15px;background:var(--surface);min-height:120px}
+    .c3-card h5{margin:0 0 7px;color:var(--primary);font-size:.98rem}.c3-card p,.c3-card li{font-size:.85rem;line-height:1.6;color:var(--muted)}
+    .c3-card.accent{background:linear-gradient(145deg,color-mix(in srgb,var(--primary) 11%,var(--surface)),var(--surface))}
+    .c3-flow{direction:ltr;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:18px 0;overflow-x:auto;padding-bottom:8px}
+    .c3-step{position:relative;min-width:125px;min-height:125px;border:1px solid var(--border);border-radius:16px;padding:12px;text-align:center;background:var(--surface);display:flex;flex-direction:column;justify-content:center}
+    .c3-step:not(:last-child):after{content:'›';position:absolute;right:-11px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:1.7rem;font-weight:900;z-index:4}
+    .c3-step strong{color:var(--primary);font-size:.86rem}.c3-step small{color:var(--muted);font-size:.73rem;line-height:1.4;margin-top:5px}
+    .c3-stack{display:flex;flex-direction:column;align-items:center;gap:9px;margin:20px auto;width:min(850px,100%)}
+    .c3-layer{border:1px solid var(--border);border-radius:15px;padding:14px;text-align:center;background:var(--surface)}
+    .c3-layer strong{color:var(--primary)}.c3-layer small{display:block;color:var(--muted);margin-top:4px;line-height:1.45}
+    .c3-l1{width:55%}.c3-l2{width:70%}.c3-l3{width:85%}.c3-l4{width:100%;background:linear-gradient(145deg,color-mix(in srgb,var(--primary) 10%,var(--surface)),var(--surface))}
+    .c3-badge{display:inline-grid;place-items:center;width:37px;height:37px;border-radius:50%;background:var(--primary);color:#fff;margin-left:8px;font-weight:900}
+    .c3-adm{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin:18px 0;direction:ltr}
+    .c3-adm .c3-step:nth-child(1){grid-column:1/-1;background:linear-gradient(145deg,var(--primary),var(--primary-2));color:#fff;min-height:85px}.c3-adm .c3-step:nth-child(1) strong,.c3-adm .c3-step:nth-child(1) small{color:#fff}
+    .c3-adm .requirements{grid-column:2/5;background:color-mix(in srgb,var(--accent) 13%,var(--surface));min-height:85px}
+    .c3-split{display:grid;grid-template-columns:1.3fr .7fr;gap:13px;margin:18px 0}.c3-lane{border:1px solid var(--border);border-radius:18px;padding:14px;background:var(--surface-2)}.c3-lane>h5{margin:0 0 9px;color:var(--primary)}
+    .c3-service{border:1px solid var(--border);border-radius:13px;padding:11px;background:var(--surface);margin:8px 0}.c3-service strong{display:block;color:var(--primary);direction:ltr;text-align:left}.c3-service p{font-size:.82rem;color:var(--muted);line-height:1.5;margin:4px 0}
+    .c3-product{display:grid;grid-template-columns:1fr 55px 1fr 55px 1fr;gap:8px;align-items:center;margin:18px 0}.c3-arrow{display:grid;place-items:center;color:var(--accent);font-weight:900;font-size:1.2rem}
+    .c3-track{direction:ltr;display:grid;grid-template-columns:150px repeat(4,1fr);gap:7px;margin:14px 0;overflow-x:auto}.c3-track div{min-width:120px;border:1px solid var(--border);border-radius:11px;padding:10px;text-align:center;background:var(--surface);font-size:.78rem}.c3-track .head{background:var(--primary);color:#fff;font-weight:800}.c3-track .row{background:var(--surface-2);color:var(--primary);font-weight:800;text-align:left}
+    .c3-repo{display:grid;grid-template-columns:.8fr 1.7fr;gap:12px;margin:18px 0}.c3-meta{border-radius:18px;padding:16px;background:linear-gradient(145deg,var(--primary),var(--primary-2));color:#fff;display:grid;place-items:center;text-align:center}.c3-repo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+    .c3-framework{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-areas:'context context context context' 'business data application technology' 'realization realization realization realization' 'change change change change';gap:8px;margin:18px 0}.c3-cf{border:1px solid var(--border);border-radius:14px;padding:12px;text-align:center;background:var(--surface);min-height:80px;display:flex;flex-direction:column;justify-content:center}.c3-cf strong{color:var(--primary);font-size:.84rem}.c3-cf small{color:var(--muted);font-size:.71rem;line-height:1.35}.cf-context{grid-area:context}.cf-business{grid-area:business}.cf-data{grid-area:data}.cf-app{grid-area:application}.cf-tech{grid-area:technology}.cf-real{grid-area:realization}.cf-change{grid-area:change}
+    .c3-tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.c3-tags span{border:1px solid var(--border);border-radius:999px;padding:7px 10px;background:var(--surface-2);font-size:.8rem}
+    .c3-network{direction:ltr;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}.c3-node{border:1px solid var(--border);border-radius:14px;padding:13px;text-align:center;background:var(--surface);min-height:92px;display:flex;flex-direction:column;justify-content:center;color:var(--primary);font-weight:800}.c3-node small{color:var(--muted);font-weight:400;margin-top:4px;line-height:1.35}
+    .c3-risk{display:grid;grid-template-columns:1fr 70px 1fr;gap:10px;align-items:center;margin:18px 0}.c3-risk .c3-card{text-align:center}.c3-risk-arrow{display:grid;place-items:center;color:var(--accent);font-size:1.4rem;font-weight:900}
+    @media(max-width:950px){.c3-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.c3-grid.three{grid-template-columns:1fr}.c3-adm{grid-template-columns:repeat(2,minmax(0,1fr))}.c3-adm .c3-step:nth-child(1),.c3-adm .requirements{grid-column:1/-1}.c3-repo{grid-template-columns:1fr}}
+    @media(max-width:720px){.c3-grid,.c3-grid.two,.c3-grid.three,.c3-split,.c3-repo-grid,.c3-network,.c3-risk{grid-template-columns:1fr}.c3-product{grid-template-columns:1fr}.c3-arrow,.c3-risk-arrow{transform:rotate(90deg);min-height:34px}.c3-adm{grid-template-columns:1fr}.c3-framework{grid-template-columns:1fr;grid-template-areas:'context' 'business' 'data' 'application' 'technology' 'realization' 'change'}.c3-flow{grid-template-columns:1fr;overflow:visible}.c3-step:not(:last-child):after{content:'↓';right:50%;top:auto;bottom:-20px;transform:translateX(50%)}.c3-l1,.c3-l2,.c3-l3,.c3-l4{width:100%}}
+
+    @media(max-width:900px){
+      .standard-system{grid-template-columns:1fr}
+      .driver-rail{
+        min-height:auto;
+        writing-mode:horizontal-tb;
+        transform:none;
+      }
+      .ecosystem-standard,.six-docs,.standard-vs-library,.trap-grid{grid-template-columns:1fr}
+      .resource-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .svl-plus{min-height:40px}
+      .adoption-path{grid-template-columns:1fr}
+      .path-step:not(:last-child):after{
+        content:"↓";
+        right:50%;
+        top:auto;
+        bottom:-18px;
+        transform:translateX(50%);
+      }
+      .layered-equation{grid-template-columns:1fr}
+      .equation-symbol{transform:rotate(90deg)}
+    }
+
+    @media(max-width:900px){
+      .layout{grid-template-columns:1fr}
+      .sidebar{
+        position:fixed;
+        z-index:1200;
+        top:70px;
+        right:0;
+        width:min(86vw,340px);
+        transform:translateX(105%);
+        transition:.25s ease;
+        box-shadow:var(--shadow);
+      }
+      .sidebar.open{transform:translateX(0)}
+      .mobile-menu{display:inline-flex}
+      .brand{min-width:unset}
+      .brand small{display:none}
+      .topbar{padding:0 12px}
+      .search-wrap{display:none}
+      .top-actions{margin-right:auto}
+      .content{padding:22px 14px 65px}
+      .hero{padding:30px 22px;border-radius:22px}
+      .future-grid{grid-template-columns:1fr}
+    }
+
+    @media print{
+      .topbar,.sidebar,.check-row,.top-actions,.notice{display:none!important}
+      .layout{display:block}
+      .content{width:100%;padding:0}
+      .section-card{box-shadow:none;break-inside:avoid}
+      .section-card.collapsed .section-body{display:block}
+      body{background:#fff;color:#111}
+      .hero{background:#0f6b68!important;print-color-adjust:exact}
+    }
+  
+
+    .home-link{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      text-decoration:none;
+      border:1px solid var(--border);
+      background:var(--surface);
+      color:var(--text);
+      padding:9px 12px;
+      border-radius:12px;
+      transition:.2s ease;
+    }
+    .home-link:hover{transform:translateY(-1px);box-shadow:0 7px 20px rgba(0,0,0,.08)}
+    .chapter-nav{
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      gap:12px;
+      align-items:center;
+      margin:30px 0 8px;
+    }
+    .chapter-nav a{
+      text-decoration:none;
+      border:1px solid var(--border);
+      background:var(--surface);
+      border-radius:15px;
+      padding:13px 15px;
+      color:var(--text);
+      transition:.2s ease;
+    }
+    .chapter-nav a:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+    .chapter-nav .next{text-align:left}
+    .chapter-nav .home{text-align:center;background:var(--primary);color:#fff;border-color:transparent}
+    .chapter-nav .disabled{opacity:.45;pointer-events:none}
+    .chapter-nav small{display:block;color:var(--muted);font-size:.75rem}
+    .chapter-nav .home small{color:rgba(255,255,255,.78)}
+    .index-hero{
+      background:
+        radial-gradient(circle at 15% 20%,rgba(255,255,255,.15),transparent 30%),
+        radial-gradient(circle at 85% 75%,rgba(217,155,43,.17),transparent 35%),
+        linear-gradient(135deg,#0b4d4b,#155a6f 55%,#30275d);
+    }
+    .chapter-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      margin:24px 0;
+    }
+    .chapter-card{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--border);
+      border-radius:22px;
+      padding:20px;
+      min-height:245px;
+      background:var(--surface);
+      box-shadow:0 9px 28px rgba(20,41,61,.06);
+      display:flex;
+      flex-direction:column;
+    }
+    .chapter-card:after{
+      content:attr(data-chapter);
+      position:absolute;
+      left:10px;
+      bottom:-25px;
+      font-size:8rem;
+      font-weight:900;
+      color:color-mix(in srgb,var(--primary) 7%,transparent);
+      line-height:1;
+    }
+    .chapter-card h3{margin:0;color:var(--primary);font-size:1.3rem}
+    .chapter-card .en-title{direction:ltr;text-align:left;color:var(--muted);font-size:.86rem;margin:4px 0 12px}
+    .chapter-card p{color:var(--muted);font-size:.9rem;line-height:1.7;flex:1}
+    .chapter-card a{
+      position:relative;
+      z-index:2;
+      display:inline-flex;
+      justify-content:center;
+      text-decoration:none;
+      background:var(--primary);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:12px;
+      font-weight:800;
+    }
+    .chapter-card.upcoming{opacity:.62}
+    .chapter-card.upcoming a{background:var(--surface-2);color:var(--muted);pointer-events:none}
+    .site-map{
+      display:grid;
+      grid-template-columns:1fr 44px 1fr 44px 1fr;
+      gap:10px;
+      align-items:center;
+      margin:25px 0;
+    }
+    .map-node{
+      min-height:105px;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:14px;
+      border:1px solid var(--border);
+      border-radius:17px;
+      background:var(--surface);
+      color:var(--primary);
+      font-weight:800;
+    }
+    .map-arrow{display:grid;place-items:center;color:var(--accent);font-size:1.7rem;font-weight:900}
+    .quick-note{
+      border-right:5px solid var(--primary);
+      border-radius:15px;
+      padding:16px;
+      background:var(--surface-2);
+      margin:18px 0;
+    }
+    @media(max-width:900px){
+      .chapter-grid{grid-template-columns:1fr}
+      .site-map{grid-template-columns:1fr}
+      .map-arrow{transform:rotate(90deg);min-height:30px}
+    }
+    @media(max-width:650px){
+      .chapter-nav{grid-template-columns:1fr}
+      .chapter-nav .next,.chapter-nav .home{text-align:center}
+    }
+
+  
+
+.hero.chapter-four{background:radial-gradient(circle at 15% 18%,rgba(255,255,255,.14),transparent 28%),radial-gradient(circle at 88% 78%,rgba(217,155,43,.18),transparent 34%),linear-gradient(135deg,#5a2e4e,#3d416f 50%,#0f6b68)}
+.glossary-index{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.glossary-index a{text-decoration:none;min-width:44px;text-align:center;border:1px solid var(--border);background:var(--surface);color:var(--primary);border-radius:11px;padding:8px 10px;font-weight:800}
+.definition-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:18px 0}
+.definition-card{position:relative;scroll-margin-top:95px;border:1px solid var(--border);border-radius:18px;padding:17px;background:var(--surface);box-shadow:0 7px 20px rgba(20,41,61,.05);overflow:hidden}
+.definition-card:after{content:attr(data-number);position:absolute;left:8px;bottom:-18px;font-size:4.7rem;font-weight:900;color:color-mix(in srgb,var(--primary) 6%,transparent);line-height:1}
+.definition-top{position:relative;z-index:2;display:flex;gap:11px;align-items:flex-start;margin-bottom:9px}
+.definition-no{flex:none;min-width:48px;height:35px;border-radius:10px;display:grid;place-items:center;background:var(--primary);color:#fff;font-weight:900;font-size:.78rem}
+.definition-card h4{direction:ltr;text-align:left;margin:0;color:var(--primary);font-size:1rem;line-height:1.4}
+.arabic-term{display:block;color:var(--muted);font-size:.82rem;margin-top:2px;direction:rtl;text-align:right}
+.definition-card p{position:relative;z-index:2;font-size:.88rem;line-height:1.75;margin:8px 0}
+.definition-example,.definition-distinction{position:relative;z-index:2;border-radius:11px;padding:9px 11px;font-size:.8rem;line-height:1.6;margin-top:8px}
+.definition-example{background:color-mix(in srgb,var(--success) 8%,var(--surface));border:1px solid color-mix(in srgb,var(--success) 25%,var(--border))}
+.definition-distinction{background:color-mix(in srgb,var(--accent) 10%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border))}
+.definition-example b,.definition-distinction b{color:var(--primary)}
+.definition-count{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0}
+.count-box{border:1px solid var(--border);border-radius:15px;padding:14px;text-align:center;background:var(--surface)}
+.count-box strong{display:block;color:var(--primary);font-size:1.45rem}.count-box small{color:var(--muted)}
+.relationship-flow{direction:ltr;display:grid;grid-template-columns:repeat(7,minmax(105px,1fr));gap:9px;overflow-x:auto;padding:14px 3px 22px;margin:17px 0}
+.relationship-node{position:relative;min-height:128px;border:1px solid var(--border);border-radius:15px;padding:12px;background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.relationship-node:not(:last-child):after{content:"›";position:absolute;right:-11px;top:50%;color:var(--accent);font-size:1.7rem;font-weight:900}
+.relationship-node strong{color:var(--primary);font-size:.84rem}.relationship-node small{color:var(--muted);font-size:.72rem;line-height:1.4;margin-top:5px}
+.architecture-scope-pyramid{width:min(830px,100%);margin:20px auto;display:flex;flex-direction:column;align-items:center;gap:9px}
+.scope-level{border:1px solid var(--border);border-radius:16px;text-align:center;padding:15px;background:var(--surface)}
+.scope-level strong{color:var(--primary)}.scope-level small{display:block;color:var(--muted);line-height:1.5;margin-top:4px}
+.scope-strategic{width:54%}.scope-segment{width:73%}.scope-capability{width:87%}.scope-solution{width:100%;background:linear-gradient(145deg,color-mix(in srgb,var(--primary) 10%,var(--surface)),var(--surface))}
+.baseline-roadmap,.view-stack,.actor-role-service{direction:ltr;display:grid;gap:8px;align-items:center;margin:20px 0}
+.baseline-roadmap{grid-template-columns:1fr 55px 1fr 55px 1fr 55px 1fr}
+.view-stack{grid-template-columns:1fr 60px 1fr 60px 1fr 60px 1fr}
+.actor-role-service{grid-template-columns:1fr 70px 1fr 70px 1fr}
+.road-state,.view-box{min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid var(--border);border-radius:17px;padding:13px;background:var(--surface)}
+.road-state strong,.view-box strong{color:var(--primary)}.road-state small,.view-box small{color:var(--muted);line-height:1.4;margin-top:5px}
+.road-arrow{display:grid;place-items:center;color:var(--accent);font-size:1.7rem;font-weight:900}
+.ars-box{min-height:130px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px;border:1px solid var(--border);border-radius:50%;background:var(--surface)}
+.ars-box strong{color:var(--primary)}.ars-box small{color:var(--muted);font-size:.74rem;line-height:1.4;margin-top:4px}.ars-link{text-align:center;color:var(--accent);font-weight:900;font-size:.78rem}
+.compare-board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+.compare-card{border:1px solid var(--border);border-radius:16px;padding:15px;background:var(--surface)}
+.compare-card h5{margin:0 0 8px;color:var(--primary);font-size:.98rem}.compare-card p{font-size:.85rem;color:var(--muted);line-height:1.6}
+@media(max-width:850px){.definition-grid,.compare-board{grid-template-columns:1fr}.definition-count{grid-template-columns:repeat(2,1fr)}.baseline-roadmap,.view-stack,.actor-role-service{grid-template-columns:1fr}.road-arrow{transform:rotate(90deg);min-height:28px}.ars-link{padding:7px}}
+
+
+
+  .hero.chapter-five{
+    background:
+      radial-gradient(circle at 14% 18%,rgba(255,255,255,.16),transparent 28%),
+      radial-gradient(circle at 87% 78%,rgba(241,189,93,.20),transparent 34%),
+      linear-gradient(135deg,#183f5d,#0f6b68 55%,#36405d);
+  }
+  .official-map{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:11px;
+    margin:18px 0;
+  }
+  .official-map .map-card{
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:15px;
+    background:var(--surface);
+    min-height:112px;
+  }
+  .map-card strong{display:block;color:var(--primary);margin-bottom:6px}
+  .map-card small{color:var(--muted);line-height:1.55}
+  .concept-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:12px;
+    margin:18px 0;
+  }
+  .concept-card{
+    border:1px solid var(--border);
+    border-radius:17px;
+    padding:16px;
+    background:var(--surface);
+    box-shadow:0 7px 20px rgba(20,41,61,.05);
+  }
+  .concept-card h4{margin:0 0 8px;color:var(--primary)}
+  .concept-card p{font-size:.88rem;line-height:1.7;margin:0;color:var(--muted)}
+  .concept-card .tag{
+    display:inline-block;
+    margin-top:10px;
+    padding:5px 9px;
+    border-radius:999px;
+    background:color-mix(in srgb,var(--accent) 13%,var(--surface));
+    border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
+    color:var(--primary);
+    font-size:.75rem;
+    font-weight:800;
+  }
+  .ecosystem-flow{
+    direction:ltr;
+    display:grid;
+    grid-template-columns:1fr 60px 1.2fr 60px 1fr;
+    gap:9px;
+    align-items:center;
+    margin:20px 0;
+  }
+  .eco-box{
+    min-height:145px;
+    border:1px solid var(--border);
+    border-radius:18px;
+    background:var(--surface);
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+  }
+  .eco-box strong{color:var(--primary)}
+  .eco-box small{color:var(--muted);line-height:1.5;margin-top:6px}
+  .eco-arrow{display:grid;place-items:center;color:var(--accent);font-size:1.9rem;font-weight:900}
+  .repository-layers{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:10px;
+    margin:18px 0;
+  }
+  .repo-layer{
+    border:1px solid var(--border);
+    border-radius:15px;
+    padding:14px;
+    background:var(--surface);
+    text-align:center;
+  }
+  .repo-layer strong{color:var(--primary);display:block}
+  .repo-layer small{color:var(--muted);line-height:1.45}
+  .reuse-loop{
+    direction:ltr;
+    display:grid;
+    grid-template-columns:repeat(5,minmax(120px,1fr));
+    gap:9px;
+    overflow-x:auto;
+    padding:12px 3px 18px;
+  }
+  .reuse-node{
+    position:relative;
+    min-height:120px;
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:13px;
+    background:var(--surface);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+  }
+  .reuse-node:not(:last-child):after{
+    content:"→";
+    position:absolute;
+    right:-15px;
+    top:46%;
+    color:var(--accent);
+    font-weight:900;
+    font-size:1.25rem;
+  }
+  .reuse-node strong{color:var(--primary)}
+  .reuse-node small{color:var(--muted);line-height:1.45;margin-top:5px}
+  .adm-shell{
+    position:relative;
+    width:min(800px,100%);
+    aspect-ratio:1.55/1;
+    margin:24px auto;
+    border:1px solid var(--border);
+    border-radius:28px;
+    background:
+      radial-gradient(circle at center,color-mix(in srgb,var(--primary) 8%,var(--surface)) 0 27%,transparent 28%),
+      var(--surface);
+    overflow:hidden;
+  }
+  .adm-center{
+    position:absolute;
+    inset:38% 33%;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:12px;
+    background:var(--primary);
+    color:#fff;
+    font-weight:900;
+    box-shadow:var(--shadow);
+    z-index:3;
+  }
+  .adm-phase{
+    position:absolute;
+    width:18%;
+    min-height:66px;
+    border:1px solid var(--border);
+    border-radius:14px;
+    background:var(--surface);
+    box-shadow:0 5px 16px rgba(20,41,61,.07);
+    padding:8px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size:.78rem;
+    z-index:2;
+  }
+  .adm-phase b{color:var(--primary);font-size:.92rem}
+  .adm-phase small{color:var(--muted);line-height:1.25}
+  .p-pre{top:3%;left:41%}
+  .p-a{top:15%;right:12%}
+  .p-b{top:38%;right:3%}
+  .p-c{bottom:13%;right:13%}
+  .p-d{bottom:2%;left:41%}
+  .p-e{bottom:13%;left:13%}
+  .p-f{top:38%;left:3%}
+  .p-g{top:15%;left:12%}
+  .p-h{top:4%;left:22%}
+  .cycle-note{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+    margin-top:12px;
+  }
+  .cycle-note span{
+    padding:7px 10px;
+    border-radius:999px;
+    border:1px solid var(--border);
+    background:var(--surface);
+    color:var(--muted);
+    font-size:.78rem;
+  }
+  .iteration-board{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:12px;
+    margin:18px 0;
+  }
+  .iteration-card{
+    border:1px solid var(--border);
+    border-radius:17px;
+    padding:16px;
+    background:linear-gradient(145deg,color-mix(in srgb,var(--primary) 7%,var(--surface)),var(--surface));
+  }
+  .iteration-card h4{margin:0 0 8px;color:var(--primary)}
+  .iteration-card p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.65}
+  .fresh-decisions{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:10px;
+    margin:18px 0;
+  }
+  .decision-box{
+    text-align:center;
+    border:1px solid var(--border);
+    border-radius:15px;
+    padding:15px;
+    background:var(--surface);
+  }
+  .decision-box strong{display:block;color:var(--primary)}
+  .decision-box small{color:var(--muted);line-height:1.45}
+  .output-lifecycle{
+    direction:ltr;
+    display:grid;
+    grid-template-columns:1fr 45px 1fr 45px 1fr;
+    gap:7px;
+    align-items:center;
+    margin:18px 0;
+  }
+  .status-box{
+    min-height:115px;
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:14px;
+    background:var(--surface);
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .status-box strong{color:var(--primary)}
+  .status-box small{color:var(--muted);line-height:1.45;margin-top:5px}
+  .status-arrow{text-align:center;color:var(--accent);font-size:1.55rem;font-weight:900}
+  .adapt-matrix{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+    margin:18px 0;
+  }
+  .adapt-card{
+    border:1px solid var(--border);
+    border-radius:17px;
+    background:var(--surface);
+    padding:16px;
+  }
+  .adapt-card h4{margin:0 0 8px;color:var(--primary)}
+  .adapt-card p{color:var(--muted);font-size:.86rem;line-height:1.65;margin:0}
+  .adapt-card ul{margin:9px 0 0}
+  .strategy-trio{
+    direction:ltr;
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:12px;
+    margin:18px 0;
+  }
+  .strategy-card{
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:17px;
+    background:var(--surface);
+    text-align:center;
+  }
+  .strategy-card strong{color:var(--primary);display:block;margin-bottom:6px}
+  .strategy-card small{color:var(--muted);line-height:1.5}
+  .governance-flow{
+    direction:ltr;
+    display:grid;
+    grid-template-columns:1fr 45px 1fr 45px 1fr 45px 1fr;
+    gap:7px;
+    align-items:center;
+    margin:18px 0;
+  }
+  .gov-box{
+    min-height:125px;
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:13px;
+    background:var(--surface);
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .gov-box strong{color:var(--primary)}
+  .gov-box small{color:var(--muted);line-height:1.45;margin-top:5px}
+  .gov-arrow{text-align:center;color:var(--accent);font-size:1.4rem;font-weight:900}
+  .scope-compass{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+    margin:18px 0;
+  }
+  .scope-dimension{
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:17px;
+    background:var(--surface);
+    min-height:160px;
+  }
+  .scope-dimension h4{margin:0 0 8px;color:var(--primary)}
+  .scope-dimension p{color:var(--muted);font-size:.87rem;line-height:1.65}
+  .scope-dimension .question{
+    display:block;
+    border-right:4px solid var(--accent);
+    padding:8px 10px;
+    margin-top:8px;
+    background:color-mix(in srgb,var(--accent) 8%,var(--surface));
+    font-weight:700;
+    font-size:.82rem;
+  }
+  .federation-map{
+    direction:ltr;
+    display:grid;
+    grid-template-columns:1fr 70px 1.25fr 70px 1fr;
+    gap:10px;
+    align-items:center;
+    margin:20px 0;
+  }
+  .fed-cluster{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+  .fed-unit,.fed-core{
+    border:1px solid var(--border);
+    border-radius:15px;
+    background:var(--surface);
+    padding:13px;
+    text-align:center;
+  }
+  .fed-unit strong,.fed-core strong{color:var(--primary)}
+  .fed-unit small,.fed-core small{color:var(--muted);line-height:1.4;display:block;margin-top:4px}
+  .fed-core{
+    min-height:175px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:linear-gradient(145deg,color-mix(in srgb,var(--primary) 10%,var(--surface)),var(--surface));
+  }
+  .fed-link{text-align:center;color:var(--accent);font-weight:900;font-size:.8rem}
+  .depth-ladder{
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+    width:min(850px,100%);
+    margin:20px auto;
+  }
+  .depth-step{
+    border:1px solid var(--border);
+    border-radius:15px;
+    padding:14px;
+    background:var(--surface);
+  }
+  .depth-step strong{color:var(--primary)}
+  .depth-step small{display:block;color:var(--muted);line-height:1.45;margin-top:3px}
+  .depth-step:nth-child(1){width:58%;align-self:center}
+  .depth-step:nth-child(2){width:72%;align-self:center}
+  .depth-step:nth-child(3){width:86%;align-self:center}
+  .depth-step:nth-child(4){width:100%}
+  .timeline{
+    direction:ltr;
+    display:grid;
+    grid-template-columns:1fr 45px 1fr 45px 1fr 45px 1fr;
+    gap:7px;
+    align-items:center;
+    margin:20px 0;
+  }
+  .time-state{
+    min-height:135px;
+    border:1px solid var(--border);
+    border-radius:17px;
+    padding:14px;
+    background:var(--surface);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+  }
+  .time-state strong{color:var(--primary)}
+  .time-state small{color:var(--muted);line-height:1.45;margin-top:5px}
+  .time-arrow{text-align:center;color:var(--accent);font-size:1.5rem;font-weight:900}
+  .domain-grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:10px;
+    margin:18px 0;
+  }
+  .domain-box{
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:15px;
+    background:var(--surface);
+    text-align:center;
+    min-height:145px;
+  }
+  .domain-box strong{display:block;color:var(--primary);margin-bottom:6px}
+  .domain-box small{color:var(--muted);line-height:1.45}
+  .alternatives{
+    direction:ltr;
+    display:grid;
+    grid-template-columns:1fr 55px 1.3fr 55px 1fr;
+    gap:8px;
+    align-items:center;
+    margin:20px 0;
+  }
+  .alt-box{
+    border:1px solid var(--border);
+    border-radius:17px;
+    padding:15px;
+    background:var(--surface);
+    min-height:160px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+  }
+  .alt-box strong{color:var(--primary)}
+  .alt-box small{color:var(--muted);line-height:1.45;margin-top:5px}
+  .alt-middle{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+  }
+  .candidate{
+    border:1px solid var(--border);
+    border-radius:13px;
+    padding:11px 7px;
+    background:color-mix(in srgb,var(--primary) 6%,var(--surface));
+    font-size:.78rem;
+    color:var(--primary);
+    font-weight:800;
+  }
+  .alt-arrow{text-align:center;color:var(--accent);font-size:1.5rem;font-weight:900}
+  .integration-spectrum{
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:8px;
+    margin:18px 0;
+  }
+  .spectrum-step{
+    min-height:120px;
+    border:1px solid var(--border);
+    border-radius:15px;
+    padding:12px;
+    background:var(--surface);
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .spectrum-step strong{color:var(--primary);font-size:.85rem}
+  .spectrum-step small{color:var(--muted);font-size:.73rem;line-height:1.4;margin-top:5px}
+  .integration-matrix{
+    display:grid;
+    grid-template-columns:135px repeat(4,minmax(100px,1fr));
+    gap:6px;
+    overflow-x:auto;
+    margin:18px 0;
+  }
+  .im-cell{
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:10px;
+    min-height:68px;
+    background:var(--surface);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size:.76rem;
+  }
+  .im-head{background:color-mix(in srgb,var(--primary) 10%,var(--surface));color:var(--primary);font-weight:900}
+  .case-flow{
+    direction:ltr;
+    display:grid;
+    grid-template-columns:repeat(6,minmax(115px,1fr));
+    gap:9px;
+    overflow-x:auto;
+    padding:12px 3px 20px;
+  }
+  .case-node{
+    position:relative;
+    min-height:130px;
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:13px;
+    background:var(--surface);
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .case-node:not(:last-child):after{
+    content:"→";
+    position:absolute;
+    right:-15px;
+    top:45%;
+    color:var(--accent);
+    font-weight:900;
+    font-size:1.25rem;
+  }
+  .case-node strong{color:var(--primary)}
+  .case-node small{color:var(--muted);line-height:1.4;margin-top:5px}
+  .exam-traps{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:11px;
+    margin:18px 0;
+  }
+  .trap{
+    border:1px solid var(--border);
+    border-radius:15px;
+    padding:14px;
+    background:var(--surface);
+  }
+  .trap b{color:var(--primary)}
+  .trap p{margin:6px 0 0;color:var(--muted);font-size:.84rem;line-height:1.55}
+  @media(max-width:900px){
+    .official-map,.repository-layers,.fresh-decisions,.domain-grid{grid-template-columns:repeat(2,1fr)}
+    .concept-grid,.iteration-board,.strategy-trio{grid-template-columns:1fr}
+    .ecosystem-flow,.governance-flow,.federation-map,.timeline,.alternatives,.output-lifecycle{grid-template-columns:1fr}
+    .eco-arrow,.gov-arrow,.fed-link,.time-arrow,.alt-arrow,.status-arrow{transform:rotate(90deg);min-height:28px}
+    .scope-compass,.adapt-matrix,.exam-traps{grid-template-columns:1fr}
+    .integration-spectrum{grid-template-columns:repeat(2,1fr)}
+    .adm-shell{aspect-ratio:auto;min-height:620px}
+    .adm-phase{width:31%}
+    .p-pre{top:2%;left:34%}.p-a{top:14%;right:4%}.p-b{top:35%;right:1%}.p-c{bottom:18%;right:4%}
+    .p-d{bottom:3%;left:34%}.p-e{bottom:18%;left:4%}.p-f{top:35%;left:1%}.p-g{top:14%;left:4%}.p-h{top:2%;left:4%}
+    .adm-center{inset:42% 29%}
+  }
+  @media(max-width:560px){
+    .official-map,.repository-layers,.fresh-decisions,.domain-grid,.integration-spectrum{grid-template-columns:1fr}
+    .adm-shell{min-height:730px}
+    .adm-phase{width:39%;font-size:.7rem}
+    .p-pre{top:2%;left:31%}.p-a{top:14%;right:2%}.p-b{top:34%;right:2%}.p-c{bottom:19%;right:2%}
+    .p-d{bottom:3%;left:31%}.p-e{bottom:19%;left:2%}.p-f{top:34%;left:2%}.p-g{top:14%;left:2%}.p-h{top:2%;left:2%}
+    .adm-center{inset:43% 23%}
+  }
+
+  </style>
+<link href="manifest.webmanifest" rel="manifest"/><link href="assets/icon-192.png" rel="icon"/><link href="assets/platform.css" rel="stylesheet"/></head>
+<body data-theme="light">
+<div class="app">
+<header class="topbar">
+<button aria-label="فتح القائمة" class="icon-btn mobile-menu" id="menuBtn">☰</button>
+<div class="brand">
+<div class="brand-mark">ADM</div>
+<div><h1>الفصل الخامس: مقدمة ADM</h1><small>Official ADM Chapter 1</small></div>
+</div>
+<div class="search-wrap">
+<span class="search-icon">⌕</span>
+<input id="search" placeholder="ابحث: Iteration, Scope, Repository, Transition..." type="search"/>
+</div>
+<div class="top-actions">
+<a class="home-link" href="index.html" title="الصفحة الرئيسية">⌂ الرئيسية</a>
+<button class="icon-btn" id="themeBtn" title="الوضع الليلي">◐</button>
+<button class="icon-btn" onclick="window.print()" title="طباعة أوحفظ PDF">⎙</button>
+</div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+<div class="progress-card">
+<p><strong>تقدمك في الفصل الخامس</strong></p>
+<div class="progress-bar"><span id="progressFill"></span></div>
+<small id="progressText">0% مكتمل</small>
+</div>
+<div class="sidebar-section-title">التنقل</div>
+<a class="chapter-link" href="index.html"><span class="num">⌂</span><span>الصفحة الرئيسية<small>جميع الفصول</small></span></a>
+<div class="sidebar-section-title">موضوعات الفصل</div>
+<a class="chapter-link" href="#c5s1"><span class="num">5</span><span>موضع الفصل<small>Official ADM Chapter 1</small></span></a><a class="chapter-link" href="#c5s2"><span class="num">1.1</span><span>ADM Overview<small>Purpose and Lifecycle</small></span></a><a class="chapter-link" href="#c5s3"><span class="num">↻</span><span>Continuum &amp; Repository<small>Classify and Reuse</small></span></a><a class="chapter-link" href="#c5s4"><span class="num">F</span><span>Foundation &amp; Guidance<small>Supporting Resources</small></span></a><a class="chapter-link" href="#c5s5"><span class="num">○</span><span>ADM Cycle<small>Phases and Requirements</small></span></a><a class="chapter-link" href="#c5s6"><span class="num">∞</span><span>Iteration<small>Three Levels</small></span></a><a class="chapter-link" href="#c5s7"><span class="num">V</span><span>Outputs<small>Draft, Approved, Control</small></span></a><a class="chapter-link" href="#c5s8"><span class="num">T</span><span>Adapting ADM<small>Enterprise-Specific Method</small></span></a><a class="chapter-link" href="#c5s9"><span class="num">3</span><span>Large Enterprise<small>Tailoring Strategies</small></span></a><a class="chapter-link" href="#c5s10"><span class="num">G</span><span>Governance<small>Control and Audit</small></span></a><a class="chapter-link" href="#c5s11"><span class="num">4D</span><span>Scope Dimensions<small>Breadth, Depth, Time, Domains</small></span></a><a class="chapter-link" href="#c5s12"><span class="num">B</span><span>Breadth<small>Federation</small></span></a><a class="chapter-link" href="#c5s13"><span class="num">D</span><span>Depth<small>Enough Detail</small></span></a><a class="chapter-link" href="#c5s14"><span class="num">T</span><span>Time Period<small>Transitions</small></span></a><a class="chapter-link" href="#c5s15"><span class="num">4</span><span>Domains<small>Completeness</small></span></a><a class="chapter-link" href="#c5s16"><span class="num">A</span><span>Alternatives<small>Trade-offs</small></span></a><a class="chapter-link" href="#c5s17"><span class="num">I</span><span>Integration<small>Integratability</small></span></a><a class="chapter-link" href="#c5s18"><span class="num">Ex</span><span>Case Study<small>Medical Assets</small></span></a><a class="chapter-link" href="#c5s19"><span class="num">✓</span><span>Exam Review<small>18 Questions</small></span></a>
+</aside>
+<main class="content">
+<section class="hero chapter-five" id="chapter-5">
+<span class="eyebrow">TOGAF Standard — Architecture Development Method</span>
+<h2>الفصل الخامس: مقدمة Architecture Development Method</h2>
+<p>
+          شرح شامل لمقدمة ADM: كيف يعمل المنهج، لماذا هو Iterative، كيف يعيد استخدام الأصول،
+          كيف يتم تكييفه وحوكمته، وكيف نحدد Scope ونقارن البدائل ونحقق Architecture Integration.
+        </p>
+<div class="hero-meta">
+<span class="pill">Official ADM Chapter 1</span>
+<span class="pill">19 Study Sections</span>
+<span class="pill">Interactive Diagrams</span>
+<span class="pill">18 Exam Questions</span>
+</div>
+</section>
+<div class="chapter-header">
+<div>
+<h2>Architecture Development Method — Introduction</h2>
+<p>من Business Need إلى Enterprise Change عبر منهج متكرر، محكوم، وقابل للتكييف.</p>
+</div>
+<span class="chapter-badge">Study Chapter 5</span>
+</div>
+<article class="section-card" id="c5s1">
+<div class="section-head">
+<div><h3>1. أين نحن داخل TOGAF؟</h3><span class="en">Study Chapter 5 / Official ADM Chapter 1</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+بعد إنهاء وثيقة <strong>Introduction and Core Concepts</strong> بفصولها الأربعة، نبدأ الآن الوثيقة الأساسية الثانية:
+<strong>TOGAF Standard — Architecture Development Method</strong>. ولذلك فهذا هو <strong>الفصل الخامس في مسارنا الدراسي</strong>،
+لكنه يشرح <strong>Chapter 1: Introduction</strong> من وثيقة ADM الرسمية.
+</p>
+<div class="official-map">
+<div class="map-card"><strong>1. ADM Overview</strong><small>ما هو ADM، وكيف يستخدم Enterprise Continuum وArchitecture Repository.</small></div>
+<div class="map-card"><strong>2. Development Cycle</strong><small>الدورة، التكرار، Requirements Management، وحالة المخرجات.</small></div>
+<div class="map-card"><strong>3. Tailoring &amp; Governance</strong><small>تكييف المنهج وإدارته داخل Governance Environment.</small></div>
+<div class="map-card"><strong>4. Scope to Integration</strong><small>النطاق، البدائل، Trade-offs، وتكامل Architectures.</small></div>
+</div>
+<div class="notice">
+<strong>الفكرة الكبرى:</strong> ADM ليس مجرد دائرة مراحل للحفظ؛ بل طريقة متكررة لاتخاذ قرارات معمارية،
+إنتاج مخرجات محكومة، إعادة استخدام أصول سابقة، وتحويل Business Needs إلى تغييرات قابلة للتنفيذ.
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s1" type="checkbox"/> فهمت موقع الفصل الخامس داخل مجموعة وثائق TOGAF</label>
+</article>
+<article class="section-card" id="c5s2">
+<div class="section-head">
+<div><h3>2. ADM Overview — ما هو Architecture Development Method؟</h3><span class="en">Method for Developing and Managing the Enterprise Architecture Lifecycle</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+<strong>Architecture Development Method (ADM)</strong> هو المنهج الذي يشرح كيف نطوّر Enterprise Architecture
+وكيف ندير دورة حياتها. وهو يمثل القلب التشغيلي لـTOGAF؛ لأن المفاهيم والمستودعات والمبادئ لا تحقق قيمة
+ما لم توجد طريقة تربطها بعمل منظم يبدأ من حاجة أعمال وينتهي بتغيير محكوم.
+</p>
+<div class="concept-grid">
+<div class="concept-card">
+<h4>Develop</h4>
+<p>بناء Baseline وTarget Architectures، تحديد Gaps، واختيار مسار التغيير.</p>
+<span class="tag">إنشاء Architecture</span>
+</div>
+<div class="concept-card">
+<h4>Manage the Lifecycle</h4>
+<p>إدارة التطور من الرؤية إلى التنفيذ ثم متابعة التغيير المستمر، وليس إعداد وثيقة لمرة واحدة.</p>
+<span class="tag">Lifecycle Management</span>
+</div>
+<div class="concept-card">
+<h4>Integrate Assets</h4>
+<p>دمج مواد TOGAF مع Reference Models وPatterns وStandards وأصول المؤسسة لتلبية Business Needs.</p>
+<span class="tag">Reuse &amp; Integration</span>
+</div>
+</div>
+<div class="ecosystem-flow">
+<div class="eco-box"><strong>Business Needs</strong><small>Drivers، Goals، Concerns، Constraints، Requirements</small></div>
+<div class="eco-arrow">→</div>
+<div class="eco-box"><strong>TOGAF ADM</strong><small>مراحل متكررة، قرارات نطاق، تطوير معماريات، حوكمة، وتحقق مستمر</small></div>
+<div class="eco-arrow">→</div>
+<div class="eco-box"><strong>Enterprise Change</strong><small>Roadmap، Work Packages، تنفيذ محكوم، وArchitecture قابلة للتطور</small></div>
+</div>
+<h4>ما الذي يدمجه ADM؟</h4>
+<ul>
+<li>عناصر TOGAF Standard: المبادئ، المحتوى، التقنيات، الحوكمة، والمخرجات.</li>
+<li>أصول داخلية: Architectures سابقة، Standards، Models، Lessons Learned، وBuilding Blocks.</li>
+<li>أصول خارجية: Industry Reference Models، Frameworks أخرى، Patterns، ومعايير تقنية.</li>
+</ul>
+<div class="memory-box">
+<strong>امتحانيًا:</strong> ADM هو <em>method</em> لتطوير وإدارة دورة حياة Enterprise Architecture،
+وليس Repository ولا Content Metamodel ولا Governance Board.
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s2" type="checkbox"/> فهمت تعريف ADM ووظيفته الأساسية</label>
+</article>
+<article class="section-card" id="c5s3">
+<div class="section-head">
+<div><h3>3. ADM وEnterprise Continuum وArchitecture Repository</h3><span class="en">Classify, Store, Reuse, and Enrich Architecture Assets</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+توجد علاقة متكاملة بين ثلاثة مفاهيم. <strong>Enterprise Continuum</strong> يوفر طريقة لتصنيف وفهم الأصول من العام
+إلى الخاص، بينما <strong>Architecture Repository</strong> هو البيئة العملية التي تحفظ الأصول المقبولة وأعمال التطوير،
+ويستخدم <strong>ADM</strong> هذه الأصول ثم يضيف إليها أصولًا جديدة.
+</p>
+<div class="reuse-loop">
+<div class="reuse-node"><strong>Classify</strong><small>Enterprise Continuum يصنف المواد العامة والقطاعية والخاصة بالمؤسسة.</small></div>
+<div class="reuse-node"><strong>Store</strong><small>Architecture Repository يحفظ Models وPatterns وStandards والعمل الجاري.</small></div>
+<div class="reuse-node"><strong>Reuse</strong><small>المعماري يختار الأصول المناسبة للمشكلة الحالية بدل البدء من الصفر.</small></div>
+<div class="reuse-node"><strong>Specialize</strong><small>تُكيّف الأصول العامة لتلائم Context وRequirements المؤسسة.</small></div>
+<div class="reuse-node"><strong>Enrich</strong><small>نتائج الدورة تعود إلى Repository لإعادة استخدامها في دورات لاحقة.</small></div>
+</div>
+<h4>ما الذي قد يوجد داخل Architecture Repository؟</h4>
+<div class="repository-layers">
+<div class="repo-layer"><strong>Reference Assets</strong><small>Reference Architectures، Models، Patterns، Standards.</small></div>
+<div class="repo-layer"><strong>Previous Work</strong><small>Architectures ومخرجات وتجارب سابقة داخل المؤسسة.</small></div>
+<div class="repo-layer"><strong>Work-in-Progress</strong><small>Drafts، analyses، models، ومتطلبات تحت التطوير.</small></div>
+<div class="repo-layer"><strong>Governance Records</strong><small>Approvals، compliance evidence، decisions، وdispensations.</small></div>
+</div>
+<p>
+في أول تنفيذ لـADM يكون مخزون المؤسسة من الأصول القابلة لإعادة الاستخدام محدودًا، ولذلك تكون الدورة الأولى عادةً
+الأصعب. مع كل دورة يزداد المحتوى المنظم داخل Repository، فتقل إعادة العمل وتزداد السرعة والاتساق.
+</p>
+<div class="notice">
+<strong>نقطة دقيقة:</strong> Enterprise Continuum ليس مخزن ملفات. هو آلية تصنيف وسياق فكري،
+بينما Architecture Repository هو التمثيل العملي الذي يحتوي الأصول الفعلية.
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s3" type="checkbox"/> فهمت العلاقة بين ADM وEnterprise Continuum وArchitecture Repository</label>
+</article>
+<article class="section-card" id="c5s4">
+<div class="section-head">
+<div><h3>4. ADM وFoundation Architecture والدعم المساند</h3><span class="en">Foundation Architecture, Guidelines, Techniques, and External Guidance</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+يمكن استخدام ADM أيضًا لتطوير أوإثراء <strong>Foundation Architecture</strong> الخاصة بالمؤسسة؛ أي القاعدة المشتركة
+التي تضم مكونات عامة، سياسات، نماذج، مبادئ، وضوابط يمكن إعادة استخدامها في Architectures أكثر تخصصًا.
+قد تؤدي Business Requirements العامة إلى اختيار نموذج مشترك، سياسة Governance، أوحتى Technology Selection
+إلزامي بسبب قانون أوتنظيم.
+</p>
+<div class="concept-grid">
+<div class="concept-card"><h4>Generic Foundation</h4><p>مكونات وعلاقات ومبادئ عامة تمثل نقطة بداية مشتركة.</p><span class="tag">Reusable Base</span></div>
+<div class="concept-card"><h4>Enterprise Specialization</h4><p>يستخدم ADM المتطلبات والسياق لتخصيص القاعدة للمؤسسة أوالقطاع.</p><span class="tag">Organization-Specific</span></div>
+<div class="concept-card"><h4>Coherence Check</h4><p>جمع Models من مصادر متعددة لا يضمن تلقائيًا Architecture متماسكة وقابلة للتكامل.</p><span class="tag">Integratability</span></div>
+</div>
+<h4>المواد التي تدعم تطبيق ADM</h4>
+<table>
+<thead><tr><th>المصدر</th><th>الدور</th><th>متى أرجع إليه؟</th></tr></thead>
+<tbody>
+<tr><td><strong>ADM Techniques</strong></td><td>تقنيات مثل Stakeholder Management، Gap Analysis، Risk، Alternatives.</td><td>عند تنفيذ تقنية محددة داخل مرحلة.</td></tr>
+<tr><td><strong>TOGAF Series Guides</strong></td><td>تطبيق أوتكييف TOGAF لسياق أوأسلوب محدد.</td><td>Agile، Digital، Security، Business Architecture وغيرها.</td></tr>
+<tr><td><strong>TOGAF Library</strong></td><td>White Papers، Guides، Reference Material إضافية.</td><td>عند الحاجة إلى Guidance عملي أوقطاعي.</td></tr>
+</tbody>
+</table>
+<p>
+يتم فصل التقنيات والإرشادات عن وصف مراحل ADM حتى تبقى المراحل واضحة وغير مزدحمة، ثم تتم الإشارة إلى التقنية المناسبة
+عند الحاجة.
+</p>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s4" type="checkbox"/> فهمت Foundation Architecture ومصادر دعم ADM</label>
+</article>
+<article class="section-card" id="c5s5">
+<div class="section-head">
+<div><h3>5. Architecture Development Cycle</h3><span class="en">The ADM Phases and Continuous Requirements Management</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+تُعرض ADM على شكل دورة؛ لأن Enterprise Architecture ليست مشروعًا ينتهي إلى الأبد. المؤسسة تتغير،
+والاستراتيجية والتكنولوجيا واللوائح تتغير، لذلك تعاد الدورة كليًا أوجزئيًا كلما لزم الأمر.
+</p>
+<div aria-label="ADM Cycle educational recreation" class="adm-shell">
+<div class="adm-center">Requirements<br/>Management</div>
+<div class="adm-phase p-pre"><b>Preliminary</b><small>تهيئة Capability وFramework</small></div>
+<div class="adm-phase p-a"><b>A</b><small>Architecture Vision</small></div>
+<div class="adm-phase p-b"><b>B</b><small>Business Architecture</small></div>
+<div class="adm-phase p-c"><b>C</b><small>Data &amp; Application</small></div>
+<div class="adm-phase p-d"><b>D</b><small>Technology Architecture</small></div>
+<div class="adm-phase p-e"><b>E</b><small>Opportunities &amp; Solutions</small></div>
+<div class="adm-phase p-f"><b>F</b><small>Migration Planning</small></div>
+<div class="adm-phase p-g"><b>G</b><small>Implementation Governance</small></div>
+<div class="adm-phase p-h"><b>H</b><small>Architecture Change Management</small></div>
+</div>
+<div class="cycle-note">
+<span>Preliminary يجهّز البيئة</span>
+<span>A–D تطور Architecture</span>
+<span>E–F تخطط التحول</span>
+<span>G تحكم التنفيذ</span>
+<span>H تدير التغيير المستمر</span>
+</div>
+<h4>لماذا Requirements Management في المنتصف؟</h4>
+<p>
+لأن المتطلبات تتأثر بكل مرحلة وتؤثر فيها. أي Requirement جديدة أوتعديل أوحذف يجب أن يمر عبر Governance مناسب،
+ويُنعكس على المراحل والArtifacts ذات العلاقة. يمكن للمؤسسة استخدام <strong>Requirements Repository</strong> موحد لتسجيل
+المتطلبات الواقعة داخل نطاق Statement of Architecture Work.
+</p>
+<div class="warning">
+الدائرة لا تعني أن كل مشروع يجب أن يقضي نفس الوقت في كل مرحلة أوينفذها مرة واحدة بالترتيب الصارم.
+TOGAF يقرر البنية العامة، بينما التكرار والتكييف يحددان طريقة الاستخدام الفعلية.
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s5" type="checkbox"/> فهمت بنية دورة ADM ودور Requirements Management</label>
+</article>
+<article class="section-card" id="c5s6">
+<div class="section-head">
+<div><h3>6. ADM Iteration — التكرار داخل المنهج</h3><span class="en">Iteration Across the Cycle, Between Phases, and Within a Phase</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+من أكثر نقاط TOGAF أهمية أن ADM <strong>Iterative</strong> على ثلاثة مستويات. هذا يمنع فهمه كWaterfall جامد.
+</p>
+<div class="iteration-board">
+<div class="iteration-card"><h4>1. Over the Whole Process</h4><p>إعادة دورة ADM كاملة عندما تظهر مبادرة جديدة أوتغيير كبير أوحاجة لإعادة ضبط Target Architecture.</p></div>
+<div class="iteration-card"><h4>2. Between Phases</h4><p>العودة بين مرحلتين؛ مثل اكتشاف Phase D لمتطلب يؤثر في Application Architecture في Phase C.</p></div>
+<div class="iteration-card"><h4>3. Within a Phase</h4><p>تكرار Models والتحليل والمراجعة داخل المرحلة نفسها حتى تصبح النتائج Fit-for-Purpose.</p></div>
+</div>
+<h4>في كل Iteration يجب اتخاذ قرارات جديدة بشأن:</h4>
+<div class="fresh-decisions">
+<div class="decision-box"><strong>Breadth</strong><small>أي أجزاء من Enterprise يشملها العمل؟</small></div>
+<div class="decision-box"><strong>Depth</strong><small>ما مستوى التفاصيل المطلوب؟</small></div>
+<div class="decision-box"><strong>Time Period</strong><small>ما الأفق الزمني وكم Transition Architecture؟</small></div>
+<div class="decision-box"><strong>Assets</strong><small>ما الذي سنعيد استخدامه من الداخل أوالخارج؟</small></div>
+</div>
+<p>
+هذه القرارات لا تُتخذ نظريًا؛ بل بناءً على الموارد والمهارات المتاحة والقيمة الواقعية التي يمكن تحقيقها.
+المطلوب ليس “أكبر Architecture ممكنة”، بل <strong>أصغر نطاق كافٍ لتقديم قيمة موثوقة وقابلة للتطور</strong>.
+</p>
+<div class="memory-box">
+<strong>فخ امتحاني:</strong> ADM تكراري بطبيعته. عبارة “يجب إكمال كل مرحلة بالكامل مرة واحدة قبل الانتقال نهائيًا”
+لا تصف ADM بصورة صحيحة.
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s6" type="checkbox"/> فهمت مستويات Iteration والقرارات التي تعاد في كل دورة</label>
+</article>
+<article class="section-card" id="c5s7">
+<div class="section-head">
+<div><h3>7. التحقق المستمر وحالة المخرجات</h3><span class="en">Validation, Draft, Approved, Versioning, and Change Control</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+خلال الدورة يجب التحقق بصورة متكررة من النتائج مقابل التوقعات الأصلية: توقعات الدورة كاملة وتوقعات المرحلة الحالية.
+المخرجات تظهر تدريجيًا، وقد يعدّل مخرج مبكر في مرحلة لاحقة، ولذلك يجب إدارة Lifecycle للمخرجات.
+</p>
+<div class="output-lifecycle">
+<div class="status-box"><strong>Draft</strong><small>تحت التطوير ولم يمر بمراجعة واعتماد رسميين.</small></div>
+<div class="status-arrow">→</div>
+<div class="status-box"><strong>Reviewed &amp; Approved</strong><small>تمت مراجعته والموافقة عليه وفق Governance Practices.</small></div>
+<div class="status-arrow">→</div>
+<div class="status-box"><strong>Controlled Evolution</strong><small>يمكن أن يتطور لاحقًا، لكن فقط عبر Change Control مناسب.</small></div>
+</div>
+<h4>ثلاث قواعد مهمة</h4>
+<ol>
+<li><strong>Approved لا تعني Final forever:</strong> قد يتغير المخرج في مرحلة لاحقة.</li>
+<li><strong>Versioning Policy ضرورية:</strong> لتتبع النسخ والأداة والمستودع وحالة كل Artifact.</li>
+<li><strong>Baseline وTarget يتطوران تحت الحوكمة:</strong> لا تعدّل النسخة المعتمدة بصورة غير رسمية.</li>
+</ol>
+<div class="notice">
+في بيئة عملية، يجب أن يعرف أي مستخدم: ما النسخة الحالية؟ من اعتمدها؟ ما سبب التغيير؟ وما أثره على المتطلبات والمراحل الأخرى؟
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s7" type="checkbox"/> فهمت التحقق وحالات Draft وApproved وChange Control</label>
+</article>
+<article class="section-card" id="c5s8">
+<div class="section-head">
+<div><h3>8. Adapting the ADM — لماذا وكيف نكيّف المنهج؟</h3><span class="en">Create an Enterprise-Specific ADM Instead of Applying a Rigid Template</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+ADM منهج عام صُمم ليلائم مؤسسات وأنظمة متنوعة، ولذلك تبدأ المؤسسة بمراجعة مكوناته ثم تخصيصه.
+نتيجة هذا العمل قد تكون <strong>Enterprise-Specific ADM</strong> يحدد المراحل والخطوات والمخرجات والأدوار المناسبة للمؤسسة.
+</p>
+<div class="adapt-matrix">
+<div class="adapt-card"><h4>Architecture Maturity</h4><p>ترتيب وتركيز المراحل قد يتغير حسب نضج ممارسة Architecture. مؤسسة لم تقتنع بالقيمة تحتاج Vision وBusiness Case أقوى.</p></div>
+<div class="adapt-card"><h4>Principles &amp; Business Strategy</h4><p>قد تفرض المبادئ ترتيبًا مختلفًا؛ مثل قبول تعديل العمليات لتلائم Packaged Solution سريع التنفيذ.</p></div>
+<div class="adapt-card"><h4>Other Frameworks</h4><p>يمكن دمج ADM مع Frameworks أوDeliverables قطاعية أخرى بدل تكرار العمل أوفرض شكل غير مناسب.</p></div>
+<div class="adapt-card"><h4>Governance &amp; Delivery Model</h4><p>يجب ربط ADM بالميزانية، إدارة المخاطر، المشتريات، التطوير، البرامج، والتعاقدات.</p></div>
+<div class="adapt-card"><h4>Organization Size</h4><p>SME قد تستخدم Cut-down Method، بينما المؤسسة الضخمة تحتاج Federation وPartitions وحوكمة متعددة المستويات.</p></div>
+<div class="adapt-card"><h4>Agile &amp; Product Context</h4><p>يمكن تكييف ADM مع Agile Sprints أوProduct Line Architecture مع الحفاظ على القرار والحوكمة والتتبع.</p></div>
+</div>
+<h4>ما الذي يمكن تكييفه؟</h4>
+<ul>
+<li>ترتيب المراحل ومدى التكرار بينها.</li>
+<li>الخطوات والأنشطة المستخدمة داخل كل مرحلة.</li>
+<li>Deliverables وArtifacts ومستوى التفاصيل.</li>
+<li>Content Framework وEnterprise Metamodel.</li>
+<li>الأدوار، نقاط الاعتماد، الأدوات، ومستودعات العمل.</li>
+</ul>
+<div class="warning">
+التكييف لا يعني حذف أي شيء بلا سبب. يجب أن يكون كل تعديل مقصودًا ومبررًا ومتوافقًا مع Governance ومتطلبات القيمة.
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s8" type="checkbox"/> فهمت أسباب تكييف ADM والعناصر التي يمكن تخصيصها</label>
+</article>
+<article class="section-card" id="c5s9">
+<div class="section-head">
+<div><h3>9. استراتيجيات التكييف في المؤسسات الكبيرة</h3><span class="en">Top-Down, Generic Reference Architecture, and Replication</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+عندما تتكون المؤسسة من وحدات كبيرة مترابطة، قد يكون تصميم Architecture واحدة شاملة بالتفصيل غير عملي.
+يقدم الفصل ثلاثة أساليب يمكن استخدامها منفردة أوبالجمع بينها.
+</p>
+<div class="strategy-trio">
+<div class="strategy-card"><strong>Top-Down</strong><small>التعامل مع Meta-Enterprise كوحدة واحدة. يحقق اتساقًا قويًا لكنه قد يصبح معقدًا وبطيئًا جدًا.</small></div>
+<div class="strategy-card"><strong>Generic / Reference Architecture</strong><small>إنشاء نموذج عام مشترك، ثم تخصصه كل وحدة لإنتاج Architecture Instance تلائمها.</small></div>
+<div class="strategy-card"><strong>Replication</strong><small>تنفيذ Architecture في وحدة كProof-of-Concept، ثم استخدامها كمرجع واستنساخها مع التكييف.</small></div>
+</div>
+<h4>مثال حكومي</h4>
+<p>
+يمكن إنشاء Reference Architecture موحدة لإدارة المخزون الصحي تتضمن Master Data، التكامل، الأمن، والتقارير.
+بعد ذلك تخصصها كل جهة حسب هيكلها ومخازنها، أوتطبق أولًا في جهة تجريبية ثم تتوسع إلى جهات أخرى.
+</p>
+<div class="notice">
+في بيئة الموردين، يمكن استخدام ADM لتطوير <strong>Product Line Architecture</strong> لعائلة منتجات مترابطة،
+رغم أن ADM يستهدف أساسًا المؤسسات المستخدمة للتقنية.
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s9" type="checkbox"/> فهمت استراتيجيات تكييف ADM للمؤسسات الكبيرة</label>
+</article>
+<article class="section-card" id="c5s10">
+<div class="section-head">
+<div><h3>10. Architecture Governance داخل ADM</h3><span class="en">Govern the Method, the Artifacts, the Decisions, and the Evidence</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+ADM نفسه يجب أن يخضع للحوكمة مثل بقية Architecture Artifacts. على <strong>Architecture Board</strong> التأكد من أن المنهج
+يطبق بصورة صحيحة عبر المراحل، وأن الاعتبارات المطلوبة قد تمت مراجعتها والمخرجات المطلوبة قد أُنتجت.
+</p>
+<div class="governance-flow">
+<div class="gov-box"><strong>Method Control</strong><small>تأكيد تطبيق ADM أوالنسخة المكيّفة منه بطريقة صحيحة.</small></div>
+<div class="gov-arrow">→</div>
+<div class="gov-box"><strong>Versioned Repository</strong><small>حفظ Objects والنسخ والحالة ومسار العمل.</small></div>
+<div class="gov-arrow">→</div>
+<div class="gov-box"><strong>Compliance &amp; Decisions</strong><small>طلبات الالتزام، الاستثناءات، التحقيقات، والموافقات.</small></div>
+<div class="gov-arrow">→</div>
+<div class="gov-box"><strong>Audit Trail</strong><small>من قرر؟ متى؟ لماذا؟ وما السابقة التي يمكن الرجوع إليها؟</small></div>
+</div>
+<h4>مناطق المعلومات الرئيسية في Governance Repository</h4>
+<table>
+<thead><tr><th>المنطقة</th><th>محتواها</th><th>قيمتها</th></tr></thead>
+<tbody>
+<tr><td><strong>Reference Data</strong></td><td>إرشادات داخلية وخارجية، Standards، ووصف إجراءات الحوكمة.</td><td>توجيه التنفيذ بصورة موحدة.</td></tr>
+<tr><td><strong>Process Status</strong></td><td>حالة Compliance Requests، Dispensation Requests، والتحقيقات.</td><td>معرفة ما هو معلق ومن المسؤول.</td></tr>
+<tr><td><strong>Audit Information</strong></td><td>الإجراءات المكتملة، القرارات، والمسؤولون.</td><td>التتبع والمساءلة والاستفادة من السوابق.</td></tr>
+</tbody>
+</table>
+<div class="memory-box">
+<strong>القاعدة:</strong> Governance ليست مرحلة G فقط. Phase G تحكم التنفيذ، لكن Governance يجب أن تحيط بممارسة ADM ومخرجاتها طوال الدورة.
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s10" type="checkbox"/> فهمت دور Architecture Governance في إدارة ADM ومخرجاته</label>
+</article>
+<article class="section-card" id="c5s11">
+<div class="section-head">
+<div><h3>11. Scoping the Architecture — أبعاد النطاق الأربعة</h3><span class="en">Breadth, Depth, Time Period, and Architecture Domains</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+لا يستطيع TOGAF أن يختار نطاق مشروعك بدلًا عن المؤسسة. النطاق يتحدد وفق السلطة والأهداف وConcerns والموارد،
+ويجب أن يسمح بتنسيق عمل المعماريين وتجنب الازدواج أوالتعارض عبر Architecture Partitions.
+</p>
+<div class="scope-compass">
+<div class="scope-dimension"><h4>1. Breadth — الاتساع</h4><p>أي أجزاء من Enterprise، القطاعات، الوظائف، الجهات، المواقع، الشركاء، والموردين يشملها العمل؟</p><span class="question">What part of the enterprise?</span></div>
+<div class="scope-dimension"><h4>2. Depth — العمق</h4><p>إلى أي مستوى من التفاصيل نذهب؟ وأين ينتهي Architecture ويبدأ Solution Design أوEngineering؟</p><span class="question">How much detail is enough?</span></div>
+<div class="scope-dimension"><h4>3. Time Period — الفترة الزمنية</h4><p>ما أفق Vision وTarget؟ هل نحتاج Transition Architectures؟ وما توقيت كل Plateau؟</p><span class="question">How far into the future?</span></div>
+<div class="scope-dimension"><h4>4. Domains — المجالات</h4><p>أي من Business، Data، Application، Technology يجب أن يشمله العمل لتحقيق الغرض؟</p><span class="question">Which architecture domains?</span></div>
+</div>
+<h4>ترتيب التفكير المقترح</h4>
+<p>
+عادةً يُحدد <strong>Breadth + Depth + Time</strong> أولًا، ثم تُختار مجموعة Architecture Domains الملائمة للمشكلة.
+في البيئات الكبيرة يجب تجنب Local Optimization الذي يحسن وحدة على حساب Enterprise ككل، والتركيز على Commonality
+وScalable Reusable Modules.
+</p>
+<div class="warning">
+النطاق الأوسع ليس دائمًا أفضل. النطاق الناقص قد يفشل في معالجة المشكلة، والنطاق المبالغ فيه قد يستهلك الموارد دون Return on Investment.
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s11" type="checkbox"/> فهمت أبعاد Architecture Scope الأربعة</label>
+</article>
+<article class="section-card" id="c5s12">
+<div class="section-head">
+<div><h3>12. Breadth — النطاق التنظيمي وFederated Architecture</h3><span class="en">Organizational Coverage, Federation, Publish-and-Subscribe, and Compliance</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+Breadth يحدد القطاعات والوظائف والوحدات والمواقع التي تغطيها Architecture. في Enterprise كبيرة قد توجد Architectures
+متعددة مستقلة نسبيًا، ثم تُدمج داخل إطار اتحادي يحدد Interoperability وMigration وConformance.
+</p>
+<div class="federation-map">
+<div class="fed-cluster">
+<div class="fed-unit"><strong>Business Unit A</strong><small>Architecture محلية وفق احتياجاتها.</small></div>
+<div class="fed-unit"><strong>Business Unit B</strong><small>Architecture محلية مع مسؤولية مستقلة.</small></div>
+</div>
+<div class="fed-link">publish / align →</div>
+<div class="fed-core"><strong>Federated Enterprise Architecture</strong><small>مبادئ مشتركة، Standards، Interoperability، Migration، Governance، وReusable Assets.</small></div>
+<div class="fed-link">← subscribe / comply</div>
+<div class="fed-cluster">
+<div class="fed-unit"><strong>Program C</strong><small>يستهلك Architecture Materials المعتمدة.</small></div>
+<div class="fed-unit"><strong>Partner Ecosystem</strong><small>يتكامل وفق Contracts وStandards.</small></div>
+</div>
+</div>
+<h4>Publish-and-Subscribe Model</h4>
+<p>
+تنشر Practice المعمارية مواد عالية الجودة ومحدثة وFit-for-Purpose، بينما تشترك المشروعات في استخدامها.
+ثم يمكن متابعة الاستخدام وقياس الالتزام عبر <strong>Compliance Assessment</strong>، مع مسار رسمي لمنح
+<strong>Dispensation</strong> عند وجود Business Imperative قوي.
+</p>
+<div class="notice">
+Federated لا تعني أن كل وحدة تفعل ما تشاء؛ الاستقلال المحلي يعمل داخل Integration and Governance Framework مشترك.
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s12" type="checkbox"/> فهمت Breadth وFederated Architecture وPublish-and-Subscribe</label>
+</article>
+<article class="section-card" id="c5s13">
+<div class="section-head">
+<div><h3>13. Depth — كم من التفاصيل يكفي؟</h3><span class="en">Fit-for-Purpose Detail without Under-Modeling or Over-Modeling</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+العمق يجب أن يتناسب مع القرارات التي ستُتخذ باستخدام Architecture. التفاصيل القليلة قد تجعلها غير نافعة،
+والتفاصيل الزائدة قد تستهلك الوقت وتخلق تشويشًا وتدخل في نطاق Detailed Design.
+</p>
+<div class="depth-ladder">
+<div class="depth-step"><strong>Contextual</strong><small>ما النطاق، من Stakeholders، وما القضايا والنتائج المطلوبة؟</small></div>
+<div class="depth-step"><strong>Conceptual</strong><small>ما المفاهيم والقدرات والعلاقات الرئيسية دون تفاصيل تنفيذية؟</small></div>
+<div class="depth-step"><strong>Logical</strong><small>ما المكونات والخدمات والبيانات المطلوبة بصورة مستقلة عن المنتجات؟</small></div>
+<div class="depth-step"><strong>Physical / Implementation Detail</strong><small>منتجات وتقنيات وتكوينات فعلية؛ هنا يجب تحديد الحد بين Architecture وSolution Design.</small></div>
+</div>
+<h4>قواعد الحكم على العمق</h4>
+<ul>
+<li>اجعل العمق متسقًا قدر الإمكان عبر Domains الداخلة في النطاق.</li>
+<li>استخدم التفاصيل الضرورية لاتخاذ القرار وإثبات معالجة Concerns.</li>
+<li>صمم Artifacts بحيث يمكن توسيعها وإعادة استخدامها في Iterations لاحقة.</li>
+<li>وازن بين الموارد والكفاءات والقيمة الواقعية المتوقعة.</li>
+</ul>
+<div class="memory-box">
+الصيغة التي يسهل تذكرها: <strong>Depth must be sufficient for its purpose — and no more.</strong>
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s13" type="checkbox"/> فهمت كيفية تحديد Depth المناسب</label>
+</article>
+<article class="section-card" id="c5s14">
+<div class="section-head">
+<div><h3>14. Time Period وTransition Architectures</h3><span class="en">Baseline, Evolutionary Target, Stable Increments, and the Moving Target Risk</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+قد تكون Vision بعيدة المدى، بينما لا يمكن وصف كل التفاصيل المستقبلية الآن. لذلك تميز TOGAF بين Baseline،
+Target Architecture بعيدة نسبيًا، وTransition Architectures تمثل حالات تشغيلية وسيطة قابلة للتنفيذ.
+</p>
+<div class="timeline">
+<div class="time-state"><strong>Baseline</strong><small>الحالة الحالية المعتمدة: العمليات والبيانات والتطبيقات والتكنولوجيا.</small></div>
+<div class="time-arrow">→</div>
+<div class="time-state"><strong>Transition 1</strong><small>Increment أوPlateau متسق وقابل للتشغيل بعد أول مجموعة تغييرات.</small></div>
+<div class="time-arrow">→</div>
+<div class="time-state"><strong>Transition 2</strong><small>حالة وسيطة تالية تقترب من Target وتؤجل بعض القرارات التفصيلية.</small></div>
+<div class="time-arrow">→</div>
+<div class="time-state"><strong>Target / Vision</strong><small>اتجاه مستقبلي استراتيجي يتطور مع تغير Business وTechnology.</small></div>
+</div>
+<h4>Target مقابل Transition</h4>
+<table>
+<thead><tr><th>البعد</th><th>Target Architecture</th><th>Transition Architecture</th></tr></thead>
+<tbody>
+<tr><td>الطبيعة</td><td>Evolutionary واستراتيجية نسبيًا.</td><td>Incremental ومرتبطة بمرحلة تنفيذ.</td></tr>
+<tr><td>التفاصيل</td><td>أكثر عمومية وأقل تعرضًا للتقادم.</td><td>أكثر تحديدًا وقربًا من المنتجات والتنفيذ.</td></tr>
+<tr><td>التغيير</td><td>تراجع وتحدث دوريًا.</td><td>يفضل ثباتها أثناء تنفيذ Increment لتجنب Moving Target.</td></tr>
+<tr><td>الغرض</td><td>تحديد الاتجاه والقرارات الاستراتيجية.</td><td>تحقيق حالة تشغيلية متماسكة في الطريق.</td></tr>
+</tbody>
+</table>
+<p>
+قد تتغير Vision قبل الوصول إليها حرفيًا. هذا ليس فشلًا؛ بل طبيعة المؤسسة المتغيرة. المهم أن تكون كل Transition
+حالة تشغيلية متسقة وأن تظل العلاقات بين المنتجات المعمارية محكومة.
+</p>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s14" type="checkbox"/> فهمت Time Period والفرق بين Target وTransition Architectures</label>
+</article>
+<article class="section-card" id="c5s15">
+<div class="section-head">
+<div><h3>15. Architecture Domains واكتمال Enterprise Architecture</h3><span class="en">Business, Data, Application, and Technology — Purpose-Driven Coverage</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+Enterprise Architecture الكاملة تعالج المجالات الأربعة، لكن قيود الوقت والموارد قد تدفع إلى تقليل النطاق.
+يجب أن يبدأ القرار من Purpose وBusiness Drivers والأسئلة التي يُراد من Architecture الإجابة عنها.
+</p>
+<div class="domain-grid">
+<div class="domain-box"><strong>Business</strong><small>Capabilities، Value Streams، Services، Processes، Organization، Goals.</small></div>
+<div class="domain-box"><strong>Data</strong><small>Data Entities، ownership، lifecycle، quality، flows، logical/physical components.</small></div>
+<div class="domain-box"><strong>Application</strong><small>Application Services، Components، interactions، support for business and data.</small></div>
+<div class="domain-box"><strong>Technology</strong><small>Technology Services، Platforms، Components، infrastructure، standards.</small></div>
+</div>
+<h4>مثال دقيق</h4>
+<p>
+إذا كان الغرض فحص Technology Options لتحقيق Capability معينة دون تغيير العمليات الأساسية، فقد لا يلزم تطوير
+Business Architecture كاملة بالتفصيل. لكن يجب فهم Business Architecture بما يكفي؛ لأن Data وApplication وTechnology
+تبنى عليها ولا يمكن فصلها عن Business Purpose.
+</p>
+<div class="warning">
+Architecture Description التي لا تشمل المجالات الأربعة قد تكون مناسبة لغرض محدد، لكنها ليست — بالتعريف —
+Enterprise Architecture كاملة. يجب توضيح Integration Risks وTrade-offs للإدارة.
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s15" type="checkbox"/> فهمت Architecture Domains ومتى تكون Architecture غير مكتملة</label>
+</article>
+<article class="section-card" id="c5s16">
+<div class="section-head">
+<div><h3>16. Architecture Alternatives and Trade-offs</h3><span class="en">Derive Criteria, Explore Alternatives, Select or Combine</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+قد توجد عدة Target Architectures تحقق Vision وPrinciples وRequirements. وظيفة المعماري ليست القفز إلى أول حل،
+بل توضيح البدائل وTrade-offs حتى يتخذ Stakeholders قرارًا واعيًا.
+</p>
+<div class="alternatives">
+<div class="alt-box"><strong>Decision Inputs</strong><small>Vision، Principles، Requirements، Concerns، Constraints، Risks، Value.</small></div>
+<div class="alt-arrow">→</div>
+<div class="alt-box">
+<strong>Candidate Alternatives</strong>
+<div class="alt-middle">
+<div class="candidate">Alternative A</div>
+<div class="candidate">Alternative B</div>
+<div class="candidate">Alternative C</div>
+</div>
+<small>تُقيّم وفق Criteria مشتركة، وقد تُحلل أولًا لكل Domain.</small>
+</div>
+<div class="alt-arrow">→</div>
+<div class="alt-box"><strong>Selected Architecture</strong><small>اختيار بديل واحد أوتركيب خصائص من أكثر من بديل، بقدر كافٍ فقط لدعم القرار.</small></div>
+</div>
+<h4>الطريقة في ثلاث خطوات</h4>
+<ol>
+<li>اشتقاق <strong>Criteria</strong> من Vision وPrinciples وRequirements وغيرها.</li>
+<li>تعريف البدائل وبناء فهم للمزايا والعيوب والاعتماديات والمخاطر.</li>
+<li>اختيار بديل، أوCombine Features، وتوثيق Rationale والTrade-offs.</li>
+</ol>
+<div class="notice">
+عرض البدائل قد يكشف Hidden Agendas أوRequirements أوPrinciples لم تكن ظاهرة في البداية؛ وهذه فائدة مهمة للنقاش المعماري.
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s16" type="checkbox"/> فهمت طريقة Architecture Alternatives وTrade-offs</label>
+</article>
+<article class="section-card" id="c5s17">
+<div class="section-head">
+<div><h3>17. Architecture Integration</h3><span class="en">Make Multiple Architectures Coexist through a Consistent Frame of Reference</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+عند تطوير Architectures منفصلة لمشكلات أوSegments مختلفة، يجب أن تشترك في Frame of Reference يسمح بالنظر إليها
+كمجموعة متماسكة، لا كمخرجات متفرقة. أبعاد Scope نفسها — Domain وDepth وBreadth وTime — تصبح أبعادًا للتكامل.
+</p>
+<div class="integration-spectrum">
+<div class="spectrum-step"><strong>Manual Coordination</strong><small>تطابق ضعيف واعتماد كبير على الاجتماعات والتفسير اليدوي.</small></div>
+<div class="spectrum-step"><strong>Shared Vocabulary</strong><small>مصطلحات وMetamodel وIdentifiers مشتركة.</small></div>
+<div class="spectrum-step"><strong>Standard Artifacts</strong><small>قوالب وViews وCatalogs متسقة.</small></div>
+<div class="spectrum-step"><strong>Interchange Standards</strong><small>تبادل قابل للأدوات وتقليل إعادة الإدخال.</small></div>
+<div class="spectrum-step"><strong>High Integratability</strong><small>Traceability وتجميع وتحليل متعدد المستويات بصورة أكثر آلية.</small></div>
+</div>
+<h4>أهم عوامل Integratability</h4>
+<ul>
+<li>توافق Granularity ومستوى التفاصيل بين Artifacts.</li>
+<li>نضج Standards المستخدمة لتبادل Architecture Descriptions.</li>
+<li>وجود Universal Data Models أوStandard Data Structures حيث يلزم.</li>
+<li>Governance فعالة للمعايير لتقليل التنسيق اليدوي وحل التعارضات.</li>
+</ul>
+<h4>مثال مصفوفة تكامل عبر Segment وDomain</h4>
+<div class="integration-matrix">
+<div class="im-cell im-head">Segment / Domain</div>
+<div class="im-cell im-head">Business</div>
+<div class="im-cell im-head">Data</div>
+<div class="im-cell im-head">Application</div>
+<div class="im-cell im-head">Technology</div>
+<div class="im-cell im-head">Procurement</div>
+<div class="im-cell">Supplier Capability</div>
+<div class="im-cell">Supplier Master</div>
+<div class="im-cell">Procurement Platform</div>
+<div class="im-cell">Integration &amp; Hosting</div>
+<div class="im-cell im-head">Warehousing</div>
+<div class="im-cell">Inventory Capability</div>
+<div class="im-cell">Item &amp; Stock Data</div>
+<div class="im-cell">WMS / Mobile</div>
+<div class="im-cell">Devices &amp; Networks</div>
+<div class="im-cell im-head">Finance</div>
+<div class="im-cell">Settlement Capability</div>
+<div class="im-cell">Accounts &amp; Cost Data</div>
+<div class="im-cell">ERP Services</div>
+<div class="im-cell">Platform Services</div>
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s17" type="checkbox"/> فهمت Architecture Integration والعوامل المؤثرة في Integratability</label>
+</article>
+<article class="section-card" id="c5s18">
+<div class="section-head">
+<div><h3>18. مثال تطبيقي متكامل: منصة وطنية لإدارة الأصول الطبية</h3><span class="en">Applying ADM Introduction Concepts to a Realistic Enterprise Scenario</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+لنفترض أن مؤسسة تريد إنشاء منصة وطنية لإدارة دورة حياة الأجهزة الطبية. قبل الدخول في تفاصيل Preliminary أوPhase A،
+نطبق مفاهيم هذا الفصل لتصميم Architecture Engagement صحيح.
+</p>
+<div class="case-flow">
+<div class="case-node"><strong>Purpose</strong><small>رفع دقة بيانات الأجهزة، تحسين الصيانة، وتقليل التوقف.</small></div>
+<div class="case-node"><strong>Reuse</strong><small>استخدام Standards وModels وIntegration Patterns من Repository.</small></div>
+<div class="case-node"><strong>Scope</strong><small>Breadth: جهات محددة؛ Depth: Logical أولًا؛ Time: 4 سنوات؛ Domains: الأربعة.</small></div>
+<div class="case-node"><strong>Alternatives</strong><small>Central Platform، Federated Model، أوHybrid؛ تقييم التكلفة والسيادة والتكامل.</small></div>
+<div class="case-node"><strong>Transitions</strong><small>1) Registry، 2) Maintenance، 3) Analytics &amp; Integration.</small></div>
+<div class="case-node"><strong>Governance</strong><small>Approvals، versioning، compliance، audit، وإعادة الأصول إلى Repository.</small></div>
+</div>
+<h4>كيف تظهر Iteration؟</h4>
+<ul>
+<li>داخل Phase A تتكرر Vision حتى يتفق Stakeholders على Value Proposition.</li>
+<li>بين B وC قد يكشف Data Model أن Business Ownership غير واضح، فنعود لتعديل Business Architecture.</li>
+<li>بعد أول Transition تبدأ دورة جزئية لتحسين الصيانة التنبؤية وإضافة IoT.</li>
+</ul>
+<div class="memory-box">
+هذا المثال يلخص الفصل: <strong>قيمة واضحة + نطاق مقصود + إعادة استخدام + تكرار + بدائل + انتقالات + حوكمة + تكامل.</strong>
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s18" type="checkbox"/> راجعت المثال التطبيقي وربطت مفاهيم الفصل</label>
+</article>
+<article class="section-card" id="c5s19">
+<div class="section-head">
+<div><h3>19. مراجعة الامتحان والأسئلة التفاعلية</h3><span class="en">Part 1 Exam Focus, Common Traps, and 18 Practice Questions</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<h4>أهم الفروق التي يجب تثبيتها</h4>
+<div class="exam-traps">
+<div class="trap"><b>ADM vs. Framework</b><p>ADM هو Method داخل TOGAF Framework، وليس كل TOGAF.</p></div>
+<div class="trap"><b>Continuum vs. Repository</b><p>Continuum يصنف؛ Repository يحفظ ويدير الأصول.</p></div>
+<div class="trap"><b>Iteration vs. Waterfall</b><p>ترتيب ADM لا يلغي التكرار داخل وبين المراحل والدورات.</p></div>
+<div class="trap"><b>Approved vs. Final</b><p>Approved يمكن أن يتطور، لكن عبر Governance وChange Control.</p></div>
+<div class="trap"><b>Target vs. Transition</b><p>Target اتجاه مستقبلي؛ Transition حالة وسيطة تشغيلية.</p></div>
+<div class="trap"><b>Scope vs. Completeness</b><p>يمكن تقليل Domains لغرض محدد، لكن الناتج لا يعد EA كاملة.</p></div>
+<div class="trap"><b>Tailoring vs. Random Deletion</b><p>التكييف قرار مبرر ومحكوم، لا اختصار عشوائي.</p></div>
+<div class="trap"><b>Governance vs. Phase G</b><p>Governance تحيط بالدورة؛ Phase G تركز على Implementation Governance.</p></div>
+</div>
+<div class="memory-box">
+<strong>خريطة الذاكرة:</strong><br/>
+Needs → ADM → Reuse → Iteration → Governed Outputs → Scope → Alternatives → Integration → Repository Enrichment.
+</div>
+<div class="quiz" data-answer="1"><h4>1) What is the primary purpose of the TOGAF ADM?</h4><div class="options"><button class="answer-btn" data-index="0">To store architecture files only</button><button class="answer-btn" data-index="1">To develop and manage the lifecycle of Enterprise Architecture</button><button class="answer-btn" data-index="2">To replace all project management methods</button><button class="answer-btn" data-index="3">To define one fixed technology stack</button></div><p class="explanation">ADM يطور Enterprise Architecture ويدير دورة حياتها، ويستخدم الأصول المناسبة لتلبية Business Needs.</p></div><div class="quiz" data-answer="1"><h4>2) Which statement best distinguishes Enterprise Continuum from Architecture Repository?</h4><div class="options"><button class="answer-btn" data-index="0">Both are physical databases</button><button class="answer-btn" data-index="1">The Continuum classifies assets; the Repository stores and manages actual assets</button><button class="answer-btn" data-index="2">The Repository classifies only external standards</button><button class="answer-btn" data-index="3">The Continuum is an ADM phase</button></div><p class="explanation">Enterprise Continuum يوفر التصنيف والسياق، بينما Repository هو التطبيق العملي لحفظ الأصول.</p></div><div class="quiz" data-answer="1"><h4>3) Why is the first ADM execution often harder?</h4><div class="options"><button class="answer-btn" data-index="0">The ADM forbids external reference models</button><button class="answer-btn" data-index="1">There are usually fewer internal reusable assets available</button><button class="answer-btn" data-index="2">Requirements Management is not used</button><button class="answer-btn" data-index="3">All outputs must be final immediately</button></div><p class="explanation">مع تكرار ADM يزداد Repository وتصبح الأصول القابلة لإعادة الاستخدام أكثر.</p></div><div class="quiz" data-answer="2"><h4>4) The ADM is iterative in which ways?</h4><div class="options"><button class="answer-btn" data-index="0">Only between complete cycles</button><button class="answer-btn" data-index="1">Only within Phase A</button><button class="answer-btn" data-index="2">Across the whole process, between phases, and within phases</button><button class="answer-btn" data-index="3">It is not iterative</button></div><p class="explanation">TOGAF يؤكد مستويات التكرار الثلاثة.</p></div><div class="quiz" data-answer="3"><h4>5) Which item is NOT one of the fresh scope decisions for each iteration?</h4><div class="options"><button class="answer-btn" data-index="0">Breadth</button><button class="answer-btn" data-index="1">Depth</button><button class="answer-btn" data-index="2">Time period</button><button class="answer-btn" data-index="3">Company logo</button></div><p class="explanation">القرارات تشمل Breadth وDepth وTime Period والأصول التي ستعاد الاستفادة منها.</p></div><div class="quiz" data-answer="1"><h4>6) Why is Requirements Management shown at the center of the ADM?</h4><div class="options"><button class="answer-btn" data-index="0">It is performed only after Phase H</button><button class="answer-btn" data-index="1">It continuously interacts with and governs requirements across all phases</button><button class="answer-btn" data-index="2">It replaces the Preliminary Phase</button><button class="answer-btn" data-index="3">It is a technology database</button></div><p class="explanation">المتطلبات تتغير وتؤثر في جميع المراحل، لذا إدارتها مستمرة.</p></div><div class="quiz" data-answer="1"><h4>7) What does “Approved” mean for an ADM output?</h4><div class="options"><button class="answer-btn" data-index="0">It can never change again</button><button class="answer-btn" data-index="1">It has been reviewed and approved, but later controlled changes may still occur</button><button class="answer-btn" data-index="2">It is still an unreviewed draft</button><button class="answer-btn" data-index="3">It is automatically deployed</button></div><p class="explanation">Approved لا تعني Final forever؛ أي تغيير لاحق يمر عبر Change Control.</p></div><div class="quiz" data-answer="1"><h4>8) What is the correct approach to adapting ADM?</h4><div class="options"><button class="answer-btn" data-index="0">Apply every element identically in every enterprise</button><button class="answer-btn" data-index="1">Tailor it deliberately to context, governance, maturity, and value needs</button><button class="answer-btn" data-index="2">Delete phases randomly to save time</button><button class="answer-btn" data-index="3">Use it only for large companies</button></div><p class="explanation">التكييف مقصود ومحكوم، وقد ينتج Enterprise-Specific ADM.</p></div><div class="quiz" data-answer="1"><h4>9) Which strategy creates a common architecture that individual units adapt?</h4><div class="options"><button class="answer-btn" data-index="0">Replication only</button><button class="answer-btn" data-index="1">Generic or Reference Architecture</button><button class="answer-btn" data-index="2">No-governance approach</button><button class="answer-btn" data-index="3">Physical Architecture</button></div><p class="explanation">Reference Architecture عامة تتخصص داخل كل وحدة.</p></div><div class="quiz" data-answer="0"><h4>10) Which is a governance repository information area mentioned in the chapter?</h4><div class="options"><button class="answer-btn" data-index="0">Reference Data</button><button class="answer-btn" data-index="1">Marketing Campaigns</button><button class="answer-btn" data-index="2">Source Code Branches only</button><button class="answer-btn" data-index="3">Customer Loyalty Points</button></div><p class="explanation">المناطق تشمل Reference Data وProcess Status وAudit Information.</p></div><div class="quiz" data-answer="1"><h4>11) What are the four typical dimensions of architecture scope?</h4><div class="options"><button class="answer-btn" data-index="0">Cost, quality, risk, procurement</button><button class="answer-btn" data-index="1">Breadth, depth, time period, architecture domains</button><button class="answer-btn" data-index="2">People, process, product, place</button><button class="answer-btn" data-index="3">Vision, mission, values, strategy</button></div><p class="explanation">هذه هي أبعاد النطاق الأربعة في الفصل.</p></div><div class="quiz" data-answer="1"><h4>12) What does Depth primarily answer?</h4><div class="options"><button class="answer-btn" data-index="0">Which countries are included?</button><button class="answer-btn" data-index="1">How much detail is enough for the intended purpose?</button><button class="answer-btn" data-index="2">How many vendors exist?</button><button class="answer-btn" data-index="3">Who approves the budget?</button></div><p class="explanation">Depth يحدد مستوى التفصيل والحد بين Architecture وDetailed Design.</p></div><div class="quiz" data-answer="1"><h4>13) Which statement about Transition Architectures is most accurate?</h4><div class="options"><button class="answer-btn" data-index="0">They are the same as the ultimate Target</button><button class="answer-btn" data-index="1">They represent intermediate, operationally consistent states on the path to the Target</button><button class="answer-btn" data-index="2">They must always cover ten years</button><button class="answer-btn" data-index="3">They contain no implementation detail</button></div><p class="explanation">Transition Architectures تمثل Increments أوPlateaus وسيطة قابلة للتشغيل.</p></div><div class="quiz" data-answer="2"><h4>14) A complete Enterprise Architecture should address:</h4><div class="options"><button class="answer-btn" data-index="0">Only Technology Architecture</button><button class="answer-btn" data-index="1">Business and Application only</button><button class="answer-btn" data-index="2">Business, Data, Application, and Technology</button><button class="answer-btn" data-index="3">Any one domain is always complete</button></div><p class="explanation">الأربعة Domains مطلوبة للاكتمال، مع إمكانية تقليل النطاق لغرض محدد مع توضيح المخاطر.</p></div><div class="quiz" data-answer="1"><h4>15) What is the first step in the architecture alternatives method?</h4><div class="options"><button class="answer-btn" data-index="0">Purchase a product</button><button class="answer-btn" data-index="1">Derive evaluation criteria from vision, principles, requirements, and related inputs</button><button class="answer-btn" data-index="2">Select the cheapest alternative automatically</button><button class="answer-btn" data-index="3">Combine all alternatives</button></div><p class="explanation">يبدأ التحليل بمعايير مشتقة من مدخلات القرار.</p></div><div class="quiz" data-answer="1"><h4>16) Why can presenting alternatives be valuable?</h4><div class="options"><button class="answer-btn" data-index="0">It eliminates stakeholders</button><button class="answer-btn" data-index="1">It may reveal hidden concerns, agendas, principles, and requirements</button><button class="answer-btn" data-index="2">It guarantees zero risk</button><button class="answer-btn" data-index="3">It removes the need for governance</button></div><p class="explanation">المقارنة المنظمة تكشف عناصر قرار لم تكن ظاهرة.</p></div><div class="quiz" data-answer="1"><h4>17) Which factor improves architecture integratability?</h4><div class="options"><button class="answer-btn" data-index="0">Different identifiers for every project</button><button class="answer-btn" data-index="1">Consistent granularity and mature interchange standards</button><button class="answer-btn" data-index="2">Avoiding all shared models</button><button class="answer-btn" data-index="3">Removing governance</button></div><p class="explanation">توافق التفاصيل والمعايير المشتركة يقللان التنسيق اليدوي والتعارض.</p></div><div class="quiz" data-answer="1"><h4>18) What is the main scoping guideline in the chapter summary?</h4><div class="options"><button class="answer-btn" data-index="0">Always maximize scope</button><button class="answer-btn" data-index="1">Focus on what creates enterprise value and expect future iterations to build on the current work</button><button class="answer-btn" data-index="2">Complete every detail in the first cycle</button><button class="answer-btn" data-index="3">Avoid reusable assets</button></div><p class="explanation">النطاق يختار وفق القيمة، مع إدراك أن الدورات اللاحقة توسع وتعمق العمل.</p></div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c5s19" type="checkbox"/> انتهيت من مراجعة الفصل الخامس وأسئلته</label>
+</article>
+<div class="chapter-nav">
+<a href="chapter-4.html"><strong>← الفصل السابق</strong><small>Chapter 4 — Definitions</small></a>
+<a class="home" href="index.html"><strong>⌂ الفهرس الرئيسي</strong><small>جميع الفصول</small></a>
+<a class="next" href="chapter-6.html"><strong>الفصل التالي →</strong><small>الفصل السادس: Preliminary Phase</small></a>
+</div>
+</main>
+</div>
+<footer class="footer">TOGAF Study Hub — Study Chapter 5 — ADM Introduction</footer>
+</div>
+<script>
+  const body=document.body;
+  const sidebar=document.getElementById('sidebar');
+  const menuBtn=document.getElementById('menuBtn');
+  const themeBtn=document.getElementById('themeBtn');
+  const checks=[...document.querySelectorAll('.section-check')];
+  const progressFill=document.getElementById('progressFill');
+  const progressText=document.getElementById('progressText');
+  const themeKey='togaf-chapter-5-theme';
+
+  body.setAttribute('data-theme',localStorage.getItem(themeKey)||'light');
+  themeBtn?.addEventListener('click',()=>{
+    const next=body.getAttribute('data-theme')==='dark'?'light':'dark';
+    body.setAttribute('data-theme',next);
+    localStorage.setItem(themeKey,next);
+  });
+  menuBtn?.addEventListener('click',()=>sidebar?.classList.toggle('open'));
+  document.querySelectorAll('.sidebar a').forEach(a=>a.addEventListener('click',()=>sidebar?.classList.remove('open')));
+  document.querySelectorAll('.section-head').forEach(h=>h.addEventListener('click',()=>h.closest('.section-card')?.classList.toggle('collapsed')));
+
+  function updateProgress(){
+    const done=checks.filter(c=>c.checked).length;
+    const pct=checks.length?Math.round(done/checks.length*100):0;
+    progressFill.style.width=pct+'%';
+    progressText.textContent=pct+'% مكتمل — '+done+' من '+checks.length;
+  }
+  checks.forEach(c=>{
+    const key='togaf-chapter-5-progress-'+c.dataset.id;
+    c.checked=localStorage.getItem(key)==='1';
+    c.addEventListener('change',()=>{
+      localStorage.setItem(key,c.checked?'1':'0');
+      updateProgress();
+    });
+  });
+  updateProgress();
+
+  document.addEventListener('click',e=>{
+    const btn=e.target.closest('.answer-btn');
+    if(!btn)return;
+    const quiz=btn.closest('.quiz');
+    if(!quiz||quiz.classList.contains('answered'))return;
+    const answer=Number(quiz.dataset.answer),idx=Number(btn.dataset.index);
+    quiz.classList.add('answered');
+    btn.classList.add(idx===answer?'correct':'wrong');
+    if(idx!==answer)quiz.querySelector(`.answer-btn[data-index="${answer}"]`)?.classList.add('correct');
+  });
+
+  const search=document.getElementById('search');
+  function clearMarks(root){
+    root.querySelectorAll('mark').forEach(m=>m.replaceWith(document.createTextNode(m.textContent)));
+    root.normalize();
+  }
+  function highlightTerm(root,q){
+    const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[];
+    while(walker.nextNode())nodes.push(walker.currentNode);
+    nodes.forEach(node=>{
+      if(!node.nodeValue.trim()||node.parentElement.closest('script,style,mark'))return;
+      const value=node.nodeValue,lower=value.toLowerCase(),query=q.toLowerCase();
+      let cursor=0,index=lower.indexOf(query);
+      if(index<0)return;
+      const frag=document.createDocumentFragment();
+      while(index>=0){
+        frag.append(value.slice(cursor,index));
+        const mark=document.createElement('mark');
+        mark.textContent=value.slice(index,index+q.length);
+        frag.append(mark);
+        cursor=index+q.length;
+        index=lower.indexOf(query,cursor);
+      }
+      frag.append(value.slice(cursor));
+      node.replaceWith(frag);
+    });
+  }
+  search?.addEventListener('input',()=>{
+    const q=search.value.trim();
+    document.querySelectorAll('.section-card').forEach(card=>{
+      clearMarks(card);
+      if(!q){card.style.display='';return;}
+      const match=card.textContent.toLowerCase().includes(q.toLowerCase());
+      card.style.display=match?'':'none';
+      if(match){card.classList.remove('collapsed');highlightTerm(card,q);}
+    });
+  });
+
+  const sectionIds=[...document.querySelectorAll('.section-card[id]')].map(x=>x.id);
+  const links=[...document.querySelectorAll('.sidebar a[href^="#"]')];
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+    if(entry.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));
+  }),{rootMargin:'-25% 0px -65% 0px'});
+  sectionIds.forEach(id=>{const el=document.getElementById(id);if(el)observer.observe(el);});
+</script>
+<script src="assets/core.js"></script></body>
+</html>

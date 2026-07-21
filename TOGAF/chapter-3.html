@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="الفصل الثالث: Core Concepts — TOGAF Study Hub" name="description"/>
+<title>الفصل الثالث: Core Concepts | TOGAF Study Hub</title>
+<style>
+
+    :root{
+      --bg:#f4f7fb;
+      --surface:#ffffff;
+      --surface-2:#eef3f8;
+      --text:#16202a;
+      --muted:#5f6b76;
+      --primary:#0f6b68;
+      --primary-2:#0b4d4b;
+      --accent:#d99b2b;
+      --border:#dbe4ec;
+      --shadow:0 12px 35px rgba(20,41,61,.10);
+      --success:#2e7d32;
+      --danger:#a33b20;
+      --code:#0f1720;
+      --sidebar-w:320px;
+    }
+
+    [data-theme="dark"]{
+      --bg:#0d1319;
+      --surface:#151d25;
+      --surface-2:#1b2630;
+      --text:#edf4f8;
+      --muted:#aebbc5;
+      --primary:#62c5c0;
+      --primary-2:#9ae2de;
+      --accent:#f1bd5d;
+      --border:#2a3946;
+      --shadow:0 14px 38px rgba(0,0,0,.32);
+      --success:#7bd77f;
+      --danger:#ff9c7f;
+      --code:#0a0f14;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:"Segoe UI",Tahoma,Arial,sans-serif;
+      line-height:1.95;
+    }
+
+    a{color:inherit}
+    button,input{font:inherit}
+
+    .app{min-height:100vh}
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      height:70px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:0 20px;
+      background:color-mix(in srgb, var(--surface) 92%, transparent);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--border);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:240px;
+    }
+
+    .brand-mark{
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(145deg,var(--primary),var(--primary-2));
+      color:#fff;
+      font-weight:800;
+      letter-spacing:.5px;
+      box-shadow:var(--shadow);
+    }
+
+    .brand h1{
+      font-size:1.05rem;
+      margin:0;
+      line-height:1.25;
+    }
+
+    .brand small{color:var(--muted)}
+
+    .search-wrap{
+      flex:1;
+      max-width:720px;
+      margin-inline:auto;
+      position:relative;
+    }
+
+    #search{
+      width:100%;
+      border:1px solid var(--border);
+      background:var(--surface-2);
+      color:var(--text);
+      padding:11px 45px 11px 14px;
+      border-radius:14px;
+      outline:none;
+    }
+
+    .search-icon{
+      position:absolute;
+      right:15px;
+      top:50%;
+      transform:translateY(-50%);
+      color:var(--muted);
+    }
+
+    .top-actions{display:flex;gap:8px}
+
+    .icon-btn,.primary-btn{
+      border:1px solid var(--border);
+      background:var(--surface);
+      color:var(--text);
+      border-radius:12px;
+      padding:9px 12px;
+      cursor:pointer;
+      transition:.2s ease;
+    }
+
+    .icon-btn:hover,.primary-btn:hover{
+      transform:translateY(-1px);
+      box-shadow:0 7px 20px rgba(0,0,0,.08);
+    }
+
+    .primary-btn{
+      background:var(--primary);
+      color:#fff;
+      border-color:transparent;
+    }
+
+    .layout{
+      display:grid;
+      grid-template-columns:var(--sidebar-w) minmax(0,1fr);
+      min-height:calc(100vh - 70px);
+    }
+
+    .sidebar{
+      position:sticky;
+      top:70px;
+      height:calc(100vh - 70px);
+      overflow:auto;
+      padding:20px 16px 30px;
+      background:var(--surface);
+      border-left:1px solid var(--border);
+    }
+
+    .sidebar-section-title{
+      font-size:.82rem;
+      color:var(--muted);
+      margin:12px 10px 8px;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.6px;
+    }
+
+    .progress-card{
+      background:linear-gradient(145deg,var(--primary),var(--primary-2));
+      color:#fff;
+      border-radius:18px;
+      padding:16px;
+      margin-bottom:18px;
+    }
+
+    .progress-card p{margin:0 0 8px}
+    .progress-bar{
+      height:8px;
+      border-radius:99px;
+      background:rgba(255,255,255,.25);
+      overflow:hidden;
+    }
+    .progress-bar span{
+      display:block;
+      height:100%;
+      width:0%;
+      background:#fff;
+      transition:.35s ease;
+    }
+
+    .chapter-link{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+      padding:10px 12px;
+      margin:4px 0;
+      border-radius:12px;
+      color:var(--muted);
+      transition:.2s ease;
+    }
+
+    .chapter-link:hover,.chapter-link.active{
+      background:var(--surface-2);
+      color:var(--primary);
+    }
+
+    .chapter-link .num{
+      width:29px;
+      height:29px;
+      border-radius:9px;
+      display:grid;
+      place-items:center;
+      background:var(--surface-2);
+      border:1px solid var(--border);
+      font-weight:800;
+      font-size:.82rem;
+      flex:none;
+    }
+
+    .chapter-link.locked{opacity:.64}
+    .chapter-link small{display:block;color:var(--muted);font-size:.73rem}
+
+    .content{
+      width:min(1120px,100%);
+      margin:0 auto;
+      padding:32px 28px 80px;
+    }
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border-radius:28px;
+      background:
+        radial-gradient(circle at 15% 15%,rgba(255,255,255,.16),transparent 32%),
+        linear-gradient(135deg,#0b4d4b,#0f6b68 55%,#153d52);
+      color:#fff;
+      padding:44px;
+      box-shadow:var(--shadow);
+      margin-bottom:28px;
+    }
+
+    .hero:after{
+      content:"EA";
+      position:absolute;
+      left:28px;
+      bottom:-35px;
+      font-size:9rem;
+      font-weight:900;
+      color:rgba(255,255,255,.07);
+      line-height:1;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      background:rgba(255,255,255,.13);
+      border:1px solid rgba(255,255,255,.22);
+      padding:5px 12px;
+      border-radius:999px;
+      font-size:.84rem;
+      margin-bottom:12px;
+    }
+
+    .hero h2{
+      font-size:clamp(2rem,5vw,3.6rem);
+      line-height:1.2;
+      margin:0 0 12px;
+    }
+
+    .hero p{
+      max-width:760px;
+      margin:0;
+      color:rgba(255,255,255,.86);
+      font-size:1.04rem;
+    }
+
+    .hero-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:22px;
+    }
+
+    .pill{
+      padding:7px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.18);
+      font-size:.82rem;
+    }
+
+    .notice{
+      border:1px solid color-mix(in srgb,var(--accent) 40%,var(--border));
+      border-right:5px solid var(--accent);
+      background:color-mix(in srgb,var(--accent) 10%,var(--surface));
+      padding:16px 18px;
+      border-radius:15px;
+      margin:22px 0;
+    }
+
+    .chapter-header{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:16px;
+      margin:34px 0 18px;
+    }
+
+    .chapter-header h2{margin:0;font-size:2rem;line-height:1.3}
+    .chapter-header p{margin:4px 0 0;color:var(--muted)}
+    .chapter-badge{
+      flex:none;
+      border-radius:14px;
+      padding:8px 12px;
+      color:var(--primary);
+      background:var(--surface-2);
+      border:1px solid var(--border);
+      font-weight:800;
+    }
+
+    .section-card{
+      scroll-margin-top:92px;
+      background:var(--surface);
+      border:1px solid var(--border);
+      border-radius:20px;
+      box-shadow:0 8px 25px rgba(20,41,61,.05);
+      margin:18px 0;
+      overflow:hidden;
+    }
+
+    .section-head{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:15px;
+      padding:21px 22px;
+      cursor:pointer;
+      background:linear-gradient(180deg,var(--surface),color-mix(in srgb,var(--surface-2) 45%,var(--surface)));
+    }
+
+    .section-head h3{margin:0;font-size:1.28rem}
+    .section-head .en{display:block;color:var(--primary);font-size:.9rem;margin-top:3px;direction:ltr;text-align:right}
+    .toggle{font-size:1.2rem;color:var(--muted);transition:.2s}
+
+    .section-card.collapsed .section-body{display:none}
+    .section-card.collapsed .toggle{transform:rotate(-90deg)}
+
+    .section-body{padding:4px 24px 26px}
+    .section-body h4{
+      color:var(--primary);
+      font-size:1.08rem;
+      margin-top:24px;
+      margin-bottom:6px;
+    }
+
+    .section-body p{margin:9px 0}
+    .section-body ul{padding-right:24px}
+    .section-body li{margin:5px 0}
+
+    .term{
+      direction:ltr;
+      unicode-bidi:isolate;
+      font-weight:700;
+      color:var(--primary);
+    }
+
+    .quote{
+      direction:ltr;
+      text-align:left;
+      background:var(--code);
+      color:#e9f4f4;
+      border-radius:14px;
+      padding:16px 18px;
+      margin:16px 0;
+      border-left:4px solid var(--accent);
+      font-family:Consolas,monospace;
+      line-height:1.65;
+    }
+
+    .diagram{
+      direction:ltr;
+      text-align:center;
+      background:var(--surface-2);
+      border:1px dashed var(--border);
+      border-radius:16px;
+      padding:18px;
+      margin:16px 0;
+      font-family:Consolas,monospace;
+      white-space:pre-line;
+      line-height:1.7;
+      overflow:auto;
+    }
+
+    .comparison{
+      width:100%;
+      border-collapse:collapse;
+      margin:16px 0;
+      overflow:hidden;
+      border-radius:14px;
+    }
+    .comparison th,.comparison td{
+      border:1px solid var(--border);
+      padding:12px;
+      text-align:right;
+      vertical-align:top;
+    }
+    .comparison th{background:var(--surface-2);color:var(--primary)}
+
+    .exam-box,.example-box,.memory-box{
+      margin:17px 0;
+      border-radius:15px;
+      padding:16px 18px;
+    }
+    .exam-box{
+      background:color-mix(in srgb,var(--primary) 9%,var(--surface));
+      border:1px solid color-mix(in srgb,var(--primary) 30%,var(--border));
+    }
+    .example-box{
+      background:color-mix(in srgb,var(--success) 8%,var(--surface));
+      border:1px solid color-mix(in srgb,var(--success) 28%,var(--border));
+    }
+    .memory-box{
+      background:color-mix(in srgb,var(--accent) 10%,var(--surface));
+      border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
+    }
+
+    .check-row{
+      display:flex;
+      align-items:center;
+      gap:9px;
+      padding:12px 22px 18px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:.9rem;
+    }
+    .check-row input{width:18px;height:18px;accent-color:var(--primary)}
+
+    .quiz{
+      background:var(--surface-2);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:16px;
+      margin:14px 0;
+    }
+    .quiz h4{margin-top:0;color:var(--text)}
+    .options{display:grid;gap:8px}
+    .answer-btn{
+      text-align:right;
+      border:1px solid var(--border);
+      background:var(--surface);
+      color:var(--text);
+      border-radius:11px;
+      padding:10px 12px;
+      cursor:pointer;
+    }
+    .answer-btn.correct{border-color:var(--success);background:color-mix(in srgb,var(--success) 11%,var(--surface))}
+    .answer-btn.wrong{border-color:var(--danger);background:color-mix(in srgb,var(--danger) 10%,var(--surface))}
+    .explanation{display:none;margin-top:10px;color:var(--muted)}
+    .quiz.answered .explanation{display:block}
+
+    .future-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+      margin-top:20px;
+    }
+    .future-card{
+      border:1px solid var(--border);
+      background:var(--surface);
+      border-radius:17px;
+      padding:16px;
+    }
+    .future-card strong{color:var(--primary)}
+    .future-card p{margin:3px 0;color:var(--muted);font-size:.9rem}
+
+    .footer{
+      text-align:center;
+      color:var(--muted);
+      padding:28px 15px 50px;
+      border-top:1px solid var(--border);
+    }
+
+    mark{
+      background:#ffe48a;
+      color:#1a1a1a;
+      border-radius:4px;
+      padding:0 2px;
+    }
+
+    .mobile-menu{display:none}
+
+
+    /* Chapter 2 visual learning diagrams */
+    .hero.chapter-two{
+      margin-top:46px;
+      background:
+        radial-gradient(circle at 85% 12%,rgba(255,255,255,.16),transparent 30%),
+        linear-gradient(135deg,#173d5c,#155a6f 52%,#0f6b68);
+    }
+
+    .source-note{
+      color:var(--muted);
+      font-size:.86rem;
+      margin-top:12px;
+    }
+
+    .visual-title{
+      display:flex;
+      align-items:center;
+      gap:9px;
+      margin:22px 0 11px;
+      color:var(--primary);
+      font-weight:800;
+    }
+
+    .visual-title:before{
+      content:"";
+      width:10px;
+      height:10px;
+      border-radius:3px;
+      background:var(--accent);
+      flex:none;
+    }
+
+    .doc-ecosystem{
+      direction:ltr;
+      display:grid;
+      gap:14px;
+      padding:18px;
+      margin:18px 0;
+      border-radius:22px;
+      border:1px solid var(--border);
+      background:var(--surface-2);
+    }
+
+    .ecosystem-layer{
+      border:2px solid color-mix(in srgb,var(--primary) 38%,var(--border));
+      border-radius:20px;
+      padding:15px;
+      background:var(--surface);
+      text-align:center;
+    }
+
+    .ecosystem-layer > strong{
+      display:block;
+      color:var(--primary);
+      font-size:1.02rem;
+      margin-bottom:10px;
+    }
+
+    .ecosystem-standard{
+      display:grid;
+      grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);
+      gap:12px;
+      width:min(780px,100%);
+      margin:0 auto 12px;
+    }
+
+    .ecosystem-box{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:105px;
+      border-radius:15px;
+      padding:14px;
+      border:1px solid var(--border);
+      background:linear-gradient(145deg,color-mix(in srgb,var(--primary) 12%,var(--surface)),var(--surface));
+      color:var(--text);
+      font-weight:800;
+    }
+
+    .ecosystem-box.series{
+      background:linear-gradient(145deg,color-mix(in srgb,#7b4fa3 14%,var(--surface)),var(--surface));
+    }
+
+    .resource-strip{
+      display:grid;
+      grid-template-columns:repeat(5,minmax(0,1fr));
+      gap:8px;
+      margin-top:10px;
+    }
+
+    .resource-chip{
+      min-height:68px;
+      display:grid;
+      place-items:center;
+      padding:8px;
+      border-radius:12px;
+      background:var(--surface-2);
+      border:1px solid var(--border);
+      color:var(--muted);
+      font-size:.78rem;
+      font-weight:700;
+    }
+
+    .standard-system{
+      direction:ltr;
+      position:relative;
+      display:grid;
+      grid-template-columns:150px minmax(0,1fr) 150px;
+      gap:14px;
+      align-items:stretch;
+      padding:18px;
+      margin:18px 0;
+      border:1px solid var(--border);
+      border-radius:22px;
+      background:var(--surface-2);
+    }
+
+    .driver-rail{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      gap:8px;
+      padding:14px;
+      border-radius:16px;
+      background:linear-gradient(180deg,var(--primary-2),var(--primary));
+      color:#fff;
+      font-weight:800;
+      min-height:440px;
+      writing-mode:vertical-rl;
+      transform:rotate(180deg);
+    }
+
+    .standard-core{
+      display:grid;
+      grid-template-areas:
+        "concepts concepts concepts"
+        "content adm applying"
+        "techniques adm applying"
+        "governance governance governance"
+        "guides guides guides";
+      gap:10px;
+      min-width:0;
+    }
+
+    .core-node{
+      border:1px solid var(--border);
+      border-radius:15px;
+      padding:13px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:76px;
+      text-align:center;
+      background:var(--surface);
+      box-shadow:0 5px 15px rgba(20,41,61,.05);
+    }
+
+    .core-node strong{color:var(--primary)}
+    .core-node small{color:var(--muted)}
+    .node-concepts{grid-area:concepts}
+    .node-content{grid-area:content}
+    .node-adm{
+      grid-area:adm;
+      min-height:164px;
+      background:linear-gradient(145deg,var(--primary),var(--primary-2));
+      color:#fff;
+    }
+    .node-adm strong,.node-adm small{color:#fff}
+    .node-applying{grid-area:applying}
+    .node-techniques{grid-area:techniques}
+    .node-governance{grid-area:governance}
+    .node-guides{
+      grid-area:guides;
+      background:linear-gradient(145deg,color-mix(in srgb,#7b4fa3 18%,var(--surface)),var(--surface));
+    }
+
+    .flow-caption{
+      direction:rtl;
+      text-align:center;
+      padding:10px 14px;
+      margin-top:10px;
+      border-radius:12px;
+      color:var(--muted);
+      background:var(--surface);
+      border:1px dashed var(--border);
+    }
+
+    .six-docs{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:13px;
+      margin:17px 0;
+    }
+
+    .doc-card{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--border);
+      background:var(--surface);
+      border-radius:17px;
+      padding:17px 17px 17px 58px;
+      min-height:150px;
+    }
+
+    .doc-card .doc-no{
+      position:absolute;
+      left:13px;
+      top:14px;
+      width:34px;
+      height:34px;
+      display:grid;
+      place-items:center;
+      border-radius:11px;
+      background:var(--primary);
+      color:#fff;
+      font-weight:900;
+    }
+
+    .doc-card h5{
+      direction:ltr;
+      text-align:left;
+      color:var(--primary);
+      margin:0 0 6px;
+      font-size:.98rem;
+    }
+
+    .doc-card p{font-size:.9rem;color:var(--muted);line-height:1.7}
+
+    .adoption-path{
+      direction:ltr;
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:10px;
+      align-items:center;
+      margin:18px 0;
+    }
+
+    .path-step{
+      position:relative;
+      min-height:120px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:13px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background:var(--surface-2);
+    }
+
+    .path-step:not(:last-child):after{
+      content:"→";
+      position:absolute;
+      right:-18px;
+      top:50%;
+      transform:translateY(-50%);
+      width:26px;
+      height:26px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:var(--primary);
+      color:#fff;
+      z-index:3;
+      font-weight:900;
+    }
+
+    .path-step strong{color:var(--primary);margin-bottom:5px}
+    .path-step small{color:var(--muted)}
+
+    .standard-vs-library{
+      display:grid;
+      grid-template-columns:1fr 74px 1fr;
+      gap:14px;
+      align-items:stretch;
+      margin:18px 0;
+    }
+
+    .svl-card{
+      border-radius:18px;
+      border:1px solid var(--border);
+      background:var(--surface);
+      padding:18px;
+    }
+
+    .svl-card h5{
+      direction:ltr;
+      text-align:left;
+      margin:0 0 8px;
+      color:var(--primary);
+      font-size:1.05rem;
+    }
+
+    .svl-card ul{margin-bottom:0}
+    .svl-plus{
+      display:grid;
+      place-items:center;
+      font-size:2rem;
+      color:var(--accent);
+      font-weight:900;
+    }
+
+    .guide-cloud{
+      display:flex;
+      flex-wrap:wrap;
+      gap:9px;
+      margin:16px 0;
+    }
+
+    .guide-tag{
+      border:1px solid var(--border);
+      background:var(--surface-2);
+      border-radius:999px;
+      padding:8px 12px;
+      color:var(--text);
+      font-size:.86rem;
+    }
+
+    .continuum{
+      direction:ltr;
+      display:grid;
+      grid-template-columns:repeat(6,minmax(125px,1fr));
+      gap:8px;
+      overflow-x:auto;
+      padding:16px 4px 22px;
+      margin:18px 0;
+    }
+
+    .continuum-item{
+      position:relative;
+      min-height:176px;
+      border-radius:18px;
+      padding:14px 11px;
+      border:1px solid var(--border);
+      background:var(--surface);
+      text-align:center;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      box-shadow:0 8px 20px rgba(20,41,61,.05);
+    }
+
+    .continuum-item:not(:last-child):after{
+      content:"›";
+      position:absolute;
+      right:-10px;
+      top:50%;
+      transform:translateY(-50%);
+      color:var(--primary);
+      font-size:1.7rem;
+      font-weight:900;
+      z-index:4;
+    }
+
+    .continuum-item .ci-no{
+      width:34px;
+      height:34px;
+      border-radius:50%;
+      margin:0 auto 9px;
+      display:grid;
+      place-items:center;
+      background:var(--primary);
+      color:#fff;
+      font-weight:900;
+    }
+
+    .continuum-item strong{color:var(--primary);font-size:.89rem}
+    .continuum-item small{color:var(--muted);margin-top:7px;line-height:1.5}
+
+    .layered-equation{
+      direction:ltr;
+      display:grid;
+      grid-template-columns:1fr auto 1fr auto 1.15fr;
+      gap:9px;
+      align-items:center;
+      margin:18px 0;
+    }
+
+    .equation-box{
+      min-height:92px;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:12px;
+      border-radius:15px;
+      border:1px solid var(--border);
+      background:var(--surface-2);
+      font-weight:800;
+    }
+
+    .equation-symbol{
+      font-size:1.8rem;
+      color:var(--accent);
+      font-weight:900;
+    }
+
+    .trap-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:11px;
+      margin:16px 0;
+    }
+
+    .trap-card{
+      border:1px solid var(--border);
+      border-radius:15px;
+      padding:14px;
+      background:var(--surface);
+    }
+    .trap-card b{display:block;color:var(--danger);margin-bottom:4px}
+    .trap-card span{color:var(--muted)}
+
+
+    /* Chapter 3 visual components */
+    .hero.chapter-three{margin-top:46px;background:radial-gradient(circle at 18% 20%,rgba(255,255,255,.15),transparent 28%),radial-gradient(circle at 88% 75%,rgba(217,155,43,.18),transparent 32%),linear-gradient(135deg,#30275d,#155a6f 55%,#0f6b68)}
+    .c3-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin:18px 0}
+    .c3-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.c3-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .c3-card{border:1px solid var(--border);border-radius:17px;padding:15px;background:var(--surface);min-height:120px}
+    .c3-card h5{margin:0 0 7px;color:var(--primary);font-size:.98rem}.c3-card p,.c3-card li{font-size:.85rem;line-height:1.6;color:var(--muted)}
+    .c3-card.accent{background:linear-gradient(145deg,color-mix(in srgb,var(--primary) 11%,var(--surface)),var(--surface))}
+    .c3-flow{direction:ltr;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:18px 0;overflow-x:auto;padding-bottom:8px}
+    .c3-step{position:relative;min-width:125px;min-height:125px;border:1px solid var(--border);border-radius:16px;padding:12px;text-align:center;background:var(--surface);display:flex;flex-direction:column;justify-content:center}
+    .c3-step:not(:last-child):after{content:'›';position:absolute;right:-11px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:1.7rem;font-weight:900;z-index:4}
+    .c3-step strong{color:var(--primary);font-size:.86rem}.c3-step small{color:var(--muted);font-size:.73rem;line-height:1.4;margin-top:5px}
+    .c3-stack{display:flex;flex-direction:column;align-items:center;gap:9px;margin:20px auto;width:min(850px,100%)}
+    .c3-layer{border:1px solid var(--border);border-radius:15px;padding:14px;text-align:center;background:var(--surface)}
+    .c3-layer strong{color:var(--primary)}.c3-layer small{display:block;color:var(--muted);margin-top:4px;line-height:1.45}
+    .c3-l1{width:55%}.c3-l2{width:70%}.c3-l3{width:85%}.c3-l4{width:100%;background:linear-gradient(145deg,color-mix(in srgb,var(--primary) 10%,var(--surface)),var(--surface))}
+    .c3-badge{display:inline-grid;place-items:center;width:37px;height:37px;border-radius:50%;background:var(--primary);color:#fff;margin-left:8px;font-weight:900}
+    .c3-adm{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin:18px 0;direction:ltr}
+    .c3-adm .c3-step:nth-child(1){grid-column:1/-1;background:linear-gradient(145deg,var(--primary),var(--primary-2));color:#fff;min-height:85px}.c3-adm .c3-step:nth-child(1) strong,.c3-adm .c3-step:nth-child(1) small{color:#fff}
+    .c3-adm .requirements{grid-column:2/5;background:color-mix(in srgb,var(--accent) 13%,var(--surface));min-height:85px}
+    .c3-split{display:grid;grid-template-columns:1.3fr .7fr;gap:13px;margin:18px 0}.c3-lane{border:1px solid var(--border);border-radius:18px;padding:14px;background:var(--surface-2)}.c3-lane>h5{margin:0 0 9px;color:var(--primary)}
+    .c3-service{border:1px solid var(--border);border-radius:13px;padding:11px;background:var(--surface);margin:8px 0}.c3-service strong{display:block;color:var(--primary);direction:ltr;text-align:left}.c3-service p{font-size:.82rem;color:var(--muted);line-height:1.5;margin:4px 0}
+    .c3-product{display:grid;grid-template-columns:1fr 55px 1fr 55px 1fr;gap:8px;align-items:center;margin:18px 0}.c3-arrow{display:grid;place-items:center;color:var(--accent);font-weight:900;font-size:1.2rem}
+    .c3-track{direction:ltr;display:grid;grid-template-columns:150px repeat(4,1fr);gap:7px;margin:14px 0;overflow-x:auto}.c3-track div{min-width:120px;border:1px solid var(--border);border-radius:11px;padding:10px;text-align:center;background:var(--surface);font-size:.78rem}.c3-track .head{background:var(--primary);color:#fff;font-weight:800}.c3-track .row{background:var(--surface-2);color:var(--primary);font-weight:800;text-align:left}
+    .c3-repo{display:grid;grid-template-columns:.8fr 1.7fr;gap:12px;margin:18px 0}.c3-meta{border-radius:18px;padding:16px;background:linear-gradient(145deg,var(--primary),var(--primary-2));color:#fff;display:grid;place-items:center;text-align:center}.c3-repo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+    .c3-framework{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-areas:'context context context context' 'business data application technology' 'realization realization realization realization' 'change change change change';gap:8px;margin:18px 0}.c3-cf{border:1px solid var(--border);border-radius:14px;padding:12px;text-align:center;background:var(--surface);min-height:80px;display:flex;flex-direction:column;justify-content:center}.c3-cf strong{color:var(--primary);font-size:.84rem}.c3-cf small{color:var(--muted);font-size:.71rem;line-height:1.35}.cf-context{grid-area:context}.cf-business{grid-area:business}.cf-data{grid-area:data}.cf-app{grid-area:application}.cf-tech{grid-area:technology}.cf-real{grid-area:realization}.cf-change{grid-area:change}
+    .c3-tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.c3-tags span{border:1px solid var(--border);border-radius:999px;padding:7px 10px;background:var(--surface-2);font-size:.8rem}
+    .c3-network{direction:ltr;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}.c3-node{border:1px solid var(--border);border-radius:14px;padding:13px;text-align:center;background:var(--surface);min-height:92px;display:flex;flex-direction:column;justify-content:center;color:var(--primary);font-weight:800}.c3-node small{color:var(--muted);font-weight:400;margin-top:4px;line-height:1.35}
+    .c3-risk{display:grid;grid-template-columns:1fr 70px 1fr;gap:10px;align-items:center;margin:18px 0}.c3-risk .c3-card{text-align:center}.c3-risk-arrow{display:grid;place-items:center;color:var(--accent);font-size:1.4rem;font-weight:900}
+    @media(max-width:950px){.c3-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.c3-grid.three{grid-template-columns:1fr}.c3-adm{grid-template-columns:repeat(2,minmax(0,1fr))}.c3-adm .c3-step:nth-child(1),.c3-adm .requirements{grid-column:1/-1}.c3-repo{grid-template-columns:1fr}}
+    @media(max-width:720px){.c3-grid,.c3-grid.two,.c3-grid.three,.c3-split,.c3-repo-grid,.c3-network,.c3-risk{grid-template-columns:1fr}.c3-product{grid-template-columns:1fr}.c3-arrow,.c3-risk-arrow{transform:rotate(90deg);min-height:34px}.c3-adm{grid-template-columns:1fr}.c3-framework{grid-template-columns:1fr;grid-template-areas:'context' 'business' 'data' 'application' 'technology' 'realization' 'change'}.c3-flow{grid-template-columns:1fr;overflow:visible}.c3-step:not(:last-child):after{content:'↓';right:50%;top:auto;bottom:-20px;transform:translateX(50%)}.c3-l1,.c3-l2,.c3-l3,.c3-l4{width:100%}}
+
+    @media(max-width:900px){
+      .standard-system{grid-template-columns:1fr}
+      .driver-rail{
+        min-height:auto;
+        writing-mode:horizontal-tb;
+        transform:none;
+      }
+      .ecosystem-standard,.six-docs,.standard-vs-library,.trap-grid{grid-template-columns:1fr}
+      .resource-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .svl-plus{min-height:40px}
+      .adoption-path{grid-template-columns:1fr}
+      .path-step:not(:last-child):after{
+        content:"↓";
+        right:50%;
+        top:auto;
+        bottom:-18px;
+        transform:translateX(50%);
+      }
+      .layered-equation{grid-template-columns:1fr}
+      .equation-symbol{transform:rotate(90deg)}
+    }
+
+    @media(max-width:900px){
+      .layout{grid-template-columns:1fr}
+      .sidebar{
+        position:fixed;
+        z-index:1200;
+        top:70px;
+        right:0;
+        width:min(86vw,340px);
+        transform:translateX(105%);
+        transition:.25s ease;
+        box-shadow:var(--shadow);
+      }
+      .sidebar.open{transform:translateX(0)}
+      .mobile-menu{display:inline-flex}
+      .brand{min-width:unset}
+      .brand small{display:none}
+      .topbar{padding:0 12px}
+      .search-wrap{display:none}
+      .top-actions{margin-right:auto}
+      .content{padding:22px 14px 65px}
+      .hero{padding:30px 22px;border-radius:22px}
+      .future-grid{grid-template-columns:1fr}
+    }
+
+    @media print{
+      .topbar,.sidebar,.check-row,.top-actions,.notice{display:none!important}
+      .layout{display:block}
+      .content{width:100%;padding:0}
+      .section-card{box-shadow:none;break-inside:avoid}
+      .section-card.collapsed .section-body{display:block}
+      body{background:#fff;color:#111}
+      .hero{background:#0f6b68!important;print-color-adjust:exact}
+    }
+  
+
+    .home-link{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      text-decoration:none;
+      border:1px solid var(--border);
+      background:var(--surface);
+      color:var(--text);
+      padding:9px 12px;
+      border-radius:12px;
+      transition:.2s ease;
+    }
+    .home-link:hover{transform:translateY(-1px);box-shadow:0 7px 20px rgba(0,0,0,.08)}
+    .chapter-nav{
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      gap:12px;
+      align-items:center;
+      margin:30px 0 8px;
+    }
+    .chapter-nav a{
+      text-decoration:none;
+      border:1px solid var(--border);
+      background:var(--surface);
+      border-radius:15px;
+      padding:13px 15px;
+      color:var(--text);
+      transition:.2s ease;
+    }
+    .chapter-nav a:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+    .chapter-nav .next{text-align:left}
+    .chapter-nav .home{text-align:center;background:var(--primary);color:#fff;border-color:transparent}
+    .chapter-nav .disabled{opacity:.45;pointer-events:none}
+    .chapter-nav small{display:block;color:var(--muted);font-size:.75rem}
+    .chapter-nav .home small{color:rgba(255,255,255,.78)}
+    .index-hero{
+      background:
+        radial-gradient(circle at 15% 20%,rgba(255,255,255,.15),transparent 30%),
+        radial-gradient(circle at 85% 75%,rgba(217,155,43,.17),transparent 35%),
+        linear-gradient(135deg,#0b4d4b,#155a6f 55%,#30275d);
+    }
+    .chapter-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      margin:24px 0;
+    }
+    .chapter-card{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--border);
+      border-radius:22px;
+      padding:20px;
+      min-height:245px;
+      background:var(--surface);
+      box-shadow:0 9px 28px rgba(20,41,61,.06);
+      display:flex;
+      flex-direction:column;
+    }
+    .chapter-card:after{
+      content:attr(data-chapter);
+      position:absolute;
+      left:10px;
+      bottom:-25px;
+      font-size:8rem;
+      font-weight:900;
+      color:color-mix(in srgb,var(--primary) 7%,transparent);
+      line-height:1;
+    }
+    .chapter-card h3{margin:0;color:var(--primary);font-size:1.3rem}
+    .chapter-card .en-title{direction:ltr;text-align:left;color:var(--muted);font-size:.86rem;margin:4px 0 12px}
+    .chapter-card p{color:var(--muted);font-size:.9rem;line-height:1.7;flex:1}
+    .chapter-card a{
+      position:relative;
+      z-index:2;
+      display:inline-flex;
+      justify-content:center;
+      text-decoration:none;
+      background:var(--primary);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:12px;
+      font-weight:800;
+    }
+    .chapter-card.upcoming{opacity:.62}
+    .chapter-card.upcoming a{background:var(--surface-2);color:var(--muted);pointer-events:none}
+    .site-map{
+      display:grid;
+      grid-template-columns:1fr 44px 1fr 44px 1fr;
+      gap:10px;
+      align-items:center;
+      margin:25px 0;
+    }
+    .map-node{
+      min-height:105px;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:14px;
+      border:1px solid var(--border);
+      border-radius:17px;
+      background:var(--surface);
+      color:var(--primary);
+      font-weight:800;
+    }
+    .map-arrow{display:grid;place-items:center;color:var(--accent);font-size:1.7rem;font-weight:900}
+    .quick-note{
+      border-right:5px solid var(--primary);
+      border-radius:15px;
+      padding:16px;
+      background:var(--surface-2);
+      margin:18px 0;
+    }
+    @media(max-width:900px){
+      .chapter-grid{grid-template-columns:1fr}
+      .site-map{grid-template-columns:1fr}
+      .map-arrow{transform:rotate(90deg);min-height:30px}
+    }
+    @media(max-width:650px){
+      .chapter-nav{grid-template-columns:1fr}
+      .chapter-nav .next,.chapter-nav .home{text-align:center}
+    }
+
+  </style>
+<link href="manifest.webmanifest" rel="manifest"/><link href="assets/icon-192.png" rel="icon"/><link href="assets/platform.css" rel="stylesheet"/></head>
+<body data-theme="light">
+<div class="app">
+<header class="topbar">
+<button aria-label="فتح القائمة" class="icon-btn mobile-menu" id="menuBtn">☰</button>
+<div class="brand">
+<div class="brand-mark">TO</div>
+<div>
+<h1>الفصل الثالث: Core Concepts</h1>
+<small>Core Architecture Concepts</small>
+</div>
+</div>
+<div class="search-wrap">
+<span class="search-icon">⌕</span>
+<input id="search" placeholder="ابحث داخل الفصل..." type="search"/>
+</div>
+<div class="top-actions">
+<a class="home-link" href="index.html" title="الصفحة الرئيسية">⌂ الرئيسية</a>
+<button class="icon-btn" id="themeBtn" title="الوضع الليلي">◐</button>
+<button class="icon-btn" onclick="window.print()" title="طباعة أو حفظ PDF">⎙</button>
+</div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+<div class="progress-card">
+<p><strong>تقدمك في هذا الفصل</strong></p>
+<div class="progress-bar"><span id="progressFill"></span></div>
+<small id="progressText">0% مكتمل</small>
+</div>
+<div class="sidebar-section-title">التنقل</div>
+<a class="chapter-link" href="index.html"><span class="num">⌂</span><span>الصفحة الرئيسية<small>كل الفصول</small></span></a>
+<div class="sidebar-section-title">أقسام الفصل</div>
+<a class="chapter-link" href="#c3s1"><span class="num">1</span><span>1. TOGAF، معنى Architecture، والمجالات المعمارية</span></a><a class="chapter-link" href="#c3s2"><span class="num">2</span><span>2. Architecture Development Method — ADM</span></a><a class="chapter-link" href="#c3s3"><span class="num">3</span><span>3. Enterprise Architecture Services</span></a><a class="chapter-link" href="#c3s4"><span class="num">4</span><span>4. Deliverables، Artifacts، وBuilding Blocks</span></a><a class="chapter-link" href="#c3s5"><span class="num">5</span><span>5. Architecture Abstraction</span></a><a class="chapter-link" href="#c3s6"><span class="num">6</span><span>6. Architecture Principles</span></a><a class="chapter-link" href="#c3s7"><span class="num">7</span><span>7. Interoperability</span></a><a class="chapter-link" href="#c3s8"><span class="num">8</span><span>8. Enterprise Continuum</span></a><a class="chapter-link" href="#c3s9"><span class="num">9</span><span>9. Architecture Repository</span></a><a class="chapter-link" href="#c3s10"><span class="num">10</span><span>10. TOGAF Content Framework</span></a><a class="chapter-link" href="#c3s11"><span class="num">11</span><span>11. Enterprise Metamodel</span></a><a class="chapter-link" href="#c3s12"><span class="num">12</span><span>12. Establishing and Maintaining an EA Capability</span></a><a class="chapter-link" href="#c3s13"><span class="num">13</span><span>13. Architecture Capability ككيان تشغيلي والحوكمة</span></a><a class="chapter-link" href="#c3s14"><span class="num">14</span><span>14. استخدام TOGAF مع الأطر والمنهجيات الأخرى</span></a><a class="chapter-link" href="#c3s15"><span class="num">15</span><span>15. استخدام TOGAF مع Architecture Styles المختلفة</span></a><a class="chapter-link" href="#c3s16"><span class="num">16</span><span>16. Architecture Views and Viewpoints</span></a><a class="chapter-link" href="#c3s17"><span class="num">17</span><span>17. Enterprise Agility</span></a><a class="chapter-link" href="#c3s18"><span class="num">18</span><span>18. Risk Management</span></a><a class="chapter-link" href="#c3s19"><span class="num">19</span><span>19. مراجعة الفصل الثالث وأسئلة الامتحان</span></a>
+</aside>
+<main class="content">
+<section class="hero chapter-three" id="chapter-3">
+<span class="eyebrow">TOGAF Standard — Introduction and Core Concepts</span>
+<h2>الفصل الثالث: Core Concepts</h2>
+<p>الفصل المحوري الذي يجمع لغة TOGAF الأساسية: تعريف Architecture، المجالات الأربعة، ADM، خدمات المعمارية، المخرجات وBuilding Blocks، مستويات التجريد، المبادئ، Interoperability، Enterprise Continuum، Repository، Content Framework، Metamodel، Capability، Views، Agility، والمخاطر.</p>
+<div class="hero-meta"><span class="pill">Sections 3.1–3.19</span><span class="pill">Visual Explanations</span><span class="pill">Practical Examples</span><span class="pill">Exam Questions</span></div>
+</section><div class="chapter-header"><div><h2>Chapter 3 — Core Concepts</h2><p>المفاهيم التي تستخدم عبر جميع وثائق ومراحل TOGAF.</p></div><span class="chapter-badge">الفصل 3</span></div><article class="section-card" id="c3s1">
+<div class="section-head"><div><h3>1. TOGAF، معنى Architecture، والمجالات المعمارية</h3><span class="en">Sections 3.1–3.3 — Standard, Architecture, and Domains</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<h4>3.1 What is the TOGAF Standard?</h4>
+<p>TOGAF هو <span class="term">Architecture Framework</span> يساعد في قبول Enterprise Architecture داخل المؤسسة، وإنتاجها، واستخدامها، وصيانتها. يقوم على عملية تكرارية، وممارسات جيدة، وأصول معمارية قائمة يمكن إعادة استخدامها.</p>
+<div class="c3-grid"><div class="c3-card"><h5>Acceptance</h5><p>تحقيق فهم واعتماد المعمارية لدى أصحاب المصلحة.</p></div><div class="c3-card"><h5>Production</h5><p>تطوير Architecture Descriptions والمخرجات المنظمة.</p></div><div class="c3-card"><h5>Use</h5><p>توجيه القرار والتصميم والتنفيذ والحوكمة.</p></div><div class="c3-card"><h5>Maintenance</h5><p>إبقاؤها محدثة وملائمة مع تغير المؤسسة.</p></div></div>
+<h4>3.2 ما المقصود بـArchitecture في TOGAF؟</h4>
+<p>يعترف TOGAF بالتعريف المعياري الذي ينظر إلى Architecture بوصفها المفاهيم والخصائص الأساسية لنظام داخل بيئته، كما يستخدم معنى عمليًا يركز على بنية المكونات والعلاقات بينها والمبادئ التي تحكم تصميمها وتطورها.</p>
+<div class="c3-grid two"><div class="c3-card accent"><h5>Conceptual Meaning</h5><p>الخصائص الأساسية للنظام في بيئته: العناصر، العلاقات، ومبادئ التصميم والتطور.</p></div><div class="c3-card accent"><h5>Structural Meaning</h5><p>المكونات، علاقاتها، والقواعد والإرشادات التي تحكم تصميمها وتغيرها عبر الزمن.</p></div></div>
+<p>يتعامل TOGAF مع المؤسسة باعتبارها <strong>System</strong>، لكنه يوازن بين الدقة المعيارية واللغة العملية المألوفة للممارسين بدل الالتزام الحرفي بكل مصطلح في ISO.</p>
+<h4>3.3 المجالات الأربعة الأساسية</h4>
+<div class="c3-grid">
+<div class="c3-card"><h5>Business Architecture</h5><p>تحدد استراتيجية الأعمال، الحوكمة، التنظيم، القدرات، والعمليات الرئيسية.</p><ul><li>لماذا وكيف تعمل المؤسسة؟</li><li>من المسؤول؟</li><li>ما القيمة المطلوبة؟</li></ul></div>
+<div class="c3-card"><h5>Data Architecture</h5><p>تصف الأصول المنطقية والمادية للبيانات وموارد إدارتها.</p><ul><li>ما البيانات ومعناها؟</li><li>من يملكها؟</li><li>كيف تُدار وتُحفظ؟</li></ul></div>
+<div class="c3-card"><h5>Application Architecture</h5><p>توفر Blueprint للتطبيقات وتفاعلاتها وعلاقتها بعمليات الأعمال.</p><ul><li>ما الوظائف التطبيقية؟</li><li>كيف تتكامل؟</li><li>أي عملية يدعمها كل تطبيق؟</li></ul></div>
+<div class="c3-card"><h5>Technology Architecture</h5><p>تصف القدرات والمعايير التقنية الداعمة للأعمال والبيانات والتطبيقات.</p><ul><li>Cloud وInfrastructure</li><li>Networks وMiddleware</li><li>IoT وCommunications</li></ul></div>
+</div>
+<p>يمكن إنشاء مجالات متعددة الأبعاد بدمج Views من المجالات الأربعة، مثل Information Architecture وRisk and Security Architectures وDigital Architecture.</p>
+<div class="c3-tags"><span>Information Architecture</span><span>Security Architecture</span><span>Risk Architecture</span><span>Digital Architecture</span><span>Integration Architecture</span></div>
+<div class="exam-box"><strong>Exam Focus:</strong> المجالات الأساسية أربعة: Business، Data، Application، Technology. أما المجالات المركبة فتُبنى من Views مناسبة عبرها.</div>
+<p class="source-note">يغطي هذا القسم المحتوى الرسمي في الصفحات 15–16 من Chapter 3.</p>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s1" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s2">
+<div class="section-head"><div><h3>2. Architecture Development Method — ADM</h3><span class="en">Section 3.4 — Tested, Repeatable, Iterative Development</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>ADM هو قلب TOGAF الإجرائي: عملية مجربة وقابلة للتكرار لتطوير المعماريات والانتقال إليها وحوكمة تحقيقها. تعمل كدورة مستمرة لتعريف المعمارية وتحقيقها، بما يسمح بتحول محكوم استجابة لأهداف الأعمال والفرص.</p>
+<div class="c3-adm">
+<div class="c3-step"><strong>Preliminary Phase</strong><small>Architecture Capability، Tailoring، Principles</small></div>
+<div class="c3-step"><strong>A — Vision</strong><small>النطاق، Stakeholders، الرؤية والموافقة</small></div><div class="c3-step"><strong>B — Business</strong><small>معمارية الأعمال</small></div><div class="c3-step"><strong>C — Information Systems</strong><small>Data + Application</small></div><div class="c3-step"><strong>D — Technology</strong><small>المعمارية التقنية</small></div>
+<div class="c3-step"><strong>E — Opportunities &amp; Solutions</strong><small>التخطيط الأولي ووسائل تقديم الحل</small></div><div class="c3-step"><strong>F — Migration Planning</strong><small>خطة الانتقال التفصيلية</small></div><div class="c3-step"><strong>G — Implementation Governance</strong><small>الرقابة على التنفيذ</small></div><div class="c3-step"><strong>H — Change Management</strong><small>إدارة التغيير على المعمارية</small></div>
+<div class="c3-step requirements"><strong>Requirements Management</strong><small>عملية مستمرة تعمل عبر جميع مراحل ADM</small></div>
+</div>
+<h4>وظيفة كل مرحلة</h4>
+<div class="phase-list">
+<div class="phase-line"><span class="phase-code">P</span><div><strong>Preliminary</strong><span>تأسيس القدرة، تكييف TOGAF، وتحديد المبادئ.</span></div></div><div class="phase-line"><span class="phase-code">A</span><div><strong>Architecture Vision</strong><span>النطاق والرؤية وأصحاب المصلحة والموافقة.</span></div></div>
+<div class="phase-line"><span class="phase-code">B</span><div><strong>Business Architecture</strong><span>تطوير معمارية الأعمال الداعمة للرؤية.</span></div></div><div class="phase-line"><span class="phase-code">C</span><div><strong>Information Systems</strong><span>تطوير Data وApplication Architectures.</span></div></div>
+<div class="phase-line"><span class="phase-code">D</span><div><strong>Technology Architecture</strong><span>تحديد البيئة التقنية المطلوبة.</span></div></div><div class="phase-line"><span class="phase-code">E</span><div><strong>Opportunities &amp; Solutions</strong><span>تجميع الحلول وحزم التنفيذ والتخطيط الأولي.</span></div></div>
+<div class="phase-line"><span class="phase-code">F</span><div><strong>Migration Planning</strong><span>ترتيب المبادرات وإكمال Implementation and Migration Plan.</span></div></div><div class="phase-line"><span class="phase-code">G</span><div><strong>Implementation Governance</strong><span>ضمان توافق التنفيذ مع المعمارية.</span></div></div>
+<div class="phase-line"><span class="phase-code">H</span><div><strong>Change Management</strong><span>إدارة التغيير وتحديد الحاجة لدورة جديدة.</span></div></div><div class="phase-line"><span class="phase-code">R</span><div><strong>Requirements Management</strong><span>تسجيل وتحليل وتتبع المتطلبات طوال الدورة.</span></div></div>
+</div>
+<h4>ما الذي لا يفرضه ADM؟</h4><ul><li>لا يفرض تسلسلًا واحدًا ثابتًا في كل حالة.</li><li>لا يفرض Waterfall.</li><li>يمكن تكراره داخل المرحلة وبين المراحل وعبر دورات متعددة.</li><li>يجب تكييفه حسب المؤسسة وArchitecture Style.</li></ul>
+<div class="exam-box"><strong>Exam Trap:</strong> الشكل الدائري ليس Workflow جامدًا؛ هو Reference Model يوضح ما يجب إنجازه والعلاقات بين الأنشطة.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s2" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s3">
+<div class="section-head"><div><h3>3. Enterprise Architecture Services</h3><span class="en">Section 3.5 — ADM Activities Delivered as Services</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>يمكن تقديم أنشطة ADM في صورة خدمات منظمة. كل خدمة تستخدم الأنشطة المناسبة لمعالجة احتياج محدد، بصرف النظر عن نموذج تشغيل المؤسسة. أول أربع فئات موجهة للعملاء، والأخيرتان تركزان داخليًا على فريق المعمارية.</p>
+<div class="c3-split">
+<div class="c3-lane"><h5>Customer-Centric</h5>
+<div class="c3-service"><strong>Enterprise Support Services</strong><p>تحليل وأسئلة وتوصيات تدعم قرارات C-Level الاستراتيجية، ويمكن تقديمها خارج مشروع محدد.</p></div>
+<div class="c3-service"><strong>Design Support Services</strong><p>تدعم قرارات تصميم البرامج بعد التمويل، وتشمل Minimum Viable Architectures ومعايير الالتزام والRoadmaps.</p></div>
+<div class="c3-service"><strong>Development Support Services</strong><p>تدعم قرارات التطوير على مستوى المشروع أو المنتج أثناء التنفيذ، سواء Agile أو Waterfall.</p></div>
+<div class="c3-service"><strong>Requirements Elicitation &amp; Understanding</strong><p>تتجاوز إدارة المتطلبات لفهم الاحتياج الحقيقي والقيمة وموازنة Concerns أصحاب المصلحة.</p></div>
+</div>
+<div class="c3-lane"><h5>Internal-Centric</h5>
+<div class="c3-service"><strong>Architecture Planning Services</strong><p>تخطط مبادرات المعمارية وتحدد الموارد والجدول والعمل المطلوب منذ البداية.</p></div>
+<div class="c3-service"><strong>EA Practice Development Support</strong><p>تقيّم وتنمّي Architecture Capability: النضج والمهارات والتنظيم والعمليات.</p></div>
+</div>
+</div>
+<h4>Minimum Viable Architecture — MVA</h4><p>مستوى معماري كافٍ لاتخاذ قرار أو توجيه برنامج دون انتظار وصف شامل لكل المؤسسة. يجب أن يغطي المخاطر والقرارات والمعايير الأساسية للنطاق المعني.</p>
+<div class="exam-box">الفئات الأربع الأولى Customer-Centric. Architecture Planning وEA Practice Development أكثر ارتباطًا بتشغيل وتنمية وظيفة المعمارية.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s3" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s4">
+<div class="section-head"><div><h3>4. Deliverables، Artifacts، وBuilding Blocks</h3><span class="en">Section 3.6 — Work Products and Reusable Components</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>ينظم <span class="term">Architecture Content Framework</span> منتجات العمل المعماري حتى تُعرّف وتُعرض بصورة متسقة.</p>
+<div class="c3-product"><div class="c3-card"><h5>Deliverable</h5><p>منتج عمل محدد تعاقديًا يخضع للمراجعة الرسمية والموافقة والتوقيع.</p><p><strong>مثال:</strong> Architecture Definition Document.</p></div><div class="c3-arrow">يحتوي ←</div><div class="c3-card"><h5>Artifact</h5><p>يصف جانبًا من المعمارية. يصنف غالبًا إلى Catalog أو Matrix أو Diagram.</p></div><div class="c3-arrow">يصف ←</div><div class="c3-card"><h5>Building Block</h5><p>مكون محتمل لإعادة الاستخدام يمكن دمجه مع غيره لتكوين معماريات وحلول.</p></div></div>
+<table class="comparison"><tr><th>المفهوم</th><th>السؤال</th><th>الطبيعة</th></tr><tr><td>Deliverable</td><td>ما الذي سيُسلم ويُعتمد؟</td><td>منتج مشروع رسمي</td></tr><tr><td>Artifact</td><td>كيف نصف جانبًا من المعمارية؟</td><td>Catalog / Matrix / Diagram</td></tr><tr><td>Building Block</td><td>ما المكون أو القدرة؟</td><td>مكون قابل للتجميع وإعادة الاستخدام</td></tr></table>
+<h4>ABB مقابل SBB</h4><div class="c3-grid two"><div class="c3-card accent"><h5>Architecture Building Block — ABB</h5><p>يصف قدرة مطلوبة أو مكونًا منطقيًا ويشكل مواصفات الحل. مثال: Customer Service Capability.</p></div><div class="c3-card accent"><h5>Solution Building Block — SBB</h5><p>مكون فعلي أو محدد لتنفيذ القدرة، مثل Process أو Application أو Database أو Network أو Product.</p></div></div>
+<p>يتطور مستوى تفاصيل Building Block مع تقدم العمل: قد يبدأ باسم ووصف عام، ثم يتحلل إلى مكونات داعمة ومواصفات كاملة.</p>
+<div class="example-box"><strong>مثال:</strong> Architecture Definition Document يحتوي Process Flow وUse-Case Diagrams؛ هذه Artifacts تصف Target Process وActors كBuilding Blocks.</div>
+<div class="exam-box">Artifact قد يكون أو لا يكون Deliverable حسب العقد. والـDeliverable يمكن أن يحتوي عدة Artifacts.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s4" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s5">
+<div class="section-head"><div><h3>5. Architecture Abstraction</h3><span class="en">Section 3.7 — Contextual, Conceptual, Logical, Physical</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>التجريد تقنية لتقسيم المشكلة الكبيرة إلى أجزاء يسهل نمذجتها وحلها. تنتقل المستويات من النظرة العليا إلى التفاصيل، وتعبر مجالات Business وData وApplication وTechnology.</p>
+<div class="c3-stack"><div class="c3-layer c3-l1"><span class="c3-badge">Why</span><strong>Contextual</strong><small>السياق، النطاق، الدوافع، الأهداف، ولماذا بدأ العمل؟</small></div><div class="c3-layer c3-l2"><span class="c3-badge">What</span><strong>Conceptual</strong><small>ما الخدمات والسلوك المطلوب دون الانشغال المبكر بالتنفيذ؟</small></div><div class="c3-layer c3-l3"><span class="c3-badge">How</span><strong>Logical</strong><small>كيف ننظم الخدمات في مكونات مستقلة عن المنتج والتنفيذ؟</small></div><div class="c3-layer c3-l4"><span class="c3-badge">With What</span><strong>Physical</strong><small>بأي منتجات وتقنيات ومكونات فعلية نحقق التصميم المنطقي؟</small></div></div>
+<h4>Contextual</h4><p>يفهم البيئة والنطاق والدوافع والأهداف وArchitecture Drivers.</p>
+<h4>Conceptual</h4><p>يفكك المتطلبات لفهم ما المطلوب، وغالبًا يستخدم Service Models. يسمى أيضًا Service أو Behavior Abstraction.</p>
+<h4>Logical</h4><p>يحدد أنواع المكونات اللازمة وكيفية تنظيمها بصورة Implementation-Independent، وقد ينتج بدائل منطقية متعددة.</p>
+<h4>Physical</h4><p>يخصص منتجات وتقنيات ومكونات فعلية لتحقيق المكونات المنطقية، وقد ينتج بدائل تنفيذية متعددة.</p>
+<div class="example-box"><strong>مثال:</strong> Contextual: خدمة شراء وطنية. Conceptual: Ordering Service. Logical: Order Management Component. Physical: منتج ERP أو Cloud Service محدد.</div>
+<div class="exam-box">Why/What/How هنا لا ترتبط بطريقة استخدامها في Zachman Framework.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s5" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s6">
+<div class="section-head"><div><h3>6. Architecture Principles</h3><span class="en">Section 3.8 — Enduring Rules for Architecture Decisions</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>المبادئ قواعد وإرشادات عامة يُقصد أن تكون مستمرة ونادرة التعديل، وتدعم الطريقة التي تحقق بها المؤسسة رسالتها. قد توجد في مجالات ومستويات مختلفة.</p>
+<div class="c3-stack"><div class="c3-layer c3-l1"><strong>Enterprise Principles</strong><small>الحدود العليا لاتخاذ القرار وتحقيق رسالة المؤسسة</small></div><div class="c3-layer c3-l2"><strong>Segment / Subsidiary Principles</strong><small>مبادئ IT أو HR أو قطاع أو منطقة ضمن حدود المبادئ العليا</small></div><div class="c3-layer c3-l3"><strong>Architecture Principles</strong><small>توجه تطوير المعمارية وصيانتها واستخدامها والقرارات المستقبلية</small></div></div>
+<h4>Enterprise Principles</h4><p>توفر أساس القرار عبر المؤسسة وتوحّد الاتجاه، وهي عنصر رئيسي في Architecture Governance. يمكن أن تتفرع منها مبادئ قطاعية دون تجاوز حدودها.</p>
+<h4>Architecture Principles</h4><p>ترتبط بأعمال المعمارية، وتعكس توافقًا مؤسسيًا وروح Enterprise Principles. تحكم التطوير والصيانة والاستخدام وتحدد قواعد استخدام الموارد والأصول.</p>
+<ul><li>تشكل أساس القرارات المستقبلية.</li><li>يجب ربطها بأهداف الأعمال وArchitecture Drivers.</li><li>المستوى الأدنى يشرح الموروث من الأعلى ولا يتعارض معه.</li><li>قد تعيد صياغة إرشادات عامة في صورة فعالة لتوجيه Architecture Work.</li></ul>
+<div class="exam-box">يبدأ Hierarchy بـEnterprise Principles. Architecture Principles لا تستبدلها، بل تعكسها وتفصلها.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s6" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s7">
+<div class="section-head"><div><h3>7. Interoperability</h3><span class="en">Section 3.9 — Sharing Information and Services</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>Interoperability هي القدرة على مشاركة المعلومات والخدمات. لا يكفي القول إن الأنظمة “متكاملة”؛ يجب تحديد درجة المشاركة ونطاقها وضوابطها، خاصة داخل المؤسسات المعقدة والـExtended Enterprise.</p>
+<div class="c3-track"><div class="head">Dimension</div><div class="head">Business</div><div class="head">Information</div><div class="head">Technical</div><div class="head">Primary Question</div><div class="row">Meaning</div><div>كيف تعمل الوحدات والجهات معًا؟</div><div>كيف تُشارك المعلومات ومعانيها؟</div><div>كيف تتصل الموارد التقنية؟</div><div>ما مستوى المشاركة المطلوب؟</div><div class="row">Focus</div><div>Processes, roles, agreements</div><div>Semantics, quality, structures</div><div>Protocols, platforms, connectivity</div><div>Scope, security, responsibility</div></div>
+<h4>من منظور Enterprise Application Integration</h4><ul><li><strong>Presentation Interoperability:</strong> Portal أو تجربة موحدة تقود المستخدم إلى وظائف أنظمة مختلفة.</li><li><strong>Information Interoperability:</strong> مشاركة سلسة للمعلومات اعتمادًا على Ontology مشتركة وخدمات الجودة والوصول والخصوصية.</li><li><strong>Application Interoperability:</strong> مشاركة الوظائف لمنع التكرار وربطها عبر Workflow أو Services.</li><li><strong>Technical Interoperability:</strong> طرق وخدمات مشتركة للاتصال والتخزين والمعالجة والوصول.</li></ul>
+<h4>تطور Interoperability عبر ADM</h4>
+<div class="c3-flow"><div class="c3-step"><strong>Phase A</strong><small>كشف طبيعة التبادل واعتبارات الأمن.</small></div><div class="c3-step"><strong>Phase B</strong><small>تعريف التبادل بمصطلحات الأعمال.</small></div><div class="c3-step"><strong>Phase C</strong><small>تفصيل المحتوى وكيف تتشارك التطبيقات.</small></div><div class="c3-step"><strong>Phase D</strong><small>تحديد الآليات التقنية.</small></div><div class="c3-step"><strong>Phases E–F</strong><small>اختيار الحلول وإدراجها في خطة الهجرة.</small></div></div>
+<div class="memory-box">الأفضل أن تستخدم المؤسسة والـExtended Enterprise تعريفًا وتصنيفًا متسقين لـInteroperability حتى لا تختلف التوقعات بين الجهات.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s7" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s8">
+<div class="section-head"><div><h3>8. Enterprise Continuum</h3><span class="en">Section 3.10 — Generic to Organization-Specific Assets</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>Enterprise Continuum يضع السياق الأوسع للمعماري ويوضح كيف يمكن الاستفادة من معماريات وحلول عامة وتخصيصها لمؤسسة معينة. هو <strong>آلية تصنيف</strong> للأصول الموجودة في Enterprise Repositories، وليس مستودعًا ماديًا.</p>
+<div class="c3-track"><div class="head">Continuum</div><div class="head">Foundation</div><div class="head">Common</div><div class="head">Industry</div><div class="head">Organization-Specific</div><div class="row">Architecture</div><div>قواعد ونماذج عامة</div><div>Common System Patterns</div><div>Reference Architecture قطاعية</div><div>معمارية المؤسسة الفعلية</div><div class="row">Solutions</div><div>منتجات وخدمات عامة</div><div>حلول مشتركة</div><div>حلول قطاعية</div><div>حلول المؤسسة المنشورة</div></div>
+<h4>المفهومان المتكاملان</h4><ul><li><strong>Architecture Continuum:</strong> يصنف أوصاف ومكونات المعمارية من العام إلى الخاص.</li><li><strong>Solutions Continuum:</strong> يصنف الحلول والمنتجات من العام إلى الحل المؤسسي المنشور.</li></ul>
+<h4>اتجاهان للحركة</h4><ul><li><strong>Adaptation for Use:</strong> تخصيص أصل عام لمؤسسة أو قطاع أو مبادرة.</li><li><strong>Generalization for Re-use:</strong> تعميم أصل مؤسسي ليصبح صالحًا لإعادة الاستخدام مستقبلًا.</li></ul>
+<p>Repository يحفظ الموارد؛ Continuum يوفر بنية لتصنيفها وفهم موضعها من العام إلى الخاص. الأصول يمكن أن تكون داخلية من أعمال سابقة أو خارجية من الصناعة والموردين.</p>
+<div class="example-box"><strong>مثال:</strong> نموذج هوية عام → Reference Architecture حكومية → نمط للقطاع الصحي → تصميم IAM خاص بالهيئة.</div>
+<div class="exam-box">Enterprise Continuum ليس مكان التخزين؛ هو Classification Mechanism أو View للأصول.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s8" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s9">
+<div class="section-head"><div><h3>9. Architecture Repository</h3><span class="en">Section 3.11 — Storing and Governing Outputs</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>Architecture Repository يخزن فئات متعددة من المخرجات المعمارية وعلى مستويات تجريد مختلفة. يدعم التعاون والفهم وإعادة استخدام الموارد بدل إعادة إنشاء كل شيء.</p>
+<div class="c3-repo"><div class="c3-meta"><strong>Architecture Metamodel</strong><small>ينظم أنواع المحتوى والعلاقات</small></div><div class="c3-repo-grid"><div class="c3-card"><h5>Architecture Landscape</h5><p>تمثيل معماري للمؤسسة العاملة عند نقاط زمنية ومستويات تجريد مختلفة.</p></div><div class="c3-card"><h5>Standards Library</h5><p>المعايير والمنتجات والخدمات المشتركة التي تلتزم بها المعماريات الجديدة.</p></div><div class="c3-card"><h5>Reference Library</h5><p>قوالب وإرشادات وأنماط ومواد مرجعية لتسريع العمل.</p></div><div class="c3-card"><h5>Governance Repository</h5><p>سجل أنشطة وقرارات ومراجعات الحوكمة.</p></div><div class="c3-card"><h5>Requirements Repository</h5><p>المتطلبات المعمارية المعتمدة والمتفق عليها مع Architecture Board.</p></div><div class="c3-card"><h5>Solutions Landscape</h5><p>تمثيل SBBs المخطط لها أو المنشورة والتي تدعم Architecture Landscape.</p></div></div></div>
+<h4>دور ADM</h4><p>يمكن النظر إلى ADM كدورة حياة تعمل على مستويات متعددة تحت حوكمة شاملة، وتنتج مخرجات متوافقة تُحفظ في Repository ثم يعاد استخدامها في دورات لاحقة.</p>
+<h4>ليس مجرد مجلد ملفات</h4><p>المستودع الجيد يدعم التصنيف والعلاقات وVersioning والاعتماد والملكية والبحث وTraceability والوصول حسب الأدوار. قد يُنفذ بأداة EA أو عدة منصات، لكن المفهوم غير مرتبط بمنتج معين.</p>
+<div class="exam-box">Architecture Landscape يصف المعمارية العاملة؛ Solutions Landscape يركز على SBBs التي تحققها أو ستدعمها.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s9" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s10">
+<div class="section-head"><div><h3>10. TOGAF Content Framework</h3><span class="en">Sections 3.12.1–3.12.2 — Structuring Work Products</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>في Preliminary Phase يجب على المؤسسة تحديد طريقة تنظيم Architecture Descriptions والModels والArtifacts. هذا هو دور <span class="term">Content Framework</span>.</p>
+<h4>ما الذي يُعرّف عند تأسيس Capability؟</h4><ol><li>Content Framework لتصنيف المنتجات والنماذج.</li><li>Enterprise Metamodel لأنواع الكيانات والعلاقات.</li><li>Artifacts المحددة التي ستنتجها المؤسسة.</li></ol>
+<p>يتأثر الاختيار بArchitecture Framework الأساسي، وأداة البرمجيات المستخدمة، واحتياجات المؤسسة ومستوى نضجها.</p>
+<div class="c3-framework"><div class="c3-cf cf-context"><strong>Principles, Vision, Motivation &amp; Requirements</strong><small>السياق الاستراتيجي والمبادئ والمتطلبات</small></div><div class="c3-cf cf-business"><strong>Business</strong><small>Strategy, organization, capabilities</small></div><div class="c3-cf cf-data"><strong>Data</strong><small>Entities, flows, lifecycle</small></div><div class="c3-cf cf-app"><strong>Application</strong><small>Applications, services, interactions</small></div><div class="c3-cf cf-tech"><strong>Technology</strong><small>Platforms, infrastructure, standards</small></div><div class="c3-cf cf-real"><strong>Realization / Transformation</strong><small>Roadmaps, transitions, governance statements</small></div><div class="c3-cf cf-change"><strong>Architecture Change Management</strong><small>Value realization, events, impacts, new requirements</small></div></div>
+<h4>أهداف Content Framework</h4><ul><li>نموذج تفصيلي لArchitecture Work Products.</li><li>رفع اتساق المخرجات عبر ADM.</li><li>Checklist للمخرجات الممكنة.</li><li>خفض مخاطر الفجوات في Deliverable Set.</li><li>فرض مفاهيم ومصطلحات ومخرجات معيارية.</li></ul>
+<p>يمكن استخدام TOGAF Content Framework أو إطار آخر مثل Zachman أو DoDAF أو NAF. المهم اختيار إطار واضح وتكييفه وتطبيقه باتساق.</p>
+<div class="exam-box">Content Framework ينظم Building Blocks وArtifacts والقرارات داخل Deliverables، ويساعد في هيكلة Repository.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s10" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s11">
+<div class="section-head"><div><h3>11. Enterprise Metamodel</h3><span class="en">Sections 3.12.3–3.12.4 — Entity Types and Relationships</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>Enterprise Metamodel يحدد <strong>أنواع الأشياء</strong> التي تظهر في نماذج المؤسسة والعلاقات الممكنة بينها. النموذج الفعلي يحتوي Instances من هذه الأنواع.</p>
+<div class="example-box"><strong>Type:</strong> Role. <strong>Instances:</strong> Manager، Customer، Pharmacist، Procurement Officer، Data Steward.</div>
+<div class="c3-flow"><div class="c3-step"><strong>Driver</strong><small>يحفز</small></div><div class="c3-step"><strong>Goal</strong><small>يتحقق عبر</small></div><div class="c3-step"><strong>Capability</strong><small>تدعمها</small></div><div class="c3-step"><strong>Business Service</strong><small>تنفذها</small></div><div class="c3-step"><strong>Application / Technology</strong><small>تحقق الحل</small></div></div>
+<h4>القيمة</h4><ul><li>Starter Set للأشياء التي يجب التحقيق فيها.</li><li>اختبار اكتمال Modeling Language أو أداة EA.</li><li>دعم Consistency وCompleteness وTraceability.</li><li>ربط الاستراتيجية بالقدرات والعمليات والأنظمة والتقنيات.</li></ul>
+<h4>Metamodel مقابل Notation</h4><p>Metamodel يحدد أنواع العناصر والعلاقات، أما Notation فتحدد كيف تُمثل بصريًا. لا يفرض TOGAF لغة واحدة؛ يمكن استخدام ArchiMate أو BPMN أو UML أو ERD أو Flowcharts.</p>
+<h4>التخصيص من العام إلى الخاص</h4><div class="c3-flow"><div class="c3-step"><strong>Foundation</strong><small>أنواع عامة لمعظم المؤسسات</small></div><div class="c3-step"><strong>Common Extensions</strong><small>مكونات متكررة</small></div><div class="c3-step"><strong>Industry</strong><small>كيانات وعلاقات قطاعية</small></div><div class="c3-step"><strong>Organization-Specific</strong><small>مصطلحات المؤسسة الفعلية</small></div></div>
+<div class="exam-box">TOGAF يشجع Enterprise Metamodel لكنه لا يقيد المؤسسة بقائمة Artifacts أو لغة نمذجة واحدة.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s11" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s12">
+<div class="section-head"><div><h3>12. Establishing and Maintaining an EA Capability</h3><span class="en">Section 3.13 — The Business Capability for Architecture</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>لا تكفي معرفة ADM؛ تحتاج المؤسسة إلى Business Capability للمعمارية تشمل الهيكل والأدوار والمسؤوليات والمهارات والعمليات. تعمل بمستوى نضج معين وتتفاعل مع الحوكمة والمشروعات والتشغيل.</p>
+<div class="c3-grid three"><div class="c3-card"><h5>People &amp; Knowledge</h5><ul><li>Architecture Professionals</li><li>Skills &amp; Knowledge</li><li>Professional Development</li><li>Skilled Resource Pool</li></ul></div><div class="c3-card accent"><h5>Architecture Capability</h5><ul><li>Roles &amp; Responsibilities</li><li>Governance Bodies</li><li>Methods &amp; Processes</li><li>Repository &amp; Continuum</li></ul></div><div class="c3-card"><h5>Enterprise Delivery</h5><ul><li>Projects &amp; Portfolios</li><li>Contracts &amp; Compliance</li><li>Business Operations</li><li>Measurement &amp; Feedback</li></ul></div></div>
+<h4>العلاقات المهمة</h4><ul><li>التطوير المهني يحسن Skills وKnowledge.</li><li>الأشخاص يُسندون إلى Roles عامة أو خاصة بالمشروع.</li><li>Governance Bodies تحدد الأولويات وتقيس النجاح.</li><li>المشروعات تُحكم وفق Contracts ومبادئ ومعايير.</li><li>المشروعات تغذي Repository وتعيد استخدام Building Blocks.</li><li>النتيجة حلول متوافقة تخدم Business Operations.</li></ul>
+<div class="memory-box">Architecture Capability ليست فريق رسم أو لجنة مراجعة فقط؛ إنها قدرة أعمال كاملة لها أشخاص وعمليات وقياس وحوكمة ومستودع وعلاقة بالتنفيذ.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s12" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s13">
+<div class="section-head"><div><h3>13. Architecture Capability ككيان تشغيلي والحوكمة</h3><span class="en">Section 3.14 — Running EA as an Operational Unit</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>ما لم تكن Architecture Capability مؤقتة لبرنامج واحد، يجب أن تُدار مثل وحدة أعمال: خدمات وموارد وأداء وجودة ومخاطر وعلاقات أصحاب مصلحة.</p>
+<div class="c3-tags"><span>Financial Management</span><span>Performance Management</span><span>Service Management</span><span>Risk &amp; Opportunity</span><span>Resource Management</span><span>Stakeholder Management</span><span>Quality Management</span><span>Supplier Management</span><span>Configuration Management</span><span>Environment Management</span></div>
+<h4>لماذا Governance مركزية؟</h4><p>لأن كل نشاط مهم معماريًا يجب أن يخضع لإطار واحد يحقق Alignment وVisibility وGuidance وControl. الحوكمة توضح القرار والسلطة والاستثناء والمتابعة ولا يُفترض أن تعطل العمل.</p>
+<h4>فوائد Architecture Governance</h4><div class="c3-grid three"><div class="c3-card"><h5>Accountability</h5><p>شفافية أعلى وتفويض سلطة واعٍ.</p></div><div class="c3-card"><h5>Risk &amp; Opportunity</h5><p>إدارة استباقية ومستمرة.</p></div><div class="c3-card"><h5>Asset Protection</h5><p>تعظيم إعادة الاستخدام وحماية الاستثمار.</p></div><div class="c3-card"><h5>Control</h5><p>مراقبة وإدارة وقرارات قابلة للتتبع.</p></div><div class="c3-card"><h5>Value</h5><p>قياس وتقييم وتغذية راجعة.</p></div><div class="c3-card"><h5>Integration</h5><p>تكامل مع العمليات والمنهجيات القائمة.</p></div></div>
+<div class="exam-box">Governance تضيف Control Capabilities إلى العمليات الحالية ولا تعمل كمنهج منفصل ينافس إدارة المشروعات أو التشغيل.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s13" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s14">
+<div class="section-head"><div><h3>14. استخدام TOGAF مع الأطر والمنهجيات الأخرى</h3><span class="en">Section 3.15 — Integrating Deliverables, Methods, and Best Practices</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>يوجد عنصران أساسيان في أي Architecture Framework: تعريف Deliverables، ووصف Method التي تنتجها. كثير من الأطر تركز على المخرجات وتكون أقل تفصيلًا في الطريقة، بينما يوفر TOGAF Method عامة وContent Framework مرنًا.</p>
+<div class="c3-grid three"><div class="c3-card"><h5>TOGAF Contribution</h5><p>ADM، Governance، Content Framework، Enterprise Continuum، والتكييف.</p></div><div class="c3-card accent"><h5>Tailored Enterprise Method</h5><p>النتيجة المدمجة داخل عمليات وهياكل المؤسسة.</p></div><div class="c3-card"><h5>Other Practices</h5><p>ITIL، COBIT، CMMI، PRINCE2، PMBOK، MSP، IT4IT وغيرها.</p></div></div>
+<h4>كيف يحدث التكامل؟</h4><ul><li>يمكن استخدام TOGAF بمخرجاته العامة.</li><li>يمكن استبدال بعض المخرجات أو توسيعها بمخرجات إطار آخر.</li><li>يجب دمج الطريقة المكيّفة في عمليات المؤسسة وهياكلها.</li><li>يمكن تبني Reference Materials من TOGAF Library أو أطر قطاعية وتقنية.</li></ul>
+<div class="example-box"><strong>أمثلة:</strong> TOGAF يحدد Target Architecture وPMBOK يدير المشروع؛ ITIL يفصل إدارة الخدمات؛ COBIT يدعم الحوكمة الأوسع؛ IT4IT يقدم Reference Architecture لValue Streams التقنية.</div>
+<div class="exam-box">TOGAF لا يدّعي استبدال جميع الأطر؛ قوته في توفير Method وبيئة تكامل تسمح بدمج الممارسات المناسبة.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s14" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s15">
+<div class="section-head"><div><h3>15. استخدام TOGAF مع Architecture Styles المختلفة</h3><span class="en">Section 3.16 — Adapting Models, Viewpoints, Tools, and Content</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>Architecture Style يختلف في التركيز والشكل والتقنيات والمواد والموضوع والزمن. يمكن أن يحتوي Architecture Landscape الواحد أعمالًا طُورت بأساليب متعددة، ويجب معالجة احتياجات كل Stakeholder في سياق بقية المعمارية.</p>
+<div class="c3-flow"><div class="c3-step"><strong>1. Identify Features</strong><small>تحديد الخصائص المميزة للأسلوب.</small></div><div class="c3-step"><strong>2. Assess Concerns</strong><small>معرفة Stakeholders وConcerns التي يبرزها.</small></div><div class="c3-step"><strong>3. Select Resources</strong><small>اختيار Models وViewpoints وTools.</small></div><div class="c3-step"><strong>4. Extend Content</strong><small>توسيع Metamodel أو Notation.</small></div><div class="c3-step"><strong>5. Apply through ADM</strong><small>دمج التعديلات أو العودة إلى Preliminary.</small></div></div>
+<h4>ما الذي يتغير عادة؟</h4><ul><li>إضافة عناصر جديدة يجب وصفها.</li><li>إبراز عناصر موجودة وإعطاؤها أولوية.</li><li>تعديل Notation أو تقنيات النمذجة.</li><li>اختيار Viewpoints مختلفة.</li><li>توسيع Architecture Content Metamodel.</li><li>استخدام Reference Models أو Maturity Models خاصة بالStyle.</li></ul>
+<p>معالجة Style محدد لا ينبغي عادة أن تتطلب تغييرًا جذريًا في TOGAF؛ بل تعديل النماذج والمناظير والأدوات. وإذا كان الأسلوب مهيمنًا على طريقة المؤسسة، قد يلزم تعديل Architecture Capability في Preliminary Phase.</p>
+<div class="c3-tags"><span>Service-Oriented Architecture</span><span>Risk &amp; Security</span><span>SABSA Integration</span><span>BIAN + ArchiMate</span><span>DoDAF</span><span>Frameworx</span></div>
+<div class="exam-box">الخطوة الأولى تحديد خصائص Style، والثانية تحديد كيفية التعامل معها. غالبًا يكون التعديل في Models وViewpoints وTools لا في جوهر ADM.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s15" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s16">
+<div class="section-head"><div><h3>16. Architecture Views and Viewpoints</h3><span class="en">Section 3.17 — Communicating Complex Architecture</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>لا يمكن عرض كل تفاصيل Architecture المعقدة لكل شخص بالطريقة نفسها. نحتاج Views تعرض المعلومات في صورة يستطيع صاحب المصلحة فهمها وربطها باهتماماته، وهذا ضروري للحصول على الفهم والدعم.</p>
+<div class="c3-network"><div class="c3-node">System of Interest<small>النظام أو المؤسسة محل الاهتمام</small></div><div class="c3-node">Architecture<small>البنية والخصائص الأساسية</small></div><div class="c3-node">Architecture Description<small>التعبير الموثق عن المعمارية</small></div><div class="c3-node">Stakeholder<small>له اهتمام وتأثير أو تأثر</small></div><div class="c3-node">Concern<small>مسألة تهم Stakeholder</small></div><div class="c3-node">Viewpoint<small>قواعد إنشاء View لمعالجة Concerns</small></div><div class="c3-node">Architecture View<small>التمثيل الفعلي من منظور محدد</small></div><div class="c3-node">Model Kind<small>نوع النموذج الذي يسمح به Viewpoint</small></div><div class="c3-node">Architecture Model<small>نموذج فعلي داخل View</small></div></div>
+<div class="diagram">Stakeholder has Concerns
+↓
+Viewpoint frames those Concerns and governs the representation
+↓
+View is the actual representation
+↓
+View contains Models built according to Model Kinds</div>
+<h4>Viewpoint مقابل View</h4><table class="comparison"><tr><th>Viewpoint</th><th>View</th></tr><tr><td>المواصفة أو القواعد: الجمهور، Concerns، Models، Notations.</td><td>النتيجة الفعلية المطبقة على Architecture محددة.</td></tr><tr><td>مثل Recipe أو Template.</td><td>مثل الناتج الذي أُعد باستخدام الوصفة.</td></tr></table>
+<div class="example-box"><strong>مثال:</strong> Security Viewpoint يحدد Concerns وأنواع النماذج؛ Security View لمشروع معين يعرض Trust Zones وData Flows وControls الفعلية.</div>
+<div class="exam-box">Viewpoint governs a View. لا تعكس المصطلحين.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s16" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s17">
+<div class="section-head"><div><h3>17. Enterprise Agility</h3><span class="en">Section 3.18 — Broader than Agile Software Development</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>Enterprise Agility تساعد المؤسسة على الاستجابة للتغيير، والتركيز على العميل والمنتج، وتحسين الكفاءة والامتثال. المصطلح أوسع من Agile Software Development.</p>
+<table class="comparison"><tr><th>Agile Software Development</th><th>Enterprise Agility</th></tr><tr><td>يركز على فرق البرمجيات والتكرارات والتسليم.</td><td>يشمل الاستراتيجية والتمويل والحوكمة والقدرات والتشغيل والمنتجات والبيانات والتقنية.</td></tr><tr><td>يمكن استخدام مبادئه لتكييف TOGAF.</td><td>يحتاج تقنيات أوسع من Scrum أو Sprints.</td></tr></table>
+<p>Enterprise Architecture توفر إطارًا للتغيير مرتبطًا بالاستراتيجية والقيمة، وصورة كافية لإدارة التعقيد، ودعم التغيير المستمر، وتقليل مخاطر النتائج غير المتوقعة.</p>
+<div class="c3-grid three"><div class="c3-card"><h5>Partitions</h5><p>تقسيم العمل إلى مبادرات معمارية متعددة بحدود ومسؤوليات واضحة.</p></div><div class="c3-card"><h5>Levels</h5><p>تطوير المعمارية بدرجات مختلفة من Granularity والتفصيل.</p></div><div class="c3-card"><h5>Iterations</h5><p>تكرار العمل داخل المراحل وبينها وعبر دورات ADM.</p></div></div>
+<h4>إرشادات مرتبطة</h4><ul><li>Applying the ADM Using Agile Sprints.</li><li>Enabling Enterprise Agility.</li><li>The Open Agile Architecture Standard.</li></ul>
+<div class="exam-box">Enterprise Agility أوسع من Agile Software Development؛ لا تختزلها في Scrum أو Sprints.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s17" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s18">
+<div class="section-head"><div><h3>18. Risk Management</h3><span class="en">Section 3.19 — Identify, Mitigate, Accept, Monitor</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<p>أي Architecture أو Business Transformation يتضمن مخاطر. يجب تحديدها وتصنيفها وتقييمها وتخفيفها قبل وأثناء التحول، مع مراقبة السياق لأن بعض Triggers قد تكون خارج سيطرة الفريق مثل Merger أو Acquisition.</p>
+<div class="c3-risk"><div class="c3-card accent"><h5>Initial Risk</h5><p>تصنيف مستوى الخطر قبل تطبيق إجراءات التخفيف.</p></div><div class="c3-risk-arrow">Mitigation →</div><div class="c3-card accent"><h5>Residual Risk</h5><p>الخطر المتبقي بعد تنفيذ إجراءات التخفيف.</p></div></div>
+<h4>عملية Risk Management</h4><div class="c3-flow"><div class="c3-step"><strong>1. Classification</strong><small>تحديد الفئة والمعايير.</small></div><div class="c3-step"><strong>2. Identification</strong><small>اكتشاف مصادر الخطر.</small></div><div class="c3-step"><strong>3. Initial Assessment</strong><small>تقدير الاحتمال والأثر.</small></div><div class="c3-step"><strong>4. Mitigation &amp; Residual</strong><small>المعالجة وتقييم المتبقي.</small></div><div class="c3-step"><strong>5. Monitoring</strong><small>متابعة السياق والمؤشرات.</small></div></div>
+<h4>دور المعماري والحوكمة</h4><p>قد يحدد Enterprise Architect المخاطر ويخفف بعضها، لكن قبول الخطر وإدارته رسميًا يحدثان داخل Governance Framework وبالسلطة المناسبة.</p>
+<h4>Qualitative وQuantitative</h4><ul><li>ADM Techniques يقدم نهجًا نوعيًا.</li><li>Enterprise Security Architecture يدمج الأمن والمخاطر.</li><li>Open FAIR يوفر نهجًا كميًا أكثر صرامة عبر Open Risk Taxonomy وOpen Risk Analysis.</li></ul>
+<div class="exam-box">Mitigation عملية مستمرة. Initial Risk قبل المعالجة؛ Residual Risk بعد المعالجة؛ والقبول الرسمي مسؤولية Governance.</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s18" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c3s19">
+<div class="section-head"><div><h3>19. مراجعة الفصل الثالث وأسئلة الامتحان</h3><span class="en">Core Relationships, Exam Traps, and Practice Questions</span></div><span class="toggle">⌄</span></div>
+<div class="section-body">
+<h4>الخريطة الذهنية الكبرى</h4><div class="diagram">Business Drivers and Stakeholder Concerns
+↓
+Architecture Principles + Requirements
+↓
+ADM develops Business, Data, Application, and Technology Architectures
+↓
+Deliverables contain Artifacts that describe Building Blocks
+↓
+Content Framework + Enterprise Metamodel structure the content
+↓
+Enterprise Continuum classifies reusable assets
+↓
+Architecture Repository stores and governs them
+↓
+EA Capability, Views, Governance, Agility, and Risk enable sustainable use</div>
+<h4>فروق أساسية</h4><table class="comparison"><tr><th>الأول</th><th>الثاني</th><th>الفرق</th></tr><tr><td>Deliverable</td><td>Artifact</td><td>منتج رسمي معتمد مقابل وصف معماري قد يكون جزءًا منه.</td></tr><tr><td>Artifact</td><td>Building Block</td><td>Artifact يصف؛ Building Block هو الشيء الموصوف.</td></tr><tr><td>ABB</td><td>SBB</td><td>قدرة أو حاجة معمارية مقابل مكونات التنفيذ.</td></tr><tr><td>Content Framework</td><td>Metamodel</td><td>تصنيف منتجات العمل مقابل أنواع الكيانات والعلاقات.</td></tr><tr><td>Continuum</td><td>Repository</td><td>آلية تصنيف مقابل بيئة حفظ وإدارة.</td></tr><tr><td>Viewpoint</td><td>View</td><td>قواعد المنظور مقابل التمثيل الفعلي.</td></tr><tr><td>Initial Risk</td><td>Residual Risk</td><td>قبل Mitigation مقابل ما يتبقى بعدها.</td></tr></table>
+<div class="quiz" data-answer="1"><h4>1) Which are the four primary TOGAF architecture domains?</h4><div class="options"><button class="answer-btn" data-index="0">Strategy, Risk, Security, Digital</button><button class="answer-btn" data-index="1">Business, Data, Application, Technology</button><button class="answer-btn" data-index="2">Business, Process, Project, Service</button><button class="answer-btn" data-index="3">Enterprise, Segment, Capability, Solution</button></div><p class="explanation">الإجابة B؛ هذه المجالات الأربعة الأساسية.</p></div>
+<div class="quiz" data-answer="3"><h4>2) Which statement about ADM is correct?</h4><div class="options"><button class="answer-btn" data-index="0">It mandates Waterfall</button><button class="answer-btn" data-index="1">Every phase runs once in fixed order</button><button class="answer-btn" data-index="2">Requirements are managed only before Phase A</button><button class="answer-btn" data-index="3">It is iterative and tailored to enterprise needs</button></div><p class="explanation">الإجابة D؛ ADM تكراري وقابل للتكييف.</p></div>
+<div class="quiz" data-answer="0"><h4>3) What is a deliverable?</h4><div class="options"><button class="answer-btn" data-index="0">A formally reviewed and approved work product</button><button class="answer-btn" data-index="1">Any diagram</button><button class="answer-btn" data-index="2">Only an implementation component</button><button class="answer-btn" data-index="3">A modeling notation</button></div><p class="explanation">الإجابة A؛ Formal review وapproval وsign-off.</p></div>
+<div class="quiz" data-answer="2"><h4>4) Artifacts are commonly classified as:</h4><div class="options"><button class="answer-btn" data-index="0">Principles, standards, policies</button><button class="answer-btn" data-index="1">Baseline, Target, Transition</button><button class="answer-btn" data-index="2">Catalogs, matrices, diagrams</button><button class="answer-btn" data-index="3">Roles, processes, systems</button></div><p class="explanation">الإجابة C.</p></div>
+<div class="quiz" data-answer="1"><h4>5) Which level is implementation-independent and organizes services into components?</h4><div class="options"><button class="answer-btn" data-index="0">Contextual</button><button class="answer-btn" data-index="1">Logical</button><button class="answer-btn" data-index="2">Physical</button><button class="answer-btn" data-index="3">Operational</button></div><p class="explanation">الإجابة B؛ Logical يشرح How دون منتج محدد.</p></div>
+<div class="quiz" data-answer="0"><h4>6) Enterprise Principles primarily:</h4><div class="options"><button class="answer-btn" data-index="0">Provide a basis for enterprise decision-making</button><button class="answer-btn" data-index="1">Specify software products</button><button class="answer-btn" data-index="2">Replace Architecture Principles</button><button class="answer-btn" data-index="3">Apply only to IT</button></div><p class="explanation">الإجابة A.</p></div>
+<div class="quiz" data-answer="3"><h4>7) Enterprise Continuum is:</h4><div class="options"><button class="answer-btn" data-index="0">A document tool</button><button class="answer-btn" data-index="1">A fixed ADM sequence</button><button class="answer-btn" data-index="2">Only the Solutions Landscape</button><button class="answer-btn" data-index="3">A mechanism classifying assets from generic to specific</button></div><p class="explanation">الإجابة D.</p></div>
+<div class="quiz" data-answer="2"><h4>8) Authorized architecture requirements are maintained in:</h4><div class="options"><button class="answer-btn" data-index="0">Standards Library</button><button class="answer-btn" data-index="1">Solutions Landscape</button><button class="answer-btn" data-index="2">Architecture Requirements Repository</button><button class="answer-btn" data-index="3">Reference Library</button></div><p class="explanation">الإجابة C.</p></div>
+<div class="quiz" data-answer="1"><h4>9) An Enterprise Metamodel defines:</h4><div class="options"><button class="answer-btn" data-index="0">Diagram colors only</button><button class="answer-btn" data-index="1">Entity types and relationships</button><button class="answer-btn" data-index="2">A fixed ADM sequence</button><button class="answer-btn" data-index="3">Only technology products</button></div><p class="explanation">الإجابة B.</p></div>
+<div class="quiz" data-answer="3"><h4>10) Architecture Styles are usually addressed by:</h4><div class="options"><button class="answer-btn" data-index="0">Replacing TOGAF</button><button class="answer-btn" data-index="1">Changing only Phase A</button><button class="answer-btn" data-index="2">Never extending the metamodel</button><button class="answer-btn" data-index="3">Adapting models, viewpoints, tools, and content</button></div><p class="explanation">الإجابة D.</p></div>
+<div class="quiz" data-answer="0"><h4>11) Which correctly distinguishes Viewpoint and View?</h4><div class="options"><button class="answer-btn" data-index="0">A Viewpoint governs how a View is constructed</button><button class="answer-btn" data-index="1">A View governs the Viewpoint</button><button class="answer-btn" data-index="2">They are synonyms</button><button class="answer-btn" data-index="3">A Viewpoint is always a physical diagram</button></div><p class="explanation">الإجابة A.</p></div>
+<div class="quiz" data-answer="2"><h4>12) Residual risk is:</h4><div class="options"><button class="answer-btn" data-index="0">Risk before identification</button><button class="answer-btn" data-index="1">Risk accepted without governance</button><button class="answer-btn" data-index="2">Risk remaining after mitigation</button><button class="answer-btn" data-index="3">Risk that needs no monitoring</button></div><p class="explanation">الإجابة C.</p></div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c3s19" type="checkbox"/> انتهيت من مراجعة الفصل الثالث وأسئلته</label>
+</article>
+<div class="chapter-nav">
+<a href="chapter-2.html"><strong>← الفصل السابق</strong><small>الفصل الثاني: The TOGAF Documentation Set</small></a>
+<a class="home" href="index.html"><strong>⌂ الفهرس الرئيسي</strong><small>جميع الفصول</small></a>
+<a class="next disabled"><strong>الفصل التالي →</strong><small>سيُضاف لاحقًا</small></a>
+</div>
+</main>
+</div>
+<footer class="footer">
+    TOGAF Study Hub — Chapter 3
+  </footer>
+</div>
+<script>
+  const body = document.body;
+  const sidebar = document.getElementById('sidebar');
+  const menuBtn = document.getElementById('menuBtn');
+  const themeBtn = document.getElementById('themeBtn');
+  const checks = [...document.querySelectorAll('.section-check')];
+  const progressFill = document.getElementById('progressFill');
+  const progressText = document.getElementById('progressText');
+
+  const themeKey = 'togaf-chapter-3-theme';
+  const savedTheme = localStorage.getItem(themeKey) || 'light';
+  body.setAttribute('data-theme', savedTheme);
+
+  themeBtn?.addEventListener('click', () => {
+    const next = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    body.setAttribute('data-theme', next);
+    localStorage.setItem(themeKey, next);
+  });
+
+  menuBtn?.addEventListener('click', () => sidebar?.classList.toggle('open'));
+  document.querySelectorAll('.sidebar a').forEach(a => a.addEventListener('click', () => sidebar?.classList.remove('open')));
+
+  document.querySelectorAll('.section-head').forEach(head => {
+    head.addEventListener('click', () => head.closest('.section-card')?.classList.toggle('collapsed'));
+  });
+
+  function updateProgress(){
+    const done = checks.filter(c => c.checked).length;
+    const pct = checks.length ? Math.round((done / checks.length) * 100) : 0;
+    if(progressFill) progressFill.style.width = pct + '%';
+    if(progressText) progressText.textContent = pct + '% مكتمل — ' + done + ' من ' + checks.length;
+  }
+
+  checks.forEach(c => {
+    const key = 'togaf-chapter-3-progress-' + c.dataset.id;
+    c.checked = localStorage.getItem(key) === '1';
+    c.addEventListener('change', () => {
+      localStorage.setItem(key, c.checked ? '1' : '0');
+      updateProgress();
+    });
+  });
+  updateProgress();
+
+  document.addEventListener('click', (event) => {
+    const btn = event.target.closest('.answer-btn');
+    if(!btn) return;
+    const quiz = btn.closest('.quiz');
+    if(!quiz || quiz.classList.contains('answered')) return;
+    const answer = Number(quiz.dataset.answer);
+    quiz.classList.add('answered');
+    const idx = Number(btn.dataset.index);
+    btn.classList.add(idx === answer ? 'correct' : 'wrong');
+    if(idx !== answer){
+      quiz.querySelector(`.answer-btn[data-index="${answer}"]`)?.classList.add('correct');
+    }
+  });
+
+  const search = document.getElementById('search');
+
+  function clearMarks(root){
+    root.querySelectorAll('mark').forEach(mark => mark.replaceWith(document.createTextNode(mark.textContent)));
+    root.normalize();
+  }
+
+  function highlightTerm(root, query){
+    if(!query) return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while(walker.nextNode()) nodes.push(walker.currentNode);
+
+    nodes.forEach(node => {
+      if(!node.nodeValue.trim() || node.parentElement.closest('script,style,mark')) return;
+      const value = node.nodeValue;
+      const lower = value.toLowerCase();
+      const qLower = query.toLowerCase();
+      let cursor = 0;
+      let index = lower.indexOf(qLower);
+      if(index < 0) return;
+
+      const frag = document.createDocumentFragment();
+      while(index >= 0){
+        frag.append(value.slice(cursor,index));
+        const mark = document.createElement('mark');
+        mark.textContent = value.slice(index,index + query.length);
+        frag.append(mark);
+        cursor = index + query.length;
+        index = lower.indexOf(qLower,cursor);
+      }
+      frag.append(value.slice(cursor));
+      node.replaceWith(frag);
+    });
+  }
+
+  search?.addEventListener('input', () => {
+    const q = search.value.trim();
+    document.querySelectorAll('.section-card').forEach(card => {
+      clearMarks(card);
+      if(!q){
+        card.style.display = '';
+        return;
+      }
+      const match = card.textContent.toLowerCase().includes(q.toLowerCase());
+      card.style.display = match ? '' : 'none';
+      if(match){
+        card.classList.remove('collapsed');
+        highlightTerm(card,q);
+      }
+    });
+  });
+
+  const sectionIds = [...document.querySelectorAll('.section-card[id]')].map(section => section.id);
+  const links = [...document.querySelectorAll('.sidebar a[href^="#"]')];
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+      }
+    });
+  }, {rootMargin:'-25% 0px -65% 0px'});
+  sectionIds.forEach(id => {
+    const el = document.getElementById(id);
+    if(el) observer.observe(el);
+  });
+</script>
+<script src="assets/core.js"></script></body>
+</html>

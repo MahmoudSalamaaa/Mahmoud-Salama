@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="الفصل الثاني: The TOGAF Documentation Set — TOGAF Study Hub" name="description"/>
+<title>الفصل الثاني: The TOGAF Documentation Set | TOGAF Study Hub</title>
+<style>
+
+    :root{
+      --bg:#f4f7fb;
+      --surface:#ffffff;
+      --surface-2:#eef3f8;
+      --text:#16202a;
+      --muted:#5f6b76;
+      --primary:#0f6b68;
+      --primary-2:#0b4d4b;
+      --accent:#d99b2b;
+      --border:#dbe4ec;
+      --shadow:0 12px 35px rgba(20,41,61,.10);
+      --success:#2e7d32;
+      --danger:#a33b20;
+      --code:#0f1720;
+      --sidebar-w:320px;
+    }
+
+    [data-theme="dark"]{
+      --bg:#0d1319;
+      --surface:#151d25;
+      --surface-2:#1b2630;
+      --text:#edf4f8;
+      --muted:#aebbc5;
+      --primary:#62c5c0;
+      --primary-2:#9ae2de;
+      --accent:#f1bd5d;
+      --border:#2a3946;
+      --shadow:0 14px 38px rgba(0,0,0,.32);
+      --success:#7bd77f;
+      --danger:#ff9c7f;
+      --code:#0a0f14;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:"Segoe UI",Tahoma,Arial,sans-serif;
+      line-height:1.95;
+    }
+
+    a{color:inherit}
+    button,input{font:inherit}
+
+    .app{min-height:100vh}
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      height:70px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:0 20px;
+      background:color-mix(in srgb, var(--surface) 92%, transparent);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--border);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:240px;
+    }
+
+    .brand-mark{
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(145deg,var(--primary),var(--primary-2));
+      color:#fff;
+      font-weight:800;
+      letter-spacing:.5px;
+      box-shadow:var(--shadow);
+    }
+
+    .brand h1{
+      font-size:1.05rem;
+      margin:0;
+      line-height:1.25;
+    }
+
+    .brand small{color:var(--muted)}
+
+    .search-wrap{
+      flex:1;
+      max-width:720px;
+      margin-inline:auto;
+      position:relative;
+    }
+
+    #search{
+      width:100%;
+      border:1px solid var(--border);
+      background:var(--surface-2);
+      color:var(--text);
+      padding:11px 45px 11px 14px;
+      border-radius:14px;
+      outline:none;
+    }
+
+    .search-icon{
+      position:absolute;
+      right:15px;
+      top:50%;
+      transform:translateY(-50%);
+      color:var(--muted);
+    }
+
+    .top-actions{display:flex;gap:8px}
+
+    .icon-btn,.primary-btn{
+      border:1px solid var(--border);
+      background:var(--surface);
+      color:var(--text);
+      border-radius:12px;
+      padding:9px 12px;
+      cursor:pointer;
+      transition:.2s ease;
+    }
+
+    .icon-btn:hover,.primary-btn:hover{
+      transform:translateY(-1px);
+      box-shadow:0 7px 20px rgba(0,0,0,.08);
+    }
+
+    .primary-btn{
+      background:var(--primary);
+      color:#fff;
+      border-color:transparent;
+    }
+
+    .layout{
+      display:grid;
+      grid-template-columns:var(--sidebar-w) minmax(0,1fr);
+      min-height:calc(100vh - 70px);
+    }
+
+    .sidebar{
+      position:sticky;
+      top:70px;
+      height:calc(100vh - 70px);
+      overflow:auto;
+      padding:20px 16px 30px;
+      background:var(--surface);
+      border-left:1px solid var(--border);
+    }
+
+    .sidebar-section-title{
+      font-size:.82rem;
+      color:var(--muted);
+      margin:12px 10px 8px;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.6px;
+    }
+
+    .progress-card{
+      background:linear-gradient(145deg,var(--primary),var(--primary-2));
+      color:#fff;
+      border-radius:18px;
+      padding:16px;
+      margin-bottom:18px;
+    }
+
+    .progress-card p{margin:0 0 8px}
+    .progress-bar{
+      height:8px;
+      border-radius:99px;
+      background:rgba(255,255,255,.25);
+      overflow:hidden;
+    }
+    .progress-bar span{
+      display:block;
+      height:100%;
+      width:0%;
+      background:#fff;
+      transition:.35s ease;
+    }
+
+    .chapter-link{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+      padding:10px 12px;
+      margin:4px 0;
+      border-radius:12px;
+      color:var(--muted);
+      transition:.2s ease;
+    }
+
+    .chapter-link:hover,.chapter-link.active{
+      background:var(--surface-2);
+      color:var(--primary);
+    }
+
+    .chapter-link .num{
+      width:29px;
+      height:29px;
+      border-radius:9px;
+      display:grid;
+      place-items:center;
+      background:var(--surface-2);
+      border:1px solid var(--border);
+      font-weight:800;
+      font-size:.82rem;
+      flex:none;
+    }
+
+    .chapter-link.locked{opacity:.64}
+    .chapter-link small{display:block;color:var(--muted);font-size:.73rem}
+
+    .content{
+      width:min(1120px,100%);
+      margin:0 auto;
+      padding:32px 28px 80px;
+    }
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border-radius:28px;
+      background:
+        radial-gradient(circle at 15% 15%,rgba(255,255,255,.16),transparent 32%),
+        linear-gradient(135deg,#0b4d4b,#0f6b68 55%,#153d52);
+      color:#fff;
+      padding:44px;
+      box-shadow:var(--shadow);
+      margin-bottom:28px;
+    }
+
+    .hero:after{
+      content:"EA";
+      position:absolute;
+      left:28px;
+      bottom:-35px;
+      font-size:9rem;
+      font-weight:900;
+      color:rgba(255,255,255,.07);
+      line-height:1;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      background:rgba(255,255,255,.13);
+      border:1px solid rgba(255,255,255,.22);
+      padding:5px 12px;
+      border-radius:999px;
+      font-size:.84rem;
+      margin-bottom:12px;
+    }
+
+    .hero h2{
+      font-size:clamp(2rem,5vw,3.6rem);
+      line-height:1.2;
+      margin:0 0 12px;
+    }
+
+    .hero p{
+      max-width:760px;
+      margin:0;
+      color:rgba(255,255,255,.86);
+      font-size:1.04rem;
+    }
+
+    .hero-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:22px;
+    }
+
+    .pill{
+      padding:7px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.18);
+      font-size:.82rem;
+    }
+
+    .notice{
+      border:1px solid color-mix(in srgb,var(--accent) 40%,var(--border));
+      border-right:5px solid var(--accent);
+      background:color-mix(in srgb,var(--accent) 10%,var(--surface));
+      padding:16px 18px;
+      border-radius:15px;
+      margin:22px 0;
+    }
+
+    .chapter-header{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:16px;
+      margin:34px 0 18px;
+    }
+
+    .chapter-header h2{margin:0;font-size:2rem;line-height:1.3}
+    .chapter-header p{margin:4px 0 0;color:var(--muted)}
+    .chapter-badge{
+      flex:none;
+      border-radius:14px;
+      padding:8px 12px;
+      color:var(--primary);
+      background:var(--surface-2);
+      border:1px solid var(--border);
+      font-weight:800;
+    }
+
+    .section-card{
+      scroll-margin-top:92px;
+      background:var(--surface);
+      border:1px solid var(--border);
+      border-radius:20px;
+      box-shadow:0 8px 25px rgba(20,41,61,.05);
+      margin:18px 0;
+      overflow:hidden;
+    }
+
+    .section-head{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:15px;
+      padding:21px 22px;
+      cursor:pointer;
+      background:linear-gradient(180deg,var(--surface),color-mix(in srgb,var(--surface-2) 45%,var(--surface)));
+    }
+
+    .section-head h3{margin:0;font-size:1.28rem}
+    .section-head .en{display:block;color:var(--primary);font-size:.9rem;margin-top:3px;direction:ltr;text-align:right}
+    .toggle{font-size:1.2rem;color:var(--muted);transition:.2s}
+
+    .section-card.collapsed .section-body{display:none}
+    .section-card.collapsed .toggle{transform:rotate(-90deg)}
+
+    .section-body{padding:4px 24px 26px}
+    .section-body h4{
+      color:var(--primary);
+      font-size:1.08rem;
+      margin-top:24px;
+      margin-bottom:6px;
+    }
+
+    .section-body p{margin:9px 0}
+    .section-body ul{padding-right:24px}
+    .section-body li{margin:5px 0}
+
+    .term{
+      direction:ltr;
+      unicode-bidi:isolate;
+      font-weight:700;
+      color:var(--primary);
+    }
+
+    .quote{
+      direction:ltr;
+      text-align:left;
+      background:var(--code);
+      color:#e9f4f4;
+      border-radius:14px;
+      padding:16px 18px;
+      margin:16px 0;
+      border-left:4px solid var(--accent);
+      font-family:Consolas,monospace;
+      line-height:1.65;
+    }
+
+    .diagram{
+      direction:ltr;
+      text-align:center;
+      background:var(--surface-2);
+      border:1px dashed var(--border);
+      border-radius:16px;
+      padding:18px;
+      margin:16px 0;
+      font-family:Consolas,monospace;
+      white-space:pre-line;
+      line-height:1.7;
+      overflow:auto;
+    }
+
+    .comparison{
+      width:100%;
+      border-collapse:collapse;
+      margin:16px 0;
+      overflow:hidden;
+      border-radius:14px;
+    }
+    .comparison th,.comparison td{
+      border:1px solid var(--border);
+      padding:12px;
+      text-align:right;
+      vertical-align:top;
+    }
+    .comparison th{background:var(--surface-2);color:var(--primary)}
+
+    .exam-box,.example-box,.memory-box{
+      margin:17px 0;
+      border-radius:15px;
+      padding:16px 18px;
+    }
+    .exam-box{
+      background:color-mix(in srgb,var(--primary) 9%,var(--surface));
+      border:1px solid color-mix(in srgb,var(--primary) 30%,var(--border));
+    }
+    .example-box{
+      background:color-mix(in srgb,var(--success) 8%,var(--surface));
+      border:1px solid color-mix(in srgb,var(--success) 28%,var(--border));
+    }
+    .memory-box{
+      background:color-mix(in srgb,var(--accent) 10%,var(--surface));
+      border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
+    }
+
+    .check-row{
+      display:flex;
+      align-items:center;
+      gap:9px;
+      padding:12px 22px 18px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:.9rem;
+    }
+    .check-row input{width:18px;height:18px;accent-color:var(--primary)}
+
+    .quiz{
+      background:var(--surface-2);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:16px;
+      margin:14px 0;
+    }
+    .quiz h4{margin-top:0;color:var(--text)}
+    .options{display:grid;gap:8px}
+    .answer-btn{
+      text-align:right;
+      border:1px solid var(--border);
+      background:var(--surface);
+      color:var(--text);
+      border-radius:11px;
+      padding:10px 12px;
+      cursor:pointer;
+    }
+    .answer-btn.correct{border-color:var(--success);background:color-mix(in srgb,var(--success) 11%,var(--surface))}
+    .answer-btn.wrong{border-color:var(--danger);background:color-mix(in srgb,var(--danger) 10%,var(--surface))}
+    .explanation{display:none;margin-top:10px;color:var(--muted)}
+    .quiz.answered .explanation{display:block}
+
+    .future-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+      margin-top:20px;
+    }
+    .future-card{
+      border:1px solid var(--border);
+      background:var(--surface);
+      border-radius:17px;
+      padding:16px;
+    }
+    .future-card strong{color:var(--primary)}
+    .future-card p{margin:3px 0;color:var(--muted);font-size:.9rem}
+
+    .footer{
+      text-align:center;
+      color:var(--muted);
+      padding:28px 15px 50px;
+      border-top:1px solid var(--border);
+    }
+
+    mark{
+      background:#ffe48a;
+      color:#1a1a1a;
+      border-radius:4px;
+      padding:0 2px;
+    }
+
+    .mobile-menu{display:none}
+
+
+    /* Chapter 2 visual learning diagrams */
+    .hero.chapter-two{
+      margin-top:46px;
+      background:
+        radial-gradient(circle at 85% 12%,rgba(255,255,255,.16),transparent 30%),
+        linear-gradient(135deg,#173d5c,#155a6f 52%,#0f6b68);
+    }
+
+    .source-note{
+      color:var(--muted);
+      font-size:.86rem;
+      margin-top:12px;
+    }
+
+    .visual-title{
+      display:flex;
+      align-items:center;
+      gap:9px;
+      margin:22px 0 11px;
+      color:var(--primary);
+      font-weight:800;
+    }
+
+    .visual-title:before{
+      content:"";
+      width:10px;
+      height:10px;
+      border-radius:3px;
+      background:var(--accent);
+      flex:none;
+    }
+
+    .doc-ecosystem{
+      direction:ltr;
+      display:grid;
+      gap:14px;
+      padding:18px;
+      margin:18px 0;
+      border-radius:22px;
+      border:1px solid var(--border);
+      background:var(--surface-2);
+    }
+
+    .ecosystem-layer{
+      border:2px solid color-mix(in srgb,var(--primary) 38%,var(--border));
+      border-radius:20px;
+      padding:15px;
+      background:var(--surface);
+      text-align:center;
+    }
+
+    .ecosystem-layer > strong{
+      display:block;
+      color:var(--primary);
+      font-size:1.02rem;
+      margin-bottom:10px;
+    }
+
+    .ecosystem-standard{
+      display:grid;
+      grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);
+      gap:12px;
+      width:min(780px,100%);
+      margin:0 auto 12px;
+    }
+
+    .ecosystem-box{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:105px;
+      border-radius:15px;
+      padding:14px;
+      border:1px solid var(--border);
+      background:linear-gradient(145deg,color-mix(in srgb,var(--primary) 12%,var(--surface)),var(--surface));
+      color:var(--text);
+      font-weight:800;
+    }
+
+    .ecosystem-box.series{
+      background:linear-gradient(145deg,color-mix(in srgb,#7b4fa3 14%,var(--surface)),var(--surface));
+    }
+
+    .resource-strip{
+      display:grid;
+      grid-template-columns:repeat(5,minmax(0,1fr));
+      gap:8px;
+      margin-top:10px;
+    }
+
+    .resource-chip{
+      min-height:68px;
+      display:grid;
+      place-items:center;
+      padding:8px;
+      border-radius:12px;
+      background:var(--surface-2);
+      border:1px solid var(--border);
+      color:var(--muted);
+      font-size:.78rem;
+      font-weight:700;
+    }
+
+    .standard-system{
+      direction:ltr;
+      position:relative;
+      display:grid;
+      grid-template-columns:150px minmax(0,1fr) 150px;
+      gap:14px;
+      align-items:stretch;
+      padding:18px;
+      margin:18px 0;
+      border:1px solid var(--border);
+      border-radius:22px;
+      background:var(--surface-2);
+    }
+
+    .driver-rail{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      gap:8px;
+      padding:14px;
+      border-radius:16px;
+      background:linear-gradient(180deg,var(--primary-2),var(--primary));
+      color:#fff;
+      font-weight:800;
+      min-height:440px;
+      writing-mode:vertical-rl;
+      transform:rotate(180deg);
+    }
+
+    .standard-core{
+      display:grid;
+      grid-template-areas:
+        "concepts concepts concepts"
+        "content adm applying"
+        "techniques adm applying"
+        "governance governance governance"
+        "guides guides guides";
+      gap:10px;
+      min-width:0;
+    }
+
+    .core-node{
+      border:1px solid var(--border);
+      border-radius:15px;
+      padding:13px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:76px;
+      text-align:center;
+      background:var(--surface);
+      box-shadow:0 5px 15px rgba(20,41,61,.05);
+    }
+
+    .core-node strong{color:var(--primary)}
+    .core-node small{color:var(--muted)}
+    .node-concepts{grid-area:concepts}
+    .node-content{grid-area:content}
+    .node-adm{
+      grid-area:adm;
+      min-height:164px;
+      background:linear-gradient(145deg,var(--primary),var(--primary-2));
+      color:#fff;
+    }
+    .node-adm strong,.node-adm small{color:#fff}
+    .node-applying{grid-area:applying}
+    .node-techniques{grid-area:techniques}
+    .node-governance{grid-area:governance}
+    .node-guides{
+      grid-area:guides;
+      background:linear-gradient(145deg,color-mix(in srgb,#7b4fa3 18%,var(--surface)),var(--surface));
+    }
+
+    .flow-caption{
+      direction:rtl;
+      text-align:center;
+      padding:10px 14px;
+      margin-top:10px;
+      border-radius:12px;
+      color:var(--muted);
+      background:var(--surface);
+      border:1px dashed var(--border);
+    }
+
+    .six-docs{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:13px;
+      margin:17px 0;
+    }
+
+    .doc-card{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--border);
+      background:var(--surface);
+      border-radius:17px;
+      padding:17px 17px 17px 58px;
+      min-height:150px;
+    }
+
+    .doc-card .doc-no{
+      position:absolute;
+      left:13px;
+      top:14px;
+      width:34px;
+      height:34px;
+      display:grid;
+      place-items:center;
+      border-radius:11px;
+      background:var(--primary);
+      color:#fff;
+      font-weight:900;
+    }
+
+    .doc-card h5{
+      direction:ltr;
+      text-align:left;
+      color:var(--primary);
+      margin:0 0 6px;
+      font-size:.98rem;
+    }
+
+    .doc-card p{font-size:.9rem;color:var(--muted);line-height:1.7}
+
+    .adoption-path{
+      direction:ltr;
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:10px;
+      align-items:center;
+      margin:18px 0;
+    }
+
+    .path-step{
+      position:relative;
+      min-height:120px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:13px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background:var(--surface-2);
+    }
+
+    .path-step:not(:last-child):after{
+      content:"→";
+      position:absolute;
+      right:-18px;
+      top:50%;
+      transform:translateY(-50%);
+      width:26px;
+      height:26px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:var(--primary);
+      color:#fff;
+      z-index:3;
+      font-weight:900;
+    }
+
+    .path-step strong{color:var(--primary);margin-bottom:5px}
+    .path-step small{color:var(--muted)}
+
+    .standard-vs-library{
+      display:grid;
+      grid-template-columns:1fr 74px 1fr;
+      gap:14px;
+      align-items:stretch;
+      margin:18px 0;
+    }
+
+    .svl-card{
+      border-radius:18px;
+      border:1px solid var(--border);
+      background:var(--surface);
+      padding:18px;
+    }
+
+    .svl-card h5{
+      direction:ltr;
+      text-align:left;
+      margin:0 0 8px;
+      color:var(--primary);
+      font-size:1.05rem;
+    }
+
+    .svl-card ul{margin-bottom:0}
+    .svl-plus{
+      display:grid;
+      place-items:center;
+      font-size:2rem;
+      color:var(--accent);
+      font-weight:900;
+    }
+
+    .guide-cloud{
+      display:flex;
+      flex-wrap:wrap;
+      gap:9px;
+      margin:16px 0;
+    }
+
+    .guide-tag{
+      border:1px solid var(--border);
+      background:var(--surface-2);
+      border-radius:999px;
+      padding:8px 12px;
+      color:var(--text);
+      font-size:.86rem;
+    }
+
+    .continuum{
+      direction:ltr;
+      display:grid;
+      grid-template-columns:repeat(6,minmax(125px,1fr));
+      gap:8px;
+      overflow-x:auto;
+      padding:16px 4px 22px;
+      margin:18px 0;
+    }
+
+    .continuum-item{
+      position:relative;
+      min-height:176px;
+      border-radius:18px;
+      padding:14px 11px;
+      border:1px solid var(--border);
+      background:var(--surface);
+      text-align:center;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      box-shadow:0 8px 20px rgba(20,41,61,.05);
+    }
+
+    .continuum-item:not(:last-child):after{
+      content:"›";
+      position:absolute;
+      right:-10px;
+      top:50%;
+      transform:translateY(-50%);
+      color:var(--primary);
+      font-size:1.7rem;
+      font-weight:900;
+      z-index:4;
+    }
+
+    .continuum-item .ci-no{
+      width:34px;
+      height:34px;
+      border-radius:50%;
+      margin:0 auto 9px;
+      display:grid;
+      place-items:center;
+      background:var(--primary);
+      color:#fff;
+      font-weight:900;
+    }
+
+    .continuum-item strong{color:var(--primary);font-size:.89rem}
+    .continuum-item small{color:var(--muted);margin-top:7px;line-height:1.5}
+
+    .layered-equation{
+      direction:ltr;
+      display:grid;
+      grid-template-columns:1fr auto 1fr auto 1.15fr;
+      gap:9px;
+      align-items:center;
+      margin:18px 0;
+    }
+
+    .equation-box{
+      min-height:92px;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:12px;
+      border-radius:15px;
+      border:1px solid var(--border);
+      background:var(--surface-2);
+      font-weight:800;
+    }
+
+    .equation-symbol{
+      font-size:1.8rem;
+      color:var(--accent);
+      font-weight:900;
+    }
+
+    .trap-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:11px;
+      margin:16px 0;
+    }
+
+    .trap-card{
+      border:1px solid var(--border);
+      border-radius:15px;
+      padding:14px;
+      background:var(--surface);
+    }
+    .trap-card b{display:block;color:var(--danger);margin-bottom:4px}
+    .trap-card span{color:var(--muted)}
+
+
+    /* Chapter 3 visual components */
+    .hero.chapter-three{margin-top:46px;background:radial-gradient(circle at 18% 20%,rgba(255,255,255,.15),transparent 28%),radial-gradient(circle at 88% 75%,rgba(217,155,43,.18),transparent 32%),linear-gradient(135deg,#30275d,#155a6f 55%,#0f6b68)}
+    .c3-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin:18px 0}
+    .c3-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.c3-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .c3-card{border:1px solid var(--border);border-radius:17px;padding:15px;background:var(--surface);min-height:120px}
+    .c3-card h5{margin:0 0 7px;color:var(--primary);font-size:.98rem}.c3-card p,.c3-card li{font-size:.85rem;line-height:1.6;color:var(--muted)}
+    .c3-card.accent{background:linear-gradient(145deg,color-mix(in srgb,var(--primary) 11%,var(--surface)),var(--surface))}
+    .c3-flow{direction:ltr;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:18px 0;overflow-x:auto;padding-bottom:8px}
+    .c3-step{position:relative;min-width:125px;min-height:125px;border:1px solid var(--border);border-radius:16px;padding:12px;text-align:center;background:var(--surface);display:flex;flex-direction:column;justify-content:center}
+    .c3-step:not(:last-child):after{content:'›';position:absolute;right:-11px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:1.7rem;font-weight:900;z-index:4}
+    .c3-step strong{color:var(--primary);font-size:.86rem}.c3-step small{color:var(--muted);font-size:.73rem;line-height:1.4;margin-top:5px}
+    .c3-stack{display:flex;flex-direction:column;align-items:center;gap:9px;margin:20px auto;width:min(850px,100%)}
+    .c3-layer{border:1px solid var(--border);border-radius:15px;padding:14px;text-align:center;background:var(--surface)}
+    .c3-layer strong{color:var(--primary)}.c3-layer small{display:block;color:var(--muted);margin-top:4px;line-height:1.45}
+    .c3-l1{width:55%}.c3-l2{width:70%}.c3-l3{width:85%}.c3-l4{width:100%;background:linear-gradient(145deg,color-mix(in srgb,var(--primary) 10%,var(--surface)),var(--surface))}
+    .c3-badge{display:inline-grid;place-items:center;width:37px;height:37px;border-radius:50%;background:var(--primary);color:#fff;margin-left:8px;font-weight:900}
+    .c3-adm{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin:18px 0;direction:ltr}
+    .c3-adm .c3-step:nth-child(1){grid-column:1/-1;background:linear-gradient(145deg,var(--primary),var(--primary-2));color:#fff;min-height:85px}.c3-adm .c3-step:nth-child(1) strong,.c3-adm .c3-step:nth-child(1) small{color:#fff}
+    .c3-adm .requirements{grid-column:2/5;background:color-mix(in srgb,var(--accent) 13%,var(--surface));min-height:85px}
+    .c3-split{display:grid;grid-template-columns:1.3fr .7fr;gap:13px;margin:18px 0}.c3-lane{border:1px solid var(--border);border-radius:18px;padding:14px;background:var(--surface-2)}.c3-lane>h5{margin:0 0 9px;color:var(--primary)}
+    .c3-service{border:1px solid var(--border);border-radius:13px;padding:11px;background:var(--surface);margin:8px 0}.c3-service strong{display:block;color:var(--primary);direction:ltr;text-align:left}.c3-service p{font-size:.82rem;color:var(--muted);line-height:1.5;margin:4px 0}
+    .c3-product{display:grid;grid-template-columns:1fr 55px 1fr 55px 1fr;gap:8px;align-items:center;margin:18px 0}.c3-arrow{display:grid;place-items:center;color:var(--accent);font-weight:900;font-size:1.2rem}
+    .c3-track{direction:ltr;display:grid;grid-template-columns:150px repeat(4,1fr);gap:7px;margin:14px 0;overflow-x:auto}.c3-track div{min-width:120px;border:1px solid var(--border);border-radius:11px;padding:10px;text-align:center;background:var(--surface);font-size:.78rem}.c3-track .head{background:var(--primary);color:#fff;font-weight:800}.c3-track .row{background:var(--surface-2);color:var(--primary);font-weight:800;text-align:left}
+    .c3-repo{display:grid;grid-template-columns:.8fr 1.7fr;gap:12px;margin:18px 0}.c3-meta{border-radius:18px;padding:16px;background:linear-gradient(145deg,var(--primary),var(--primary-2));color:#fff;display:grid;place-items:center;text-align:center}.c3-repo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+    .c3-framework{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-areas:'context context context context' 'business data application technology' 'realization realization realization realization' 'change change change change';gap:8px;margin:18px 0}.c3-cf{border:1px solid var(--border);border-radius:14px;padding:12px;text-align:center;background:var(--surface);min-height:80px;display:flex;flex-direction:column;justify-content:center}.c3-cf strong{color:var(--primary);font-size:.84rem}.c3-cf small{color:var(--muted);font-size:.71rem;line-height:1.35}.cf-context{grid-area:context}.cf-business{grid-area:business}.cf-data{grid-area:data}.cf-app{grid-area:application}.cf-tech{grid-area:technology}.cf-real{grid-area:realization}.cf-change{grid-area:change}
+    .c3-tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.c3-tags span{border:1px solid var(--border);border-radius:999px;padding:7px 10px;background:var(--surface-2);font-size:.8rem}
+    .c3-network{direction:ltr;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}.c3-node{border:1px solid var(--border);border-radius:14px;padding:13px;text-align:center;background:var(--surface);min-height:92px;display:flex;flex-direction:column;justify-content:center;color:var(--primary);font-weight:800}.c3-node small{color:var(--muted);font-weight:400;margin-top:4px;line-height:1.35}
+    .c3-risk{display:grid;grid-template-columns:1fr 70px 1fr;gap:10px;align-items:center;margin:18px 0}.c3-risk .c3-card{text-align:center}.c3-risk-arrow{display:grid;place-items:center;color:var(--accent);font-size:1.4rem;font-weight:900}
+    @media(max-width:950px){.c3-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.c3-grid.three{grid-template-columns:1fr}.c3-adm{grid-template-columns:repeat(2,minmax(0,1fr))}.c3-adm .c3-step:nth-child(1),.c3-adm .requirements{grid-column:1/-1}.c3-repo{grid-template-columns:1fr}}
+    @media(max-width:720px){.c3-grid,.c3-grid.two,.c3-grid.three,.c3-split,.c3-repo-grid,.c3-network,.c3-risk{grid-template-columns:1fr}.c3-product{grid-template-columns:1fr}.c3-arrow,.c3-risk-arrow{transform:rotate(90deg);min-height:34px}.c3-adm{grid-template-columns:1fr}.c3-framework{grid-template-columns:1fr;grid-template-areas:'context' 'business' 'data' 'application' 'technology' 'realization' 'change'}.c3-flow{grid-template-columns:1fr;overflow:visible}.c3-step:not(:last-child):after{content:'↓';right:50%;top:auto;bottom:-20px;transform:translateX(50%)}.c3-l1,.c3-l2,.c3-l3,.c3-l4{width:100%}}
+
+    @media(max-width:900px){
+      .standard-system{grid-template-columns:1fr}
+      .driver-rail{
+        min-height:auto;
+        writing-mode:horizontal-tb;
+        transform:none;
+      }
+      .ecosystem-standard,.six-docs,.standard-vs-library,.trap-grid{grid-template-columns:1fr}
+      .resource-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .svl-plus{min-height:40px}
+      .adoption-path{grid-template-columns:1fr}
+      .path-step:not(:last-child):after{
+        content:"↓";
+        right:50%;
+        top:auto;
+        bottom:-18px;
+        transform:translateX(50%);
+      }
+      .layered-equation{grid-template-columns:1fr}
+      .equation-symbol{transform:rotate(90deg)}
+    }
+
+    @media(max-width:900px){
+      .layout{grid-template-columns:1fr}
+      .sidebar{
+        position:fixed;
+        z-index:1200;
+        top:70px;
+        right:0;
+        width:min(86vw,340px);
+        transform:translateX(105%);
+        transition:.25s ease;
+        box-shadow:var(--shadow);
+      }
+      .sidebar.open{transform:translateX(0)}
+      .mobile-menu{display:inline-flex}
+      .brand{min-width:unset}
+      .brand small{display:none}
+      .topbar{padding:0 12px}
+      .search-wrap{display:none}
+      .top-actions{margin-right:auto}
+      .content{padding:22px 14px 65px}
+      .hero{padding:30px 22px;border-radius:22px}
+      .future-grid{grid-template-columns:1fr}
+    }
+
+    @media print{
+      .topbar,.sidebar,.check-row,.top-actions,.notice{display:none!important}
+      .layout{display:block}
+      .content{width:100%;padding:0}
+      .section-card{box-shadow:none;break-inside:avoid}
+      .section-card.collapsed .section-body{display:block}
+      body{background:#fff;color:#111}
+      .hero{background:#0f6b68!important;print-color-adjust:exact}
+    }
+  
+
+    .home-link{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      text-decoration:none;
+      border:1px solid var(--border);
+      background:var(--surface);
+      color:var(--text);
+      padding:9px 12px;
+      border-radius:12px;
+      transition:.2s ease;
+    }
+    .home-link:hover{transform:translateY(-1px);box-shadow:0 7px 20px rgba(0,0,0,.08)}
+    .chapter-nav{
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      gap:12px;
+      align-items:center;
+      margin:30px 0 8px;
+    }
+    .chapter-nav a{
+      text-decoration:none;
+      border:1px solid var(--border);
+      background:var(--surface);
+      border-radius:15px;
+      padding:13px 15px;
+      color:var(--text);
+      transition:.2s ease;
+    }
+    .chapter-nav a:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+    .chapter-nav .next{text-align:left}
+    .chapter-nav .home{text-align:center;background:var(--primary);color:#fff;border-color:transparent}
+    .chapter-nav .disabled{opacity:.45;pointer-events:none}
+    .chapter-nav small{display:block;color:var(--muted);font-size:.75rem}
+    .chapter-nav .home small{color:rgba(255,255,255,.78)}
+    .index-hero{
+      background:
+        radial-gradient(circle at 15% 20%,rgba(255,255,255,.15),transparent 30%),
+        radial-gradient(circle at 85% 75%,rgba(217,155,43,.17),transparent 35%),
+        linear-gradient(135deg,#0b4d4b,#155a6f 55%,#30275d);
+    }
+    .chapter-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      margin:24px 0;
+    }
+    .chapter-card{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--border);
+      border-radius:22px;
+      padding:20px;
+      min-height:245px;
+      background:var(--surface);
+      box-shadow:0 9px 28px rgba(20,41,61,.06);
+      display:flex;
+      flex-direction:column;
+    }
+    .chapter-card:after{
+      content:attr(data-chapter);
+      position:absolute;
+      left:10px;
+      bottom:-25px;
+      font-size:8rem;
+      font-weight:900;
+      color:color-mix(in srgb,var(--primary) 7%,transparent);
+      line-height:1;
+    }
+    .chapter-card h3{margin:0;color:var(--primary);font-size:1.3rem}
+    .chapter-card .en-title{direction:ltr;text-align:left;color:var(--muted);font-size:.86rem;margin:4px 0 12px}
+    .chapter-card p{color:var(--muted);font-size:.9rem;line-height:1.7;flex:1}
+    .chapter-card a{
+      position:relative;
+      z-index:2;
+      display:inline-flex;
+      justify-content:center;
+      text-decoration:none;
+      background:var(--primary);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:12px;
+      font-weight:800;
+    }
+    .chapter-card.upcoming{opacity:.62}
+    .chapter-card.upcoming a{background:var(--surface-2);color:var(--muted);pointer-events:none}
+    .site-map{
+      display:grid;
+      grid-template-columns:1fr 44px 1fr 44px 1fr;
+      gap:10px;
+      align-items:center;
+      margin:25px 0;
+    }
+    .map-node{
+      min-height:105px;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:14px;
+      border:1px solid var(--border);
+      border-radius:17px;
+      background:var(--surface);
+      color:var(--primary);
+      font-weight:800;
+    }
+    .map-arrow{display:grid;place-items:center;color:var(--accent);font-size:1.7rem;font-weight:900}
+    .quick-note{
+      border-right:5px solid var(--primary);
+      border-radius:15px;
+      padding:16px;
+      background:var(--surface-2);
+      margin:18px 0;
+    }
+    @media(max-width:900px){
+      .chapter-grid{grid-template-columns:1fr}
+      .site-map{grid-template-columns:1fr}
+      .map-arrow{transform:rotate(90deg);min-height:30px}
+    }
+    @media(max-width:650px){
+      .chapter-nav{grid-template-columns:1fr}
+      .chapter-nav .next,.chapter-nav .home{text-align:center}
+    }
+
+  </style>
+<link href="manifest.webmanifest" rel="manifest"/><link href="assets/icon-192.png" rel="icon"/><link href="assets/platform.css" rel="stylesheet"/></head>
+<body data-theme="light">
+<div class="app">
+<header class="topbar">
+<button aria-label="فتح القائمة" class="icon-btn mobile-menu" id="menuBtn">☰</button>
+<div class="brand">
+<div class="brand-mark">TO</div>
+<div>
+<h1>الفصل الثاني: The TOGAF Documentation Set</h1>
+<small>Standard, Fundamental Content, Series Guides, and Library</small>
+</div>
+</div>
+<div class="search-wrap">
+<span class="search-icon">⌕</span>
+<input id="search" placeholder="ابحث داخل الفصل..." type="search"/>
+</div>
+<div class="top-actions">
+<a class="home-link" href="index.html" title="الصفحة الرئيسية">⌂ الرئيسية</a>
+<button class="icon-btn" id="themeBtn" title="الوضع الليلي">◐</button>
+<button class="icon-btn" onclick="window.print()" title="طباعة أو حفظ PDF">⎙</button>
+</div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+<div class="progress-card">
+<p><strong>تقدمك في هذا الفصل</strong></p>
+<div class="progress-bar"><span id="progressFill"></span></div>
+<small id="progressText">0% مكتمل</small>
+</div>
+<div class="sidebar-section-title">التنقل</div>
+<a class="chapter-link" href="index.html"><span class="num">⌂</span><span>الصفحة الرئيسية<small>كل الفصول</small></span></a>
+<div class="sidebar-section-title">أقسام الفصل</div>
+<a class="chapter-link" href="#c2s1"><span class="num">1</span><span>1. لماذا نحتاج إلى فهم مجموعة وثائق TOGAF؟</span></a><a class="chapter-link" href="#c2s2"><span class="num">2</span><span>2. بنية TOGAF Documentation Set</span></a><a class="chapter-link" href="#c2s3"><span class="num">3</span><span>3. TOGAF Standard كإطار تأسيسي</span></a><a class="chapter-link" href="#c2s4"><span class="num">4</span><span>4. الوثائق الست لـTOGAF Fundamental Content</span></a><a class="chapter-link" href="#c2s5"><span class="num">5</span><span>5. لماذا قُسم المعيار إلى وثائق مستقلة؟</span></a><a class="chapter-link" href="#c2s6"><span class="num">6</span><span>6. Fundamental Content وTOGAF Series Guides</span></a><a class="chapter-link" href="#c2s7"><span class="num">7</span><span>7. المجالات التي تغطيها TOGAF Series Guides</span></a><a class="chapter-link" href="#c2s8"><span class="num">8</span><span>8. ما هي TOGAF Library؟</span></a><a class="chapter-link" href="#c2s9"><span class="num">9</span><span>9. TOGAF Library Continuum</span></a><a class="chapter-link" href="#c2s10"><span class="num">10</span><span>10. مراجعة الفصل الثاني وأسئلة الامتحان</span></a>
+</aside>
+<main class="content">
+<section class="hero chapter-two" id="chapter-2">
+<span class="eyebrow">TOGAF Standard — Introduction and Core Concepts</span>
+<h2>الفصل الثاني: The TOGAF Documentation Set</h2>
+<p>
+          شرح خريطة وثائق TOGAF بالكامل: الفرق بين TOGAF Standard وTOGAF Library،
+          مكونات Fundamental Content الستة، دور TOGAF Series Guides، وكيف تختار المؤسسة
+          المواد المناسبة وتكيّفها حسب سياقها.
+        </p>
+<div class="hero-meta">
+<span class="pill">4 Visual Diagrams</span>
+<span class="pill">Six Core Documents</span>
+<span class="pill">Standard vs. Library</span>
+<span class="pill">Exam Traps</span>
+</div>
+</section><div class="chapter-header">
+<div>
+<h2>Chapter 2 — The TOGAF Documentation Set</h2>
+<p>كيف تُنظم وثائق TOGAF، وما وظيفة كل طبقة ووثيقة ومادة إرشادية؟</p>
+</div>
+<span class="chapter-badge">الفصل 2</span>
+</div><article class="section-card" id="c2s1">
+<div class="section-head">
+<div><h3>1. لماذا نحتاج إلى فهم مجموعة وثائق TOGAF؟</h3><span class="en">Chapter Purpose and Learning Map</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+            بعد أن عرفنا في الفصل الأول ما هي Enterprise Architecture ولماذا نحتاجها،
+            ينتقل الفصل الثاني إلى سؤال عملي: <strong>أين نجد كل موضوع داخل TOGAF؟</strong>
+</p>
+<p>
+            TOGAF ليس كتابًا واحدًا متصلًا فقط، بل منظومة وثائق مترابطة. بعض المواد تمثل
+            <span class="term">Fundamental Content</span> الذي يحدد الأساس العام،
+            وبعضها يقدم إرشادات تطبيقية متخصصة لمجالات أو أنماط أو قطاعات محددة.
+          </p>
+<h4>بنهاية الفصل يجب أن تميز بين أربعة مستويات</h4>
+<div class="layered-equation">
+<div class="equation-box">The Open Group Library<br/><small>المكتبة الأوسع</small></div>
+<div class="equation-symbol">›</div>
+<div class="equation-box">TOGAF Documentation<br/><small>منظومة مواد TOGAF</small></div>
+<div class="equation-symbol">›</div>
+<div class="equation-box">TOGAF Standard + TOGAF Library Guidance</div>
+</div>
+<h4>الأسئلة التي يجيب عنها الفصل</h4>
+<ul>
+<li>ما الفرق بين <span class="term">TOGAF Standard</span> و<span class="term">TOGAF Library</span>؟</li>
+<li>ما الوثائق الست التي يتكون منها Fundamental Content؟</li>
+<li>ما وظيفة TOGAF Series Guides؟</li>
+<li>لماذا قُسم المعيار إلى وثائق مستقلة لكنها مترابطة؟</li>
+<li>هل يجب استخدام كل وثائق TOGAF في كل مؤسسة؟</li>
+<li>ما أنواع المواد الإضافية الموجودة في المكتبة؟</li>
+</ul>
+<div class="memory-box">
+<strong>الفكرة المركزية:</strong>
+            TOGAF يفصل بين الأساس العام المستقر نسبيًا، وبين الإرشادات التطبيقية التي تتغير
+            وتتوسع بسرعة أكبر لتلبية الاحتياجات الجديدة.
+          </div>
+<p class="source-note">المصدر الدراسي: Chapter 2، الصفحات الرسمية 9–14.</p>
+</div>
+<label class="check-row"><input class="section-check" data-id="c2s1" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c2s2">
+<div class="section-head">
+<div><h3>2. بنية TOGAF Documentation Set</h3><span class="en">Structure of the TOGAF Documentation Ecosystem</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+            تعرض الوثيقة الرسمية منظومة TOGAF على شكل طبقات. في الطبقة الأوسع توجد
+            <span class="term">The Open Group Library</span> التي تضم محتوى ومعايير متعددة.
+            داخل البيئة المرتبطة بـTOGAF نجد المعيار الرسمي ومواد الإرشاد والمراجع التطبيقية.
+          </p>
+<div class="visual-title">رسم توضيحي أصلي مبني على Figure 2-1</div>
+<div aria-label="طبقات منظومة وثائق TOGAF" class="doc-ecosystem" role="img">
+<div class="ecosystem-layer">
+<strong>The Open Group Library — Enterprise Architecture-Related Content</strong>
+<div class="ecosystem-layer">
+<strong>The TOGAF Documentation Ecosystem</strong>
+<div class="ecosystem-standard">
+<div class="ecosystem-box">TOGAF Fundamental Content<br/>ست وثائق أساسية</div>
+<div class="ecosystem-box series">TOGAF Series Guides<br/>إرشادات متخصصة</div>
+</div>
+<div class="resource-strip">
+<div class="resource-chip">Guides</div>
+<div class="resource-chip">White Papers</div>
+<div class="resource-chip">Reference Architectures</div>
+<div class="resource-chip">Reference Cards</div>
+<div class="resource-chip">Pocket Guides &amp; Data Sheets</div>
+</div>
+</div>
+</div>
+</div>
+<h4>TOGAF Standard</h4>
+<p>
+            يصف النهج العام القابل للتطبيق في Enterprise Architecture وIT Architecture.
+            وهو معيار تابع لـThe Open Group، تم تطويره من خلال التعاون والتوافق بين العملاء
+            والموردين والهيئات والممارسين.
+          </p>
+<h4>TOGAF Library</h4>
+<p>
+            هي محفظة واسعة من المواد الإرشادية الإضافية التي تساعد على التطبيق العملي.
+            تحتوي على قوالب وأنماط وإرشادات ومراجع وأمثلة يمكن الاستفادة منها لتسريع بناء المعماريات.
+          </p>
+<h4>لماذا يظهر شكل الطبقات؟</h4>
+<p>
+            لأن المحتوى ليس كله على درجة واحدة من الرسمية أو العمومية. هناك مواد تأسيسية
+            تصلح تقريبًا لكل سياق، ثم مواد أكثر تخصصًا حسب المجال أو القطاع أو أسلوب العمل.
+          </p>
+<div class="exam-box">
+<strong>Exam Focus:</strong>
+            لا تخلط بين المعيار الذي يحدد النهج العام، وبين المكتبة التي توفر مواد إضافية
+            لدعم التطبيق العملي.
+          </div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c2s2" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c2s3">
+<div class="section-head">
+<div><h3>3. TOGAF Standard كإطار تأسيسي</h3><span class="en">An Open, Industry-Consensus, Foundational Framework</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<h4>Open Framework</h4>
+<p>
+            كلمة <span class="term">Open</span> هنا تعكس تطوير المعيار في بيئة توافقية
+            واستخدامه كإطار غير مقيد بمنتج أو مورد تكنولوجي واحد. وهي لا تعني أن كل محتوى
+            TOGAF يمكن إعادة نشره دون شروط حقوق الملكية.
+          </p>
+<h4>Industry Consensus</h4>
+<p>
+            المعيار ناتج عن توافق خبرات مؤسسات وممارسين وموردين، ولذلك يقدم لغة ونهجًا
+            مشتركين بدل أن يكون رأيًا فرديًا أو منهجية مرتبطة بمؤسسة واحدة.
+          </p>
+<h4>Foundational Framework</h4>
+<p>
+            معنى أنه <span class="term">Foundational</span> أنه يقدم أساسًا عامًا يمكن تطبيقه
+            على أنواع مختلفة من المعماريات وفي سياقات متعددة. لكنه لا يقدم تصميمًا جاهزًا
+            لكل قطاع؛ لذلك تُستخدم Series Guides ومواد المكتبة للتفصيل والتطبيق.
+          </p>
+<h4>هيكل المعيار يعكس Architecture Capability</h4>
+<p>
+            لا تُرتب الوثائق عشوائيًا. فهي تعكس العناصر التي تحتاجها المؤسسة لتشغيل قدرة
+            Enterprise Architecture: طريقة تطوير المعمارية، تقنيات العمل، المحتوى الناتج،
+            طريقة تكييف المنهج، والقدرة التنظيمية والحوكمة.
+          </p>
+<div class="visual-title">خريطة مبسطة لبنية المعيار — مستوحاة من Figure 2-2</div>
+<div aria-label="بنية TOGAF Standard والعلاقة بين محركات الأعمال ومكوناته" class="standard-system" role="img">
+<div class="driver-rail">Business Vision and Drivers</div>
+<div>
+<div class="standard-core">
+<div class="core-node node-concepts"><strong>Introduction &amp; Core Concepts</strong><small>المفاهيم واللغة المشتركة</small></div>
+<div class="core-node node-content"><strong>Architecture Content</strong><small>ما الذي ننتجه؟</small></div>
+<div class="core-node node-techniques"><strong>ADM Techniques</strong><small>كيف ننفذ التحليل؟</small></div>
+<div class="core-node node-adm"><strong>Architecture Development Method</strong><small>القلب الإجرائي المتكرر</small></div>
+<div class="core-node node-applying"><strong>Applying the ADM</strong><small>كيف نكيّف المنهج للسياق؟</small></div>
+<div class="core-node node-governance"><strong>EA Capability &amp; Governance</strong><small>الأدوار والعمليات والحوكمة</small></div>
+<div class="core-node node-guides"><strong>TOGAF Series Guides</strong><small>تفصيل حسب المجال والنمط والقطاع</small></div>
+</div>
+<div class="flow-caption">المعيار يتكيف مع الاحتياجات المختلفة، ويتطور استجابة لمحركات السوق والعمل والتكنولوجيا.</div>
+</div>
+<div class="driver-rail">Business Capabilities</div>
+</div>
+<h4>قراءة الرسم</h4>
+<ul>
+<li>محركات ورؤية الأعمال تؤثر في احتياجات المعمارية.</li>
+<li>ADM يمثل قلب عملية التطوير.</li>
+<li>Architecture Content يحدد شكل المحتوى والمخرجات.</li>
+<li>ADM Techniques توفر أدوات التحليل واتخاذ القرار.</li>
+<li>Applying the ADM يشرح التكييف مع السياق.</li>
+<li>Capability &amp; Governance تجعل المعمارية وظيفة تشغيلية محكومة داخل المؤسسة.</li>
+<li>Series Guides تضيف التفصيل عند الحاجة.</li>
+</ul>
+<div class="memory-box">
+            المعيار ليس “ADM فقط”. ADM هو القلب، لكن تشغيل Enterprise Architecture يحتاج
+            محتوى وتقنيات وتكييفًا وحوكمة وقدرات تنظيمية.
+          </div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c2s3" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c2s4">
+<div class="section-head">
+<div><h3>4. الوثائق الست لـTOGAF Fundamental Content</h3><span class="en">The Six Free-Standing but Closely Linked Documents</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+            يقدم TOGAF Fundamental Content في ست وثائق مستقلة
+            <span class="term">Free-Standing</span>، لكنها مترابطة بشدة
+            <span class="term">Closely Linked</span>. الاستقلال يسمح بدراسة أو تبني مجال معين،
+            والترابط يضمن أن هذه المجالات تعمل كمنظومة واحدة.
+          </p>
+<div class="six-docs">
+<div class="doc-card">
+<span class="doc-no">1</span>
+<h5>Introduction and Core Concepts</h5>
+<p>يقدم نظرة عامة، بنية المعيار، التعريفات، والمفاهيم المشتركة التي تستخدمها بقية الوثائق.</p>
+</div>
+<div class="doc-card">
+<span class="doc-no">2</span>
+<h5>Architecture Development Method</h5>
+<p>يشرح ADM كعملية تكرارية لتطوير Enterprise Architecture، من الإعداد والرؤية حتى التنفيذ وإدارة التغيير.</p>
+</div>
+<div class="doc-card">
+<span class="doc-no">3</span>
+<h5>ADM Techniques</h5>
+<p>مجموعة تقنيات يمكن استخدامها أثناء تطبيق TOGAF وADM، مثل المبادئ، إدارة أصحاب المصلحة، السيناريوهات وتحليل الفجوات.</p>
+</div>
+<div class="doc-card">
+<span class="doc-no">4</span>
+<h5>Applying the ADM</h5>
+<p>إرشادات لتكييف ADM حسب النمط المعماري، حجم المؤسسة، نطاق المبادرة، وبيئة التطبيق العملية.</p>
+</div>
+<div class="doc-card">
+<span class="doc-no">5</span>
+<h5>Architecture Content</h5>
+<p>يشرح Content Framework، الميتاموديل، Artifacts، Deliverables، وArchitecture Building Blocks القابلة لإعادة الاستخدام.</p>
+</div>
+<div class="doc-card">
+<span class="doc-no">6</span>
+<h5>Enterprise Architecture Capability and Governance</h5>
+<p>يشرح التنظيم والعمليات والمهارات والأدوار والمسؤوليات اللازمة لإنشاء وتشغيل وظيفة المعمارية وحوكمتها.</p>
+</div>
+</div>
+<h4>طريقة عملية لحفظ الوظائف الست</h4>
+<table class="comparison">
+<tr><th>السؤال</th><th>الوثيقة التي تجيب عنه</th></tr>
+<tr><td>ما المفاهيم واللغة الأساسية؟</td><td>Introduction and Core Concepts</td></tr>
+<tr><td>ما العملية التي نتبعها؟</td><td>Architecture Development Method</td></tr>
+<tr><td>ما أدوات التحليل التي نستخدمها؟</td><td>ADM Techniques</td></tr>
+<tr><td>كيف نكيف العملية حسب السياق؟</td><td>Applying the ADM</td></tr>
+<tr><td>ما المحتوى والمخرجات التي ننتجها؟</td><td>Architecture Content</td></tr>
+<tr><td>من يشغل الوظيفة وكيف تُحكم؟</td><td>EA Capability and Governance</td></tr>
+</table>
+<div class="exam-box">
+<strong>امتحانيًا:</strong>
+            احفظ أسماء الوثائق الست ووظيفة كل واحدة، ولا تعتبر Series Guides واحدة من الوثائق
+            الست لـFundamental Content.
+          </div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c2s4" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c2s5">
+<div class="section-head">
+<div><h3>5. لماذا قُسم المعيار إلى وثائق مستقلة؟</h3><span class="en">Specialization, Incremental Adoption, and Selective Use</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+            الغرض من التقسيم هو السماح بمعالجة مجالات التخصص المختلفة بتفصيل كافٍ،
+            وإتاحة استخدام بعض الأجزاء بصورة مستقلة عندما يكون ذلك مناسبًا.
+          </p>
+<h4>الفائدة الأولى: التخصص</h4>
+<p>
+            يستطيع فريق الحوكمة التركيز على Capability &amp; Governance، بينما يركز فريق النمذجة
+            على Architecture Content، ويستخدم فريق المبادرة ADM وTechniques.
+          </p>
+<h4>الفائدة الثانية: Incremental Adoption</h4>
+<p>
+            المؤسسة الجديدة على TOGAF لا تحتاج إلى تبني كل شيء مرة واحدة. يمكنها البدء
+            بالمكونات الأكثر قيمة وإلحاحًا، ثم توسيع القدرة تدريجيًا.
+          </p>
+<h4>الفائدة الثالثة: الدمج مع إطار قائم</h4>
+<p>
+            المؤسسة التي تمتلك Architecture Framework بالفعل يمكنها دمج عناصر من TOGAF
+            معه بدل إلغاء كل ممارساتها الحالية.
+          </p>
+<div class="visual-title">مسار التبني التدريجي</div>
+<div aria-label="خطوات تبني TOGAF تدريجيًا" class="adoption-path" role="img">
+<div class="path-step"><strong>Assess</strong><small>فهم القدرة الحالية والاحتياج</small></div>
+<div class="path-step"><strong>Select</strong><small>اختيار الوثائق والعناصر المناسبة</small></div>
+<div class="path-step"><strong>Tailor &amp; Integrate</strong><small>تكييفها ودمجها مع الممارسات الحالية</small></div>
+<div class="path-step"><strong>Expand</strong><small>التوسع التدريجي بناءً على القيمة والنضج</small></div>
+</div>
+<h4>مثال رسمي في المعنى</h4>
+<p>
+            قد تتبنى مؤسسة عملية ADM، لكنها تختار عدم استخدام مواد Architecture Capability
+            في البداية. أو قد تستخدم TOGAF Metamodel وتدمجه مع إطار تطوير موجود لديها.
+          </p>
+<div class="example-box">
+<strong>مثال عملي:</strong>
+            جهة صغيرة تبدأ بتحديد Architecture Principles، وتطبيق ADM مبسط، وإنشاء Repository
+            أساسي. بعد نضج التجربة تضيف Architecture Board، Compliance Reviews، وMetamodel أكثر تفصيلًا.
+          </div>
+<div class="exam-box">
+            التقسيم لا يعني أن الوثائق غير مترابطة. هي مستقلة من حيث إمكانية الاستخدام والدراسة،
+            لكنها تعمل معًا لتكوين قدرة معمارية متكاملة.
+          </div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c2s5" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c2s6">
+<div class="section-head">
+<div><h3>6. Fundamental Content وTOGAF Series Guides</h3><span class="en">Core Foundation versus Context-Specific Guidance</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<div class="layered-equation">
+<div class="equation-box">TOGAF Fundamental Content<br/><small>الأساس العام</small></div>
+<div class="equation-symbol">+</div>
+<div class="equation-box">TOGAF Series Guides<br/><small>الإرشادات المتخصصة</small></div>
+<div class="equation-symbol">=</div>
+<div class="equation-box">The TOGAF Standard<br/><small>المعيار في صورته الكاملة</small></div>
+</div>
+<div class="standard-vs-library">
+<div class="svl-card">
+<h5>Fundamental Content</h5>
+<ul>
+<li>عام وقابل للتطبيق عبر سياقات متعددة.</li>
+<li>يمثل الأساس المشترك.</li>
+<li>أكثر استقرارًا نسبيًا.</li>
+<li>يتضمن الوثائق الست.</li>
+</ul>
+</div>
+<div class="svl-plus">+</div>
+<div class="svl-card">
+<h5>TOGAF Series Guides</h5>
+<ul>
+<li>تشرح احتياجات أو مجالات أكثر تحديدًا.</li>
+<li>تقدم عمقًا يتجاوز المحتوى الأساسي.</li>
+<li>لا تكون كلها مطلوبة في كل موقف.</li>
+<li>تتطور بسرعة أكبر مع اتجاهات السوق.</li>
+</ul>
+</div>
+</div>
+<h4>لماذا نحتاج Series Guides؟</h4>
+<p>
+            لا يمكن للمحتوى الأساسي أن يغطي كل قطاع وتقنية ونمط عمل بالتفصيل دون أن يصبح
+            ضخمًا وبطيء التغيير. لذلك تحفظ الوثائق الأساسية المفاهيم المستقرة، وتقدم الأدلة
+            تفصيلًا حسب الحاجة.
+          </p>
+<h4>هل نستخدم جميع الأدلة؟</h4>
+<p>
+            لا. المعماري يجب أن يكون على علم بما هو متاح، ثم يختار الأدلة ذات الصلة بالسياق.
+            دليل Security Architecture قد يكون أساسيًا في مبادرة أمنية، بينما دليل Agile قد يكون
+            أكثر أهمية عند العمل مع Product Teams.
+          </p>
+<div class="memory-box">
+<strong>قاعدة:</strong>
+            Series Guides are selected by relevance, not consumed as a mandatory complete set.
+          </div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c2s6" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c2s7">
+<div class="section-head">
+<div><h3>7. المجالات التي تغطيها TOGAF Series Guides</h3><span class="en">Styles, Domains, Trends, Framework Integration, and Use-Cases</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+            تقدم الأدلة دعمًا إضافيًا لقرارات الاستراتيجية، مجالات المعمارية، التقنيات الجديدة،
+            الأساليب الرشيقة، والدمج مع معايير ومنهجيات أخرى.
+          </p>
+<div aria-label="موضوعات TOGAF Series Guides" class="guide-cloud">
+<span class="guide-tag">Strategy &amp; Business Value</span>
+<span class="guide-tag">Business Architecture</span>
+<span class="guide-tag">Operating Models</span>
+<span class="guide-tag">Information &amp; Data Management</span>
+<span class="guide-tag">Information Systems</span>
+<span class="guide-tag">Reference Models</span>
+<span class="guide-tag">Data Integration Models</span>
+<span class="guide-tag">Technology Architecture</span>
+<span class="guide-tag">New Technology Adoption</span>
+<span class="guide-tag">Security Architecture</span>
+<span class="guide-tag">Risk Management</span>
+<span class="guide-tag">Agile Enterprise</span>
+<span class="guide-tag">Agile Delivery Style</span>
+<span class="guide-tag">Digital Enterprise</span>
+<span class="guide-tag">Digital Products</span>
+<span class="guide-tag">Microservices / SOA</span>
+<span class="guide-tag">Other Standards &amp; Frameworks</span>
+<span class="guide-tag">Verticals and Specific Use-Cases</span>
+</div>
+<h4>Strategy and Business Value</h4>
+<p>
+            إرشادات تساعد على ربط القرارات المعمارية بالقيمة والنتائج، لا بالتكنولوجيا فقط.
+          </p>
+<h4>Business and Operating Model</h4>
+<p>
+            مواد تشرح كيفية وصف قدرات الأعمال، القيمة، التنظيم، ونموذج التشغيل.
+          </p>
+<h4>Information, Data, and Systems</h4>
+<p>
+            تغطي إدارة المعلومات، نماذج البيانات، التكامل، والنظم المرجعية.
+          </p>
+<h4>Technology and Security</h4>
+<p>
+            تدعم تقييم تبني التقنيات الجديدة، وفهم القدرات اللازمة لها، وتطبيق Security Architecture
+            وإدارة المخاطر.
+          </p>
+<h4>Agile and Digital</h4>
+<p>
+            توضح كيف تدعم Enterprise Architecture المؤسسة الرشيقة، وكيف يمكن تقديم العمل المعماري
+            بأسلوب Agile، وكيف تدعم المنتجات والخدمات الرقمية.
+          </p>
+<h4>التكامل مع معايير أخرى</h4>
+<p>
+            تشمل الأمثلة المذكورة: O-AA، DPBoK، IT4IT، ArchiMate، Microservices Architecture،
+            ومعايير الأمن وغيرها من المعايير والممارسات.
+          </p>
+<div class="exam-box">
+            Series Guides تتحرك وتتطور أسرع من المحتوى الأساسي، لأن دورها هو الاستجابة
+            للاتجاهات الجديدة واحتياجات السوق والممارسة.
+          </div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c2s7" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c2s8">
+<div class="section-head">
+<div><h3>8. ما هي TOGAF Library؟</h3><span class="en">A Portfolio and Reference Library for Practical Application</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+            TOGAF Library هي محفظة واسعة من المواد المرجعية التي تدعم التطبيق العملي لنهج TOGAF.
+            الهدف أن يستفيد المعماري من مواد موجودة بدل البدء من صفحة فارغة في كل مرة.
+          </p>
+<h4>أنواع المحتوى</h4>
+<ul>
+<li><span class="term">Guidelines</span> — إرشادات تطبيقية.</li>
+<li><span class="term">Templates</span> — قوالب للمخرجات والعمل.</li>
+<li><span class="term">Patterns</span> — أنماط حلول أو ممارسات قابلة لإعادة الاستخدام.</li>
+<li><span class="term">Reference Material</span> — مواد مرجعية لتسريع إنشاء المعماريات.</li>
+</ul>
+<h4>من يحافظ عليها؟</h4>
+<p>
+            تُدار تحت حوكمة <span class="term">The Open Group Architecture Forum</span>.
+          </p>
+<h4>علاقتها بـArchitecture Repository</h4>
+<p>
+            داخل TOGAF Architecture Repository توجد فئة معلومات تسمى
+            <span class="term">Reference Library</span>. وتدعم TOGAF Library هذا النوع من المعلومات
+            من خلال توفير موارد خارجية يمكن الاستفادة منها وإعادة استخدامها.
+          </p>
+<div class="diagram">TOGAF Library Resources
+↓ select and adapt
+Enterprise Reference Library
+↓ reuse
+Architecture Work and Solutions</div>
+<h4>مهم: Library ليست Architecture Repository الخاصة بمؤسستك</h4>
+<p>
+            TOGAF Library مورد عام من The Open Group. أما Architecture Repository فهو المستودع
+            الذي تديره مؤسستك لحفظ مبادئها ونماذجها ومخرجاتها ومعاييرها وBuilding Blocks الخاصة بها.
+          </p>
+<div class="trap-grid">
+<div class="trap-card"><b>خطأ</b><span>TOGAF Library هي مستودع ملفات مشروعك الداخلي.</span></div>
+<div class="trap-card"><b>الصحيح</b><span>هي مصدر عام للمواد المرجعية؛ يمكن لمؤسستك الاستفادة منه داخل Reference Library الخاصة بها.</span></div>
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c2s8" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c2s9">
+<div class="section-head">
+<div><h3>9. TOGAF Library Continuum</h3><span class="en">Categories of Guidance from Foundation to Practical Application</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<p>
+            ينظم TOGAF Library مواده وفق نموذج تصنيفي متدرج. يبدأ بالمحتوى التأسيسي العام،
+            ثم ينتقل إلى إرشادات الأنماط والمجالات والتكامل مع المعايير، ثم التطبيقات القطاعية والعملية.
+          </p>
+<div class="visual-title">رسم توضيحي للـLibrary Continuum — مبني على Figure 2-4</div>
+<div aria-label="فئات TOGAF Library Continuum" class="continuum" role="img">
+<div class="continuum-item"><span class="ci-no">1</span><strong>Fundamental Content</strong><small>الأساس العام والمفاهيم المشتركة</small></div>
+<div class="continuum-item"><span class="ci-no">2</span><strong>Architecture Styles, Trends &amp; Methodologies</strong><small>Agile، Digital، وأساليب واتجاهات متعددة</small></div>
+<div class="continuum-item"><span class="ci-no">3</span><strong>Architecture Areas / Domains</strong><small>Business، Data، Security، Technology وغيرها</small></div>
+<div class="continuum-item"><span class="ci-no">4</span><strong>Other Standards &amp; Frameworks</strong><small>إرشادات التكامل والعمل المشترك</small></div>
+<div class="continuum-item"><span class="ci-no">5</span><strong>Verticals or Specific Use-Cases</strong><small>قطاعات أو حالات استخدام محددة</small></div>
+<div class="continuum-item"><span class="ci-no">6</span><strong>Practical Application</strong><small>أدلة وقوالب ومراجع تساعد التنفيذ الفعلي</small></div>
+</div>
+<h4>هل هو ترتيب إلزامي للمذاكرة أو التطبيق؟</h4>
+<p>
+            لا. كلمة Continuum هنا توضح نطاق وتصنيف المواد من العام إلى الأكثر تخصصًا وعملية،
+            وليست سلسلة مراحل يجب المرور بها حرفيًا.
+          </p>
+<h4>كيف تستخدمه عمليًا؟</h4>
+<div class="example-box">
+            إذا كنت تعمل على برنامج Digital Health باستخدام Agile وMicroservices،
+            تبدأ بالأساس العام، ثم تختار أدلة Digital Enterprise وAgile، ثم Security وInformation،
+            ثم إرشادات Microservices وأي مادة قطاعية صحية متاحة.
+          </div>
+<div class="exam-box">
+            لا تحفظ أسماء الفئات فقط؛ افهم اتجاه الحركة:
+            <strong>General Foundation → Specialized Context → Practical Use.</strong>
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c2s9" type="checkbox"/> انتهيت من هذا القسم وفهمته</label>
+</article><article class="section-card" id="c2s10">
+<div class="section-head">
+<div><h3>10. مراجعة الفصل الثاني وأسئلة الامتحان</h3><span class="en">Key Distinctions, Exam Traps, and Practice Questions</span></div>
+<span class="toggle">⌄</span>
+</div>
+<div class="section-body">
+<h4>المعادلات المفاهيمية المهمة</h4>
+<div class="memory-box">
+<strong>Fundamental Content = Six Core Documents</strong><br/>
+<strong>TOGAF Standard = Fundamental Content + TOGAF Series Guides</strong><br/>
+<strong>TOGAF Library = Additional Reference and Practical Guidance Resources</strong>
+</div>
+<h4>أخطاء شائعة</h4>
+<div class="trap-grid">
+<div class="trap-card"><b>خطأ 1</b><span>TOGAF Standard هو ADM فقط.</span></div>
+<div class="trap-card"><b>التصحيح</b><span>ADM هو القلب، لكن المعيار يشمل المحتوى والتقنيات والتكييف والحوكمة والأدلة.</span></div>
+<div class="trap-card"><b>خطأ 2</b><span>Series Guides جزء من الوثائق الست.</span></div>
+<div class="trap-card"><b>التصحيح</b><span>الوثائق الست هي Fundamental Content؛ الأدلة تكملها.</span></div>
+<div class="trap-card"><b>خطأ 3</b><span>يجب تطبيق كل الوثائق والأدلة في كل مشروع.</span></div>
+<div class="trap-card"><b>التصحيح</b><span>يتم الاختيار والتكييف حسب الحاجة والسياق.</span></div>
+<div class="trap-card"><b>خطأ 4</b><span>TOGAF Library هي Repository المؤسسة.</span></div>
+<div class="trap-card"><b>التصحيح</b><span>هي مصدر مرجعي عام يدعم مواد Reference Library داخل Repository المؤسسة.</span></div>
+</div>
+<div class="quiz" data-answer="1">
+<h4>1) What does the TOGAF Standard Fundamental Content comprise?</h4>
+<div class="options">
+<button class="answer-btn" data-index="0">Only the ADM and Architecture Content</button>
+<button class="answer-btn" data-index="1">Six free-standing but closely linked documents</button>
+<button class="answer-btn" data-index="2">All white papers in The Open Group Library</button>
+<button class="answer-btn" data-index="3">Only TOGAF Series Guides</button>
+</div>
+<p class="explanation">الإجابة B؛ Fundamental Content مقدم في ست وثائق مستقلة ومترابطة.</p>
+</div>
+<div class="quiz" data-answer="2">
+<h4>2) Which document describes an iterative approach to developing Enterprise Architecture?</h4>
+<div class="options">
+<button class="answer-btn" data-index="0">Architecture Content</button>
+<button class="answer-btn" data-index="1">ADM Techniques</button>
+<button class="answer-btn" data-index="2">Architecture Development Method</button>
+<button class="answer-btn" data-index="3">Enterprise Architecture Capability and Governance</button>
+</div>
+<p class="explanation">الإجابة C؛ وثيقة Architecture Development Method تشرح عملية ADM التكرارية.</p>
+</div>
+<div class="quiz" data-answer="0">
+<h4>3) Which document explains artifacts, deliverables, the metamodel, and reusable ABBs?</h4>
+<div class="options">
+<button class="answer-btn" data-index="0">Architecture Content</button>
+<button class="answer-btn" data-index="1">Applying the ADM</button>
+<button class="answer-btn" data-index="2">Introduction and Core Concepts</button>
+<button class="answer-btn" data-index="3">ADM Techniques</button>
+</div>
+<p class="explanation">الإجابة A؛ هذه موضوعات Architecture Content.</p>
+</div>
+<div class="quiz" data-answer="3">
+<h4>4) Why is the TOGAF Standard divided into independent documents?</h4>
+<div class="options">
+<button class="answer-btn" data-index="0">Because the documents are unrelated</button>
+<button class="answer-btn" data-index="1">To prevent tailoring</button>
+<button class="answer-btn" data-index="2">Because only one document can be used at a time</button>
+<button class="answer-btn" data-index="3">To allow specialization and selective or incremental adoption</button>
+</div>
+<p class="explanation">الإجابة D؛ التقسيم يسمح بالتخصص والتبني التدريجي والدمج مع الأطر الموجودة.</p>
+</div>
+<div class="quiz" data-answer="1">
+<h4>5) Which statement best describes TOGAF Series Guides?</h4>
+<div class="options">
+<button class="answer-btn" data-index="0">They replace the Fundamental Content</button>
+<button class="answer-btn" data-index="1">They provide more specific guidance for practitioner needs and contexts</button>
+<button class="answer-btn" data-index="2">Every guide is mandatory in every architecture initiative</button>
+<button class="answer-btn" data-index="3">They only address Technology Architecture</button>
+</div>
+<p class="explanation">الإجابة B؛ الأدلة تقدم تفسيرًا وعمقًا لحالات ومجالات أكثر تحديدًا.</p>
+</div>
+<div class="quiz" data-answer="2">
+<h4>6) Which content is expected to evolve more rapidly?</h4>
+<div class="options">
+<button class="answer-btn" data-index="0">The definition of Enterprise</button>
+<button class="answer-btn" data-index="1">Only the ADM cycle</button>
+<button class="answer-btn" data-index="2">TOGAF Series Guides and context-specific guidance</button>
+<button class="answer-btn" data-index="3">No TOGAF content changes</button>
+</div>
+<p class="explanation">الإجابة C؛ المواد المتخصصة تتطور أسرع للاستجابة لاتجاهات السوق والاحتياجات الجديدة.</p>
+</div>
+<div class="quiz" data-answer="0">
+<h4>7) What is a primary role of the TOGAF Library?</h4>
+<div class="options">
+<button class="answer-btn" data-index="0">Provide reference material that accelerates practical architecture work</button>
+<button class="answer-btn" data-index="1">Store an organization’s confidential architecture repository</button>
+<button class="answer-btn" data-index="2">Replace architecture governance</button>
+<button class="answer-btn" data-index="3">Mandate one technology vendor</button>
+</div>
+<p class="explanation">الإجابة A؛ المكتبة توفر Guidelines وTemplates وPatterns ومواد مرجعية.</p>
+</div>
+<div class="quiz" data-answer="3">
+<h4>8) Which statement is correct?</h4>
+<div class="options">
+<button class="answer-btn" data-index="0">Every TOGAF Series Guide is relevant in every situation</button>
+<button class="answer-btn" data-index="1">TOGAF cannot be combined with another framework</button>
+<button class="answer-btn" data-index="2">The six fundamental documents must always be adopted simultaneously</button>
+<button class="answer-btn" data-index="3">Organizations may select, tailor, and combine relevant TOGAF materials</button>
+</div>
+<p class="explanation">الإجابة D؛ هذا يتفق مع طبيعة TOGAF كإطار مفتوح وقابل للتكييف.</p>
+</div>
+</div>
+<label class="check-row"><input class="section-check" data-id="c2s10" type="checkbox"/> انتهيت من مراجعة الفصل الثاني وأسئلته</label>
+</article>
+<div class="chapter-nav">
+<a href="chapter-1.html"><strong>← الفصل السابق</strong><small>الفصل الأول: Introduction</small></a>
+<a class="home" href="index.html"><strong>⌂ الفهرس الرئيسي</strong><small>جميع الفصول</small></a>
+<a class="next" href="chapter-3.html"><strong>الفصل التالي →</strong><small>الفصل الثالث: Core Concepts</small></a>
+</div>
+</main>
+</div>
+<footer class="footer">
+    TOGAF Study Hub — Chapter 2
+  </footer>
+</div>
+<script>
+  const body = document.body;
+  const sidebar = document.getElementById('sidebar');
+  const menuBtn = document.getElementById('menuBtn');
+  const themeBtn = document.getElementById('themeBtn');
+  const checks = [...document.querySelectorAll('.section-check')];
+  const progressFill = document.getElementById('progressFill');
+  const progressText = document.getElementById('progressText');
+
+  const themeKey = 'togaf-chapter-2-theme';
+  const savedTheme = localStorage.getItem(themeKey) || 'light';
+  body.setAttribute('data-theme', savedTheme);
+
+  themeBtn?.addEventListener('click', () => {
+    const next = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    body.setAttribute('data-theme', next);
+    localStorage.setItem(themeKey, next);
+  });
+
+  menuBtn?.addEventListener('click', () => sidebar?.classList.toggle('open'));
+  document.querySelectorAll('.sidebar a').forEach(a => a.addEventListener('click', () => sidebar?.classList.remove('open')));
+
+  document.querySelectorAll('.section-head').forEach(head => {
+    head.addEventListener('click', () => head.closest('.section-card')?.classList.toggle('collapsed'));
+  });
+
+  function updateProgress(){
+    const done = checks.filter(c => c.checked).length;
+    const pct = checks.length ? Math.round((done / checks.length) * 100) : 0;
+    if(progressFill) progressFill.style.width = pct + '%';
+    if(progressText) progressText.textContent = pct + '% مكتمل — ' + done + ' من ' + checks.length;
+  }
+
+  checks.forEach(c => {
+    const key = 'togaf-chapter-2-progress-' + c.dataset.id;
+    c.checked = localStorage.getItem(key) === '1';
+    c.addEventListener('change', () => {
+      localStorage.setItem(key, c.checked ? '1' : '0');
+      updateProgress();
+    });
+  });
+  updateProgress();
+
+  document.addEventListener('click', (event) => {
+    const btn = event.target.closest('.answer-btn');
+    if(!btn) return;
+    const quiz = btn.closest('.quiz');
+    if(!quiz || quiz.classList.contains('answered')) return;
+    const answer = Number(quiz.dataset.answer);
+    quiz.classList.add('answered');
+    const idx = Number(btn.dataset.index);
+    btn.classList.add(idx === answer ? 'correct' : 'wrong');
+    if(idx !== answer){
+      quiz.querySelector(`.answer-btn[data-index="${answer}"]`)?.classList.add('correct');
+    }
+  });
+
+  const search = document.getElementById('search');
+
+  function clearMarks(root){
+    root.querySelectorAll('mark').forEach(mark => mark.replaceWith(document.createTextNode(mark.textContent)));
+    root.normalize();
+  }
+
+  function highlightTerm(root, query){
+    if(!query) return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while(walker.nextNode()) nodes.push(walker.currentNode);
+
+    nodes.forEach(node => {
+      if(!node.nodeValue.trim() || node.parentElement.closest('script,style,mark')) return;
+      const value = node.nodeValue;
+      const lower = value.toLowerCase();
+      const qLower = query.toLowerCase();
+      let cursor = 0;
+      let index = lower.indexOf(qLower);
+      if(index < 0) return;
+
+      const frag = document.createDocumentFragment();
+      while(index >= 0){
+        frag.append(value.slice(cursor,index));
+        const mark = document.createElement('mark');
+        mark.textContent = value.slice(index,index + query.length);
+        frag.append(mark);
+        cursor = index + query.length;
+        index = lower.indexOf(qLower,cursor);
+      }
+      frag.append(value.slice(cursor));
+      node.replaceWith(frag);
+    });
+  }
+
+  search?.addEventListener('input', () => {
+    const q = search.value.trim();
+    document.querySelectorAll('.section-card').forEach(card => {
+      clearMarks(card);
+      if(!q){
+        card.style.display = '';
+        return;
+      }
+      const match = card.textContent.toLowerCase().includes(q.toLowerCase());
+      card.style.display = match ? '' : 'none';
+      if(match){
+        card.classList.remove('collapsed');
+        highlightTerm(card,q);
+      }
+    });
+  });
+
+  const sectionIds = [...document.querySelectorAll('.section-card[id]')].map(section => section.id);
+  const links = [...document.querySelectorAll('.sidebar a[href^="#"]')];
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+      }
+    });
+  }, {rootMargin:'-25% 0px -65% 0px'});
+  sectionIds.forEach(id => {
+    const el = document.getElementById(id);
+    if(el) observer.observe(el);
+  });
+</script>
+<script src="assets/core.js"></script></body>
+</html>

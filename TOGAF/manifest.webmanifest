@@ -1,9 +1,9 @@
 {
-  "name": "TOGAF Study Platform",
-  "short_name": "TOGAF",
+  "name": "TOGAF Study Platform by Mahmoud Salama",
+  "short_name": "TOGAF Study",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#eef4f9",
+  "background_color": "#f3f8fd",
   "theme_color": "#07152f",
   "lang": "ar",
   "dir": "rtl",
@@ -21,16 +21,54 @@
   ],
   "shortcuts": [
     {
-      "name": "Workspace",
-      "url": "workspace.html"
+      "name": "Study Workspace",
+      "short_name": "Workspace",
+      "url": "workspace.html",
+      "icons": [
+        {
+          "src": "assets/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Practice",
-      "url": "practice.html"
+      "short_name": "Practice",
+      "url": "practice.html",
+      "icons": [
+        {
+          "src": "assets/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     },
     {
-      "name": "Exam",
-      "url": "exam.html"
+      "name": "Certification Exam",
+      "short_name": "Exam",
+      "url": "exam.html",
+      "icons": [
+        {
+          "src": "assets/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Notes",
+      "short_name": "Notes",
+      "url": "notes.html",
+      "icons": [
+        {
+          "src": "assets/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     }
-  ]
+  ],
+  "description": "A modern, offline-first TOGAF learning and exam platform by Mahmoud Salama.",
+  "scope": "./"
 }

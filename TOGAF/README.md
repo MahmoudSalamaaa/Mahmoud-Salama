@@ -26,3 +26,19 @@ Contextual Notes، Highlights، Bookmarks، Global Search، Practice Modes، Cer
 ## الملكية الفكرية
 
 المشروع أداة تعليمية شخصية. لا يتضمن ملف TOGAF الرسمي. استخدم نسخة مرخصة من المصدر الرسمي، وراجع شروط The Open Group قبل النشر العام.
+
+
+## Modern UI/UX v4.0
+
+The entire platform was refreshed with a unified Mahmoud Salama brand system:
+
+- Navy, cyan, gold, violet, and mint design tokens
+- Responsive glass navigation and mobile menus
+- Accessible focus states and 44px touch targets
+- Modern chapter cards, dashboards, forms, quizzes, modals, and tables
+- Dark mode for platform pages while preserving chapter dark mode
+- Reading progress indicator, scroll-to-top, motion preferences, and print styles
+- Mahmoud Salama logo, name, and Digital Card link on every page
+- Offline cache updated for the new interface assets
+
+Digital Card: https://mahmoud-salama.vercel.app/card.html

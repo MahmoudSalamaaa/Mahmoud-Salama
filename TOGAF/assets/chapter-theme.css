@@ -1,0 +1,75 @@
+
+.ms-chapter-page{
+  --primary:#0a6180;
+  --primary-2:#082c58;
+  --accent:#d8ad4f;
+  --bg:#f2f7fb;
+  --surface:#ffffff;
+  --surface-2:#eef5fa;
+  --text:#10213a;
+  --muted:#66758b;
+  --border:#d6e3ee;
+  --shadow:0 12px 34px rgba(6,21,47,.09);
+}
+.ms-chapter-page[data-theme="dark"]{
+  --bg:#071323;--surface:#0d1d31;--surface-2:#112740;--text:#eef7ff;--muted:#acbbca;--primary:#35c5e6;--primary-2:#8adff1;--accent:#edc46b;--border:#284159;
+}
+.ms-chapter-page .topbar{height:74px;padding:0 18px;background:color-mix(in srgb,var(--surface) 94%,transparent);box-shadow:0 2px 12px rgba(6,21,47,.04)}
+.ms-chapter-page .brand-mark{width:46px;height:46px;padding:0;border-radius:50%;background:var(--surface);border:2px solid #16c3ec;overflow:hidden;box-shadow:0 0 0 5px rgba(22,195,236,.10)}
+.ms-chapter-page .brand-mark img{width:100%;height:100%;object-fit:cover}
+.ms-chapter-page .brand h1{font-size:1rem;color:var(--text)}
+.ms-chapter-page .search-wrap{max-width:620px}
+.ms-chapter-page #search{background:var(--surface);min-height:44px}
+.ms-chapter-page .top-actions{align-items:center}
+.ms-chapter-page .ms-chapter-author,.ms-chapter-page .home-link{
+  min-height:42px;padding:7px 10px;border:1px solid var(--border);border-radius:11px;background:var(--surface);text-decoration:none;
+  display:inline-flex;align-items:center;gap:7px;font-weight:800;font-size:.78rem;white-space:nowrap
+}
+.ms-chapter-page .ms-chapter-author img{width:28px;height:28px;border-radius:50%;border:1px solid #16c3ec}
+.ms-chapter-page .icon-btn,.ms-chapter-page .primary-btn{min-height:42px;border-radius:11px}
+.ms-chapter-page .layout{grid-template-columns:300px minmax(0,1fr)}
+.ms-chapter-page .sidebar{top:74px;height:calc(100vh - 74px);padding:18px 14px 30px}
+.ms-chapter-page .progress-card{background:linear-gradient(135deg,#06152f,#0b3765);box-shadow:0 14px 30px rgba(6,21,47,.18)}
+.ms-chapter-page .content{max-width:1180px;padding:26px clamp(18px,3vw,40px) 90px}
+.ms-chapter-page .hero{
+  position:relative;overflow:hidden;padding:38px clamp(24px,4vw,48px);border-radius:26px;
+  background:radial-gradient(circle at 6% 10%,rgba(22,195,236,.20),transparent 17rem),linear-gradient(135deg,#06152f,#103f78);
+  color:#fff;box-shadow:0 24px 60px rgba(6,21,47,.18)
+}
+.ms-chapter-page .hero h2{font-size:clamp(2rem,4vw,3.15rem);line-height:1.15;margin-bottom:12px}
+.ms-chapter-page .hero p{max-width:900px;color:#dce9f6}
+.ms-chapter-page .eyebrow,.ms-chapter-page .pill{border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.09);color:#fff}
+.ms-chapter-page .ms-hero-logo{position:absolute;left:24px;bottom:22px;width:74px;height:74px;border-radius:50%;opacity:.75;border:2px solid #16c3ec}
+.ms-chapter-page .chapter-header{margin:18px 0 14px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 6px 18px rgba(6,21,47,.05)}
+.ms-chapter-page .section-card{border-radius:18px;border-color:var(--border);box-shadow:0 7px 22px rgba(6,21,47,.05)}
+.ms-chapter-page .section-head{padding:17px 18px;background:linear-gradient(180deg,var(--surface),var(--surface-2))}
+.ms-chapter-page .section-head h3{color:var(--text)}
+.ms-chapter-page .section-body{padding:5px 20px 23px}
+.ms-chapter-page .quote{border-right:4px solid var(--accent);background:#06152f;color:#eef8ff}
+.ms-chapter-page .option{min-height:46px;border-radius:11px}
+.ms-chapter-page .chapter-nav a{min-height:48px;border-radius:12px}
+.ms-chapter-footer{margin-top:28px;padding:20px 0 4px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.ms-chapter-footer .ms-footer-brand{display:flex;align-items:center;gap:10px}
+.ms-chapter-footer img{width:42px;height:42px;border-radius:50%;border:2px solid #16c3ec}
+.ms-chapter-footer strong,.ms-chapter-footer small{display:block}.ms-chapter-footer small{color:var(--muted)}
+.ms-chapter-footer a{min-height:42px;padding:8px 12px;border-radius:11px;background:#06152f;color:#fff;text-decoration:none;font-weight:800;display:inline-flex;align-items:center}
+@media(max-width:900px){
+  .ms-chapter-page .layout{display:block}
+  .ms-chapter-page .mobile-menu{display:inline-flex}
+  .ms-chapter-page .sidebar{position:fixed;z-index:1800;top:74px;right:0;width:min(320px,88vw);height:calc(100vh - 74px);transform:translateX(105%);transition:transform .2s;box-shadow:-20px 0 50px rgba(6,21,47,.22)}
+  .ms-chapter-page .sidebar.open{transform:none}
+  .ms-chapter-page .content{width:100%;padding:18px 13px 80px}
+  .ms-chapter-page .search-wrap{display:none}
+  .ms-chapter-page .ms-chapter-author span,.ms-chapter-page .home-link span{display:none}
+}
+@media(max-width:620px){
+  .ms-chapter-page .topbar{height:64px;padding:0 9px;gap:6px}
+  .ms-chapter-page .sidebar{top:64px;height:calc(100vh - 64px)}
+  .ms-chapter-page .brand{min-width:0;flex:1}.ms-chapter-page .brand small{display:none}.ms-chapter-page .brand h1{font-size:.78rem}
+  .ms-chapter-page .brand-mark{width:40px;height:40px}.ms-chapter-page .ms-chapter-author{display:none}
+  .ms-chapter-page .top-actions .icon-btn,.ms-chapter-page .home-link,.ms-chapter-page .mobile-menu{width:39px;min-width:39px;height:39px;padding:0;justify-content:center}
+  .ms-chapter-page .hero{padding:25px 19px;border-radius:20px}.ms-chapter-page .hero h2{font-size:1.75rem}.ms-chapter-page .hero-meta{display:none}
+  .ms-chapter-page .ms-hero-logo{width:48px;height:48px;left:14px;bottom:14px;opacity:.55}
+  .ms-chapter-page .chapter-header{display:none}.ms-chapter-page .section-head{padding:15px}.ms-chapter-page .section-body{padding:3px 15px 20px}
+  .ms-chapter-footer{align-items:flex-start;flex-direction:column}.ms-chapter-footer a{width:100%;justify-content:center}
+}

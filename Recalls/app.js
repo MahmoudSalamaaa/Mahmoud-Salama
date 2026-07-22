@@ -46,7 +46,7 @@
     Object.keys(source).forEach(k=>{ if(source[k] && typeof source[k]==='object' && !Array.isArray(source[k])) target[k]=mergeDeep(target[k]||{},source[k]); else target[k]=source[k]; });
     return target;
   }
-  function saveState(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+  function saveState(){ try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch {} }
   function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(t._timer); t._timer=setTimeout(()=>t.classList.remove('show'),2400); }
   function sessions(){
     const base=BASE_DATA.filter(s=>!state.deletedSessions.includes(s.id)).map(s=>state.editedSessions[s.id]||s);
@@ -71,7 +71,7 @@
     if(name==='my-study') renderMyStudy();
     if(name==='editor') renderEditor();
     if(name==='about') renderAbout();
-    window.scrollTo({top:$('#workspace').offsetTop-88,behavior:'smooth'});
+    if(push) window.scrollTo({top:$('#workspace').offsetTop-88,behavior:'smooth'});
   }
 
   function applySettings(){

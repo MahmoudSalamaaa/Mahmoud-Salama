@@ -1,3 +1,7 @@
+# Medical Recall Studio V2 — Visual Refresh
+
+A redesigned V2 release with a product-first hero, release banner, modern navigation, clearer study command panel, visible What’s New entry point, and a more polished library workspace.
+
 # Medical Recall Intelligence Library - Verified Study Studio 2.0
 
 Curated by **Mahmoud Salama**.
@@ -56,3 +60,10 @@ Suggested-answer fields are intentionally user-editable. Always verify clinical 
 - `docs/original-handwritten.pdf` - original 116-page source
 - `docs/readable-edition.pdf` - polished readable edition
 - `manifest.webmanifest` and `sw.js` - PWA support
+
+
+## Version 2 page
+
+- `whats-new.html` presents the user-facing Version 2 enhancements.
+- The original homepage layout has been preserved.
+- A compact highlighted button in the hero section links to the What's New page without changing the main layout.

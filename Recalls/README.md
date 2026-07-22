@@ -1,90 +1,58 @@
-# Medical Recall Explorer — Phase 1
+# Medical Recall Intelligence Library - Verified Study Studio 2.0
 
-A responsive, filterable HTML project created for **Mahmoud Salama** from the handwritten PDF `Recalls recent_260719_130608_Compress.pdf`.
-
-## Current scope
-
-- Source PDF: **116 pages**
-- Structured and reviewed in this phase: **pages 1–20**
-- Recall sessions created: **19**
-- Countries represented in the first batch: United Kingdom, Malaysia, Oman, Saudi Arabia, India and Egypt
-- Centres represented: UK, Malaysia, Oman, Jeddah, Mumbai, Hyderabad and Egypt
-
-The original source PDF is included in the project, so every recall card can open the related handwritten page for verification.
-
-## Main features
-
-- Full-text search across titles, countries, centres, categories and recall content
-- Category filters: History, Communication, Video, Clinical, Development and Others
-- Filters by year, country, centre and month
-- Sorting by newest, oldest or centre
-- Expand/collapse all sections
-- Copy the complete text of an individual recall session
-- Print the currently filtered results
-- Dark/light theme
-- Responsive mobile, tablet and desktop layout
-- Original-PDF source viewer
-- Personal branding, logo, website, digital card, LinkedIn and email
-
-## Project structure
-
-```text
-recalls_project_phase1/
-├── index.html
-├── styles.css
-├── app.js
-├── data.js
-├── README.md
-└── assets/
-    ├── logo.png
-    └── recalls-source.pdf
-```
+Curated by **Mahmoud Salama**.
 
 ## Open the project
 
-Open `index.html` directly in a modern browser. It does not require a server, database or internet connection for its core features.
+1. Extract the complete ZIP.
+2. Keep all folders together.
+3. Open `index.html`.
 
-When publishing it online, upload the entire folder without changing the relative file structure.
+The project works when opened locally. For the installable PWA and full offline cache, publish the folder to any HTTPS host or run a local web server.
 
-## Adding the next batch
+Example local server:
 
-Add each new recall session as another object inside `window.RECALLS_DATA` in `data.js` using this schema:
-
-```javascript
-{
-  id: "unique-centre-date-day",
-  center: "Centre name",
-  country: "Country name",
-  region: "Region",
-  year: 2025,
-  month: "February",
-  day: 1,
-  title: "Centre — February 2025 — Day 1",
-  pages: [21, 22],
-  sections: {
-    History: ["Item one", "Item two"],
-    Communication: ["Item one"],
-    Video: ["Item one"],
-    Clinical: ["Item one"],
-    Development: ["Item one"],
-    Others: ["Optional item"]
-  }
-}
+```bash
+python -m http.server 8000
 ```
 
-Then update `transcribedThroughPage` in `window.RECALLS_META`. All counts, progress, filters and category statistics update automatically.
+Then open `http://localhost:8000`.
 
-## Transcription approach
+## Implemented capabilities
 
-The source is handwritten and contains specialist abbreviations. Phase 1 was manually structured for readability while retaining abbreviations where the source uses them. Text that remains uncertain is marked in the interface and can be corrected in later quality-assurance passes while viewing the original page.
+- Modern responsive branding and hero section
+- Search by word, phrase, abbreviation and common spelling variants
+- Filters by category, year, country, centre, month, specialty, age group, context and verification status
+- Side-by-side transcription and original PDF source viewer
+- Source-page navigation, zoom, rotation and full-screen viewing
+- Verification status, confidence and reviewer notes
+- Study mode with timer and grading
+- Flashcards with local spaced-repetition scheduling
+- Favourites, difficult topics, completion tracking, personal notes and suggested-answer workspace
+- Analytics dashboard and clickable filters
+- Country, centre and year comparison mode
+- Deep links to sessions
+- Local editor for sessions and recall items
+- Structured data import/export
+- Progress backup and restore
+- Print / Save PDF for single, selected or filtered sessions
+- Reading size, density, theme, contrast and focus controls
+- Installable PWA files
+- Polished readable PDF with cover, clickable contents, bookmarks and source-page references
 
-## Planned batches
+## Important verification note
 
-1. **Completed:** Foundation and pages 1–20
-2. **Next:** Pages 21–50
-3. Pages 51–85
-4. Pages 86–116 and final quality assurance
+`Verified` means the transcription was reviewed against the handwritten source page. It does not mean that the clinical content was independently validated against current guidelines.
 
-## Study notice
+Suggested-answer fields are intentionally user-editable. Always verify clinical notes against current professional guidance.
 
-This project contains exam-recall study material. It is not a clinical guideline and must not be used as patient-specific medical advice.
+## Main files
+
+- `index.html` - application entry point
+- `styles.css` - responsive visual design and print styling
+- `app.js` - search, filters, study tools, analytics, editor and storage logic
+- `data/recalls-data.js` - browser-ready structured data
+- `data/recalls-data.json` - portable JSON export
+- `docs/original-handwritten.pdf` - original 116-page source
+- `docs/readable-edition.pdf` - polished readable edition
+- `manifest.webmanifest` and `sw.js` - PWA support

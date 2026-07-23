@@ -1,0 +1,9 @@
+{
+  "name": "MS Clinical Communication Lab",
+  "short_name": "MS Comms Lab",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#07131f",
+  "theme_color": "#0b6b65",
+  "description": "Complete source-based MRCPCH clinical communication study platform."
+}

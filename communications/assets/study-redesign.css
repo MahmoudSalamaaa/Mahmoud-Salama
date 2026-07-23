@@ -1,5 +1,9 @@
-.source-content{display:none!important}
-.study-console{display:none!important}
+.study-ui-ready .source-content{display:none!important}
+.study-ui-ready .study-console{display:none!important}
+.edition-banner{margin:18px 0;padding:22px;border:1px solid #32b6a655;border-radius:20px;background:linear-gradient(135deg,#0b6b6514,#173f6610)}
+.edition-banner__tag{display:inline-flex;padding:6px 10px;border-radius:999px;background:#0b6b65;color:#fff;font-size:.76rem;font-weight:900;letter-spacing:.07em}
+.edition-banner h2{margin:10px 0 6px}.edition-banner p{margin:0;color:var(--muted);line-height:1.7}
+.edition-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:15px}.edition-steps div{padding:13px;border:1px solid var(--line);border-radius:13px;background:var(--panel)}.edition-steps b{display:block;margin-bottom:4px;color:var(--pro,#0b6b65)}.edition-steps span{font-size:.85rem;color:var(--muted)}
 .study-hub~.study-layout{display:block}
 .study-hub~.study-layout>div{display:none}
 .study-hub~.study-layout>aside{max-width:none}
@@ -54,5 +58,5 @@
 .evidence-tools button{padding:8px 11px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);font-weight:750;cursor:pointer}
 .study-highlight{padding:1px 3px;border-radius:4px;background:#facc1566;color:inherit}
 .source-count{padding:4px 8px;border-radius:999px;background:var(--soft);color:var(--muted);font-size:.75rem}
-@media(max-width:760px){.brief-grid{grid-template-columns:1fr}.study-brief{padding:18px}.study-brief__head{display:block}.source-status{display:inline-flex;margin-top:12px}.study-hub__nav{top:62px}.source-evidence>summary{padding:17px}.evidence-body{padding:0 14px 16px}.study-hub~.study-layout .tocbox{grid-template-columns:1fr}}
+@media(max-width:760px){.brief-grid,.edition-steps{grid-template-columns:1fr}.study-brief{padding:18px}.study-brief__head{display:block}.source-status{display:inline-flex;margin-top:12px}.study-hub__nav{top:62px}.source-evidence>summary{padding:17px}.evidence-body{padding:0 14px 16px}.study-hub~.study-layout .tocbox{grid-template-columns:1fr}}
 @media print{.study-hub__nav,.source-evidence{display:none!important}.study-brief{box-shadow:none}.brief-grid{grid-template-columns:1fr 1fr}}

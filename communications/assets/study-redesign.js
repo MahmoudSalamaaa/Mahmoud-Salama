@@ -71,6 +71,7 @@ function init(){
    $$(".source-page__body p,.source-page__body li",hub).forEach(el=>{el.innerHTML=el.textContent.replace(new RegExp(`(${key.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")})`,"ig"),'<mark class="study-highlight">$1</mark>')});
    $(".source-evidence",hub).open=true;
  });
+ document.documentElement.classList.add("study-ui-ready");
 }
 setTimeout(init,0);
 })();

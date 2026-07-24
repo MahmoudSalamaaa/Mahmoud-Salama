@@ -1,0 +1,1057 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected writing sample and executive technology portfolio of Mahmoud Salama, focused on digital transformation, enterprise architecture, data and integration, and program delivery.">
+  <meta name="theme-color" content="#071827">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Mahmoud Salama | Executive Technology Portfolio">
+  <meta property="og:description" content="Professional writing, transformation methodology, enterprise programs, leadership, and technology capabilities.">
+  <meta property="og:url" content="https://mahmoud-salama.vercel.app">
+  <title>Mahmoud Salama | Selected Writing Sample & Executive Portfolio</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "name": "Mahmoud Salama — Selected Writing Sample and Executive Technology Portfolio",
+    "url": "https://mahmoud-salama.vercel.app",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Mahmoud Salama",
+      "jobTitle": "Chief Technology & Digital Transformation Officer | Enterprise Architect",
+      "email": "mailto:ma7moud.salamaaa@gmail.com",
+      "telephone": "+201220156077",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cairo",
+        "addressCountry": "Egypt"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/mahmoud-salama-30249b34",
+        "https://github.com/MahmoudSalamaaa",
+        "https://mahmoud-salama.vercel.app"
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #06111e;
+      --bg-soft: #0a1a2b;
+      --surface: rgba(12, 31, 50, .84);
+      --surface-solid: #0d2034;
+      --surface-2: #122b45;
+      --text: #edf8ff;
+      --muted: #a8bed1;
+      --line: rgba(125, 211, 252, .17);
+      --cyan: #0dcaf0;
+      --cyan-2: #38bdf8;
+      --blue: #2563eb;
+      --teal: #14b8a6;
+      --gold: #d7aa4a;
+      --gold-soft: rgba(215, 170, 74, .13);
+      --success: #34d399;
+      --shadow: 0 22px 70px rgba(0, 0, 0, .28);
+      --radius-xl: 26px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max: 1220px;
+    }
+
+    html[data-theme="light"] {
+      --bg: #eef5fa;
+      --bg-soft: #f7fbfe;
+      --surface: rgba(255, 255, 255, .88);
+      --surface-solid: #ffffff;
+      --surface-2: #f0f7fc;
+      --text: #10243a;
+      --muted: #5d7185;
+      --line: rgba(15, 83, 120, .14);
+      --cyan: #0284c7;
+      --cyan-2: #0369a1;
+      --blue: #1d4ed8;
+      --teal: #0f766e;
+      --gold: #9a6b0c;
+      --gold-soft: rgba(154, 107, 12, .10);
+      --success: #047857;
+      --shadow: 0 20px 55px rgba(39, 73, 104, .13);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 95px; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 8% 3%, rgba(13, 202, 240, .14), transparent 29rem),
+        radial-gradient(circle at 93% 2%, rgba(37, 99, 235, .13), transparent 30rem),
+        var(--bg);
+      color: var(--text);
+      font: 16px/1.75 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      transition: background .25s ease, color .25s ease;
+    }
+
+    ::selection { background: rgba(13, 202, 240, .28); }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 3px solid rgba(13, 202, 240, .55); outline-offset: 3px; }
+
+    .skip-link {
+      position: fixed; left: 14px; top: -60px; z-index: 999;
+      background: var(--cyan); color: #00151d; padding: 10px 14px;
+      border-radius: 10px; font-weight: 800; text-decoration: none;
+      transition: top .2s ease;
+    }
+    .skip-link:focus { top: 14px; }
+
+    .reading-progress {
+      position: fixed; inset: 0 auto auto 0; z-index: 1000; height: 3px;
+      width: 0; background: linear-gradient(90deg, var(--cyan), var(--teal), var(--gold));
+      box-shadow: 0 0 18px rgba(13, 202, 240, .5);
+    }
+
+    .container { width: min(var(--max), calc(100% - 34px)); margin-inline: auto; }
+
+    .site-header {
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(18px);
+      background: color-mix(in srgb, var(--bg) 78%, transparent);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 76px; display: flex; align-items: center; gap: 22px;
+    }
+
+    .brand {
+      display: flex; align-items: center; gap: 12px; min-width: max-content;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 52px; height: 52px; object-fit: contain;
+      filter: drop-shadow(0 0 15px rgba(13, 202, 240, .22));
+    }
+
+    .brand-copy strong { display: block; font-size: 15px; letter-spacing: .01em; }
+    .brand-copy span { display: block; font-size: 11px; color: var(--muted); }
+
+    .nav-links {
+      margin-left: auto; display: flex; align-items: center; gap: 5px;
+    }
+
+    .nav-links a {
+      text-decoration: none; color: var(--muted); font-size: 13px; font-weight: 700;
+      padding: 9px 10px; border-radius: 10px;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--text); background: color-mix(in srgb, var(--surface-solid) 78%, transparent);
+    }
+
+    .icon-button {
+      display: inline-grid; place-items: center; width: 42px; height: 42px;
+      border: 1px solid var(--line); border-radius: 12px; background: var(--surface);
+      color: var(--text); cursor: pointer;
+    }
+
+    .mobile-toggle { display: none; }
+
+    .hero {
+      position: relative; overflow: hidden; padding: 84px 0 55px;
+    }
+
+    .hero::before {
+      content: ""; position: absolute; width: 520px; height: 520px;
+      border: 1px solid rgba(13, 202, 240, .12); border-radius: 50%;
+      right: -220px; top: -270px; box-shadow: inset 0 0 90px rgba(13, 202, 240, .06);
+    }
+
+    .hero-grid {
+      display: grid; grid-template-columns: 1.25fr .75fr; gap: 55px; align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px; margin-bottom: 20px;
+      padding: 8px 12px; border: 1px solid rgba(13, 202, 240, .24);
+      border-radius: 999px; color: var(--cyan); background: rgba(13, 202, 240, .07);
+      font-size: 12px; font-weight: 900; letter-spacing: .13em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 13px var(--cyan); }
+
+    h1, h2, h3 { margin-top: 0; line-height: 1.15; }
+    h1 {
+      font-size: clamp(45px, 7vw, 82px); margin-bottom: 15px;
+      letter-spacing: -.055em; max-width: 900px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(105deg, var(--text) 15%, var(--cyan) 59%, var(--teal));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+
+    .hero-role {
+      margin: 0 0 20px; color: var(--cyan); font-size: clamp(17px, 2vw, 22px);
+      font-weight: 800;
+    }
+
+    .hero-summary { max-width: 790px; margin: 0; color: var(--muted); font-size: 18px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      min-height: 46px; padding: 11px 17px; border-radius: 13px;
+      text-decoration: none; border: 1px solid var(--line); font-weight: 850;
+      font-size: 13px; transition: transform .2s ease, border-color .2s ease, background .2s ease;
+      cursor: pointer;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button.primary {
+      background: linear-gradient(135deg, var(--cyan), var(--teal));
+      color: #00141c; border-color: transparent;
+      box-shadow: 0 14px 35px rgba(13, 202, 240, .19);
+    }
+    .button.secondary { background: var(--surface); color: var(--text); }
+    .button.ghost { color: var(--cyan); background: transparent; }
+
+    .hero-card {
+      position: relative; padding: 28px; border-radius: var(--radius-xl);
+      border: 1px solid rgba(13, 202, 240, .22);
+      background: linear-gradient(145deg, rgba(16, 45, 70, .86), rgba(8, 26, 43, .9));
+      box-shadow: var(--shadow);
+    }
+    html[data-theme="light"] .hero-card {
+      background: linear-gradient(145deg, #ffffff, #ebf7fd);
+    }
+    .hero-card::after {
+      content: ""; position: absolute; inset: 13px; border: 1px solid rgba(215, 170, 74, .18);
+      border-radius: 19px; pointer-events: none;
+    }
+
+    .hero-logo {
+      display: grid; place-items: center; width: 150px; height: 150px; margin: 0 auto 22px;
+      border-radius: 34px; border: 1px solid rgba(13, 202, 240, .23);
+      background: rgba(0, 0, 0, .12);
+    }
+    .hero-logo img { width: 125px; filter: drop-shadow(0 0 18px rgba(13, 202, 240, .28)); }
+
+    .mini-details { display: grid; gap: 11px; position: relative; z-index: 1; }
+    .mini-details div {
+      display: flex; justify-content: space-between; gap: 16px;
+      border-bottom: 1px solid var(--line); padding-bottom: 10px;
+    }
+    .mini-details span { color: var(--muted); font-size: 12px; }
+    .mini-details strong { font-size: 12px; text-align: right; }
+
+    .metrics {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+      margin-top: 45px;
+    }
+
+    .metric {
+      padding: 21px 20px; border: 1px solid var(--line);
+      border-radius: var(--radius-lg); background: var(--surface);
+      box-shadow: 0 14px 42px rgba(0, 0, 0, .08);
+    }
+    .metric strong { display: block; color: var(--cyan); font-size: 30px; line-height: 1; margin-bottom: 8px; }
+    .metric span { color: var(--muted); font-size: 12px; font-weight: 750; }
+
+    main section { padding: 78px 0; }
+    main section:nth-of-type(even) {
+      border-block: 1px solid var(--line);
+      background: linear-gradient(180deg, transparent, rgba(13, 202, 240, .022), transparent);
+    }
+
+    .section-heading {
+      display: grid; grid-template-columns: 90px 1fr; gap: 22px; align-items: start;
+      margin-bottom: 34px;
+    }
+    .section-number {
+      display: grid; place-items: center; width: 76px; height: 76px;
+      border: 1px solid rgba(215, 170, 74, .37); border-radius: 22px;
+      color: var(--gold); background: var(--gold-soft); font-size: 22px; font-weight: 950;
+    }
+    .section-heading .kicker {
+      color: var(--cyan); font-size: 11px; font-weight: 900;
+      letter-spacing: .15em; text-transform: uppercase;
+    }
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 48px); margin: 6px 0 9px; letter-spacing: -.035em;
+    }
+    .section-heading p { margin: 0; color: var(--muted); max-width: 850px; }
+
+    .callout {
+      position: relative; padding: 25px 26px 25px 31px; margin: 24px 0;
+      border: 1px solid var(--line); border-radius: var(--radius-lg);
+      background: linear-gradient(120deg, rgba(13, 202, 240, .08), var(--surface));
+    }
+    .callout::before {
+      content: ""; position: absolute; left: 0; top: 18px; bottom: 18px; width: 4px;
+      border-radius: 999px; background: linear-gradient(var(--cyan), var(--teal));
+    }
+    .callout.gold { background: linear-gradient(120deg, var(--gold-soft), var(--surface)); }
+    .callout.gold::before { background: linear-gradient(var(--gold), #f6d47d); }
+    .callout h3 { margin-bottom: 7px; font-size: 16px; color: var(--cyan); }
+    .callout.gold h3 { color: var(--gold); }
+    .callout p { margin: 0; color: var(--muted); }
+
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card {
+      padding: 24px; border: 1px solid var(--line); border-radius: var(--radius-lg);
+      background: var(--surface); box-shadow: 0 16px 45px rgba(0, 0, 0, .06);
+      transition: transform .22s ease, border-color .22s ease;
+    }
+    .card:hover { transform: translateY(-4px); border-color: rgba(13, 202, 240, .35); }
+    .card h3 { font-size: 18px; margin-bottom: 9px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .card .icon {
+      display: grid; place-items: center; width: 43px; height: 43px; margin-bottom: 18px;
+      border-radius: 13px; color: var(--cyan);
+      background: rgba(13, 202, 240, .08); border: 1px solid rgba(13, 202, 240, .17);
+      font-weight: 950;
+    }
+
+    .contents-list { display: grid; gap: 11px; margin-top: 22px; }
+    .contents-list a {
+      display: grid; grid-template-columns: 42px 1fr auto; gap: 14px; align-items: center;
+      padding: 15px 17px; border: 1px solid var(--line); border-radius: 14px;
+      background: var(--surface); text-decoration: none;
+    }
+    .contents-list a:hover { border-color: rgba(13, 202, 240, .4); }
+    .contents-list .num { color: var(--gold); font-weight: 950; }
+    .contents-list strong { font-size: 14px; }
+    .contents-list small { display: block; color: var(--muted); margin-top: 2px; }
+    .contents-list .arrow { color: var(--cyan); }
+
+    .article-layout {
+      display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 38px; align-items: start;
+    }
+    .article {
+      padding: 34px; border: 1px solid var(--line);
+      border-radius: var(--radius-xl); background: var(--surface);
+    }
+    .article h3 { font-size: 24px; margin-top: 38px; color: var(--text); }
+    .article h3:first-of-type { margin-top: 0; }
+    .article p { color: var(--muted); }
+    .article-intro {
+      color: var(--text) !important; font-size: 18px; border-left: 3px solid var(--cyan);
+      padding-left: 18px;
+    }
+
+    .article-nav {
+      position: sticky; top: 105px; padding: 19px;
+      border: 1px solid var(--line); border-radius: 18px; background: var(--surface);
+    }
+    .article-nav strong { display: block; margin-bottom: 10px; font-size: 12px; color: var(--cyan); text-transform: uppercase; letter-spacing: .1em; }
+    .article-nav a {
+      display: block; padding: 8px 9px; border-radius: 9px; color: var(--muted);
+      text-decoration: none; font-size: 12px; line-height: 1.35;
+    }
+    .article-nav a:hover { color: var(--text); background: var(--surface-2); }
+
+    .steps {
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px;
+      counter-reset: steps;
+    }
+    .step {
+      counter-increment: steps; padding: 23px; border: 1px solid var(--line);
+      border-radius: var(--radius-lg); background: var(--surface);
+    }
+    .step::before {
+      content: counter(steps, decimal-leading-zero); display: block; margin-bottom: 18px;
+      color: var(--gold); font-size: 13px; font-weight: 950; letter-spacing: .12em;
+    }
+    .step h3 { font-size: 17px; margin-bottom: 8px; }
+    .step p { margin: 0; color: var(--muted); font-size: 13px; }
+
+    .deliverables {
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 11px;
+      margin-top: 24px;
+    }
+    .deliverable {
+      padding: 15px; border: 1px solid var(--line); border-radius: 13px;
+      background: var(--surface); color: var(--muted); font-size: 13px;
+    }
+    .deliverable::before { content: "✓"; color: var(--success); font-weight: 950; margin-right: 8px; }
+
+    .portfolio-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .project {
+      position: relative; overflow: hidden; padding: 27px; border: 1px solid var(--line);
+      border-radius: var(--radius-xl); background: var(--surface);
+    }
+    .project::before {
+      content: ""; position: absolute; inset: 0 0 auto; height: 3px;
+      background: linear-gradient(90deg, var(--cyan), var(--teal), var(--gold));
+    }
+    .project-meta { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 16px; }
+    .pill {
+      display: inline-flex; padding: 5px 9px; border-radius: 999px;
+      border: 1px solid var(--line); background: var(--surface-2);
+      color: var(--muted); font-size: 10px; font-weight: 850;
+    }
+    .pill.highlight { color: var(--cyan); border-color: rgba(13, 202, 240, .22); }
+    .project h3 { font-size: 23px; margin-bottom: 10px; }
+    .project .lead { color: var(--cyan); font-weight: 800; font-size: 13px; margin-bottom: 16px; }
+    .project dl { margin: 0; display: grid; gap: 13px; }
+    .project dt { color: var(--gold); font-size: 10px; font-weight: 950; letter-spacing: .1em; text-transform: uppercase; }
+    .project dd { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+
+    .compact-table {
+      width: 100%; border-collapse: collapse; border: 1px solid var(--line);
+      border-radius: 16px; overflow: hidden; background: var(--surface);
+    }
+    .compact-table th, .compact-table td { padding: 14px 15px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .compact-table th { background: var(--surface-2); color: var(--cyan); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+    .compact-table td { color: var(--muted); font-size: 13px; }
+    .compact-table td:first-child { color: var(--text); font-weight: 800; }
+    .compact-table tr:last-child td { border-bottom: 0; }
+
+    .timeline { position: relative; display: grid; gap: 18px; }
+    .timeline::before {
+      content: ""; position: absolute; left: 21px; top: 15px; bottom: 15px; width: 1px;
+      background: linear-gradient(var(--cyan), var(--line));
+    }
+    .timeline-item {
+      position: relative; margin-left: 55px; padding: 22px;
+      border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface);
+    }
+    .timeline-item::before {
+      content: ""; position: absolute; left: -43px; top: 27px; width: 17px; height: 17px;
+      border-radius: 50%; background: var(--bg); border: 4px solid var(--cyan);
+      box-shadow: 0 0 0 5px rgba(13, 202, 240, .07);
+    }
+    .timeline-item .date { color: var(--gold); font-size: 11px; font-weight: 950; letter-spacing: .08em; text-transform: uppercase; }
+    .timeline-item h3 { margin: 5px 0 6px; font-size: 18px; }
+    .timeline-item p { margin: 0; color: var(--muted); font-size: 13px; }
+
+    .capability-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; }
+    .capability {
+      padding: 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface);
+    }
+    .capability h3 { font-size: 14px; color: var(--cyan); margin-bottom: 8px; }
+    .capability p { font-size: 12px; color: var(--muted); margin: 0; }
+
+    .profile-strip {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 11px; margin-top: 25px;
+    }
+    .profile-strip div {
+      padding: 15px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface);
+    }
+    .profile-strip span { display: block; color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .08em; }
+    .profile-strip strong { display: block; margin-top: 5px; font-size: 12px; }
+
+    .cta {
+      position: relative; overflow: hidden; padding: 42px; border: 1px solid rgba(13, 202, 240, .25);
+      border-radius: 28px; background: linear-gradient(135deg, rgba(13, 202, 240, .11), var(--surface));
+      box-shadow: var(--shadow);
+    }
+    .cta::after {
+      content: ""; position: absolute; width: 280px; height: 280px; right: -120px; bottom: -150px;
+      border-radius: 50%; border: 1px solid rgba(215, 170, 74, .18);
+    }
+    .cta h2 { font-size: clamp(31px, 4vw, 49px); margin-bottom: 12px; }
+    .cta p { max-width: 760px; color: var(--muted); }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+
+    footer {
+      border-top: 1px solid var(--line); padding: 28px 0 38px; color: var(--muted);
+      font-size: 12px;
+    }
+    .footer-grid { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+    .footer-links { display: flex; gap: 14px; flex-wrap: wrap; }
+    .footer-links a { text-decoration: none; }
+    .footer-links a:hover { color: var(--cyan); }
+
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    .back-to-top {
+      position: fixed; right: 20px; bottom: 20px; z-index: 80;
+      width: 45px; height: 45px; display: grid; place-items: center;
+      border-radius: 14px; border: 1px solid var(--line); color: var(--text);
+      background: var(--surface-solid); box-shadow: var(--shadow); text-decoration: none;
+      opacity: 0; pointer-events: none; transform: translateY(10px);
+      transition: .2s ease;
+    }
+    .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+    @media (max-width: 1040px) {
+      .nav-links { display: none; position: absolute; left: 17px; right: 17px; top: 72px; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface-solid); box-shadow: var(--shadow); }
+      .nav-links.open { display: grid; }
+      .mobile-toggle { display: inline-grid; margin-left: auto; }
+      .hero-grid, .article-layout { grid-template-columns: 1fr; }
+      .hero-card { max-width: 620px; }
+      .article-nav { position: static; display: grid; grid-template-columns: repeat(2, 1fr); }
+      .article-nav strong { grid-column: 1 / -1; }
+      .steps { grid-template-columns: repeat(2, 1fr); }
+      .capability-grid { grid-template-columns: repeat(2, 1fr); }
+      .profile-strip { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 740px) {
+      .container { width: min(100% - 24px, var(--max)); }
+      .hero { padding-top: 52px; }
+      .hero-grid { gap: 35px; }
+      .metrics, .cards, .portfolio-grid, .steps, .deliverables { grid-template-columns: 1fr; }
+      .section-heading { grid-template-columns: 60px 1fr; gap: 14px; }
+      .section-number { width: 56px; height: 56px; border-radius: 16px; font-size: 17px; }
+      .article { padding: 23px; }
+      .article-nav { grid-template-columns: 1fr; }
+      .capability-grid, .profile-strip { grid-template-columns: 1fr; }
+      .compact-table, .compact-table thead, .compact-table tbody, .compact-table th, .compact-table td, .compact-table tr { display: block; }
+      .compact-table thead { display: none; }
+      .compact-table tr { padding: 10px; border-bottom: 1px solid var(--line); }
+      .compact-table td { border: 0; padding: 7px 9px; }
+      .cta { padding: 28px 22px; }
+      .footer-grid { flex-direction: column; align-items: flex-start; }
+      .brand-copy span { display: none; }
+    }
+
+    @media print {
+      .site-header, .reading-progress, .back-to-top, .hero-actions, .article-nav, .theme-toggle, .mobile-toggle { display: none !important; }
+      body { background: #fff; color: #111827; font-size: 11pt; }
+      .hero { padding-top: 20px; }
+      .hero-grid, .article-layout { grid-template-columns: 1fr; }
+      .card, .project, .step, .article, .metric, .timeline-item, .capability, .callout, .cta {
+        background: #fff !important; color: #111827 !important; box-shadow: none !important; break-inside: avoid;
+      }
+      p, .muted, .card p, .project dd, .timeline-item p, .capability p { color: #374151 !important; }
+      main section { padding: 30px 0; }
+      a { text-decoration: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="https://mahmoud-salama.vercel.app" aria-label="Mahmoud Salama home">
+        <img src="./mahmoud-salama-logo.png" alt="Mahmoud Salama logo">
+        <span class="brand-copy">
+          <strong>Mahmoud Salama</strong>
+          <span>Executive Technology Portfolio</span>
+        </span>
+      </a>
+
+      <button class="icon-button mobile-toggle" id="mobileToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#overview">Overview</a>
+        <a href="#writing">Writing Sample</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button class="icon-button theme-toggle" id="themeToggle" aria-label="Change color theme">☀</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="reveal">
+            <span class="eyebrow">Selected Writing Sample & Executive Portfolio</span>
+            <h1><span class="gradient-text">Technology leadership</span> that turns strategy into sustainable institutional capability.</h1>
+            <p class="hero-role">Mahmoud Salama — Chief Technology & Digital Transformation Officer | Enterprise Architect</p>
+            <p class="hero-summary">
+              A publication-safe portfolio of original professional writing, transformation methodology,
+              enterprise platforms, leadership appointments, architecture, data and integration expertise,
+              and program-delivery experience developed across Egypt and the Gulf.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="./Mahmoud-Salama-Selected-Writing-Sample-and-Executive-Portfolio.pdf" download>Download PDF</a>
+              <a class="button secondary" href="./Mahmoud-Salama-Selected-Writing-Sample-and-Executive-Portfolio.docx" download>Editable Word</a>
+              <a class="button ghost" href="#writing">Read writing sample ↓</a>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal" aria-label="Professional profile summary">
+            <div class="hero-logo"><img src="./mahmoud-salama-logo.png" alt=""></div>
+            <div class="mini-details">
+              <div><span>Focus</span><strong>Digital Transformation & Enterprise Architecture</strong></div>
+              <div><span>Sectors</span><strong>Government · Healthcare · Education</strong></div>
+              <div><span>Location</span><strong>Cairo, Egypt</strong></div>
+              <div><span>International delivery</span><strong>Egypt & Sultanate of Oman</strong></div>
+              <div><span>Portfolio</span><strong>mahmoud-salama.vercel.app</strong></div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="metrics reveal" aria-label="Portfolio metrics">
+          <div class="metric"><strong>18+</strong><span>Years in technology</span></div>
+          <div class="metric"><strong>150+</strong><span>Digital projects and platforms</span></div>
+          <div class="metric"><strong>EGP 150M+</strong><span>Enterprise technology portfolio</span></div>
+          <div class="metric"><strong>40+</strong><span>Professionals led</span></div>
+          <div class="metric"><strong>12,000+</strong><span>Public-sector entities supported</span></div>
+          <div class="metric"><strong>39,000+</strong><span>Staff reached through adoption</span></div>
+          <div class="metric"><strong>~70%</strong><span>Reduction in reporting preparation</span></div>
+          <div class="metric"><strong>2</strong><span>Countries of direct delivery</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-number">01</div>
+          <div>
+            <span class="kicker">Executive overview</span>
+            <h2>Leadership scope and transferable value</h2>
+            <p>A concise view of the strategic, technical, governance, and delivery capabilities demonstrated throughout this portfolio.</p>
+          </div>
+        </div>
+
+        <div class="callout reveal">
+          <h3>What this portfolio demonstrates</h3>
+          <p>The ability to diagnose complex institutional problems, structure evidence, communicate with senior decision-makers, design practical transformation roadmaps, govern technology portfolios, lead cross-functional delivery, strengthen data and integration environments, and convert digital investment into sustainable organizational capability.</p>
+        </div>
+
+        <div class="cards reveal">
+          <article class="card"><div class="icon">01</div><h3>Strategy to execution</h3><p>Connects executive priorities, operating models, enterprise architecture, program governance, implementation planning, and measurable benefits.</p></article>
+          <article class="card"><div class="icon">02</div><h3>Public-sector transformation</h3><p>Experience across government, healthcare, education, procurement, supply chain, citizen services, and regulated institutional environments.</p></article>
+          <article class="card"><div class="icon">03</div><h3>Architecture and integration</h3><p>Enterprise and solution architecture spanning APIs, interoperability, Microsoft Dynamics 365, data platforms, analytics, and secure application ecosystems.</p></article>
+          <article class="card"><div class="icon">04</div><h3>Leadership and adoption</h3><p>Directs multidisciplinary teams, vendors, stakeholders, quality standards, release governance, training, documentation, and organizational change.</p></article>
+        </div>
+
+        <div class="contents-list reveal" aria-label="Page contents">
+          <a href="#writing"><span class="num">02</span><span><strong>Original professional writing sample</strong><small>Sustainable transformation in complex public institutions.</small></span><span class="arrow">→</span></a>
+          <a href="#methodology"><span class="num">03</span><span><strong>Transformation methodology</strong><small>A reusable six-stage executive delivery framework.</small></span><span class="arrow">→</span></a>
+          <a href="#portfolio"><span class="num">04</span><span><strong>Selected enterprise portfolio</strong><small>Healthcare, government, education, data, integration, and platforms.</small></span><span class="arrow">→</span></a>
+          <a href="#leadership"><span class="num">05</span><span><strong>Leadership and governance</strong><small>National programs, appointments, speaking, and engagement.</small></span><span class="arrow">→</span></a>
+          <a href="#outputs"><span class="num">06</span><span><strong>Professional outputs</strong><small>Strategies, architecture, case studies, dashboards, procedures, and specifications.</small></span><span class="arrow">→</span></a>
+          <a href="#capabilities"><span class="num">07</span><span><strong>Technical and delivery capabilities</strong><small>Executive leadership grounded in hands-on solution delivery.</small></span><span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="writing">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-number">02</div>
+          <div>
+            <span class="kicker">Original professional writing sample</span>
+            <h2>From digital projects to institutional capability</h2>
+            <p>A practical framework for sustainable transformation in complex public institutions.</p>
+          </div>
+        </div>
+
+        <div class="article-layout">
+          <article class="article reveal">
+            <h3 id="context">Executive context</h3>
+            <p class="article-intro">Public institutions are under increasing pressure to improve service quality, transparency, efficiency, resilience, and evidence-based decision-making. Digital technology can help, but technology alone does not transform an institution.</p>
+            <p>Sustainable transformation occurs when strategy, governance, process design, data, architecture, people, and performance management are treated as one connected system.</p>
+            <p>Many programs underperform because they begin with a product, platform, or procurement exercise before the institution has clarified the decisions that need to improve, the responsibilities that need to change, the information required for management, and the capabilities needed to operate the new environment. This creates digital replicas of fragmented processes rather than genuinely better institutions.</p>
+
+            <div class="callout gold">
+              <h3>Core proposition</h3>
+              <p>A digital transformation program should be governed as an institutional capability-building initiative. Technology is one component of the solution; the intended outcome is a stronger organization that can make better decisions, deliver services more consistently, manage risk, and continuously improve.</p>
+            </div>
+
+            <h3 id="outcomes">1. Start with outcomes, not systems</h3>
+            <p>The first task is to define the public value the program is expected to create. Outcomes may include shorter service cycles, improved visibility, better compliance, more reliable data, wider access, stronger accountability, or greater resilience. Each outcome should be translated into measurable indicators and linked to the decisions, processes, roles, and information that influence it.</p>
+            <p>This prevents the program from becoming a collection of technical features. It also enables leadership to distinguish between capabilities that are essential, capabilities that can be phased, and capabilities that should not be funded because they do not materially improve the target outcomes.</p>
+
+            <h3 id="evidence">2. Establish an evidence baseline</h3>
+            <p>A credible transformation roadmap requires an evidence-based view of the current environment. The assessment should combine process observation, stakeholder interviews, system inventories, data profiling, service metrics, control reviews, user feedback, and analysis of policy or regulatory requirements.</p>
+            <p>Evidence should be structured into decision-relevant themes: service performance, governance, process maturity, data quality, architecture, security, workforce capability, vendor dependencies, and financial sustainability. The baseline should distinguish symptoms from root causes.</p>
+
+            <h3 id="governance">3. Design governance before scale</h3>
+            <p>Large programs need explicit decision rights. Governance should define who owns business outcomes, who owns data, who approves architecture, who accepts risk, who authorizes releases, and who is accountable for adoption.</p>
+            <p>Architecture standards, data definitions, security requirements, and release controls should be agreed early and enforced consistently. This reduces duplication, limits uncontrolled customization, and creates a shared institutional language across technical and non-technical stakeholders.</p>
+
+            <h3 id="architecture">4. Build an architecture that supports institutional change</h3>
+            <p>Enterprise architecture should translate strategic intent into a coherent set of capabilities, information flows, applications, integrations, and technology standards. It should clarify what must be shared, what can remain local, how data moves, how identities and permissions are controlled, and how legacy systems will be modernized or retired.</p>
+            <p>Integration should be treated as a managed capability rather than a series of point-to-point connections. APIs, data contracts, master data, auditability, monitoring, and exception handling are part of the operating model—not merely technical details.</p>
+
+            <h3 id="delivery">5. Deliver in controlled, usable increments</h3>
+            <p>Transformation should be delivered through increments that create visible operational value while preserving the integrity of the target architecture. Each release should have defined business outcomes, acceptance criteria, data requirements, control requirements, training needs, and operational ownership.</p>
+            <p>A pilot should generate evidence about process fit, data quality, user behavior, support demand, integration performance, and policy implications. Lessons should be formally incorporated into the next stage of rollout.</p>
+
+            <h3 id="adoption">6. Treat adoption as operational design</h3>
+            <p>User adoption is often described as communication and training, but sustainable adoption depends on the complete operational environment. Users need clear roles, practical procedures, responsive support, accessible documentation, realistic workload expectations, and visible leadership commitment.</p>
+            <p>Training should be role-based and linked to actual tasks, controls, and decisions. Super-user networks, service desks, knowledge bases, and feedback mechanisms help institutions build internal capability rather than depend indefinitely on vendors or project teams.</p>
+
+            <h3 id="value">7. Measure value and learn continuously</h3>
+            <p>Benefits should be tracked throughout the program, not only at closure. Measures should include service outcomes, process efficiency, data quality, compliance, user adoption, platform reliability, support demand, and financial impact.</p>
+            <p>A mature institution uses the digital environment to learn. Operational data should reveal where processes fail, where users need support, where controls are excessive or insufficient, and where policy assumptions need revision. The most important product of transformation is not a platform; it is a stronger institutional ability to observe, decide, act, and improve.</p>
+
+            <div class="callout">
+              <h3>Closing perspective</h3>
+              <p>The strongest transformation programs combine ambition with institutional realism. They create a clear target state while investing in governance, data discipline, architecture, capability development, operational ownership, and continuous learning. This is how digital investment becomes sustainable public value.</p>
+            </div>
+          </article>
+
+          <aside class="article-nav reveal" aria-label="Writing sample navigation">
+            <strong>In this article</strong>
+            <a href="#context">Executive context</a>
+            <a href="#outcomes">1. Outcomes</a>
+            <a href="#evidence">2. Evidence baseline</a>
+            <a href="#governance">3. Governance</a>
+            <a href="#architecture">4. Architecture</a>
+            <a href="#delivery">5. Controlled delivery</a>
+            <a href="#adoption">6. Adoption</a>
+            <a href="#value">7. Value realization</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="methodology">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-number">03</div>
+          <div>
+            <span class="kicker">Reusable delivery model</span>
+            <h2>Transformation and delivery methodology</h2>
+            <p>A six-stage model for executive, consulting, architecture, and program-delivery assignments.</p>
+          </div>
+        </div>
+
+        <div class="steps reveal">
+          <article class="step"><h3>Discover and diagnose</h3><p>Clarify objectives, stakeholders, policies, processes, systems, data, risks, constraints, and the evidence baseline.</p></article>
+          <article class="step"><h3>Define outcomes and governance</h3><p>Agree measurable outcomes, decision rights, ownership, architecture principles, risk acceptance, and escalation.</p></article>
+          <article class="step"><h3>Design the target state</h3><p>Develop the operating model, capability map, enterprise architecture, data model, integration approach, security controls, and roadmap.</p></article>
+          <article class="step"><h3>Deliver controlled increments</h3><p>Prioritize value, establish program controls, manage vendors, define acceptance criteria, and release usable capabilities in phases.</p></article>
+          <article class="step"><h3>Enable adoption and operations</h3><p>Prepare roles, procedures, training, support, knowledge transfer, service management, and operational ownership.</p></article>
+          <article class="step"><h3>Measure, improve, and sustain</h3><p>Track benefits, data quality, adoption, service performance, risk, platform health, and continuous-improvement actions.</p></article>
+        </div>
+
+        <h3 class="reveal" style="margin-top:34px">Typical deliverables</h3>
+        <div class="deliverables reveal">
+          <div class="deliverable">Current-state assessment and evidence baseline</div>
+          <div class="deliverable">Stakeholder map and consultation plan</div>
+          <div class="deliverable">Transformation strategy and phased roadmap</div>
+          <div class="deliverable">Enterprise and solution architecture</div>
+          <div class="deliverable">Data governance and integration framework</div>
+          <div class="deliverable">Requirements, journeys, processes, and controls</div>
+          <div class="deliverable">Program plan, risks, vendors, and quality gates</div>
+          <div class="deliverable">Training, service model, and handover</div>
+          <div class="deliverable">KPIs, dashboards, and benefits realization</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-number">04</div>
+          <div>
+            <span class="kicker">Selected enterprise programs</span>
+            <h2>Publication-safe portfolio highlights</h2>
+            <p>Representative programs led, governed, architected, delivered, or materially supported.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="project reveal">
+            <div class="project-meta"><span class="pill highlight">National Platform</span><span class="pill">Egypt</span><span class="pill">Healthcare</span></div>
+            <h3>MedIQ / Unified Procurement and Medical Supply Ecosystem</h3>
+            <p class="lead">National healthcare procurement and supply-chain transformation</p>
+            <dl>
+              <div><dt>Challenge</dt><dd>Fragmented procurement, inventory, distribution, supplier, and reporting processes required stronger visibility, validation, governance, and operational coordination.</dd></div>
+              <div><dt>Contribution</dt><dd>Led enterprise architecture and technology governance across procurement workflows, inventory, supplier interaction, mobile execution, master data, integrations, analytics, controls, and adoption.</dd></div>
+              <div><dt>Value</dt><dd>Created a coordinated digital ecosystem supporting public-sector entities across high-volume workflows and strengthened traceability, validation, planning, and decision support.</dd></div>
+            </dl>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-meta"><span class="pill highlight">Data Platform</span><span class="pill">Egypt</span><span class="pill">Analytics</span></div>
+            <h3>Egypt's National Health Sector Data Warehouse</h3>
+            <p class="lead">Enterprise data and analytics platform</p>
+            <dl>
+              <div><dt>Challenge</dt><dd>Operational information existed across multiple systems and structures, requiring governed consolidation, validation, master data, and faster executive reporting.</dd></div>
+              <div><dt>Contribution</dt><dd>Led architecture of PostgreSQL-based data environments, pipelines, operational data stores, master-data practices, validation controls, Power BI, and Apache Superset.</dd></div>
+              <div><dt>Value</dt><dd>Improved accessibility and decision support and contributed to an approximate 70% reduction in executive reporting preparation time.</dd></div>
+            </dl>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-meta"><span class="pill highlight">Enterprise Integration</span><span class="pill">Egypt</span><span class="pill">Dynamics 365</span></div>
+            <h3>Microsoft Dynamics 365 ERP and CRM Integration</h3>
+            <p class="lead">Enterprise integration and workflow alignment</p>
+            <dl>
+              <div><dt>Challenge</dt><dd>Procurement, financial, stakeholder, operational, and reporting processes required controlled exchange between specialized platforms and enterprise ERP/CRM.</dd></div>
+              <div><dt>Contribution</dt><dd>Directed integration architecture, APIs, data mapping, validation, reconciliation, exceptions, workflow alignment, monitoring, and audit controls.</dd></div>
+              <div><dt>Value</dt><dd>Enabled governed cross-platform processes and stronger consistency between operations, financial records, stakeholder services, and management reporting.</dd></div>
+            </dl>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-meta"><span class="pill highlight">National Program</span><span class="pill">Egypt</span><span class="pill">Governance</span></div>
+            <h3>National Pharmaceutical Track and Trace Program</h3>
+            <p class="lead">Multi-agency governance and interoperability</p>
+            <dl>
+              <div><dt>Challenge</dt><dd>A national program required a clear vision, governance framework, compliance model, institutional coordination, and technology roadmap across multiple authorities.</dd></div>
+              <div><dt>Contribution</dt><dd>Served as governance lead, shaping program vision, decision structures, compliance considerations, stakeholder alignment, and the technology roadmap.</dd></div>
+              <div><dt>Value</dt><dd>Strengthened the strategic and governance foundation for pharmaceutical traceability and cross-agency coordination.</dd></div>
+            </dl>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-meta"><span class="pill highlight">Education Technology</span><span class="pill">Oman</span><span class="pill">Portal</span></div>
+            <h3>Oman National Educational Portal</h3>
+            <p class="lead">Large-scale education technology platform</p>
+            <dl>
+              <div><dt>Challenge</dt><dd>The education environment required an integrated platform supporting learning content, academic records, administration, user management, and performance visibility.</dd></div>
+              <div><dt>Contribution</dt><dd>Led full-cycle delivery and cross-border engineering coordination, including solution design, development, quality practices, stakeholder collaboration, documentation, and implementation support.</dd></div>
+              <div><dt>Value</dt><dd>Delivered an integrated e-learning and academic-management environment aligned with local e-government standards and institutional requirements.</dd></div>
+            </dl>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-meta"><span class="pill highlight">Evidence Platform</span><span class="pill">Egypt</span><span class="pill">Healthcare</span></div>
+            <h3>Health Technology Assessment Platform</h3>
+            <p class="lead">Evidence workflow and regulatory decision support</p>
+            <dl>
+              <div><dt>Challenge</dt><dd>Assessment activities required transparent workflows, audit traceability, controlled evidence review, compliance reporting, and management visibility.</dd></div>
+              <div><dt>Contribution</dt><dd>Directed digitization of assessment workflows, roles, evidence handling, audit logs, dashboards, and compliance-oriented reporting capabilities.</dd></div>
+              <div><dt>Value</dt><dd>Strengthened process transparency, traceability, and the foundation for faster, more consistent evidence-based decision-making.</dd></div>
+            </dl>
+          </article>
+        </div>
+
+        <h3 class="reveal" style="margin-top:34px">Additional portfolio highlights</h3>
+        <div class="reveal" style="overflow-x:auto">
+          <table class="compact-table">
+            <thead><tr><th>Platform / Program</th><th>Purpose and value</th><th>Selected technology</th></tr></thead>
+            <tbody>
+              <tr><td>Strategic Analytics and Reporting Layer</td><td>Real-time KPI visibility, automated validation, quality assurance, and executive operational intelligence.</td><td>Power BI, Apache Superset, SQL, PostgreSQL</td></tr>
+              <tr><td>Tenders and Contracts Management System</td><td>Digital approvals, vendor scoring, contract workflows, role-based controls, and audit traceability.</td><td>ASP.NET, C#, MySQL, JavaScript, RBAC</td></tr>
+              <tr><td>Order Tracking and SLA Visibility</td><td>Real-time fulfillment tracking, alerts, ownership dashboards, escalation workflows, and service monitoring.</td><td>Workflow alerts, dashboards, BI</td></tr>
+              <tr><td>Government Portals in Egypt and Oman</td><td>Public information, service transparency, permits, GIS-enabled services, citizen engagement, and content governance.</td><td>ASP.NET, CMS, SQL Server, GIS</td></tr>
+              <tr><td>Supply and Procurement Analytics</td><td>Demand planning support, anomaly identification, risk assessment, cost optimization, and executive insight.</td><td>PostgreSQL, SQL, risk analytics</td></tr>
+              <tr><td>Additional Enterprise Applications</td><td>Electronic pharmacy, correspondence, asset management, crisis management, recruitment ATS, customer care, notifications, and mobile services.</td><td>.NET, APIs, databases, workflow</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-number">05</div>
+          <div>
+            <span class="kicker">Leadership and professional engagement</span>
+            <h2>Governance, national programs, and cross-institutional contribution</h2>
+            <p>Appointments and engagements demonstrating executive alignment, governance, accountability, and stakeholder communication.</p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal"><span class="date">2025–2026</span><h3>Digital Transformation Committee Member — World Bank Group B-READY Egypt Assessment</h3><p>Contributed technical input supporting private-sector digitization, public-service modernization, and national competitiveness.</p></article>
+          <article class="timeline-item reveal"><span class="date">2021–2024</span><h3>Board Member — National Blood Operations Oversight</h3><p>Appointed by Egypt's Minister of Health; oversaw digital governance, data integrity, and technology standards for the national blood-supply management environment.</p></article>
+          <article class="timeline-item reveal"><span class="date">2021–2024</span><h3>Governance Lead — National Pharmaceutical Track and Trace Program</h3><p>Shaped program vision, governance, compliance, cross-agency coordination, and technology roadmap with UPA, the Egyptian Drug Authority, and the Ministry of Health.</p></article>
+          <article class="timeline-item reveal"><span class="date">2022</span><h3>International Speaker — Bioinformatics and Digital Health</h3><p>Delivered an international lecture at the Manama Health Congress and Expo in Bahrain to policymakers, health leaders, and technology executives.</p></article>
+          <article class="timeline-item reveal"><span class="date">2021–Present</span><h3>Digital Health and Technology Contributor — Africa Health ExCon</h3><p>Contributed to strategic programming, digital-health content, technical tracks, and sector collaboration.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="outputs">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-number">06</div>
+          <div>
+            <span class="kicker">Knowledge products</span>
+            <h2>Professional outputs and writing formats</h2>
+            <p>A portfolio of executive, analytical, architectural, technical, and operational documentation.</p>
+          </div>
+        </div>
+
+        <div class="callout gold reveal">
+          <h3>Publication note</h3>
+          <p>These are professional knowledge products and portfolio outputs. They should not be interpreted as peer-reviewed academic publications unless explicitly identified as such. Many were produced collaboratively or within institutional programs; descriptions reflect leadership, authorship, architecture, drafting, review, or delivery contribution.</p>
+        </div>
+
+        <div class="cards reveal">
+          <article class="card"><h3>Executive transformation case studies</h3><p>Publication-safe narratives explaining the institutional problem, transformation approach, governance model, architecture, implementation, impact, and lessons learned.</p></article>
+          <article class="card"><h3>Technology strategies and roadmaps</h3><p>Priorities, target capabilities, investment sequencing, operating dependencies, governance, risks, and benefits.</p></article>
+          <article class="card"><h3>Enterprise and solution architecture</h3><p>Capability views, application landscapes, integration patterns, data flows, security layers, deployment models, and transition states.</p></article>
+          <article class="card"><h3>Business and functional requirements</h3><p>Stakeholder needs, process models, user journeys, acceptance criteria, controls, traceability, and prioritization.</p></article>
+          <article class="card"><h3>Integration and API specifications</h3><p>Interfaces, data mapping, validation, reconciliation, exceptions, monitoring, security, and audit requirements.</p></article>
+          <article class="card"><h3>Data governance and analytics</h3><p>Master data, data-quality rules, ownership, reporting definitions, KPI frameworks, dashboards, and decision notes.</p></article>
+          <article class="card"><h3>Governance and operating procedures</h3><p>Decision rights, quality gates, release processes, service procedures, escalation, change control, and handover.</p></article>
+          <article class="card"><h3>Training and adoption materials</h3><p>Role-based guides, workshops, standard operating procedures, knowledge bases, and support documentation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-number">07</div>
+          <div>
+            <span class="kicker">Technical, delivery, and governance profile</span>
+            <h2>Executive leadership grounded in solution delivery</h2>
+            <p>Broad strategic capability supported by practical experience in architecture, software engineering, data, integration, quality, security, and adoption.</p>
+          </div>
+        </div>
+
+        <div class="capability-grid reveal">
+          <article class="capability"><h3>Executive technology leadership</h3><p>Technology strategy, digital transformation, enterprise architecture, roadmaps, portfolio governance, vendors, and executive stakeholders.</p></article>
+          <article class="capability"><h3>Enterprise integration</h3><p>Dynamics 365, REST APIs, GraphQL, connectors, mapping, reconciliation, monitoring, and exception management.</p></article>
+          <article class="capability"><h3>Data and analytics</h3><p>PostgreSQL, SQL Server, MySQL, data pipelines, master data, ODS, validation, Power BI, and Apache Superset.</p></article>
+          <article class="capability"><h3>Software engineering</h3><p>C#, ASP.NET Core, .NET Framework, Entity Framework, JavaScript, React.js, Node.js, SQL, and web APIs.</p></article>
+          <article class="capability"><h3>Delivery and quality</h3><p>Agile, SDLC, program delivery, QA, code review, release governance, documentation, CI/CD, GitHub, Postman, Jira, and testing.</p></article>
+          <article class="capability"><h3>Security and resilience</h3><p>Secure coding, RBAC, API security, audit logs, data protection, backup, recovery, monitoring, and risk management.</p></article>
+          <article class="capability"><h3>Change and adoption</h3><p>Stakeholder engagement, role-based training, knowledge transfer, support, documentation, feedback, and benefits realization.</p></article>
+          <article class="capability"><h3>Sector experience</h3><p>Government, healthcare, education, procurement, supply chain, public institutions, defense environments, and GCC delivery.</p></article>
+        </div>
+
+        <div class="profile-strip reveal">
+          <div><span>Education</span><strong>BSc Computer Science — Zagazig University</strong></div>
+          <div><span>Arabic</span><strong>Native</strong></div>
+          <div><span>English</span><strong>Professional Working Proficiency</strong></div>
+          <div><span>Current location</span><strong>Cairo, Egypt</strong></div>
+          <div><span>International experience</span><strong>Muscat, Oman · 2016–2020</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="evidence">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-number">08</div>
+          <div>
+            <span class="kicker">Responsible portfolio use</span>
+            <h2>Supporting evidence and confidentiality</h2>
+            <p>A clear distinction between publication-safe evidence and information intentionally excluded from the public portfolio.</p>
+          </div>
+        </div>
+
+        <div class="cards reveal">
+          <article class="card"><h3>Supporting evidence available</h3><p>Executive CV, selected case studies, public portfolio, architecture descriptions, specifications, integration documentation, presentations, dashboards, analytical briefs, training materials, and professional references subject to prior consent.</p></article>
+          <article class="card"><h3>Confidential operational data excluded</h3><p>Entity-level records, supplier-sensitive information, personal data, credentials, protected operational metrics, and institutional information requiring approval are not included.</p></article>
+          <article class="card"><h3>Security-sensitive detail excluded</h3><p>Source code, infrastructure configurations, vulnerabilities, access information, restricted controls, and sensitive architecture details are intentionally omitted.</p></article>
+          <article class="card"><h3>Authorship and contribution</h3><p>The writing sample was authored by Mahmoud Salama. Portfolio descriptions reflect work led, architected, delivered, governed, contributed to, or formally supported, without claiming sole institutional authorship.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="cta reveal">
+          <span class="eyebrow">Professional contact</span>
+          <h2>Let’s discuss transformation, architecture, and high-impact technology delivery.</h2>
+          <p>Available for executive technology opportunities, consulting assignments, enterprise architecture engagements, public-sector transformation programs, and institutional review.</p>
+          <div class="contact-links">
+            <a class="button primary" href="mailto:ma7moud.salamaaa@gmail.com">Email Mahmoud</a>
+            <a class="button secondary" href="tel:+201220156077">+20 122 015 6077</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/mahmoud-salama-30249b34" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="button secondary" href="https://github.com/MahmoudSalamaaa" target="_blank" rel="noopener">GitHub</a>
+            <a class="button ghost" href="https://mahmoud-salama.vercel.app/digital_card/index.html" target="_blank" rel="noopener">Digital Card</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <span>© <span id="year"></span> Mahmoud Salama. Publication-safe professional portfolio.</span>
+      <div class="footer-links">
+        <a href="https://mahmoud-salama.vercel.app">Main Portfolio</a>
+        <a href="./Mahmoud-Salama-Selected-Writing-Sample-and-Executive-Portfolio.pdf" download>PDF</a>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="back-to-top" id="backToTop" href="#top" aria-label="Back to top">↑</a>
+
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('themeToggle');
+      const mobileButton = document.getElementById('mobileToggle');
+      const navLinks = document.getElementById('navLinks');
+      const progress = document.getElementById('readingProgress');
+      const backToTop = document.getElementById('backToTop');
+      const year = document.getElementById('year');
+
+      year.textContent = new Date().getFullYear();
+
+      const storedTheme = localStorage.getItem('msPortfolioTheme');
+      if (storedTheme === 'light' || storedTheme === 'dark') {
+        root.dataset.theme = storedTheme;
+      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        root.dataset.theme = 'light';
+      }
+
+      const syncThemeIcon = () => {
+        const light = root.dataset.theme === 'light';
+        themeButton.textContent = light ? '☾' : '☀';
+        themeButton.setAttribute('aria-label', light ? 'Use dark theme' : 'Use light theme');
+      };
+      syncThemeIcon();
+
+      themeButton.addEventListener('click', () => {
+        root.dataset.theme = root.dataset.theme === 'light' ? 'dark' : 'light';
+        localStorage.setItem('msPortfolioTheme', root.dataset.theme);
+        syncThemeIcon();
+      });
+
+      mobileButton.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        mobileButton.setAttribute('aria-expanded', String(open));
+        mobileButton.textContent = open ? '×' : '☰';
+      });
+
+      navLinks.addEventListener('click', event => {
+        if (event.target.tagName === 'A') {
+          navLinks.classList.remove('open');
+          mobileButton.setAttribute('aria-expanded', 'false');
+          mobileButton.textContent = '☰';
+        }
+      });
+
+      const updateScroll = () => {
+        const max = document.documentElement.scrollHeight - innerHeight;
+        const percentage = max > 0 ? (scrollY / max) * 100 : 0;
+        progress.style.width = percentage + '%';
+        backToTop.classList.toggle('show', scrollY > 700);
+      };
+      addEventListener('scroll', updateScroll, { passive: true });
+      updateScroll();
+
+      const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: .08 });
+      document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+      const sections = [...document.querySelectorAll('main section[id]')];
+      const navAnchors = [...document.querySelectorAll('.nav-links a')];
+      const sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          navAnchors.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+          });
+        });
+      }, { rootMargin: '-28% 0px -65% 0px', threshold: 0 });
+      sections.forEach(section => sectionObserver.observe(section));
+    })();
+  </script>
+</body>
+</html>

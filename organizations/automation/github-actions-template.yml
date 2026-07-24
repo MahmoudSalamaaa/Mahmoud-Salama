@@ -1,0 +1,25 @@
+# TEMPLATE ONLY
+# GitHub Actions requires this file at repository root: .github/workflows/update-career-data.yml
+# It is stored here to keep the entire project inside organizations, as requested.
+name: Update career data
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 4 * * 1,4'
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python organizations/automation/update_data.py --check-links
+      - run: |
+          git config user.name "career-data-bot"
+          git config user.email "career-data-bot@users.noreply.github.com"
+          git add organizations/data
+          git diff --cached --quiet || git commit -m "Update career data"
+          git push

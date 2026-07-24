@@ -1,35 +1,49 @@
-# Mahmoud Salama Career Opportunity Hub — CSS Fixed Edition
+# Mahmoud Salama Career Intelligence — Full Complete Multinational Edition
 
-The complete project is contained inside the `organizations` folder.
+This edition rebuilds the largest available career-intelligence project and merges all later additions.
 
-## Core files
+## Included
+
+- 1,588 fixed job records
+- 68 official or primary-source job records
+- 25,380 live job-search routes
+- 2,238 employer records
+- 235 priority multinational and strategic employer records
+- 888 healthcare, pharmaceutical and MedTech employer records
+- 192 supply-chain, logistics, shipping, aviation and port employer records
+- 1,019 technology, cloud, software, consulting and telecom employer records
+- 674 recruitment agencies
+- 300 government and public-sector portals
+- 390 projects, tenders and consulting assignments
+- 178 job platforms and career resources
+- 45 HTML pages
+
+## Folder policy
+
+Upload the complete `organizations` folder. No file is required at the website root.
+
+All local paths are folder-relative, such as:
+
+- `./index.html`
+- `./assets/app.css`
+- `./assets/app.js`
+- `./data/js/jobs.js`
+- `./data/verified-jobs.json`
+
+## Local opening
+
+Every listing page includes a page-specific JavaScript data bundle under `data/js/`.
+This allows the application to work when opened directly from a computer, while the full JSON and CSV files remain available for hosted use and data export.
+
+## Main pages
 
 - `index.html`
+- `directory.html`
+- `search.html`
 - `jobs.html`
-- `employers.html`
-- `resources.html`
+- `live-searches.html`
+- `companies.html`
+- `multinationals.html`
 - `projects.html`
 - `tracker.html`
-- `contacts.html`
-- `data-quality.html`
-- `app.css`
-- `app.js`
-- `data.js`
-- `logo.png`
-- `data/` — JSON and CSV source files
-
-## CSS reliability changes
-
-1. `app.css` is located directly beside every HTML page.
-2. Every HTML page also includes the complete stylesheet as an inline fallback.
-3. Experimental `color-mix()` rules were removed.
-4. The CSS uses standard grid, flexbox, media queries and variables.
-5. Pages work on GitHub Pages and retain readable styling when opened directly.
-
-## Local data reliability
-
-`data.js` contains a local JavaScript copy of the JSON datasets. This avoids
-browser CORS restrictions when opening `index.html` directly from a computer.
-The original JSON and CSV files remain available under `data/`.
-
-Upload the entire `organizations` folder without omitting any files.
+- `canonical.html`

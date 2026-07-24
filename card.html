@@ -3622,6 +3622,23 @@ html:not([data-mode="creative"]) .portrait .portrait-fun{
   display:none !important;
 }
 
+
+/* EXECUTIVE PORTFOLIO LINK — shared geometry, mode-specific visual identity */
+.executive-portfolio-item .icon{
+  background:linear-gradient(135deg,rgba(216,184,106,.19),rgba(25,215,255,.13)) !important;
+  color:#8b6516 !important;
+}
+html[data-mode="creative"] .executive-portfolio-item .icon{
+  background:linear-gradient(135deg,rgba(255,215,108,.28),rgba(119,221,255,.20)) !important;
+  color:#4a63d8 !important;
+}
+.executive-portfolio-item .value{
+  font-weight:650 !important;
+}
+html[data-mode="creative"] .executive-portfolio-item .value{
+  font-weight:700 !important;
+}
+
 </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -3736,6 +3753,19 @@ html:not([data-mode="creative"]) .portrait .portrait-fun{
             <h2 class="section-title">Links</h2>
             <div class="contact-grid">
               <a class="item full website-item portfolio-item primary-link-item" href="https://mahmoud-salama.vercel.app" target="_blank" rel="noopener"><span class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M4.8 9.5h14.4M4.8 14.5h14.4M12 4c2 2.2 3.2 5 3.2 8s-1.2 5.8-3.2 8c-2-2.2-3.2-5-3.2-8S10 6.2 12 4z"/></svg></span><span><span class="label">Portfolio Website</span><span class="value">View full profile and work</span></span></a>
+              <a class="item full executive-portfolio-item" href="https://mahmoud-salama.vercel.app/executive-portfolio/" target="_blank" rel="noopener" aria-label="Open Mahmoud Salama Executive Portfolio">
+                <span class="icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 3.8h9l3 3v13.4H6z"/>
+                    <path d="M15 3.8v3h3"/>
+                    <path d="M9 10h6M9 13.5h6M9 17h4"/>
+                  </svg>
+                </span>
+                <span>
+                  <span class="label">Executive Portfolio</span>
+                  <span class="value">Writing, leadership and transformation work</span>
+                </span>
+              </a>
 
           <a class="item meeting-item" href="https://calendly.com/ma7moud-salamaaa/30min" target="_blank" rel="noopener">
             <span class="icon">◷</span>
@@ -3773,6 +3803,7 @@ html:not([data-mode="creative"]) .portrait .portrait-fun{
     personalEmail:'ma7moud.salamaaa@gmail.com',
     workEmail:'dt@upa.gov.eg',
     website:'https://mahmoud-salama.vercel.app',
+    executivePortfolio:'https://mahmoud-salama.vercel.app/executive-portfolio/',
     linkedin:'https://www.linkedin.com/in/mahmoud-salama-30249b34/',
     github:'https://github.com/MahmoudSalamaaa',
     facebook:'https://www.facebook.com/MahmoudSalamaaaa',
@@ -3831,7 +3862,7 @@ html:not([data-mode="creative"]) .portrait .portrait-fun{
       'EMAIL;TYPE=INTERNET,WORK:' + cardData.workEmail,
       'URL:' + cardData.website,
       'ADR;TYPE=WORK:;;' + cardData.address + ';;;;',
-      'NOTE:LinkedIn: ' + cardData.linkedin + '\\nGitHub: ' + cardData.github + '\\nFacebook: ' + cardData.facebook,
+      'NOTE:Executive Portfolio: ' + cardData.executivePortfolio + '\\nLinkedIn: ' + cardData.linkedin + '\\nGitHub: ' + cardData.github + '\\nFacebook: ' + cardData.facebook,
       'END:VCARD'
     ].join('\r\n');
   }

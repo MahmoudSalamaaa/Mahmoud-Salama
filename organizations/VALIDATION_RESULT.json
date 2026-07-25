@@ -1,0 +1,11 @@
+{
+  "html_pages": 47,
+  "css_linked_all": true,
+  "js_linked_all": true,
+  "idempotent": true,
+  "node_syntax": "passed",
+  "python_syntax": "passed",
+  "windows_powershell_launcher": true,
+  "python_launcher": true,
+  "preview_included": true
+}

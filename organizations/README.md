@@ -1,88 +1,92 @@
-# Mahmoud Salama Career Intelligence — Full Complete Multinational Edition
+# Job Status Color UI/UX Update
 
-This edition rebuilds the largest available career-intelligence project and merges all later additions.
+This update applies status-dependent colors to **every HTML page** in the Career Intelligence project while preserving the current data, links, filters, tracker, and localStorage status system.
 
-## Included
+## What changes visually
 
-- 1,588 fixed job records
-- 68 official or primary-source job records
-- 25,380 live job-search routes
-- 2,238 employer records
-- 235 priority multinational and strategic employer records
-- 888 healthcare, pharmaceutical and MedTech employer records
-- 192 supply-chain, logistics, shipping, aviation and port employer records
-- 1,019 technology, cloud, software, consulting and telecom employer records
-- 674 recruitment agencies
-- 300 government and public-sector portals
-- 390 projects, tenders and consulting assignments
-- 178 job platforms and career resources
-- 45 HTML pages
+| Meaning | Color treatment |
+|---|---|
+| Available / Active / Open | Green |
+| Saved / Interested / Applied / Shortlisted / Interview | Blue |
+| Deadline approaching / Follow-up / Possibly available | Amber |
+| Expired / Not Available / Rejected / Withdrawn / Broken link | Soft red |
+| Not reviewed / Not verified | Neutral gray |
+| Offer | Purple |
 
-## Folder policy
+The interface never depends on color alone. Every colored card also shows written **Availability** and **Application** labels.
 
-Upload the complete `organizations` folder. No file is required at the website root.
+## UI/UX behavior
 
-All local paths are folder-relative, such as:
+- A 5px semantic status rail appears on each job card.
+- The card receives a low-saturation background tint instead of a harsh full-color fill.
+- Status changes repaint the card immediately.
+- Table rows use the same status logic.
+- A compact color guide appears on job and vacancy pages.
+- Light mode, dark mode, mobile layout, keyboard focus, printing, reduced-motion, and high-contrast preferences are supported.
+- The existing localStorage keys and Application Tracker remain unchanged.
 
-- `./index.html`
-- `./assets/app.css`
-- `./assets/app.js`
-- `./data/js/jobs.js`
-- `./data/verified-jobs.json`
+## Apply on Windows
 
-## Local opening
+1. Extract this update folder.
+2. Put the update folder beside the `organizations` folder, or copy its files into the `organizations` folder.
+3. Double-click:
 
-Every listing page includes a page-specific JavaScript data bundle under `data/js/`.
-This allows the application to work when opened directly from a computer, while the full JSON and CSV files remain available for hosted use and data export.
+`apply-status-color-uiux.bat`
 
-## Main pages
+The Windows launcher uses built-in PowerShell, so Python is not required. It automatically finds the project and updates every top-level `.html` file.
 
-- `index.html`
-- `directory.html`
-- `search.html`
-- `jobs.html`
-- `live-searches.html`
-- `companies.html`
-- `multinationals.html`
-- `projects.html`
-- `tracker.html`
-- `canonical.html`
+You may also pass the folder path in Command Prompt:
 
-## New Africa Jobs page
+```text
+apply-status-color-uiux.bat "D:\your-project\organizations"
+```
 
-`africa-new-jobs.html` lists recently discovered roles from LinkedIn, Workable
-and official career portals for large corporations and organizations in Egypt
-and Africa. It includes local JSON/CSV data and platform search links.
+## Apply on macOS / Linux
 
-Data files:
-- `data/africa-new-jobs.json`
-- `data/csv/africa-new-jobs.csv`
-- `data/js/africa-new-jobs.js`
+```bash
+chmod +x apply-status-color-uiux.sh
+./apply-status-color-uiux.sh "/path/to/organizations"
+```
 
-## Recruitera integration
+## Manual commands
 
-The New Africa Jobs page now includes:
+Windows PowerShell:
 
-- `https://app.recruitera.ai` as a direct ATS resource.
-- A search route for public Recruitera-hosted job pages.
-- Recruitera as a platform filter.
-- The DIME Healthcare Technology Lead application page supplied by the applicant.
-- Clear availability-recheck labels for hosted application pages.
+```powershell
+powershell -ExecutionPolicy Bypass -File apply-status-color-uiux.ps1 "D:\your-project\organizations"
+```
 
-## Retail, Healthcare & Lifestyle Jobs
+Cross-platform Python alternative:
 
-The page `retail-healthcare-lifestyle-jobs.html` covers:
+```bash
+python apply_status_color_uiux.py "/path/to/organizations"
+```
 
-- Majid Al Futtaim and major mall operators.
-- Large retail and franchise groups.
-- Beauty, fashion and big-shop careers.
-- Hospitals, clinics and healthcare centers.
-- Spa, massage, wellness and hotel-spa jobs.
-- Large salon and hairdressing chains.
-- Searchable current/recent job leads and official career portals.
+## Files added to the project
 
-Data files:
+```text
+organizations/
+└── assets/
+    ├── job-status-color-uiux.css
+    └── job-status-color-uiux.js
+```
 
-- `data/retail-healthcare-lifestyle-jobs.json`
-- `data/csv/retail-healthcare-lifestyle-jobs.csv`
-- `data/js/retail-healthcare-lifestyle-jobs.js`
+Every HTML page receives these two references:
+
+```html
+<link rel="stylesheet" href="./assets/job-status-color-uiux.css" data-status-color-uiux="css">
+<script src="./assets/job-status-color-uiux.js" data-status-color-uiux="js"></script>
+```
+
+The script is idempotent: running it again does not duplicate the links.
+
+## Validation
+
+The patcher confirms:
+
+- every HTML page includes both assets;
+- both assets exist;
+- no invalid `../assets/` paths are introduced;
+- all pages remain inside the same project structure.
+
+A small `status-uiux-backup` folder is created only when a previous version of either new asset already exists.

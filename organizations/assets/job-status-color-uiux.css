@@ -1,0 +1,357 @@
+/*
+  Job Status Color UI/UX Layer
+  - Semantic colors with text labels (never color-only)
+  - Light/dark mode
+  - Accessible focus states and 44px controls
+  - Applies to generic cards, Africa jobs, retail/lifestyle jobs, Canonical cards and tables
+*/
+
+:root {
+  --status-available-fg: #087443;
+  --status-available-bg: #eaf8f1;
+  --status-available-border: #67b98d;
+
+  --status-progress-fg: #155eef;
+  --status-progress-bg: #edf4ff;
+  --status-progress-border: #84adff;
+
+  --status-attention-fg: #9a6700;
+  --status-attention-bg: #fff7dc;
+  --status-attention-border: #e6b94f;
+
+  --status-unavailable-fg: #a23a32;
+  --status-unavailable-bg: #fff0ee;
+  --status-unavailable-border: #dc9a94;
+
+  --status-offer-fg: #6941c6;
+  --status-offer-bg: #f4f0ff;
+  --status-offer-border: #b8a5eb;
+
+  --status-neutral-fg: #526174;
+  --status-neutral-bg: #f3f6f9;
+  --status-neutral-border: #b8c3cf;
+
+  --status-current-fg: var(--status-neutral-fg);
+  --status-current-bg: var(--status-neutral-bg);
+  --status-current-border: var(--status-neutral-border);
+}
+
+html[data-theme="dark"] {
+  --status-available-fg: #7ee2ad;
+  --status-available-bg: rgba(22, 163, 74, .13);
+  --status-available-border: #369565;
+
+  --status-progress-fg: #91b8ff;
+  --status-progress-bg: rgba(37, 99, 235, .15);
+  --status-progress-border: #527ed3;
+
+  --status-attention-fg: #ffd278;
+  --status-attention-bg: rgba(217, 145, 0, .14);
+  --status-attention-border: #a8781b;
+
+  --status-unavailable-fg: #ffaaa3;
+  --status-unavailable-bg: rgba(180, 35, 24, .14);
+  --status-unavailable-border: #a5524c;
+
+  --status-offer-fg: #c7b7ff;
+  --status-offer-bg: rgba(105, 65, 198, .16);
+  --status-offer-border: #7f69bc;
+
+  --status-neutral-fg: #b7c4d2;
+  --status-neutral-bg: rgba(100, 116, 139, .13);
+  --status-neutral-border: #56677b;
+}
+
+[data-status-tone="available"] {
+  --status-current-fg: var(--status-available-fg);
+  --status-current-bg: var(--status-available-bg);
+  --status-current-border: var(--status-available-border);
+}
+[data-status-tone="progress"] {
+  --status-current-fg: var(--status-progress-fg);
+  --status-current-bg: var(--status-progress-bg);
+  --status-current-border: var(--status-progress-border);
+}
+[data-status-tone="attention"] {
+  --status-current-fg: var(--status-attention-fg);
+  --status-current-bg: var(--status-attention-bg);
+  --status-current-border: var(--status-attention-border);
+}
+[data-status-tone="unavailable"] {
+  --status-current-fg: var(--status-unavailable-fg);
+  --status-current-bg: var(--status-unavailable-bg);
+  --status-current-border: var(--status-unavailable-border);
+}
+[data-status-tone="offer"] {
+  --status-current-fg: var(--status-offer-fg);
+  --status-current-bg: var(--status-offer-bg);
+  --status-current-border: var(--status-offer-border);
+}
+[data-status-tone="neutral"] {
+  --status-current-fg: var(--status-neutral-fg);
+  --status-current-bg: var(--status-neutral-bg);
+  --status-current-border: var(--status-neutral-border);
+}
+
+/* Status-aware job cards */
+.record-card[data-status-tone],
+.new-job-card[data-status-tone],
+.lifestyle-job-card[data-status-tone],
+.job-card[data-status-tone],
+.opportunity-card[data-status-tone] {
+  position: relative;
+  border-color: var(--status-current-border) !important;
+  border-inline-start-width: 5px !important;
+  background:
+    linear-gradient(90deg, var(--status-current-bg), transparent 52%),
+    var(--surface, #fff) !important;
+  box-shadow:
+    0 12px 30px rgba(20, 44, 70, .08),
+    inset 5px 0 0 var(--status-current-border);
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+
+.record-card[data-status-tone]:hover,
+.new-job-card[data-status-tone]:hover,
+.lifestyle-job-card[data-status-tone]:hover,
+.job-card[data-status-tone]:hover,
+.opportunity-card[data-status-tone]:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 16px 38px rgba(20, 44, 70, .13),
+    inset 5px 0 0 var(--status-current-border);
+}
+
+/* Compact, visible text label — color is never the only indicator */
+.uiux-status-summary {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 9px 0 2px;
+  padding: 5px 9px;
+  border: 1px solid var(--status-current-border);
+  border-radius: 999px;
+  background: var(--status-current-bg);
+  color: var(--status-current-fg);
+  font-size: 11px;
+  font-weight: 850;
+  line-height: 1.25;
+}
+
+.uiux-status-summary::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 18%, transparent);
+}
+
+.uiux-status-summary .uiux-status-main {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.uiux-status-summary .uiux-status-application {
+  color: var(--muted, #667085);
+  font-weight: 700;
+}
+
+.uiux-status-summary .uiux-status-application::before {
+  content: "•";
+  margin-inline-end: 7px;
+}
+
+/* Existing status controls */
+.job-status-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  margin: 12px 0;
+}
+
+.job-status-controls label {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  color: var(--muted, #667085);
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.job-status-select {
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 34px 9px 10px;
+  border: 1px solid var(--status-current-border, var(--line, #d0d5dd));
+  border-radius: 10px;
+  background-color: var(--status-current-bg, var(--surface, #fff));
+  color: var(--status-current-fg, var(--text, #101828));
+  font-weight: 800;
+}
+
+.job-status-select:hover {
+  border-color: var(--status-current-fg);
+}
+
+.job-status-select:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--status-current-border) 42%, transparent);
+  outline-offset: 2px;
+}
+
+/* Status-aware table rows */
+.data-table tbody tr[data-status-tone] {
+  background:
+    linear-gradient(90deg, var(--status-current-bg), transparent 34%);
+  box-shadow: inset 5px 0 0 var(--status-current-border);
+}
+
+.data-table tbody tr[data-status-tone] td:first-child {
+  padding-inline-start: 16px;
+}
+
+.data-table tbody tr[data-status-tone]:hover {
+  background:
+    linear-gradient(90deg, var(--status-current-bg), transparent 60%),
+    var(--surface-2, #f8fafc);
+}
+
+/* Status guide on job pages */
+.status-color-legend {
+  margin: 12px 0 16px;
+  padding: 13px;
+  border: 1px solid var(--line, #d0d5dd);
+  border-radius: 14px;
+  background: var(--surface, #fff);
+  box-shadow: var(--shadow, 0 8px 24px rgba(16, 24, 40, .06));
+}
+
+.status-color-legend__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.status-color-legend__head strong {
+  display: block;
+  font-size: 13px;
+}
+
+.status-color-legend__head small {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted, #667085);
+}
+
+.status-color-legend__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.status-color-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 5px 9px;
+  border: 1px solid var(--status-current-border);
+  border-radius: 999px;
+  background: var(--status-current-bg);
+  color: var(--status-current-fg);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.status-color-legend__item::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.status-color-legend__note {
+  margin: 9px 0 0;
+  color: var(--muted, #667085);
+  font-size: 11px;
+}
+
+/* Cards without the standard record-card name */
+[data-static-job-id] {
+  --status-current-fg: inherit;
+}
+
+/* Stronger distinction for users requesting higher contrast */
+@media (prefers-contrast: more) {
+  .record-card[data-status-tone],
+  .new-job-card[data-status-tone],
+  .lifestyle-job-card[data-status-tone],
+  .job-card[data-status-tone],
+  .opportunity-card[data-status-tone] {
+    border-width: 2px;
+    border-inline-start-width: 7px !important;
+  }
+
+  .uiux-status-summary,
+  .status-color-legend__item,
+  .job-status-select {
+    border-width: 2px;
+  }
+}
+
+@media (max-width: 700px) {
+  .job-status-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .status-color-legend__head {
+    flex-direction: column;
+  }
+
+  .status-color-legend__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .uiux-status-summary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .status-color-legend__items {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .record-card[data-status-tone],
+  .new-job-card[data-status-tone],
+  .lifestyle-job-card[data-status-tone],
+  .job-card[data-status-tone],
+  .opportunity-card[data-status-tone] {
+    transition: none;
+  }
+}
+
+@media print {
+  .status-color-legend {
+    box-shadow: none;
+  }
+
+  .record-card[data-status-tone],
+  .new-job-card[data-status-tone],
+  .lifestyle-job-card[data-status-tone],
+  .job-card[data-status-tone],
+  .opportunity-card[data-status-tone] {
+    background: #fff !important;
+    box-shadow: inset 5px 0 0 var(--status-current-border) !important;
+  }
+}

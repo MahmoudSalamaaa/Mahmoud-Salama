@@ -40,3 +40,19 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
 @media(max-width:680px){body{padding-bottom:65px}.page{width:calc(100% - 20px);padding:21px 0 45px}.topbar-inner{min-height:62px}.page-head{align-items:flex-start;flex-direction:column}.hero-search,.hero{padding:25px 19px}.hero-search form{flex-direction:column}.metric-grid,.card-grid,.section-cards,.directory-grid,.saved-grid{grid-template-columns:1fr}.record-meta,.detail-grid{grid-template-columns:1fr}.toolbar .search-wrap{flex-basis:100%;order:-1}.view-toggle{display:none}.results-head{align-items:flex-start;flex-direction:column}.results-head label,.results-head select{width:100%}.mobile-nav{position:fixed;left:0;right:0;bottom:0;z-index:70;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);background:var(--surface);box-shadow:0 -7px 24px rgba(15,36,58,.09)}.mobile-nav a{padding:8px 2px;color:var(--muted);font-size:10px;text-align:center}.mobile-nav b{display:block;color:var(--text);font-size:17px}.footer{padding-bottom:17px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 @media print{.topbar,.mobile-nav,.filters,.filter-toggle,.toast,.footer,.page-actions{display:none!important}body{padding:0;background:#fff;color:#111827}.page{width:100%;padding:0}.record-card,.panel,.metric,.directory-card{box-shadow:none;break-inside:avoid}}
+
+
+/* PROJECT-WIDE JOB STATUS CONTROLS */
+.job-status-controls{
+  display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 13px;padding:10px;
+  border:1px solid var(--line);border-radius:11px;background:var(--surface-2)
+}
+.job-status-controls label{display:grid;gap:5px;min-width:0;color:var(--muted);font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.06em}
+.job-status-select{
+  width:100%;min-width:0;padding:8px 9px;border:1px solid var(--line);border-radius:8px;
+  background:var(--surface);color:var(--text);font-size:11px;font-weight:750
+}
+.job-status-select:hover{border-color:rgba(10,174,208,.55)}
+.table-status-select{min-width:150px;padding:7px 8px}
+.status-help{margin:4px 0 12px;color:var(--muted);font-size:11px}
+@media(max-width:680px){.job-status-controls{grid-template-columns:1fr}.table-status-select{min-width:135px}}

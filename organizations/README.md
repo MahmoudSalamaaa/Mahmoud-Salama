@@ -1,92 +1,97 @@
-# Job Status Color UI/UX Update
+# Mahmoud Salama Career Intelligence — Full Complete Multinational Edition
 
-This update applies status-dependent colors to **every HTML page** in the Career Intelligence project while preserving the current data, links, filters, tracker, and localStorage status system.
+This edition rebuilds the largest available career-intelligence project and merges all later additions.
 
-## What changes visually
+## Included
 
-| Meaning | Color treatment |
-|---|---|
-| Available / Active / Open | Green |
-| Saved / Interested / Applied / Shortlisted / Interview | Blue |
-| Deadline approaching / Follow-up / Possibly available | Amber |
-| Expired / Not Available / Rejected / Withdrawn / Broken link | Soft red |
-| Not reviewed / Not verified | Neutral gray |
-| Offer | Purple |
+- 1,588 fixed job records
+- 68 official or primary-source job records
+- 25,380 live job-search routes
+- 2,238 employer records
+- 235 priority multinational and strategic employer records
+- 888 healthcare, pharmaceutical and MedTech employer records
+- 192 supply-chain, logistics, shipping, aviation and port employer records
+- 1,019 technology, cloud, software, consulting and telecom employer records
+- 674 recruitment agencies
+- 300 government and public-sector portals
+- 390 projects, tenders and consulting assignments
+- 178 job platforms and career resources
+- 45 HTML pages
 
-The interface never depends on color alone. Every colored card also shows written **Availability** and **Application** labels.
+## Folder policy
 
-## UI/UX behavior
+Upload the complete `organizations` folder. No file is required at the website root.
 
-- A 5px semantic status rail appears on each job card.
-- The card receives a low-saturation background tint instead of a harsh full-color fill.
-- Status changes repaint the card immediately.
-- Table rows use the same status logic.
-- A compact color guide appears on job and vacancy pages.
-- Light mode, dark mode, mobile layout, keyboard focus, printing, reduced-motion, and high-contrast preferences are supported.
-- The existing localStorage keys and Application Tracker remain unchanged.
+All local paths are folder-relative, such as:
 
-## Apply on Windows
+- `./index.html`
+- `./assets/app.css`
+- `./assets/app.js`
+- `./data/js/jobs.js`
+- `./data/verified-jobs.json`
 
-1. Extract this update folder.
-2. Put the update folder beside the `organizations` folder, or copy its files into the `organizations` folder.
-3. Double-click:
+## Local opening
 
-`apply-status-color-uiux.bat`
+Every listing page includes a page-specific JavaScript data bundle under `data/js/`.
+This allows the application to work when opened directly from a computer, while the full JSON and CSV files remain available for hosted use and data export.
 
-The Windows launcher uses built-in PowerShell, so Python is not required. It automatically finds the project and updates every top-level `.html` file.
+## Main pages
 
-You may also pass the folder path in Command Prompt:
+- `index.html`
+- `directory.html`
+- `search.html`
+- `jobs.html`
+- `live-searches.html`
+- `companies.html`
+- `multinationals.html`
+- `projects.html`
+- `tracker.html`
+- `canonical.html`
 
-```text
-apply-status-color-uiux.bat "D:\your-project\organizations"
-```
+## New Africa Jobs page
 
-## Apply on macOS / Linux
+`africa-new-jobs.html` lists recently discovered roles from LinkedIn, Workable
+and official career portals for large corporations and organizations in Egypt
+and Africa. It includes local JSON/CSV data and platform search links.
 
-```bash
-chmod +x apply-status-color-uiux.sh
-./apply-status-color-uiux.sh "/path/to/organizations"
-```
+Data files:
+- `data/africa-new-jobs.json`
+- `data/csv/africa-new-jobs.csv`
+- `data/js/africa-new-jobs.js`
 
-## Manual commands
+## Recruitera integration
 
-Windows PowerShell:
+The New Africa Jobs page now includes:
 
-```powershell
-powershell -ExecutionPolicy Bypass -File apply-status-color-uiux.ps1 "D:\your-project\organizations"
-```
+- `https://app.recruitera.ai` as a direct ATS resource.
+- A search route for public Recruitera-hosted job pages.
+- Recruitera as a platform filter.
+- The DIME Healthcare Technology Lead application page supplied by the applicant.
+- Clear availability-recheck labels for hosted application pages.
 
-Cross-platform Python alternative:
+## Retail, Healthcare & Lifestyle Jobs
 
-```bash
-python apply_status_color_uiux.py "/path/to/organizations"
-```
+The page `retail-healthcare-lifestyle-jobs.html` covers:
 
-## Files added to the project
+- Majid Al Futtaim and major mall operators.
+- Large retail and franchise groups.
+- Beauty, fashion and big-shop careers.
+- Hospitals, clinics and healthcare centers.
+- Spa, massage, wellness and hotel-spa jobs.
+- Large salon and hairdressing chains.
+- Searchable current/recent job leads and official career portals.
 
-```text
-organizations/
-└── assets/
-    ├── job-status-color-uiux.css
-    └── job-status-color-uiux.js
-```
+Data files:
 
-Every HTML page receives these two references:
+- `data/retail-healthcare-lifestyle-jobs.json`
+- `data/csv/retail-healthcare-lifestyle-jobs.csv`
+- `data/js/retail-healthcare-lifestyle-jobs.js`
 
-```html
-<link rel="stylesheet" href="./assets/job-status-color-uiux.css" data-status-color-uiux="css">
-<script src="./assets/job-status-color-uiux.js" data-status-color-uiux="js"></script>
-```
+## Project-wide job status controls
 
-The script is idempotent: running it again does not duplicate the links.
+Every job card and job table now supports persistent browser-local settings:
 
-## Validation
+- Availability: Available, Possibly Available, Deadline Approaching, Expired, Not Available, Not Verified, Broken Link, and portal-specific statuses.
+- Application: Not Reviewed, Saved, Interested, Shortlisted, Applied, Follow-up, Interview, Offer, Rejected, Withdrawn, Not Suitable, Ignored, or Not Available.
 
-The patcher confirms:
-
-- every HTML page includes both assets;
-- both assets exist;
-- no invalid `../assets/` paths are introduced;
-- all pages remain inside the same project structure.
-
-A small `status-uiux-backup` folder is created only when a previous version of either new asset already exists.
+The settings are shared across all job pages and the Application Tracker through local browser storage.

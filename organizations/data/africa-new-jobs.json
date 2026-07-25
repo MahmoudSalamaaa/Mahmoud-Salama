@@ -305,54 +305,6 @@
       "summary": "Senior digital-transformation and delivery leadership role in South Africa.",
       "url": "https://za.linkedin.com/jobs/digital-director-jobs",
       "status": "Recent - open search"
-    },
-    {
-      "id": "afnew-019",
-      "title": "Country Representative, Côte d’Ivoire",
-      "company": "WorldFish",
-      "location": "Abidjan, Côte d’Ivoire",
-      "country": "Côte d’Ivoire",
-      "category": "Country & Program Leadership",
-      "platform": "Workable",
-      "posted_text": "Current listing",
-      "deadline": "26 July 2026",
-      "source_type": "Direct ATS",
-      "fit": 78,
-      "summary": "Lead strategic research and operational direction, partnerships and funding in Côte d’Ivoire.",
-      "url": "https://apply.workable.com/worldfish/j/249448A9A3/",
-      "status": "Urgent deadline"
-    },
-    {
-      "id": "afnew-020",
-      "title": "Operations Manager, Côte d’Ivoire",
-      "company": "WorldFish",
-      "location": "Abidjan, Côte d’Ivoire",
-      "country": "Côte d’Ivoire",
-      "category": "Operations & Administration",
-      "platform": "Workable",
-      "posted_text": "Current listing",
-      "deadline": "26 July 2026",
-      "source_type": "Direct ATS",
-      "fit": 80,
-      "summary": "Manage office operations spanning finance, HR, IT, facilities and logistics for an international research organization.",
-      "url": "https://apply.workable.com/worldfish/j/D279813F4A/",
-      "status": "Urgent deadline"
-    },
-    {
-      "id": "afnew-021",
-      "title": "School Principal - National School",
-      "company": "Egypt Education Platform",
-      "location": "New Cairo, Egypt",
-      "country": "Egypt",
-      "category": "Education Leadership",
-      "platform": "Workable",
-      "posted_text": "Start August 2026",
-      "deadline": "",
-      "source_type": "Direct ATS",
-      "fit": 71,
-      "summary": "Senior school-leadership position covering strategy, academic performance, operations and stakeholder engagement.",
-      "url": "https://apply.workable.com/egypt-education-platform/j/35CF00B3B4/",
-      "status": "Direct application"
     }
   ],
   "resources": [
@@ -476,5 +428,6 @@
       "focus": "Data, operations, research and country leadership",
       "url": "https://apply.workable.com/worldfish/"
     }
-  ]
+  ],
+  "profile_rule": "Only roles aligned with Mahmoud Salama's technology leadership, enterprise architecture, digital transformation, healthcare technology, data, cloud, DevOps and program-delivery background are included."
 }

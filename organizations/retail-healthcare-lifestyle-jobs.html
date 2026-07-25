@@ -229,7 +229,7 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
 <main class="page">
   <section class="lifestyle-hero">
     <p class="eyebrow">AVAILABLE JOBS · MAJOR RETAILERS · HEALTHCARE · BEAUTY & WELLNESS</p>
-    <h1>Retail, malls, healthcare centers, spas, salons and big-shop jobs.</h1>
+    <h1>Technology and digital jobs inside retail, malls, healthcare and lifestyle organizations.</h1>
     <p>
       A focused career page for Majid Al Futtaim, Al-Futtaim, Alshaya, Chalhoub,
       major malls and retailers, hospitals and medical centers, massage and spa
@@ -248,7 +248,10 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
     </div>
   </section>
 
-  <section class="metric-grid">
+  <section class="panel" style="margin-top:18px;border-color:rgba(10,174,208,.45)">
+<div class="panel-head"><div><h2>Personalized relevance rule</h2>
+<p>This page only recommends roles related to Mahmoud Salama's profile: CTO/technology leadership, enterprise architecture, digital transformation, IT, cloud, data, healthcare technology and program delivery. Sector employers remain below as career portals, but unrelated frontline jobs are excluded.</p>
+</div></div></section><section class="metric-grid">
     <div class="metric"><strong>18</strong><span>current and recent job leads</span></div>
     <div class="metric"><strong>16</strong><span>major employer portals</span></div>
     <div class="metric"><strong>11</strong><span>job sectors</span></div>
@@ -267,8 +270,8 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
   <section class="panel" id="availableJobs">
     <div class="panel-head">
       <div>
-        <h2>Available and recently posted jobs</h2>
-        <p>Filter by sector, employer, source and current availability.</p>
+        <h2>Relevant jobs for Mahmoud Salama</h2>
+        <p>Only technology, architecture, digital, data, IT, program and transformation roles are shown. Massage, salon, beauty, nursing and unrelated frontline jobs are excluded.</p>
       </div>
       <a href="./data/csv/retail-healthcare-lifestyle-jobs.csv" download>Download CSV</a>
     </div>
@@ -281,7 +284,7 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
       <button class="secondary" id="clearLifestyleFilters">Clear</button>
     </div>
 
-    <div class="lifestyle-summary">
+    <p class="status-help">Availability and application settings are saved locally in this browser and shared with all job pages and the tracker.</p><div class="lifestyle-summary">
       <div>
         <strong id="lifestyleCount">0 jobs</strong>
         <small id="lifestyleFilterSummary">All current records</small>
@@ -323,6 +326,8 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
   const source = window.RETAIL_HEALTHCARE_LIFESTYLE_JOBS || {jobs:[],employers:[]};
   const jobs = source.jobs || [];
   const employers = source.employers || [];
+  const toStatusRecord = job => ({id:job.id,title:job.title,organization:job.company,country:job.country,url:job.url,availability_status:job.status==='Available'?'Available':job.status==='Recently posted'?'Possibly Available':'Not Verified'});
+  const statusRecords = Object.fromEntries(jobs.map(job => [String(job.id), toStatusRecord(job)]));
   const grid = document.getElementById('lifestyleJobsGrid');
   const employerGrid = document.getElementById('lifestyleEmployerGrid');
   const query = document.getElementById('lifestyleQuery');
@@ -384,12 +389,14 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
           <span>${esc(job.deadline ? 'Deadline: ' + job.deadline : job.status)}</span>
         </div>
         <p>${esc(job.summary)}</p>
+        ${window.CAREER_STATUS.controls(statusRecords[String(job.id)])}
         <div class="lifestyle-actions">
           <a class="button" href="${esc(job.url)}" target="_blank" rel="noopener">Open source</a>
           <a class="secondary" href="./tracker.html">Track</a>
         </div>
       </article>
     `).join('') : '<div class="no-results">No jobs match the selected filters.</div>';
+    window.CAREER_STATUS.bind(grid,statusRecords);
   }
 
   employerGrid.innerHTML = employers.map(item => `
@@ -405,6 +412,8 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
   [query,sector,company,status].forEach(element => {
     element.addEventListener(element.tagName === 'INPUT' ? 'input' : 'change', renderJobs);
   });
+
+  window.addEventListener('career-status-changed', renderJobs);
 
   document.getElementById('clearLifestyleFilters').addEventListener('click', () => {
     query.value = '';

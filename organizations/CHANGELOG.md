@@ -23,3 +23,8 @@
 - Added hospital, clinic, spa, massage, salon and hairdressing career sources.
 - Added current/recent job leads with filters and CSV export.
 - Added links to the main dashboard, directory and navigation menus.
+
+- Added project-wide Availability and Application controls to every generic job card and table.
+- Added persistent status controls to Africa New Jobs, Retail/Healthcare/Lifestyle Jobs, and Canonical cards.
+- Expanded statuses to include Not Available, Not Suitable, Withdrawn, Follow-up, Broken Link and Deadline Approaching.
+- Connected all status changes to the shared Application Tracker and filters.

@@ -251,7 +251,10 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
       <div class="live-note">Sources checked 25 July 2026. Job availability changes quickly; always confirm the employer or platform page before applying.</div>
     </section>
 
-    <section class="metric-grid">
+    <section class="panel" style="margin-top:18px;border-color:rgba(10,174,208,.45)">
+<div class="panel-head"><div><h2>Profile relevance</h2>
+<p>Only opportunities aligned with Mahmoud Salama's senior technology, enterprise architecture, digital transformation, healthcare technology, data, cloud, DevOps and program-delivery experience are listed.</p>
+</div></div></section><section class="metric-grid">
       <div class="metric"><strong>21</strong><span>recent job leads</span></div>
       <div class="metric"><strong>15</strong><span>employers represented</span></div>
       <div class="metric"><strong>4</strong><span>markets and remote</span></div>
@@ -261,7 +264,7 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
     <section class="panel" id="latestJobs">
       <div class="panel-head">
         <div>
-          <h2>Recently discovered jobs</h2>
+          <h2>Profile-aligned jobs</h2>
           <p>Use the filters to focus on your preferred geography, platform and role family.</p>
         </div>
         <a href="./data/csv/africa-new-jobs.csv" download>Download CSV</a>
@@ -275,7 +278,7 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
         <button class="secondary" id="clearFilters">Clear</button>
       </div>
 
-      <div class="live-summary">
+      <p class="status-help">Availability and application settings are saved locally in this browser and shared with all job pages and the tracker.</p><div class="live-summary">
         <div><strong id="resultCount">0 jobs</strong><small id="activeFilters">All current records</small></div>
         <div class="source-legend">
           <span>Official careers</span>
@@ -311,6 +314,8 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
   const data = window.AFRICA_NEW_JOBS || {jobs:[],resources:[]};
   const jobs = data.jobs || [];
   const resources = data.resources || [];
+  const toStatusRecord = job => ({id:job.id,title:job.title,organization:job.company,country:job.country,url:job.url,availability_status:job.status==='Available'||job.status==='Official source'||job.status==='Direct application'?'Available':job.status&&job.status.toLowerCase().includes('recent')?'Possibly Available':'Not Verified'});
+  const statusRecords = Object.fromEntries(jobs.map(job => [String(job.id), toStatusRecord(job)]));
   const grid = document.getElementById('newJobsGrid');
   const platformGrid = document.getElementById('platformGrid');
   const q = document.getElementById('jobQuery');
@@ -370,12 +375,14 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
           <span>${esc(job.deadline ? 'Deadline: '+job.deadline : job.status)}</span>
         </div>
         <p class="new-job-description">${esc(job.summary)}</p>
+        ${window.CAREER_STATUS.controls(statusRecords[String(job.id)])}
         <div class="new-job-actions">
           <a class="button" href="${esc(job.url)}" target="_blank" rel="noopener">Open source</a>
           <a class="secondary" href="./tracker.html">Track application</a>
         </div>
       </article>
     `).join('') : '<div class="no-results">No jobs match the selected filters.</div>';
+    window.CAREER_STATUS.bind(grid,statusRecords);
   }
 
   platformGrid.innerHTML = resources.map(item => `
@@ -387,6 +394,8 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
   `).join('');
 
   [q,country,platform,category].forEach(el => el.addEventListener(el.tagName==='INPUT'?'input':'change', render));
+  window.addEventListener('career-status-changed', render);
+
   document.getElementById('clearFilters').addEventListener('click', () => {
     q.value=''; country.value=''; platform.value=''; category.value=''; render();
   });

@@ -1,0 +1,29 @@
+{
+  "retail_original_jobs": 18,
+  "retail_relevant_jobs_kept": 4,
+  "retail_irrelevant_jobs_removed": 14,
+  "retail_removed_titles": [
+    "Sales Associate",
+    "Call Centre Agent - Strategy & Digital",
+    "Brand Manager - Beauty",
+    "MAC Store Manager",
+    "Retail Makeup Artist",
+    "Beauty Consultant",
+    "Beauty Consultant",
+    "Fashion Consultant",
+    "Attendant - Spa",
+    "Full-Time Massage Therapist - Hospital / Medical Clinic",
+    "Full-Time Massage Therapist - Day Spa",
+    "ER Head Nurse",
+    "Hairdresser / Stylist",
+    "Shampoo Assistant"
+  ],
+  "africa_original_jobs": 22,
+  "africa_relevant_jobs_kept": 19,
+  "africa_irrelevant_jobs_removed": 3,
+  "africa_removed_titles": [
+    "Country Representative, Côte d’Ivoire",
+    "Operations Manager, Côte d’Ivoire",
+    "School Principal - National School"
+  ]
+}

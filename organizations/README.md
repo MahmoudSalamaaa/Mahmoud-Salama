@@ -47,3 +47,42 @@ This allows the application to work when opened directly from a computer, while 
 - `projects.html`
 - `tracker.html`
 - `canonical.html`
+
+## New Africa Jobs page
+
+`africa-new-jobs.html` lists recently discovered roles from LinkedIn, Workable
+and official career portals for large corporations and organizations in Egypt
+and Africa. It includes local JSON/CSV data and platform search links.
+
+Data files:
+- `data/africa-new-jobs.json`
+- `data/csv/africa-new-jobs.csv`
+- `data/js/africa-new-jobs.js`
+
+## Recruitera integration
+
+The New Africa Jobs page now includes:
+
+- `https://app.recruitera.ai` as a direct ATS resource.
+- A search route for public Recruitera-hosted job pages.
+- Recruitera as a platform filter.
+- The DIME Healthcare Technology Lead application page supplied by the applicant.
+- Clear availability-recheck labels for hosted application pages.
+
+## Retail, Healthcare & Lifestyle Jobs
+
+The page `retail-healthcare-lifestyle-jobs.html` covers:
+
+- Majid Al Futtaim and major mall operators.
+- Large retail and franchise groups.
+- Beauty, fashion and big-shop careers.
+- Hospitals, clinics and healthcare centers.
+- Spa, massage, wellness and hotel-spa jobs.
+- Large salon and hairdressing chains.
+- Searchable current/recent job leads and official career portals.
+
+Data files:
+
+- `data/retail-healthcare-lifestyle-jobs.json`
+- `data/csv/retail-healthcare-lifestyle-jobs.csv`
+- `data/js/retail-healthcare-lifestyle-jobs.js`

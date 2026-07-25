@@ -18,5 +18,10 @@
     "search-worker.js": 0,
     "retail-healthcare-lifestyle-jobs.js": 0
   },
-  "root_level_files": 0
+  "root_level_files": 0,
+  "zip_top_level": [
+    "organizations"
+  ],
+  "zip_root_files": 0,
+  "zip_size_bytes": 11667076
 }

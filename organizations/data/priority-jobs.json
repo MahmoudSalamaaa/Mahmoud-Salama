@@ -198,54 +198,6 @@
     "application_status": "Not Reviewed"
   },
   {
-    "id": "job-01585",
-    "record_type": "Official Vacancy",
-    "category": "job",
-    "title": "Global Continuous Improvement & Governance Lead",
-    "organization": "Unilever",
-    "subtitle": "Unilever",
-    "role_family": "Governance & Continuous Improvement",
-    "type": "Governance & Continuous Improvement",
-    "region": "Egypt",
-    "country": "Egypt",
-    "location": "6th of October City",
-    "availability_status": "Available",
-    "published_date": "2026-07-22",
-    "expiry_date": "",
-    "last_checked": "2026-07-24",
-    "age_days": 2,
-    "posted_text": "Official listing",
-    "notes": "Current official Unilever Egypt listing focused on governance and continuous improvement. Verify details on the official career page.",
-    "source": "Official employer careers",
-    "url": "https://careers.unilever.com/en/Egypt",
-    "source_quality": "A",
-    "source_quality_label": "Official employer / primary source",
-    "verification_level": "Official",
-    "sources": [
-      {
-        "name": "Official employer careers",
-        "url": "https://careers.unilever.com/en/Egypt",
-        "quality": "A"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "official-current-additions"
-    ],
-    "match": {
-      "role": 88,
-      "seniority": 92,
-      "industry": 90,
-      "location": 100,
-      "technology": 82,
-      "overall": 88
-    },
-    "match_score": 88,
-    "fit": "High",
-    "industry": "Automotive & Mobility",
-    "application_status": "Not Reviewed"
-  },
-  {
     "id": "job-01586",
     "record_type": "Official Vacancy",
     "category": "job",
@@ -291,6 +243,54 @@
     "match_score": 88,
     "fit": "High",
     "industry": "Supply Chain & Logistics",
+    "application_status": "Not Reviewed"
+  },
+  {
+    "id": "job-01585",
+    "record_type": "Official Vacancy",
+    "category": "job",
+    "title": "Global Continuous Improvement & Governance Lead",
+    "organization": "Unilever",
+    "subtitle": "Unilever",
+    "role_family": "Governance & Continuous Improvement",
+    "type": "Governance & Continuous Improvement",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "6th of October City",
+    "availability_status": "Available",
+    "published_date": "2026-07-22",
+    "expiry_date": "",
+    "last_checked": "2026-07-24",
+    "age_days": 2,
+    "posted_text": "Official listing",
+    "notes": "Current official Unilever Egypt listing focused on governance and continuous improvement. Verify details on the official career page.",
+    "source": "Official employer careers",
+    "url": "https://careers.unilever.com/en/Egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official employer / primary source",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Official employer careers",
+        "url": "https://careers.unilever.com/en/Egypt",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "official-current-additions"
+    ],
+    "match": {
+      "role": 88,
+      "seniority": 92,
+      "industry": 90,
+      "location": 100,
+      "technology": 82,
+      "overall": 88
+    },
+    "match_score": 88,
+    "fit": "High",
+    "industry": "Automotive & Mobility",
     "application_status": "Not Reviewed"
   },
   {
@@ -633,55 +633,6 @@
     "application_status": "Not Reviewed"
   },
   {
-    "id": "job-00013",
-    "record_type": "Platform-Indexed Vacancy",
-    "category": "job",
-    "title": "Enterprise Architect",
-    "organization": "Veeam Software",
-    "subtitle": "Veeam Software",
-    "role_family": "Enterprise Architecture",
-    "type": "Enterprise Architecture",
-    "region": "Egypt",
-    "country": "Egypt",
-    "location": "Egypt",
-    "availability_status": "Possibly Available",
-    "published_date": "2026-07-13",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": 7,
-    "posted_text": "Listed 1 week ago",
-    "notes": "Verify eligibility, deadline and work authorization on the linked source before applying.",
-    "source": "LinkedIn current search",
-    "url": "https://eg.linkedin.com/jobs/digital-transformation-manager-jobs?countryRedirected=1",
-    "source_quality": "B",
-    "source_quality_label": "Recognized job platform",
-    "verification_level": "Platform",
-    "sources": [
-      {
-        "name": "LinkedIn current search",
-        "url": "https://eg.linkedin.com/jobs/digital-transformation-manager-jobs?countryRedirected=1",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 1,
-    "origin_pages": [
-      "egypt-vacancies.csv",
-      "regional-private-companies.csv"
-    ],
-    "match": {
-      "role": 47,
-      "seniority": 92,
-      "industry": 56,
-      "location": 100,
-      "technology": 56,
-      "overall": 67
-    },
-    "match_score": 67,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "application_status": "Not Reviewed"
-  },
-  {
     "id": "job-00011",
     "record_type": "Platform-Indexed Vacancy",
     "category": "job",
@@ -731,82 +682,82 @@
     "application_status": "Not Reviewed"
   },
   {
-    "id": "job-00171",
+    "id": "job-00013",
     "record_type": "Platform-Indexed Vacancy",
     "category": "job",
-    "title": "Enterprise Architecture Manager",
-    "organization": "Linnk Group",
-    "subtitle": "Linnk Group",
+    "title": "Enterprise Architect",
+    "organization": "Veeam Software",
+    "subtitle": "Veeam Software",
     "role_family": "Enterprise Architecture",
     "type": "Enterprise Architecture",
-    "region": "GCC",
-    "country": "Saudi Arabia",
-    "location": "Riyadh",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
     "availability_status": "Possibly Available",
-    "published_date": "2026-07-20",
+    "published_date": "2026-07-13",
     "expiry_date": "",
     "last_checked": "2026-07-20",
-    "age_days": 0,
-    "posted_text": "Listed 6 hours ago",
+    "age_days": 7,
+    "posted_text": "Listed 1 week ago",
     "notes": "Verify eligibility, deadline and work authorization on the linked source before applying.",
     "source": "LinkedIn current search",
-    "url": "https://sa.linkedin.com/jobs/it-leadership-jobs",
+    "url": "https://eg.linkedin.com/jobs/digital-transformation-manager-jobs?countryRedirected=1",
     "source_quality": "B",
     "source_quality_label": "Recognized job platform",
     "verification_level": "Platform",
     "sources": [
       {
         "name": "LinkedIn current search",
-        "url": "https://sa.linkedin.com/jobs/it-leadership-jobs",
+        "url": "https://eg.linkedin.com/jobs/digital-transformation-manager-jobs?countryRedirected=1",
         "quality": "B"
       }
     ],
     "duplicate_count": 1,
     "origin_pages": [
-      "gcc-vacancies.csv",
+      "egypt-vacancies.csv",
       "regional-private-companies.csv"
     ],
     "match": {
       "role": 47,
       "seniority": 92,
       "industry": 56,
-      "location": 95,
+      "location": 100,
       "technology": 56,
-      "overall": 66
+      "overall": 67
     },
-    "match_score": 66,
+    "match_score": 67,
     "fit": "Medium",
     "industry": "Technology & Consulting",
     "application_status": "Not Reviewed"
   },
   {
-    "id": "job-00188",
+    "id": "job-00175",
     "record_type": "Platform-Indexed Vacancy",
     "category": "job",
-    "title": "Enterprise Solutions Architect - Presales Expert",
-    "organization": "DXC Technology",
-    "subtitle": "DXC Technology",
-    "role_family": "Enterprise Architecture",
-    "type": "Enterprise Architecture",
+    "title": "Solution Architect - Enterprise",
+    "organization": "Riyadh Air",
+    "subtitle": "Riyadh Air",
+    "role_family": "Solution Architecture",
+    "type": "Solution Architecture",
     "region": "GCC",
-    "country": "United Arab Emirates",
-    "location": "Dubai",
+    "country": "Saudi Arabia",
+    "location": "Riyadh",
     "availability_status": "Possibly Available",
-    "published_date": "2026-07-18",
+    "published_date": "2026-07-06",
     "expiry_date": "",
     "last_checked": "2026-07-20",
-    "age_days": 2,
-    "posted_text": "Listed 2 days ago",
+    "age_days": 14,
+    "posted_text": "Listed 2 weeks ago",
     "notes": "Verify eligibility, deadline and work authorization on the linked source before applying.",
-    "source": "LinkedIn",
-    "url": "https://ae.linkedin.com/jobs/view/enterprise-solutions-architect-presales-expert-at-dxc-technology-4427440228",
+    "source": "LinkedIn current search",
+    "url": "https://sa.linkedin.com/jobs/digital-transformation-advisor-jobs?countryRedirected=1",
     "source_quality": "B",
     "source_quality_label": "Recognized job platform",
     "verification_level": "Platform",
     "sources": [
       {
-        "name": "LinkedIn",
-        "url": "https://ae.linkedin.com/jobs/view/enterprise-solutions-architect-presales-expert-at-dxc-technology-4427440228",
+        "name": "LinkedIn current search",
+        "url": "https://sa.linkedin.com/jobs/digital-transformation-advisor-jobs?countryRedirected=1",
         "quality": "B"
       }
     ],
@@ -878,33 +829,33 @@
     "application_status": "Not Reviewed"
   },
   {
-    "id": "job-00175",
+    "id": "job-00188",
     "record_type": "Platform-Indexed Vacancy",
     "category": "job",
-    "title": "Solution Architect - Enterprise",
-    "organization": "Riyadh Air",
-    "subtitle": "Riyadh Air",
-    "role_family": "Solution Architecture",
-    "type": "Solution Architecture",
+    "title": "Enterprise Solutions Architect - Presales Expert",
+    "organization": "DXC Technology",
+    "subtitle": "DXC Technology",
+    "role_family": "Enterprise Architecture",
+    "type": "Enterprise Architecture",
     "region": "GCC",
-    "country": "Saudi Arabia",
-    "location": "Riyadh",
+    "country": "United Arab Emirates",
+    "location": "Dubai",
     "availability_status": "Possibly Available",
-    "published_date": "2026-07-06",
+    "published_date": "2026-07-18",
     "expiry_date": "",
     "last_checked": "2026-07-20",
-    "age_days": 14,
-    "posted_text": "Listed 2 weeks ago",
+    "age_days": 2,
+    "posted_text": "Listed 2 days ago",
     "notes": "Verify eligibility, deadline and work authorization on the linked source before applying.",
-    "source": "LinkedIn current search",
-    "url": "https://sa.linkedin.com/jobs/digital-transformation-advisor-jobs?countryRedirected=1",
+    "source": "LinkedIn",
+    "url": "https://ae.linkedin.com/jobs/view/enterprise-solutions-architect-presales-expert-at-dxc-technology-4427440228",
     "source_quality": "B",
     "source_quality_label": "Recognized job platform",
     "verification_level": "Platform",
     "sources": [
       {
-        "name": "LinkedIn current search",
-        "url": "https://sa.linkedin.com/jobs/digital-transformation-advisor-jobs?countryRedirected=1",
+        "name": "LinkedIn",
+        "url": "https://ae.linkedin.com/jobs/view/enterprise-solutions-architect-presales-expert-at-dxc-technology-4427440228",
         "quality": "B"
       }
     ],
@@ -954,6 +905,55 @@
       {
         "name": "LinkedIn current search",
         "url": "https://sa.linkedin.com/jobs/digital-transformation-advisor-jobs?countryRedirected=1",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 1,
+    "origin_pages": [
+      "gcc-vacancies.csv",
+      "regional-private-companies.csv"
+    ],
+    "match": {
+      "role": 47,
+      "seniority": 92,
+      "industry": 56,
+      "location": 95,
+      "technology": 56,
+      "overall": 66
+    },
+    "match_score": 66,
+    "fit": "Medium",
+    "industry": "Technology & Consulting",
+    "application_status": "Not Reviewed"
+  },
+  {
+    "id": "job-00171",
+    "record_type": "Platform-Indexed Vacancy",
+    "category": "job",
+    "title": "Enterprise Architecture Manager",
+    "organization": "Linnk Group",
+    "subtitle": "Linnk Group",
+    "role_family": "Enterprise Architecture",
+    "type": "Enterprise Architecture",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Riyadh",
+    "availability_status": "Possibly Available",
+    "published_date": "2026-07-20",
+    "expiry_date": "",
+    "last_checked": "2026-07-20",
+    "age_days": 0,
+    "posted_text": "Listed 6 hours ago",
+    "notes": "Verify eligibility, deadline and work authorization on the linked source before applying.",
+    "source": "LinkedIn current search",
+    "url": "https://sa.linkedin.com/jobs/it-leadership-jobs",
+    "source_quality": "B",
+    "source_quality_label": "Recognized job platform",
+    "verification_level": "Platform",
+    "sources": [
+      {
+        "name": "LinkedIn current search",
+        "url": "https://sa.linkedin.com/jobs/it-leadership-jobs",
         "quality": "B"
       }
     ],
@@ -1069,6 +1069,153 @@
       "overall": 66
     },
     "match_score": 66,
+    "fit": "Medium",
+    "industry": "Technology & Consulting",
+    "application_status": "Not Reviewed"
+  },
+  {
+    "id": "job-00184",
+    "record_type": "Platform-Indexed Vacancy",
+    "category": "job",
+    "title": "Enterprise Applications & Digital Transformation Manager",
+    "organization": "Sunbulah Group",
+    "subtitle": "Sunbulah Group",
+    "role_family": "Digital Transformation",
+    "type": "Digital Transformation",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Jeddah",
+    "availability_status": "Possibly Available",
+    "published_date": "2026-07-06",
+    "expiry_date": "",
+    "last_checked": "2026-07-20",
+    "age_days": 14,
+    "posted_text": "Listed 2 weeks ago",
+    "notes": "Verify eligibility, deadline and work authorization on the linked source before applying.",
+    "source": "LinkedIn current search",
+    "url": "https://sa.linkedin.com/jobs/it-leadership-jobs",
+    "source_quality": "B",
+    "source_quality_label": "Recognized job platform",
+    "verification_level": "Platform",
+    "sources": [
+      {
+        "name": "LinkedIn current search",
+        "url": "https://sa.linkedin.com/jobs/it-leadership-jobs",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 1,
+    "origin_pages": [
+      "gcc-vacancies.csv",
+      "regional-private-companies.csv"
+    ],
+    "match": {
+      "role": 47,
+      "seniority": 92,
+      "industry": 56,
+      "location": 95,
+      "technology": 47,
+      "overall": 65
+    },
+    "match_score": 65,
+    "fit": "Medium",
+    "industry": "Technology & Consulting",
+    "application_status": "Not Reviewed"
+  },
+  {
+    "id": "job-00014",
+    "record_type": "Platform-Indexed Vacancy",
+    "category": "job",
+    "title": "Solution Architect - Technical Governance Lead",
+    "organization": "Konecta",
+    "subtitle": "Konecta",
+    "role_family": "Solution Architecture",
+    "type": "Solution Architecture",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "New Cairo",
+    "availability_status": "Possibly Available",
+    "published_date": "2026-07-06",
+    "expiry_date": "",
+    "last_checked": "2026-07-20",
+    "age_days": 14,
+    "posted_text": "Listed 2 weeks ago",
+    "notes": "Verify eligibility, deadline and work authorization on the linked source before applying.",
+    "source": "LinkedIn current search",
+    "url": "https://www.linkedin.com/jobs/konecta-jobs-worldwide?f_AL=true",
+    "source_quality": "B",
+    "source_quality_label": "Recognized job platform",
+    "verification_level": "Platform",
+    "sources": [
+      {
+        "name": "LinkedIn current search",
+        "url": "https://www.linkedin.com/jobs/konecta-jobs-worldwide?f_AL=true",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 1,
+    "origin_pages": [
+      "egypt-vacancies.csv",
+      "regional-private-companies.csv"
+    ],
+    "match": {
+      "role": 47,
+      "seniority": 92,
+      "industry": 45,
+      "location": 100,
+      "technology": 56,
+      "overall": 65
+    },
+    "match_score": 65,
+    "fit": "Medium",
+    "industry": "Other Multinational & Enterprise",
+    "application_status": "Not Reviewed"
+  },
+  {
+    "id": "job-00189",
+    "record_type": "Platform-Indexed Vacancy",
+    "category": "job",
+    "title": "Digital Transformation Manager / Solution Architect",
+    "organization": "Union Properties / Tetra Edge",
+    "subtitle": "Union Properties / Tetra Edge",
+    "role_family": "Digital Transformation",
+    "type": "Digital Transformation",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Dubai",
+    "availability_status": "Possibly Available",
+    "published_date": "2026-07-16",
+    "expiry_date": "",
+    "last_checked": "2026-07-20",
+    "age_days": 4,
+    "posted_text": "Urgent hiring reposted 4 days ago",
+    "notes": "Verify eligibility, deadline and work authorization on the linked source before applying.",
+    "source": "LinkedIn post",
+    "url": "https://ae.linkedin.com/in/mohammed-hashim-1a13665b",
+    "source_quality": "B",
+    "source_quality_label": "Recognized job platform",
+    "verification_level": "Platform",
+    "sources": [
+      {
+        "name": "LinkedIn post",
+        "url": "https://ae.linkedin.com/in/mohammed-hashim-1a13665b",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 1,
+    "origin_pages": [
+      "gcc-vacancies.csv",
+      "regional-private-companies.csv"
+    ],
+    "match": {
+      "role": 59,
+      "seniority": 92,
+      "industry": 45,
+      "location": 95,
+      "technology": 38,
+      "overall": 65
+    },
+    "match_score": 65,
     "fit": "Medium",
     "industry": "Technology & Consulting",
     "application_status": "Not Reviewed"
@@ -2193,104 +2340,6 @@
       "industry": 45,
       "location": 100,
       "technology": 56,
-      "overall": 65
-    },
-    "match_score": 65,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "application_status": "Not Reviewed"
-  },
-  {
-    "id": "job-00189",
-    "record_type": "Platform-Indexed Vacancy",
-    "category": "job",
-    "title": "Digital Transformation Manager / Solution Architect",
-    "organization": "Union Properties / Tetra Edge",
-    "subtitle": "Union Properties / Tetra Edge",
-    "role_family": "Digital Transformation",
-    "type": "Digital Transformation",
-    "region": "GCC",
-    "country": "United Arab Emirates",
-    "location": "Dubai",
-    "availability_status": "Possibly Available",
-    "published_date": "2026-07-16",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": 4,
-    "posted_text": "Urgent hiring reposted 4 days ago",
-    "notes": "Verify eligibility, deadline and work authorization on the linked source before applying.",
-    "source": "LinkedIn post",
-    "url": "https://ae.linkedin.com/in/mohammed-hashim-1a13665b",
-    "source_quality": "B",
-    "source_quality_label": "Recognized job platform",
-    "verification_level": "Platform",
-    "sources": [
-      {
-        "name": "LinkedIn post",
-        "url": "https://ae.linkedin.com/in/mohammed-hashim-1a13665b",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 1,
-    "origin_pages": [
-      "gcc-vacancies.csv",
-      "regional-private-companies.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 45,
-      "location": 95,
-      "technology": 38,
-      "overall": 65
-    },
-    "match_score": 65,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "application_status": "Not Reviewed"
-  },
-  {
-    "id": "job-00184",
-    "record_type": "Platform-Indexed Vacancy",
-    "category": "job",
-    "title": "Enterprise Applications & Digital Transformation Manager",
-    "organization": "Sunbulah Group",
-    "subtitle": "Sunbulah Group",
-    "role_family": "Digital Transformation",
-    "type": "Digital Transformation",
-    "region": "GCC",
-    "country": "Saudi Arabia",
-    "location": "Jeddah",
-    "availability_status": "Possibly Available",
-    "published_date": "2026-07-06",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": 14,
-    "posted_text": "Listed 2 weeks ago",
-    "notes": "Verify eligibility, deadline and work authorization on the linked source before applying.",
-    "source": "LinkedIn current search",
-    "url": "https://sa.linkedin.com/jobs/it-leadership-jobs",
-    "source_quality": "B",
-    "source_quality_label": "Recognized job platform",
-    "verification_level": "Platform",
-    "sources": [
-      {
-        "name": "LinkedIn current search",
-        "url": "https://sa.linkedin.com/jobs/it-leadership-jobs",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 1,
-    "origin_pages": [
-      "gcc-vacancies.csv",
-      "regional-private-companies.csv"
-    ],
-    "match": {
-      "role": 47,
-      "seniority": 92,
-      "industry": 56,
-      "location": 95,
-      "technology": 47,
       "overall": 65
     },
     "match_score": 65,
@@ -4447,55 +4496,6 @@
       "industry": 45,
       "location": 100,
       "technology": 38,
-      "overall": 65
-    },
-    "match_score": 65,
-    "fit": "Medium",
-    "industry": "Other Multinational & Enterprise",
-    "application_status": "Not Reviewed"
-  },
-  {
-    "id": "job-00014",
-    "record_type": "Platform-Indexed Vacancy",
-    "category": "job",
-    "title": "Solution Architect - Technical Governance Lead",
-    "organization": "Konecta",
-    "subtitle": "Konecta",
-    "role_family": "Solution Architecture",
-    "type": "Solution Architecture",
-    "region": "Egypt",
-    "country": "Egypt",
-    "location": "New Cairo",
-    "availability_status": "Possibly Available",
-    "published_date": "2026-07-06",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": 14,
-    "posted_text": "Listed 2 weeks ago",
-    "notes": "Verify eligibility, deadline and work authorization on the linked source before applying.",
-    "source": "LinkedIn current search",
-    "url": "https://www.linkedin.com/jobs/konecta-jobs-worldwide?f_AL=true",
-    "source_quality": "B",
-    "source_quality_label": "Recognized job platform",
-    "verification_level": "Platform",
-    "sources": [
-      {
-        "name": "LinkedIn current search",
-        "url": "https://www.linkedin.com/jobs/konecta-jobs-worldwide?f_AL=true",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 1,
-    "origin_pages": [
-      "egypt-vacancies.csv",
-      "regional-private-companies.csv"
-    ],
-    "match": {
-      "role": 47,
-      "seniority": 92,
-      "industry": 45,
-      "location": 100,
-      "technology": 56,
       "overall": 65
     },
     "match_score": 65,

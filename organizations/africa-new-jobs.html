@@ -214,7 +214,7 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
       <a class="nav-link" data-nav="directory" href="./directory.html">Directories</a>
       <details class="more-menu">
         <summary>More</summary>
-        <div class="more-panel"><a href="./retail-healthcare-lifestyle-jobs.html">Retail & Lifestyle Jobs</a>
+        <div class="more-panel"><a href="./linkedin-platforms.html">LinkedIn Post Platforms</a><a href="./healthcare-it-companies-jobs.html">Healthcare IT Jobs</a><a href="./abb-jobs.html">ABB Jobs</a><a href="./retail-healthcare-lifestyle-jobs.html">Retail & Lifestyle Jobs</a>
           <a href="./official-jobs.html">Official Jobs</a>
           <a href="./priority-jobs.html">Priority Jobs</a>
           <a href="./africa-vacancies.html">Africa Vacancies</a>
@@ -352,7 +352,16 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
         && (!selectedCountry || job.country === selectedCountry)
         && (!selectedPlatform || job.platform === selectedPlatform)
         && (!selectedCategory || job.category === selectedCategory);
-    }).sort((a,b) => Number(b.fit || 0) - Number(a.fit || 0));
+    }).sort((a,b) => {
+      const status = window.CAREER_STATUS;
+      const bad = value => /^(Expired|Not Available|Inactive|Broken Link|Rejected|Withdrawn|Not Suitable|Ignored)$/i.test(String(value || ''));
+      const recordA = statusRecords[String(a.id)] || a;
+      const recordB = statusRecords[String(b.id)] || b;
+      const badA = bad(status?.effectiveAvailability(recordA)) || bad(status?.application(recordA.id).status);
+      const badB = bad(status?.effectiveAvailability(recordB)) || bad(status?.application(recordB.id).status);
+      if (badA !== badB) return badA ? 1 : -1;
+      return Number(b.fit || b.match_score || 0) - Number(a.fit || a.match_score || 0);
+    });
 
     count.textContent = filtered.length + (filtered.length === 1 ? ' job' : ' jobs');
     const labels = [selectedCountry, selectedPlatform, selectedCategory, term ? 'Keyword: ' + term : ''].filter(Boolean);

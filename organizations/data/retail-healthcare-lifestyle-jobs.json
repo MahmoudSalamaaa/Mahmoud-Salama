@@ -3,22 +3,6 @@
   "verification_note": "Availability changes quickly. Recheck the official employer or platform page before applying.",
   "jobs": [
     {
-      "id": "lifestyle-001",
-      "title": "Systems Support Engineer - Regional IT",
-      "company": "Alshaya Group",
-      "brand": "Regional IT",
-      "sector": "Retail Technology",
-      "location": "Egypt",
-      "country": "Egypt",
-      "source": "Official Careers",
-      "posted": "Current official listing",
-      "deadline": "31 July 2026",
-      "status": "Available",
-      "fit": 94,
-      "summary": "Regional IT support role within a major international retail and franchise group.",
-      "url": "https://jobsearch.alshaya.com/cau/en/careers.alshaya.com"
-    },
-    {
       "id": "lifestyle-004",
       "title": "IT Support Engineer - Workplace Technology",
       "company": "Chalhoub Group",
@@ -35,20 +19,20 @@
       "url": "https://careers.chalhoubgroup.com/jobs?country=Egypt&query="
     },
     {
-      "id": "lifestyle-006",
-      "title": "E-Commerce Associate",
-      "company": "Chalhoub Group",
-      "brand": "E-Commerce",
-      "sector": "Digital Commerce",
-      "location": "Cairo, Egypt",
+      "id": "lifestyle-001",
+      "title": "Systems Support Engineer - Regional IT",
+      "company": "Alshaya Group",
+      "brand": "Regional IT",
+      "sector": "Retail Technology",
+      "location": "Egypt",
       "country": "Egypt",
       "source": "Official Careers",
-      "posted": "Current Egypt opening",
-      "deadline": "",
+      "posted": "Current official listing",
+      "deadline": "31 July 2026",
       "status": "Available",
-      "fit": 82,
-      "summary": "Digital-commerce role supporting luxury and beauty brands in Egypt.",
-      "url": "https://careers.chalhoubgroup.com/jobs?country=Egypt&query="
+      "fit": 94,
+      "summary": "Regional IT support role within a major international retail and franchise group.",
+      "url": "https://jobsearch.alshaya.com/cau/en/careers.alshaya.com"
     },
     {
       "id": "lifestyle-012",
@@ -64,6 +48,22 @@
       "status": "Available",
       "fit": 84,
       "summary": "Merchandise and supply-planning opportunity supporting airport retail operations.",
+      "url": "https://careers.chalhoubgroup.com/jobs?country=Egypt&query="
+    },
+    {
+      "id": "lifestyle-006",
+      "title": "E-Commerce Associate",
+      "company": "Chalhoub Group",
+      "brand": "E-Commerce",
+      "sector": "Digital Commerce",
+      "location": "Cairo, Egypt",
+      "country": "Egypt",
+      "source": "Official Careers",
+      "posted": "Current Egypt opening",
+      "deadline": "",
+      "status": "Available",
+      "fit": 82,
+      "summary": "Digital-commerce role supporting luxury and beauty brands in Egypt.",
       "url": "https://careers.chalhoubgroup.com/jobs?country=Egypt&query="
     }
   ],

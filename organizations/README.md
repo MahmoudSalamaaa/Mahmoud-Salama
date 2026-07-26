@@ -95,3 +95,34 @@ Every job card and job table now supports persistent browser-local settings:
 - Application: Not Reviewed, Saved, Interested, Shortlisted, Applied, Follow-up, Interview, Offer, Rejected, Withdrawn, Not Suitable, Ignored, or Not Available.
 
 The settings are shared across all job pages and the Application Tracker through local browser storage.
+
+## Healthcare IT Companies & Profile Ranking
+
+Added:
+- `healthcare-it-companies-jobs.html`
+- `abb-jobs.html`
+- 30 healthcare IT companies from the supplied image
+- Current and live suitable vacancies
+- Official company career portals and all-vacancy searches
+- Project-wide recommended sorting
+- Fit-tier badges: Best Fit, Strong Fit, Good Fit, Moderate Fit and Low Fit
+- Automatic bottom placement for expired, unavailable, rejected, withdrawn and not-suitable records
+
+Data:
+- `data/healthcare-it-companies-jobs.json`
+- `data/js/healthcare-it-companies-jobs.js`
+- `data/csv/healthcare-it-suitable-vacancies.csv`
+- `data/csv/healthcare-it-companies.csv`
+
+## LinkedIn Post Platforms
+
+Added `linkedin-platforms.html` and merged the supplied platform list into the main platform database.
+
+Categories:
+- Global job boards and professional networks
+- Egypt and MENA recruitment platforms
+- Freelance and remote-work marketplaces
+- Saudi flexible, hourly and part-time work platforms
+- Career automation, interview preparation and language-learning tools
+
+The page ranks each platform for Mahmoud Salama's CTO, enterprise architecture, healthcare technology and digital-transformation profile.

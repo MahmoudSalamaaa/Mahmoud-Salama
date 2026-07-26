@@ -56,3 +56,14 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
 .table-status-select{min-width:150px;padding:7px 8px}
 .status-help{margin:4px 0 12px;color:var(--muted);font-size:11px}
 @media(max-width:680px){.job-status-controls{grid-template-columns:1fr}.table-status-select{min-width:135px}}
+
+
+/* PROFILE-BASED RECOMMENDATION RANKING */
+.fit-tier{font-weight:900}
+.fit-best{background:rgba(22,163,74,.16)!important;color:#4ade80!important;border-color:rgba(74,222,128,.38)!important}
+.fit-strong{background:rgba(14,165,233,.16)!important;color:#38bdf8!important;border-color:rgba(56,189,248,.38)!important}
+.fit-good{background:rgba(245,158,11,.14)!important;color:#fbbf24!important;border-color:rgba(251,191,36,.34)!important}
+.fit-medium{background:rgba(168,85,247,.13)!important;color:#c084fc!important;border-color:rgba(192,132,252,.34)!important}
+.fit-low{background:rgba(100,116,139,.16)!important;color:#94a3b8!important;border-color:rgba(148,163,184,.30)!important}
+.rank-guidance{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 0}
+.rank-guidance span{padding:6px 9px;border:1px solid var(--line);border-radius:999px;background:var(--surface-alt);font-size:11px;font-weight:800;color:var(--muted)}

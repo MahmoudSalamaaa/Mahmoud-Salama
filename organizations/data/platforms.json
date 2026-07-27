@@ -1,416 +1,16 @@
 [
   {
-    "id": "platform-social-facebook",
-    "record_type": "Social Job Discovery",
+    "id": "platform-independent-03",
+    "record_type": "Independent Work Platform",
     "category": "platform",
-    "title": "Facebook Job Posts",
-    "organization": "Facebook",
-    "subtitle": "Public employer, recruiter and government vacancy announcements.",
-    "role_family": "Social Job Discovery",
-    "type": "Social Job Discovery",
-    "industry": "Employment & Career Services",
-    "region": "Global / Social",
+    "title": "Upwork",
+    "organization": "Freelance and consulting marketplace",
+    "subtitle": "The strongest general freelance platform for your profile because it supports senior consulting, technology strategy, software consulting, program management and long-term client engagements.",
+    "role_family": "Freelance and consulting marketplace",
+    "type": "Freelance and consulting marketplace",
+    "industry": "Independent Work & Remote Careers",
+    "region": "Global / Remote",
     "country": "Global",
-    "location": "Online",
-    "availability_status": "Active Search",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-27",
-    "age_days": null,
-    "posted_text": "Live search route",
-    "notes": "Public employer, recruiter and government vacancy announcements. Social posts require employer verification before application.",
-    "source": "Facebook",
-    "url": "https://www.facebook.com/search/posts/?q=%22IT%20Director%22%20OR%20%22Enterprise%20Architect%22%20OR%20%22Digital%20Transformation%22%20Egypt%20hiring",
-    "source_quality": "B",
-    "source_quality_label": "Social discovery source",
-    "verification_level": "Live social search — verify each post",
-    "sources": [
-      {
-        "name": "Facebook",
-        "url": "https://www.facebook.com/search/posts/?q=%22IT%20Director%22%20OR%20%22Enterprise%20Architect%22%20OR%20%22Digital%20Transformation%22%20Egypt%20hiring",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "social-media-jobs.html"
-    ],
-    "match": {
-      "role": 75,
-      "seniority": 75,
-      "industry": 75,
-      "location": 90,
-      "technology": 75,
-      "overall": 75
-    },
-    "match_score": 75,
-    "fit": "Medium",
-    "priority_tier": "Monitor",
-    "is_priority": false,
-    "internal_profile": "./social-media-jobs.html"
-  },
-  {
-    "id": "platform-social-instagram",
-    "record_type": "Social Job Discovery",
-    "category": "platform",
-    "title": "Instagram Hiring Posts",
-    "organization": "Instagram",
-    "subtitle": "Recruiter and employer vacancy graphics and hiring hashtags.",
-    "role_family": "Social Job Discovery",
-    "type": "Social Job Discovery",
-    "industry": "Employment & Career Services",
-    "region": "Global / Social",
-    "country": "Global",
-    "location": "Online",
-    "availability_status": "Active Search",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-27",
-    "age_days": null,
-    "posted_text": "Live search route",
-    "notes": "Recruiter and employer vacancy graphics and hiring hashtags. Social posts require employer verification before application.",
-    "source": "Instagram",
-    "url": "https://www.instagram.com/explore/tags/itjobs/",
-    "source_quality": "B",
-    "source_quality_label": "Social discovery source",
-    "verification_level": "Live social search — verify each post",
-    "sources": [
-      {
-        "name": "Instagram",
-        "url": "https://www.instagram.com/explore/tags/itjobs/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "social-media-jobs.html"
-    ],
-    "match": {
-      "role": 62,
-      "seniority": 62,
-      "industry": 62,
-      "location": 90,
-      "technology": 62,
-      "overall": 62
-    },
-    "match_score": 62,
-    "fit": "Low",
-    "priority_tier": "Monitor",
-    "is_priority": false,
-    "internal_profile": "./social-media-jobs.html"
-  },
-  {
-    "id": "platform-social-x",
-    "record_type": "Social Job Discovery",
-    "category": "platform",
-    "title": "X Live Hiring Search",
-    "organization": "X",
-    "subtitle": "Real-time public hiring and recruiter posts.",
-    "role_family": "Social Job Discovery",
-    "type": "Social Job Discovery",
-    "industry": "Employment & Career Services",
-    "region": "Global / Social",
-    "country": "Global",
-    "location": "Online",
-    "availability_status": "Active Search",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-27",
-    "age_days": null,
-    "posted_text": "Live search route",
-    "notes": "Real-time public hiring and recruiter posts. Social posts require employer verification before application.",
-    "source": "X",
-    "url": "https://x.com/search?q=%28%22enterprise%20architect%22%20OR%20%22IT%20director%22%20OR%20%22digital%20transformation%22%20OR%20%22technical%20program%20manager%22%29%20%28Egypt%20OR%20Cairo%20OR%20UAE%20OR%20Saudi%20OR%20Africa%20OR%20remote%29%20hiring&src=typed_query&f=live",
-    "source_quality": "B",
-    "source_quality_label": "Social discovery source",
-    "verification_level": "Live social search — verify each post",
-    "sources": [
-      {
-        "name": "X",
-        "url": "https://x.com/search?q=%28%22enterprise%20architect%22%20OR%20%22IT%20director%22%20OR%20%22digital%20transformation%22%20OR%20%22technical%20program%20manager%22%29%20%28Egypt%20OR%20Cairo%20OR%20UAE%20OR%20Saudi%20OR%20Africa%20OR%20remote%29%20hiring&src=typed_query&f=live",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "social-media-jobs.html"
-    ],
-    "match": {
-      "role": 72,
-      "seniority": 72,
-      "industry": 72,
-      "location": 90,
-      "technology": 72,
-      "overall": 72
-    },
-    "match_score": 72,
-    "fit": "Medium",
-    "priority_tier": "Monitor",
-    "is_priority": false,
-    "internal_profile": "./social-media-jobs.html"
-  },
-  {
-    "id": "platform-social-threads",
-    "record_type": "Social Job Discovery",
-    "category": "platform",
-    "title": "Threads Hiring Search",
-    "organization": "Threads",
-    "subtitle": "Public recruiter and professional hiring discussions.",
-    "role_family": "Social Job Discovery",
-    "type": "Social Job Discovery",
-    "industry": "Employment & Career Services",
-    "region": "Global / Social",
-    "country": "Global",
-    "location": "Online",
-    "availability_status": "Active Search",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-27",
-    "age_days": null,
-    "posted_text": "Live search route",
-    "notes": "Public recruiter and professional hiring discussions. Social posts require employer verification before application.",
-    "source": "Threads",
-    "url": "https://www.threads.com/search?q=%22enterprise%20architect%22%20%22IT%20director%22%20hiring",
-    "source_quality": "B",
-    "source_quality_label": "Social discovery source",
-    "verification_level": "Live social search — verify each post",
-    "sources": [
-      {
-        "name": "Threads",
-        "url": "https://www.threads.com/search?q=%22enterprise%20architect%22%20%22IT%20director%22%20hiring",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "social-media-jobs.html"
-    ],
-    "match": {
-      "role": 60,
-      "seniority": 60,
-      "industry": 60,
-      "location": 90,
-      "technology": 60,
-      "overall": 60
-    },
-    "match_score": 60,
-    "fit": "Low",
-    "priority_tier": "Monitor",
-    "is_priority": false,
-    "internal_profile": "./social-media-jobs.html"
-  },
-  {
-    "id": "platform-social-reddit",
-    "record_type": "Social Job Discovery",
-    "category": "platform",
-    "title": "Reddit Job Communities",
-    "organization": "Reddit",
-    "subtitle": "Community contracts, remote jobs and technical partnership posts.",
-    "role_family": "Social Job Discovery",
-    "type": "Social Job Discovery",
-    "industry": "Employment & Career Services",
-    "region": "Global / Social",
-    "country": "Global",
-    "location": "Online",
-    "availability_status": "Active Search",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-27",
-    "age_days": null,
-    "posted_text": "Live search route",
-    "notes": "Community contracts, remote jobs and technical partnership posts. Social posts require employer verification before application.",
-    "source": "Reddit",
-    "url": "https://www.reddit.com/search/?q=hiring%20%22technical%20program%20manager%22%20OR%20%22enterprise%20architect%22%20OR%20%22fractional%20CTO%22&sort=new",
-    "source_quality": "C",
-    "source_quality_label": "Social discovery source",
-    "verification_level": "Live social search — verify each post",
-    "sources": [
-      {
-        "name": "Reddit",
-        "url": "https://www.reddit.com/search/?q=hiring%20%22technical%20program%20manager%22%20OR%20%22enterprise%20architect%22%20OR%20%22fractional%20CTO%22&sort=new",
-        "quality": "C"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "social-media-jobs.html"
-    ],
-    "match": {
-      "role": 58,
-      "seniority": 58,
-      "industry": 58,
-      "location": 90,
-      "technology": 58,
-      "overall": 58
-    },
-    "match_score": 58,
-    "fit": "Low",
-    "priority_tier": "Secondary",
-    "is_priority": false,
-    "internal_profile": "./social-media-jobs.html"
-  },
-  {
-    "id": "platform-social-telegram",
-    "record_type": "Social Job Discovery",
-    "category": "platform",
-    "title": "Telegram Job Channels",
-    "organization": "Telegram",
-    "subtitle": "Public job channels discovered through indexed searches.",
-    "role_family": "Social Job Discovery",
-    "type": "Social Job Discovery",
-    "industry": "Employment & Career Services",
-    "region": "Global / Social",
-    "country": "Global",
-    "location": "Online",
-    "availability_status": "Active Search",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-27",
-    "age_days": null,
-    "posted_text": "Live search route",
-    "notes": "Public job channels discovered through indexed searches. Social posts require employer verification before application.",
-    "source": "Telegram",
-    "url": "https://www.google.com/search?q=site%3At.me%20%28%22enterprise%20architect%22%20OR%20%22IT%20director%22%20OR%20%22digital%20transformation%22%29%20jobs",
-    "source_quality": "C",
-    "source_quality_label": "Social discovery source",
-    "verification_level": "Live social search — verify each post",
-    "sources": [
-      {
-        "name": "Telegram",
-        "url": "https://www.google.com/search?q=site%3At.me%20%28%22enterprise%20architect%22%20OR%20%22IT%20director%22%20OR%20%22digital%20transformation%22%29%20jobs",
-        "quality": "C"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "social-media-jobs.html"
-    ],
-    "match": {
-      "role": 50,
-      "seniority": 50,
-      "industry": 50,
-      "location": 90,
-      "technology": 50,
-      "overall": 50
-    },
-    "match_score": 50,
-    "fit": "Low",
-    "priority_tier": "Secondary",
-    "is_priority": false,
-    "internal_profile": "./social-media-jobs.html"
-  },
-  {
-    "id": "platform-social-tiktok",
-    "record_type": "Social Job Discovery",
-    "category": "platform",
-    "title": "TikTok Career Posts",
-    "organization": "TikTok",
-    "subtitle": "Short-form vacancy and employer career content.",
-    "role_family": "Social Job Discovery",
-    "type": "Social Job Discovery",
-    "industry": "Employment & Career Services",
-    "region": "Global / Social",
-    "country": "Global",
-    "location": "Online",
-    "availability_status": "Active Search",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-27",
-    "age_days": null,
-    "posted_text": "Live search route",
-    "notes": "Short-form vacancy and employer career content. Social posts require employer verification before application.",
-    "source": "TikTok",
-    "url": "https://www.tiktok.com/search?q=enterprise%20architect%20jobs%20Egypt",
-    "source_quality": "C",
-    "source_quality_label": "Social discovery source",
-    "verification_level": "Live social search — verify each post",
-    "sources": [
-      {
-        "name": "TikTok",
-        "url": "https://www.tiktok.com/search?q=enterprise%20architect%20jobs%20Egypt",
-        "quality": "C"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "social-media-jobs.html"
-    ],
-    "match": {
-      "role": 42,
-      "seniority": 42,
-      "industry": 42,
-      "location": 90,
-      "technology": 42,
-      "overall": 42
-    },
-    "match_score": 42,
-    "fit": "Low",
-    "priority_tier": "Secondary",
-    "is_priority": false,
-    "internal_profile": "./social-media-jobs.html"
-  },
-  {
-    "id": "platform-social-bluesky",
-    "record_type": "Social Job Discovery",
-    "category": "platform",
-    "title": "Bluesky Hiring Search",
-    "organization": "Bluesky",
-    "subtitle": "Open social-network hiring posts.",
-    "role_family": "Social Job Discovery",
-    "type": "Social Job Discovery",
-    "industry": "Employment & Career Services",
-    "region": "Global / Social",
-    "country": "Global",
-    "location": "Online",
-    "availability_status": "Active Search",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-27",
-    "age_days": null,
-    "posted_text": "Live search route",
-    "notes": "Open social-network hiring posts. Social posts require employer verification before application.",
-    "source": "Bluesky",
-    "url": "https://bsky.app/search?q=%22enterprise%20architect%22%20hiring",
-    "source_quality": "C",
-    "source_quality_label": "Social discovery source",
-    "verification_level": "Live social search — verify each post",
-    "sources": [
-      {
-        "name": "Bluesky",
-        "url": "https://bsky.app/search?q=%22enterprise%20architect%22%20hiring",
-        "quality": "C"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "social-media-jobs.html"
-    ],
-    "match": {
-      "role": 48,
-      "seniority": 48,
-      "industry": 48,
-      "location": 90,
-      "technology": 48,
-      "overall": 48
-    },
-    "match_score": 48,
-    "fit": "Low",
-    "priority_tier": "Secondary",
-    "is_priority": false,
-    "internal_profile": "./social-media-jobs.html"
-  },
-  {
-    "id": "platform-remote4africa",
-    "record_type": "Remote Job Platform",
-    "category": "platform",
-    "title": "Remote4Africa",
-    "organization": "Remote work community for African professionals",
-    "subtitle": "Verified remote and hybrid opportunities open to African countries",
-    "role_family": "Remote Job Platform",
-    "type": "Remote Job Platform",
-    "industry": "Employment & Career Services",
-    "region": "Africa / Global Remote",
-    "country": "Africa",
     "location": "Online",
     "availability_status": "Active Platform",
     "published_date": "",
@@ -418,41 +18,546 @@
     "last_checked": "2026-07-27",
     "age_days": null,
     "posted_text": "Official platform",
-    "notes": "Remote-focused platform for African professionals. Strong relevance for global technology, architecture, project-management, cloud and healthcare-technology opportunities. Some full job details or application links require registration or premium access.",
-    "source": "Official Remote4Africa website",
-    "url": "https://remote4africa.com/",
+    "notes": "The strongest general freelance platform for your profile because it supports senior consulting, technology strategy, software consulting, program management and long-term client engagements. Connects and platform competition make indiscriminate proposals expensive. Apply selectively.",
+    "source": "Official Upwork website",
+    "url": "https://www.upwork.com/",
     "source_quality": "A",
     "source_quality_label": "Official platform",
     "verification_level": "Official",
     "sources": [
       {
-        "name": "Remote4Africa",
-        "url": "https://remote4africa.com/",
+        "name": "Upwork",
+        "url": "https://www.upwork.com/",
         "quality": "A"
       },
       {
-        "name": "Current jobs",
-        "url": "https://remote4africa.com/jobs",
+        "name": "Primary opportunity route",
+        "url": "https://www.upwork.com/freelance-jobs/technology-consulting/",
         "quality": "A"
       }
     ],
     "duplicate_count": 0,
     "origin_pages": [
-      "remote4africa-jobs.html"
+      "independent-work-platforms.html",
+      "upwork-platform.html"
     ],
     "match": {
-      "role": 96,
-      "seniority": 92,
-      "industry": 94,
-      "location": 99,
+      "role": 97,
+      "seniority": 97,
+      "industry": 97,
+      "location": 96,
       "technology": 97,
-      "overall": 96
+      "overall": 97
     },
-    "match_score": 96,
+    "match_score": 97,
     "fit": "High",
     "priority_tier": "Priority 1",
     "is_priority": true,
-    "internal_profile": "./remote4africa-jobs.html"
+    "internal_profile": "./upwork-platform.html"
+  },
+  {
+    "id": "platform-independent-04",
+    "record_type": "Independent Work Platform",
+    "category": "platform",
+    "title": "Toptal",
+    "organization": "Vetted premium talent network",
+    "subtitle": "A premium target for senior consulting and project-management work. The selection process is demanding, but your 18+ years and enterprise-scale portfolio support a credible application.",
+    "role_family": "Vetted premium talent network",
+    "type": "Vetted premium talent network",
+    "industry": "Independent Work & Remote Careers",
+    "region": "Global / Remote",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Official platform",
+    "notes": "A premium target for senior consulting and project-management work. The selection process is demanding, but your 18+ years and enterprise-scale portfolio support a credible application. Admission is selective and category-specific. Do not claim platform-specific expertise you cannot demonstrate.",
+    "source": "Official Toptal website",
+    "url": "https://www.toptal.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Toptal",
+        "url": "https://www.toptal.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Primary opportunity route",
+        "url": "https://www.toptal.com/talent/apply",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "independent-work-platforms.html",
+      "toptal-platform.html"
+    ],
+    "match": {
+      "role": 95,
+      "seniority": 95,
+      "industry": 95,
+      "location": 96,
+      "technology": 95,
+      "overall": 95
+    },
+    "match_score": 95,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "internal_profile": "./toptal-platform.html"
+  },
+  {
+    "id": "platform-independent-09",
+    "record_type": "Independent Work Platform",
+    "category": "platform",
+    "title": "Wellfound",
+    "organization": "Startup and technology job marketplace",
+    "subtitle": "A high-priority source for startup CTO, Head of Technology, engineering-management, product, data, cloud and architecture roles with salary and equity visibility.",
+    "role_family": "Startup and technology job marketplace",
+    "type": "Startup and technology job marketplace",
+    "industry": "Independent Work & Remote Careers",
+    "region": "Global / Remote / Startups",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Official platform",
+    "notes": "A high-priority source for startup CTO, Head of Technology, engineering-management, product, data, cloud and architecture roles with salary and equity visibility. Many roles are geography-restricted or equity-heavy. Review funding, runway and compensation carefully.",
+    "source": "Official Wellfound website",
+    "url": "https://wellfound.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Wellfound",
+        "url": "https://wellfound.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Primary opportunity route",
+        "url": "https://wellfound.com/jobs",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "independent-work-platforms.html",
+      "wellfound-platform.html"
+    ],
+    "match": {
+      "role": 95,
+      "seniority": 95,
+      "industry": 95,
+      "location": 96,
+      "technology": 95,
+      "overall": 95
+    },
+    "match_score": 95,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "internal_profile": "./wellfound-platform.html"
+  },
+  {
+    "id": "platform-independent-08",
+    "record_type": "Independent Work Platform",
+    "category": "platform",
+    "title": "FlexJobs",
+    "organization": "Curated remote and flexible job board",
+    "subtitle": "A strong source for remote full-time, freelance, flexible and director-level technology roles, especially when you need curated remote listings.",
+    "role_family": "Curated remote and flexible job board",
+    "type": "Curated remote and flexible job board",
+    "industry": "Independent Work & Remote Careers",
+    "region": "Global / Remote",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Official platform",
+    "notes": "A strong source for remote full-time, freelance, flexible and director-level technology roles, especially when you need curated remote listings. Some features require membership. A remote label does not always mean worldwide eligibility.",
+    "source": "Official FlexJobs website",
+    "url": "https://www.flexjobs.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "FlexJobs",
+        "url": "https://www.flexjobs.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Primary opportunity route",
+        "url": "https://www.flexjobs.com/remote-jobs/tech",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "independent-work-platforms.html",
+      "flexjobs-platform.html"
+    ],
+    "match": {
+      "role": 94,
+      "seniority": 94,
+      "industry": 94,
+      "location": 96,
+      "technology": 94,
+      "overall": 94
+    },
+    "match_score": 94,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "internal_profile": "./flexjobs-platform.html"
+  },
+  {
+    "id": "platform-independent-10",
+    "record_type": "Independent Work Platform",
+    "category": "platform",
+    "title": "We Work Remotely",
+    "organization": "Remote job board",
+    "subtitle": "A strong remote board for technical program management, product, DevOps, infrastructure, software and management-consulting opportunities.",
+    "role_family": "Remote job board",
+    "type": "Remote job board",
+    "industry": "Independent Work & Remote Careers",
+    "region": "Global / Remote",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Official platform",
+    "notes": "A strong remote board for technical program management, product, DevOps, infrastructure, software and management-consulting opportunities. Many remote vacancies remain country or time-zone restricted despite appearing on a global board.",
+    "source": "Official We Work Remotely website",
+    "url": "https://weworkremotely.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "We Work Remotely",
+        "url": "https://weworkremotely.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Primary opportunity route",
+        "url": "https://weworkremotely.com/remote-jobs/all-jobs",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "independent-work-platforms.html",
+      "weworkremotely-platform.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 92,
+      "location": 96,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "internal_profile": "./weworkremotely-platform.html"
+  },
+  {
+    "id": "platform-independent-05",
+    "record_type": "Independent Work Platform",
+    "category": "platform",
+    "title": "Contra",
+    "organization": "Independent-work platform",
+    "subtitle": "Strong for portfolio-led independent consulting, global project discovery, professional visibility, contracts and commission-free payments.",
+    "role_family": "Independent-work platform",
+    "type": "Independent-work platform",
+    "industry": "Independent Work & Remote Careers",
+    "region": "Global / Remote",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Official platform",
+    "notes": "Strong for portfolio-led independent consulting, global project discovery, professional visibility, contracts and commission-free payments. Some opportunity access and advanced visibility features may require a paid plan.",
+    "source": "Official Contra website",
+    "url": "https://contra.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Contra",
+        "url": "https://contra.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Primary opportunity route",
+        "url": "https://contra.com/features/find-freelance-jobs",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "independent-work-platforms.html",
+      "contra-platform.html"
+    ],
+    "match": {
+      "role": 91,
+      "seniority": 91,
+      "industry": 91,
+      "location": 96,
+      "technology": 91,
+      "overall": 91
+    },
+    "match_score": 91,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "internal_profile": "./contra-platform.html"
+  },
+  {
+    "id": "platform-independent-01",
+    "record_type": "Independent Work Platform",
+    "category": "platform",
+    "title": "Fiverr",
+    "organization": "Service marketplace",
+    "subtitle": "Best used by packaging your expertise into clearly scoped consulting services rather than bidding on conventional job vacancies.",
+    "role_family": "Service marketplace",
+    "type": "Service marketplace",
+    "industry": "Independent Work & Remote Careers",
+    "region": "Global / Remote",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Official platform",
+    "notes": "Best used by packaging your expertise into clearly scoped consulting services rather than bidding on conventional job vacancies. Fiverr is seller-led. Success depends on service packaging, reviews, positioning and response speed.",
+    "source": "Official Fiverr website",
+    "url": "https://www.fiverr.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Fiverr",
+        "url": "https://www.fiverr.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Primary opportunity route",
+        "url": "https://www.fiverr.com/categories/consulting-services",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "independent-work-platforms.html",
+      "fiverr-platform.html"
+    ],
+    "match": {
+      "role": 87,
+      "seniority": 87,
+      "industry": 87,
+      "location": 96,
+      "technology": 87,
+      "overall": 87
+    },
+    "match_score": 87,
+    "fit": "Medium",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "internal_profile": "./fiverr-platform.html"
+  },
+  {
+    "id": "platform-independent-02",
+    "record_type": "Independent Work Platform",
+    "category": "platform",
+    "title": "Freelancer.com",
+    "organization": "Project bidding marketplace",
+    "subtitle": "Useful for project-based consulting, cloud, architecture, program-management and enterprise-system engagements, but proposals must be filtered carefully to avoid low-value work.",
+    "role_family": "Project bidding marketplace",
+    "type": "Project bidding marketplace",
+    "industry": "Independent Work & Remote Careers",
+    "region": "Global / Remote",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Official platform",
+    "notes": "Useful for project-based consulting, cloud, architecture, program-management and enterprise-system engagements, but proposals must be filtered carefully to avoid low-value work. Open bidding creates strong price competition. Confirm scope, client verification and milestone funding.",
+    "source": "Official Freelancer.com website",
+    "url": "https://www.freelancer.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Freelancer.com",
+        "url": "https://www.freelancer.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Primary opportunity route",
+        "url": "https://www.freelancer.com/jobs/project-management/",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "independent-work-platforms.html",
+      "freelancer-platform.html"
+    ],
+    "match": {
+      "role": 84,
+      "seniority": 84,
+      "industry": 84,
+      "location": 96,
+      "technology": 84,
+      "overall": 84
+    },
+    "match_score": 84,
+    "fit": "Medium",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "internal_profile": "./freelancer-platform.html"
+  },
+  {
+    "id": "platform-independent-06",
+    "record_type": "Independent Work Platform",
+    "category": "platform",
+    "title": "PeoplePerHour",
+    "organization": "Hourly and project marketplace",
+    "subtitle": "A secondary source for consulting, software, IT and project-management assignments. Suitable opportunities exist, but average project sizes may be below your target level.",
+    "role_family": "Hourly and project marketplace",
+    "type": "Hourly and project marketplace",
+    "industry": "Independent Work & Remote Careers",
+    "region": "Global / Remote",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Official platform",
+    "notes": "A secondary source for consulting, software, IT and project-management assignments. Suitable opportunities exist, but average project sizes may be below your target level. Use careful budget filtering and avoid competing for low-value commodity tasks.",
+    "source": "Official PeoplePerHour website",
+    "url": "https://www.peopleperhour.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "PeoplePerHour",
+        "url": "https://www.peopleperhour.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Primary opportunity route",
+        "url": "https://www.peopleperhour.com/freelance-jobs",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "independent-work-platforms.html",
+      "peopleperhour-platform.html"
+    ],
+    "match": {
+      "role": 77,
+      "seniority": 77,
+      "industry": 77,
+      "location": 96,
+      "technology": 77,
+      "overall": 77
+    },
+    "match_score": 77,
+    "fit": "Medium",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "internal_profile": "./peopleperhour-platform.html"
+  },
+  {
+    "id": "platform-independent-07",
+    "record_type": "Independent Work Platform",
+    "category": "platform",
+    "title": "Guru",
+    "organization": "Freelance job and quote marketplace",
+    "subtitle": "Useful as a secondary project source for technology, cloud, software, operations and project-management work.",
+    "role_family": "Freelance job and quote marketplace",
+    "type": "Freelance job and quote marketplace",
+    "industry": "Independent Work & Remote Careers",
+    "region": "Global / Remote",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Official platform",
+    "notes": "Useful as a secondary project source for technology, cloud, software, operations and project-management work. Client quality and project depth vary. Verify payment, scope and employer history.",
+    "source": "Official Guru website",
+    "url": "https://www.guru.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Guru",
+        "url": "https://www.guru.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Primary opportunity route",
+        "url": "https://www.guru.com/d/jobs/",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "independent-work-platforms.html",
+      "guru-platform.html"
+    ],
+    "match": {
+      "role": 74,
+      "seniority": 74,
+      "industry": 74,
+      "location": 96,
+      "technology": 74,
+      "overall": 74
+    },
+    "match_score": 74,
+    "fit": "Medium",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "internal_profile": "./guru-platform.html"
   },
   {
     "id": "platform-00175",
@@ -511,6 +616,115 @@
     "recommendation": "Priority 1",
     "use_case": "Senior technology leadership, enterprise architecture, digital transformation, networking and direct employer applications.",
     "arabic_name": "لينكدإن للوظائف"
+  },
+  {
+    "id": "platform-0174",
+    "record_type": "Official Employer Careers",
+    "category": "platform",
+    "title": "Canonical Careers",
+    "organization": "Official Canonical global careers portal",
+    "subtitle": "Official Canonical global careers portal",
+    "role_family": "Official Employer Careers",
+    "type": "Official Employer Careers",
+    "industry": "Technology & Cloud",
+    "region": "Global · EMEA · Remote",
+    "country": "Worldwide",
+    "location": "Home based / Remote",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-24",
+    "age_days": null,
+    "posted_text": "Official career source",
+    "notes": "Direct source for Canonical roles across engineering, support engineering, project management, product, commercial operations, sales, cloud, Linux, infrastructure and remote work.",
+    "source": "Official Canonical careers",
+    "url": "https://canonical.com/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official employer / primary source",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Canonical Careers",
+        "url": "https://canonical.com/careers",
+        "quality": "A"
+      },
+      {
+        "name": "All Canonical Roles",
+        "url": "https://canonical.com/careers/all",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "official-canonical-careers"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 95,
+      "industry": 96,
+      "location": 94,
+      "technology": 99,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Recommended",
+    "is_priority": true
+  },
+  {
+    "id": "platform-remote4africa",
+    "record_type": "Remote Job Platform",
+    "category": "platform",
+    "title": "Remote4Africa",
+    "organization": "Remote work community for African professionals",
+    "subtitle": "Verified remote and hybrid opportunities open to African countries",
+    "role_family": "Remote Job Platform",
+    "type": "Remote Job Platform",
+    "industry": "Employment & Career Services",
+    "region": "Africa / Global Remote",
+    "country": "Africa",
+    "location": "Online",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Official platform",
+    "notes": "Remote-focused platform for African professionals. Strong relevance for global technology, architecture, project-management, cloud and healthcare-technology opportunities. Some full job details or application links require registration or premium access.",
+    "source": "Official Remote4Africa website",
+    "url": "https://remote4africa.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Remote4Africa",
+        "url": "https://remote4africa.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Current jobs",
+        "url": "https://remote4africa.com/jobs",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "remote4africa-jobs.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 92,
+      "industry": 94,
+      "location": 99,
+      "technology": 97,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "internal_profile": "./remote4africa-jobs.html"
   },
   {
     "id": "platform-00176",
@@ -861,6 +1075,56 @@
     "arabic_name": "وركانا"
   },
   {
+    "id": "platform-social-facebook",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "Facebook Job Posts",
+    "organization": "Facebook",
+    "subtitle": "Public employer, recruiter and government vacancy announcements.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Public employer, recruiter and government vacancy announcements. Social posts require employer verification before application.",
+    "source": "Facebook",
+    "url": "https://www.facebook.com/search/posts/?q=%22IT%20Director%22%20OR%20%22Enterprise%20Architect%22%20OR%20%22Digital%20Transformation%22%20Egypt%20hiring",
+    "source_quality": "B",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/search/posts/?q=%22IT%20Director%22%20OR%20%22Enterprise%20Architect%22%20OR%20%22Digital%20Transformation%22%20Egypt%20hiring",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 75,
+      "seniority": 75,
+      "industry": 75,
+      "location": 90,
+      "technology": 75,
+      "overall": 75
+    },
+    "match_score": 75,
+    "fit": "Medium",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
     "id": "platform-00182",
     "record_type": "Job Platform",
     "category": "platform",
@@ -917,6 +1181,56 @@
     "recommendation": "Priority 2",
     "use_case": "Technology, AI, data, digital transformation and management consulting projects.",
     "arabic_name": "أُريد"
+  },
+  {
+    "id": "platform-social-x",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "X Live Hiring Search",
+    "organization": "X",
+    "subtitle": "Real-time public hiring and recruiter posts.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Real-time public hiring and recruiter posts. Social posts require employer verification before application.",
+    "source": "X",
+    "url": "https://x.com/search?q=%28%22enterprise%20architect%22%20OR%20%22IT%20director%22%20OR%20%22digital%20transformation%22%20OR%20%22technical%20program%20manager%22%29%20%28Egypt%20OR%20Cairo%20OR%20UAE%20OR%20Saudi%20OR%20Africa%20OR%20remote%29%20hiring&src=typed_query&f=live",
+    "source_quality": "B",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "X",
+        "url": "https://x.com/search?q=%28%22enterprise%20architect%22%20OR%20%22IT%20director%22%20OR%20%22digital%20transformation%22%20OR%20%22technical%20program%20manager%22%29%20%28Egypt%20OR%20Cairo%20OR%20UAE%20OR%20Saudi%20OR%20Africa%20OR%20remote%29%20hiring&src=typed_query&f=live",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 72,
+      "seniority": 72,
+      "industry": 72,
+      "location": 90,
+      "technology": 72,
+      "overall": 72
+    },
+    "match_score": 72,
+    "fit": "Medium",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
   },
   {
     "id": "platform-00183",
@@ -1033,640 +1347,6 @@
     "recommendation": "Monitor",
     "use_case": "Freelance software, architecture, business analysis, data and digital consulting projects.",
     "arabic_name": "نفذلي"
-  },
-  {
-    "id": "platform-00185",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "Khamsat",
-    "organization": "خمسات",
-    "subtitle": "Sell focused digital, technology advisory, architecture-review, dashboard and documentation services.",
-    "role_family": "Arabic Microservices Marketplace",
-    "type": "Arabic Microservices Marketplace",
-    "industry": "Employment & Career Services",
-    "region": "Arab Region / Remote",
-    "country": "MENA",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-26",
-    "age_days": null,
-    "posted_text": "Listed in supplied LinkedIn post",
-    "notes": "Microservice marketplace; relevant mainly for small consulting packages and additional income.",
-    "source": "Official platform / LinkedIn source list",
-    "url": "https://khamsat.com/",
-    "source_quality": "A",
-    "source_quality_label": "Official platform",
-    "verification_level": "Official",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://khamsat.com/",
-        "quality": "A"
-      },
-      {
-        "name": "Supplied LinkedIn post",
-        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "linkedin-platforms.html"
-    ],
-    "match": {
-      "role": 60,
-      "seniority": 60,
-      "industry": 60,
-      "location": 63,
-      "technology": 60,
-      "overall": 60
-    },
-    "match_score": 60,
-    "fit": "Low",
-    "priority_tier": "Secondary",
-    "is_priority": false,
-    "profile_relevance": 60,
-    "recommendation": "Secondary",
-    "use_case": "Sell focused digital, technology advisory, architecture-review, dashboard and documentation services.",
-    "arabic_name": "خمسات"
-  },
-  {
-    "id": "platform-00186",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "Sabbar",
-    "organization": "صبّار",
-    "subtitle": "Saudi full-time, part-time and flexible vacancies, including IT, project management and healthcare categories.",
-    "role_family": "Saudi Recruitment Platform",
-    "type": "Saudi Recruitment Platform",
-    "industry": "Employment & Career Services",
-    "region": "Saudi Arabia",
-    "country": "Saudi Arabia",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-26",
-    "age_days": null,
-    "posted_text": "Listed in supplied LinkedIn post",
-    "notes": "Mostly retail, service and operational roles; filter carefully for IT, software and project-management positions.",
-    "source": "Official platform / LinkedIn source list",
-    "url": "https://sabbar.com/en/jobs",
-    "source_quality": "A",
-    "source_quality_label": "Official platform",
-    "verification_level": "Official",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://sabbar.com/en/jobs",
-        "quality": "A"
-      },
-      {
-        "name": "Supplied LinkedIn post",
-        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "linkedin-platforms.html"
-    ],
-    "match": {
-      "role": 58,
-      "seniority": 58,
-      "industry": 58,
-      "location": 61,
-      "technology": 58,
-      "overall": 58
-    },
-    "match_score": 58,
-    "fit": "Low",
-    "priority_tier": "Secondary",
-    "is_priority": false,
-    "profile_relevance": 58,
-    "recommendation": "Secondary",
-    "use_case": "Saudi full-time, part-time and flexible vacancies, including IT, project management and healthcare categories.",
-    "arabic_name": "صبّار"
-  },
-  {
-    "id": "platform-00187",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "Tars Jobs",
-    "organization": "منصة ترس",
-    "subtitle": "Government, private-sector and general Saudi vacancy announcements.",
-    "role_family": "Saudi Job Announcements",
-    "type": "Saudi Job Announcements",
-    "industry": "Employment & Career Services",
-    "region": "Saudi Arabia",
-    "country": "Saudi Arabia",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-26",
-    "age_days": null,
-    "posted_text": "Listed in supplied LinkedIn post",
-    "notes": "Vacancy-announcement aggregator. Verify every employer and application route before submitting personal data.",
-    "source": "Official platform / LinkedIn source list",
-    "url": "https://jbscv.com/",
-    "source_quality": "B",
-    "source_quality_label": "Indexed / requires recheck",
-    "verification_level": "Official / Recheck Each Job",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://jbscv.com/",
-        "quality": "B"
-      },
-      {
-        "name": "Supplied LinkedIn post",
-        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "linkedin-platforms.html"
-    ],
-    "match": {
-      "role": 55,
-      "seniority": 55,
-      "industry": 55,
-      "location": 58,
-      "technology": 55,
-      "overall": 55
-    },
-    "match_score": 55,
-    "fit": "Low",
-    "priority_tier": "Secondary",
-    "is_priority": false,
-    "profile_relevance": 55,
-    "recommendation": "Secondary",
-    "use_case": "Government, private-sector and general Saudi vacancy announcements.",
-    "arabic_name": "منصة ترس"
-  },
-  {
-    "id": "platform-00188",
-    "record_type": "Career Tool",
-    "category": "platform",
-    "title": "Taleek",
-    "organization": "طليق",
-    "subtitle": "Improve English and other languages for interviews and international opportunities.",
-    "role_family": "Language Learning Tool",
-    "type": "Language Learning Tool",
-    "industry": "Employment & Career Services",
-    "region": "Global",
-    "country": "Global",
-    "location": "",
-    "availability_status": "Active Tool",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-26",
-    "age_days": null,
-    "posted_text": "Listed in supplied LinkedIn post",
-    "notes": "Career-support and language-learning tool, not a job platform.",
-    "source": "Official platform / LinkedIn source list",
-    "url": "https://taleek.com/",
-    "source_quality": "A",
-    "source_quality_label": "Official platform",
-    "verification_level": "Official",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://taleek.com/",
-        "quality": "A"
-      },
-      {
-        "name": "Supplied LinkedIn post",
-        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "linkedin-platforms.html"
-    ],
-    "match": {
-      "role": 52,
-      "seniority": 52,
-      "industry": 52,
-      "location": 55,
-      "technology": 52,
-      "overall": 52
-    },
-    "match_score": 52,
-    "fit": "Low",
-    "priority_tier": "Career Support",
-    "is_priority": false,
-    "profile_relevance": 52,
-    "recommendation": "Career Support",
-    "use_case": "Improve English and other languages for interviews and international opportunities.",
-    "arabic_name": "طليق"
-  },
-  {
-    "id": "platform-00189",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "PTway",
-    "organization": "بي تي واي",
-    "subtitle": "Part-time, daily, contract and flexible roles including programming, operations and UX/UI.",
-    "role_family": "Saudi Part-Time Work",
-    "type": "Saudi Part-Time Work",
-    "industry": "Employment & Career Services",
-    "region": "Saudi Arabia",
-    "country": "Saudi Arabia",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-26",
-    "age_days": null,
-    "posted_text": "Listed in supplied LinkedIn post",
-    "notes": "Primarily part-time and flexible work; senior executive relevance is limited.",
-    "source": "Official platform / LinkedIn source list",
-    "url": "https://ptway.net/",
-    "source_quality": "A",
-    "source_quality_label": "Official platform",
-    "verification_level": "Official",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://ptway.net/",
-        "quality": "A"
-      },
-      {
-        "name": "Supplied LinkedIn post",
-        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "linkedin-platforms.html"
-    ],
-    "match": {
-      "role": 48,
-      "seniority": 48,
-      "industry": 48,
-      "location": 51,
-      "technology": 48,
-      "overall": 48
-    },
-    "match_score": 48,
-    "fit": "Low",
-    "priority_tier": "Low Priority",
-    "is_priority": false,
-    "profile_relevance": 48,
-    "recommendation": "Low Priority",
-    "use_case": "Part-time, daily, contract and flexible roles including programming, operations and UX/UI.",
-    "arabic_name": "بي تي واي"
-  },
-  {
-    "id": "platform-00190",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "Shiftat",
-    "organization": "شفتات",
-    "subtitle": "Saudi vacancies and recruitment support across sectors and cities.",
-    "role_family": "Saudi Recruitment & Flexible Work",
-    "type": "Saudi Recruitment & Flexible Work",
-    "industry": "Employment & Career Services",
-    "region": "Saudi Arabia",
-    "country": "Saudi Arabia",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-26",
-    "age_days": null,
-    "posted_text": "Listed in supplied LinkedIn post",
-    "notes": "Mainly recent-graduate and intermediate-experience recruitment; monitor only for technology leadership exceptions.",
-    "source": "Official platform / LinkedIn source list",
-    "url": "https://shiftat.sa/",
-    "source_quality": "A",
-    "source_quality_label": "Official platform",
-    "verification_level": "Official",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://shiftat.sa/",
-        "quality": "A"
-      },
-      {
-        "name": "Supplied LinkedIn post",
-        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "linkedin-platforms.html"
-    ],
-    "match": {
-      "role": 45,
-      "seniority": 45,
-      "industry": 45,
-      "location": 48,
-      "technology": 45,
-      "overall": 45
-    },
-    "match_score": 45,
-    "fit": "Low",
-    "priority_tier": "Low Priority",
-    "is_priority": false,
-    "profile_relevance": 45,
-    "recommendation": "Low Priority",
-    "use_case": "Saudi vacancies and recruitment support across sectors and cities.",
-    "arabic_name": "شفتات"
-  },
-  {
-    "id": "platform-00191",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "AS3A",
-    "organization": "أسعى",
-    "subtitle": "Flexible, seasonal, shift-based and part-time employment.",
-    "role_family": "Saudi Flexible Work",
-    "type": "Saudi Flexible Work",
-    "industry": "Employment & Career Services",
-    "region": "Saudi Arabia / Egypt",
-    "country": "Saudi Arabia",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-26",
-    "age_days": null,
-    "posted_text": "Listed in supplied LinkedIn post",
-    "notes": "Strong flexible-work platform but limited alignment with senior enterprise-technology roles.",
-    "source": "Official platform / LinkedIn source list",
-    "url": "https://as3a.com/",
-    "source_quality": "A",
-    "source_quality_label": "Official platform",
-    "verification_level": "Official",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://as3a.com/",
-        "quality": "A"
-      },
-      {
-        "name": "Supplied LinkedIn post",
-        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "linkedin-platforms.html"
-    ],
-    "match": {
-      "role": 44,
-      "seniority": 44,
-      "industry": 44,
-      "location": 47,
-      "technology": 44,
-      "overall": 44
-    },
-    "match_score": 44,
-    "fit": "Low",
-    "priority_tier": "Low Priority",
-    "is_priority": false,
-    "profile_relevance": 44,
-    "recommendation": "Low Priority",
-    "use_case": "Flexible, seasonal, shift-based and part-time employment.",
-    "arabic_name": "أسعى"
-  },
-  {
-    "id": "platform-00192",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "Marn",
-    "organization": "مرن",
-    "subtitle": "Hourly, seasonal, part-time and full-time staffing in retail, hospitality, logistics, healthcare and other sectors.",
-    "role_family": "Saudi Flexible Staffing",
-    "type": "Saudi Flexible Staffing",
-    "industry": "Employment & Career Services",
-    "region": "Saudi Arabia",
-    "country": "Saudi Arabia",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-26",
-    "age_days": null,
-    "posted_text": "Listed in supplied LinkedIn post",
-    "notes": "Monitor only for IT management or technology-enabled operations roles.",
-    "source": "Official platform / LinkedIn source list",
-    "url": "https://marn.io/",
-    "source_quality": "A",
-    "source_quality_label": "Official platform",
-    "verification_level": "Official",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://marn.io/",
-        "quality": "A"
-      },
-      {
-        "name": "Supplied LinkedIn post",
-        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "linkedin-platforms.html"
-    ],
-    "match": {
-      "role": 42,
-      "seniority": 42,
-      "industry": 42,
-      "location": 45,
-      "technology": 42,
-      "overall": 42
-    },
-    "match_score": 42,
-    "fit": "Low",
-    "priority_tier": "Low Priority",
-    "is_priority": false,
-    "profile_relevance": 42,
-    "recommendation": "Low Priority",
-    "use_case": "Hourly, seasonal, part-time and full-time staffing in retail, hospitality, logistics, healthcare and other sectors.",
-    "arabic_name": "مرن"
-  },
-  {
-    "id": "platform-00193",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "Wardiyyat",
-    "organization": "ورديات",
-    "subtitle": "Temporary and part-time shifts across retail, hospitality, logistics, events and other industries.",
-    "role_family": "Saudi Shift & Flexible Work",
-    "type": "Saudi Shift & Flexible Work",
-    "industry": "Employment & Career Services",
-    "region": "Saudi Arabia",
-    "country": "Saudi Arabia",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-26",
-    "age_days": null,
-    "posted_text": "Listed in supplied LinkedIn post",
-    "notes": "Useful for flexible shift work, but not a primary source for senior technology leadership roles.",
-    "source": "Official platform / LinkedIn source list",
-    "url": "https://wardiyyat.com/",
-    "source_quality": "A",
-    "source_quality_label": "Official platform",
-    "verification_level": "Official",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://wardiyyat.com/",
-        "quality": "A"
-      },
-      {
-        "name": "Supplied LinkedIn post",
-        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "linkedin-platforms.html"
-    ],
-    "match": {
-      "role": 38,
-      "seniority": 38,
-      "industry": 38,
-      "location": 41,
-      "technology": 38,
-      "overall": 38
-    },
-    "match_score": 38,
-    "fit": "Low",
-    "priority_tier": "Low Priority",
-    "is_priority": false,
-    "profile_relevance": 38,
-    "recommendation": "Low Priority",
-    "use_case": "Temporary and part-time shifts across retail, hospitality, logistics, events and other industries.",
-    "arabic_name": "ورديات"
-  },
-  {
-    "id": "platform-00194",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "Part Time Platform",
-    "organization": "منصة بارت تايم",
-    "subtitle": "Historical part-time and flexible recruitment platform.",
-    "role_family": "Saudi Part-Time Recruitment",
-    "type": "Saudi Part-Time Recruitment",
-    "industry": "Employment & Career Services",
-    "region": "Saudi Arabia",
-    "country": "Saudi Arabia",
-    "location": "",
-    "availability_status": "Not Verified",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-26",
-    "age_days": null,
-    "posted_text": "Listed in supplied LinkedIn post",
-    "notes": "The previously associated par-time.com domain appears inactive; use the LinkedIn presence only and recheck before relying on it.",
-    "source": "Official platform / LinkedIn source list",
-    "url": "https://www.linkedin.com/company/part-time-job-platform/",
-    "source_quality": "C",
-    "source_quality_label": "Indexed / requires recheck",
-    "verification_level": "Historical / LinkedIn Indexed",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://www.linkedin.com/company/part-time-job-platform/",
-        "quality": "C"
-      },
-      {
-        "name": "Supplied LinkedIn post",
-        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "linkedin-platforms.html"
-    ],
-    "match": {
-      "role": 25,
-      "seniority": 25,
-      "industry": 25,
-      "location": 28,
-      "technology": 25,
-      "overall": 25
-    },
-    "match_score": 25,
-    "fit": "Low",
-    "priority_tier": "Archive / Recheck",
-    "is_priority": false,
-    "profile_relevance": 25,
-    "recommendation": "Archive / Recheck",
-    "use_case": "Historical part-time and flexible recruitment platform.",
-    "arabic_name": "منصة بارت تايم"
-  },
-  {
-    "id": "platform-0174",
-    "record_type": "Official Employer Careers",
-    "category": "platform",
-    "title": "Canonical Careers",
-    "organization": "Official Canonical global careers portal",
-    "subtitle": "Official Canonical global careers portal",
-    "role_family": "Official Employer Careers",
-    "type": "Official Employer Careers",
-    "industry": "Technology & Cloud",
-    "region": "Global · EMEA · Remote",
-    "country": "Worldwide",
-    "location": "Home based / Remote",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-24",
-    "age_days": null,
-    "posted_text": "Official career source",
-    "notes": "Direct source for Canonical roles across engineering, support engineering, project management, product, commercial operations, sales, cloud, Linux, infrastructure and remote work.",
-    "source": "Official Canonical careers",
-    "url": "https://canonical.com/careers",
-    "source_quality": "A",
-    "source_quality_label": "Official employer / primary source",
-    "verification_level": "Official",
-    "sources": [
-      {
-        "name": "Canonical Careers",
-        "url": "https://canonical.com/careers",
-        "quality": "A"
-      },
-      {
-        "name": "All Canonical Roles",
-        "url": "https://canonical.com/careers/all",
-        "quality": "A"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "official-canonical-careers"
-    ],
-    "match": {
-      "role": 96,
-      "seniority": 95,
-      "industry": 96,
-      "location": 94,
-      "technology": 99,
-      "overall": 96
-    },
-    "match_score": 96,
-    "fit": "High",
-    "priority_tier": "Recommended",
-    "is_priority": true
   },
   {
     "id": "platform-0015",
@@ -1816,6 +1496,272 @@
     "is_priority": true
   },
   {
+    "id": "platform-social-instagram",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "Instagram Hiring Posts",
+    "organization": "Instagram",
+    "subtitle": "Recruiter and employer vacancy graphics and hiring hashtags.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Recruiter and employer vacancy graphics and hiring hashtags. Social posts require employer verification before application.",
+    "source": "Instagram",
+    "url": "https://www.instagram.com/explore/tags/itjobs/",
+    "source_quality": "B",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/explore/tags/itjobs/",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 62,
+      "seniority": 62,
+      "industry": 62,
+      "location": 90,
+      "technology": 62,
+      "overall": 62
+    },
+    "match_score": 62,
+    "fit": "Low",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-00185",
+    "record_type": "Job Platform",
+    "category": "platform",
+    "title": "Khamsat",
+    "organization": "خمسات",
+    "subtitle": "Sell focused digital, technology advisory, architecture-review, dashboard and documentation services.",
+    "role_family": "Arabic Microservices Marketplace",
+    "type": "Arabic Microservices Marketplace",
+    "industry": "Employment & Career Services",
+    "region": "Arab Region / Remote",
+    "country": "MENA",
+    "location": "",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-26",
+    "age_days": null,
+    "posted_text": "Listed in supplied LinkedIn post",
+    "notes": "Microservice marketplace; relevant mainly for small consulting packages and additional income.",
+    "source": "Official platform / LinkedIn source list",
+    "url": "https://khamsat.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Official platform",
+        "url": "https://khamsat.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Supplied LinkedIn post",
+        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "linkedin-platforms.html"
+    ],
+    "match": {
+      "role": 60,
+      "seniority": 60,
+      "industry": 60,
+      "location": 63,
+      "technology": 60,
+      "overall": 60
+    },
+    "match_score": 60,
+    "fit": "Low",
+    "priority_tier": "Secondary",
+    "is_priority": false,
+    "profile_relevance": 60,
+    "recommendation": "Secondary",
+    "use_case": "Sell focused digital, technology advisory, architecture-review, dashboard and documentation services.",
+    "arabic_name": "خمسات"
+  },
+  {
+    "id": "platform-social-threads",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "Threads Hiring Search",
+    "organization": "Threads",
+    "subtitle": "Public recruiter and professional hiring discussions.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Public recruiter and professional hiring discussions. Social posts require employer verification before application.",
+    "source": "Threads",
+    "url": "https://www.threads.com/search?q=%22enterprise%20architect%22%20%22IT%20director%22%20hiring",
+    "source_quality": "B",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "Threads",
+        "url": "https://www.threads.com/search?q=%22enterprise%20architect%22%20%22IT%20director%22%20hiring",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 60,
+      "seniority": 60,
+      "industry": 60,
+      "location": 90,
+      "technology": 60,
+      "overall": 60
+    },
+    "match_score": 60,
+    "fit": "Low",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-social-reddit",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "Reddit Job Communities",
+    "organization": "Reddit",
+    "subtitle": "Community contracts, remote jobs and technical partnership posts.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Community contracts, remote jobs and technical partnership posts. Social posts require employer verification before application.",
+    "source": "Reddit",
+    "url": "https://www.reddit.com/search/?q=hiring%20%22technical%20program%20manager%22%20OR%20%22enterprise%20architect%22%20OR%20%22fractional%20CTO%22&sort=new",
+    "source_quality": "C",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "Reddit",
+        "url": "https://www.reddit.com/search/?q=hiring%20%22technical%20program%20manager%22%20OR%20%22enterprise%20architect%22%20OR%20%22fractional%20CTO%22&sort=new",
+        "quality": "C"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 58,
+      "seniority": 58,
+      "industry": 58,
+      "location": 90,
+      "technology": 58,
+      "overall": 58
+    },
+    "match_score": 58,
+    "fit": "Low",
+    "priority_tier": "Secondary",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-00186",
+    "record_type": "Job Platform",
+    "category": "platform",
+    "title": "Sabbar",
+    "organization": "صبّار",
+    "subtitle": "Saudi full-time, part-time and flexible vacancies, including IT, project management and healthcare categories.",
+    "role_family": "Saudi Recruitment Platform",
+    "type": "Saudi Recruitment Platform",
+    "industry": "Employment & Career Services",
+    "region": "Saudi Arabia",
+    "country": "Saudi Arabia",
+    "location": "",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-26",
+    "age_days": null,
+    "posted_text": "Listed in supplied LinkedIn post",
+    "notes": "Mostly retail, service and operational roles; filter carefully for IT, software and project-management positions.",
+    "source": "Official platform / LinkedIn source list",
+    "url": "https://sabbar.com/en/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Official platform",
+        "url": "https://sabbar.com/en/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "Supplied LinkedIn post",
+        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "linkedin-platforms.html"
+    ],
+    "match": {
+      "role": 58,
+      "seniority": 58,
+      "industry": 58,
+      "location": 61,
+      "technology": 58,
+      "overall": 58
+    },
+    "match_score": 58,
+    "fit": "Low",
+    "priority_tier": "Secondary",
+    "is_priority": false,
+    "profile_relevance": 58,
+    "recommendation": "Secondary",
+    "use_case": "Saudi full-time, part-time and flexible vacancies, including IT, project management and healthcare categories.",
+    "arabic_name": "صبّار"
+  },
+  {
     "id": "platform-00153",
     "record_type": "Job Platform",
     "category": "platform",
@@ -1862,6 +1808,64 @@
     "fit": "Low",
     "priority_tier": "Directory",
     "is_priority": false
+  },
+  {
+    "id": "platform-00187",
+    "record_type": "Job Platform",
+    "category": "platform",
+    "title": "Tars Jobs",
+    "organization": "منصة ترس",
+    "subtitle": "Government, private-sector and general Saudi vacancy announcements.",
+    "role_family": "Saudi Job Announcements",
+    "type": "Saudi Job Announcements",
+    "industry": "Employment & Career Services",
+    "region": "Saudi Arabia",
+    "country": "Saudi Arabia",
+    "location": "",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-26",
+    "age_days": null,
+    "posted_text": "Listed in supplied LinkedIn post",
+    "notes": "Vacancy-announcement aggregator. Verify every employer and application route before submitting personal data.",
+    "source": "Official platform / LinkedIn source list",
+    "url": "https://jbscv.com/",
+    "source_quality": "B",
+    "source_quality_label": "Indexed / requires recheck",
+    "verification_level": "Official / Recheck Each Job",
+    "sources": [
+      {
+        "name": "Official platform",
+        "url": "https://jbscv.com/",
+        "quality": "B"
+      },
+      {
+        "name": "Supplied LinkedIn post",
+        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "linkedin-platforms.html"
+    ],
+    "match": {
+      "role": 55,
+      "seniority": 55,
+      "industry": 55,
+      "location": 58,
+      "technology": 55,
+      "overall": 55
+    },
+    "match_score": 55,
+    "fit": "Low",
+    "priority_tier": "Secondary",
+    "is_priority": false,
+    "profile_relevance": 55,
+    "recommendation": "Secondary",
+    "use_case": "Government, private-sector and general Saudi vacancy announcements.",
+    "arabic_name": "منصة ترس"
   },
   {
     "id": "platform-00152",
@@ -3014,54 +3018,6 @@
     "is_priority": false
   },
   {
-    "id": "platform-00160",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "Contra",
-    "organization": "Independent work and contract opportunities",
-    "subtitle": "Independent work and contract opportunities",
-    "role_family": "Freelance & Contract",
-    "type": "Freelance & Contract",
-    "region": "Remote / Global",
-    "country": "Global",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Official platform entry point. Use platform filters and verify posting date, employer identity, location eligibility and application route.",
-    "source": "Official platform",
-    "url": "https://contra.com/opportunities",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://contra.com/opportunities",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "job-search-platforms.csv"
-    ],
-    "match": {
-      "role": 35,
-      "seniority": 65,
-      "industry": 45,
-      "location": 92,
-      "technology": 38,
-      "overall": 52
-    },
-    "match_score": 52,
-    "fit": "Low",
-    "priority_tier": "Directory",
-    "is_priority": false
-  },
-  {
     "id": "platform-00094",
     "record_type": "Job Platform",
     "category": "platform",
@@ -3734,54 +3690,6 @@
     "is_priority": false
   },
   {
-    "id": "platform-00081",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "FlexJobs",
-    "organization": "Screened remote, hybrid and flexible jobs",
-    "subtitle": "Screened remote, hybrid and flexible jobs",
-    "role_family": "Remote Job Board",
-    "type": "Remote Job Board",
-    "region": "Remote / Global",
-    "country": "Remote / Global",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Official platform entry point. Use platform filters and verify posting date, employer identity, location eligibility and application route.",
-    "source": "Official platform",
-    "url": "https://www.flexjobs.com/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://www.flexjobs.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "job-search-platforms.csv"
-    ],
-    "match": {
-      "role": 35,
-      "seniority": 65,
-      "industry": 45,
-      "location": 92,
-      "technology": 38,
-      "overall": 52
-    },
-    "match_score": 52,
-    "fit": "Low",
-    "priority_tier": "Directory",
-    "is_priority": false
-  },
-  {
     "id": "platform-00168",
     "record_type": "Job Platform",
     "category": "platform",
@@ -4193,54 +4101,6 @@
       {
         "name": "Official platform",
         "url": "https://gun.io/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "job-search-platforms.csv"
-    ],
-    "match": {
-      "role": 35,
-      "seniority": 65,
-      "industry": 45,
-      "location": 92,
-      "technology": 38,
-      "overall": 52
-    },
-    "match_score": 52,
-    "fit": "Low",
-    "priority_tier": "Directory",
-    "is_priority": false
-  },
-  {
-    "id": "platform-00161",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "Guru",
-    "organization": "Freelance jobs marketplace",
-    "subtitle": "Freelance jobs marketplace",
-    "role_family": "Freelance & Contract",
-    "type": "Freelance & Contract",
-    "region": "Remote / Global",
-    "country": "Global",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Official platform entry point. Use platform filters and verify posting date, employer identity, location eligibility and application route.",
-    "source": "Official platform",
-    "url": "https://www.guru.com/d/jobs/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://www.guru.com/d/jobs/",
         "quality": "B"
       }
     ],
@@ -5460,54 +5320,6 @@
     "is_priority": false
   },
   {
-    "id": "platform-00158",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "PeoplePerHour",
-    "organization": "Freelance projects marketplace",
-    "subtitle": "Freelance projects marketplace",
-    "role_family": "Freelance & Contract",
-    "type": "Freelance & Contract",
-    "region": "Remote / Global",
-    "country": "Global",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Official platform entry point. Use platform filters and verify posting date, employer identity, location eligibility and application route.",
-    "source": "Official platform",
-    "url": "https://www.peopleperhour.com/freelance-jobs",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://www.peopleperhour.com/freelance-jobs",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "job-search-platforms.csv"
-    ],
-    "match": {
-      "role": 35,
-      "seniority": 65,
-      "industry": 45,
-      "location": 92,
-      "technology": 38,
-      "overall": 52
-    },
-    "match_score": 52,
-    "fit": "Low",
-    "priority_tier": "Directory",
-    "is_priority": false
-  },
-  {
     "id": "platform-00039",
     "record_type": "Job Platform",
     "category": "platform",
@@ -6132,6 +5944,64 @@
     "is_priority": false
   },
   {
+    "id": "platform-00188",
+    "record_type": "Career Tool",
+    "category": "platform",
+    "title": "Taleek",
+    "organization": "طليق",
+    "subtitle": "Improve English and other languages for interviews and international opportunities.",
+    "role_family": "Language Learning Tool",
+    "type": "Language Learning Tool",
+    "industry": "Employment & Career Services",
+    "region": "Global",
+    "country": "Global",
+    "location": "",
+    "availability_status": "Active Tool",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-26",
+    "age_days": null,
+    "posted_text": "Listed in supplied LinkedIn post",
+    "notes": "Career-support and language-learning tool, not a job platform.",
+    "source": "Official platform / LinkedIn source list",
+    "url": "https://taleek.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Official platform",
+        "url": "https://taleek.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Supplied LinkedIn post",
+        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "linkedin-platforms.html"
+    ],
+    "match": {
+      "role": 52,
+      "seniority": 52,
+      "industry": 52,
+      "location": 55,
+      "technology": 52,
+      "overall": 52
+    },
+    "match_score": 52,
+    "fit": "Low",
+    "priority_tier": "Career Support",
+    "is_priority": false,
+    "profile_relevance": 52,
+    "recommendation": "Career Support",
+    "use_case": "Improve English and other languages for interviews and international opportunities.",
+    "arabic_name": "طليق"
+  },
+  {
     "id": "platform-00007",
     "record_type": "Job Platform",
     "category": "platform",
@@ -6303,54 +6173,6 @@
       {
         "name": "Official platform",
         "url": "https://www.themuse.com/search/jobs",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "job-search-platforms.csv"
-    ],
-    "match": {
-      "role": 35,
-      "seniority": 65,
-      "industry": 45,
-      "location": 92,
-      "technology": 38,
-      "overall": 52
-    },
-    "match_score": 52,
-    "fit": "Low",
-    "priority_tier": "Directory",
-    "is_priority": false
-  },
-  {
-    "id": "platform-00159",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "Toptal",
-    "organization": "Freelance expert talent network",
-    "subtitle": "Freelance expert talent network",
-    "role_family": "Freelance & Contract",
-    "type": "Freelance & Contract",
-    "region": "Remote / Global",
-    "country": "Global",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Official platform entry point. Use platform filters and verify posting date, employer identity, location eligibility and application route.",
-    "source": "Official platform",
-    "url": "https://www.toptal.com/freelance-jobs",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://www.toptal.com/freelance-jobs",
         "quality": "B"
       }
     ],
@@ -6706,54 +6528,6 @@
     "is_priority": false
   },
   {
-    "id": "platform-00156",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "Upwork",
-    "organization": "Freelance projects and contracts",
-    "subtitle": "Freelance projects and contracts",
-    "role_family": "Freelance & Contract",
-    "type": "Freelance & Contract",
-    "region": "Remote / Global",
-    "country": "Global",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Official platform entry point. Use platform filters and verify posting date, employer identity, location eligibility and application route.",
-    "source": "Official platform",
-    "url": "https://www.upwork.com/nx/search/jobs/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://www.upwork.com/nx/search/jobs/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "job-search-platforms.csv"
-    ],
-    "match": {
-      "role": 35,
-      "seniority": 65,
-      "industry": 45,
-      "location": 92,
-      "technology": 38,
-      "overall": 52
-    },
-    "match_score": 52,
-    "fit": "Low",
-    "priority_tier": "Directory",
-    "is_priority": false
-  },
-  {
     "id": "platform-00118",
     "record_type": "Job Platform",
     "category": "platform",
@@ -6802,54 +6576,6 @@
     "is_priority": false
   },
   {
-    "id": "platform-00078",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "We Work Remotely",
-    "organization": "Large remote-work job board",
-    "subtitle": "Large remote-work job board",
-    "role_family": "Remote Job Board",
-    "type": "Remote Job Board",
-    "region": "Remote / Global",
-    "country": "Remote / Global",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-24",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Remote technology, product and management roles",
-    "source": "Official platform",
-    "url": "https://weworkremotely.com/",
-    "source_quality": "B",
-    "source_quality_label": "Recognized job platform",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://weworkremotely.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "job-search-platforms.csv"
-    ],
-    "match": {
-      "role": 35,
-      "seniority": 65,
-      "industry": 45,
-      "location": 92,
-      "technology": 38,
-      "overall": 52
-    },
-    "match_score": 52,
-    "fit": "Low",
-    "priority_tier": "Recommended",
-    "is_priority": true
-  },
-  {
     "id": "platform-00145",
     "record_type": "Job Platform",
     "category": "platform",
@@ -6896,54 +6622,6 @@
     "fit": "Low",
     "priority_tier": "Directory",
     "is_priority": false
-  },
-  {
-    "id": "platform-00141",
-    "record_type": "Job Platform",
-    "category": "platform",
-    "title": "Wellfound",
-    "organization": "Startup and remote jobs",
-    "subtitle": "Startup and remote jobs",
-    "role_family": "Startup Job Board",
-    "type": "Startup Job Board",
-    "region": "Remote / Global",
-    "country": "Remote / Global",
-    "location": "",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-24",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Startup and technology roles",
-    "source": "Official platform",
-    "url": "https://wellfound.com/jobs",
-    "source_quality": "B",
-    "source_quality_label": "Recognized job platform",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Official platform",
-        "url": "https://wellfound.com/jobs",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "job-search-platforms.csv"
-    ],
-    "match": {
-      "role": 35,
-      "seniority": 65,
-      "industry": 45,
-      "location": 92,
-      "technology": 38,
-      "overall": 52
-    },
-    "match_score": 52,
-    "fit": "Low",
-    "priority_tier": "Recommended",
-    "is_priority": true
   },
   {
     "id": "platform-00020",
@@ -8672,6 +8350,504 @@
     "fit": "Low",
     "priority_tier": "Recommended",
     "is_priority": true
+  },
+  {
+    "id": "platform-social-telegram",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "Telegram Job Channels",
+    "organization": "Telegram",
+    "subtitle": "Public job channels discovered through indexed searches.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Public job channels discovered through indexed searches. Social posts require employer verification before application.",
+    "source": "Telegram",
+    "url": "https://www.google.com/search?q=site%3At.me%20%28%22enterprise%20architect%22%20OR%20%22IT%20director%22%20OR%20%22digital%20transformation%22%29%20jobs",
+    "source_quality": "C",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "Telegram",
+        "url": "https://www.google.com/search?q=site%3At.me%20%28%22enterprise%20architect%22%20OR%20%22IT%20director%22%20OR%20%22digital%20transformation%22%29%20jobs",
+        "quality": "C"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 50,
+      "seniority": 50,
+      "industry": 50,
+      "location": 90,
+      "technology": 50,
+      "overall": 50
+    },
+    "match_score": 50,
+    "fit": "Low",
+    "priority_tier": "Secondary",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-social-bluesky",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "Bluesky Hiring Search",
+    "organization": "Bluesky",
+    "subtitle": "Open social-network hiring posts.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Open social-network hiring posts. Social posts require employer verification before application.",
+    "source": "Bluesky",
+    "url": "https://bsky.app/search?q=%22enterprise%20architect%22%20hiring",
+    "source_quality": "C",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "Bluesky",
+        "url": "https://bsky.app/search?q=%22enterprise%20architect%22%20hiring",
+        "quality": "C"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 48,
+      "seniority": 48,
+      "industry": 48,
+      "location": 90,
+      "technology": 48,
+      "overall": 48
+    },
+    "match_score": 48,
+    "fit": "Low",
+    "priority_tier": "Secondary",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-00189",
+    "record_type": "Job Platform",
+    "category": "platform",
+    "title": "PTway",
+    "organization": "بي تي واي",
+    "subtitle": "Part-time, daily, contract and flexible roles including programming, operations and UX/UI.",
+    "role_family": "Saudi Part-Time Work",
+    "type": "Saudi Part-Time Work",
+    "industry": "Employment & Career Services",
+    "region": "Saudi Arabia",
+    "country": "Saudi Arabia",
+    "location": "",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-26",
+    "age_days": null,
+    "posted_text": "Listed in supplied LinkedIn post",
+    "notes": "Primarily part-time and flexible work; senior executive relevance is limited.",
+    "source": "Official platform / LinkedIn source list",
+    "url": "https://ptway.net/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Official platform",
+        "url": "https://ptway.net/",
+        "quality": "A"
+      },
+      {
+        "name": "Supplied LinkedIn post",
+        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "linkedin-platforms.html"
+    ],
+    "match": {
+      "role": 48,
+      "seniority": 48,
+      "industry": 48,
+      "location": 51,
+      "technology": 48,
+      "overall": 48
+    },
+    "match_score": 48,
+    "fit": "Low",
+    "priority_tier": "Low Priority",
+    "is_priority": false,
+    "profile_relevance": 48,
+    "recommendation": "Low Priority",
+    "use_case": "Part-time, daily, contract and flexible roles including programming, operations and UX/UI.",
+    "arabic_name": "بي تي واي"
+  },
+  {
+    "id": "platform-00190",
+    "record_type": "Job Platform",
+    "category": "platform",
+    "title": "Shiftat",
+    "organization": "شفتات",
+    "subtitle": "Saudi vacancies and recruitment support across sectors and cities.",
+    "role_family": "Saudi Recruitment & Flexible Work",
+    "type": "Saudi Recruitment & Flexible Work",
+    "industry": "Employment & Career Services",
+    "region": "Saudi Arabia",
+    "country": "Saudi Arabia",
+    "location": "",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-26",
+    "age_days": null,
+    "posted_text": "Listed in supplied LinkedIn post",
+    "notes": "Mainly recent-graduate and intermediate-experience recruitment; monitor only for technology leadership exceptions.",
+    "source": "Official platform / LinkedIn source list",
+    "url": "https://shiftat.sa/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Official platform",
+        "url": "https://shiftat.sa/",
+        "quality": "A"
+      },
+      {
+        "name": "Supplied LinkedIn post",
+        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "linkedin-platforms.html"
+    ],
+    "match": {
+      "role": 45,
+      "seniority": 45,
+      "industry": 45,
+      "location": 48,
+      "technology": 45,
+      "overall": 45
+    },
+    "match_score": 45,
+    "fit": "Low",
+    "priority_tier": "Low Priority",
+    "is_priority": false,
+    "profile_relevance": 45,
+    "recommendation": "Low Priority",
+    "use_case": "Saudi vacancies and recruitment support across sectors and cities.",
+    "arabic_name": "شفتات"
+  },
+  {
+    "id": "platform-00191",
+    "record_type": "Job Platform",
+    "category": "platform",
+    "title": "AS3A",
+    "organization": "أسعى",
+    "subtitle": "Flexible, seasonal, shift-based and part-time employment.",
+    "role_family": "Saudi Flexible Work",
+    "type": "Saudi Flexible Work",
+    "industry": "Employment & Career Services",
+    "region": "Saudi Arabia / Egypt",
+    "country": "Saudi Arabia",
+    "location": "",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-26",
+    "age_days": null,
+    "posted_text": "Listed in supplied LinkedIn post",
+    "notes": "Strong flexible-work platform but limited alignment with senior enterprise-technology roles.",
+    "source": "Official platform / LinkedIn source list",
+    "url": "https://as3a.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Official platform",
+        "url": "https://as3a.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Supplied LinkedIn post",
+        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "linkedin-platforms.html"
+    ],
+    "match": {
+      "role": 44,
+      "seniority": 44,
+      "industry": 44,
+      "location": 47,
+      "technology": 44,
+      "overall": 44
+    },
+    "match_score": 44,
+    "fit": "Low",
+    "priority_tier": "Low Priority",
+    "is_priority": false,
+    "profile_relevance": 44,
+    "recommendation": "Low Priority",
+    "use_case": "Flexible, seasonal, shift-based and part-time employment.",
+    "arabic_name": "أسعى"
+  },
+  {
+    "id": "platform-00192",
+    "record_type": "Job Platform",
+    "category": "platform",
+    "title": "Marn",
+    "organization": "مرن",
+    "subtitle": "Hourly, seasonal, part-time and full-time staffing in retail, hospitality, logistics, healthcare and other sectors.",
+    "role_family": "Saudi Flexible Staffing",
+    "type": "Saudi Flexible Staffing",
+    "industry": "Employment & Career Services",
+    "region": "Saudi Arabia",
+    "country": "Saudi Arabia",
+    "location": "",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-26",
+    "age_days": null,
+    "posted_text": "Listed in supplied LinkedIn post",
+    "notes": "Monitor only for IT management or technology-enabled operations roles.",
+    "source": "Official platform / LinkedIn source list",
+    "url": "https://marn.io/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Official platform",
+        "url": "https://marn.io/",
+        "quality": "A"
+      },
+      {
+        "name": "Supplied LinkedIn post",
+        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "linkedin-platforms.html"
+    ],
+    "match": {
+      "role": 42,
+      "seniority": 42,
+      "industry": 42,
+      "location": 45,
+      "technology": 42,
+      "overall": 42
+    },
+    "match_score": 42,
+    "fit": "Low",
+    "priority_tier": "Low Priority",
+    "is_priority": false,
+    "profile_relevance": 42,
+    "recommendation": "Low Priority",
+    "use_case": "Hourly, seasonal, part-time and full-time staffing in retail, hospitality, logistics, healthcare and other sectors.",
+    "arabic_name": "مرن"
+  },
+  {
+    "id": "platform-social-tiktok",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "TikTok Career Posts",
+    "organization": "TikTok",
+    "subtitle": "Short-form vacancy and employer career content.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Short-form vacancy and employer career content. Social posts require employer verification before application.",
+    "source": "TikTok",
+    "url": "https://www.tiktok.com/search?q=enterprise%20architect%20jobs%20Egypt",
+    "source_quality": "C",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "TikTok",
+        "url": "https://www.tiktok.com/search?q=enterprise%20architect%20jobs%20Egypt",
+        "quality": "C"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 42,
+      "seniority": 42,
+      "industry": 42,
+      "location": 90,
+      "technology": 42,
+      "overall": 42
+    },
+    "match_score": 42,
+    "fit": "Low",
+    "priority_tier": "Secondary",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-00193",
+    "record_type": "Job Platform",
+    "category": "platform",
+    "title": "Wardiyyat",
+    "organization": "ورديات",
+    "subtitle": "Temporary and part-time shifts across retail, hospitality, logistics, events and other industries.",
+    "role_family": "Saudi Shift & Flexible Work",
+    "type": "Saudi Shift & Flexible Work",
+    "industry": "Employment & Career Services",
+    "region": "Saudi Arabia",
+    "country": "Saudi Arabia",
+    "location": "",
+    "availability_status": "Active Platform",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-26",
+    "age_days": null,
+    "posted_text": "Listed in supplied LinkedIn post",
+    "notes": "Useful for flexible shift work, but not a primary source for senior technology leadership roles.",
+    "source": "Official platform / LinkedIn source list",
+    "url": "https://wardiyyat.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official platform",
+    "verification_level": "Official",
+    "sources": [
+      {
+        "name": "Official platform",
+        "url": "https://wardiyyat.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Supplied LinkedIn post",
+        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "linkedin-platforms.html"
+    ],
+    "match": {
+      "role": 38,
+      "seniority": 38,
+      "industry": 38,
+      "location": 41,
+      "technology": 38,
+      "overall": 38
+    },
+    "match_score": 38,
+    "fit": "Low",
+    "priority_tier": "Low Priority",
+    "is_priority": false,
+    "profile_relevance": 38,
+    "recommendation": "Low Priority",
+    "use_case": "Temporary and part-time shifts across retail, hospitality, logistics, events and other industries.",
+    "arabic_name": "ورديات"
+  },
+  {
+    "id": "platform-00194",
+    "record_type": "Job Platform",
+    "category": "platform",
+    "title": "Part Time Platform",
+    "organization": "منصة بارت تايم",
+    "subtitle": "Historical part-time and flexible recruitment platform.",
+    "role_family": "Saudi Part-Time Recruitment",
+    "type": "Saudi Part-Time Recruitment",
+    "industry": "Employment & Career Services",
+    "region": "Saudi Arabia",
+    "country": "Saudi Arabia",
+    "location": "",
+    "availability_status": "Not Verified",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-26",
+    "age_days": null,
+    "posted_text": "Listed in supplied LinkedIn post",
+    "notes": "The previously associated par-time.com domain appears inactive; use the LinkedIn presence only and recheck before relying on it.",
+    "source": "Official platform / LinkedIn source list",
+    "url": "https://www.linkedin.com/company/part-time-job-platform/",
+    "source_quality": "C",
+    "source_quality_label": "Indexed / requires recheck",
+    "verification_level": "Historical / LinkedIn Indexed",
+    "sources": [
+      {
+        "name": "Official platform",
+        "url": "https://www.linkedin.com/company/part-time-job-platform/",
+        "quality": "C"
+      },
+      {
+        "name": "Supplied LinkedIn post",
+        "url": "https://www.linkedin.com/posts/mahmoudabdelfattahsalama_aecaeyaezabraepaexabraepaesaewaeyaez-share-7487033383429160960-x2h5/",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "linkedin-platforms.html"
+    ],
+    "match": {
+      "role": 25,
+      "seniority": 25,
+      "industry": 25,
+      "location": 28,
+      "technology": 25,
+      "overall": 25
+    },
+    "match_score": 25,
+    "fit": "Low",
+    "priority_tier": "Archive / Recheck",
+    "is_priority": false,
+    "profile_relevance": 25,
+    "recommendation": "Archive / Recheck",
+    "use_case": "Historical part-time and flexible recruitment platform.",
+    "arabic_name": "منصة بارت تايم"
   },
   {
     "id": "platform-00135",

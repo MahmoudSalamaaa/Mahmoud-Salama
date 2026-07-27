@@ -1,0 +1,19 @@
+{
+  "edition": "Independent Platforms + Universal Preferences Edition",
+  "generated_at": "2026-07-27",
+  "independent_platform_pages": 10,
+  "hub_pages_added": 1,
+  "preference_script": "assets/job-preferences.js",
+  "preference_storage_key": "career_job_preferences_v1",
+  "main_platforms_total": 202,
+  "html_pages": 63,
+  "files_inside_organizations": 231,
+  "pages_with_preferences_panel": 63,
+  "local_links_checked": 2487,
+  "external_links_in_html": 104,
+  "missing_local_links": 0,
+  "invalid_local_links": 0,
+  "javascript_errors": 0,
+  "json_errors": 0,
+  "root_level_files": 0
+}

@@ -1,13 +1,11 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8">
-  <base href="./">
+  <meta charset="utf-8"><base href="./">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Suitable social-media job posts and live social searches ranked for Mahmoud Salama.">
-  <title>Social Media Jobs & Searches</title>
-  <style id="embedded-style-fallback">
-:root{
+  <meta name="description" content="Freelancer.com strategy and opportunity routes for Mahmoud Salama.">
+  <title>Freelancer.com Platform Strategy</title>
+  <style id="embedded-style-fallback">:root{
   --bg:#f3f6fa;--surface:#fff;--surface-2:#edf3f8;--text:#102033;--muted:#63758a;
   --line:#d7e0e9;--navy:#061827;--navy-2:#0d2d43;--cyan:#0aaed0;--cyan-dark:#067e98;
   --teal:#119b82;--gold:#b78322;--good:#087f4f;--warn:#9a6500;--bad:#b42318;
@@ -165,467 +163,81 @@ html[data-theme=dark]{
 @media(max-width:680px){.job-status-summary{align-items:flex-start;flex-direction:column}.application-legend{margin-top:9px}.status-colored-card{border-left-width:6px!important}}
 @media print{.status-colored-card{border-left:3px solid var(--app-accent,#64748b)!important;background:#fff!important;box-shadow:none!important}}
 
-
-.social-hero{
-  position:relative;overflow:hidden;padding:38px;border:1px solid var(--line);
-  border-radius:26px;background:linear-gradient(135deg,#071525 0%,#173f69 48%,#087e79 100%);
-  color:#fff;box-shadow:var(--shadow-lg)
-}
-.social-hero:after{
-  content:"";position:absolute;width:400px;height:400px;right:-180px;top:-240px;
-  border:1px solid rgba(255,255,255,.18);border-radius:50%
-}
-.social-hero h1{
-  position:relative;z-index:1;max-width:1080px;margin:7px 0 13px;
-  font-size:clamp(40px,6vw,70px);line-height:.98;letter-spacing:-.055em
-}
-.social-hero p{position:relative;z-index:1;max-width:930px;color:#deeff5;font-size:16px}
-.social-actions{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-.social-actions a{padding:8px 11px;border:1px solid rgba(255,255,255,.28);border-radius:999px;color:#fff;font-size:12px;font-weight:850}
-.social-note{position:relative;z-index:1;margin-top:13px;color:#cce5eb;font-size:11px}
-.social-controls{
-  display:grid;grid-template-columns:1.4fr repeat(4,minmax(145px,.72fr)) auto;
-  gap:9px;margin:16px 0;padding:15px;border:1px solid var(--line);
-  border-radius:16px;background:var(--surface);box-shadow:var(--shadow)
-}
-.social-controls input,.social-controls select{
-  width:100%;min-width:0;padding:11px;border:1px solid var(--line);
-  border-radius:10px;background:var(--surface);color:var(--text)
-}
-.social-summary{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:14px 0}
-.social-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
-.social-card{
-  position:relative;min-width:0;padding:18px;display:flex;flex-direction:column;
-  border:1px solid var(--line);border-radius:17px;background:var(--surface);
-  box-shadow:var(--shadow);transition:.2s transform,.2s box-shadow
-}
-.social-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
-.social-card.best{border-color:rgba(74,222,128,.48)}
-.social-card.terminal{opacity:.68;order:99}
-.social-rank{
-  position:absolute;right:15px;top:14px;width:35px;height:35px;display:grid;
-  place-items:center;border:1px solid var(--line);border-radius:11px;
-  background:var(--surface-2);font-weight:950
-}
-.social-card h3{padding-right:42px;margin:13px 0 5px;font-size:18px;line-height:1.25}
-.social-company{font-weight:850;color:var(--text)}
-.social-score{display:flex;align-items:center;gap:9px;margin:11px 0}
-.social-score strong{font-size:25px}
-.social-track{flex:1;height:7px;overflow:hidden;border-radius:999px;background:var(--surface-2)}
-.social-track i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--cyan),#4ade80)}
-.social-meta{display:grid;grid-template-columns:1fr 1fr;gap:7px 9px;margin:11px 0;color:var(--muted);font-size:11px}
-.social-fit{
-  margin:10px 0;padding:10px;border-left:3px solid var(--cyan);
-  border-radius:0 9px 9px 0;background:var(--surface-2);color:var(--muted);font-size:11px
-}
-.social-check{margin:0 0 13px;color:var(--muted);font-size:11px}
-.social-card-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
-.social-card-actions a{font-size:11px;min-height:36px;padding:8px 10px}
-.search-grid-social{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
-.search-social{
-  padding:16px;border:1px solid var(--line);border-radius:15px;
-  background:var(--surface);box-shadow:var(--shadow)
-}
-.search-social h3{margin:0 0 5px;font-size:15px}
-.search-social .trust{display:inline-block;margin-bottom:8px;padding:5px 7px;border:1px solid var(--line);border-radius:999px;font-size:10px;font-weight:850}
-.search-social p{min-height:58px;margin:0 0 11px;color:var(--muted);font-size:11px}
-.search-social a{color:var(--cyan-dark);font-size:11px;font-weight:850}
-.social-safety{
-  margin-top:18px;padding:16px;border:1px solid rgba(216,184,106,.4);
-  border-radius:15px;background:rgba(216,184,106,.07)
-}
-.social-safety h3{margin:0 0 7px}.social-safety p{margin:0;color:var(--muted);font-size:12px}
-.no-results{grid-column:1/-1;padding:36px;border:1px dashed var(--line);border-radius:15px;text-align:center;color:var(--muted)}
-@media(max-width:1160px){
-  .social-controls{grid-template-columns:1fr 1fr}
-  .social-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .search-grid-social{grid-template-columns:repeat(3,minmax(0,1fr))}
-}
-@media(max-width:720px){
-  .social-hero{padding:26px 19px}
-  .social-controls,.social-grid,.search-grid-social{grid-template-columns:1fr}
-  .social-summary{align-items:flex-start;flex-direction:column}
-}
-
-  </style>
-  <link rel="stylesheet" href="./assets/app.css">
-  <style>
-.social-hero{
-  position:relative;overflow:hidden;padding:38px;border:1px solid var(--line);
-  border-radius:26px;background:linear-gradient(135deg,#071525 0%,#173f69 48%,#087e79 100%);
-  color:#fff;box-shadow:var(--shadow-lg)
-}
-.social-hero:after{
-  content:"";position:absolute;width:400px;height:400px;right:-180px;top:-240px;
-  border:1px solid rgba(255,255,255,.18);border-radius:50%
-}
-.social-hero h1{
-  position:relative;z-index:1;max-width:1080px;margin:7px 0 13px;
-  font-size:clamp(40px,6vw,70px);line-height:.98;letter-spacing:-.055em
-}
-.social-hero p{position:relative;z-index:1;max-width:930px;color:#deeff5;font-size:16px}
-.social-actions{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-.social-actions a{padding:8px 11px;border:1px solid rgba(255,255,255,.28);border-radius:999px;color:#fff;font-size:12px;font-weight:850}
-.social-note{position:relative;z-index:1;margin-top:13px;color:#cce5eb;font-size:11px}
-.social-controls{
-  display:grid;grid-template-columns:1.4fr repeat(4,minmax(145px,.72fr)) auto;
-  gap:9px;margin:16px 0;padding:15px;border:1px solid var(--line);
-  border-radius:16px;background:var(--surface);box-shadow:var(--shadow)
-}
-.social-controls input,.social-controls select{
-  width:100%;min-width:0;padding:11px;border:1px solid var(--line);
-  border-radius:10px;background:var(--surface);color:var(--text)
-}
-.social-summary{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:14px 0}
-.social-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
-.social-card{
-  position:relative;min-width:0;padding:18px;display:flex;flex-direction:column;
-  border:1px solid var(--line);border-radius:17px;background:var(--surface);
-  box-shadow:var(--shadow);transition:.2s transform,.2s box-shadow
-}
-.social-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
-.social-card.best{border-color:rgba(74,222,128,.48)}
-.social-card.terminal{opacity:.68;order:99}
-.social-rank{
-  position:absolute;right:15px;top:14px;width:35px;height:35px;display:grid;
-  place-items:center;border:1px solid var(--line);border-radius:11px;
-  background:var(--surface-2);font-weight:950
-}
-.social-card h3{padding-right:42px;margin:13px 0 5px;font-size:18px;line-height:1.25}
-.social-company{font-weight:850;color:var(--text)}
-.social-score{display:flex;align-items:center;gap:9px;margin:11px 0}
-.social-score strong{font-size:25px}
-.social-track{flex:1;height:7px;overflow:hidden;border-radius:999px;background:var(--surface-2)}
-.social-track i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--cyan),#4ade80)}
-.social-meta{display:grid;grid-template-columns:1fr 1fr;gap:7px 9px;margin:11px 0;color:var(--muted);font-size:11px}
-.social-fit{
-  margin:10px 0;padding:10px;border-left:3px solid var(--cyan);
-  border-radius:0 9px 9px 0;background:var(--surface-2);color:var(--muted);font-size:11px
-}
-.social-check{margin:0 0 13px;color:var(--muted);font-size:11px}
-.social-card-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
-.social-card-actions a{font-size:11px;min-height:36px;padding:8px 10px}
-.search-grid-social{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
-.search-social{
-  padding:16px;border:1px solid var(--line);border-radius:15px;
-  background:var(--surface);box-shadow:var(--shadow)
-}
-.search-social h3{margin:0 0 5px;font-size:15px}
-.search-social .trust{display:inline-block;margin-bottom:8px;padding:5px 7px;border:1px solid var(--line);border-radius:999px;font-size:10px;font-weight:850}
-.search-social p{min-height:58px;margin:0 0 11px;color:var(--muted);font-size:11px}
-.search-social a{color:var(--cyan-dark);font-size:11px;font-weight:850}
-.social-safety{
-  margin-top:18px;padding:16px;border:1px solid rgba(216,184,106,.4);
-  border-radius:15px;background:rgba(216,184,106,.07)
-}
-.social-safety h3{margin:0 0 7px}.social-safety p{margin:0;color:var(--muted);font-size:12px}
-.no-results{grid-column:1/-1;padding:36px;border:1px dashed var(--line);border-radius:15px;text-align:center;color:var(--muted)}
-@media(max-width:1160px){
-  .social-controls{grid-template-columns:1fr 1fr}
-  .social-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .search-grid-social{grid-template-columns:repeat(3,minmax(0,1fr))}
-}
-@media(max-width:720px){
-  .social-hero{padding:26px 19px}
-  .social-controls,.social-grid,.search-grid-social{grid-template-columns:1fr}
-  .social-summary{align-items:flex-start;flex-direction:column}
-}
+.platform-profile-hero{position:relative;overflow:hidden;padding:36px;border:1px solid var(--line);border-radius:25px;background:linear-gradient(135deg,#061525,#154768 55%,#0a8176);color:#fff;box-shadow:var(--shadow-lg)}
+.platform-profile-hero h1{margin:7px 0 10px;font-size:clamp(40px,6vw,66px);line-height:1;letter-spacing:-.05em}
+.platform-profile-hero p{max-width:900px;color:#dceef4;font-size:16px}
+.platform-profile-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.platform-profile-actions a{padding:8px 11px;border:1px solid rgba(255,255,255,.27);border-radius:999px;font-size:12px;font-weight:850}
+.strategy-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+.strategy-list{margin:0;padding-left:20px;color:var(--muted)}.strategy-list li{margin:8px 0}
+.route-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.route-card{padding:15px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2)}
+.route-card h3{margin:0 0 6px;font-size:15px}.route-card p{min-height:42px;margin:0 0 10px;color:var(--muted);font-size:11px}.route-card a{color:var(--cyan-dark);font-weight:850;font-size:11px}
+.profile-headline{padding:15px;border:1px solid rgba(75,213,239,.4);border-radius:14px;background:rgba(75,213,239,.07);font-size:18px;font-weight:900}
+.caution-box{padding:15px;border:1px solid rgba(216,184,106,.4);border-radius:14px;background:rgba(216,184,106,.07);color:var(--muted)}
+@media(max-width:760px){.platform-profile-hero{padding:26px 19px}.strategy-grid,.route-grid{grid-template-columns:1fr}}
+</style>
+  <link rel="stylesheet" href="./assets/app.css"><style>
+.platform-profile-hero{position:relative;overflow:hidden;padding:36px;border:1px solid var(--line);border-radius:25px;background:linear-gradient(135deg,#061525,#154768 55%,#0a8176);color:#fff;box-shadow:var(--shadow-lg)}
+.platform-profile-hero h1{margin:7px 0 10px;font-size:clamp(40px,6vw,66px);line-height:1;letter-spacing:-.05em}
+.platform-profile-hero p{max-width:900px;color:#dceef4;font-size:16px}
+.platform-profile-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.platform-profile-actions a{padding:8px 11px;border:1px solid rgba(255,255,255,.27);border-radius:999px;font-size:12px;font-weight:850}
+.strategy-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+.strategy-list{margin:0;padding-left:20px;color:var(--muted)}.strategy-list li{margin:8px 0}
+.route-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.route-card{padding:15px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2)}
+.route-card h3{margin:0 0 6px;font-size:15px}.route-card p{min-height:42px;margin:0 0 10px;color:var(--muted);font-size:11px}.route-card a{color:var(--cyan-dark);font-weight:850;font-size:11px}
+.profile-headline{padding:15px;border:1px solid rgba(75,213,239,.4);border-radius:14px;background:rgba(75,213,239,.07);font-size:18px;font-weight:900}
+.caution-box{padding:15px;border:1px solid rgba(216,184,106,.4);border-radius:14px;background:rgba(216,184,106,.07);color:var(--muted)}
+@media(max-width:760px){.platform-profile-hero{padding:26px 19px}.strategy-grid,.route-grid{grid-template-columns:1fr}}
 </style>
 </head>
-<body data-page="social-media-jobs" data-nav-active="social-media-jobs">
-<header class="topbar">
-  <div class="container topbar-inner">
-    <a class="brand" href="./index.html">
-      <img src="./assets/logo.png" alt="Mahmoud Salama">
-      <span><strong>Career Intelligence</strong><small>Social job discovery</small></span>
-    </a>
-    <button class="icon-btn mobile-menu" id="menuBtn" aria-label="Open navigation">☰</button>
-    <nav id="mainNav">
-      <a class="nav-link" href="./index.html">Dashboard</a>
-      <a class="nav-link" href="./search.html">Search</a>
-      <a class="nav-link" href="./jobs.html">Jobs</a>
-      <a class="nav-link active" href="./social-media-jobs.html">Social Jobs</a>
-      <a class="nav-link" href="./remote4africa-jobs.html">Remote4Africa</a>
-      <a class="nav-link" href="./platforms.html">Platforms</a>
-      <a class="nav-link" href="./directory.html">Directories</a>
-      <details class="more-menu">
-        <summary>More</summary>
-        <div class="more-panel"><a href="./independent-work-platforms.html">Independent Work Platforms</a>
-          <a href="./healthcare-it-companies-jobs.html">Healthcare IT Jobs</a>
-          <a href="./abb-jobs.html">ABB Jobs</a>
-          <a href="./linkedin-platforms.html">LinkedIn Post Platforms</a>
-          <a href="./africa-new-jobs.html">New Africa Jobs</a>
-          <a href="./retail-healthcare-lifestyle-jobs.html">Retail & Lifestyle</a>
-          <a href="./tracker.html">Tracker</a>
-          <a href="./data-quality.html">Data Quality</a>
-        </div>
-      </details>
-    </nav>
-    <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
-  </div>
-</header>
-
+<body data-page="freelancer-platform" data-nav-active="platforms">
+<header class="topbar"><div class="container topbar-inner">
+  <a class="brand" href="./index.html"><img src="./assets/logo.png" alt="Mahmoud Salama"><span><strong>Career Intelligence</strong><small>Freelancer.com strategy</small></span></a>
+  <button class="icon-btn mobile-menu" id="menuBtn" aria-label="Open navigation">☰</button>
+  <nav id="mainNav">
+    <a class="nav-link" href="./index.html">Dashboard</a>
+    <a class="nav-link" href="./jobs.html">Jobs</a>
+    <a class="nav-link active" href="./independent-work-platforms.html">Independent Work</a>
+    <a class="nav-link" href="./platforms.html">All Platforms</a>
+    <a class="nav-link" href="./directory.html">Directories</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
+</div></header>
 <main class="page">
-  <section class="social-hero">
-    <p class="eyebrow">FACEBOOK · INSTAGRAM · X · THREADS · REDDIT · LINKEDIN · TELEGRAM</p>
-    <h1>Social-media vacancies and live hiring searches.</h1>
-    <p>
-      Publicly indexed social posts that match your senior technology profile, plus targeted live-search
-      routes for platforms where individual posts are hidden behind sign-in, removed quickly or not reliably indexed.
-      Confirmed employer vacancies appear above recruiter posts, partnerships and archived announcements.
-    </p>
-    <div class="social-actions">
-      <a href="#socialOpportunities">Suitable posts</a>
-      <a href="#socialSearches">Live social searches</a>
-      <a href="./jobs.html">All vacancies</a>
-      <a href="./platforms.html">All platforms</a>
-      <a href="./tracker.html">Application tracker</a>
-    </div>
-    <div class="social-note">
-      Checked 27 July 2026. Never send payment, passwords, identification documents or sensitive data
-      through an unverified social account or informal messaging channel.
+  <section class="platform-profile-hero">
+    <p class="eyebrow">PROJECT BIDDING MARKETPLACE · 84% PROFILE RELEVANCE</p>
+    <h1>Freelancer.com</h1>
+    <p>Useful for project-based consulting, cloud, architecture, program-management and enterprise-system engagements, but proposals must be filtered carefully to avoid low-value work.</p>
+    <div class="platform-profile-actions">
+      <a href="https://www.freelancer.com/" target="_blank" rel="noopener">Open official platform</a>
+      <a href="https://www.freelancer.com/jobs/project-management/" target="_blank" rel="noopener">Open primary opportunities</a>
+      <a href="./independent-work-platforms.html">Back to platform directory</a>
     </div>
   </section>
-
   <section class="metric-grid">
-    <div class="metric"><strong>11</strong><span>curated social opportunities</span></div>
-    <div class="metric"><strong>9</strong><span>best-fit records</span></div>
-    <div class="metric"><strong>6</strong><span>available indexed vacancies</span></div>
-    <div class="metric"><strong>15</strong><span>live social searches</span></div>
-    <div class="metric"><strong>5</strong><span>source platforms represented</span></div>
+    <div class="metric"><strong>84%</strong><span>profile relevance</span></div>
+    <div class="metric"><strong>Priority 2</strong><span>strategic priority</span></div>
+    <div class="metric"><strong>Project bidding marketplace</strong><span>platform model</span></div>
+    <div class="metric"><strong>Global / Remote</strong><span>market coverage</span></div>
+    <div class="metric"><strong>Persistent</strong><span>preferences available</span></div>
   </section>
-
-  <section class="panel" id="socialOpportunities">
-    <div class="panel-head">
-      <div>
-        <h2>Suitable social-media opportunities</h2>
-        <p>Best fit first. Archived, unavailable, rejected and unsuitable records automatically move to the bottom.</p>
-      </div>
-      <a href="./data/csv/social-media-suitable-jobs.csv" download>Download CSV</a>
-    </div>
-
-    <div class="social-controls">
-      <input id="socialQuery" type="search" placeholder="Search role, company, platform or location">
-      <select id="socialPlatform"><option value="">All platforms</option></select>
-      <select id="socialTier"><option value="">All fit levels</option></select>
-      <select id="socialRegion"><option value="">All regions</option></select>
-      <select id="socialAvailability"><option value="">All availability</option></select>
-      <button class="secondary" id="socialClear">Clear</button>
-    </div>
-
-    <div class="social-summary">
-      <div>
-        <strong id="socialCount">0 opportunities</strong>
-        <small id="socialFilterText">Recommended ranking · Best fit first</small>
-      </div>
-      <div class="rank-guidance">
-        <span class="fit-best">Best Fit</span>
-        <span class="fit-strong">Strong Fit</span>
-        <span>Application-status colors</span>
-        <span>Source verification</span>
-      </div>
-    </div>
-
-    <div class="social-grid" id="socialGrid"></div>
+  <section class="panel">
+    <div class="panel-head"><div><h2>Recommended profile headline</h2><p>Use a focused value proposition rather than a general job title.</p></div></div>
+    <div class="profile-headline">Enterprise Architect, Technology Program Manager &amp; Digital Transformation Consultant</div>
   </section>
-
-  <section class="panel" id="socialSearches" style="margin-top:18px">
-    <div class="panel-head">
-      <div>
-        <h2>Live social-platform searches</h2>
-        <p>Use these routes for newly posted opportunities that cannot be safely captured in a static snapshot.</p>
-      </div>
-      <a href="./data/csv/social-media-job-searches.csv" download>Download searches CSV</a>
-    </div>
-    <div class="search-grid-social" id="socialSearchGrid"></div>
+  <section class="strategy-grid">
+    <article class="panel"><h2>Best opportunities for you</h2><ul class="strategy-list"><li>Project and program-management assignments</li><li>Cloud architecture and infrastructure reviews</li><li>Enterprise application and API-integration planning</li><li>Power BI, reporting and data-platform projects</li><li>Technical documentation, governance and operating-model work</li><li>Digital-transformation and process-modernization consulting</li></ul></article>
+    <article class="panel"><h2>Recommended strategy</h2><ul class="strategy-list"><li>Bid only on verified clients with clear scope, budget and payment history.</li><li>Lead with enterprise architecture, healthcare technology and national-scale delivery.</li><li>Use milestone-based proposals and define assumptions before accepting work.</li><li>Prefer consulting and management assignments over commodity development tasks.</li></ul></article>
   </section>
-
-  <section class="social-safety">
-    <h3>Social-media verification rule</h3>
-    <p>
-      Prefer an official employer career page whenever one exists. A recruiter post without a named employer,
-      an informal direct-message application, a community partnership, or a shortened form link is not equivalent
-      to a verified vacancy. These records are labelled accordingly and given lower source grades.
-    </p>
+  <section class="panel" style="margin-top:18px">
+    <div class="panel-head"><div><h2>Official opportunity routes</h2><p>Use direct platform routes and recheck the latest inventory before applying or submitting a proposal.</p></div></div>
+    <div class="route-grid"><article class="route-card"><h3>Project-management jobs</h3><p>Open project-management assignments.</p><a href="https://www.freelancer.com/jobs/project-management/" target="_blank" rel="noopener">Open official route ↗</a></article><article class="route-card"><h3>Cloud-computing jobs</h3><p>Cloud infrastructure and architecture projects.</p><a href="https://www.freelancer.com/jobs/cloud-computing" target="_blank" rel="noopener">Open official route ↗</a></article><article class="route-card"><h3>Cloud jobs</h3><p>Broader cloud and technical work.</p><a href="https://www.freelancer.com/jobs/cloud" target="_blank" rel="noopener">Open official route ↗</a></article><article class="route-card"><h3>IT project search</h3><p>Keyword search for IT project-management work.</p><a href="https://www.freelancer.com/job-search/it-project-management/" target="_blank" rel="noopener">Open official route ↗</a></article></div>
   </section>
+  <section class="caution-box" style="margin-top:18px"><b>Important:</b> Open bidding creates strong price competition. Confirm scope, client verification and milestone funding.</section>
 </main>
-
-<div class="drawer-backdrop" id="drawerBackdrop"></div>
-<aside class="drawer" id="detailDrawer">
-  <button class="drawer-close" id="drawerClose">×</button>
-  <div id="drawerContent"></div>
-</aside>
 <div class="toast" id="toast"></div>
-
-<script src="./data/js/core.js"></script>
-<script src="./data/js/social-media-jobs.js"></script>
-<script src="./assets/job-preferences.js"></script><script src="./assets/app.js"></script>
-<script>
-(function(){
-  const payload = window.SOCIAL_MEDIA_JOBS || {opportunities:[],social_searches:[]};
-  const items = payload.opportunities || [];
-  const searches = payload.social_searches || [];
-  const status = window.CAREER_STATUS;
-  const records = Object.fromEntries(items.map(item => [String(item.id), item]));
-
-  const grid = document.getElementById('socialGrid');
-  const searchGrid = document.getElementById('socialSearchGrid');
-  const query = document.getElementById('socialQuery');
-  const platform = document.getElementById('socialPlatform');
-  const tier = document.getElementById('socialTier');
-  const region = document.getElementById('socialRegion');
-  const availability = document.getElementById('socialAvailability');
-
-  const esc = value => String(value ?? '').replace(/[&<>"']/g, char => (
-    {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]
-  ));
-  const unique = field => [...new Set(items.map(item => item[field]).filter(Boolean))]
-    .sort((a,b) => String(a).localeCompare(String(b)));
-  const bad = value => /^(Expired|Not Available|Inactive|Broken Link|Rejected|Withdrawn|Not Suitable|Ignored)$/i
-    .test(String(value || ''));
-
-  function fill(select, values) {
-    values.forEach(value => {
-      const option = document.createElement('option');
-      option.value = value;
-      option.textContent = value;
-      select.appendChild(option);
-    });
-  }
-
-  fill(platform, unique('platform'));
-  fill(tier, unique('fit_tier'));
-  fill(region, unique('region'));
-  if (status) fill(availability, status.availabilityOptions);
-
-  function compare(a, b) {
-    const badA = bad(status?.effectiveAvailability(a)) || bad(status?.application(a.id).status);
-    const badB = bad(status?.effectiveAvailability(b)) || bad(status?.application(b.id).status);
-    if (badA !== badB) return badA ? 1 : -1;
-    const fit = Number(b.match_score || 0) - Number(a.match_score || 0);
-    if (fit) return fit;
-    return String(a.title || '').localeCompare(String(b.title || ''));
-  }
-
-  function tierClass(score) {
-    score = Number(score || 0);
-    return score >= 95 ? 'fit-best' : score >= 88 ? 'fit-strong' :
-      score >= 78 ? 'fit-good' : score >= 65 ? 'fit-medium' : 'fit-low';
-  }
-
-  function render() {
-    const term = query.value.trim().toLowerCase();
-    const filtered = items.filter(item => {
-      const haystack = [
-        item.title, item.organization, item.platform, item.post_type,
-        item.location, item.fit_reason, item.verification_note
-      ].join(' ').toLowerCase();
-      const effective = status?.effectiveAvailability(item) || item.availability_status;
-      return (!term || haystack.includes(term))
-        && (!platform.value || item.platform === platform.value)
-        && (!tier.value || item.fit_tier === tier.value)
-        && (!region.value || item.region === region.value)
-        && (!availability.value || effective === availability.value);
-    }).sort(compare);
-
-    document.getElementById('socialCount').textContent =
-      filtered.length + (filtered.length === 1 ? ' opportunity' : ' opportunities');
-
-    const active = [
-      platform.value, tier.value, region.value, availability.value,
-      term ? 'Keyword: ' + term : ''
-    ].filter(Boolean);
-    document.getElementById('socialFilterText').textContent =
-      active.length ? active.join(' · ') : 'Recommended ranking · Best fit first';
-
-    grid.innerHTML = filtered.length ? filtered.map((item, index) => {
-      const effective = status?.effectiveAvailability(item) || item.availability_status;
-      const application = status?.application(item.id).status || 'Not Reviewed';
-      const terminal = bad(effective) || bad(application);
-      const appClass = status?.applicationStatusClass(application) || '';
-      const availabilityClass = status?.availabilityStatusClass(effective) || '';
-
-      return `
-        <article class="social-card status-colored-card ${appClass} ${availabilityClass} ${item.match_score >= 95 ? 'best' : ''} ${terminal ? 'terminal' : ''}"
-          data-application-status="${esc(application)}"
-          data-availability-status="${esc(effective)}">
-          <span class="social-rank">${index + 1}</span>
-          <div class="badges">
-            <span class="badge ${terminal ? 'bad' : effective === 'Available' ? 'good' : 'warn'}">${esc(effective)}</span>
-            <span class="badge application-state-badge ${appClass}">Application · ${esc(application)}</span>
-            <span class="badge fit-tier ${tierClass(item.match_score)}">${esc(item.fit_tier)}</span>
-            <span class="badge quality-${String(item.source_quality).toLowerCase()}">Source ${esc(item.source_quality)}</span>
-          </div>
-          <h3>${esc(item.title)}</h3>
-          <div class="social-company">${esc(item.organization)}</div>
-          <div class="social-score">
-            <strong>${esc(item.match_score)}%</strong>
-            <div class="social-track"><i style="width:${Number(item.match_score) || 0}%"></i></div>
-          </div>
-          <div class="social-meta">
-            <span>${esc(item.platform)}</span>
-            <span>${esc(item.post_type)}</span>
-            <span>${esc(item.location)}</span>
-            <span>${esc(item.posted_text)}</span>
-          </div>
-          <div class="social-fit"><b>Why it fits:</b> ${esc(item.fit_reason)}</div>
-          <p class="social-check"><b>Verification:</b> ${esc(item.verification_note)}</p>
-          ${status ? status.controls(item) : ''}
-          <div class="social-card-actions">
-            <a class="button" href="${esc(item.url)}" target="_blank" rel="noopener">Open source</a>
-            <a class="secondary" href="./tracker.html">Tracker</a>
-          </div>
-        </article>
-      `;
-    }).join('') : '<div class="no-results">No opportunities match the selected filters.</div>';
-
-    if (status) status.bind(grid, records);
-  }
-
-  searchGrid.innerHTML = searches.map(item => `
-    <article class="search-social">
-      <h3>${esc(item.platform)}</h3>
-      <span class="trust">${esc(item.trust)}</span>
-      <p><b>${esc(item.category)}</b><br>${esc(item.focus)}</p>
-      <a href="${esc(item.url)}" target="_blank" rel="noopener">Open live search ↗</a>
-    </article>
-  `).join('');
-
-  [query, platform, tier, region, availability].forEach(element => {
-    element.addEventListener(element.tagName === 'INPUT' ? 'input' : 'change', render);
-  });
-
-  document.getElementById('socialClear').addEventListener('click', () => {
-    query.value = '';
-    platform.value = '';
-    tier.value = '';
-    region.value = '';
-    availability.value = '';
-    render();
-  });
-
-  window.addEventListener('career-status-changed', render);
-  render();
-})();
-</script>
-
-<nav class="mobile-nav">
-  <a href="./index.html"><b>⌂</b>Home</a>
-  <a href="./jobs.html"><b>▤</b>Jobs</a>
-  <a href="./social-media-jobs.html"><b>#</b>Social</a>
-  <a href="./platforms.html"><b>◎</b>Platforms</a>
-  <a href="./tracker.html"><b>✓</b>Tracker</a>
-</nav>
-
-<footer class="footer">
-  <div class="container footer-row">
-    <span>Mahmoud Salama Career Intelligence · Social Media Jobs</span>
-    <div class="footer-links">
-      <a href="./index.html">Dashboard</a>
-      <a href="./directory.html">All pages</a>
-      <a href="./data-quality.html">Data quality</a>
-    </div>
-  </div>
-</footer>
-</body>
-</html>
+<script src="./data/js/core.js"></script><script src="./assets/job-preferences.js"></script><script src="./assets/app.js"></script>
+<nav class="mobile-nav"><a href="./index.html"><b>⌂</b>Home</a><a href="./jobs.html"><b>▤</b>Jobs</a><a href="./independent-work-platforms.html"><b>◇</b>Freelance</a><a href="./platforms.html"><b>◎</b>Platforms</a><a href="./tracker.html"><b>✓</b>Tracker</a></nav>
+<footer class="footer"><div class="container footer-row"><span>Mahmoud Salama Career Intelligence · Freelancer.com</span><div class="footer-links"><a href="./directory.html">All pages</a></div></div></footer>
+</body></html>

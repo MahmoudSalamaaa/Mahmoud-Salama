@@ -186,3 +186,32 @@ The page includes:
 - CSV exports for opportunities and search routes.
 
 Only non-archived employment records are merged into the global job database, with title/employer deduplication.
+
+## Independent Work Platforms and Job Preferences
+
+Added:
+- `independent-work-platforms.html`
+- `fiverr-platform.html`
+- `freelancer-platform.html`
+- `upwork-platform.html`
+- `toptal-platform.html`
+- `contra-platform.html`
+- `peopleperhour-platform.html`
+- `guru-platform.html`
+- `flexjobs-platform.html`
+- `wellfound-platform.html`
+- `weworkremotely-platform.html`
+
+A universal Job Preferences panel is loaded on every HTML page.
+
+Preferences:
+- Target role families
+- Preferred regions
+- Remote, hybrid or on-site work
+- Full-time, contract, consulting/freelance or part-time
+- Minimum fit percentage
+- Rank mode or strict filter mode
+- Hide unavailable records
+- Hide rejected, withdrawn and not-suitable records
+
+Preferences are stored locally in the browser using `career_job_preferences_v1`.

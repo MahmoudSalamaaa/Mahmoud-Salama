@@ -155,3 +155,39 @@ html[data-theme=dark]{
 .application-legend i{display:inline-flex;padding:3px 6px;border:1px solid color-mix(in srgb,var(--app-accent,var(--status-neutral)) 42%,var(--line));border-radius:999px;background:color-mix(in srgb,var(--app-accent,var(--status-neutral)) 12%,var(--surface-2));color:var(--app-accent,var(--status-neutral));font-size:9px;font-style:normal;font-weight:900}
 @media(max-width:680px){.job-status-summary{align-items:flex-start;flex-direction:column}.application-legend{margin-top:9px}.status-colored-card{border-left-width:6px!important}}
 @media print{.status-colored-card{border-left:3px solid var(--app-accent,#64748b)!important;background:#fff!important;box-shadow:none!important}}
+
+
+/* PROJECT-WIDE JOB PREFERENCES */
+.job-preferences-button{
+  position:fixed;right:18px;bottom:20px;z-index:115;display:grid;
+  grid-template-columns:auto auto;grid-template-areas:"icon label" "icon value";
+  align-items:center;column-gap:8px;min-width:166px;padding:10px 13px;
+  border:1px solid rgba(10,174,208,.5);border-radius:14px;
+  background:linear-gradient(135deg,var(--navy-2),#0b6578);color:#fff;
+  box-shadow:var(--shadow-lg)
+}
+.job-preferences-button span{grid-area:icon;font-size:20px}.job-preferences-button b{grid-area:label;text-align:left;font-size:12px}.job-preferences-button small{grid-area:value;text-align:left;color:#b9edf7;font-weight:800}
+.job-preferences-backdrop{display:none;position:fixed;inset:0;z-index:126;background:rgba(2,10,18,.58)}
+.job-preferences-backdrop.open{display:block}
+.job-preferences-panel{
+  position:fixed;right:-720px;top:0;z-index:127;width:min(680px,96vw);height:100vh;
+  overflow:auto;padding:24px;border-left:1px solid var(--line);background:var(--surface);
+  box-shadow:var(--shadow-lg);transition:right .24s ease
+}
+.job-preferences-panel.open{right:0}
+.pref-head{display:flex;justify-content:space-between;gap:16px;margin-bottom:16px}.pref-head h2{margin:3px 0;font-size:27px}.pref-head p{margin:0;color:var(--muted)}
+.pref-close{width:42px;height:42px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);color:var(--text);font-size:25px}
+.pref-switch,.pref-flags label{display:flex;align-items:center;gap:10px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);font-weight:800}
+.pref-inline{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}.pref-inline label{display:grid;gap:7px;color:var(--muted);font-size:12px}.pref-inline select,.pref-inline input[type=range]{width:100%}
+.pref-inline select{padding:10px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--text)}
+.pref-group{margin:14px 0;padding:13px;border:1px solid var(--line);border-radius:13px}.pref-group legend{padding:0 7px;color:var(--cyan-dark);font-weight:900}
+.pref-check-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.pref-check-grid label{display:flex;gap:8px;align-items:center;padding:9px;border-radius:9px;background:var(--surface-2);font-size:12px}
+.pref-flags{display:grid;gap:8px}.pref-summary{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}.pref-summary span{padding:6px 9px;border:1px solid rgba(10,174,208,.38);border-radius:999px;background:rgba(10,174,208,.08);color:var(--cyan-dark);font-size:11px;font-weight:850}
+.pref-actions{position:sticky;bottom:-24px;display:flex;justify-content:flex-end;gap:8px;margin:18px -24px -24px;padding:15px 24px;border-top:1px solid var(--line);background:var(--surface)}
+.preference-hidden{display:none!important}
+.preference-priority{box-shadow:0 0 0 2px rgba(10,174,208,.24),var(--shadow)!important}
+@media(max-width:680px){
+  .job-preferences-button{right:10px;bottom:72px;min-width:auto;grid-template-columns:auto}.job-preferences-button b,.job-preferences-button small{display:none}
+  .job-preferences-panel{width:100vw;padding:18px}.pref-inline,.pref-check-grid{grid-template-columns:1fr}.pref-actions{margin-left:-18px;margin-right:-18px;padding-left:18px;padding-right:18px}
+}
+@media print{.job-preferences-button,.job-preferences-panel,.job-preferences-backdrop{display:none!important}}

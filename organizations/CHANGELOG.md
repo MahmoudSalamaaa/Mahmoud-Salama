@@ -39,3 +39,9 @@
 - Added live searches for Facebook, Instagram, X, Threads, Reddit and other social platforms.
 - Added social discovery sources to the main platform database.
 - Applied source verification, profile ranking and colored application statuses.
+
+- Added ten dedicated independent-work and remote-platform pages plus a central hub.
+- Added Fiverr, Freelancer.com, Upwork, Toptal, Contra, PeoplePerHour, Guru, FlexJobs, Wellfound and We Work Remotely.
+- Added a Universal Job Preferences panel to every project page.
+- Integrated preferences into the generic listing search, filtering and ranking engine.
+- Added strict filtering, minimum fit, role-family, geography, work-model and engagement preferences.

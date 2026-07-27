@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-07-27",
-  "version": "Social Media Job Search Complete Edition",
+  "version": "Independent Platforms + Universal Preferences Edition",
   "profile_name": "Mahmoud Salama",
   "profile_title": "Chief Technology & Digital Transformation Officer | Enterprise Architect",
   "datasets": {
@@ -133,5 +133,29 @@
     "global_jobs_added": 8,
     "priority_jobs_added": 9,
     "checked": "2026-07-27"
+  },
+  "independent_work_platforms": {
+    "hub": "independent-work-platforms.html",
+    "platform_pages": 10,
+    "platforms": [
+      "Fiverr",
+      "Freelancer.com",
+      "Upwork",
+      "Toptal",
+      "Contra",
+      "PeoplePerHour",
+      "Guru",
+      "FlexJobs",
+      "Wellfound",
+      "We Work Remotely"
+    ]
+  },
+  "job_preferences": {
+    "enabled_on_all_pages": true,
+    "storage_key": "career_job_preferences_v1",
+    "role_families": 8,
+    "regions": 5,
+    "work_models": 3,
+    "engagement_types": 4
   }
 }

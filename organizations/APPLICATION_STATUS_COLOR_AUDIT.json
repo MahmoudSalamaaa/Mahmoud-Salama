@@ -1,0 +1,48 @@
+{
+  "edition": "Application Status Colors Complete Edition",
+  "generated_at": "2026-07-26",
+  "palette": [
+    "navy",
+    "cyan",
+    "teal",
+    "gold",
+    "neutral slate",
+    "semantic soft red"
+  ],
+  "application_statuses": [
+    "Not Reviewed",
+    "Saved",
+    "Interested",
+    "Shortlisted",
+    "Applied",
+    "Follow-up",
+    "Interview",
+    "Offer",
+    "Rejected",
+    "Withdrawn",
+    "Not Suitable",
+    "Ignored",
+    "Not Available"
+  ],
+  "visual_surfaces": [
+    "vacancy cards",
+    "top application badge",
+    "status controls",
+    "application select",
+    "availability select",
+    "table rows",
+    "details drawer",
+    "tracker metrics",
+    "tracker rows"
+  ],
+  "immediate_repaint": true,
+  "color_is_not_only_cue": true,
+  "html_pages": 50,
+  "javascript_files_checked": 38,
+  "json_files_checked": 49,
+  "local_links_checked": 1983,
+  "external_links_in_html": 32,
+  "missing_local_links": 0,
+  "invalid_local_links": 0,
+  "root_level_files": 0
+}

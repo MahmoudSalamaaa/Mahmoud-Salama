@@ -67,3 +67,91 @@ dialog{width:min(580px,95vw);padding:22px;border:1px solid var(--line);border-ra
 .fit-low{background:rgba(100,116,139,.16)!important;color:#94a3b8!important;border-color:rgba(148,163,184,.30)!important}
 .rank-guidance{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 0}
 .rank-guidance span{padding:6px 9px;border:1px solid var(--line);border-radius:999px;background:var(--surface-alt);font-size:11px;font-weight:800;color:var(--muted)}
+
+
+/* APPLICATION STATUS VISUAL SYSTEM — MAHMOUD SALAMA BRAND PALETTE */
+:root{
+  --status-neutral:#718096;
+  --status-saved:var(--gold);
+  --status-interested:var(--cyan-dark);
+  --status-shortlisted:var(--teal);
+  --status-applied:#086b9c;
+  --status-follow-up:var(--gold);
+  --status-interview:var(--cyan);
+  --status-offer:#087f4f;
+  --status-negative:var(--bad);
+  --availability-positive:var(--good);
+  --availability-warning:var(--gold);
+  --availability-negative:var(--bad);
+  --availability-neutral:#718096;
+}
+html[data-theme=dark]{
+  --status-neutral:#94a3b8;
+  --status-applied:#38bdf8;
+  --status-offer:#4fd4b6;
+  --availability-neutral:#94a3b8;
+}
+.app-status-not-reviewed{--app-accent:var(--status-neutral)}
+.app-status-saved{--app-accent:var(--status-saved)}
+.app-status-interested{--app-accent:var(--status-interested)}
+.app-status-shortlisted{--app-accent:var(--status-shortlisted)}
+.app-status-applied{--app-accent:var(--status-applied)}
+.app-status-follow-up{--app-accent:var(--status-follow-up)}
+.app-status-interview{--app-accent:var(--status-interview)}
+.app-status-offer{--app-accent:var(--status-offer)}
+.app-status-rejected,.app-status-not-available{--app-accent:var(--status-negative)}
+.app-status-withdrawn{--app-accent:color-mix(in srgb,var(--status-negative) 68%,var(--status-neutral))}
+.app-status-not-suitable{--app-accent:color-mix(in srgb,var(--status-negative) 48%,var(--status-neutral))}
+.app-status-ignored{--app-accent:var(--status-neutral)}
+.availability-status-available,.availability-status-career-page-available,.availability-status-active-employer,.availability-status-active-agency,.availability-status-active-portal,.availability-status-active-platform,.availability-status-live-search{--availability-accent:var(--availability-positive)}
+.availability-status-possibly-available,.availability-status-deadline-approaching{--availability-accent:var(--availability-warning)}
+.availability-status-expired,.availability-status-not-available,.availability-status-inactive,.availability-status-broken-link{--availability-accent:var(--availability-negative)}
+.availability-status-not-verified{--availability-accent:var(--availability-neutral)}
+.status-colored-card{
+  position:relative;
+  border-left:5px solid var(--app-accent,var(--status-neutral))!important;
+  background:
+    linear-gradient(90deg,color-mix(in srgb,var(--app-accent,var(--status-neutral)) 10%,var(--surface)) 0,color-mix(in srgb,var(--app-accent,var(--status-neutral)) 4%,var(--surface)) 34%,var(--surface) 68%)!important;
+  box-shadow:0 13px 34px color-mix(in srgb,var(--app-accent,var(--status-neutral)) 12%,transparent),var(--shadow);
+  transition:border-color .18s ease,background .18s ease,box-shadow .18s ease,transform .18s ease;
+}
+.status-colored-card:hover{box-shadow:0 18px 42px color-mix(in srgb,var(--app-accent,var(--status-neutral)) 17%,transparent),var(--shadow-lg)}
+.application-state-badge{
+  border-color:color-mix(in srgb,var(--app-accent,var(--status-neutral)) 48%,var(--line))!important;
+  background:color-mix(in srgb,var(--app-accent,var(--status-neutral)) 14%,var(--surface-2))!important;
+  color:var(--app-accent,var(--status-neutral))!important;
+  font-weight:950!important;
+}
+.application-meta{color:var(--app-accent,var(--status-neutral))!important}
+.application-meta b{font-weight:950}
+.job-status-controls{
+  border-left:4px solid var(--app-accent,var(--status-neutral));
+  border-color:color-mix(in srgb,var(--app-accent,var(--status-neutral)) 34%,var(--line));
+  background:linear-gradient(135deg,color-mix(in srgb,var(--app-accent,var(--status-neutral)) 9%,var(--surface-2)),var(--surface-2));
+}
+.job-status-summary{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 1px 3px;color:var(--muted);font-size:10px;font-weight:900;letter-spacing:.055em;text-transform:uppercase}
+.job-status-summary strong{padding:4px 8px;border:1px solid color-mix(in srgb,var(--app-accent,var(--status-neutral)) 42%,var(--line));border-radius:999px;background:color-mix(in srgb,var(--app-accent,var(--status-neutral)) 13%,var(--surface));color:var(--app-accent,var(--status-neutral));font-size:10px}
+.application-select{
+  border-color:color-mix(in srgb,var(--app-accent,var(--status-neutral)) 52%,var(--line))!important;
+  background:color-mix(in srgb,var(--app-accent,var(--status-neutral)) 8%,var(--surface))!important;
+  box-shadow:inset 4px 0 0 var(--app-accent,var(--status-neutral));
+}
+.availability-select{
+  border-color:color-mix(in srgb,var(--availability-accent,var(--availability-neutral)) 50%,var(--line))!important;
+  background:color-mix(in srgb,var(--availability-accent,var(--availability-neutral)) 7%,var(--surface))!important;
+  box-shadow:inset 4px 0 0 var(--availability-accent,var(--availability-neutral));
+}
+.status-aware-table tbody tr.status-colored-row,.data-table tbody tr.status-colored-row{
+  --row-accent:var(--app-accent,var(--status-neutral));
+  background:linear-gradient(90deg,color-mix(in srgb,var(--row-accent) 9%,var(--surface)) 0,var(--surface) 30%);
+  box-shadow:inset 5px 0 0 var(--row-accent);
+}
+.table-application-badge{display:block;width:max-content;max-width:100%;margin-bottom:6px;padding:4px 7px;border:1px solid color-mix(in srgb,var(--app-accent,var(--status-neutral)) 42%,var(--line));border-radius:999px;background:color-mix(in srgb,var(--app-accent,var(--status-neutral)) 12%,var(--surface-2));color:var(--app-accent,var(--status-neutral));font-size:10px;font-weight:900}
+.drawer-status-surface{--drawer-accent:var(--app-accent,var(--status-neutral));margin:-3px;padding:15px;border-left:5px solid var(--drawer-accent);border-radius:14px;background:linear-gradient(135deg,color-mix(in srgb,var(--drawer-accent) 8%,var(--surface)),var(--surface) 35%)}
+.drawer-status-block{margin:15px 0;padding:13px;border:1px solid color-mix(in srgb,var(--app-accent,var(--status-neutral)) 34%,var(--line));border-radius:12px;background:color-mix(in srgb,var(--app-accent,var(--status-neutral)) 7%,var(--surface-2))}
+.drawer-status-block h3{margin:8px 0 4px}.drawer-status-block label{margin:5px 0 12px}
+.status-metric{border-top:4px solid var(--app-accent,var(--status-neutral));background:linear-gradient(160deg,color-mix(in srgb,var(--app-accent,var(--status-neutral)) 10%,var(--surface)),var(--surface))}
+.application-legend{display:inline-flex!important;align-items:center;gap:5px;flex-wrap:wrap;margin-top:7px}
+.application-legend i{display:inline-flex;padding:3px 6px;border:1px solid color-mix(in srgb,var(--app-accent,var(--status-neutral)) 42%,var(--line));border-radius:999px;background:color-mix(in srgb,var(--app-accent,var(--status-neutral)) 12%,var(--surface-2));color:var(--app-accent,var(--status-neutral));font-size:9px;font-style:normal;font-weight:900}
+@media(max-width:680px){.job-status-summary{align-items:flex-start;flex-direction:column}.application-legend{margin-top:9px}.status-colored-card{border-left-width:6px!important}}
+@media print{.status-colored-card{border-left:3px solid var(--app-accent,#64748b)!important;background:#fff!important;box-shadow:none!important}}

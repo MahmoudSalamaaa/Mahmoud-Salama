@@ -28,3 +28,8 @@
 - Added persistent status controls to Africa New Jobs, Retail/Healthcare/Lifestyle Jobs, and Canonical cards.
 - Expanded statuses to include Not Available, Not Suitable, Withdrawn, Follow-up, Broken Link and Deadline Approaching.
 - Connected all status changes to the shared Application Tracker and filters.
+
+- Added Remote4Africa Suitable Jobs page.
+- Added current public Remote4Africa job leads and official live-search routes.
+- Merged Remote4Africa into the platform, catalog, all-jobs, remote and priority datasets.
+- Applied profile ranking and application-status color controls to the new page.

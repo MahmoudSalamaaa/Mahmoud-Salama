@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-24",
+  "generated_at": "2026-07-27",
   "counts": {
-    "jobs": 1588,
+    "jobs": 1612,
     "verified_vacancies": 68,
-    "platform_indexed_vacancies": 1520,
-    "priority_jobs": 136,
+    "platform_indexed_vacancies": 1544,
+    "priority_jobs": 149,
     "live_searches": 25380,
     "companies": 2238,
     "multinationals": 235,
@@ -14,7 +14,7 @@
     "agencies": 674,
     "government": 300,
     "projects": 390,
-    "platforms": 178,
+    "platforms": 192,
     "sources": 23,
     "duplicates_merged": 1095,
     "issues": 1512,
@@ -24180,6 +24180,7 @@
     "The project includes every job and live-search record available in the supplied career databases.",
     "Official vacancies and employer career pages are distinguished from platform-indexed and live-search records.",
     "Canonical and the expanded multinational directory were merged into the complete intelligence system.",
-    "Current availability should always be rechecked on the linked official or platform source before applying."
+    "Current availability should always be rechecked on the linked official or platform source before applying.",
+    "Remote4Africa public listings were added as source-quality B platform records. Search-page records are labelled Live Search and must be rechecked before applying."
   ]
 }

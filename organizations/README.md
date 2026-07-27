@@ -126,3 +126,47 @@ Categories:
 - Career automation, interview preparation and language-learning tools
 
 The page ranks each platform for Mahmoud Salama's CTO, enterprise architecture, healthcare technology and digital-transformation profile.
+
+
+## Application Status Color System
+
+Every vacancy card, table row, status panel, details drawer and tracker metric now uses a semantic color based on **My Application Status**.
+
+Brand-aligned mapping:
+
+- Not Reviewed — neutral slate
+- Saved — gold
+- Interested — cyan
+- Shortlisted — teal
+- Applied — deep navy/cyan
+- Follow-up — gold/amber
+- Interview — bright cyan
+- Offer — success teal
+- Rejected / Not Available — soft red
+- Withdrawn / Not Suitable — muted red/slate
+- Ignored — neutral gray
+
+UI behavior:
+
+- 5px semantic status rail on every card
+- Low-saturation status background tint
+- Application-status badge in the top badge area
+- Status-colored application selector
+- Separate availability color on the availability selector
+- Immediate repaint after changing a status
+- Matching colors in table rows, details drawer and application tracker
+- Written labels remain visible so color is never the only status indicator
+
+## Remote4Africa Suitable Jobs
+
+Added `remote4africa-jobs.html` with public Remote4Africa listings and live searches checked on 27 July 2026.
+
+The page:
+- Includes only roles aligned with Mahmoud Salama's senior technology profile.
+- Ranks best-fit vacancies first.
+- Uses the full application-status and availability color system.
+- Preserves browser-local status selections.
+- Adds Remote4Africa to the main Platforms database.
+- Adds the curated vacancies to All Jobs, Remote Opportunities and Priority Jobs.
+- Clearly distinguishes direct vacancy pages from live-search results.
+- Notes that some full job details and application links require Remote4Africa registration or premium access.

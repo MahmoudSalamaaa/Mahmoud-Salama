@@ -1,5 +1,405 @@
 [
   {
+    "id": "platform-social-facebook",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "Facebook Job Posts",
+    "organization": "Facebook",
+    "subtitle": "Public employer, recruiter and government vacancy announcements.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Public employer, recruiter and government vacancy announcements. Social posts require employer verification before application.",
+    "source": "Facebook",
+    "url": "https://www.facebook.com/search/posts/?q=%22IT%20Director%22%20OR%20%22Enterprise%20Architect%22%20OR%20%22Digital%20Transformation%22%20Egypt%20hiring",
+    "source_quality": "B",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/search/posts/?q=%22IT%20Director%22%20OR%20%22Enterprise%20Architect%22%20OR%20%22Digital%20Transformation%22%20Egypt%20hiring",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 75,
+      "seniority": 75,
+      "industry": 75,
+      "location": 90,
+      "technology": 75,
+      "overall": 75
+    },
+    "match_score": 75,
+    "fit": "Medium",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-social-instagram",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "Instagram Hiring Posts",
+    "organization": "Instagram",
+    "subtitle": "Recruiter and employer vacancy graphics and hiring hashtags.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Recruiter and employer vacancy graphics and hiring hashtags. Social posts require employer verification before application.",
+    "source": "Instagram",
+    "url": "https://www.instagram.com/explore/tags/itjobs/",
+    "source_quality": "B",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/explore/tags/itjobs/",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 62,
+      "seniority": 62,
+      "industry": 62,
+      "location": 90,
+      "technology": 62,
+      "overall": 62
+    },
+    "match_score": 62,
+    "fit": "Low",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-social-x",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "X Live Hiring Search",
+    "organization": "X",
+    "subtitle": "Real-time public hiring and recruiter posts.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Real-time public hiring and recruiter posts. Social posts require employer verification before application.",
+    "source": "X",
+    "url": "https://x.com/search?q=%28%22enterprise%20architect%22%20OR%20%22IT%20director%22%20OR%20%22digital%20transformation%22%20OR%20%22technical%20program%20manager%22%29%20%28Egypt%20OR%20Cairo%20OR%20UAE%20OR%20Saudi%20OR%20Africa%20OR%20remote%29%20hiring&src=typed_query&f=live",
+    "source_quality": "B",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "X",
+        "url": "https://x.com/search?q=%28%22enterprise%20architect%22%20OR%20%22IT%20director%22%20OR%20%22digital%20transformation%22%20OR%20%22technical%20program%20manager%22%29%20%28Egypt%20OR%20Cairo%20OR%20UAE%20OR%20Saudi%20OR%20Africa%20OR%20remote%29%20hiring&src=typed_query&f=live",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 72,
+      "seniority": 72,
+      "industry": 72,
+      "location": 90,
+      "technology": 72,
+      "overall": 72
+    },
+    "match_score": 72,
+    "fit": "Medium",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-social-threads",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "Threads Hiring Search",
+    "organization": "Threads",
+    "subtitle": "Public recruiter and professional hiring discussions.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Public recruiter and professional hiring discussions. Social posts require employer verification before application.",
+    "source": "Threads",
+    "url": "https://www.threads.com/search?q=%22enterprise%20architect%22%20%22IT%20director%22%20hiring",
+    "source_quality": "B",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "Threads",
+        "url": "https://www.threads.com/search?q=%22enterprise%20architect%22%20%22IT%20director%22%20hiring",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 60,
+      "seniority": 60,
+      "industry": 60,
+      "location": 90,
+      "technology": 60,
+      "overall": 60
+    },
+    "match_score": 60,
+    "fit": "Low",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-social-reddit",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "Reddit Job Communities",
+    "organization": "Reddit",
+    "subtitle": "Community contracts, remote jobs and technical partnership posts.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Community contracts, remote jobs and technical partnership posts. Social posts require employer verification before application.",
+    "source": "Reddit",
+    "url": "https://www.reddit.com/search/?q=hiring%20%22technical%20program%20manager%22%20OR%20%22enterprise%20architect%22%20OR%20%22fractional%20CTO%22&sort=new",
+    "source_quality": "C",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "Reddit",
+        "url": "https://www.reddit.com/search/?q=hiring%20%22technical%20program%20manager%22%20OR%20%22enterprise%20architect%22%20OR%20%22fractional%20CTO%22&sort=new",
+        "quality": "C"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 58,
+      "seniority": 58,
+      "industry": 58,
+      "location": 90,
+      "technology": 58,
+      "overall": 58
+    },
+    "match_score": 58,
+    "fit": "Low",
+    "priority_tier": "Secondary",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-social-telegram",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "Telegram Job Channels",
+    "organization": "Telegram",
+    "subtitle": "Public job channels discovered through indexed searches.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Public job channels discovered through indexed searches. Social posts require employer verification before application.",
+    "source": "Telegram",
+    "url": "https://www.google.com/search?q=site%3At.me%20%28%22enterprise%20architect%22%20OR%20%22IT%20director%22%20OR%20%22digital%20transformation%22%29%20jobs",
+    "source_quality": "C",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "Telegram",
+        "url": "https://www.google.com/search?q=site%3At.me%20%28%22enterprise%20architect%22%20OR%20%22IT%20director%22%20OR%20%22digital%20transformation%22%29%20jobs",
+        "quality": "C"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 50,
+      "seniority": 50,
+      "industry": 50,
+      "location": 90,
+      "technology": 50,
+      "overall": 50
+    },
+    "match_score": 50,
+    "fit": "Low",
+    "priority_tier": "Secondary",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-social-tiktok",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "TikTok Career Posts",
+    "organization": "TikTok",
+    "subtitle": "Short-form vacancy and employer career content.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Short-form vacancy and employer career content. Social posts require employer verification before application.",
+    "source": "TikTok",
+    "url": "https://www.tiktok.com/search?q=enterprise%20architect%20jobs%20Egypt",
+    "source_quality": "C",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "TikTok",
+        "url": "https://www.tiktok.com/search?q=enterprise%20architect%20jobs%20Egypt",
+        "quality": "C"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 42,
+      "seniority": 42,
+      "industry": 42,
+      "location": 90,
+      "technology": 42,
+      "overall": 42
+    },
+    "match_score": 42,
+    "fit": "Low",
+    "priority_tier": "Secondary",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
+    "id": "platform-social-bluesky",
+    "record_type": "Social Job Discovery",
+    "category": "platform",
+    "title": "Bluesky Hiring Search",
+    "organization": "Bluesky",
+    "subtitle": "Open social-network hiring posts.",
+    "role_family": "Social Job Discovery",
+    "type": "Social Job Discovery",
+    "industry": "Employment & Career Services",
+    "region": "Global / Social",
+    "country": "Global",
+    "location": "Online",
+    "availability_status": "Active Search",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-27",
+    "age_days": null,
+    "posted_text": "Live search route",
+    "notes": "Open social-network hiring posts. Social posts require employer verification before application.",
+    "source": "Bluesky",
+    "url": "https://bsky.app/search?q=%22enterprise%20architect%22%20hiring",
+    "source_quality": "C",
+    "source_quality_label": "Social discovery source",
+    "verification_level": "Live social search — verify each post",
+    "sources": [
+      {
+        "name": "Bluesky",
+        "url": "https://bsky.app/search?q=%22enterprise%20architect%22%20hiring",
+        "quality": "C"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "social-media-jobs.html"
+    ],
+    "match": {
+      "role": 48,
+      "seniority": 48,
+      "industry": 48,
+      "location": 90,
+      "technology": 48,
+      "overall": 48
+    },
+    "match_score": 48,
+    "fit": "Low",
+    "priority_tier": "Secondary",
+    "is_priority": false,
+    "internal_profile": "./social-media-jobs.html"
+  },
+  {
     "id": "platform-remote4africa",
     "record_type": "Remote Job Platform",
     "category": "platform",

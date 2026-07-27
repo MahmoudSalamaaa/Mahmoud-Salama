@@ -1,0 +1,31 @@
+{
+  "edition": "Social Media Job Search Complete Edition",
+  "generated_at": "2026-07-27",
+  "curated_social_opportunities": 11,
+  "available_opportunities": 6,
+  "best_fit_opportunities": 9,
+  "source_platforms_represented": [
+    "Facebook",
+    "LinkedIn",
+    "LinkedIn Post",
+    "LinkedIn → Official Careers",
+    "Reddit"
+  ],
+  "live_social_searches": 15,
+  "social_platform_records_added": 8,
+  "verified_jobs_total": 1620,
+  "verified_jobs_added_after_deduplication": 8,
+  "priority_jobs_total": 158,
+  "priority_jobs_added_after_deduplication": 9,
+  "platforms_total": 200,
+  "catalog_total": 30815,
+  "html_pages": 52,
+  "files_inside_organizations": 215,
+  "local_links_checked": 2156,
+  "external_links_in_html": 33,
+  "missing_local_links": 0,
+  "invalid_local_links": 0,
+  "json_errors": 0,
+  "javascript_errors": 0,
+  "root_level_files": 0
+}

@@ -1,10 +1,10 @@
 {
   "generated_at": "2026-07-27",
   "counts": {
-    "jobs": 1612,
+    "jobs": 1620,
     "verified_vacancies": 68,
     "platform_indexed_vacancies": 1544,
-    "priority_jobs": 149,
+    "priority_jobs": 158,
     "live_searches": 25380,
     "companies": 2238,
     "multinationals": 235,
@@ -14,7 +14,7 @@
     "agencies": 674,
     "government": 300,
     "projects": 390,
-    "platforms": 192,
+    "platforms": 200,
     "sources": 23,
     "duplicates_merged": 1095,
     "issues": 1512,
@@ -24181,6 +24181,7 @@
     "Official vacancies and employer career pages are distinguished from platform-indexed and live-search records.",
     "Canonical and the expanded multinational directory were merged into the complete intelligence system.",
     "Current availability should always be rechecked on the linked official or platform source before applying.",
-    "Remote4Africa public listings were added as source-quality B platform records. Search-page records are labelled Live Search and must be rechecked before applying."
+    "Remote4Africa public listings were added as source-quality B platform records. Search-page records are labelled Live Search and must be rechecked before applying.",
+    "Social-media job records are graded by source: A for official/direct vacancies, B for public recruiter or employer posts requiring recheck, and C for community opportunities. Archived and non-employment records remain clearly labelled."
   ]
 }

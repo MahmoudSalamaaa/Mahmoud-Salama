@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-07-27",
-  "version": "Remote4Africa Profile-Ranked Complete Edition",
+  "version": "Social Media Job Search Complete Edition",
   "profile_name": "Mahmoud Salama",
   "profile_title": "Chief Technology & Digital Transformation Officer | Enterprise Architect",
   "datasets": {
@@ -65,7 +65,7 @@
       "count": 3256
     }
   },
-  "total_records": 30796,
+  "total_records": 30815,
   "availability_options": {
     "job": [
       "Available",
@@ -123,6 +123,15 @@
     "suitable_jobs": 24,
     "priority_jobs_added": 13,
     "live_searches": 10,
+    "checked": "2026-07-27"
+  },
+  "social_media_jobs": {
+    "page": "social-media-jobs.html",
+    "curated_opportunities": 11,
+    "active_available": 6,
+    "live_searches": 15,
+    "global_jobs_added": 8,
+    "priority_jobs_added": 9,
     "checked": "2026-07-27"
   }
 }

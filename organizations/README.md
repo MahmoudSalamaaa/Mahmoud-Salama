@@ -170,3 +170,19 @@ The page:
 - Adds the curated vacancies to All Jobs, Remote Opportunities and Priority Jobs.
 - Clearly distinguishes direct vacancy pages from live-search results.
 - Notes that some full job details and application links require Remote4Africa registration or premium access.
+
+## Social Media Jobs & Searches
+
+Added `social-media-jobs.html`.
+
+The page includes:
+- Publicly indexed suitable social-media opportunities.
+- LinkedIn employer vacancies and recruiter posts.
+- An archived Facebook example clearly marked Not Available.
+- A Reddit technical partnership clearly marked as project-based and not employment.
+- Live searches for Facebook, Instagram, X, Threads, Reddit, Telegram, TikTok, YouTube, Bluesky and Discord.
+- Source-quality grades and verification warnings.
+- Profile-fit ranking and the full colored application-status system.
+- CSV exports for opportunities and search routes.
+
+Only non-archived employment records are merged into the global job database, with title/employer deduplication.

@@ -33,3 +33,9 @@
 - Added current public Remote4Africa job leads and official live-search routes.
 - Merged Remote4Africa into the platform, catalog, all-jobs, remote and priority datasets.
 - Applied profile ranking and application-status color controls to the new page.
+
+- Added Social Media Jobs & Searches page.
+- Added curated suitable opportunities from publicly indexed social posts.
+- Added live searches for Facebook, Instagram, X, Threads, Reddit and other social platforms.
+- Added social discovery sources to the main platform database.
+- Applied source verification, profile ranking and colored application statuses.

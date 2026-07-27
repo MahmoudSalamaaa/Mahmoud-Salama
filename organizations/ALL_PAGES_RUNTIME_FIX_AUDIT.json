@@ -69,12 +69,12 @@
     {
       "page": "job-search-platforms.html",
       "dataset": "data/platforms.json",
-      "records": 202
+      "records": 201
     },
     {
       "page": "jobs.html",
       "dataset": "data/verified-jobs.json",
-      "records": 1620
+      "records": 1596
     },
     {
       "page": "live-searches.html",
@@ -129,12 +129,12 @@
     {
       "page": "platforms.html",
       "dataset": "data/platforms.json",
-      "records": 202
+      "records": 201
     },
     {
       "page": "priority-jobs.html",
       "dataset": "data/priority-jobs.json",
-      "records": 158
+      "records": 145
     },
     {
       "page": "private-company-directory.html",
@@ -169,12 +169,12 @@
     {
       "page": "remote-jobs.html",
       "dataset": "data/remote-opportunities.json",
-      "records": 1757
+      "records": 1733
     },
     {
       "page": "search.html",
       "dataset": "data/catalog.json",
-      "records": 30815
+      "records": 30790
     },
     {
       "page": "sources.html",
@@ -194,12 +194,11 @@
   ],
   "browser_tests": {
     "organizations.html": "3,256 results / 25 cards",
-    "jobs.html": "1,620 results / 25 cards",
-    "search.html": "30,815 results / 25 cards",
+    "jobs.html": "1,596 results / 25 cards",
+    "search.html": "30,790 results / 25 cards",
     "regional-employment.html": "5,207 results / 25 cards",
-    "platforms.html": "202 results / 25 cards",
+    "platforms.html": "201 results / 25 cards",
     "healthcare-it-companies-jobs.html": "24 vacancy cards",
-    "remote4africa-jobs.html": "24 vacancy cards",
     "social-media-jobs.html": "11 opportunity cards",
     "africa-new-jobs.html": "19 jobs",
     "linkedin-platforms.html": "20 platform cards",

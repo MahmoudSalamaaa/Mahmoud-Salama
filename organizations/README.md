@@ -157,19 +157,6 @@ UI behavior:
 - Matching colors in table rows, details drawer and application tracker
 - Written labels remain visible so color is never the only status indicator
 
-## Remote4Africa Suitable Jobs
-
-Added `remote4africa-jobs.html` with public Remote4Africa listings and live searches checked on 27 July 2026.
-
-The page:
-- Includes only roles aligned with Mahmoud Salama's senior technology profile.
-- Ranks best-fit vacancies first.
-- Uses the full application-status and availability color system.
-- Preserves browser-local status selections.
-- Adds Remote4Africa to the main Platforms database.
-- Adds the curated vacancies to All Jobs, Remote Opportunities and Priority Jobs.
-- Clearly distinguishes direct vacancy pages from live-search results.
-- Notes that some full job details and application links require Remote4Africa registration or premium access.
 
 ## Social Media Jobs & Searches
 

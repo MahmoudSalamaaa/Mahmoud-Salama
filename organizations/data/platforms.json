@@ -672,61 +672,6 @@
     "is_priority": true
   },
   {
-    "id": "platform-remote4africa",
-    "record_type": "Remote Job Platform",
-    "category": "platform",
-    "title": "Remote4Africa",
-    "organization": "Remote work community for African professionals",
-    "subtitle": "Verified remote and hybrid opportunities open to African countries",
-    "role_family": "Remote Job Platform",
-    "type": "Remote Job Platform",
-    "industry": "Employment & Career Services",
-    "region": "Africa / Global Remote",
-    "country": "Africa",
-    "location": "Online",
-    "availability_status": "Active Platform",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-27",
-    "age_days": null,
-    "posted_text": "Official platform",
-    "notes": "Remote-focused platform for African professionals. Strong relevance for global technology, architecture, project-management, cloud and healthcare-technology opportunities. Some full job details or application links require registration or premium access.",
-    "source": "Official Remote4Africa website",
-    "url": "https://remote4africa.com/",
-    "source_quality": "A",
-    "source_quality_label": "Official platform",
-    "verification_level": "Official",
-    "sources": [
-      {
-        "name": "Remote4Africa",
-        "url": "https://remote4africa.com/",
-        "quality": "A"
-      },
-      {
-        "name": "Current jobs",
-        "url": "https://remote4africa.com/jobs",
-        "quality": "A"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "remote4africa-jobs.html"
-    ],
-    "match": {
-      "role": 96,
-      "seniority": 92,
-      "industry": 94,
-      "location": 99,
-      "technology": 97,
-      "overall": 96
-    },
-    "match_score": 96,
-    "fit": "High",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "internal_profile": "./remote4africa-jobs.html"
-  },
-  {
     "id": "platform-00176",
     "record_type": "Job Platform",
     "category": "platform",

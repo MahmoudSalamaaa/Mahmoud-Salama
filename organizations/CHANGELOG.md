@@ -45,3 +45,9 @@
 - Added a Universal Job Preferences panel to every project page.
 - Integrated preferences into the generic listing search, filtering and ranking engine.
 - Added strict filtering, minimum fit, role-family, geography, work-model and engagement preferences.
+
+- Fixed Windows browser theme switching.
+- Set light mode as the first-load default across all pages.
+- Added a standalone, storage-safe theme controller.
+- Added localStorage, cookie and window.name persistence fallbacks.
+- Reset the legacy dark-default storage key by moving to careerTheme_v2.

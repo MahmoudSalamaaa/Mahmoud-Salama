@@ -1,0 +1,27 @@
+{
+  "edition": "Theme Fixed - Light Default Edition",
+  "generated_at": "2026-07-27",
+  "theme_default": "light",
+  "theme_storage_key": "careerTheme_v2",
+  "theme_script": "assets/theme.js",
+  "html_pages_updated": 63,
+  "storage_fallbacks": [
+    "localStorage",
+    "cookie",
+    "window.name"
+  ],
+  "legacy_theme_key_reused": false,
+  "html_pages": 63,
+  "files_inside_organizations": 233,
+  "pages_with_light_default": 63,
+  "pages_with_theme_controller": 63,
+  "theme_buttons_validated": 63,
+  "theme_functional_test": "theme-test-ok",
+  "local_links_checked": 2550,
+  "external_links_in_html": 104,
+  "missing_local_links": 0,
+  "invalid_local_links": 0,
+  "javascript_errors": 0,
+  "json_errors": 0,
+  "root_level_files": 0
+}

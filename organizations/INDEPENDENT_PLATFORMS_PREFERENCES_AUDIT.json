@@ -15,5 +15,11 @@
   "invalid_local_links": 0,
   "javascript_errors": 0,
   "json_errors": 0,
-  "root_level_files": 0
+  "root_level_files": 0,
+  "zip_top_level": [
+    "organizations"
+  ],
+  "zip_root_files": 0,
+  "zip_file_count": 232,
+  "zip_size_bytes": 12229416
 }

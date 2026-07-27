@@ -215,3 +215,14 @@ Preferences:
 - Hide rejected, withdrawn and not-suitable records
 
 Preferences are stored locally in the browser using `career_job_preferences_v1`.
+
+## Windows Browser Theme Fix
+
+- Light theme is the default on first load.
+- Added `assets/theme.js` as a standalone theme controller.
+- Theme switching works independently of the main application script.
+- Theme storage uses `localStorage` when available.
+- Cookie and `window.name` fallbacks support restrictive file-based browsing.
+- The previous `careerTheme` value is not reused; the new key is `careerTheme_v2`.
+- Theme buttons update their icon, title and accessibility label.
+- Every HTML page explicitly falls back to `data-theme="light"`.

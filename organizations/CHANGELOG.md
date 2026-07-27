@@ -45,3 +45,11 @@
 - Added a Universal Job Preferences panel to every project page.
 - Integrated preferences into the generic listing search, filtering and ranking engine.
 - Added strict filtering, minimum fit, role-family, geography, work-model and engagement preferences.
+
+- Fixed the shared browser runtime that left all generic listing pages displaying `Loading…`.
+- Removed an orphan duplicate table-return block from `assets/app.js`.
+- Added automatic fallback search when Web Workers are blocked or unavailable.
+- Added worker startup timeout and runtime error recovery.
+- Revalidated all HTML pages, data bundles, JSON files, JavaScript files and internal links.
+
+- Set Light mode as the default theme across all pages while preserving saved browser theme preferences.

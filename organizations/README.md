@@ -215,3 +215,20 @@ Preferences:
 - Hide rejected, withdrawn and not-suitable records
 
 Preferences are stored locally in the browser using `career_job_preferences_v1`.
+
+## All Pages Runtime Fix
+
+The shared listing runtime was repaired after a duplicated orphan `return` block in `assets/app.js` caused a browser-level `Illegal return statement`. Because the same runtime is used by the organization, vacancy, employer, platform, agency, project and regional pages, the error left all of those pages displaying `Loading…`.
+
+Repairs:
+- Removed the invalid duplicate table block.
+- Rebuilt the shared listing initialization function.
+- Preserved profile ranking, application-status colors and job preferences.
+- Added a built-in main-thread fallback when Blob Web Workers are unavailable, blocked by policy or fail during startup.
+- Added worker startup timeout and visible error recovery instead of leaving pages permanently on `Loading…`.
+- Browser-tested the unified catalog, organizations, jobs, regional employment, platforms and all custom vacancy pages.
+
+## Default Theme
+
+Light mode is now the default theme on first visit across all HTML pages.
+A theme previously selected by the user remains stored in the browser under `careerTheme` and continues to take precedence.

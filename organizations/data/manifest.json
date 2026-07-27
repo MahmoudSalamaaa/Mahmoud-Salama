@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-07-27",
-  "version": "Independent Platforms + Universal Preferences Edition",
+  "version": "All Pages Runtime Fixed Edition",
   "profile_name": "Mahmoud Salama",
   "profile_title": "Chief Technology & Digital Transformation Officer | Enterprise Architect",
   "datasets": {
@@ -157,5 +157,11 @@
     "regions": 5,
     "work_models": 3,
     "engagement_types": 4
+  },
+  "runtime_fix": {
+    "shared_file": "assets/app.js",
+    "root_cause": "An orphan duplicate table-return block caused a browser-level Illegal return statement and prevented all shared listing pages from initializing.",
+    "fix": "Removed the invalid block and added a synchronous search fallback when Web Workers are unavailable, blocked or fail to start.",
+    "fallback_enabled": true
   }
 }

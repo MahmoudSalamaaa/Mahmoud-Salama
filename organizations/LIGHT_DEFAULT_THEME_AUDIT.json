@@ -1,0 +1,18 @@
+{
+  "edition": "Light Default Theme Edition",
+  "default_theme": "light",
+  "saved_theme_precedence": true,
+  "local_storage_key": "careerTheme",
+  "html_pages": 63,
+  "pages_with_light_default": 63,
+  "pages_changed_from_dark_to_light": 62,
+  "pages_still_using_dark_default": 0,
+  "javascript_errors": 0,
+  "json_errors": 0,
+  "local_links_checked": 2487,
+  "external_links_in_html": 104,
+  "missing_local_links": 0,
+  "invalid_local_links": 0,
+  "files_inside_organizations": 233,
+  "root_level_files": 0
+}

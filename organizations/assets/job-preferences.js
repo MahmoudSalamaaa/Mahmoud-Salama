@@ -56,8 +56,8 @@
     consulting:['consulting','freelance','fractional','project based','independent'],
     parttime:['part time','part-time','hourly']
   };
-  const get=()=>{try{return Object.assign({},DEFAULTS,JSON.parse(localStorage.getItem(KEY)||'{}'))}catch{return Object.assign({},DEFAULTS,window.__careerPreferenceFallback||{})}};
-  const save=value=>{try{localStorage.setItem(KEY,JSON.stringify(value))}catch{window.__careerPreferenceFallback=value}};
+  const get=()=>{try{return Object.assign({},DEFAULTS,JSON.parse(localStorage.getItem(KEY)||'{}'))}catch{return {...DEFAULTS}}};
+  const save=value=>localStorage.setItem(KEY,JSON.stringify(value));
   const hasAny=(text,values,map)=>!values.length||values.some(key=>(map[key]||[]).some(word=>text.includes(word)));
   const badAvailability=value=>/^(expired|not available|inactive|broken link|closed|vacancy closed|no longer available)$/i.test(String(value||''));
   const badApplication=value=>/^(rejected|withdrawn|not suitable|ignored|not available)$/i.test(String(value||''));

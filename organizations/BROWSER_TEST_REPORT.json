@@ -1,0 +1,6 @@
+{
+  "status": "blocked_by_environment_policy",
+  "pages_attempted": 17,
+  "product_failures_confirmed": 0,
+  "message": "The container administrator blocked Chromium navigation to both localhost and file URLs (ERR_BLOCKED_BY_ADMINISTRATOR). Static validation completed successfully; this report does not classify the pages as failed."
+}

@@ -1,0 +1,30 @@
+{
+  "edition": "Cleaned Recovered Edition",
+  "generated_at": "2026-07-29T14:24:32.329762+00:00",
+  "html_pages": 17,
+  "json_files": 13,
+  "javascript_files": 13,
+  "local_missing_references": [],
+  "removed_categories": [
+    "static placeholder pages",
+    "live-search pages",
+    "platform-generated searches",
+    "Remote4Africa",
+    "duplicate alias pages"
+  ],
+  "provenance": "Rebuilt from files recoverable in the active workspace; not the earlier 284-file archive.",
+  "browser_test": {
+    "status": "blocked_by_environment_policy",
+    "pages_attempted": 17,
+    "product_failures_confirmed": 0,
+    "message": "The container administrator blocked Chromium navigation to both localhost and file URLs (ERR_BLOCKED_BY_ADMINISTRATOR). Static validation completed successfully; this report does not classify the pages as failed."
+  },
+  "static_validation": {
+    "status": "passed",
+    "html_pages": 17,
+    "javascript_files": 14,
+    "json_files": 14,
+    "missing_local_references": 0,
+    "syntax_errors": 0
+  }
+}

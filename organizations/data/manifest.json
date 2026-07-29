@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-07-29",
-  "version": "Hotels and Private Hospitals Employer Intelligence Edition",
+  "version": "Strategic Sectors Employer Intelligence Edition",
   "profile_name": "Mahmoud Salama",
   "profile_title": "Chief Technology & Digital Transformation Officer | Enterprise Architect",
   "datasets": {
@@ -22,7 +22,7 @@
     },
     "companies": {
       "file": "data/companies.json",
-      "count": 2448
+      "count": 2759
     },
     "multinationals": {
       "file": "data/multinationals.json",
@@ -65,7 +65,7 @@
       "count": 3256
     }
   },
-  "total_records": 31000,
+  "total_records": 31311,
   "availability_options": {
     "job": [
       "Available",
@@ -177,5 +177,27 @@
     "major_hotels_gcc": 60,
     "private_hospitals_egypt": 40,
     "private_hospitals_gcc": 60
+  },
+  "strategic_sectors": {
+    "hub": "strategic-sectors.html",
+    "datasets": {
+      "insurance-companies-egypt": 28,
+      "insurance-companies-gcc": 50,
+      "automotive-companies-egypt": 43,
+      "automotive-companies-gcc": 56,
+      "manufacturing-companies-egypt": 60,
+      "manufacturing-companies-gcc": 74
+    },
+    "new_records": 311,
+    "suggested_next_sectors": [
+      "Pharmaceutical & Medical Devices",
+      "Logistics, Ports, Aviation & Supply Chain",
+      "Telecom, Cloud & Data Centers",
+      "FinTech, Payments & Digital Banking",
+      "Energy, Utilities & Renewables",
+      "Consulting, BPO & IT Services",
+      "Construction, Real Estate & Smart Cities",
+      "FMCG, Retail & E-commerce"
+    ]
   }
 }

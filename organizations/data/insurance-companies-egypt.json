@@ -1,0 +1,1738 @@
+[
+  {
+    "id": "insurance-egypt-005",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "AXA Egypt",
+    "organization": "Composite Insurance",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Official careers",
+    "url": "https://www.axa-egypt.com/en/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official company career page",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.axa-egypt.com/en/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 97,
+      "seniority": 98,
+      "industry": 97,
+      "location": 99,
+      "technology": 97,
+      "overall": 97
+    },
+    "match_score": 97,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-003",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Allianz Insurance Egypt",
+    "organization": "Property & Casualty",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Official careers",
+    "url": "https://www.allianz.com.eg/en_GB/about-us/careers.html",
+    "source_quality": "A",
+    "source_quality_label": "Official company career page",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.allianz.com.eg/en_GB/about-us/careers.html",
+        "quality": "A"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 97,
+      "industry": 96,
+      "location": 99,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-004",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Allianz Life Assurance Egypt",
+    "organization": "Life Insurance",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Official careers",
+    "url": "https://www.allianz.com.eg/en_GB/about-us/careers.html",
+    "source_quality": "A",
+    "source_quality_label": "Official company career page",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.allianz.com.eg/en_GB/about-us/careers.html",
+        "quality": "A"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 97,
+      "industry": 96,
+      "location": 99,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-006",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "MetLife Egypt",
+    "organization": "Life & Medical Insurance",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Official careers",
+    "url": "https://www.metlife.com/about-us/careers/",
+    "source_quality": "A",
+    "source_quality_label": "Official company career page",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.metlife.com/about-us/careers/",
+        "quality": "A"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 97,
+      "industry": 96,
+      "location": 99,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-007",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "GIG Egypt",
+    "organization": "Composite Insurance",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=GIG%20Egypt%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=GIG%20Egypt%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 95,
+      "seniority": 96,
+      "industry": 95,
+      "location": 99,
+      "technology": 95,
+      "overall": 95
+    },
+    "match_score": 95,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-001",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Misr Insurance",
+    "organization": "Property & Casualty",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Official careers",
+    "url": "https://misrins.com.eg/",
+    "source_quality": "A",
+    "source_quality_label": "Official company career page",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://misrins.com.eg/",
+        "quality": "A"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 95,
+      "seniority": 96,
+      "industry": 95,
+      "location": 99,
+      "technology": 95,
+      "overall": 95
+    },
+    "match_score": 95,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-008",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Chubb Egypt",
+    "organization": "Property & Casualty",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Official careers",
+    "url": "https://careers.chubb.com/global/en",
+    "source_quality": "A",
+    "source_quality_label": "Official company career page",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://careers.chubb.com/global/en",
+        "quality": "A"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 94,
+      "seniority": 95,
+      "industry": 94,
+      "location": 99,
+      "technology": 94,
+      "overall": 94
+    },
+    "match_score": 94,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-002",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Misr Life Insurance",
+    "organization": "Life Insurance",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Official careers",
+    "url": "https://www.misrlife.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official company career page",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.misrlife.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 94,
+      "seniority": 95,
+      "industry": 94,
+      "location": 99,
+      "technology": 94,
+      "overall": 94
+    },
+    "match_score": 94,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-014",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Egyptian Takaful Property & Liability",
+    "organization": "Takaful",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Egyptian%20Takaful%20Property%20%26%20Liability%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Egyptian%20Takaful%20Property%20%26%20Liability%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 91,
+      "seniority": 92,
+      "industry": 91,
+      "location": 99,
+      "technology": 91,
+      "overall": 91
+    },
+    "match_score": 91,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-025",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Sarwa Insurance",
+    "organization": "Property & Casualty",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Sarwa%20Insurance%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Sarwa%20Insurance%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 91,
+      "seniority": 92,
+      "industry": 91,
+      "location": 99,
+      "technology": 91,
+      "overall": 91
+    },
+    "match_score": 91,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-009",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Suez Canal Insurance",
+    "organization": "Property & Casualty",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Suez%20Canal%20Insurance%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Suez%20Canal%20Insurance%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 91,
+      "seniority": 92,
+      "industry": 91,
+      "location": 99,
+      "technology": 91,
+      "overall": 91
+    },
+    "match_score": 91,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-021",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Tokio Marine Egypt Family Takaful",
+    "organization": "Takaful Life",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Official careers",
+    "url": "https://www.tokiomarine.com/eg/en/careers.html",
+    "source_quality": "A",
+    "source_quality_label": "Official company career page",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.tokiomarine.com/eg/en/careers.html",
+        "quality": "A"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 91,
+      "seniority": 92,
+      "industry": 91,
+      "location": 99,
+      "technology": 91,
+      "overall": 91
+    },
+    "match_score": 91,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-022",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Tokio Marine General Takaful Egypt",
+    "organization": "Takaful",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Official careers",
+    "url": "https://www.tokiomarine.com/eg/en/careers.html",
+    "source_quality": "A",
+    "source_quality_label": "Official company career page",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.tokiomarine.com/eg/en/careers.html",
+        "quality": "A"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 91,
+      "seniority": 92,
+      "industry": 91,
+      "location": 99,
+      "technology": 91,
+      "overall": 91
+    },
+    "match_score": 91,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-012",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Delta Insurance",
+    "organization": "Property & Casualty",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Delta%20Insurance%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Delta%20Insurance%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 91,
+      "industry": 90,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-015",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Egyptian Takaful Life",
+    "organization": "Takaful Life",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Egyptian%20Takaful%20Life%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Egyptian%20Takaful%20Life%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 91,
+      "industry": 90,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-016",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Misr Takaful Insurance",
+    "organization": "Takaful",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Misr%20Takaful%20Insurance%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Misr%20Takaful%20Insurance%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 91,
+      "industry": 90,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-010",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Mohandes Insurance",
+    "organization": "Property & Casualty",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Mohandes%20Insurance%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mohandes%20Insurance%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 91,
+      "industry": 90,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-018",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Salama Egypt",
+    "organization": "Takaful Life",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Salama%20Egypt%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Salama%20Egypt%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 91,
+      "industry": 90,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-026",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Sarwa Life Insurance",
+    "organization": "Life Insurance",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Sarwa%20Life%20Insurance%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Sarwa%20Life%20Insurance%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 91,
+      "industry": 90,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-019",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "AROPE Insurance Egypt",
+    "organization": "Property & Casualty",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=AROPE%20Insurance%20Egypt%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=AROPE%20Insurance%20Egypt%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 89,
+      "seniority": 90,
+      "industry": 89,
+      "location": 99,
+      "technology": 89,
+      "overall": 89
+    },
+    "match_score": 89,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-020",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "AROPE Life Insurance Egypt",
+    "organization": "Life Insurance",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=AROPE%20Life%20Insurance%20Egypt%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=AROPE%20Life%20Insurance%20Egypt%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 89,
+      "seniority": 90,
+      "industry": 89,
+      "location": 99,
+      "technology": 89,
+      "overall": 89
+    },
+    "match_score": 89,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-013",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Delta Life Assurance",
+    "organization": "Life Insurance",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Delta%20Life%20Assurance%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Delta%20Life%20Assurance%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 89,
+      "seniority": 90,
+      "industry": 89,
+      "location": 99,
+      "technology": 89,
+      "overall": 89
+    },
+    "match_score": 89,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-028",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Egyptian Saudi Insurance House",
+    "organization": "Composite Insurance",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Egyptian%20Saudi%20Insurance%20House%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Egyptian%20Saudi%20Insurance%20House%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 89,
+      "seniority": 90,
+      "industry": 89,
+      "location": 99,
+      "technology": 89,
+      "overall": 89
+    },
+    "match_score": 89,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-017",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Misr Takaful Life",
+    "organization": "Takaful Life",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Misr%20Takaful%20Life%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Misr%20Takaful%20Life%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 89,
+      "seniority": 90,
+      "industry": 89,
+      "location": 99,
+      "technology": 89,
+      "overall": 89
+    },
+    "match_score": 89,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-011",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Mohandes Life Insurance",
+    "organization": "Life Insurance",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Mohandes%20Life%20Insurance%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mohandes%20Life%20Insurance%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 89,
+      "seniority": 90,
+      "industry": 89,
+      "location": 99,
+      "technology": 89,
+      "overall": 89
+    },
+    "match_score": 89,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-023",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Orient Takaful Insurance Egypt",
+    "organization": "Takaful",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Orient%20Takaful%20Insurance%20Egypt%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Orient%20Takaful%20Insurance%20Egypt%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 89,
+      "seniority": 90,
+      "industry": 89,
+      "location": 99,
+      "technology": 89,
+      "overall": 89
+    },
+    "match_score": 89,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-027",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "MADA Insurance",
+    "organization": "Property & Casualty",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=MADA%20Insurance%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=MADA%20Insurance%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 88,
+      "seniority": 89,
+      "industry": 88,
+      "location": 99,
+      "technology": 88,
+      "overall": 88
+    },
+    "match_score": 88,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  },
+  {
+    "id": "insurance-egypt-024",
+    "record_type": "Strategic Sector Employer",
+    "category": "company",
+    "title": "Royal Insurance Egypt",
+    "organization": "Property & Casualty",
+    "subtitle": "Egypt · Insurance & InsurTech",
+    "role_family": "Insurance & InsurTech",
+    "type": "Insurance & InsurTech",
+    "industry": "Insurance & InsurTech",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Egypt",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "age_days": null,
+    "posted_text": "Licensed or major insurance employer in Egypt",
+    "notes": "Licensed or major insurance employer in Egypt. Target technology strategy, enterprise architecture, digital transformation, data, cloud, cybersecurity, ERP/CRM, program delivery and technology-enabled operations roles.",
+    "source": "Live employer job search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Royal%20Insurance%20Egypt%20Egypt&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify the vacancy and employer",
+    "sources": [
+      {
+        "name": "Career or vacancy route",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Royal%20Insurance%20Egypt%20Egypt&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Directory methodology",
+        "url": "https://fra.gov.eg/سجلات-في-مجال-التأمين/?filtered_type=insurance-and-reinsurance-companies&taxonomy_filter=company_records_1_1_3_3",
+        "quality": "A"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "insurance-companies-egypt.html"
+    ],
+    "match": {
+      "role": 88,
+      "seniority": 89,
+      "industry": 88,
+      "location": 99,
+      "technology": 88,
+      "overall": 88
+    },
+    "match_score": 88,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "selection_basis": "Licensed or major insurance employer in Egypt",
+    "focus_tags": [
+      "Insurance & InsurTech",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Technology Leadership"
+    ]
+  }
+]

@@ -245,3 +245,9 @@ All four listing pages include:
 - Responsive desktop and mobile layouts
 
 The directories are employer-targeting resources, not hotel-quality or hospital-quality rankings.
+
+## Strategic Sector Employers
+
+Added six separate directories and 311 employer records for insurance, automotive and manufacturing companies in Egypt and the GCC.
+
+Suggested next sectors: pharmaceuticals and medical devices; logistics and aviation; telecom, cloud and data centers; fintech; energy; consulting and BPO; smart cities; FMCG and e-commerce.

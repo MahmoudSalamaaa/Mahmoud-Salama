@@ -59,3 +59,6 @@
 - Added 100 major private hospital facilities across Egypt and the GCC.
 - Added official career routes, live searches, status controls, profile ranking, filters and CSV exports.
 - Integrated the new records into All Employers and Unified Search.
+
+- Added Strategic Sector Employers hub and six directories with 311 companies.
+- Integrated all new records into All Employers and Unified Search.

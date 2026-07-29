@@ -56,8 +56,10 @@
     consulting:['consulting','freelance','fractional','project based','independent'],
     parttime:['part time','part-time','hourly']
   };
-  const get=()=>{try{return Object.assign({},DEFAULTS,JSON.parse(localStorage.getItem(KEY)||'{}'))}catch{return {...DEFAULTS}}};
-  const save=value=>localStorage.setItem(KEY,JSON.stringify(value));
+  const stores=()=>{const out=[];for(const name of ['localStorage','sessionStorage']){try{const store=globalThis[name];if(store)out.push(store)}catch{}}return out};
+  let memory={};
+  const get=()=>{for(const store of stores()){try{return Object.assign({},DEFAULTS,JSON.parse(store.getItem(KEY)||'{}'))}catch{}}return Object.assign({},DEFAULTS,memory)};
+  const save=value=>{memory=Object.assign({},value);for(const store of stores()){try{store.setItem(KEY,JSON.stringify(value));return true}catch{}}return false};
   const hasAny=(text,values,map)=>!values.length||values.some(key=>(map[key]||[]).some(word=>text.includes(word)));
   const badAvailability=value=>/^(expired|not available|inactive|broken link|closed|vacancy closed|no longer available)$/i.test(String(value||''));
   const badApplication=value=>/^(rejected|withdrawn|not suitable|ignored|not available)$/i.test(String(value||''));

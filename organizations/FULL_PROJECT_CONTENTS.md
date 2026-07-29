@@ -1,98 +1,86 @@
-# Mahmoud Salama Career Intelligence — FULL FINAL Project
+# Mahmoud Salama Career Intelligence — Final Project Contents
 
-This package is the complete project. Every required file is inside the `organizations` folder.
+## Inventory
 
-## Main entry points
-
-- `index.html` — main dashboard
-- `directory.html` — complete page directory
-- `search.html` — unified search
-- `jobs.html` — all jobs
-- `multinationals.html` — multinational employers
-- `africa-new-jobs.html` — LinkedIn, Workable, Recruitera and Africa jobs
-- `retail-healthcare-lifestyle-jobs.html` — malls, retail, healthcare, spa, massage, salon and beauty jobs
-- `canonical.html` — Canonical opportunity center
-- `tracker.html` — application tracker
-
-## Verified inventory
-
-- HTML pages: 47
-- Total files: 187
-- JavaScript files: 36
-- JSON datasets: 42
-- CSV exports: 53
+- HTML pages: 63
+- Total current files: calculated at packaging time in `FINAL_CLEANUP_AUDIT.json`
+- JavaScript files: 47
+- JSON files: 53
+- CSV files: 59
 - CSS files: 1
-- Local links checked: 1751
-- Missing local links: 0
-- Invalid root/parent links: 0
-
-## Major datasets
-
-- Catalog Records: 30771
-- Verified Jobs: 1588
-- Companies: 2238
-- Multinationals: 235
-- Platforms: 178
-- Agencies: 674
-- Government Sources: 300
-- Projects: 390
-- Africa New Jobs: 22
-- Africa New Resources: 20
-- Retail Healthcare Lifestyle Jobs: 18
-- Retail Healthcare Lifestyle Employers: 16
-
-## Deployment
-
-Upload the complete `organizations` folder. Do not upload any project file to the website root.
-
-All project links and assets use folder-relative paths beginning with `./`.
+- Catalog records: 16,611
 
 ## Complete HTML page list
 
+- `abb-jobs.html` — ABB Suitable Jobs
 - `africa-new-jobs.html` — New Africa Jobs | Mahmoud Salama Career Intelligence
 - `africa-vacancies.html` — Africa Opportunities
 - `agencies.html` — Recruitment Agencies
 - `arab-vacancies.html` — Arab Region Opportunities
-- `automotive-companies.html` — Automotive & Mobility Employers
+- `automotive-companies-egypt.html` — Automotive Companies in Egypt
+- `automotive-companies-gcc.html` — Automotive Companies in the GCC
+- `automotive-companies.html` — Automotive &amp; Mobility Employers
 - `canonical.html` — Canonical Opportunity Center
 - `companies.html` — All Employers
 - `contacts.html` — Contact Tracker
+- `contra-platform.html` — Contra Platform Strategy
 - `data-quality.html` — Data Quality Dashboard
 - `directory.html` — Complete Project Directory
 - `egypt-vacancies.html` — Egypt Opportunities
-- `energy-companies.html` — Energy & Infrastructure Employers
-- `fmcg-companies.html` — FMCG & Manufacturing Employers
+- `energy-companies.html` — Energy &amp; Infrastructure Employers
+- `fiverr-platform.html` — Fiverr Platform Strategy
+- `flexjobs-platform.html` — FlexJobs Platform Strategy
+- `fmcg-companies.html` — FMCG &amp; Manufacturing Employers
+- `freelancer-platform.html` — Freelancer.com Platform Strategy
 - `gcc-vacancies.html` — GCC Opportunities
-- `government-jobs.html` — Government Jobs & Portals
-- `government.html` — Government & Public-Sector Portals
-- `healthcare-companies.html` — Healthcare, Pharma & MedTech Employers
+- `government.html` — Government &amp; Public-Sector Portals
+- `guru-platform.html` — Guru Platform Strategy
+- `healthcare-companies.html` — Healthcare, Pharma &amp; MedTech Employers
+- `healthcare-it-companies-jobs.html` — Healthcare IT Companies & Suitable Vacancies
+- `hotels-private-hospitals.html` — Hotels & Private Hospitals
+- `independent-work-platforms.html` — Independent Work Platforms
 - `index.html` — Career Intelligence Dashboard
-- `job-search-platforms.html` — Job Search Platforms
+- `insurance-companies-egypt.html` — Major Insurance Companies in Egypt
+- `insurance-companies-gcc.html` — Major Insurance Companies in the GCC
 - `jobs.html` — All Job Records
-- `live-searches.html` — All Live Job Searches
-- `medical-companies.html` — Medical Companies
+- `linkedin-platforms.html` — LinkedIn Post Job Platforms
+- `major-hotels-egypt.html` — Major Hotels in Egypt
+- `major-hotels-gcc.html` — Major Hotels in the GCC
+- `manufacturing-companies-egypt.html` — Major Manufacturing Companies in Egypt
+- `manufacturing-companies-gcc.html` — Major Manufacturing Companies in the GCC
 - `multinationals.html` — Priority Multinationals
-- `official-jobs.html` — Official & Primary-Source Jobs
+- `official-jobs.html` — Official &amp; Primary-Source Jobs
 - `organizations.html` — All Organizations
-- `platform-search-africa.html` — Africa Platform Searches
-- `platform-search-arab.html` — Arab Platform Searches
-- `platform-search-egypt.html` — Egypt Platform Searches
-- `platform-search-gcc.html` — GCC Platform Searches
-- `platform-search-hub.html` — Platform Search Hub
-- `platform-search-remote.html` — Remote Platform Searches
-- `platforms.html` — Job Platforms & Career Resources
+- `peopleperhour-platform.html` — PeoplePerHour Platform Strategy
+- `platforms.html` — Job Platforms &amp; Career Resources
 - `priority-jobs.html` — Priority Job Matches
-- `private-company-directory.html` — Private Company Directory
-- `project-opportunities.html` — Project Opportunities
-- `projects.html` — Projects, Tenders & Consultancies
-- `recruitment-agencies.html` — Recruitment Agency Directory
+- `private-hospitals-egypt.html` — Major Private Hospitals in Egypt
+- `private-hospitals-gcc.html` — Major Private Hospitals in the GCC
+- `projects.html` — Projects, Tenders &amp; Consultancies
 - `regional-employment.html` — Regional Employment Hub
 - `regional-private-companies.html` — Regional Private Companies
-- `remote-jobs.html` — Remote & Global Opportunities
+- `remote-jobs.html` — Remote &amp; Global Opportunities
 - `retail-healthcare-lifestyle-jobs.html` — Retail, Healthcare & Lifestyle Jobs
 - `saved-searches.html` — Saved Searches
 - `search.html` — Unified Search
+- `social-media-jobs.html` — Social Media Jobs & Searches
 - `sources.html` — Source Directory
-- `supply-chain-companies.html` — Supply Chain, Logistics & Ports
-- `technology-companies.html` — Technology, Cloud & Consulting
+- `strategic-sectors.html` — Strategic Sector Employers
+- `supply-chain-companies.html` — Supply Chain, Logistics &amp; Ports
+- `technology-companies.html` — Technology, Cloud &amp; Consulting
+- `top-100-companies-egypt.html` — Top 100 Companies in Egypt
+- `top-100-companies-gcc.html` — Top 100 Companies in the GCC
+- `toptal-platform.html` — Toptal Platform Strategy
 - `tracker.html` — Application Tracker
+- `upwork-platform.html` — Upwork Platform Strategy
+- `wellfound-platform.html` — Wellfound Platform Strategy
+- `weworkremotely-platform.html` — We Work Remotely Platform Strategy
+
+## Folder structure
+
+- `assets/` — shared CSS, runtime, preferences, logo and imagery.
+- `data/` — cleaned JSON datasets, CSV exports and page-specific JavaScript bridges.
+- `automation/` — optional authorized-source update templates.
+- Root HTML pages — dashboards, listings, directories, trackers and specialty pages.
+
+No project file is required outside the `organizations` folder.

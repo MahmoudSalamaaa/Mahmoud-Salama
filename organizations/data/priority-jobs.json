@@ -1970,55 +1970,6 @@
     "application_status": "Not Reviewed"
   },
   {
-    "id": "job-00052",
-    "record_type": "Platform-Indexed Vacancy",
-    "category": "job",
-    "title": "Data Governance Manager — Google Live Search",
-    "organization": "Egypt",
-    "subtitle": "Egypt",
-    "role_family": "Live Job Search",
-    "type": "Live Job Search",
-    "region": "Egypt",
-    "country": "Egypt",
-    "location": "Live / varies",
-    "availability_status": "Possibly Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "Live search sorted toward newest results",
-    "notes": "Egypt live-search pack. This is a live search link, not one fixed vacancy.",
-    "source": "Google",
-    "url": "https://www.google.com/search?q=Egypt+Data+Governance+Manager+jobs+posted+this+week",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Google",
-        "url": "https://www.google.com/search?q=Egypt+Data+Governance+Manager+jobs+posted+this+week",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 1,
-    "origin_pages": [
-      "egypt-vacancies.csv",
-      "regional-private-companies.csv"
-    ],
-    "match": {
-      "role": 47,
-      "seniority": 92,
-      "industry": 45,
-      "location": 100,
-      "technology": 56,
-      "overall": 65
-    },
-    "match_score": 65,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "application_status": "Not Reviewed"
-  },
-  {
     "id": "job-00219",
     "record_type": "Platform-Indexed Vacancy",
     "category": "job",
@@ -3146,55 +3097,6 @@
     "application_status": "Not Reviewed"
   },
   {
-    "id": "job-00020",
-    "record_type": "Platform-Indexed Vacancy",
-    "category": "job",
-    "title": "Enterprise Architect — Google Live Search",
-    "organization": "Egypt",
-    "subtitle": "Egypt",
-    "role_family": "Live Job Search",
-    "type": "Live Job Search",
-    "region": "Egypt",
-    "country": "Egypt",
-    "location": "Live / varies",
-    "availability_status": "Possibly Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "Live search sorted toward newest results",
-    "notes": "Egypt live-search pack. This is a live search link, not one fixed vacancy.",
-    "source": "Google",
-    "url": "https://www.google.com/search?q=Egypt+Enterprise+Architect+jobs+posted+this+week",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Google",
-        "url": "https://www.google.com/search?q=Egypt+Enterprise+Architect+jobs+posted+this+week",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 1,
-    "origin_pages": [
-      "egypt-vacancies.csv",
-      "regional-private-companies.csv"
-    ],
-    "match": {
-      "role": 47,
-      "seniority": 92,
-      "industry": 56,
-      "location": 100,
-      "technology": 47,
-      "overall": 65
-    },
-    "match_score": 65,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "application_status": "Not Reviewed"
-  },
-  {
     "id": "job-00195",
     "record_type": "Platform-Indexed Vacancy",
     "category": "job",
@@ -4215,55 +4117,6 @@
       "seniority": 92,
       "industry": 45,
       "location": 95,
-      "technology": 38,
-      "overall": 65
-    },
-    "match_score": 65,
-    "fit": "Medium",
-    "industry": "Other Multinational & Enterprise",
-    "application_status": "Not Reviewed"
-  },
-  {
-    "id": "job-00032",
-    "record_type": "Platform-Indexed Vacancy",
-    "category": "job",
-    "title": "IT Director — Google Live Search",
-    "organization": "Egypt",
-    "subtitle": "Egypt",
-    "role_family": "Live Job Search",
-    "type": "Live Job Search",
-    "region": "Egypt",
-    "country": "Egypt",
-    "location": "Live / varies",
-    "availability_status": "Possibly Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "Live search sorted toward newest results",
-    "notes": "Egypt live-search pack. This is a live search link, not one fixed vacancy.",
-    "source": "Google",
-    "url": "https://www.google.com/search?q=Egypt+IT+Director+jobs+posted+this+week",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Google",
-        "url": "https://www.google.com/search?q=Egypt+IT+Director+jobs+posted+this+week",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 1,
-    "origin_pages": [
-      "egypt-vacancies.csv",
-      "regional-private-companies.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 45,
-      "location": 100,
       "technology": 38,
       "overall": 65
     },
@@ -5351,55 +5204,6 @@
     "application_status": "Not Reviewed"
   },
   {
-    "id": "job-00072",
-    "record_type": "Platform-Indexed Vacancy",
-    "category": "job",
-    "title": "Technical Program Manager — Google Live Search",
-    "organization": "Egypt",
-    "subtitle": "Egypt",
-    "role_family": "Live Job Search",
-    "type": "Live Job Search",
-    "region": "Egypt",
-    "country": "Egypt",
-    "location": "Live / varies",
-    "availability_status": "Possibly Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "Live search sorted toward newest results",
-    "notes": "Egypt live-search pack. This is a live search link, not one fixed vacancy.",
-    "source": "Google",
-    "url": "https://www.google.com/search?q=Egypt+Technical+Program+Manager+jobs+posted+this+week",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Google",
-        "url": "https://www.google.com/search?q=Egypt+Technical+Program+Manager+jobs+posted+this+week",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 1,
-    "origin_pages": [
-      "egypt-vacancies.csv",
-      "regional-private-companies.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 45,
-      "location": 100,
-      "technology": 38,
-      "overall": 65
-    },
-    "match_score": 65,
-    "fit": "Medium",
-    "industry": "Other Multinational & Enterprise",
-    "application_status": "Not Reviewed"
-  },
-  {
     "id": "job-00234",
     "record_type": "Platform-Indexed Vacancy",
     "category": "job",
@@ -6420,55 +6224,6 @@
       "seniority": 92,
       "industry": 45,
       "location": 95,
-      "technology": 38,
-      "overall": 65
-    },
-    "match_score": 65,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "application_status": "Not Reviewed"
-  },
-  {
-    "id": "job-00040",
-    "record_type": "Platform-Indexed Vacancy",
-    "category": "job",
-    "title": "Technology Director — Google Live Search",
-    "organization": "Egypt",
-    "subtitle": "Egypt",
-    "role_family": "Live Job Search",
-    "type": "Live Job Search",
-    "region": "Egypt",
-    "country": "Egypt",
-    "location": "Live / varies",
-    "availability_status": "Possibly Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "Live search sorted toward newest results",
-    "notes": "Egypt live-search pack. This is a live search link, not one fixed vacancy.",
-    "source": "Google",
-    "url": "https://www.google.com/search?q=Egypt+Technology+Director+jobs+posted+this+week",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "Google",
-        "url": "https://www.google.com/search?q=Egypt+Technology+Director+jobs+posted+this+week",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 1,
-    "origin_pages": [
-      "egypt-vacancies.csv",
-      "regional-private-companies.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 45,
-      "location": 100,
       "technology": 38,
       "overall": 65
     },

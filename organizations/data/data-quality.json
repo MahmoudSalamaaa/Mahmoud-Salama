@@ -1,27 +1,29 @@
 {
-  "generated_at": "2026-07-27",
+  "generated_at": "2026-07-29",
   "counts": {
-    "jobs": 1596,
+    "jobs": 1371,
     "verified_vacancies": 68,
     "platform_indexed_vacancies": 1528,
-    "priority_jobs": 145,
-    "live_searches": 25380,
-    "companies": 2238,
-    "multinationals": 235,
-    "healthcare_companies": 888,
-    "supply_chain_companies": 192,
-    "technology_companies": 1019,
-    "agencies": 674,
-    "government": 300,
+    "priority_jobs": 140,
+    "companies": 2014,
+    "multinationals": 212,
+    "healthcare_companies": 518,
+    "supply_chain_companies": 72,
+    "technology_companies": 675,
+    "agencies": 353,
+    "government": 100,
     "projects": 390,
-    "platforms": 201,
+    "platforms": 199,
     "sources": 23,
     "duplicates_merged": 1095,
-    "issues": 1512,
+    "issues": 1287,
     "missing_urls": 0,
     "missing_dates": 1512,
     "unverified_sources": 5187,
-    "old_jobs": 171
+    "old_jobs": 171,
+    "official_jobs": 68,
+    "organizations": 1991,
+    "catalog_records": 16611
   },
   "source_quality": {
     "B": 24246,
@@ -56,12 +58,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00020",
-      "message": "Enterprise Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00021",
       "message": "Solution Architect — LinkedIn Live Search has no normalized publication date"
     },
@@ -76,12 +72,6 @@
       "type": "Missing publication date",
       "record_id": "job-00023",
       "message": "Solution Architect — Bayt Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-00024",
-      "message": "Solution Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -104,12 +94,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00028",
-      "message": "Digital Transformation Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00029",
       "message": "IT Director — LinkedIn Live Search has no normalized publication date"
     },
@@ -124,12 +108,6 @@
       "type": "Missing publication date",
       "record_id": "job-00031",
       "message": "IT Director — Bayt Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-00032",
-      "message": "IT Director — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -152,12 +130,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00036",
-      "message": "Head of Technology — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00037",
       "message": "Technology Director — LinkedIn Live Search has no normalized publication date"
     },
@@ -172,12 +144,6 @@
       "type": "Missing publication date",
       "record_id": "job-00039",
       "message": "Technology Director — Bayt Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-00040",
-      "message": "Technology Director — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -200,12 +166,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00044",
-      "message": "IT Strategy Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00045",
       "message": "Data Architect — LinkedIn Live Search has no normalized publication date"
     },
@@ -220,12 +180,6 @@
       "type": "Missing publication date",
       "record_id": "job-00047",
       "message": "Data Architect — Bayt Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-00048",
-      "message": "Data Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -248,12 +202,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00052",
-      "message": "Data Governance Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00053",
       "message": "Chief Data Officer — LinkedIn Live Search has no normalized publication date"
     },
@@ -268,12 +216,6 @@
       "type": "Missing publication date",
       "record_id": "job-00055",
       "message": "Chief Data Officer — Bayt Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-00056",
-      "message": "Chief Data Officer — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -296,12 +238,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00060",
-      "message": "Healthcare IT Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00061",
       "message": "Health Informatics — LinkedIn Live Search has no normalized publication date"
     },
@@ -316,12 +252,6 @@
       "type": "Missing publication date",
       "record_id": "job-00063",
       "message": "Health Informatics — Bayt Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-00064",
-      "message": "Health Informatics — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -344,12 +274,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00068",
-      "message": "Digital Health — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00069",
       "message": "Technical Program Manager — LinkedIn Live Search has no normalized publication date"
     },
@@ -364,12 +288,6 @@
       "type": "Missing publication date",
       "record_id": "job-00071",
       "message": "Technical Program Manager — Bayt Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-00072",
-      "message": "Technical Program Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -392,12 +310,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00076",
-      "message": "IT Portfolio Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00077",
       "message": "PMO Manager — LinkedIn Live Search has no normalized publication date"
     },
@@ -412,12 +324,6 @@
       "type": "Missing publication date",
       "record_id": "job-00079",
       "message": "PMO Manager — Bayt Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-00080",
-      "message": "PMO Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -440,12 +346,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00084",
-      "message": "Cloud Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00085",
       "message": "Integration Architect — LinkedIn Live Search has no normalized publication date"
     },
@@ -460,12 +360,6 @@
       "type": "Missing publication date",
       "record_id": "job-00087",
       "message": "Integration Architect — Bayt Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-00088",
-      "message": "Integration Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -488,12 +382,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00092",
-      "message": "Enterprise Applications Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00093",
       "message": "Cybersecurity Manager — LinkedIn Live Search has no normalized publication date"
     },
@@ -508,12 +396,6 @@
       "type": "Missing publication date",
       "record_id": "job-00095",
       "message": "Cybersecurity Manager — Bayt Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-00096",
-      "message": "Cybersecurity Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -536,12 +418,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00100",
-      "message": "AI Solution Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00101",
       "message": "Business Transformation Manager — LinkedIn Live Search has no normalized publication date"
     },
@@ -556,12 +432,6 @@
       "type": "Missing publication date",
       "record_id": "job-00103",
       "message": "Business Transformation Manager — Bayt Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-00104",
-      "message": "Business Transformation Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -584,12 +454,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00108",
-      "message": "ServiceNow Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00109",
       "message": "ERP Program Manager — LinkedIn Live Search has no normalized publication date"
     },
@@ -608,12 +472,6 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-00112",
-      "message": "ERP Program Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-00113",
       "message": "ICT Manager — LinkedIn Live Search has no normalized publication date"
     },
@@ -628,12 +486,6 @@
       "type": "Missing publication date",
       "record_id": "job-00115",
       "message": "ICT Manager — Bayt Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-00116",
-      "message": "ICT Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6626,20 +6478,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01168",
-      "message": "Enterprise Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01169",
       "message": "Solution Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01170",
-      "message": "Solution Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6650,20 +6490,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01172",
-      "message": "Digital Transformation Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01173",
       "message": "IT Director — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01174",
-      "message": "IT Director — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6674,20 +6502,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01176",
-      "message": "Head of Technology — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01177",
       "message": "Technology Director — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01178",
-      "message": "Technology Director — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6698,20 +6514,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01180",
-      "message": "IT Strategy Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01181",
       "message": "Data Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01182",
-      "message": "Data Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6722,20 +6526,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01184",
-      "message": "Data Governance Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01185",
       "message": "Chief Data Officer — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01186",
-      "message": "Chief Data Officer — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6746,20 +6538,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01188",
-      "message": "Healthcare IT Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01189",
       "message": "Health Informatics — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01190",
-      "message": "Health Informatics — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6770,20 +6550,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01192",
-      "message": "Digital Health — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01193",
       "message": "Technical Program Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01194",
-      "message": "Technical Program Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6794,20 +6562,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01196",
-      "message": "IT Portfolio Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01197",
       "message": "PMO Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01198",
-      "message": "PMO Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6818,20 +6574,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01200",
-      "message": "Cloud Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01201",
       "message": "Integration Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01202",
-      "message": "Integration Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6842,20 +6586,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01204",
-      "message": "Enterprise Applications Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01205",
       "message": "Cybersecurity Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01206",
-      "message": "Cybersecurity Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6866,20 +6598,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01208",
-      "message": "AI Solution Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01209",
       "message": "Business Transformation Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01210",
-      "message": "Business Transformation Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6890,20 +6610,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01212",
-      "message": "ServiceNow Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01213",
       "message": "ERP Program Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01214",
-      "message": "ERP Program Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6914,20 +6622,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01216",
-      "message": "ICT Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01217",
       "message": "Enterprise Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01218",
-      "message": "Enterprise Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6938,20 +6634,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01220",
-      "message": "Solution Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01221",
       "message": "Digital Transformation Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01222",
-      "message": "Digital Transformation Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6962,20 +6646,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01224",
-      "message": "IT Director — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01225",
       "message": "Head of Technology — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01226",
-      "message": "Head of Technology — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -6986,20 +6658,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01228",
-      "message": "Technology Director — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01229",
       "message": "IT Strategy Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01230",
-      "message": "IT Strategy Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7010,20 +6670,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01232",
-      "message": "Data Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01233",
       "message": "Data Governance Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01234",
-      "message": "Data Governance Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7034,20 +6682,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01236",
-      "message": "Chief Data Officer — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01237",
       "message": "Healthcare IT Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01238",
-      "message": "Healthcare IT Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7058,20 +6694,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01240",
-      "message": "Health Informatics — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01241",
       "message": "Digital Health — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01242",
-      "message": "Digital Health — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7082,20 +6706,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01244",
-      "message": "Technical Program Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01245",
       "message": "IT Portfolio Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01246",
-      "message": "IT Portfolio Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7106,20 +6718,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01248",
-      "message": "PMO Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01249",
       "message": "Cloud Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01250",
-      "message": "Cloud Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7130,20 +6730,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01252",
-      "message": "Integration Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01253",
       "message": "Enterprise Applications Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01254",
-      "message": "Enterprise Applications Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7154,20 +6742,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01256",
-      "message": "Cybersecurity Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01257",
       "message": "AI Solution Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01258",
-      "message": "AI Solution Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7178,20 +6754,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01260",
-      "message": "Business Transformation Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01261",
       "message": "ServiceNow Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01262",
-      "message": "ServiceNow Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7202,20 +6766,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01264",
-      "message": "ERP Program Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01265",
       "message": "ICT Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01266",
-      "message": "ICT Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7226,20 +6778,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01268",
-      "message": "Enterprise Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01269",
       "message": "Solution Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01270",
-      "message": "Solution Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7250,20 +6790,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01272",
-      "message": "Digital Transformation Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01273",
       "message": "IT Director — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01274",
-      "message": "IT Director — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7274,20 +6802,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01276",
-      "message": "Head of Technology — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01277",
       "message": "Technology Director — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01278",
-      "message": "Technology Director — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7298,20 +6814,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01280",
-      "message": "IT Strategy Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01281",
       "message": "Data Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01282",
-      "message": "Data Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7322,20 +6826,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01284",
-      "message": "Data Governance Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01285",
       "message": "Chief Data Officer — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01286",
-      "message": "Chief Data Officer — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7346,20 +6838,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01288",
-      "message": "Healthcare IT Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01289",
       "message": "Health Informatics — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01290",
-      "message": "Health Informatics — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7370,20 +6850,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01292",
-      "message": "Digital Health — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01293",
       "message": "Technical Program Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01294",
-      "message": "Technical Program Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7394,20 +6862,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01296",
-      "message": "IT Portfolio Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01297",
       "message": "PMO Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01298",
-      "message": "PMO Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7418,20 +6874,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01300",
-      "message": "Cloud Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01301",
       "message": "Integration Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01302",
-      "message": "Integration Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7442,20 +6886,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01304",
-      "message": "Enterprise Applications Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01305",
       "message": "Cybersecurity Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01306",
-      "message": "Cybersecurity Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7466,20 +6898,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01308",
-      "message": "AI Solution Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01309",
       "message": "Business Transformation Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01310",
-      "message": "Business Transformation Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7490,20 +6910,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01312",
-      "message": "ServiceNow Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01313",
       "message": "ERP Program Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01314",
-      "message": "ERP Program Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7514,20 +6922,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01316",
-      "message": "ICT Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01317",
       "message": "Enterprise Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01318",
-      "message": "Enterprise Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7538,20 +6934,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01320",
-      "message": "Solution Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01321",
       "message": "Digital Transformation Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01322",
-      "message": "Digital Transformation Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7562,20 +6946,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01324",
-      "message": "IT Director — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01325",
       "message": "Head of Technology — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01326",
-      "message": "Head of Technology — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7586,20 +6958,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01328",
-      "message": "Technology Director — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01329",
       "message": "IT Strategy Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01330",
-      "message": "IT Strategy Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7610,20 +6970,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01332",
-      "message": "Data Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01333",
       "message": "Data Governance Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01334",
-      "message": "Data Governance Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7634,20 +6982,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01336",
-      "message": "Chief Data Officer — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01337",
       "message": "Healthcare IT Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01338",
-      "message": "Healthcare IT Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7658,20 +6994,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01340",
-      "message": "Health Informatics — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01341",
       "message": "Digital Health — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01342",
-      "message": "Digital Health — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7682,20 +7006,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01344",
-      "message": "Technical Program Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01345",
       "message": "IT Portfolio Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01346",
-      "message": "IT Portfolio Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7706,20 +7018,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01348",
-      "message": "PMO Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01349",
       "message": "Cloud Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01350",
-      "message": "Cloud Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7730,20 +7030,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01352",
-      "message": "Integration Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01353",
       "message": "Enterprise Applications Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01354",
-      "message": "Enterprise Applications Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7754,20 +7042,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01356",
-      "message": "Cybersecurity Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01357",
       "message": "AI Solution Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01358",
-      "message": "AI Solution Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7778,20 +7054,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01360",
-      "message": "Business Transformation Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01361",
       "message": "ServiceNow Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01362",
-      "message": "ServiceNow Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7802,20 +7066,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01364",
-      "message": "ERP Program Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01365",
       "message": "ICT Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01366",
-      "message": "ICT Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7826,20 +7078,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01368",
-      "message": "Enterprise Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01369",
       "message": "Solution Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01370",
-      "message": "Solution Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7850,20 +7090,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01372",
-      "message": "Digital Transformation Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01373",
       "message": "IT Director — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01374",
-      "message": "IT Director — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7874,20 +7102,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01376",
-      "message": "Head of Technology — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01377",
       "message": "Technology Director — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01378",
-      "message": "Technology Director — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7898,20 +7114,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01380",
-      "message": "IT Strategy Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01381",
       "message": "Data Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01382",
-      "message": "Data Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7922,20 +7126,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01384",
-      "message": "Data Governance Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01385",
       "message": "Chief Data Officer — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01386",
-      "message": "Chief Data Officer — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7946,20 +7138,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01388",
-      "message": "Healthcare IT Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01389",
       "message": "Health Informatics — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01390",
-      "message": "Health Informatics — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7970,20 +7150,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01392",
-      "message": "Digital Health — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01393",
       "message": "Technical Program Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01394",
-      "message": "Technical Program Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -7994,20 +7162,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01396",
-      "message": "IT Portfolio Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01397",
       "message": "PMO Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01398",
-      "message": "PMO Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8018,20 +7174,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01400",
-      "message": "Cloud Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01401",
       "message": "Integration Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01402",
-      "message": "Integration Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8042,20 +7186,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01404",
-      "message": "Enterprise Applications Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01405",
       "message": "Cybersecurity Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01406",
-      "message": "Cybersecurity Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8066,20 +7198,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01408",
-      "message": "AI Solution Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01409",
       "message": "Business Transformation Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01410",
-      "message": "Business Transformation Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8090,20 +7210,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01412",
-      "message": "ServiceNow Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01413",
       "message": "ERP Program Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01414",
-      "message": "ERP Program Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8114,20 +7222,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01416",
-      "message": "ICT Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01417",
       "message": "Enterprise Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01418",
-      "message": "Enterprise Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8138,20 +7234,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01420",
-      "message": "Solution Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01421",
       "message": "Digital Transformation Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01422",
-      "message": "Digital Transformation Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8162,20 +7246,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01424",
-      "message": "IT Director — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01425",
       "message": "Head of Technology — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01426",
-      "message": "Head of Technology — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8186,20 +7258,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01428",
-      "message": "Technology Director — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01429",
       "message": "IT Strategy Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01430",
-      "message": "IT Strategy Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8210,20 +7270,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01432",
-      "message": "Data Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01433",
       "message": "Data Governance Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01434",
-      "message": "Data Governance Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8234,20 +7282,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01436",
-      "message": "Chief Data Officer — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01437",
       "message": "Healthcare IT Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01438",
-      "message": "Healthcare IT Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8258,20 +7294,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01440",
-      "message": "Health Informatics — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01441",
       "message": "Digital Health — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01442",
-      "message": "Digital Health — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8282,20 +7306,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01444",
-      "message": "Technical Program Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01445",
       "message": "IT Portfolio Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01446",
-      "message": "IT Portfolio Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8306,20 +7318,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01448",
-      "message": "PMO Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01449",
       "message": "Cloud Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01450",
-      "message": "Cloud Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8330,20 +7330,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01452",
-      "message": "Integration Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01453",
       "message": "Enterprise Applications Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01454",
-      "message": "Enterprise Applications Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8354,20 +7342,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01456",
-      "message": "Cybersecurity Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01457",
       "message": "AI Solution Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01458",
-      "message": "AI Solution Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8378,20 +7354,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01460",
-      "message": "Business Transformation Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01461",
       "message": "ServiceNow Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01462",
-      "message": "ServiceNow Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8402,20 +7366,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01464",
-      "message": "ERP Program Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01465",
       "message": "ICT Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01466",
-      "message": "ICT Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8426,20 +7378,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01468",
-      "message": "Enterprise Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01469",
       "message": "Solution Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01470",
-      "message": "Solution Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8450,20 +7390,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01472",
-      "message": "Digital Transformation Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01473",
       "message": "IT Director — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01474",
-      "message": "IT Director — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8474,20 +7402,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01476",
-      "message": "Head of Technology — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01477",
       "message": "Technology Director — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01478",
-      "message": "Technology Director — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8498,20 +7414,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01480",
-      "message": "IT Strategy Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01481",
       "message": "Data Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01482",
-      "message": "Data Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8522,20 +7426,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01484",
-      "message": "Data Governance Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01485",
       "message": "Chief Data Officer — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01486",
-      "message": "Chief Data Officer — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8546,20 +7438,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01488",
-      "message": "Healthcare IT Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01489",
       "message": "Health Informatics — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01490",
-      "message": "Health Informatics — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8570,20 +7450,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01492",
-      "message": "Digital Health — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01493",
       "message": "Technical Program Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01494",
-      "message": "Technical Program Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8594,20 +7462,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01496",
-      "message": "IT Portfolio Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01497",
       "message": "PMO Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01498",
-      "message": "PMO Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8618,20 +7474,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01500",
-      "message": "Cloud Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01501",
       "message": "Integration Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01502",
-      "message": "Integration Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8642,20 +7486,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01504",
-      "message": "Enterprise Applications Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01505",
       "message": "Cybersecurity Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01506",
-      "message": "Cybersecurity Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8666,20 +7498,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01508",
-      "message": "AI Solution Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01509",
       "message": "Business Transformation Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01510",
-      "message": "Business Transformation Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8690,20 +7510,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01512",
-      "message": "ServiceNow Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01513",
       "message": "ERP Program Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01514",
-      "message": "ERP Program Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8714,20 +7522,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01516",
-      "message": "ICT Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01517",
       "message": "Enterprise Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01518",
-      "message": "Enterprise Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8738,20 +7534,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01520",
-      "message": "Solution Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01521",
       "message": "Digital Transformation Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01522",
-      "message": "Digital Transformation Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8762,20 +7546,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01524",
-      "message": "IT Director — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01525",
       "message": "Head of Technology — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01526",
-      "message": "Head of Technology — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8786,20 +7558,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01528",
-      "message": "Technology Director — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01529",
       "message": "IT Strategy Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01530",
-      "message": "IT Strategy Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8810,20 +7570,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01532",
-      "message": "Data Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01533",
       "message": "Data Governance Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01534",
-      "message": "Data Governance Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8834,20 +7582,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01536",
-      "message": "Chief Data Officer — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01537",
       "message": "Healthcare IT Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01538",
-      "message": "Healthcare IT Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8858,20 +7594,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01540",
-      "message": "Health Informatics — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01541",
       "message": "Digital Health — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01542",
-      "message": "Digital Health — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8882,20 +7606,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01544",
-      "message": "Technical Program Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01545",
       "message": "IT Portfolio Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01546",
-      "message": "IT Portfolio Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8906,20 +7618,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01548",
-      "message": "PMO Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01549",
       "message": "Cloud Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01550",
-      "message": "Cloud Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8930,20 +7630,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01552",
-      "message": "Integration Architect — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01553",
       "message": "Enterprise Applications Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01554",
-      "message": "Enterprise Applications Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8954,20 +7642,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01556",
-      "message": "Cybersecurity Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01557",
       "message": "AI Solution Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01558",
-      "message": "AI Solution Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -8978,20 +7654,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01560",
-      "message": "Business Transformation Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01561",
       "message": "ServiceNow Architect — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01562",
-      "message": "ServiceNow Architect — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -9002,20 +7666,8 @@
     {
       "severity": "Medium",
       "type": "Missing publication date",
-      "record_id": "job-01564",
-      "message": "ERP Program Manager — Google Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
       "record_id": "job-01565",
       "message": "ICT Manager — LinkedIn Live Search has no normalized publication date"
-    },
-    {
-      "severity": "Medium",
-      "type": "Missing publication date",
-      "record_id": "job-01566",
-      "message": "ICT Manager — Google Live Search has no normalized publication date"
     },
     {
       "severity": "Medium",
@@ -9375,20 +8027,6 @@
       ]
     },
     {
-      "canonical_id": "job-00020",
-      "title": "Enterprise Architect — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Enterprise+Architect+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00021",
       "title": "Solution Architect — LinkedIn Live Search",
       "organization": "Egypt",
@@ -9426,20 +8064,6 @@
         {
           "name": "Bayt",
           "url": "https://www.bayt.com/en/egypt/jobs/Solution%20Architect-jobs/",
-          "quality": "B"
-        }
-      ]
-    },
-    {
-      "canonical_id": "job-00024",
-      "title": "Solution Architect — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Solution+Architect+jobs+posted+this+week",
           "quality": "B"
         }
       ]
@@ -9487,20 +8111,6 @@
       ]
     },
     {
-      "canonical_id": "job-00028",
-      "title": "Digital Transformation Manager — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Digital+Transformation+Manager+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00029",
       "title": "IT Director — LinkedIn Live Search",
       "organization": "Egypt",
@@ -9538,20 +8148,6 @@
         {
           "name": "Bayt",
           "url": "https://www.bayt.com/en/egypt/jobs/IT%20Director-jobs/",
-          "quality": "B"
-        }
-      ]
-    },
-    {
-      "canonical_id": "job-00032",
-      "title": "IT Director — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+IT+Director+jobs+posted+this+week",
           "quality": "B"
         }
       ]
@@ -9599,20 +8195,6 @@
       ]
     },
     {
-      "canonical_id": "job-00036",
-      "title": "Head of Technology — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Head+of+Technology+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00037",
       "title": "Technology Director — LinkedIn Live Search",
       "organization": "Egypt",
@@ -9650,20 +8232,6 @@
         {
           "name": "Bayt",
           "url": "https://www.bayt.com/en/egypt/jobs/Technology%20Director-jobs/",
-          "quality": "B"
-        }
-      ]
-    },
-    {
-      "canonical_id": "job-00040",
-      "title": "Technology Director — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Technology+Director+jobs+posted+this+week",
           "quality": "B"
         }
       ]
@@ -9711,20 +8279,6 @@
       ]
     },
     {
-      "canonical_id": "job-00044",
-      "title": "IT Strategy Manager — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+IT+Strategy+Manager+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00045",
       "title": "Data Architect — LinkedIn Live Search",
       "organization": "Egypt",
@@ -9762,20 +8316,6 @@
         {
           "name": "Bayt",
           "url": "https://www.bayt.com/en/egypt/jobs/Data%20Architect-jobs/",
-          "quality": "B"
-        }
-      ]
-    },
-    {
-      "canonical_id": "job-00048",
-      "title": "Data Architect — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Data+Architect+jobs+posted+this+week",
           "quality": "B"
         }
       ]
@@ -9823,20 +8363,6 @@
       ]
     },
     {
-      "canonical_id": "job-00052",
-      "title": "Data Governance Manager — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Data+Governance+Manager+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00053",
       "title": "Chief Data Officer — LinkedIn Live Search",
       "organization": "Egypt",
@@ -9874,20 +8400,6 @@
         {
           "name": "Bayt",
           "url": "https://www.bayt.com/en/egypt/jobs/Chief%20Data%20Officer-jobs/",
-          "quality": "B"
-        }
-      ]
-    },
-    {
-      "canonical_id": "job-00056",
-      "title": "Chief Data Officer — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Chief+Data+Officer+jobs+posted+this+week",
           "quality": "B"
         }
       ]
@@ -9935,20 +8447,6 @@
       ]
     },
     {
-      "canonical_id": "job-00060",
-      "title": "Healthcare IT Manager — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Healthcare+IT+Manager+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00061",
       "title": "Health Informatics — LinkedIn Live Search",
       "organization": "Egypt",
@@ -9986,20 +8484,6 @@
         {
           "name": "Bayt",
           "url": "https://www.bayt.com/en/egypt/jobs/Health%20Informatics-jobs/",
-          "quality": "B"
-        }
-      ]
-    },
-    {
-      "canonical_id": "job-00064",
-      "title": "Health Informatics — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Health+Informatics+jobs+posted+this+week",
           "quality": "B"
         }
       ]
@@ -10047,20 +8531,6 @@
       ]
     },
     {
-      "canonical_id": "job-00068",
-      "title": "Digital Health — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Digital+Health+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00069",
       "title": "Technical Program Manager — LinkedIn Live Search",
       "organization": "Egypt",
@@ -10098,20 +8568,6 @@
         {
           "name": "Bayt",
           "url": "https://www.bayt.com/en/egypt/jobs/Technical%20Program%20Manager-jobs/",
-          "quality": "B"
-        }
-      ]
-    },
-    {
-      "canonical_id": "job-00072",
-      "title": "Technical Program Manager — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Technical+Program+Manager+jobs+posted+this+week",
           "quality": "B"
         }
       ]
@@ -10159,20 +8615,6 @@
       ]
     },
     {
-      "canonical_id": "job-00076",
-      "title": "IT Portfolio Manager — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+IT+Portfolio+Manager+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00077",
       "title": "PMO Manager — LinkedIn Live Search",
       "organization": "Egypt",
@@ -10210,20 +8652,6 @@
         {
           "name": "Bayt",
           "url": "https://www.bayt.com/en/egypt/jobs/PMO%20Manager-jobs/",
-          "quality": "B"
-        }
-      ]
-    },
-    {
-      "canonical_id": "job-00080",
-      "title": "PMO Manager — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+PMO+Manager+jobs+posted+this+week",
           "quality": "B"
         }
       ]
@@ -10271,20 +8699,6 @@
       ]
     },
     {
-      "canonical_id": "job-00084",
-      "title": "Cloud Architect — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Cloud+Architect+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00085",
       "title": "Integration Architect — LinkedIn Live Search",
       "organization": "Egypt",
@@ -10322,20 +8736,6 @@
         {
           "name": "Bayt",
           "url": "https://www.bayt.com/en/egypt/jobs/Integration%20Architect-jobs/",
-          "quality": "B"
-        }
-      ]
-    },
-    {
-      "canonical_id": "job-00088",
-      "title": "Integration Architect — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Integration+Architect+jobs+posted+this+week",
           "quality": "B"
         }
       ]
@@ -10383,20 +8783,6 @@
       ]
     },
     {
-      "canonical_id": "job-00092",
-      "title": "Enterprise Applications Manager — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Enterprise+Applications+Manager+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00093",
       "title": "Cybersecurity Manager — LinkedIn Live Search",
       "organization": "Egypt",
@@ -10434,20 +8820,6 @@
         {
           "name": "Bayt",
           "url": "https://www.bayt.com/en/egypt/jobs/Cybersecurity%20Manager-jobs/",
-          "quality": "B"
-        }
-      ]
-    },
-    {
-      "canonical_id": "job-00096",
-      "title": "Cybersecurity Manager — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Cybersecurity+Manager+jobs+posted+this+week",
           "quality": "B"
         }
       ]
@@ -10495,20 +8867,6 @@
       ]
     },
     {
-      "canonical_id": "job-00100",
-      "title": "AI Solution Architect — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+AI+Solution+Architect+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00101",
       "title": "Business Transformation Manager — LinkedIn Live Search",
       "organization": "Egypt",
@@ -10546,20 +8904,6 @@
         {
           "name": "Bayt",
           "url": "https://www.bayt.com/en/egypt/jobs/Business%20Transformation%20Manager-jobs/",
-          "quality": "B"
-        }
-      ]
-    },
-    {
-      "canonical_id": "job-00104",
-      "title": "Business Transformation Manager — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Business+Transformation+Manager+jobs+posted+this+week",
           "quality": "B"
         }
       ]
@@ -10607,20 +8951,6 @@
       ]
     },
     {
-      "canonical_id": "job-00108",
-      "title": "ServiceNow Architect — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+ServiceNow+Architect+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00109",
       "title": "ERP Program Manager — LinkedIn Live Search",
       "organization": "Egypt",
@@ -10663,20 +8993,6 @@
       ]
     },
     {
-      "canonical_id": "job-00112",
-      "title": "ERP Program Manager — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+ERP+Program+Manager+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ]
-    },
-    {
       "canonical_id": "job-00113",
       "title": "ICT Manager — LinkedIn Live Search",
       "organization": "Egypt",
@@ -10714,20 +9030,6 @@
         {
           "name": "Bayt",
           "url": "https://www.bayt.com/en/egypt/jobs/ICT%20Manager-jobs/",
-          "quality": "B"
-        }
-      ]
-    },
-    {
-      "canonical_id": "job-00116",
-      "title": "ICT Manager — Google Live Search",
-      "organization": "Egypt",
-      "country": "Egypt",
-      "duplicates_removed": 1,
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+ICT+Manager+jobs+posted+this+week",
           "quality": "B"
         }
       ]
@@ -24181,6 +22483,7 @@
     "Official vacancies and employer career pages are distinguished from platform-indexed and live-search records.",
     "Canonical and the expanded multinational directory were merged into the complete intelligence system.",
     "Current availability should always be rechecked on the linked official or platform source before applying.",
-    "Social-media job records are graded by source: A for official/direct vacancies, B for public recruiter or employer posts requiring recheck, and C for community opportunities. Archived and non-employment records remain clearly labelled."
+    "Social-media job records are graded by source: A for official/direct vacancies, B for public recruiter or employer posts requiring recheck, and C for community opportunities. Archived and non-employment records remain clearly labelled.",
+    "29 July 2026 cleanup removed dedicated live-search pages, duplicate routes and Google Search-generated records while retaining official and platform URLs."
   ]
 }

@@ -1900,69 +1900,6 @@
     ]
   },
   {
-    "id": "top-egypt-099",
-    "record_type": "Top Employer Career Page",
-    "category": "company",
-    "title": "Pharco Pharmaceuticals",
-    "organization": "Healthcare & Pharmaceuticals",
-    "subtitle": "Rank #99 · Egypt",
-    "role_family": "Healthcare & Pharmaceuticals",
-    "type": "Healthcare & Pharmaceuticals",
-    "industry": "Healthcare & Pharmaceuticals",
-    "region": "Egypt",
-    "country": "Egypt",
-    "location": "Egypt",
-    "availability_status": "Career Page Available",
-    "application_status": "Not Reviewed",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-28",
-    "age_days": null,
-    "posted_text": "Strategic private, public or multinational employer",
-    "notes": "Employer target rank #99. Strategic private, public or multinational employer. Best-fit searches: CTO, CIO, enterprise architect, solution architect, digital transformation, healthcare technology, data, cloud, DevOps, program delivery and technology-enabled operations.",
-    "source": "",
-    "url": "https://www.google.com/search?q=%22Pharco+Pharmaceuticals%22+careers+digital+health+IT+data+jobs",
-    "source_quality": "C",
-    "source_quality_label": "Live company job search",
-    "verification_level": "Live search — verify the employer posting",
-    "sources": [
-      {
-        "name": "",
-        "url": "https://www.google.com/search?q=%22Pharco+Pharmaceuticals%22+careers+digital+health+IT+data+jobs",
-        "quality": "C"
-      },
-      {
-        "name": "Selection methodology",
-        "url": "https://www.forbesmiddleeast.com/lists/egypts-50-most-valuable-companies-2026/",
-        "quality": "A"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "top-100-companies-egypt.html"
-    ],
-    "match": {
-      "role": 94,
-      "seniority": 95,
-      "industry": 94,
-      "location": 99,
-      "technology": 94,
-      "overall": 94
-    },
-    "match_score": 94,
-    "fit": "High",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "employer_rank": 99,
-    "selection_basis": "Strategic private, public or multinational employer",
-    "focus_tags": [
-      "Healthcare & Pharmaceuticals",
-      "Enterprise Architecture",
-      "Digital Transformation",
-      "Technology Leadership"
-    ]
-  },
-  {
     "id": "top-egypt-051",
     "record_type": "Top Employer Career Page",
     "category": "company",

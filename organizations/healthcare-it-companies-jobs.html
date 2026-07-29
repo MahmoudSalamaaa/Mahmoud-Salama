@@ -62,7 +62,7 @@
       <a class="nav-link" data-nav="search" href="./search.html">Search</a>
       <a class="nav-link" data-nav="jobs" href="./jobs.html">Jobs</a>
       <a class="nav-link active" data-nav="healthcare-it-jobs" href="./healthcare-it-companies-jobs.html">Healthcare IT</a>
-      <a class="nav-link" data-nav="live" href="./live-searches.html">Live</a>
+      
       <a class="nav-link" data-nav="companies" href="./companies.html">Employers</a>
       <a class="nav-link" data-nav="directory" href="./directory.html">Directories</a>
       <details class="more-menu"><summary>More</summary><div class="more-panel"><a href="./strategic-sectors.html">Strategic Sectors</a><a href="./insurance-companies-egypt.html">Insurance Egypt</a><a href="./insurance-companies-gcc.html">Insurance GCC</a><a href="./automotive-companies-egypt.html">Automotive Egypt</a><a href="./automotive-companies-gcc.html">Automotive GCC</a><a href="./manufacturing-companies-egypt.html">Manufacturing Egypt</a><a href="./manufacturing-companies-gcc.html">Manufacturing GCC</a><a href="./hotels-private-hospitals.html">Hotels & Private Hospitals</a><a href="./major-hotels-egypt.html">Major Hotels Egypt</a><a href="./major-hotels-gcc.html">Major Hotels GCC</a><a href="./private-hospitals-egypt.html">Private Hospitals Egypt</a><a href="./private-hospitals-gcc.html">Private Hospitals GCC</a><a href="./top-100-companies-egypt.html">Top 100 Egypt Companies</a><a href="./top-100-companies-gcc.html">Top 100 GCC Companies</a><a href="./independent-work-platforms.html">Independent Work Platforms</a><a href="./social-media-jobs.html">Social Media Jobs</a><a href="./linkedin-platforms.html">LinkedIn Post Platforms</a>
@@ -130,7 +130,7 @@
   </section>
 
   <section class="panel" id="allCompanies" style="margin-top:18px">
-    <div class="panel-head"><div><h2>All companies and live vacancy searches</h2><p>Every company shown in the supplied image is included. Use official careers and live search links for the complete current inventory.</p></div><a href="./data/csv/healthcare-it-companies.csv" download>Download companies CSV</a></div>
+    <div class="panel-head"><div><h2>All companies and live vacancy searches</h2><p>Every company shown in the supplied image is included. Use official careers and career search links for the complete current inventory.</p></div><a href="./data/csv/healthcare-it-companies.csv" download>Download companies CSV</a></div>
     <div class="company-grid-hit" id="hitCompanyGrid"></div>
   </section>
 </main>
@@ -198,7 +198,7 @@
         <div class="badges"><span class="badge ${terminal?'bad':effective==='Available'?'good':'warn'}">${esc(effective)}</span><span class="badge fit-tier ${tierClass}">${esc(item.fit_tier)}</span><span class="badge quality-${String(item.source_quality||'A').toLowerCase()}">Source ${esc(item.source_quality||'A')}</span></div>
         <h3>${esc(item.title)}</h3><div class="hit-company">${esc(item.company)}</div>
         <div class="hit-score"><strong>${esc(item.match_score)}%</strong><div class="hit-score-track"><i style="width:${Number(item.match_score)||0}%"></i></div></div>
-        <div class="hit-meta"><span>${esc(item.location)}</span><span>${esc(item.work_model)}</span><span>${esc(item.category)}</span><span>${esc(item.published_date||'Live search')}</span></div>
+        <div class="hit-meta"><span>${esc(item.location)}</span><span>${esc(item.work_model)}</span><span>${esc(item.category)}</span><span>${esc(item.published_date||'Career search')}</span></div>
         <div class="hit-reason"><b>Why it fits:</b> ${esc(item.fit_reason)}</div>
         ${status?status.controls(item):''}
         <div class="hit-actions-card"><a class="button" href="${esc(item.url)}" target="_blank" rel="noopener">Open official source</a><a class="secondary" href="./tracker.html">Tracker</a></div>
@@ -210,7 +210,7 @@
   companyGrid.innerHTML=companies.map(item=>{
     const current=vacancies.filter(v=>v.company===item.name).length;
     const tierClass=item.fit>=95?'fit-best':item.fit>=88?'fit-strong':item.fit>=78?'fit-good':'fit-medium';
-    return `<article class="company-hit"><span class="company-score">${esc(item.fit)}%</span><h3>${esc(item.name)}</h3><span class="badge fit-tier ${tierClass}">${item.fit>=95?'Priority 1':item.fit>=88?'Priority 2':'Monitor'}</span><small>${esc(item.country)} · ${esc(item.category)}</small><p>${esc(item.focus)}</p><div class="company-no-match">${current?current+' matched record'+(current>1?'s':''):'No suitable indexed role yet — use live search'}</div><div class="company-hit-links"><a href="${esc(item.careers)}" target="_blank" rel="noopener">Careers</a><a href="${esc(item.live_search)}" target="_blank" rel="noopener">All current vacancies</a></div></article>`;
+    return `<article class="company-hit"><span class="company-score">${esc(item.fit)}%</span><h3>${esc(item.name)}</h3><span class="badge fit-tier ${tierClass}">${item.fit>=95?'Priority 1':item.fit>=88?'Priority 2':'Monitor'}</span><small>${esc(item.country)} · ${esc(item.category)}</small><p>${esc(item.focus)}</p><div class="company-no-match">${current?current+' matched record'+(current>1?'s':''):'No suitable indexed role yet — use career search'}</div><div class="company-hit-links"><a href="${esc(item.careers)}" target="_blank" rel="noopener">Careers</a><a href="${esc(item.live_search)}" target="_blank" rel="noopener">All current vacancies</a></div></article>`;
   }).join('');
 
   [query,companyFilter,tierFilter,regionFilter,availabilityFilter].forEach(el=>el.addEventListener(el.tagName==='INPUT'?'input':'change',render));

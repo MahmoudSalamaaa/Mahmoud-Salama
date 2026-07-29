@@ -315,12 +315,6 @@
       "url": "https://app.recruitera.ai"
     },
     {
-      "name": "Recruitera — Hosted Jobs Search",
-      "type": "ATS discovery",
-      "focus": "Discover public job application pages hosted on Recruitera",
-      "url": "https://www.google.com/search?q=site%3Aapp.recruitera.ai%2Fjob+Egypt+jobs"
-    },
-    {
       "name": "LinkedIn — Africa technology leadership",
       "type": "Platform search",
       "focus": "Enterprise architecture, technology director, transformation",
@@ -337,18 +331,6 @@
       "type": "Platform search",
       "focus": "Architecture, data, cloud, SRE and leadership",
       "url": "https://za.linkedin.com/jobs/enterprise-architect-jobs"
-    },
-    {
-      "name": "Workable — Africa search",
-      "type": "ATS discovery",
-      "focus": "Search current company boards hosted on Workable",
-      "url": "https://www.google.com/search?q=site%3Aapply.workable.com+Africa+%22digital+transformation%22+OR+%22enterprise+architect%22"
-    },
-    {
-      "name": "Workable — Egypt search",
-      "type": "ATS discovery",
-      "focus": "Egypt-based roles hosted on Workable",
-      "url": "https://www.google.com/search?q=site%3Aapply.workable.com+Egypt+jobs"
     },
     {
       "name": "Amazon Jobs — Egypt",

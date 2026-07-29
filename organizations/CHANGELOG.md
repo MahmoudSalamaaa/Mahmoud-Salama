@@ -62,3 +62,11 @@
 
 - Added Strategic Sector Employers hub and six directories with 311 companies.
 - Integrated all new records into All Employers and Unified Search.
+
+
+## 29 July 2026 — Full cleanup
+- Removed dedicated live-search and platform-search pages.
+- Removed duplicate HTML routes and updated all internal links.
+- Removed Google Search-generated records from all datasets and CSV exports.
+- Hardened status persistence and made listing data render immediately.
+- Regenerated every data JavaScript bridge and completed full static/browser validation.

@@ -1,12 +1,12 @@
 {
   "generated_at": "2026-07-29",
-  "version": "Strategic Sectors Employer Intelligence Edition",
+  "version": "Cleaned Strategic Sectors Edition — No Google Live Search Pages",
   "profile_name": "Mahmoud Salama",
   "profile_title": "Chief Technology & Digital Transformation Officer | Enterprise Architect",
   "datasets": {
     "jobs": {
       "file": "data/verified-jobs.json",
-      "count": 1596
+      "count": 1371
     },
     "official_jobs": {
       "file": "data/official-jobs.json",
@@ -14,39 +14,35 @@
     },
     "priority_jobs": {
       "file": "data/priority-jobs.json",
-      "count": 145
-    },
-    "live_searches": {
-      "file": "data/live-searches.json",
-      "count": 25380
+      "count": 140
     },
     "companies": {
       "file": "data/companies.json",
-      "count": 2759
+      "count": 2014
     },
     "multinationals": {
       "file": "data/multinationals.json",
-      "count": 235
+      "count": 212
     },
     "healthcare_companies": {
       "file": "data/healthcare-companies.json",
-      "count": 888
+      "count": 518
     },
     "supply_chain_companies": {
       "file": "data/supply-chain-companies.json",
-      "count": 192
+      "count": 72
     },
     "technology_companies": {
       "file": "data/technology-companies.json",
-      "count": 1019
+      "count": 675
     },
     "agencies": {
       "file": "data/agencies.json",
-      "count": 674
+      "count": 353
     },
     "government": {
       "file": "data/government.json",
-      "count": 300
+      "count": 100
     },
     "projects": {
       "file": "data/projects.json",
@@ -54,7 +50,7 @@
     },
     "platforms": {
       "file": "data/platforms.json",
-      "count": 201
+      "count": 199
     },
     "sources": {
       "file": "data/sources.json",
@@ -62,10 +58,10 @@
     },
     "organizations": {
       "file": "data/organizations.json",
-      "count": 3256
+      "count": 1991
     }
   },
-  "total_records": 31311,
+  "total_records": 16611,
   "availability_options": {
     "job": [
       "Available",
@@ -199,5 +195,28 @@
       "Construction, Real Estate & Smart Cities",
       "FMCG, Retail & E-commerce"
     ]
+  },
+  "cleanup": {
+    "removed_live_search_pages": [
+      "live-searches.html",
+      "platform-search-africa.html",
+      "platform-search-arab.html",
+      "platform-search-egypt.html",
+      "platform-search-gcc.html",
+      "platform-search-hub.html",
+      "platform-search-remote.html"
+    ],
+    "removed_duplicate_pages": {
+      "government-jobs.html": "government.html",
+      "medical-companies.html": "healthcare-companies.html",
+      "private-company-directory.html": "companies.html",
+      "project-opportunities.html": "projects.html",
+      "recruitment-agencies.html": "agencies.html",
+      "job-search-platforms.html": "platforms.html"
+    },
+    "google_search_records_removed": 22527,
+    "light_theme_default": true,
+    "status_storage_hardened": true,
+    "immediate_listing_fallback": true
   }
 }

@@ -1,0 +1,101 @@
+{
+  "edition": "Mahmoud Salama Career Intelligence — Cleaned Final Edition",
+  "completed_at": "2026-07-29T21:30:00+03:00",
+  "source_archive": "Mahmoud-Salama-Career-Intelligence-STRATEGIC-SECTORS-Complete.zip",
+  "source_inventory": {
+    "files": 283,
+    "html_pages": 76
+  },
+  "final_inventory": {
+    "files": 234,
+    "html_pages": 63,
+    "javascript_files": 47,
+    "json_files": 53,
+    "csv_files": 59,
+    "css_files": 1,
+    "catalog_records": 16611,
+    "jobs": 1371,
+    "companies": 2014,
+    "organizations": 1991,
+    "agencies": 353,
+    "government_sources": 100,
+    "projects": 390,
+    "platforms": 199
+  },
+  "cleanup": {
+    "removed_pages": [
+      "live-searches.html",
+      "platform-search-hub.html",
+      "platform-search-africa.html",
+      "platform-search-arab.html",
+      "platform-search-egypt.html",
+      "platform-search-gcc.html",
+      "platform-search-remote.html",
+      "government-jobs.html",
+      "medical-companies.html",
+      "private-company-directory.html",
+      "project-opportunities.html",
+      "recruitment-agencies.html",
+      "job-search-platforms.html"
+    ],
+    "dedicated_live_search_pages_removed": 7,
+    "duplicate_pages_removed": 6,
+    "google_search_urls_remaining_in_record_datasets": 0,
+    "example_org_references": 0
+  },
+  "static_validation": {
+    "javascript_syntax_errors": 0,
+    "json_errors": 0,
+    "bridge_sync_errors": 0,
+    "missing_local_links": 0,
+    "references_to_removed_pages": 0,
+    "listing_data_issues": 0,
+    "invalid_external_url_syntax": 0,
+    "duplicate_id_files": 0,
+    "external_primary_urls_checked": 36085
+  },
+  "browser_validation": {
+    "desktop_pages_passed": 63,
+    "desktop_pages_total": 63,
+    "mobile_pages_passed": 63,
+    "mobile_pages_total": 63,
+    "status_search_table_theme_interaction_passed": true,
+    "full_dataset_pages_passed": 9,
+    "full_dataset_pages_total": 9
+  },
+  "top_url_domains": {
+    "linkedin.com": 7003,
+    "bayt.com": 2920,
+    "careerjet.com": 2169,
+    "talent.com": 2076,
+    "indeed.com": 1418,
+    "weworkremotely.com": 834,
+    "remoteok.com": 831,
+    "adzuna.com": 804,
+    "gulftalent.com": 791,
+    "wellfound.com": 458,
+    "reliefweb.int": 411,
+    "remotive.com": 384,
+    "freelancer.com": 382,
+    "remote.co": 381,
+    "workingnomads.com": 381,
+    "himalayas.app": 381,
+    "unjobs.org": 381,
+    "upwork.com": 381,
+    "contra.com": 381,
+    "wuzzuf.net": 306
+  },
+  "errors": {
+    "javascript": [],
+    "json": [],
+    "bridges": [],
+    "missing_links": [],
+    "removed_refs": [],
+    "data": [],
+    "bad_urls": [],
+    "google": [],
+    "example": [],
+    "duplicate_ids": []
+  },
+  "passed": true
+}

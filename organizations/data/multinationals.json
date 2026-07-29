@@ -163,58 +163,6 @@
     ]
   },
   {
-    "id": "company-01082",
-    "record_type": "Employer Career Page",
-    "category": "company",
-    "title": "Abbott",
-    "organization": "Health-sector employer search",
-    "subtitle": "Health-sector employer search",
-    "role_family": "Medical Devices & Equipment",
-    "type": "Medical Devices & Equipment",
-    "region": "Global",
-    "country": "Abbott Park, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Digital Health Platforms | Systems Integration | Enterprise Applications | Service Technology | Data Platforms",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Abbott%22+careers+digital+health+IT+data+jobs",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "jobs.abbott",
-        "url": "https://www.jobs.abbott/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "medical-companies.csv"
-    ],
-    "match": {
-      "role": 47,
-      "seniority": 65,
-      "industry": 78,
-      "location": 92,
-      "technology": 65,
-      "overall": 66
-    },
-    "match_score": 66,
-    "fit": "Medium",
-    "industry": "Healthcare & Life Sciences",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Healthcare & Life Sciences"
-    ]
-  },
-  {
     "id": "company-00713",
     "record_type": "Employer Career Page",
     "category": "company",
@@ -238,13 +186,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22AbbVie%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -290,58 +232,6 @@
     "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
     "source": "Official employer careers",
     "url": "https://www.accenture.com/us-en/careers",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "accenture.com",
-        "url": "https://www.accenture.com/us-en/careers",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 65,
-      "overall": 71
-    },
-    "match_score": 71,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
-    "id": "company-00448",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Accenture",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Consulting & Systems Integration",
-    "type": "Consulting & Systems Integration",
-    "region": "Global",
-    "country": "Dublin, Ireland",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Accenture%22+careers+jobs+digital+transformation+ICT",
     "source_quality": "B",
     "source_quality_label": "Direct organization or specialist source",
     "verification_level": "Direct",
@@ -563,11 +453,6 @@
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
     "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Aga+Khan+Health+Services%22+careers+jobs+digital+transformation+ICT",
-        "quality": "B"
-      },
       {
         "name": "linkedin.com",
         "url": "https://www.linkedin.com/jobs/search/?keywords=Aga+Khan+Health+Services&sortBy=DD",
@@ -817,58 +702,6 @@
     ]
   },
   {
-    "id": "company-00403",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Amazon Web Services",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Technology & Cloud",
-    "type": "Technology & Cloud",
-    "region": "Global",
-    "country": "Seattle, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Amazon+Web+Services%22+careers+jobs+digital+transformation+ICT",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "amazon.jobs",
-        "url": "https://www.amazon.jobs/en/teams/amazon-web-services",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 56,
-      "overall": 70
-    },
-    "match_score": 70,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
     "id": "company-00774",
     "record_type": "Employer Career Page",
     "category": "company",
@@ -889,58 +722,6 @@
     "notes": "R&D Digital Platforms | Data Engineering | Cloud & Cybersecurity | Enterprise Applications | Technical Program Management",
     "source": "Official employer careers",
     "url": "https://careers.amgen.com/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.amgen.com",
-        "url": "https://careers.amgen.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "medical-companies.csv"
-    ],
-    "match": {
-      "role": 47,
-      "seniority": 65,
-      "industry": 56,
-      "location": 92,
-      "technology": 74,
-      "overall": 64
-    },
-    "match_score": 64,
-    "fit": "Medium",
-    "industry": "Healthcare & Life Sciences",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Healthcare & Life Sciences"
-    ]
-  },
-  {
-    "id": "company-01011",
-    "record_type": "Employer Career Page",
-    "category": "company",
-    "title": "Amgen",
-    "organization": "Health-sector employer search",
-    "subtitle": "Health-sector employer search",
-    "role_family": "Biotechnology & Specialty Pharma",
-    "type": "Biotechnology & Specialty Pharma",
-    "region": "Global",
-    "country": "Thousand Oaks, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "R&D Digital Platforms | Data Engineering | Cloud & Cybersecurity | Enterprise Applications | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Amgen%22+careers+digital+health+IT+data+jobs",
     "source_quality": "B",
     "source_quality_label": "Direct organization or specialist source",
     "verification_level": "Direct",
@@ -996,13 +777,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Amoun+Pharmaceutical%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -1161,11 +936,6 @@
     "verification_level": "Official / curated",
     "sources": [
       {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Aster+DM+Healthcare%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      },
-      {
         "name": "linkedin.com",
         "url": "https://www.linkedin.com/jobs/search/?keywords=Aster+DM+Healthcare&sortBy=DD",
         "quality": "B"
@@ -1220,13 +990,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22AstraZeneca%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -1384,13 +1148,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Baxter%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -1656,13 +1414,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Boehringer+Ingelheim%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -1765,13 +1517,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Boston+Scientific%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -2143,58 +1889,6 @@
     ]
   },
   {
-    "id": "company-00449",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Capgemini",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Consulting & Systems Integration",
-    "type": "Consulting & Systems Integration",
-    "region": "Global",
-    "country": "Paris, France",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Capgemini%22+careers+jobs+digital+transformation+ICT",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "capgemini.com",
-        "url": "https://www.capgemini.com/careers/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 65,
-      "overall": 71
-    },
-    "match_score": 71,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
     "id": "company-01490",
     "record_type": "Employer Career Page",
     "category": "company",
@@ -2382,13 +2076,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Cisco%22+careers+jobs+digital+transformation+ICT",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "organizations.csv"
@@ -2438,11 +2126,6 @@
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
     "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Cleveland+Clinic+Abu+Dhabi%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      },
       {
         "name": "linkedin.com",
         "url": "https://www.linkedin.com/jobs/search/?keywords=Cleveland+Clinic+Abu+Dhabi&sortBy=DD",
@@ -2603,58 +2286,6 @@
     "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
     "source": "Official employer careers",
     "url": "https://careers.cognizant.com/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.cognizant.com",
-        "url": "https://careers.cognizant.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 65,
-      "overall": 71
-    },
-    "match_score": 71,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
-    "id": "company-00450",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Cognizant",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Consulting & Systems Integration",
-    "type": "Consulting & Systems Integration",
-    "region": "Global",
-    "country": "Teaneck, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Cognizant%22+careers+jobs+digital+transformation+ICT",
     "source_quality": "B",
     "source_quality_label": "Direct organization or specialist source",
     "verification_level": "Direct",
@@ -2872,13 +2503,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Danaher%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -3036,13 +2661,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Dell+Technologies%22+careers+jobs+digital+transformation+ICT",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "organizations.csv"
@@ -3259,11 +2878,6 @@
     "verification_level": "Official / curated",
     "sources": [
       {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Dr.+Sulaiman+Al+Habib+Medical+Group%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      },
-      {
         "name": "linkedin.com",
         "url": "https://www.linkedin.com/jobs/search/?keywords=Dr.+Sulaiman+Al+Habib+Medical+Group&sortBy=DD",
         "quality": "B"
@@ -3369,58 +2983,6 @@
     "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
     "source": "Official employer careers",
     "url": "https://careers.dxc.com/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.dxc.com",
-        "url": "https://careers.dxc.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 65,
-      "overall": 71
-    },
-    "match_score": 71,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
-    "id": "company-00447",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "DXC Technology",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Consulting & Systems Integration",
-    "type": "Consulting & Systems Integration",
-    "region": "Global",
-    "country": "Ashburn, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22DXC+Technology%22+careers+jobs+digital+transformation+ICT",
     "source_quality": "B",
     "source_quality_label": "Direct organization or specialist source",
     "verification_level": "Direct",
@@ -3957,13 +3519,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Ericsson%22+careers+jobs+digital+transformation+ICT",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "organizations.csv"
@@ -4337,11 +3893,6 @@
     "verification_level": "Official / curated",
     "sources": [
       {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Fakeeh+Care+Group%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      },
-      {
         "name": "linkedin.com",
         "url": "https://www.linkedin.com/jobs/search/?keywords=Fakeeh+Care&sortBy=DD",
         "quality": "B"
@@ -4534,58 +4085,6 @@
     ]
   },
   {
-    "id": "company-00426",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Fortinet",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Technology & Cloud",
-    "type": "Technology & Cloud",
-    "region": "Global",
-    "country": "Sunnyvale, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Fortinet%22+careers+jobs+digital+transformation+ICT",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "fortinet.com",
-        "url": "https://www.fortinet.com/corporate/careers",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 56,
-      "overall": 70
-    },
-    "match_score": 70,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
     "id": "company-02167",
     "record_type": "Employer Career Page",
     "category": "company",
@@ -4718,13 +4217,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22GE+HealthCare%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 1,
     "origin_pages": [
       "medical-companies.csv",
@@ -4970,162 +4463,6 @@
     ]
   },
   {
-    "id": "company-00142",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Google",
-    "organization": "Technology & Cloud",
-    "subtitle": "Technology & Cloud",
-    "role_family": "Technology & Cloud",
-    "type": "Technology & Cloud",
-    "region": "Global",
-    "country": "Mountain View, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://careers.google.com/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.google.com",
-        "url": "https://careers.google.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 56,
-      "overall": 70
-    },
-    "match_score": 70,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
-    "id": "company-00402",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Google",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Technology & Cloud",
-    "type": "Technology & Cloud",
-    "region": "Global",
-    "country": "Mountain View, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Google%22+careers+jobs+digital+transformation+ICT",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.google.com",
-        "url": "https://careers.google.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 56,
-      "overall": 70
-    },
-    "match_score": 70,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
-    "id": "company-02230",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Google",
-    "organization": "Technology & Cloud",
-    "subtitle": "Technology & Cloud",
-    "role_family": "Technology & Cloud",
-    "type": "Technology & Cloud",
-    "region": "Global",
-    "country": "Mountain View, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/about/careers/applications/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.google.com",
-        "url": "https://careers.google.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 56,
-      "overall": 70
-    },
-    "match_score": 70,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
     "id": "company-00708",
     "record_type": "Employer Career Page",
     "category": "company",
@@ -5149,13 +4486,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22GSK%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -5313,13 +4644,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Hamad+Medical+Corporation%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -5690,13 +5015,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Hewlett+Packard+Enterprise%22+careers+jobs+digital+transformation+ICT",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "organizations.csv"
@@ -5963,13 +5282,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Huawei%22+careers+jobs+digital+transformation+ICT",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "organizations.csv"
@@ -6126,13 +5439,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22IBM%22+careers+jobs+digital+transformation+ICT",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "organizations.csv"
@@ -6264,58 +5571,6 @@
     ]
   },
   {
-    "id": "company-00451",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Infosys",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Consulting & Systems Integration",
-    "type": "Consulting & Systems Integration",
-    "region": "Global",
-    "country": "Bengaluru, India",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Infosys%22+careers+jobs+digital+transformation+ICT",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "infosys.com",
-        "url": "https://www.infosys.com/careers/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 65,
-      "overall": 71
-    },
-    "match_score": 71,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
     "id": "company-00922",
     "record_type": "Employer Career Page",
     "category": "company",
@@ -6394,13 +5649,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Jamjoom+Pharma%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -6557,13 +5806,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Julphar%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -7102,11 +6345,6 @@
     "verification_level": "Official / curated",
     "sources": [
       {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Life+Healthcare%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      },
-      {
         "name": "linkedin.com",
         "url": "https://www.linkedin.com/jobs/search/?keywords=Life+Healthcare&sortBy=DD",
         "quality": "B"
@@ -7489,13 +6727,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Medtronic%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -7650,58 +6882,6 @@
     "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
     "source": "Official employer careers",
     "url": "https://careers.microsoft.com/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.microsoft.com",
-        "url": "https://careers.microsoft.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 56,
-      "overall": 70
-    },
-    "match_score": 70,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
-    "id": "company-00401",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Microsoft",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Technology & Cloud",
-    "type": "Technology & Cloud",
-    "region": "Global",
-    "country": "Redmond, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Microsoft%22+careers+jobs+digital+transformation+ICT",
     "source_quality": "B",
     "source_quality_label": "Direct organization or specialist source",
     "verification_level": "Direct",
@@ -7918,13 +7098,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22MSD%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -8030,11 +7204,6 @@
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
     "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Netcare%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      },
       {
         "name": "linkedin.com",
         "url": "https://www.linkedin.com/jobs/search/?keywords=Netcare&sortBy=DD",
@@ -8200,11 +7369,6 @@
     "verification_level": "Official / curated",
     "sources": [
       {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22NMC+Healthcare%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      },
-      {
         "name": "linkedin.com",
         "url": "https://www.linkedin.com/jobs/search/?keywords=NMC+Healthcare&sortBy=DD",
         "quality": "B"
@@ -8258,13 +7422,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Nokia%22+careers+jobs+digital+transformation+ICT",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "organizations.csv"
@@ -8469,13 +7627,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Novartis%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -8524,13 +7676,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Novo+Nordisk%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -8575,58 +7721,6 @@
     "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
     "source": "Official employer careers",
     "url": "https://careers.nttdata.com/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.nttdata.com",
-        "url": "https://careers.nttdata.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 74,
-      "overall": 73
-    },
-    "match_score": 73,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
-    "id": "company-00446",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "NTT DATA",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Consulting & Systems Integration",
-    "type": "Consulting & Systems Integration",
-    "region": "Global",
-    "country": "Tokyo, Japan",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22NTT+DATA%22+careers+jobs+digital+transformation+ICT",
     "source_quality": "B",
     "source_quality_label": "Direct organization or specialist source",
     "verification_level": "Direct",
@@ -8734,58 +7828,6 @@
     "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
     "source": "Official employer careers",
     "url": "https://careers.oracle.com/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.oracle.com",
-        "url": "https://careers.oracle.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 56,
-      "overall": 70
-    },
-    "match_score": 70,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
-    "id": "company-00404",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Oracle",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Technology & Cloud",
-    "type": "Technology & Cloud",
-    "region": "Global",
-    "country": "Austin, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Oracle%22+careers+jobs+digital+transformation+ICT",
     "source_quality": "B",
     "source_quality_label": "Direct organization or specialist source",
     "verification_level": "Direct",
@@ -9081,58 +8123,6 @@
     ]
   },
   {
-    "id": "company-00427",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Palo Alto Networks",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Technology & Cloud",
-    "type": "Technology & Cloud",
-    "region": "Global",
-    "country": "Santa Clara, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Palo+Alto+Networks%22+careers+jobs+digital+transformation+ICT",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "jobs.paloaltonetworks.com",
-        "url": "https://jobs.paloaltonetworks.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 56,
-      "overall": 70
-    },
-    "match_score": 70,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
     "id": "company-00924",
     "record_type": "Employer Career Page",
     "category": "company",
@@ -9265,13 +8255,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Pfizer%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -9998,58 +8982,6 @@
     ]
   },
   {
-    "id": "company-00410",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Red Hat",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Technology & Cloud",
-    "type": "Technology & Cloud",
-    "region": "Global",
-    "country": "Raleigh, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Red+Hat%22+careers+jobs+digital+transformation+ICT",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "redhat.com",
-        "url": "https://www.redhat.com/en/jobs",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 56,
-      "overall": 70
-    },
-    "match_score": 70,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
     "id": "company-00705",
     "record_type": "Employer Career Page",
     "category": "company",
@@ -10073,13 +9005,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Roche%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -10266,58 +9192,6 @@
     ]
   },
   {
-    "id": "company-00413",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Salesforce",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Technology & Cloud",
-    "type": "Technology & Cloud",
-    "region": "Global",
-    "country": "San Francisco, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Salesforce%22+careers+jobs+digital+transformation+ICT",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.salesforce.com",
-        "url": "https://careers.salesforce.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 56,
-      "overall": 70
-    },
-    "match_score": 70,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
     "id": "company-00725",
     "record_type": "Employer Career Page",
     "category": "company",
@@ -10341,13 +9215,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Sandoz%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -10396,13 +9264,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Sanofi%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -10448,58 +9310,6 @@
     "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
     "source": "Official employer careers",
     "url": "https://jobs.sap.com/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "jobs.sap.com",
-        "url": "https://jobs.sap.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 56,
-      "overall": 70
-    },
-    "match_score": 70,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
-    "id": "company-00405",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "SAP",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Technology & Cloud",
-    "type": "Technology & Cloud",
-    "region": "Global",
-    "country": "Walldorf, Germany",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22SAP%22+careers+jobs+digital+transformation+ICT",
     "source_quality": "B",
     "source_quality_label": "Direct organization or specialist source",
     "verification_level": "Direct",
@@ -10611,11 +9421,6 @@
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
     "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Saudi+German+Health%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      },
       {
         "name": "linkedin.com",
         "url": "https://www.linkedin.com/jobs/search/?keywords=Saudi+German+Health&sortBy=DD",
@@ -10863,58 +9668,6 @@
     ]
   },
   {
-    "id": "company-00414",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "ServiceNow",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Technology & Cloud",
-    "type": "Technology & Cloud",
-    "region": "Global",
-    "country": "Santa Clara, USA",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Solutions Architect | Enterprise Architect | Cloud | Customer Success | Technical Program Management",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22ServiceNow%22+careers+jobs+digital+transformation+ICT",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.servicenow.com",
-        "url": "https://careers.servicenow.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 56,
-      "overall": 70
-    },
-    "match_score": 70,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
     "id": "company-00732",
     "record_type": "Employer Career Page",
     "category": "company",
@@ -10938,13 +9691,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Servier%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -11049,11 +9796,6 @@
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
     "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Sidra+Medicine%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      },
       {
         "name": "linkedin.com",
         "url": "https://www.linkedin.com/jobs/search/?keywords=Sidra+Medicine&sortBy=DD",
@@ -11164,13 +9906,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Siemens+Healthineers%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -11274,13 +10010,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22SPIMACO%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -11329,11 +10059,6 @@
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
     "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22stc+Group%22+careers+jobs+digital+transformation+ICT",
-        "quality": "B"
-      },
       {
         "name": "linkedin.com",
         "url": "https://www.linkedin.com/jobs/search/?keywords=stc+Group&sortBy=DD",
@@ -11444,13 +10169,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Stryker%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -11552,13 +10271,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Tabuk+Pharmaceuticals%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -11606,13 +10319,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Takeda%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -11745,58 +10452,6 @@
     ]
   },
   {
-    "id": "company-00452",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Tata Consultancy Services",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Consulting & Systems Integration",
-    "type": "Consulting & Systems Integration",
-    "region": "Global",
-    "country": "Mumbai, India",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Tata+Consultancy+Services%22+careers+jobs+digital+transformation+ICT",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "tcs.com",
-        "url": "https://www.tcs.com/careers",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 65,
-      "overall": 71
-    },
-    "match_score": 71,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
     "id": "company-00208",
     "record_type": "Employer Career Page",
     "category": "organization",
@@ -11817,58 +10472,6 @@
     "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
     "source": "Official employer careers",
     "url": "https://careers.techmahindra.com/",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.techmahindra.com",
-        "url": "https://careers.techmahindra.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 65,
-      "overall": 71
-    },
-    "match_score": 71,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
-    "id": "company-00454",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Tech Mahindra",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Consulting & Systems Integration",
-    "type": "Consulting & Systems Integration",
-    "region": "Global",
-    "country": "Pune, India",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Tech+Mahindra%22+careers+jobs+digital+transformation+ICT",
     "source_quality": "B",
     "source_quality_label": "Direct organization or specialist source",
     "verification_level": "Direct",
@@ -11979,13 +10582,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Thermo+Fisher+Scientific%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -12361,13 +10958,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Viatris%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"
@@ -12666,58 +11257,6 @@
     ]
   },
   {
-    "id": "company-00453",
-    "record_type": "Employer Career Page",
-    "category": "organization",
-    "title": "Wipro",
-    "organization": "Career and project search",
-    "subtitle": "Career and project search",
-    "role_family": "Consulting & Systems Integration",
-    "type": "Consulting & Systems Integration",
-    "region": "Global",
-    "country": "Bengaluru, India",
-    "location": "",
-    "availability_status": "Career Page Available",
-    "published_date": "",
-    "expiry_date": "",
-    "last_checked": "2026-07-20",
-    "age_days": null,
-    "posted_text": "",
-    "notes": "Enterprise Architecture | Digital Transformation | Technology Consulting | ERP | Program Delivery",
-    "source": "Official employer careers",
-    "url": "https://www.google.com/search?q=%22Wipro%22+careers+jobs+digital+transformation+ICT",
-    "source_quality": "B",
-    "source_quality_label": "Direct organization or specialist source",
-    "verification_level": "Direct",
-    "sources": [
-      {
-        "name": "careers.wipro.com",
-        "url": "https://careers.wipro.com/",
-        "quality": "B"
-      }
-    ],
-    "duplicate_count": 0,
-    "origin_pages": [
-      "organizations.csv"
-    ],
-    "match": {
-      "role": 59,
-      "seniority": 92,
-      "industry": 56,
-      "location": 92,
-      "technology": 65,
-      "overall": 71
-    },
-    "match_score": 71,
-    "fit": "Medium",
-    "industry": "Technology & Consulting",
-    "priority_tier": "Priority 1",
-    "is_priority": true,
-    "focus_tags": [
-      "Technology & Consulting"
-    ]
-  },
-  {
     "id": "company-00832",
     "record_type": "Employer Career Page",
     "category": "company",
@@ -12741,13 +11280,7 @@
     "source_quality": "A",
     "source_quality_label": "Official employer career page",
     "verification_level": "Official / curated",
-    "sources": [
-      {
-        "name": "google.com",
-        "url": "https://www.google.com/search?q=%22Zimmer+Biomet%22+careers+digital+health+IT+data+jobs",
-        "quality": "B"
-      }
-    ],
+    "sources": [],
     "duplicate_count": 0,
     "origin_pages": [
       "medical-companies.csv"

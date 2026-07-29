@@ -3316,55 +3316,6 @@
       "application_status": "Not Reviewed"
     },
     {
-      "id": "job-00060",
-      "record_type": "Platform-Indexed Vacancy",
-      "category": "job",
-      "title": "Healthcare IT Manager — Google Live Search",
-      "organization": "Egypt",
-      "subtitle": "Egypt",
-      "role_family": "Live Job Search",
-      "type": "Live Job Search",
-      "region": "Egypt",
-      "country": "Egypt",
-      "location": "Live / varies",
-      "availability_status": "Possibly Available",
-      "published_date": "",
-      "expiry_date": "",
-      "last_checked": "2026-07-20",
-      "age_days": null,
-      "posted_text": "Live search sorted toward newest results",
-      "notes": "Egypt live-search pack. This is a live search link, not one fixed vacancy.",
-      "source": "Google",
-      "url": "https://www.google.com/search?q=Egypt+Healthcare+IT+Manager+jobs+posted+this+week",
-      "source_quality": "B",
-      "source_quality_label": "Direct organization or specialist source",
-      "verification_level": "Direct",
-      "sources": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com/search?q=Egypt+Healthcare+IT+Manager+jobs+posted+this+week",
-          "quality": "B"
-        }
-      ],
-      "duplicate_count": 1,
-      "origin_pages": [
-        "egypt-vacancies.csv",
-        "regional-private-companies.csv"
-      ],
-      "match": {
-        "role": 47,
-        "seniority": 92,
-        "industry": 56,
-        "location": 100,
-        "technology": 38,
-        "overall": 64
-      },
-      "match_score": 64,
-      "fit": "Medium",
-      "industry": "Healthcare & Life Sciences",
-      "application_status": "Not Reviewed"
-    },
-    {
       "id": "job-00057",
       "record_type": "Platform-Indexed Vacancy",
       "category": "job",

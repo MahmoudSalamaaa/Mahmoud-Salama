@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-27",
-  "version": "Removed Source Complete Edition",
+  "generated_at": "2026-07-28",
+  "version": "Top 100 Egypt and GCC Employer Intelligence Edition",
   "profile_name": "Mahmoud Salama",
   "profile_title": "Chief Technology & Digital Transformation Officer | Enterprise Architect",
   "datasets": {
@@ -156,5 +156,19 @@
     "root_cause": "An orphan duplicate table-return block caused a browser-level Illegal return statement and prevented all shared listing pages from initializing.",
     "fix": "Removed the invalid block and added a synchronous search fallback when Web Workers are unavailable, blocked or fail to start.",
     "fallback_enabled": true
+  },
+  "top_100_companies": {
+    "egypt": {
+      "page": "top-100-companies-egypt.html",
+      "records": 100,
+      "dataset": "data/top-100-companies-egypt.json",
+      "methodology_source": "https://www.forbesmiddleeast.com/lists/egypts-50-most-valuable-companies-2026/"
+    },
+    "gcc": {
+      "page": "top-100-companies-gcc.html",
+      "records": 100,
+      "dataset": "data/top-100-companies-gcc.json",
+      "methodology_source": "https://www.forbesmiddleeast.com/lists/top-100-listed-companies-2025/"
+    }
   }
 }

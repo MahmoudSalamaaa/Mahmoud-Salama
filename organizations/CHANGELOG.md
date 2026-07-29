@@ -50,3 +50,6 @@
 - Revalidated all HTML pages, data bundles, JSON files, JavaScript files and internal links.
 
 - Set Light mode as the default theme across all pages while preserving saved browser theme preferences.
+
+- Added Top 100 Companies in Egypt and Top 100 Companies in the GCC pages.
+- Added 200 ranked cross-sector employer targets with official careers or live job-search routes.

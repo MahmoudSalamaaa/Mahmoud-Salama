@@ -219,3 +219,7 @@ Repairs:
 
 Light mode is now the default theme on first visit across all HTML pages.
 A theme previously selected by the user remains stored in the browser under `careerTheme` and continues to take precedence.
+
+## Top 100 Companies in Egypt and the GCC
+
+Added `top-100-companies-egypt.html` and `top-100-companies-gcc.html`, each with 100 employer targets, official careers or live searches, advanced filters, cards/table views, profile ranking, availability/application controls, saved searches, preferences, pagination and CSV export.

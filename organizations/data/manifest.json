@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-28",
-  "version": "Top 100 Egypt and GCC Employer Intelligence Edition",
+  "generated_at": "2026-07-29",
+  "version": "Hotels and Private Hospitals Employer Intelligence Edition",
   "profile_name": "Mahmoud Salama",
   "profile_title": "Chief Technology & Digital Transformation Officer | Enterprise Architect",
   "datasets": {
@@ -22,7 +22,7 @@
     },
     "companies": {
       "file": "data/companies.json",
-      "count": 2238
+      "count": 2448
     },
     "multinationals": {
       "file": "data/multinationals.json",
@@ -65,7 +65,7 @@
       "count": 3256
     }
   },
-  "total_records": 30790,
+  "total_records": 31000,
   "availability_options": {
     "job": [
       "Available",
@@ -170,5 +170,12 @@
       "dataset": "data/top-100-companies-gcc.json",
       "methodology_source": "https://www.forbesmiddleeast.com/lists/top-100-listed-companies-2025/"
     }
+  },
+  "hotels_private_hospitals": {
+    "hub": "hotels-private-hospitals.html",
+    "major_hotels_egypt": 50,
+    "major_hotels_gcc": 60,
+    "private_hospitals_egypt": 40,
+    "private_hospitals_gcc": 60
   }
 }

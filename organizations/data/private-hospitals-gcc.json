@@ -1,0 +1,3842 @@
+[
+  {
+    "id": "hospital-gcc-058",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Burjeel Hospital Muscat",
+    "organization": "Burjeel Holdings",
+    "subtitle": "Muscat · Oman",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Oman",
+    "location": "Muscat",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Burjeel Holdings careers",
+    "url": "https://burjeelholdings.com/careers/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Burjeel Holdings careers/search",
+        "url": "https://burjeelholdings.com/careers/",
+        "quality": "A"
+      },
+      {
+        "name": "Burjeel Hospital Muscat live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Burjeel%20Hospital%20Muscat%20Oman&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Burjeel Holdings",
+    "city": "Muscat",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-051",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Aster Hospital Doha",
+    "organization": "Aster DM Healthcare",
+    "subtitle": "Doha · Qatar",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Qatar",
+    "location": "Doha",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Aster DM Healthcare careers",
+    "url": "https://www.asterdmhealthcare.com/about-us/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Aster DM Healthcare careers/search",
+        "url": "https://www.asterdmhealthcare.com/about-us/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Aster Hospital Doha live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Aster%20Hospital%20Doha%20Qatar&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Aster DM Healthcare",
+    "city": "Doha",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-023",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Saudi German Hospital Aseer",
+    "organization": "Saudi German Health",
+    "subtitle": "Khamis Mushait · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Khamis Mushait",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Saudi German Health careers",
+    "url": "https://saudigermanhealth.com/en/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Saudi German Health careers/search",
+        "url": "https://saudigermanhealth.com/en/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Saudi German Hospital Aseer live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Saudi%20German%20Hospital%20Aseer%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Saudi German Health",
+    "city": "Khamis Mushait",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-021",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Saudi German Hospital Dammam",
+    "organization": "Saudi German Health",
+    "subtitle": "Dammam · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Dammam",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Saudi German Health careers",
+    "url": "https://saudigermanhealth.com/en/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Saudi German Health careers/search",
+        "url": "https://saudigermanhealth.com/en/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Saudi German Hospital Dammam live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Saudi%20German%20Hospital%20Dammam%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Saudi German Health",
+    "city": "Dammam",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-022",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Saudi German Hospital Hail",
+    "organization": "Saudi German Health",
+    "subtitle": "Hail · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Hail",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Saudi German Health careers",
+    "url": "https://saudigermanhealth.com/en/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Saudi German Health careers/search",
+        "url": "https://saudigermanhealth.com/en/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Saudi German Hospital Hail live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Saudi%20German%20Hospital%20Hail%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Saudi German Health",
+    "city": "Hail",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-019",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Saudi German Hospital Jeddah",
+    "organization": "Saudi German Health",
+    "subtitle": "Jeddah · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Jeddah",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Saudi German Health careers",
+    "url": "https://saudigermanhealth.com/en/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Saudi German Health careers/search",
+        "url": "https://saudigermanhealth.com/en/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Saudi German Hospital Jeddah live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Saudi%20German%20Hospital%20Jeddah%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Saudi German Health",
+    "city": "Jeddah",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-020",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Saudi German Hospital Riyadh",
+    "organization": "Saudi German Health",
+    "subtitle": "Riyadh · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Riyadh",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Saudi German Health careers",
+    "url": "https://saudigermanhealth.com/en/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Saudi German Health careers/search",
+        "url": "https://saudigermanhealth.com/en/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Saudi German Hospital Riyadh live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Saudi%20German%20Hospital%20Riyadh%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Saudi German Health",
+    "city": "Riyadh",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-038",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Burjeel Hospital Abu Dhabi",
+    "organization": "Burjeel Holdings",
+    "subtitle": "Abu Dhabi · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Abu Dhabi",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Burjeel Holdings careers",
+    "url": "https://burjeelholdings.com/careers/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Burjeel Holdings careers/search",
+        "url": "https://burjeelholdings.com/careers/",
+        "quality": "A"
+      },
+      {
+        "name": "Burjeel Hospital Abu Dhabi live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Burjeel%20Hospital%20Abu%20Dhabi%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Burjeel Holdings",
+    "city": "Abu Dhabi",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-037",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Burjeel Medical City",
+    "organization": "Burjeel Holdings",
+    "subtitle": "Abu Dhabi · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Abu Dhabi",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Burjeel Holdings careers",
+    "url": "https://burjeelholdings.com/careers/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Burjeel Holdings careers/search",
+        "url": "https://burjeelholdings.com/careers/",
+        "quality": "A"
+      },
+      {
+        "name": "Burjeel Medical City live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Burjeel%20Medical%20City%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Burjeel Holdings",
+    "city": "Abu Dhabi",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-040",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Burjeel Royal Hospital Al Ain",
+    "organization": "Burjeel Holdings",
+    "subtitle": "Al Ain · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Al Ain",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Burjeel Holdings careers",
+    "url": "https://burjeelholdings.com/careers/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Burjeel Holdings careers/search",
+        "url": "https://burjeelholdings.com/careers/",
+        "quality": "A"
+      },
+      {
+        "name": "Burjeel Royal Hospital Al Ain live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Burjeel%20Royal%20Hospital%20Al%20Ain%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Burjeel Holdings",
+    "city": "Al Ain",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-039",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Burjeel Specialty Hospital Sharjah",
+    "organization": "Burjeel Holdings",
+    "subtitle": "Sharjah · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Sharjah",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Burjeel Holdings careers",
+    "url": "https://burjeelholdings.com/careers/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Burjeel Holdings careers/search",
+        "url": "https://burjeelholdings.com/careers/",
+        "quality": "A"
+      },
+      {
+        "name": "Burjeel Specialty Hospital Sharjah live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Burjeel%20Specialty%20Hospital%20Sharjah%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Burjeel Holdings",
+    "city": "Sharjah",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-028",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Mediclinic Airport Road Hospital",
+    "organization": "Mediclinic Middle East",
+    "subtitle": "Abu Dhabi · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Abu Dhabi",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Mediclinic Middle East careers",
+    "url": "https://careers.mediclinic.com/MiddleEast/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Mediclinic Middle East careers/search",
+        "url": "https://careers.mediclinic.com/MiddleEast/",
+        "quality": "A"
+      },
+      {
+        "name": "Mediclinic Airport Road Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mediclinic%20Airport%20Road%20Hospital%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Mediclinic Middle East",
+    "city": "Abu Dhabi",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-031",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Mediclinic Al Ain Hospital",
+    "organization": "Mediclinic Middle East",
+    "subtitle": "Al Ain · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Al Ain",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Mediclinic Middle East careers",
+    "url": "https://careers.mediclinic.com/MiddleEast/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Mediclinic Middle East careers/search",
+        "url": "https://careers.mediclinic.com/MiddleEast/",
+        "quality": "A"
+      },
+      {
+        "name": "Mediclinic Al Ain Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mediclinic%20Al%20Ain%20Hospital%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Mediclinic Middle East",
+    "city": "Al Ain",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-029",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Mediclinic Al Noor Hospital",
+    "organization": "Mediclinic Middle East",
+    "subtitle": "Abu Dhabi · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Abu Dhabi",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Mediclinic Middle East careers",
+    "url": "https://careers.mediclinic.com/MiddleEast/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Mediclinic Middle East careers/search",
+        "url": "https://careers.mediclinic.com/MiddleEast/",
+        "quality": "A"
+      },
+      {
+        "name": "Mediclinic Al Noor Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mediclinic%20Al%20Noor%20Hospital%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Mediclinic Middle East",
+    "city": "Abu Dhabi",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-026",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Mediclinic City Hospital",
+    "organization": "Mediclinic Middle East",
+    "subtitle": "Dubai · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Dubai",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Mediclinic Middle East careers",
+    "url": "https://careers.mediclinic.com/MiddleEast/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Mediclinic Middle East careers/search",
+        "url": "https://careers.mediclinic.com/MiddleEast/",
+        "quality": "A"
+      },
+      {
+        "name": "Mediclinic City Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mediclinic%20City%20Hospital%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Mediclinic Middle East",
+    "city": "Dubai",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-030",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Mediclinic Khalifa City Hospital",
+    "organization": "Mediclinic Middle East",
+    "subtitle": "Abu Dhabi · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Abu Dhabi",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Mediclinic Middle East careers",
+    "url": "https://careers.mediclinic.com/MiddleEast/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Mediclinic Middle East careers/search",
+        "url": "https://careers.mediclinic.com/MiddleEast/",
+        "quality": "A"
+      },
+      {
+        "name": "Mediclinic Khalifa City Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mediclinic%20Khalifa%20City%20Hospital%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Mediclinic Middle East",
+    "city": "Abu Dhabi",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-027",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Mediclinic Parkview Hospital",
+    "organization": "Mediclinic Middle East",
+    "subtitle": "Dubai · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Dubai",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Mediclinic Middle East careers",
+    "url": "https://careers.mediclinic.com/MiddleEast/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Mediclinic Middle East careers/search",
+        "url": "https://careers.mediclinic.com/MiddleEast/",
+        "quality": "A"
+      },
+      {
+        "name": "Mediclinic Parkview Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mediclinic%20Parkview%20Hospital%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Mediclinic Middle East",
+    "city": "Dubai",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-032",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "NMC Royal Hospital Khalifa City",
+    "organization": "NMC Healthcare",
+    "subtitle": "Abu Dhabi · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Abu Dhabi",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "NMC Healthcare careers",
+    "url": "https://careers.nmc.ae/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "NMC Healthcare careers/search",
+        "url": "https://careers.nmc.ae/",
+        "quality": "A"
+      },
+      {
+        "name": "NMC Royal Hospital Khalifa City live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=NMC%20Royal%20Hospital%20Khalifa%20City%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "NMC Healthcare",
+    "city": "Abu Dhabi",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-033",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "NMC Royal Hospital Sharjah",
+    "organization": "NMC Healthcare",
+    "subtitle": "Sharjah · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Sharjah",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "NMC Healthcare careers",
+    "url": "https://careers.nmc.ae/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "NMC Healthcare careers/search",
+        "url": "https://careers.nmc.ae/",
+        "quality": "A"
+      },
+      {
+        "name": "NMC Royal Hospital Sharjah live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=NMC%20Royal%20Hospital%20Sharjah%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "NMC Healthcare",
+    "city": "Sharjah",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-036",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "NMC Royal Women's Hospital",
+    "organization": "NMC Healthcare",
+    "subtitle": "Abu Dhabi · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Abu Dhabi",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "NMC Healthcare careers",
+    "url": "https://careers.nmc.ae/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "NMC Healthcare careers/search",
+        "url": "https://careers.nmc.ae/",
+        "quality": "A"
+      },
+      {
+        "name": "NMC Royal Women's Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=NMC%20Royal%20Women%27s%20Hospital%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "NMC Healthcare",
+    "city": "Abu Dhabi",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-034",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "NMC Specialty Hospital Abu Dhabi",
+    "organization": "NMC Healthcare",
+    "subtitle": "Abu Dhabi · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Abu Dhabi",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "NMC Healthcare careers",
+    "url": "https://careers.nmc.ae/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "NMC Healthcare careers/search",
+        "url": "https://careers.nmc.ae/",
+        "quality": "A"
+      },
+      {
+        "name": "NMC Specialty Hospital Abu Dhabi live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=NMC%20Specialty%20Hospital%20Abu%20Dhabi%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "NMC Healthcare",
+    "city": "Abu Dhabi",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-035",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "NMC Specialty Hospital Dubai",
+    "organization": "NMC Healthcare",
+    "subtitle": "Dubai · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Dubai",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "NMC Healthcare careers",
+    "url": "https://careers.nmc.ae/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "NMC Healthcare careers/search",
+        "url": "https://careers.nmc.ae/",
+        "quality": "A"
+      },
+      {
+        "name": "NMC Specialty Hospital Dubai live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=NMC%20Specialty%20Hospital%20Dubai%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 99,
+      "seniority": 99,
+      "industry": 99,
+      "location": 94,
+      "technology": 99,
+      "overall": 99
+    },
+    "match_score": 99,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "NMC Healthcare",
+    "city": "Dubai",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-015",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dallah Hospital Al Nakheel",
+    "organization": "Dallah Health",
+    "subtitle": "Riyadh · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Riyadh",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Dallah%20Health%20Saudi%20Arabia&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Dallah Health careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dallah%20Health%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Dallah Hospital Al Nakheel live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dallah%20Hospital%20Al%20Nakheel%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Dallah Health",
+    "city": "Riyadh",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-016",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dallah Hospital Namar",
+    "organization": "Dallah Health",
+    "subtitle": "Riyadh · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Riyadh",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Dallah%20Health%20Saudi%20Arabia&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Dallah Health careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dallah%20Health%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Dallah Hospital Namar live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dallah%20Hospital%20Namar%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Dallah Health",
+    "city": "Riyadh",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-017",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dr. Soliman Fakeeh Hospital Jeddah",
+    "organization": "Fakeeh Care",
+    "subtitle": "Jeddah · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Jeddah",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Fakeeh Care careers",
+    "url": "https://careers.fakeeh.care/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Fakeeh Care careers/search",
+        "url": "https://careers.fakeeh.care/",
+        "quality": "A"
+      },
+      {
+        "name": "Dr. Soliman Fakeeh Hospital Jeddah live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr.%20Soliman%20Fakeeh%20Hospital%20Jeddah%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Fakeeh Care",
+    "city": "Jeddah",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-018",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dr. Soliman Fakeeh Hospital Madinah",
+    "organization": "Fakeeh Care",
+    "subtitle": "Madinah · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Madinah",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Fakeeh Care careers",
+    "url": "https://careers.fakeeh.care/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Fakeeh Care careers/search",
+        "url": "https://careers.fakeeh.care/",
+        "quality": "A"
+      },
+      {
+        "name": "Dr. Soliman Fakeeh Hospital Madinah live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr.%20Soliman%20Fakeeh%20Hospital%20Madinah%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Fakeeh Care",
+    "city": "Madinah",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-005",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dr. Sulaiman Al Habib Hospital Al Khobar",
+    "organization": "Dr. Sulaiman Al Habib Medical Group",
+    "subtitle": "Al Khobar · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Al Khobar",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Dr. Sulaiman Al Habib Medical Group careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Dr. Sulaiman Al Habib Hospital Al Khobar live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr.%20Sulaiman%20Al%20Habib%20Hospital%20Al%20Khobar%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Dr. Sulaiman Al Habib Medical Group",
+    "city": "Al Khobar",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-006",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dr. Sulaiman Al Habib Hospital Al Qassim",
+    "organization": "Dr. Sulaiman Al Habib Medical Group",
+    "subtitle": "Buraydah · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Buraydah",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Dr. Sulaiman Al Habib Medical Group careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Dr. Sulaiman Al Habib Hospital Al Qassim live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr.%20Sulaiman%20Al%20Habib%20Hospital%20Al%20Qassim%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Dr. Sulaiman Al Habib Medical Group",
+    "city": "Buraydah",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-003",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dr. Sulaiman Al Habib Hospital Al Rayyan",
+    "organization": "Dr. Sulaiman Al Habib Medical Group",
+    "subtitle": "Riyadh · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Riyadh",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Dr. Sulaiman Al Habib Medical Group careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Dr. Sulaiman Al Habib Hospital Al Rayyan live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr.%20Sulaiman%20Al%20Habib%20Hospital%20Al%20Rayyan%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Dr. Sulaiman Al Habib Medical Group",
+    "city": "Riyadh",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-007",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dr. Sulaiman Al Habib Hospital Al Sahafa",
+    "organization": "Dr. Sulaiman Al Habib Medical Group",
+    "subtitle": "Riyadh · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Riyadh",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Dr. Sulaiman Al Habib Medical Group careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Dr. Sulaiman Al Habib Hospital Al Sahafa live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr.%20Sulaiman%20Al%20Habib%20Hospital%20Al%20Sahafa%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Dr. Sulaiman Al Habib Medical Group",
+    "city": "Riyadh",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-004",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dr. Sulaiman Al Habib Hospital Al Suwaidi",
+    "organization": "Dr. Sulaiman Al Habib Medical Group",
+    "subtitle": "Riyadh · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Riyadh",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Dr. Sulaiman Al Habib Medical Group careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Dr. Sulaiman Al Habib Hospital Al Suwaidi live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr.%20Sulaiman%20Al%20Habib%20Hospital%20Al%20Suwaidi%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Dr. Sulaiman Al Habib Medical Group",
+    "city": "Riyadh",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-002",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dr. Sulaiman Al Habib Hospital Al Takhassusi",
+    "organization": "Dr. Sulaiman Al Habib Medical Group",
+    "subtitle": "Riyadh · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Riyadh",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Dr. Sulaiman Al Habib Medical Group careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Dr. Sulaiman Al Habib Hospital Al Takhassusi live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr.%20Sulaiman%20Al%20Habib%20Hospital%20Al%20Takhassusi%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Dr. Sulaiman Al Habib Medical Group",
+    "city": "Riyadh",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-008",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dr. Sulaiman Al Habib Hospital Jeddah",
+    "organization": "Dr. Sulaiman Al Habib Medical Group",
+    "subtitle": "Jeddah · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Jeddah",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Dr. Sulaiman Al Habib Medical Group careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Dr. Sulaiman Al Habib Hospital Jeddah live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr.%20Sulaiman%20Al%20Habib%20Hospital%20Jeddah%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Dr. Sulaiman Al Habib Medical Group",
+    "city": "Jeddah",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-001",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dr. Sulaiman Al Habib Hospital Olaya",
+    "organization": "Dr. Sulaiman Al Habib Medical Group",
+    "subtitle": "Riyadh · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Riyadh",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Dr. Sulaiman Al Habib Medical Group careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr%20Sulaiman%20Al%20Habib%20Medical%20Group&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Dr. Sulaiman Al Habib Hospital Olaya live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dr.%20Sulaiman%20Al%20Habib%20Hospital%20Olaya%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Dr. Sulaiman Al Habib Medical Group",
+    "city": "Riyadh",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-024",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "International Medical Center Jeddah",
+    "organization": "International Medical Center",
+    "subtitle": "Jeddah · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Jeddah",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "International Medical Center careers",
+    "url": "https://www.imc.med.sa/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "International Medical Center careers/search",
+        "url": "https://www.imc.med.sa/",
+        "quality": "A"
+      },
+      {
+        "name": "International Medical Center Jeddah live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=International%20Medical%20Center%20Jeddah%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "International Medical Center",
+    "city": "Jeddah",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-025",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Kingdom Hospital Riyadh",
+    "organization": "Kingdom Hospital",
+    "subtitle": "Riyadh · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Riyadh",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Kingdom%20Hospital%20Riyadh&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Kingdom Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Kingdom%20Hospital%20Riyadh&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Kingdom Hospital Riyadh live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Kingdom%20Hospital%20Riyadh%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Kingdom Hospital",
+    "city": "Riyadh",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-009",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Mouwasat Hospital Dammam",
+    "organization": "Mouwasat Medical Services",
+    "subtitle": "Dammam · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Dammam",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Mouwasat Medical Services careers",
+    "url": "https://www.mouwasat.com/en/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Mouwasat Medical Services careers/search",
+        "url": "https://www.mouwasat.com/en/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Mouwasat Hospital Dammam live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mouwasat%20Hospital%20Dammam%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Mouwasat Medical Services",
+    "city": "Dammam",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-011",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Mouwasat Hospital Jubail",
+    "organization": "Mouwasat Medical Services",
+    "subtitle": "Jubail · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Jubail",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Mouwasat Medical Services careers",
+    "url": "https://www.mouwasat.com/en/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Mouwasat Medical Services careers/search",
+        "url": "https://www.mouwasat.com/en/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Mouwasat Hospital Jubail live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mouwasat%20Hospital%20Jubail%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Mouwasat Medical Services",
+    "city": "Jubail",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-013",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Mouwasat Hospital Khobar",
+    "organization": "Mouwasat Medical Services",
+    "subtitle": "Al Khobar · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Al Khobar",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Mouwasat Medical Services careers",
+    "url": "https://www.mouwasat.com/en/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Mouwasat Medical Services careers/search",
+        "url": "https://www.mouwasat.com/en/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Mouwasat Hospital Khobar live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mouwasat%20Hospital%20Khobar%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Mouwasat Medical Services",
+    "city": "Al Khobar",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-012",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Mouwasat Hospital Madinah",
+    "organization": "Mouwasat Medical Services",
+    "subtitle": "Madinah · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Madinah",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Mouwasat Medical Services careers",
+    "url": "https://www.mouwasat.com/en/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Mouwasat Medical Services careers/search",
+        "url": "https://www.mouwasat.com/en/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Mouwasat Hospital Madinah live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mouwasat%20Hospital%20Madinah%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Mouwasat Medical Services",
+    "city": "Madinah",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-014",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Mouwasat Hospital Qatif",
+    "organization": "Mouwasat Medical Services",
+    "subtitle": "Qatif · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Qatif",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Mouwasat Medical Services careers",
+    "url": "https://www.mouwasat.com/en/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Mouwasat Medical Services careers/search",
+        "url": "https://www.mouwasat.com/en/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Mouwasat Hospital Qatif live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mouwasat%20Hospital%20Qatif%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Mouwasat Medical Services",
+    "city": "Qatif",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-010",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Mouwasat Hospital Riyadh",
+    "organization": "Mouwasat Medical Services",
+    "subtitle": "Riyadh · Saudi Arabia",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Saudi Arabia",
+    "location": "Riyadh",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Mouwasat Medical Services careers",
+    "url": "https://www.mouwasat.com/en/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Mouwasat Medical Services careers/search",
+        "url": "https://www.mouwasat.com/en/careers",
+        "quality": "A"
+      },
+      {
+        "name": "Mouwasat Hospital Riyadh live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mouwasat%20Hospital%20Riyadh%20Saudi%20Arabia&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Mouwasat Medical Services",
+    "city": "Riyadh",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-044",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Al Zahra Hospital Dubai",
+    "organization": "Al Zahra Hospital Dubai",
+    "subtitle": "Dubai · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Dubai",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Al%20Zahra%20Hospital%20Dubai&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Al Zahra Hospital Dubai careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Al%20Zahra%20Hospital%20Dubai&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Al Zahra Hospital Dubai live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Al%20Zahra%20Hospital%20Dubai%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Al Zahra Hospital Dubai",
+    "city": "Dubai",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-041",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "American Hospital Dubai",
+    "organization": "American Hospital Dubai",
+    "subtitle": "Dubai · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Dubai",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "American Hospital Dubai careers",
+    "url": "https://www.ahdubai.com/careers",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "American Hospital Dubai careers/search",
+        "url": "https://www.ahdubai.com/careers",
+        "quality": "A"
+      },
+      {
+        "name": "American Hospital Dubai live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=American%20Hospital%20Dubai%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "American Hospital Dubai",
+    "city": "Dubai",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-045",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Emirates Hospital Jumeirah",
+    "organization": "Emirates Hospitals Group",
+    "subtitle": "Dubai · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Dubai",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Emirates%20Hospitals%20Group%20UAE&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Emirates Hospitals Group careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Emirates%20Hospitals%20Group%20UAE&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Emirates Hospital Jumeirah live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Emirates%20Hospital%20Jumeirah%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Emirates Hospitals Group",
+    "city": "Dubai",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-043",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Fakeeh University Hospital",
+    "organization": "Fakeeh Care",
+    "subtitle": "Dubai · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Dubai",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Fakeeh Care careers",
+    "url": "https://careers.fakeeh.care/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "Fakeeh Care careers/search",
+        "url": "https://careers.fakeeh.care/",
+        "quality": "A"
+      },
+      {
+        "name": "Fakeeh University Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Fakeeh%20University%20Hospital%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "Fakeeh Care",
+    "city": "Dubai",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-042",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "King's College Hospital London Dubai",
+    "organization": "King's College Hospital London Dubai",
+    "subtitle": "Dubai · United Arab Emirates",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "United Arab Emirates",
+    "location": "Dubai",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "King's College Hospital London Dubai careers",
+    "url": "https://kingscollegehospitaldubai.com/careers/",
+    "source_quality": "A",
+    "source_quality_label": "Official healthcare careers",
+    "verification_level": "Official careers",
+    "sources": [
+      {
+        "name": "King's College Hospital London Dubai careers/search",
+        "url": "https://kingscollegehospitaldubai.com/careers/",
+        "quality": "A"
+      },
+      {
+        "name": "King's College Hospital London Dubai live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=King%27s%20College%20Hospital%20London%20Dubai%20United%20Arab%20Emirates&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 96,
+      "seniority": 96,
+      "industry": 99,
+      "location": 94,
+      "technology": 96,
+      "overall": 96
+    },
+    "match_score": 96,
+    "fit": "High",
+    "priority_tier": "Priority 1",
+    "is_priority": true,
+    "employer_group": "King's College Hospital London Dubai",
+    "city": "Dubai",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-060",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "American Mission Hospital",
+    "organization": "Bahrain Private Hospital",
+    "subtitle": "Manama · Bahrain",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Bahrain",
+    "location": "Manama",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=American%20Mission%20Hospital%20Bahrain&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Bahrain Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=American%20Mission%20Hospital%20Bahrain&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "American Mission Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=American%20Mission%20Hospital%20Bahrain&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Bahrain Private Hospital",
+    "city": "Manama",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-059",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Royal Bahrain Hospital",
+    "organization": "Bahrain Private Hospital",
+    "subtitle": "Manama · Bahrain",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Bahrain",
+    "location": "Manama",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Royal%20Bahrain%20Hospital%20Bahrain&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Bahrain Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Royal%20Bahrain%20Hospital%20Bahrain&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Royal Bahrain Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Royal%20Bahrain%20Hospital%20Bahrain&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Bahrain Private Hospital",
+    "city": "Manama",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-055",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Al Seef Hospital",
+    "organization": "Kuwait Private Hospital",
+    "subtitle": "Kuwait City · Kuwait",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Kuwait",
+    "location": "Kuwait City",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Al%20Seef%20Hospital%20Kuwait&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Kuwait Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Al%20Seef%20Hospital%20Kuwait&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Al Seef Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Al%20Seef%20Hospital%20Kuwait&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Kuwait Private Hospital",
+    "city": "Kuwait City",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-052",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Dar Al Shifa Hospital",
+    "organization": "Kuwait Private Hospital",
+    "subtitle": "Kuwait City · Kuwait",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Kuwait",
+    "location": "Kuwait City",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Dar%20Al%20Shifa%20Hospital%20Kuwait&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Kuwait Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dar%20Al%20Shifa%20Hospital%20Kuwait&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Dar Al Shifa Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Dar%20Al%20Shifa%20Hospital%20Kuwait&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Kuwait Private Hospital",
+    "city": "Kuwait City",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-053",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Royale Hayat Hospital",
+    "organization": "Kuwait Private Hospital",
+    "subtitle": "Kuwait City · Kuwait",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Kuwait",
+    "location": "Kuwait City",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Royale%20Hayat%20Hospital%20Kuwait&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Kuwait Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Royale%20Hayat%20Hospital%20Kuwait&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Royale Hayat Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Royale%20Hayat%20Hospital%20Kuwait&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Kuwait Private Hospital",
+    "city": "Kuwait City",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-054",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Taiba Hospital",
+    "organization": "Kuwait Private Hospital",
+    "subtitle": "Kuwait City · Kuwait",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Kuwait",
+    "location": "Kuwait City",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Taiba%20Hospital%20Kuwait&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Kuwait Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Taiba%20Hospital%20Kuwait&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Taiba Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Taiba%20Hospital%20Kuwait&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Kuwait Private Hospital",
+    "city": "Kuwait City",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-056",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Muscat Private Hospital",
+    "organization": "Oman Private Hospital",
+    "subtitle": "Muscat · Oman",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Oman",
+    "location": "Muscat",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Muscat%20Private%20Hospital%20Oman&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Oman Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Muscat%20Private%20Hospital%20Oman&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Muscat Private Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Muscat%20Private%20Hospital%20Oman&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Oman Private Hospital",
+    "city": "Muscat",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-057",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Starcare Hospital Muscat",
+    "organization": "Oman Private Hospital",
+    "subtitle": "Muscat · Oman",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Oman",
+    "location": "Muscat",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Starcare%20Hospital%20Muscat%20Oman&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Oman Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Starcare%20Hospital%20Muscat%20Oman&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Starcare Hospital Muscat live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Starcare%20Hospital%20Muscat%20Oman&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Oman Private Hospital",
+    "city": "Muscat",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-046",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Al Ahli Hospital Doha",
+    "organization": "Qatar Private Hospital",
+    "subtitle": "Doha · Qatar",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Qatar",
+    "location": "Doha",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Al%20Ahli%20Hospital%20Doha%20Qatar&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Qatar Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Al%20Ahli%20Hospital%20Doha%20Qatar&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Al Ahli Hospital Doha live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Al%20Ahli%20Hospital%20Doha%20Qatar&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Qatar Private Hospital",
+    "city": "Doha",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-049",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Al Emadi Hospital",
+    "organization": "Qatar Private Hospital",
+    "subtitle": "Doha · Qatar",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Qatar",
+    "location": "Doha",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Al%20Emadi%20Hospital%20Qatar&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Qatar Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Al%20Emadi%20Hospital%20Qatar&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Al Emadi Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Al%20Emadi%20Hospital%20Qatar&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Qatar Private Hospital",
+    "city": "Doha",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-048",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Doha Clinic Hospital",
+    "organization": "Qatar Private Hospital",
+    "subtitle": "Doha · Qatar",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Qatar",
+    "location": "Doha",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Doha%20Clinic%20Hospital%20Qatar&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Qatar Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Doha%20Clinic%20Hospital%20Qatar&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Doha Clinic Hospital live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Doha%20Clinic%20Hospital%20Qatar&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Qatar Private Hospital",
+    "city": "Doha",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-047",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "The View Hospital Doha",
+    "organization": "Qatar Private Hospital",
+    "subtitle": "Doha · Qatar",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Qatar",
+    "location": "Doha",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=The%20View%20Hospital%20Doha%20Qatar&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Qatar Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=The%20View%20Hospital%20Doha%20Qatar&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "The View Hospital Doha live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=The%20View%20Hospital%20Doha%20Qatar&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Qatar Private Hospital",
+    "city": "Doha",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  },
+  {
+    "id": "hospital-gcc-050",
+    "record_type": "Major Private Hospital Employer",
+    "category": "company",
+    "title": "Turkish Hospital Qatar",
+    "organization": "Qatar Private Hospital",
+    "subtitle": "Doha · Qatar",
+    "role_family": "Healthcare Technology & Hospital Operations",
+    "type": "Private Hospitals & Healthcare",
+    "industry": "Private Hospitals & Healthcare",
+    "region": "GCC",
+    "country": "Qatar",
+    "location": "Doha",
+    "availability_status": "Live Search",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Hospital career or vacancy-search route",
+    "notes": "High-priority employer for healthcare IT, digital health, hospital information systems, interoperability, data platforms, cybersecurity, ERP, infrastructure, program management, clinical-system integration and digital-transformation leadership.",
+    "source": "Live company vacancy search",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=Turkish%20Hospital%20Qatar%20Qatar&sortBy=DD",
+    "source_quality": "B",
+    "source_quality_label": "Live employer search",
+    "verification_level": "Live search — verify employer posting",
+    "sources": [
+      {
+        "name": "Qatar Private Hospital careers/search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Turkish%20Hospital%20Qatar%20Qatar&sortBy=DD",
+        "quality": "B"
+      },
+      {
+        "name": "Turkish Hospital Qatar live vacancy search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Turkish%20Hospital%20Qatar%20Qatar&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "private-hospitals-gcc.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 92,
+      "industry": 99,
+      "location": 94,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Qatar Private Hospital",
+    "city": "Doha",
+    "focus_tags": [
+      "Healthcare IT",
+      "Digital Health",
+      "HIS / EHR",
+      "Interoperability",
+      "Data & Analytics",
+      "Hospital Operations"
+    ]
+  }
+]

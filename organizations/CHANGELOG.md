@@ -53,3 +53,9 @@
 
 - Added Top 100 Companies in Egypt and Top 100 Companies in the GCC pages.
 - Added 200 ranked cross-sector employer targets with official careers or live job-search routes.
+
+- Added Hotels and Private Hospitals employer directories.
+- Added 110 major hotel properties across Egypt and the GCC.
+- Added 100 major private hospital facilities across Egypt and the GCC.
+- Added official career routes, live searches, status controls, profile ranking, filters and CSV exports.
+- Integrated the new records into All Employers and Unified Search.

@@ -1,0 +1,3152 @@
+[
+  {
+    "id": "hotel-egypt-001",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Cairo Marriott Hotel",
+    "organization": "Marriott International",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Marriott International careers",
+    "url": "https://careers.marriott.com/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Marriott International careers",
+        "url": "https://careers.marriott.com/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "Cairo Marriott Hotel live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Cairo%20Marriott%20Hotel%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Marriott International",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-035",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Conrad Cairo",
+    "organization": "Hilton",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Hilton careers",
+    "url": "https://jobs.hilton.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Hilton careers",
+        "url": "https://jobs.hilton.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Conrad Cairo live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Conrad%20Cairo%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Hilton",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-013",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Fairmont Nile City",
+    "organization": "Accor Egypt",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Fairmont Nile City live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Fairmont%20Nile%20City%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-042",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Four Seasons Hotel Cairo at Nile Plaza",
+    "organization": "Four Seasons",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Four Seasons careers",
+    "url": "https://www.fourseasons.com/en/careers/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Four Seasons careers",
+        "url": "https://www.fourseasons.com/en/careers/",
+        "quality": "A"
+      },
+      {
+        "name": "Four Seasons Hotel Cairo at Nile Plaza live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Four%20Seasons%20Hotel%20Cairo%20at%20Nile%20Plaza%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Four Seasons",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-037",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Hilton Cairo Heliopolis",
+    "organization": "Hilton",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Hilton careers",
+    "url": "https://jobs.hilton.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Hilton careers",
+        "url": "https://jobs.hilton.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Hilton Cairo Heliopolis live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Hilton%20Cairo%20Heliopolis%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Hilton",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-038",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Hilton Cairo Nile Maadi",
+    "organization": "Hilton",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Hilton careers",
+    "url": "https://jobs.hilton.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Hilton careers",
+        "url": "https://jobs.hilton.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Hilton Cairo Nile Maadi live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Hilton%20Cairo%20Nile%20Maadi%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Hilton",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-030",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Holiday Inn Cairo Citystars",
+    "organization": "IHG Egypt",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "IHG Egypt careers",
+    "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "IHG Egypt careers",
+        "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+        "quality": "A"
+      },
+      {
+        "name": "Holiday Inn Cairo Citystars live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Holiday%20Inn%20Cairo%20Citystars%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "IHG Egypt",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-033",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Holiday Inn Cairo Maadi",
+    "organization": "IHG Egypt",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "IHG Egypt careers",
+    "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "IHG Egypt careers",
+        "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+        "quality": "A"
+      },
+      {
+        "name": "Holiday Inn Cairo Maadi live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Holiday%20Inn%20Cairo%20Maadi%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "IHG Egypt",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-029",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "InterContinental Cairo Citystars",
+    "organization": "IHG Egypt",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "IHG Egypt careers",
+    "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "IHG Egypt careers",
+        "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+        "quality": "A"
+      },
+      {
+        "name": "InterContinental Cairo Citystars live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=InterContinental%20Cairo%20Citystars%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "IHG Egypt",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-028",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "InterContinental Cairo Semiramis",
+    "organization": "IHG Egypt",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "IHG Egypt careers",
+    "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "IHG Egypt careers",
+        "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+        "quality": "A"
+      },
+      {
+        "name": "InterContinental Cairo Semiramis live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=InterContinental%20Cairo%20Semiramis%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "IHG Egypt",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-002",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "JW Marriott Hotel Cairo",
+    "organization": "Marriott International",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Marriott International careers",
+    "url": "https://careers.marriott.com/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Marriott International careers",
+        "url": "https://careers.marriott.com/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "JW Marriott Hotel Cairo live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=JW%20Marriott%20Hotel%20Cairo%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Marriott International",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-006",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Le Méridien Cairo Airport",
+    "organization": "Marriott International",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Marriott International careers",
+    "url": "https://careers.marriott.com/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Marriott International careers",
+        "url": "https://careers.marriott.com/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "Le Méridien Cairo Airport live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Le%20M%C3%A9ridien%20Cairo%20Airport%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Marriott International",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-021",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Novotel Cairo Airport",
+    "organization": "Accor Egypt",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Novotel Cairo Airport live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Novotel%20Cairo%20Airport%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-022",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Novotel Cairo El Borg",
+    "organization": "Accor Egypt",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Novotel Cairo El Borg live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Novotel%20Cairo%20El%20Borg%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-004",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Renaissance Cairo Mirage City Hotel",
+    "organization": "Marriott International",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Marriott International careers",
+    "url": "https://careers.marriott.com/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Marriott International careers",
+        "url": "https://careers.marriott.com/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "Renaissance Cairo Mirage City Hotel live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Renaissance%20Cairo%20Mirage%20City%20Hotel%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Marriott International",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-005",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Sheraton Cairo Hotel & Casino",
+    "organization": "Marriott International",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Marriott International careers",
+    "url": "https://careers.marriott.com/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Marriott International careers",
+        "url": "https://careers.marriott.com/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "Sheraton Cairo Hotel & Casino live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Sheraton%20Cairo%20Hotel%20%26%20Casino%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Marriott International",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-014",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Sofitel Cairo Nile El Gezirah",
+    "organization": "Accor Egypt",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Sofitel Cairo Nile El Gezirah live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Sofitel%20Cairo%20Nile%20El%20Gezirah%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-031",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Staybridge Suites Cairo Citystars",
+    "organization": "IHG Egypt",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "IHG Egypt careers",
+    "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "IHG Egypt careers",
+        "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+        "quality": "A"
+      },
+      {
+        "name": "Staybridge Suites Cairo Citystars live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Staybridge%20Suites%20Cairo%20Citystars%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "IHG Egypt",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-003",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "The Nile Ritz-Carlton, Cairo",
+    "organization": "Marriott International",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Marriott International careers",
+    "url": "https://careers.marriott.com/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Marriott International careers",
+        "url": "https://careers.marriott.com/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "The Nile Ritz-Carlton, Cairo live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=The%20Nile%20Ritz-Carlton%2C%20Cairo%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Marriott International",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-007",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "The St. Regis Cairo",
+    "organization": "Marriott International",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Marriott International careers",
+    "url": "https://careers.marriott.com/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Marriott International careers",
+        "url": "https://careers.marriott.com/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "The St. Regis Cairo live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=The%20St.%20Regis%20Cairo%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Marriott International",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-008",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "The Westin Cairo Golf Resort & Spa, Katameya Dunes",
+    "organization": "Marriott International",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Marriott International careers",
+    "url": "https://careers.marriott.com/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Marriott International careers",
+        "url": "https://careers.marriott.com/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "The Westin Cairo Golf Resort & Spa, Katameya Dunes live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=The%20Westin%20Cairo%20Golf%20Resort%20%26%20Spa%2C%20Katameya%20Dunes%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Marriott International",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-036",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Waldorf Astoria Cairo Heliopolis",
+    "organization": "Hilton",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Hilton careers",
+    "url": "https://jobs.hilton.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Hilton careers",
+        "url": "https://jobs.hilton.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Waldorf Astoria Cairo Heliopolis live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Waldorf%20Astoria%20Cairo%20Heliopolis%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 92,
+      "seniority": 90,
+      "industry": 78,
+      "location": 99,
+      "technology": 92,
+      "overall": 92
+    },
+    "match_score": 92,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Hilton",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-032",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Crowne Plaza West Cairo Arkan",
+    "organization": "IHG Egypt",
+    "subtitle": "Sheikh Zayed · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Sheikh Zayed",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "IHG Egypt careers",
+    "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "IHG Egypt careers",
+        "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+        "quality": "A"
+      },
+      {
+        "name": "Crowne Plaza West Cairo Arkan live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Crowne%20Plaza%20West%20Cairo%20Arkan%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "IHG Egypt",
+    "city": "Sheikh Zayed",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-045",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Four Seasons Hotel Alexandria at San Stefano",
+    "organization": "Four Seasons",
+    "subtitle": "Alexandria · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Alexandria",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Four Seasons careers",
+    "url": "https://www.fourseasons.com/en/careers/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Four Seasons careers",
+        "url": "https://www.fourseasons.com/en/careers/",
+        "quality": "A"
+      },
+      {
+        "name": "Four Seasons Hotel Alexandria at San Stefano live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Four%20Seasons%20Hotel%20Alexandria%20at%20San%20Stefano%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Four Seasons",
+    "city": "Alexandria",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-043",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Four Seasons Hotel Cairo at The First Residence",
+    "organization": "Four Seasons",
+    "subtitle": "Giza · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Giza",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Four Seasons careers",
+    "url": "https://www.fourseasons.com/en/careers/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Four Seasons careers",
+        "url": "https://www.fourseasons.com/en/careers/",
+        "quality": "A"
+      },
+      {
+        "name": "Four Seasons Hotel Cairo at The First Residence live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Four%20Seasons%20Hotel%20Cairo%20at%20The%20First%20Residence%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Four Seasons",
+    "city": "Giza",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-044",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Four Seasons Resort Sharm El Sheikh",
+    "organization": "Four Seasons",
+    "subtitle": "Sharm El Sheikh · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Sharm El Sheikh",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Four Seasons careers",
+    "url": "https://www.fourseasons.com/en/careers/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Four Seasons careers",
+        "url": "https://www.fourseasons.com/en/careers/",
+        "quality": "A"
+      },
+      {
+        "name": "Four Seasons Resort Sharm El Sheikh live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Four%20Seasons%20Resort%20Sharm%20El%20Sheikh%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Four Seasons",
+    "city": "Sharm El Sheikh",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-040",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Hilton Alexandria Corniche",
+    "organization": "Hilton",
+    "subtitle": "Alexandria · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Alexandria",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Hilton careers",
+    "url": "https://jobs.hilton.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Hilton careers",
+        "url": "https://jobs.hilton.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Hilton Alexandria Corniche live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Hilton%20Alexandria%20Corniche%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Hilton",
+    "city": "Alexandria",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-041",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Hilton Alexandria Green Plaza",
+    "organization": "Hilton",
+    "subtitle": "Alexandria · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Alexandria",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Hilton careers",
+    "url": "https://jobs.hilton.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Hilton careers",
+        "url": "https://jobs.hilton.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Hilton Alexandria Green Plaza live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Hilton%20Alexandria%20Green%20Plaza%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Hilton",
+    "city": "Alexandria",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-039",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Hilton Luxor Resort & Spa",
+    "organization": "Hilton",
+    "subtitle": "Luxor · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Luxor",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Hilton careers",
+    "url": "https://jobs.hilton.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Hilton careers",
+        "url": "https://jobs.hilton.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Hilton Luxor Resort & Spa live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Hilton%20Luxor%20Resort%20%26%20Spa%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Hilton",
+    "city": "Luxor",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-009",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Marriott Mena House, Cairo",
+    "organization": "Marriott International",
+    "subtitle": "Giza · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Giza",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Marriott International careers",
+    "url": "https://careers.marriott.com/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Marriott International careers",
+        "url": "https://careers.marriott.com/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "Marriott Mena House, Cairo live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Marriott%20Mena%20House%2C%20Cairo%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Marriott International",
+    "city": "Giza",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-020",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Mercure Hurghada Hotel",
+    "organization": "Accor Egypt",
+    "subtitle": "Hurghada · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Hurghada",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Mercure Hurghada Hotel live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Mercure%20Hurghada%20Hotel%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "Hurghada",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-016",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Mövenpick Hotel Cairo-Media City",
+    "organization": "Accor Egypt",
+    "subtitle": "6th of October City · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "6th of October City",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Mövenpick Hotel Cairo-Media City live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=M%C3%B6venpick%20Hotel%20Cairo-Media%20City%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "6th of October City",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-017",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Mövenpick Resort Aswan",
+    "organization": "Accor Egypt",
+    "subtitle": "Aswan · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Aswan",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Mövenpick Resort Aswan live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=M%C3%B6venpick%20Resort%20Aswan%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "Aswan",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-018",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Mövenpick Resort El Quseir",
+    "organization": "Accor Egypt",
+    "subtitle": "El Quseir · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "El Quseir",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Mövenpick Resort El Quseir live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=M%C3%B6venpick%20Resort%20El%20Quseir%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "El Quseir",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-019",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Mövenpick Resort Soma Bay",
+    "organization": "Accor Egypt",
+    "subtitle": "Soma Bay · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Soma Bay",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Mövenpick Resort Soma Bay live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=M%C3%B6venpick%20Resort%20Soma%20Bay%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "Soma Bay",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-026",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Rixos Premium Alamein",
+    "organization": "Accor Egypt",
+    "subtitle": "New Alamein · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "New Alamein",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Rixos Premium Alamein live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Rixos%20Premium%20Alamein%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "New Alamein",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-023",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Rixos Premium Seagate",
+    "organization": "Accor Egypt",
+    "subtitle": "Sharm El Sheikh · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Sharm El Sheikh",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Rixos Premium Seagate live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Rixos%20Premium%20Seagate%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "Sharm El Sheikh",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-025",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Rixos Radamis Sharm El Sheikh",
+    "organization": "Accor Egypt",
+    "subtitle": "Sharm El Sheikh · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Sharm El Sheikh",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Rixos Radamis Sharm El Sheikh live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Rixos%20Radamis%20Sharm%20El%20Sheikh%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "Sharm El Sheikh",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-024",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Rixos Sharm El Sheikh",
+    "organization": "Accor Egypt",
+    "subtitle": "Sharm El Sheikh · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Sharm El Sheikh",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Rixos Sharm El Sheikh live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Rixos%20Sharm%20El%20Sheikh%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "Sharm El Sheikh",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-010",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Sheraton Montazah Hotel",
+    "organization": "Marriott International",
+    "subtitle": "Alexandria · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Alexandria",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Marriott International careers",
+    "url": "https://careers.marriott.com/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Marriott International careers",
+        "url": "https://careers.marriott.com/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "Sheraton Montazah Hotel live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Sheraton%20Montazah%20Hotel%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Marriott International",
+    "city": "Alexandria",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-012",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Sheraton Sharm Hotel, Resort, Villas & Spa",
+    "organization": "Marriott International",
+    "subtitle": "Sharm El Sheikh · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Sharm El Sheikh",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Marriott International careers",
+    "url": "https://careers.marriott.com/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Marriott International careers",
+        "url": "https://careers.marriott.com/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "Sheraton Sharm Hotel, Resort, Villas & Spa live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Sheraton%20Sharm%20Hotel%2C%20Resort%2C%20Villas%20%26%20Spa%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Marriott International",
+    "city": "Sharm El Sheikh",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-011",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Sheraton Soma Bay Resort",
+    "organization": "Marriott International",
+    "subtitle": "Soma Bay · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Soma Bay",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Marriott International careers",
+    "url": "https://careers.marriott.com/jobs",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Marriott International careers",
+        "url": "https://careers.marriott.com/jobs",
+        "quality": "A"
+      },
+      {
+        "name": "Sheraton Soma Bay Resort live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Sheraton%20Soma%20Bay%20Resort%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Marriott International",
+    "city": "Soma Bay",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-015",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Sofitel Legend Old Cataract Aswan",
+    "organization": "Accor Egypt",
+    "subtitle": "Aswan · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Aswan",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Sofitel Legend Old Cataract Aswan live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Sofitel%20Legend%20Old%20Cataract%20Aswan%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "Aswan",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-027",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Swissôtel Sharm El Sheikh",
+    "organization": "Accor Egypt",
+    "subtitle": "Sharm El Sheikh · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Sharm El Sheikh",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Accor Egypt careers",
+    "url": "https://careers.accor.com/global/en/egypt",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Accor Egypt careers",
+        "url": "https://careers.accor.com/global/en/egypt",
+        "quality": "A"
+      },
+      {
+        "name": "Swissôtel Sharm El Sheikh live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Swiss%C3%B4tel%20Sharm%20El%20Sheikh%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "Accor Egypt",
+    "city": "Sharm El Sheikh",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-034",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "voco Cairo Arabella Plaza",
+    "organization": "IHG Egypt",
+    "subtitle": "New Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "New Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "IHG Egypt careers",
+    "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "IHG Egypt careers",
+        "url": "https://careers.ihg.com/en/search-and-apply/?area=egypt&geobloc=egypt&page=1",
+        "quality": "A"
+      },
+      {
+        "name": "voco Cairo Arabella Plaza live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=voco%20Cairo%20Arabella%20Plaza%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 90,
+      "seniority": 88,
+      "industry": 78,
+      "location": 99,
+      "technology": 90,
+      "overall": 90
+    },
+    "match_score": 90,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": true,
+    "employer_group": "IHG Egypt",
+    "city": "New Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-046",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Kempinski Nile Hotel Cairo",
+    "organization": "Kempinski",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Kempinski careers",
+    "url": "https://careers.kempinski.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Kempinski careers",
+        "url": "https://careers.kempinski.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Kempinski Nile Hotel Cairo live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Kempinski%20Nile%20Hotel%20Cairo%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 89,
+      "seniority": 87,
+      "industry": 78,
+      "location": 99,
+      "technology": 89,
+      "overall": 89
+    },
+    "match_score": 89,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Kempinski",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-050",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Steigenberger Hotel El Tahrir Cairo",
+    "organization": "Steigenberger / H World",
+    "subtitle": "Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Steigenberger / H World careers",
+    "url": "https://www.hrewards.com/en/career",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Steigenberger / H World careers",
+        "url": "https://www.hrewards.com/en/career",
+        "quality": "A"
+      },
+      {
+        "name": "Steigenberger Hotel El Tahrir Cairo live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Steigenberger%20Hotel%20El%20Tahrir%20Cairo%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 89,
+      "seniority": 87,
+      "industry": 78,
+      "location": 99,
+      "technology": 89,
+      "overall": 89
+    },
+    "match_score": 89,
+    "fit": "High",
+    "priority_tier": "Priority 2",
+    "is_priority": false,
+    "employer_group": "Steigenberger / H World",
+    "city": "Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-049",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Hyatt Regency Cairo West",
+    "organization": "Hyatt",
+    "subtitle": "6th of October City · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "6th of October City",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Hyatt careers",
+    "url": "https://careers.hyatt.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Hyatt careers",
+        "url": "https://careers.hyatt.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Hyatt Regency Cairo West live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Hyatt%20Regency%20Cairo%20West%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 87,
+      "seniority": 85,
+      "industry": 78,
+      "location": 99,
+      "technology": 87,
+      "overall": 87
+    },
+    "match_score": 87,
+    "fit": "Medium",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "employer_group": "Hyatt",
+    "city": "6th of October City",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-048",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Kempinski Hotel Soma Bay",
+    "organization": "Kempinski",
+    "subtitle": "Soma Bay · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "Soma Bay",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Kempinski careers",
+    "url": "https://careers.kempinski.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Kempinski careers",
+        "url": "https://careers.kempinski.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Kempinski Hotel Soma Bay live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Kempinski%20Hotel%20Soma%20Bay%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 87,
+      "seniority": 85,
+      "industry": 78,
+      "location": 99,
+      "technology": 87,
+      "overall": 87
+    },
+    "match_score": 87,
+    "fit": "Medium",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "employer_group": "Kempinski",
+    "city": "Soma Bay",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "id": "hotel-egypt-047",
+    "record_type": "Major Hotel Employer",
+    "category": "company",
+    "title": "Royal Maxim Palace Kempinski Cairo",
+    "organization": "Kempinski",
+    "subtitle": "New Cairo · Egypt",
+    "role_family": "Hospitality Technology & Operations",
+    "type": "Hotels & Hospitality",
+    "industry": "Hotels & Hospitality",
+    "region": "Egypt",
+    "country": "Egypt",
+    "location": "New Cairo",
+    "availability_status": "Career Page Available",
+    "application_status": "Not Reviewed",
+    "published_date": "",
+    "expiry_date": "",
+    "last_checked": "2026-07-29",
+    "posted_text": "Official hotel-chain career route",
+    "notes": "Target technology, digital, IT, data, cybersecurity, infrastructure, enterprise applications, project management, transformation, procurement systems and technology-enabled operations roles. The hotel career route may cover multiple properties in the group.",
+    "source": "Kempinski careers",
+    "url": "https://careers.kempinski.com/",
+    "source_quality": "A",
+    "source_quality_label": "Official hotel-group careers",
+    "verification_level": "Official group career page; verify property and country filters",
+    "sources": [
+      {
+        "name": "Kempinski careers",
+        "url": "https://careers.kempinski.com/",
+        "quality": "A"
+      },
+      {
+        "name": "Royal Maxim Palace Kempinski Cairo live job search",
+        "url": "https://www.linkedin.com/jobs/search/?keywords=Royal%20Maxim%20Palace%20Kempinski%20Cairo%20Egypt&sortBy=DD",
+        "quality": "B"
+      }
+    ],
+    "duplicate_count": 0,
+    "origin_pages": [
+      "major-hotels-egypt.html"
+    ],
+    "match": {
+      "role": 87,
+      "seniority": 85,
+      "industry": 78,
+      "location": 99,
+      "technology": 87,
+      "overall": 87
+    },
+    "match_score": 87,
+    "fit": "Medium",
+    "priority_tier": "Monitor",
+    "is_priority": false,
+    "employer_group": "Kempinski",
+    "city": "New Cairo",
+    "focus_tags": [
+      "Hotel Technology",
+      "Digital Transformation",
+      "IT Operations",
+      "Data & Analytics",
+      "Enterprise Applications"
+    ]
+  }
+]

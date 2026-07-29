@@ -223,3 +223,25 @@ A theme previously selected by the user remains stored in the browser under `car
 ## Top 100 Companies in Egypt and the GCC
 
 Added `top-100-companies-egypt.html` and `top-100-companies-gcc.html`, each with 100 employer targets, official careers or live searches, advanced filters, cards/table views, profile ranking, availability/application controls, saved searches, preferences, pagination and CSV export.
+
+## Hotels and Private Hospitals
+
+Added:
+- `hotels-private-hospitals.html`
+- `major-hotels-egypt.html` — 50 properties
+- `major-hotels-gcc.html` — 60 properties
+- `private-hospitals-egypt.html` — 40 facilities
+- `private-hospitals-gcc.html` — 60 facilities
+
+All four listing pages include:
+- Official careers or live employer searches
+- Search, advanced filters and sorting
+- Cards and table views
+- Application and availability status controls
+- Project-wide Job Preferences
+- Saved searches and current-result CSV export
+- Full dataset CSV downloads
+- Light theme by default and dark-theme support
+- Responsive desktop and mobile layouts
+
+The directories are employer-targeting resources, not hotel-quality or hospital-quality rankings.

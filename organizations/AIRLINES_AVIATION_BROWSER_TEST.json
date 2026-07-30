@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-07-30",
+  "page": "airlines-aviation-employers.html",
+  "desktop": {
+    "initial_records": 34,
+    "rendered_cards": 34,
+    "region_filters": {
+      "Egypt": 6,
+      "GCC": 13,
+      "Africa": 15
+    },
+    "table_rows": 34,
+    "application_status_persistence": "PASS",
+    "theme_toggle": "PASS",
+    "javascript_errors": 0
+  },
+  "mobile": {
+    "viewport": "390x844",
+    "initial_records": 34,
+    "rendered_cards": 34,
+    "region_filters": {
+      "Egypt": 6,
+      "GCC": 13,
+      "Africa": 15
+    },
+    "javascript_errors": 0
+  },
+  "integration_smoke": {
+    "companies.html": "2,033 results",
+    "organizations.html": "2,010 results",
+    "search.html": "16,630 results",
+    "index.html_updated_counts": "PASS",
+    "directory_link": "PASS",
+    "strategic_sectors_link": "PASS"
+  },
+  "result": "PASS"
+}

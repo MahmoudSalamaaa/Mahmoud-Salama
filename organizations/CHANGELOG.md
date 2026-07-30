@@ -70,3 +70,8 @@
 - Removed Google Search-generated records from all datasets and CSV exports.
 - Hardened status persistence and made listing data render immediately.
 - Regenerated every data JavaScript bridge and completed full static/browser validation.
+
+## 2026-07-30 — Airlines & Aviation employers
+- Added `airlines-aviation-employers.html` with 34 airline employers across Egypt, the GCC and Africa.
+- Added official career/corporate URLs, JSON, JavaScript bridge and CSV export.
+- Integrated missing airlines into unified employers, organizations and catalog datasets.

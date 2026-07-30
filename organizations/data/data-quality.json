@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-29",
+  "generated_at": "2026-07-30",
   "counts": {
     "jobs": 1371,
     "verified_vacancies": 68,
     "platform_indexed_vacancies": 1528,
     "priority_jobs": 140,
-    "companies": 2014,
+    "companies": 2033,
     "multinationals": 212,
     "healthcare_companies": 518,
     "supply_chain_companies": 72,
@@ -22,8 +22,9 @@
     "unverified_sources": 5187,
     "old_jobs": 171,
     "official_jobs": 68,
-    "organizations": 1991,
-    "catalog_records": 16611
+    "organizations": 2010,
+    "catalog_records": 16630,
+    "airlines_aviation_employers": 34
   },
   "source_quality": {
     "B": 24246,

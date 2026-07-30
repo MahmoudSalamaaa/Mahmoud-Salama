@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-29",
-  "version": "Cleaned Strategic Sectors Edition — No Google Live Search Pages",
+  "generated_at": "2026-07-30",
+  "version": "Cleaned Strategic Sectors + Airlines & Aviation Edition",
   "profile_name": "Mahmoud Salama",
   "profile_title": "Chief Technology & Digital Transformation Officer | Enterprise Architect",
   "datasets": {
@@ -18,7 +18,7 @@
     },
     "companies": {
       "file": "data/companies.json",
-      "count": 2014
+      "count": 2033
     },
     "multinationals": {
       "file": "data/multinationals.json",
@@ -58,10 +58,10 @@
     },
     "organizations": {
       "file": "data/organizations.json",
-      "count": 1991
+      "count": 2010
     }
   },
-  "total_records": 16611,
+  "total_records": 16630,
   "availability_options": {
     "job": [
       "Available",
@@ -182,9 +182,10 @@
       "automotive-companies-egypt": 43,
       "automotive-companies-gcc": 56,
       "manufacturing-companies-egypt": 60,
-      "manufacturing-companies-gcc": 74
+      "manufacturing-companies-gcc": 74,
+      "airlines-aviation-employers": 34
     },
-    "new_records": 311,
+    "new_records": 345,
     "suggested_next_sectors": [
       "Pharmaceutical & Medical Devices",
       "Logistics, Ports, Aviation & Supply Chain",
@@ -194,7 +195,17 @@
       "Consulting, BPO & IT Services",
       "Construction, Real Estate & Smart Cities",
       "FMCG, Retail & E-commerce"
-    ]
+    ],
+    "airlines_aviation": {
+      "page": "airlines-aviation-employers.html",
+      "records": 34,
+      "regions": {
+        "Egypt": 6,
+        "GCC": 13,
+        "Africa": 15
+      },
+      "source_policy": "Official airline careers or official corporate site only"
+    }
   },
   "cleanup": {
     "removed_live_search_pages": [

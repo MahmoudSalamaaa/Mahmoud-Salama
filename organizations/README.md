@@ -90,6 +90,10 @@ Duplicate pages removed:
 
 ## Test evidence
 
-- `BROWSER_SMOKE_TEST.json` — all 63 pages tested in desktop and mobile viewports.
+- `BROWSER_SMOKE_TEST.json` — the original 63 cleaned pages tested in desktop and mobile viewports.
+- `AIRLINES_AVIATION_BROWSER_TEST.json` — the new airlines page and its integrations tested on desktop and mobile.
 - `FULL_DATA_BROWSER_TEST.json` — largest pages tested with their complete datasets.
 - `FINAL_CLEANUP_AUDIT.json` and `.md` — final removal and validation record.
+
+## Airlines & Aviation Employers
+Open `airlines-aviation-employers.html` for a searchable directory of 34 airline employers across Egypt, the GCC and Africa. Records prioritize official career portals and use official corporate sites only where no dedicated career portal is published.

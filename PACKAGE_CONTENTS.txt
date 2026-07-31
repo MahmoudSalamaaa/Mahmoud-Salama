@@ -1,0 +1,30 @@
+MAHMOUD SALAMA - EXECUTIVE CAREER KIT
+
+Website pages
+- career-kit/index.html
+- career-kit/cto-cio-it-director.html
+- career-kit/enterprise-solution-architect.html
+- career-kit/digital-transformation-program-director.html
+- career-kit/executive-portfolio.html
+- career-kit/cover-letters.html
+- career-kit/recruiter-outreach.html
+- career-kit/analysis.html
+
+Targeted CVs - Word + PDF
+- CTO / CIO / IT Director
+- Enterprise / Solution Architect
+- Digital Transformation / Program Director
+
+Sector Cover Letters - Word + PDF
+- Technology & Software
+- Healthcare, NGO & International Development
+- Hospitality, Airlines & Travel Groups
+- Consulting, Government & Public-Sector Transformation
+
+Supporting documents - Word + PDF
+- Two-page Executive Technology Portfolio
+- Recruiter Outreach Pack
+- Career Assets Analysis & Implemented Strategy
+
+Original source PDFs are preserved under:
+- career-kit/downloads/originals/

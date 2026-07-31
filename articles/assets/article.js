@@ -1,27 +1,28 @@
 (() => {
+  const root = document.documentElement;
   const body = document.body;
-  const themeButton = document.querySelector('[data-theme]');
+  const progress = document.querySelector('.reading-progress');
   const navButton = document.querySelector('[data-nav-toggle]');
   const navMenu = document.querySelector('[data-nav-menu]');
   const storage = {
     get(key) { try { return window.localStorage.getItem(key); } catch (_) { return null; } },
     set(key, value) { try { window.localStorage.setItem(key, value); } catch (_) {} }
   };
-  if (storage.get('ms-theme') === 'dark') body.classList.add('dark');
+  const savedTheme = storage.get('ms-article-theme');
+  if (savedTheme === 'dark') body.classList.add('dark');
 
-  if (themeButton) {
-    themeButton.addEventListener('click', () => {
+  document.querySelectorAll('[data-theme]').forEach((button) => {
+    button.addEventListener('click', () => {
       body.classList.toggle('dark');
-      storage.set('ms-theme', body.classList.contains('dark') ? 'dark' : 'light');
+      storage.set('ms-article-theme', body.classList.contains('dark') ? 'dark' : 'light');
     });
-  }
+  });
 
   const closeMenu = () => {
     if (!navButton || !navMenu) return;
     navButton.setAttribute('aria-expanded', 'false');
     navMenu.classList.remove('open');
   };
-
   if (navButton && navMenu) {
     navButton.addEventListener('click', () => {
       const open = navButton.getAttribute('aria-expanded') === 'true';
@@ -35,9 +36,16 @@
     });
   }
 
-  const current = location.pathname.split('/').filter(Boolean).pop() || 'index.html';
-  document.querySelectorAll('[data-nav-menu] a').forEach((link) => {
-    const href = (link.getAttribute('href') || '').split('#')[0];
-    if (href === current || (current === '' && href === 'index.html')) link.setAttribute('aria-current', 'page');
+  document.querySelectorAll('[data-print]').forEach((button) => {
+    button.addEventListener('click', () => window.print());
   });
+
+  const updateProgress = () => {
+    if (!progress) return;
+    const available = root.scrollHeight - window.innerHeight;
+    progress.style.width = `${available > 0 ? Math.min(100, (window.scrollY / available) * 100) : 0}%`;
+  };
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress, { passive: true });
+  updateProgress();
 })();

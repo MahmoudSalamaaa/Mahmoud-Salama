@@ -1,15 +1,16 @@
-MAHMOUD SALAMA - EXECUTIVE CAREER KIT
+MAHMOUD SALAMA - COMPLETE WEB PROJECT
 
-Deployment:
-1. Copy the entire career-kit folder into the root of the existing static website.
-2. Open /career-kit/index.html.
-3. Keep the downloads and assets folders in place because all links are relative.
+Contents
+- /index.html : project landing page
+- /career-kit/ : complete executive career kit and all downloads
+- /articles/ : Executive Insights index, first article, PDF and print layout
+- /vercel.json : static deployment settings
 
-Usage:
-- Send only one targeted CV per vacancy.
-- Customize the matching sector cover letter.
-- Attach the two-page portfolio for high-priority applications.
-- Reserve the full 12-page portfolio for shortlisted or consulting opportunities.
+Deployment
+Upload the contents of this folder to the root of a static Vercel project.
 
-Brand palette:
-Navy #0A2239 | Cyan #0AA6B4 | Teal #147D7A | Gold #C9A227 | Light #EEF4F7
+Primary paths
+/
+/career-kit/
+/articles/
+/articles/from-digital-projects-to-institutional-capability.html

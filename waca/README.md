@@ -5,12 +5,12 @@ Open `index.html` in any modern browser. The project is fully static and works o
 
 ## Included
 - Role analysis based on the actual 2026 WaCA vacancy
-- 103 bilingual interview questions: 59 supplied + 44 added
+- 118 bilingual interview questions: 59 supplied + 44 vacancy-specific + 15 AWS/written-exam additions
 - Revised model answers where the original wording overreached or was too generic
 - Search, filters, progress status and private browser notes
 - Timed mock interview and scoring
 - STAR answer builder
-- MSF systems confidence map
+- MSF systems confidence map with explicit AWS evidence levels
 - 30-60-90 day plan
 
 ## Data and privacy

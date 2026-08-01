@@ -17,11 +17,11 @@
   </marker>
 </defs><rect width="1400" height="820" rx="40" fill="url(#bg)"/><text x="80" y="92" fill="#8eefff" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="4">ENTERPRISE ARCHITECTURE</text><text x="80" y="150" fill="#fff" font-family="Arial,sans-serif" font-size="44" font-weight="700">Connect strategy to execution</text>
 <g font-family="Arial,sans-serif" font-size="23" font-weight="700" text-anchor="middle">
-  <rect x="260" y="220" width="880" height="66" rx="18" fill="#f5e7bd"/><text x="700" y="262" fill="#071226">Strategy & Outcomes</text>
+  <rect x="260" y="220" width="880" height="66" rx="18" fill="#f5e7bd"/><text x="700" y="262" fill="#071226">Strategy &amp; Outcomes</text>
   <rect x="220" y="304" width="960" height="66" rx="18" fill="#d6f8ff"/><text x="700" y="346" fill="#071226">Business Capabilities</text>
-  <rect x="180" y="388" width="1040" height="66" rx="18" fill="#ffffff"/><text x="700" y="430" fill="#071226">Processes & Roles</text>
-  <rect x="140" y="472" width="1120" height="66" rx="18" fill="#eafaff"/><text x="700" y="514" fill="#071226">Information & Data Ownership</text>
-  <rect x="100" y="556" width="1200" height="66" rx="18" fill="#ffffff"/><text x="700" y="598" fill="#071226">Applications & Shared Platforms</text>
-  <rect x="60" y="640" width="1280" height="66" rx="18" fill="#d6f8ff"/><text x="700" y="682" fill="#071226">Integration, Identity, Security & Operations</text>
+  <rect x="180" y="388" width="1040" height="66" rx="18" fill="#ffffff"/><text x="700" y="430" fill="#071226">Processes &amp; Roles</text>
+  <rect x="140" y="472" width="1120" height="66" rx="18" fill="#eafaff"/><text x="700" y="514" fill="#071226">Information &amp; Data Ownership</text>
+  <rect x="100" y="556" width="1200" height="66" rx="18" fill="#ffffff"/><text x="700" y="598" fill="#071226">Applications &amp; Shared Platforms</text>
+  <rect x="60" y="640" width="1280" height="66" rx="18" fill="#d6f8ff"/><text x="700" y="682" fill="#071226">Integration, Identity, Security &amp; Operations</text>
 </g>
 <path d="M120 750 H1280" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/><text x="700" y="790" text-anchor="middle" fill="#d8b86a" font-family="Arial,sans-serif" font-size="21" font-weight="700">Transition Roadmap</text></svg>

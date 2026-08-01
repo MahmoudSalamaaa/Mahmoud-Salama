@@ -31,7 +31,7 @@
   <g><circle cx="690" cy="560" r="70" fill="#102c47" stroke="#d8b86a" stroke-width="3"/><text x="690" y="567" fill="#fff">Architecture</text></g>
   <g><circle cx="870" cy="560" r="70" fill="#102c47" stroke="#19d7ff" stroke-width="3"/><text x="870" y="567" fill="#fff">Delivery</text></g>
   <g><circle cx="1050" cy="560" r="70" fill="#102c47" stroke="#d8b86a" stroke-width="3"/><text x="1050" y="567" fill="#fff">Adoption</text></g>
-  <g><circle cx="1230" cy="560" r="70" fill="#102c47" stroke="#19d7ff" stroke-width="3"/><text x="1230" y="557" fill="#fff">Measure</text><text x="1230" y="580" fill="#fff">& Learn</text></g>
+  <g><circle cx="1230" cy="560" r="70" fill="#102c47" stroke="#19d7ff" stroke-width="3"/><text x="1230" y="557" fill="#fff">Measure</text><text x="1230" y="580" fill="#fff">&amp; Learn</text></g>
 </g>
 <path d="M150 475 C300 420 1100 420 1230 475" fill="none" stroke="#8eefff" opacity=".32" stroke-width="3" stroke-dasharray="10 12"/>
 </svg>

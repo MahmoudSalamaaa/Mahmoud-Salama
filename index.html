@@ -473,7 +473,7 @@
 </ul>
 </div>
 <div class="banner_btn">
-<a class="portfolio_btn btn_yellow" href="CVSalama.pdf" rel="noopener noreferrer" target="_blank">
+<a class="portfolio_btn btn_yellow" href="https://mahmoud-salama.vercel.app/CVSalama.pdf" rel="noopener noreferrer" target="_blank">
 <span class="first_text">Download Resume</span>
 <span class="second_text">Resume</span>
 </a>
@@ -1160,8 +1160,8 @@
                                                 "Operational dashboards for continuous improvement"
                                             ],
                                             outcomes: [
-                                                "74% faster turnaround time (define baseline in your final copy)",
-                                                "320K+ validations automated",
+                                                "Reduced turnaround time through workflow automation",
+                                                "Automated high-volume checks and validations",
                                                 "Improved compliance visibility and ownership"
                                             ],
                                             stack: ["Workflow", "APIs", "Analytics", "Data Quality"]
@@ -1183,8 +1183,8 @@
                                                 "Dashboards with drilldowns and anomaly signals"
                                             ],
                                             outcomes: [
-                                                "12M+ records/day processed (replace with your verified metric)",
-                                                "98% KPI accuracy/consistency (define how measured)",
+                                                "Processed large operational datasets through automated pipelines",
+                                                "Improved KPI consistency through a shared data model",
                                                 "Faster operational decision-making"
                                             ],
                                             stack: ["Data Pipelines", "KPI Model", "BI Dashboards", "Governance"]
@@ -1206,7 +1206,7 @@
                                                 "Reporting for consistency and audit readiness"
                                             ],
                                             outcomes: [
-                                                "3× faster review cycles (define baseline in your final copy)",
+                                                "Shortened review cycles through structured workflows",
                                                 "Higher consistency across reviewers",
                                                 "Audit-ready traceability end-to-end"
                                             ],
@@ -1229,7 +1229,7 @@
                                                 "Drilldowns by entity/vendor/category"
                                             ],
                                             outcomes: [
-                                                "Reduced delays and improved SLA compliance (replace with your numbers)",
+                                                "Reduced delays and improved SLA visibility",
                                                 "Clear ownership and faster escalation",
                                                 "Operational visibility across all stages"
                                             ],
@@ -1252,7 +1252,7 @@
                                                 "Scenario levers (lead time, MOQ, safety stock)"
                                             ],
                                             outcomes: [
-                                                "Reduced stockouts/waste (replace with your numbers)",
+                                                "Reduced stockout and waste exposure",
                                                 "Improved forecast accuracy and planning discipline",
                                                 "Better alignment between demand and procurement"
                                             ],
@@ -1298,7 +1298,7 @@
                                                 "Observability-driven rollout (rollback/canary patterns)"
                                             ],
                                             outcomes: [
-                                                "More frequent releases with fewer incidents (replace with your numbers)",
+                                                "Enabled more frequent releases with fewer avoidable incidents",
                                                 "Reduced defects and faster feedback loops",
                                                 "Predictable delivery cadence"
                                             ],
@@ -3494,7 +3494,7 @@
 <!-- Fade-in animation -->
 <script>
             (() => {
-                const cards = document.querySelectorAll('#Involvements .tl_card');
+                const cards = document.querySelectorAll('#involvements .tl_card');
                 const io = new IntersectionObserver((entries) => {
                     entries.forEach(e => {
                         if (e.isIntersecting) {
@@ -3732,7 +3732,7 @@
 <div class="col-12">
 <div class="port_contact_form">
 <!-- ضع رقم واتساب بصيغة E.164 في data-wa-phone (مثال مصر: 201234567890 بدون +) -->
-<form autocomplete="on" data-wa-phone="201220156077" id="contactForm" novalidate="False">
+<form autocomplete="on" data-wa-phone="201220156077" id="contactForm">
 <div class="row"><div aria-hidden="true" class="form-honeypot"><label for="companyWebsite">Leave this field empty</label><input autocomplete="off" id="companyWebsite" name="company_website" tabindex="-1" type="text"/></div>
 <div class="col-sm-6">
 <div class="form-group"><label class="sr-only" for="firstName">First name</label>
@@ -3981,7 +3981,7 @@
 <div class="copy_right_wrapper">
 <div class="col-12 text-center">
 <p class="copy_right">
-                                Copyright © 2025
+                                Copyright © <span id="copyrightYear">2026</span>
                                 <a href="javascript:;">Mahmoud Salama</a>. All Rights Reserved
                             </p>
 </div>
@@ -4036,138 +4036,148 @@
             }
         });
     </script>
-<script>
-        /* ===== EmailJS Setup (replace with your real keys) ===== */
-        const EMAILJS_PUBLIC_KEY = "BOnHvu4r0ERzq0mTR";      // e.g. "p4b1cK3y_ABC123"
-        const EMAILJS_SERVICE_ID = "service_lnfqrk2";      // e.g. "service_portfolio"
-        const EMAILJS_TEMPLATE_ID = "template_ososwf7";    // e.g. "template_contact"
+<script id="ms-contact-form-handler">
+        (function () {
+            "use strict";
 
-        (function initEmailJS() {
-            if (!window.emailjs) return console.error("EmailJS SDK failed to load.");
-            emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-        })();
+            const EMAILJS_PUBLIC_KEY = "BOnHvu4r0ERzq0mTR";
+            const EMAILJS_SERVICE_ID = "service_lnfqrk2";
+            const EMAILJS_TEMPLATE_ID = "template_ososwf7";
+            const MIN_FORM_TIME_MS = 1200;
+            const SEND_COOLDOWN_MS = 30000;
 
-        /* ===== Helpers ===== */
-        function $(sel, ctx = document) { return ctx.querySelector(sel); }
-        function $all(sel, ctx = document) { return [...ctx.querySelectorAll(sel)]; }
+            const form = document.getElementById("contactForm");
+            if (!form) return;
 
-        function showResponse(msg, ok = true) {
-            const res = $(".response");
-            if (!res) return;
-            res.textContent = msg;
-            res.style.padding = "10px 12px";
-            res.style.marginTop = "12px";
-            res.style.borderRadius = "8px";
-            res.style.fontWeight = "600";
-            res.style.background = ok ? "#ecfdf5" : "#fef2f2";      // soft green/red
-            res.style.color = ok ? "#065f46" : "#991b1b";
-            res.style.border = ok ? "1px solid #34d399" : "1px solid #fca5a5";
-        }
+            const btn = form.querySelector(".submitForm");
+            const response = form.querySelector(".response");
+            const startedAt = Date.now();
+            let sending = false;
 
-        function validateForm(form) {
-            let ok = true;
+            function showResponse(message, ok) {
+                if (!response) return;
+                response.textContent = message;
+                response.style.padding = message ? "10px 12px" : "";
+                response.style.marginTop = message ? "12px" : "";
+                response.style.borderRadius = message ? "8px" : "";
+                response.style.fontWeight = message ? "600" : "";
+                response.style.background = message ? (ok ? "#ecfdf5" : "#fef2f2") : "";
+                response.style.color = message ? (ok ? "#065f46" : "#991b1b") : "";
+                response.style.border = message ? (ok ? "1px solid #34d399" : "1px solid #fca5a5") : "";
+            }
 
-            // Basic required fields
-            $all(".require", form).forEach(input => {
-                const val = String(input.value || "").trim();
-                if (!val) {
-                    ok = false;
-                    input.classList.add("is-invalid");
-                } else {
-                    input.classList.remove("is-invalid");
+            function readLastSent() {
+                try {
+                    return Number(sessionStorage.getItem("msContactLastSent") || 0);
+                } catch (_) {
+                    return 0;
                 }
+            }
+
+            function saveLastSent(value) {
+                try {
+                    sessionStorage.setItem("msContactLastSent", String(value));
+                } catch (_) {
+                    // The form remains usable when browser storage is unavailable.
+                }
+            }
+
+            function setSendingState(active) {
+                if (!btn) return;
+                const first = btn.querySelector(".first_text");
+                const second = btn.querySelector(".second_text");
+
+                if (active) {
+                    btn.dataset.firstText = first ? first.textContent : "Submit";
+                    btn.dataset.secondText = second ? second.textContent : "Send";
+                    btn.disabled = true;
+                    btn.style.opacity = "0.7";
+                    if (first) first.textContent = "Sending…";
+                    if (second) second.textContent = "Please wait";
+                } else {
+                    btn.disabled = false;
+                    btn.style.opacity = "";
+                    if (first) first.textContent = btn.dataset.firstText || "Submit";
+                    if (second) second.textContent = btn.dataset.secondText || "Send";
+                }
+            }
+
+            form.querySelectorAll("input, textarea").forEach(function (field) {
+                field.addEventListener("input", function () {
+                    field.classList.remove("is-invalid");
+                    field.setCustomValidity("");
+                });
             });
 
-            // Email format
-            const emailEl = $("#email", form);
-            if (emailEl) {
-                const email = emailEl.value.trim();
-                const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRe.test(email)) {
-                    ok = false;
-                    emailEl.classList.add("is-invalid");
-                    emailEl.setCustomValidity("Invalid email");
-                } else {
-                    emailEl.classList.remove("is-invalid");
-                    emailEl.setCustomValidity("");
+            form.addEventListener("submit", async function (event) {
+                event.preventDefault();
+                if (sending) return;
+                showResponse("", true);
+
+                const honeypot = document.getElementById("companyWebsite");
+                if ((honeypot && honeypot.value.trim()) || Date.now() - startedAt < MIN_FORM_TIME_MS) {
+                    showResponse("Unable to submit this message.", false);
+                    return;
                 }
-            }
 
-            // Phone (very light check; customize if you want E.164 strictness)
-            const phoneEl = $("#phone", form);
-            if (phoneEl) {
-                const phone = String(phoneEl.value || "").trim();
-                const phoneRe = /^[0-9+\-\s()]{6,20}$/;
-                if (!phoneRe.test(phone)) {
-                    ok = false;
-                    phoneEl.classList.add("is-invalid");
-                    phoneEl.setCustomValidity("Invalid phone");
-                } else {
-                    phoneEl.classList.remove("is-invalid");
-                    phoneEl.setCustomValidity("");
+                const lastSent = readLastSent();
+                if (Date.now() - lastSent < SEND_COOLDOWN_MS) {
+                    showResponse("Please wait before sending another message.", false);
+                    return;
                 }
-            }
 
-            return ok;
-        }
+                const phoneField = document.getElementById("phone");
+                if (phoneField) {
+                    const phoneValue = phoneField.value.trim();
+                    const phonePattern = /^[0-9+\-\s()]{6,20}$/;
+                    phoneField.setCustomValidity(phoneValue && !phonePattern.test(phoneValue) ? "Please enter a valid phone number." : "");
+                }
 
-        /* ===== Wire up your existing button ===== */
-        (function attachHandler() {
-            const form = $("#contactForm");
-            const btn = $(".submitForm");
-            if (!form || !btn) return;
-
-            btn.addEventListener("click", async (e) => {
-                e.preventDefault();
-                showResponse("", true); // clear
-
-                // Validate
-                if (!validateForm(form)) {
+                if (!form.checkValidity()) {
+                    form.querySelectorAll(":invalid").forEach(function (field) {
+                        field.classList.add("is-invalid");
+                    });
+                    form.reportValidity();
                     showResponse("Please fill all required fields correctly.", false);
                     return;
                 }
 
-                // Collect fields
+                if (!window.emailjs || typeof window.emailjs.send !== "function") {
+                    showResponse("The messaging service is temporarily unavailable. Please use the email address below.", false);
+                    return;
+                }
+
                 const payload = {
-                    first_name: $("#firstName", form)?.value?.trim() || "",
-                    last_name: $("#lastName", form)?.value?.trim() || "",
-                    email: $("#email", form)?.value?.trim() || "",
-                    phone: $("#phone", form)?.value?.trim() || "",
-                    subject: $("#subject", form)?.value?.trim() || "Contact Form",
-                    message: $("#message", form)?.value?.trim() || "",
+                    first_name: document.getElementById("firstName")?.value.trim() || "",
+                    last_name: document.getElementById("lastName")?.value.trim() || "",
+                    email: document.getElementById("email")?.value.trim() || "",
+                    phone: document.getElementById("phone")?.value.trim() || "",
+                    subject: document.getElementById("subject")?.value.trim() || "Contact Form",
+                    message: document.getElementById("message")?.value.trim() || "",
                     page_url: location.href,
                     submitted_at: new Date().toISOString()
                 };
 
-                // UX: disable button while sending
-                const origFirst = btn.querySelector(".first_text")?.textContent || "Submit";
-                const origSecond = btn.querySelector(".second_text")?.textContent || "Send";
-                btn.disabled = true;
-                btn.style.opacity = "0.7";
-                const firstSpan = btn.querySelector(".first_text");
-                const secondSpan = btn.querySelector(".second_text");
-                if (firstSpan) firstSpan.textContent = "Sending…";
-                if (secondSpan) secondSpan.textContent = "Please wait";
+                sending = true;
+                setSendingState(true);
 
                 try {
-                    // Send via EmailJS
-                    const resp = await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, payload);
-                    if (resp && (resp.status === 200 || resp.text === "OK")) {
-                        showResponse("Thanks! Your message has been sent successfully ✅", true);
-                        form.reset();
-                    } else {
-                        showResponse("Sending failed. Please try again later.", false);
+                    if (typeof window.emailjs.init === "function") {
+                        window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
                     }
-                } catch (err) {
-                    console.error(err);
-                    const msg = (err && err.text) || (err && err.message) || "Failed to send email.";
-                    showResponse("Error: " + msg, false);
+                    const result = await window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, payload);
+                    if (!result || (result.status !== 200 && result.text !== "OK")) {
+                        throw new Error("Unexpected response from messaging service.");
+                    }
+                    saveLastSent(Date.now());
+                    form.reset();
+                    showResponse("Thanks! Your message has been sent successfully ✅", true);
+                } catch (error) {
+                    console.error("Contact form error:", error);
+                    showResponse("Sending failed. Please try again later or use the email address below.", false);
                 } finally {
-                    // Restore button
-                    btn.disabled = false;
-                    btn.style.opacity = "";
-                    if (firstSpan) firstSpan.textContent = origFirst;
-                    if (secondSpan) secondSpan.textContent = origSecond;
+                    sending = false;
+                    setSendingState(false);
                 }
             });
         })();
@@ -4410,119 +4420,92 @@
             });
         }
     </script>
-<script>
+
+
+<script id="ms-project-tabs-accessibility">
         (function () {
-            const modalEl = document.getElementById('csModal');
-            if (!modalEl) return;
-
-            const $ = (id) => document.getElementById(id);
-
-            const CASES = {
-                mediq: {
-                    title: "MedIQ Procurement Engine",
-                    sub: "Unified procurement workflows & automated validations.",
-                    badges: ["Platform", "Regulated", "Scale-ready"],
-                    context: "Unified procurement across entities with standardized validation and workflow automation.",
-                    challenge: [
-                        "Multiple process variations across entities",
-                        "High validation load + audit requirements",
-                        "Need for scale without breaking governance"
-                    ],
-                    approach: [
-                        "Modular workflow design + reusable validation services",
-                        "Role-based approvals + traceability by design",
-                        "Operational dashboards for continuous improvement"
-                    ],
-                    outcomes: [
-                        "Reduced turnaround time by ~74%",
-                        "Automated 320K+ checks and validations",
-                        "Improved compliance visibility and ownership"
-                    ],
-                    stack: ["ERP/Workflow", "APIs", "Analytics", "Data Quality"]
-                },
-
-                warehouse: {
-                    title: "National Warehouse Analytics",
-                    sub: "Modern pipelines & real-time operational KPIs.",
-                    badges: ["Data Platform", "Real-time", "Ops Excellence"],
-                    context: "Operational intelligence layer for warehouse & supply performance monitoring.",
-                    challenge: ["Data fragmentation", "Latency in reporting", "Inconsistent KPI definitions"],
-                    approach: ["Standard KPI model", "Automated pipelines", "Dashboards with drilldowns"],
-                    outcomes: ["12M+ records/day processed", "98% KPI consistency", "Faster operational decisions"],
-                    stack: ["Data Pipelines", "Warehouse KPIs", "BI Dashboards", "Governance"]
-                },
-
-                hta: {
-                    title: "HTA Digital Framework",
-                    sub: "End-to-end evidence review with full traceability.",
-                    badges: ["Governance-first", "Traceability", "Decision Support"],
-                    context: "A structured framework to manage evidence, appraisal steps, and review traceability.",
-                    challenge: ["Evidence sprawl", "Inconsistent reviews", "Need audit trail"],
-                    approach: ["Templates + workflow gates", "Versioned evidence repository", "Decision logs"],
-                    outcomes: ["3× faster review cycles", "Higher consistency", "Clear audit trail"],
-                    stack: ["Workflow", "Document Control", "Analytics", "Policy Alignment"]
-                }
-            };
-
-            function fillList(ul, items) {
-                ul.innerHTML = "";
-                items.forEach(t => {
-                    const li = document.createElement("li");
-                    li.textContent = t;
-                    ul.appendChild(li);
+            const tabs = Array.from(document.querySelectorAll('#works .pcs-tabs [role="tab"]'));
+            if (!tabs.length) return;
+            function sync(active) {
+                tabs.forEach(function (tab) {
+                    const selected = tab === active;
+                    tab.setAttribute("aria-selected", selected ? "true" : "false");
+                    tab.setAttribute("tabindex", selected ? "0" : "-1");
                 });
             }
-
-            function fillTags(el, items) {
-                el.innerHTML = "";
-                items.forEach(t => {
-                    const s = document.createElement("span");
-                    s.textContent = t;
-                    el.appendChild(s);
+            const initial = tabs.find(function (tab) { return tab.getAttribute("aria-current") === "true"; }) || tabs[0];
+            sync(initial);
+            tabs.forEach(function (tab, index) {
+                tab.addEventListener("click", function () { sync(tab); });
+                tab.addEventListener("keydown", function (event) {
+                    if (event.key !== "ArrowRight" && event.key !== "ArrowLeft" && event.key !== "Home" && event.key !== "End") return;
+                    event.preventDefault();
+                    let next = index;
+                    if (event.key === "ArrowRight") next = (index + 1) % tabs.length;
+                    if (event.key === "ArrowLeft") next = (index - 1 + tabs.length) % tabs.length;
+                    if (event.key === "Home") next = 0;
+                    if (event.key === "End") next = tabs.length - 1;
+                    tabs[next].focus();
+                    tabs[next].click();
                 });
-            }
-
-            modalEl.addEventListener('show.bs.modal', function (ev) {
-                const btn = ev.relatedTarget;
-                const key = btn?.dataset?.case;
-                const data = CASES[key];
-                if (!data) return;
-
-                $("csModalTitle").textContent = data.title;
-                $("csModalSub").textContent = data.sub;
-                $("csModalContext").textContent = data.context;
-
-                fillTags($("csModalBadges"), data.badges.map(x => x));
-                fillList($("csModalChallenge"), data.challenge);
-                fillList($("csModalApproach"), data.approach);
-                fillList($("csModalOutcomes"), data.outcomes);
-                fillTags($("csModalStack"), data.stack);
             });
         })();
     </script>
-<script id="ms-contact-protection">
-document.addEventListener('DOMContentLoaded', function () {
-  var form = document.getElementById('contactForm');
-  if (!form) return;
-  var startedAt = Date.now();
-  form.addEventListener('submit', function (event) {
-    var honeypot = document.getElementById('companyWebsite');
-    var response = form.querySelector('.response');
-    if ((honeypot && honeypot.value.trim()) || Date.now() - startedAt < 1200) {
-      event.preventDefault();
-      if (response) response.textContent = 'Unable to submit this message.';
-      return;
-    }
-    var lastSent = Number(sessionStorage.getItem('msContactLastSent') || 0);
-    if (Date.now() - lastSent < 30000) {
-      event.preventDefault();
-      if (response) response.textContent = 'Please wait before sending another message.';
-      return;
-    }
-    if (form.checkValidity()) {
-      sessionStorage.setItem('msContactLastSent', String(Date.now()));
-    }
-  }, true);
-});
-</script></body>
+
+<script id="ms-maintenance-fixes">
+        (function () {
+            const year = document.getElementById("copyrightYear");
+            if (year) year.textContent = String(new Date().getFullYear());
+
+            document.querySelectorAll('a[target="_blank"]').forEach(function (link) {
+                const values = new Set((link.getAttribute("rel") || "").split(/\s+/).filter(Boolean));
+                values.add("noopener");
+                values.add("noreferrer");
+                link.setAttribute("rel", Array.from(values).join(" "));
+            });
+
+            const gallery = document.getElementById("glb");
+            if (gallery) {
+                gallery.setAttribute("role", "dialog");
+                gallery.setAttribute("aria-modal", "true");
+                gallery.setAttribute("aria-label", "Gallery image preview");
+                const close = gallery.querySelector(".lb-close");
+                const previous = gallery.querySelector(".lb-nav.prev");
+                const next = gallery.querySelector(".lb-nav.next");
+                let galleryOpener = null;
+
+                if (close) close.setAttribute("aria-label", "Close image preview");
+                if (previous) previous.setAttribute("aria-label", "Previous image");
+                if (next) next.setAttribute("aria-label", "Next image");
+
+                document.querySelectorAll(".g-item").forEach(function (item) {
+                    item.addEventListener("click", function () {
+                        galleryOpener = item;
+                        window.setTimeout(function () { if (close) close.focus(); }, 0);
+                    });
+                });
+
+                if (close) {
+                    close.addEventListener("click", function () {
+                        window.setTimeout(function () { if (galleryOpener) galleryOpener.focus(); }, 0);
+                    });
+                }
+
+                document.addEventListener("keydown", function (event) {
+                    if (!gallery.classList.contains("open")) return;
+                    if (event.key === "Escape" && close) {
+                        event.preventDefault();
+                        close.click();
+                    } else if (event.key === "ArrowLeft" && previous) {
+                        event.preventDefault();
+                        previous.click();
+                    } else if (event.key === "ArrowRight" && next) {
+                        event.preventDefault();
+                        next.click();
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
 </html>

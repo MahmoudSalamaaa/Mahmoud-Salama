@@ -1,0 +1,29 @@
+MAHMOUD SALAMA WEBSITE — NON-VISUAL FIX REPORT
+Date: 03 August 2026
+
+Design preservation
+- No CSS file was edited.
+- No section was removed or rearranged.
+- Existing colors, dimensions, spacing and visible layout were preserved.
+
+Functional fixes
+1. Rebuilt contact submission around the form submit event.
+2. Restored native HTML validation and preserved custom feedback.
+3. Consolidated honeypot, minimum-time, cooldown and duplicate-send protection.
+4. Removed the duplicated partial case-study script.
+5. Removed unfinished editorial instructions from case-study content.
+6. Corrected the case-sensitive Professional Involvements selector.
+7. Restored four missing image targets using existing related project assets.
+8. Repaired the resume link by using the confirmed live production PDF URL.
+9. Made the copyright year dynamic.
+10. Enforced noopener/noreferrer on external new-tab links.
+11. Added non-visual accessibility metadata and keyboard behavior for gallery and project tabs.
+
+Files changed or added
+- index.html
+- images/portfolio/Procuerment.jpg (restored)
+- images/portfolio/mediq.png (restored)
+- images/portfolio/order_tracking.png (restored)
+- assets/images/gallery/IMG-20230607-WA0007.jpg (restored)
+- PROJECT_MEMORY.md
+- FIX_REPORT_2026-08-03.txt

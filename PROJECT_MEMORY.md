@@ -51,3 +51,10 @@ Preserve external CSS and the existing design unless Mahmoud explicitly requests
 - Button labels stay on one line on mobile with responsive padding and font sizing.
 - New action colors use the approved brand palette: Cyan `#06b6d4` and Purple `#9c27b0`.
 - Profile social icons were moved slightly higher inside the black information panel on mobile.
+
+
+## 2026-08-04 — Executive Portfolio Link and Touch Animation
+- Updated the Executive Portfolio hero button to: `https://mahmoud-salama.vercel.app/executive-portfolio/`.
+- Added press/touch/keyboard animation support for all four hero buttons.
+- The first label hides and the second label appears during press.
+- Prevented sticky hover behavior on touch devices.

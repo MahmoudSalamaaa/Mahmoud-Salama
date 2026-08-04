@@ -11706,3 +11706,47 @@ img, video, canvas, svg {
         transform: translateY(-10px);
     }
 }
+
+
+/* ===== Hero action press/touch animation ===== */
+.banner_btn.hero-actions .portfolio_btn .first_text,
+.banner_btn.hero-actions .portfolio_btn .second_text {
+    opacity: 1;
+    will-change: transform, top, opacity;
+}
+.banner_btn.hero-actions .portfolio_btn.is-pressed .first_text,
+.banner_btn.hero-actions .portfolio_btn:active .first_text,
+.banner_btn.hero-actions .portfolio_btn:focus-visible .first_text {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+.banner_btn.hero-actions .portfolio_btn.is-pressed .second_text,
+.banner_btn.hero-actions .portfolio_btn:active .second_text,
+.banner_btn.hero-actions .portfolio_btn:focus-visible .second_text {
+    top: 0;
+    opacity: 1;
+}
+
+/* Prevent touch browsers from leaving the hover state stuck after a tap. */
+@media (hover: none) and (pointer: coarse) {
+    .banner_btn.hero-actions .portfolio_btn:hover .first_text {
+        transform: none;
+        opacity: 1;
+    }
+    .banner_btn.hero-actions .portfolio_btn:hover .second_text {
+        top: 100%;
+        opacity: 1;
+    }
+    .banner_btn.hero-actions .portfolio_btn.is-pressed .first_text,
+    .banner_btn.hero-actions .portfolio_btn:active .first_text,
+    .banner_btn.hero-actions .portfolio_btn:focus-visible .first_text {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    .banner_btn.hero-actions .portfolio_btn.is-pressed .second_text,
+    .banner_btn.hero-actions .portfolio_btn:active .second_text,
+    .banner_btn.hero-actions .portfolio_btn:focus-visible .second_text {
+        top: 0;
+        opacity: 1;
+    }
+}

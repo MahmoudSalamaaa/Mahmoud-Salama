@@ -504,7 +504,7 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 <span class="first_text">Digital Card</span>
 <span class="second_text">Open Card</span>
 </a>
-<a aria-label="View Mahmoud Salama executive project portfolio" class="portfolio_btn btn_purple" href="portfolio.html">
+<a aria-label="View Mahmoud Salama executive portfolio" class="portfolio_btn btn_purple" href="https://mahmoud-salama.vercel.app/executive-portfolio/" rel="noopener noreferrer" target="_blank">
 <span class="first_text">Executive Portfolio</span>
 <span class="second_text">View Portfolio</span>
 </a>
@@ -4095,5 +4095,51 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
             }
         })();
     </script>
+
+<script id="ms-hero-action-press-animation">
+(function () {
+    const buttons = Array.from(document.querySelectorAll('.hero-actions .portfolio_btn'));
+    if (!buttons.length) return;
+
+    function setPressed(button, pressed) {
+        button.classList.toggle('is-pressed', pressed);
+    }
+
+    buttons.forEach(function (button) {
+        let releaseTimer = null;
+
+        function press() {
+            if (releaseTimer) window.clearTimeout(releaseTimer);
+            setPressed(button, true);
+        }
+
+        function release(delay) {
+            if (releaseTimer) window.clearTimeout(releaseTimer);
+            releaseTimer = window.setTimeout(function () {
+                setPressed(button, false);
+            }, typeof delay === 'number' ? delay : 180);
+        }
+
+        button.addEventListener('pointerdown', press, { passive: true });
+        button.addEventListener('pointerup', function () { release(220); }, { passive: true });
+        button.addEventListener('pointercancel', function () { release(0); }, { passive: true });
+        button.addEventListener('pointerleave', function (event) {
+            if (event.buttons) release(0);
+        });
+
+        button.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') press();
+        });
+        button.addEventListener('keyup', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') release(220);
+        });
+        button.addEventListener('blur', function () { release(0); });
+        button.addEventListener('click', function () {
+            press();
+            release(260);
+        });
+    });
+})();
+</script>
 </body>
 </html>

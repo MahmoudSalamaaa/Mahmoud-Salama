@@ -1,0 +1,26 @@
+# Obsolete development copies and unrelated utilities retained only in the source archive
+index (3).html
+index_.html
+index__.html
+index.skills.html
+custom.html
+omar.html
+projects.html
+New Text Document.txt
+new port.txt
+*.rar
+*.zip
+QA_*.txt
+QA_*.json
+FIX_REPORT_*.txt
+CV_CONTENT_ALIGNMENT_REPORT.*
+PACKAGE_CONTENTS.txt
+css_color_palette.*
+
+.env.example
+DEPLOYMENT_CHECKLIST.md
+FINAL_FIX_REPORT.md
+FINAL_QA_REPORT.json
+PROJECT_MEMORY.md
+README.md
+README.txt

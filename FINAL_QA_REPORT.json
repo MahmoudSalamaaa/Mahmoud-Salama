@@ -1,0 +1,89 @@
+{
+  "generated": "2026-08-03",
+  "pages": {
+    "index.html": {
+      "title": "Mahmoud Salama | Technology & Digital Transformation Executive",
+      "duplicate_ids": [],
+      "missing_local_references": [],
+      "inline_javascript_errors": [],
+      "unsafe_target_blank_links": []
+    },
+    "portfolio.html": {
+      "title": "Full Portfolio | Mahmoud Salama",
+      "duplicate_ids": [],
+      "missing_local_references": [],
+      "inline_javascript_errors": [],
+      "unsafe_target_blank_links": []
+    },
+    "card.html": {
+      "title": "Mahmoud Salama | Executive Luxury Digital Card",
+      "duplicate_ids": [],
+      "missing_local_references": [],
+      "inline_javascript_errors": [],
+      "unsafe_target_blank_links": []
+    },
+    "resume.html": {
+      "title": "Executive CV | Mahmoud Salama",
+      "duplicate_ids": [],
+      "missing_local_references": [],
+      "inline_javascript_errors": [],
+      "unsafe_target_blank_links": []
+    }
+  },
+  "requirements": {
+    "professional_headline_present": true,
+    "official_role_present": true,
+    "headline_metrics": [
+      "18+ Years of Experience",
+      "EGP 150M+ Technology Portfolio Managed",
+      "40+ Technology Professionals Led",
+      "12,000+ Public-Sector Entities Supported",
+      "150+ Digital Initiatives Led or Supported",
+      "39,000+ Staff Reached Through Adoption & Training"
+    ],
+    "homepage_project_count": 10,
+    "homepage_project_breakdown": {
+      "applications": 8,
+      "portals": 2
+    },
+    "full_portfolio_project_count": 38,
+    "full_portfolio_breakdown": {
+      "applications": 22,
+      "portals": 16
+    },
+    "projects_missing_involvement_labels": 0,
+    "main_landmarks": 1,
+    "nav_landmarks": 1,
+    "read_more_buttons": 5,
+    "read_more_anchors": 0,
+    "project_filter_buttons": 3,
+    "project_filter_anchors": 0,
+    "browser_emailjs_sdk_present": false,
+    "contact_api_action": "/api/contact",
+    "contact_native_validation_enabled": true,
+    "vercel_analytics_on_all_active_pages": true,
+    "intro_once_per_browser": true,
+    "intro_duration_ms": 1300,
+    "hardcoded_emailjs_configuration_in_api": false,
+    "security_headers_configured": true,
+    "robots_present": true,
+    "sitemap_present": true,
+    "social_image_dimensions": [
+      1200,
+      630
+    ],
+    "cv_pdf_pages": 3,
+    "css_files_modified": [],
+    "css_files_added": [],
+    "css_files_deleted": []
+  },
+  "contact_api_tests": {
+    "method": 405,
+    "origin": 403,
+    "oversize": 413,
+    "honeypot": 400,
+    "timing": 400,
+    "validation": 400,
+    "unconfigured_delivery": 502
+  }
+}

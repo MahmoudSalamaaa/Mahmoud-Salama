@@ -1,0 +1,31 @@
+Mahmoud Salama Website — Changed Files Manifest
+Date: 2026-08-03
+
+Modified files:
+- PACKAGE_CONTENTS.txt
+- PROJECT_MEMORY.md
+- README.md
+- README.txt
+- card.html
+- index.html
+- resume.html
+
+New files:
+- .env.example
+- .vercelignore
+- CHANGED_FILES_MANIFEST.txt
+- DEPLOYMENT_CHECKLIST.md
+- FINAL_FIX_REPORT.md
+- FINAL_QA_REPORT.json
+- api/contact.js
+- assets/documents/Mahmoud_Salama_Executive_CV_2026.pdf
+- assets/images/mahmoud-salama-social-card.png
+- portfolio.html
+- robots.txt
+- sitemap.xml
+- vercel.json
+
+Deleted files:
+- None
+
+External CSS files modified: None

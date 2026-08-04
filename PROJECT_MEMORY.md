@@ -1,20 +1,39 @@
-# Mahmoud Salama Website — Project Baseline
+# Mahmoud Salama Website — Project Memory
 
-Baseline file supplied by Mahmoud Salama: `Mahmoud-Salama0.zip`
+## Source baseline
 
-## Active entry points
-- `index.html` — primary portfolio website
-- `card.html` — digital business card
-- `resume.html` — resume viewer
-- `custom.css` and `assets/css/` — visual design files
-- `assets/js/custom.js` — template interactions
+Original package supplied by Mahmoud Salama: `Mahmoud-Salama0.zip`.
 
-## Editing rule
-Preserve the current visual design, CSS, colors, spacing, and layout unless Mahmoud explicitly requests a redesign. Prefer surgical HTML/JavaScript fixes.
+## Maintained version
 
-## Current maintenance version
-- Version: `2026-08-03-nonvisual-fixes`
+- Version: `2026-08-03-executive-portfolio-complete`
+- Primary source directory used in this work session: `/mnt/data/ms_site_work`
 - CSS files modified: **No**
-- Primary fixes: contact form event flow, duplicate case-study script, unfinished case-study notes, missing assets, selector casing, dynamic copyright year, link safety, gallery and tab accessibility.
+- Current visual design is intentionally preserved.
 
-Use this file as the reference note when this project is uploaded again for future edits.
+## Active files
+
+- `index.html` — executive homepage with 10 flagship projects
+- `portfolio.html` — full 38-project catalogue
+- `card.html` — digital business card
+- `resume.html` — CV viewer
+- `assets/documents/Mahmoud_Salama_Executive_CV_2026.pdf` — downloadable CV
+- `assets/images/mahmoud-salama-social-card.png` — 1200×630 social image
+- `api/contact.js` — secure server-side contact endpoint
+- `vercel.json` — security headers
+- `robots.txt` and `sitemap.xml` — search-engine support
+
+## Identity policy
+
+- Professional headline: `Technology & Digital Transformation Executive | Enterprise Architect`
+- Official current role: `Head of Central Administration – Information Systems & Digital Transformation`
+- Standard phone: `+20 122 015 6077`
+- Standard location: `Cairo, Egypt`
+
+## Content policy
+
+Use evidence-backed metrics and qualify estimated results. Homepage proof points are 18+ years, EGP 150M+, 40+ professionals, 12,000+ entities, 150+ initiatives, and 39,000+ staff reached. Operational metrics belong inside their relevant case studies.
+
+## Future editing rule
+
+Preserve external CSS and the existing design unless Mahmoud explicitly requests a redesign. Prefer precise HTML, content, JavaScript, SEO, accessibility, security, and performance changes. Use this file and `README.md` to resume work in future sessions.

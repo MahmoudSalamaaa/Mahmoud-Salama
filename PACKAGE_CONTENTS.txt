@@ -1,30 +1,32 @@
-MAHMOUD SALAMA - EXECUTIVE CAREER KIT
+Mahmoud Salama Executive Portfolio — Package Contents
 
-Website pages
-- career-kit/index.html
-- career-kit/cto-cio-it-director.html
-- career-kit/enterprise-solution-architect.html
-- career-kit/digital-transformation-program-director.html
-- career-kit/executive-portfolio.html
-- career-kit/cover-letters.html
-- career-kit/recruiter-outreach.html
-- career-kit/analysis.html
+Active website:
+- index.html
+- portfolio.html
+- card.html
+- resume.html
+- custom.css
+- assets/css/*
+- assets/js/*
+- images/* and assets/images/*
 
-Targeted CVs - Word + PDF
-- CTO / CIO / IT Director
-- Enterprise / Solution Architect
-- Digital Transformation / Program Director
+Executive assets:
+- assets/documents/Mahmoud_Salama_Executive_CV_2026.pdf
+- assets/images/mahmoud-salama-social-card.png
 
-Sector Cover Letters - Word + PDF
-- Technology & Software
-- Healthcare, NGO & International Development
-- Hospitality, Airlines & Travel Groups
-- Consulting, Government & Public-Sector Transformation
+Deployment and security:
+- api/contact.js
+- vercel.json
+- robots.txt
+- sitemap.xml
+- .vercelignore
+- .env.example
 
-Supporting documents - Word + PDF
-- Two-page Executive Technology Portfolio
-- Recruiter Outreach Pack
-- Career Assets Analysis & Implemented Strategy
+Maintenance documentation:
+- README.md
+- PROJECT_MEMORY.md
+- DEPLOYMENT_CHECKLIST.md
+- FINAL_FIX_REPORT.md
+- FINAL_QA_REPORT.json
 
-Original source PDFs are preserved under:
-- career-kit/downloads/originals/
+Older source copies are retained in the archive for recovery but excluded from Vercel deployment through .vercelignore.

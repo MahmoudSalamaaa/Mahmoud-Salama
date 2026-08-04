@@ -45,3 +45,9 @@ Preserve external CSS and the existing design unless Mahmoud explicitly requests
 - Improved mobile project-card spacing.
 - Reflowed personal information as a responsive grid, kept the email on one line, and kept social icons inside the dark information overlay.
 - Changes are scoped in `custom.css`; the underlying theme stylesheet remains untouched.
+
+## 2026-08-04 — Hero Action Grid Refinement
+- Hero now has four quick-action buttons in a 2×2 grid: Download Resume, Start a Conversation, Digital Card, and Executive Portfolio.
+- Button labels stay on one line on mobile with responsive padding and font sizing.
+- New action colors use the approved brand palette: Cyan `#06b6d4` and Purple `#9c27b0`.
+- Profile social icons were moved slightly higher inside the black information panel on mobile.

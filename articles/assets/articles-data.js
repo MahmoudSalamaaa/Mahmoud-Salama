@@ -1,1 +1,0 @@
-window.MS_ARTICLES=[{"slug":"from-digital-projects-to-institutional-capability","title":"From Digital Projects to Institutional Capability","url":"/articles/from-digital-projects-to-institutional-capability/"}];

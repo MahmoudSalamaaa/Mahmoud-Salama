@@ -1,5 +1,0 @@
-Delete these obsolete client-logo files from the deployed project:
-images/clients/plan2.png
-images/clients/escd.png
-images/clients/bgicc.png
-images/clients/araborg.png

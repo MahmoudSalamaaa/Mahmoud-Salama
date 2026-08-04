@@ -58,3 +58,14 @@ Preserve external CSS and the existing design unless Mahmoud explicitly requests
 - Added press/touch/keyboard animation support for all four hero buttons.
 - The first label hides and the second label appears during press.
 - Prevented sticky hover behavior on touch devices.
+
+## CV-Aligned Executive Content Cleanup — 2026-08-04
+- Simplified the Executive Technology Operating Model to four evidence-backed pillars: Strategy, Architecture, Governance, and Delivery.
+- Removed the unsupported 320K validation claim, R&D Lab content, Release Engineering & DevEx case study, and other speculative operating-model material.
+- Removed subjective circular ratings and all skill progress bars.
+- Consolidated skills into concise executive and technical capability groups.
+- Removed the Hobbies section; retained Mentoring & Knowledge Sharing as a professional contribution.
+- Removed ambiguous client logos (Plan 2, ESCD, BGICC, Arab Organizers) from the trust section.
+- Moved selected earlier websites and digital products into a clearly labeled historical archive on portfolio.html.
+- Active public files changed: index.html, portfolio.html, custom.css.
+

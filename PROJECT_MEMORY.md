@@ -37,3 +37,11 @@ Use evidence-backed metrics and qualify estimated results. Homepage proof points
 ## Future editing rule
 
 Preserve external CSS and the existing design unless Mahmoud explicitly requests a redesign. Prefer precise HTML, content, JavaScript, SEO, accessibility, security, and performance changes. Use this file and `README.md` to resume work in future sessions.
+
+
+## 2026-08-04 mobile visual correction
+- Replaced the MedIQ homepage/full-portfolio event photograph with `images/portfolio/mediq-logo.svg`.
+- Removed the JavaScript that created a duplicate third project-footer badge.
+- Improved mobile project-card spacing.
+- Reflowed personal information as a responsive grid, kept the email on one line, and kept social icons inside the dark information overlay.
+- Changes are scoped in `custom.css`; the underlying theme stylesheet remains untouched.

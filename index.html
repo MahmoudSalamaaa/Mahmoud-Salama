@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Omar Mahmoud's colorful personal adventure website." />
+  <meta name="theme-color" content="#6c63ff" />
+  <title>Omar Mahmoud | My Adventure World</title>
+  <style>
+    :root {
+      --bg: #f5f7ff;
+      --surface: rgba(255, 255, 255, 0.82);
+      --surface-solid: #ffffff;
+      --surface-soft: #eef1ff;
+      --text: #20253a;
+      --muted: #67708f;
+      --primary: #6c63ff;
+      --primary-dark: #4f47dc;
+      --secondary: #ff5fa2;
+      --yellow: #ffc83d;
+      --green: #2fd3a0;
+      --blue: #45b6ff;
+      --orange: #ff8a45;
+      --border: rgba(44, 49, 85, 0.10);
+      --shadow: 0 18px 55px rgba(62, 68, 125, 0.16);
+      --shadow-small: 0 10px 28px rgba(62, 68, 125, 0.12);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --transition: 220ms ease;
+    }
+
+    html[data-theme="dark"] {
+      --bg: #0d1021;
+      --surface: rgba(25, 29, 52, 0.84);
+      --surface-solid: #181c34;
+      --surface-soft: #202541;
+      --text: #f6f7ff;
+      --muted: #aab2d3;
+      --primary: #8f89ff;
+      --primary-dark: #756eff;
+      --secondary: #ff78b6;
+      --yellow: #ffd45e;
+      --green: #4be4b4;
+      --blue: #64c3ff;
+      --orange: #ff9d65;
+      --border: rgba(255, 255, 255, 0.10);
+      --shadow: 0 20px 65px rgba(0, 0, 0, 0.38);
+      --shadow-small: 0 12px 30px rgba(0, 0, 0, 0.26);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 10%, color-mix(in srgb, var(--secondary) 18%, transparent) 0 9%, transparent 30%),
+        radial-gradient(circle at 90% 16%, color-mix(in srgb, var(--blue) 20%, transparent) 0 10%, transparent 32%),
+        radial-gradient(circle at 48% 96%, color-mix(in srgb, var(--green) 15%, transparent) 0 12%, transparent 35%),
+        var(--bg);
+      font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      transition: background-color var(--transition), color var(--transition);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.22;
+      background-image:
+        radial-gradient(circle at 10% 20%, var(--yellow) 0 2px, transparent 3px),
+        radial-gradient(circle at 72% 9%, var(--secondary) 0 2px, transparent 3px),
+        radial-gradient(circle at 87% 65%, var(--green) 0 2px, transparent 3px),
+        radial-gradient(circle at 22% 78%, var(--blue) 0 2px, transparent 3px);
+      background-size: 170px 170px, 210px 210px, 250px 250px, 290px 290px;
+      z-index: -1;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 32px));
+      margin-inline: auto;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      transform: translateY(-160%);
+      background: var(--surface-solid);
+      color: var(--text);
+      padding: 12px 18px;
+      border-radius: 12px;
+      z-index: 1000;
+      box-shadow: var(--shadow-small);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 14px 0;
+      backdrop-filter: blur(18px);
+      background: color-mix(in srgb, var(--bg) 80%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      font-size: 1.2rem;
+    }
+
+    .brand-badge {
+      width: 45px;
+      height: 45px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      color: white;
+      font-size: 1.45rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      box-shadow: 0 10px 22px color-mix(in srgb, var(--primary) 35%, transparent);
+      transform: rotate(-5deg);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-links a {
+      padding: 10px 13px;
+      color: var(--muted);
+      font-weight: 800;
+      border-radius: 14px;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--text);
+      background: var(--surface-soft);
+      outline: none;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .icon-btn {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      color: var(--text);
+      background: var(--surface);
+      box-shadow: var(--shadow-small);
+      cursor: pointer;
+      transition: transform var(--transition), background var(--transition);
+    }
+
+    .icon-btn:hover {
+      transform: translateY(-3px) rotate(2deg);
+    }
+
+    .hero {
+      min-height: 680px;
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      align-items: center;
+      gap: 52px;
+      padding: 76px 0 48px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 16px;
+      border: 1px solid color-mix(in srgb, var(--primary) 22%, transparent);
+      border-radius: 999px;
+      color: var(--primary-dark);
+      background: color-mix(in srgb, var(--primary) 11%, var(--surface-solid));
+      font-size: 0.95rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      font-size: clamp(3.25rem, 7vw, 6.5rem);
+      line-height: 0.96;
+      letter-spacing: -4px;
+      margin-bottom: 24px;
+    }
+
+    .gradient-text {
+      display: block;
+      padding-bottom: 8px;
+      color: transparent;
+      background: linear-gradient(120deg, var(--primary) 5%, var(--secondary) 52%, var(--orange) 95%);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .hero-copy {
+      max-width: 660px;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.3rem);
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 13px 20px;
+      border: 0;
+      border-radius: 17px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-4px);
+      outline: none;
+    }
+
+    .btn-primary {
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      box-shadow: 0 14px 30px color-mix(in srgb, var(--primary) 32%, transparent);
+    }
+
+    .btn-primary:hover {
+      filter: saturate(1.12);
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-small);
+    }
+
+    .mini-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .stat-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 15px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-small);
+      font-weight: 800;
+      color: var(--muted);
+    }
+
+    .stat-pill strong {
+      color: var(--text);
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 530px;
+      display: grid;
+      place-items: center;
+    }
+
+    .planet-card {
+      position: relative;
+      width: min(470px, 100%);
+      aspect-ratio: 1 / 1;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 33% 28%, rgba(255,255,255,0.85) 0 5%, transparent 13%),
+        linear-gradient(145deg, var(--blue), var(--primary) 52%, var(--secondary));
+      box-shadow:
+        inset -25px -30px 70px rgba(38, 29, 106, 0.26),
+        0 35px 75px color-mix(in srgb, var(--primary) 28%, transparent);
+      animation: float 4.5s ease-in-out infinite;
+    }
+
+    .planet-card::before {
+      content: "";
+      position: absolute;
+      width: 126%;
+      height: 28%;
+      border: 26px solid color-mix(in srgb, var(--yellow) 78%, white);
+      border-radius: 50%;
+      transform: rotate(-14deg);
+      box-shadow: 0 16px 32px rgba(93, 58, 24, 0.17);
+      z-index: -1;
+    }
+
+    .avatar {
+      width: 66%;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 36% 64% 52% 48% / 44% 42% 58% 56%;
+      background: rgba(255,255,255,0.92);
+      font-size: clamp(6rem, 13vw, 10rem);
+      box-shadow: inset 0 -18px 40px rgba(43, 52, 125, 0.12);
+      transform: rotate(2deg);
+    }
+
+    .orbit-item {
+      position: absolute;
+      width: 72px;
+      height: 72px;
+      display: grid;
+      place-items: center;
+      border-radius: 22px;
+      background: var(--surface-solid);
+      box-shadow: var(--shadow);
+      font-size: 2rem;
+      animation: bob 3.2s ease-in-out infinite;
+    }
+
+    .orbit-1 { top: 4%; left: 4%; animation-delay: -0.5s; transform: rotate(-8deg); }
+    .orbit-2 { top: 16%; right: 0; animation-delay: -1.4s; transform: rotate(8deg); }
+    .orbit-3 { bottom: 10%; left: 0; animation-delay: -2.1s; transform: rotate(-4deg); }
+    .orbit-4 { bottom: 0; right: 12%; animation-delay: -0.9s; transform: rotate(7deg); }
+
+    section {
+      padding: 72px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 22px;
+      margin-bottom: 28px;
+    }
+
+    .section-kicker {
+      color: var(--primary);
+      font-size: 0.9rem;
+      font-weight: 900;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin-top: 4px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      letter-spacing: -1.8px;
+    }
+
+    .section-subtitle {
+      max-width: 520px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .adventure-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .adventure-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 245px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      box-shadow: var(--shadow-small);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .adventure-card:hover {
+      transform: translateY(-8px) rotate(-0.5deg);
+      box-shadow: var(--shadow);
+    }
+
+    .adventure-card::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      right: -45px;
+      bottom: -45px;
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--accent) 25%, transparent);
+    }
+
+    .adventure-card:nth-child(1) { --accent: var(--primary); }
+    .adventure-card:nth-child(2) { --accent: var(--green); }
+    .adventure-card:nth-child(3) { --accent: var(--orange); }
+    .adventure-card:nth-child(4) { --accent: var(--secondary); }
+
+    .card-icon {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      font-size: 1.8rem;
+      background: color-mix(in srgb, var(--accent) 16%, var(--surface-solid));
+      margin-bottom: 18px;
+    }
+
+    .adventure-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+    }
+
+    .adventure-card p {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .game-layout {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 24px;
+    }
+
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .panel h3 {
+      font-size: 1.55rem;
+      margin-bottom: 8px;
+    }
+
+    .panel > p {
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    .reaction-zone {
+      position: relative;
+      overflow: hidden;
+      min-height: 330px;
+      display: grid;
+      place-items: center;
+      border-radius: 24px;
+      border: 2px dashed color-mix(in srgb, var(--primary) 35%, var(--border));
+      background:
+        linear-gradient(145deg, color-mix(in srgb, var(--blue) 8%, transparent), color-mix(in srgb, var(--secondary) 8%, transparent)),
+        var(--surface-soft);
+      user-select: none;
+    }
+
+    .reaction-target {
+      position: absolute;
+      width: 82px;
+      height: 82px;
+      display: grid;
+      place-items: center;
+      border: none;
+      border-radius: 50%;
+      font-size: 2.2rem;
+      background: linear-gradient(135deg, var(--yellow), var(--orange));
+      box-shadow: 0 14px 28px rgba(196, 115, 34, 0.28);
+      cursor: pointer;
+      transition: transform 120ms ease;
+    }
+
+    .reaction-target:hover {
+      transform: scale(1.08);
+    }
+
+    .reaction-target[hidden] {
+      display: none;
+    }
+
+    .game-scorebar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .score-box {
+      flex: 1;
+      min-width: 130px;
+      padding: 12px 15px;
+      border-radius: 15px;
+      background: var(--surface-soft);
+      font-weight: 900;
+    }
+
+    .quiz-options {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .quiz-option {
+      width: 100%;
+      text-align: left;
+      padding: 15px 16px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      color: var(--text);
+      background: var(--surface-solid);
+      font-weight: 800;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .quiz-option:hover,
+    .quiz-option:focus-visible {
+      border-color: var(--primary);
+      transform: translateX(5px);
+      outline: none;
+    }
+
+    .quiz-option.correct {
+      background: color-mix(in srgb, var(--green) 22%, var(--surface-solid));
+      border-color: var(--green);
+    }
+
+    .quiz-option.wrong {
+      background: color-mix(in srgb, var(--secondary) 18%, var(--surface-solid));
+      border-color: var(--secondary);
+    }
+
+    .quiz-result {
+      min-height: 30px;
+      margin-top: 16px;
+      font-weight: 900;
+    }
+
+    .badges-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .badge-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px;
+      border-radius: 22px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: var(--shadow-small);
+    }
+
+    .badge-medal {
+      width: 62px;
+      height: 62px;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      border-radius: 20px;
+      background: linear-gradient(145deg, color-mix(in srgb, var(--yellow) 28%, var(--surface-solid)), var(--surface-solid));
+      font-size: 2rem;
+    }
+
+    .badge-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 3px;
+    }
+
+    .badge-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .locked {
+      opacity: 0.52;
+      filter: grayscale(0.55);
+    }
+
+    .mascot-box {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      align-items: center;
+      gap: 24px;
+      padding: 28px;
+      border-radius: var(--radius-xl);
+      color: white;
+      background: linear-gradient(135deg, #524bcf, #7c56da 50%, #d64992);
+      box-shadow: 0 25px 70px rgba(71, 54, 172, 0.33);
+    }
+
+    .mascot-face {
+      width: 140px;
+      height: 140px;
+      display: grid;
+      place-items: center;
+      border-radius: 44% 56% 48% 52% / 48% 42% 58% 52%;
+      background: rgba(255,255,255,0.94);
+      font-size: 4.8rem;
+      box-shadow: inset 0 -14px 32px rgba(52, 26, 94, 0.17);
+      animation: bob 3s ease-in-out infinite;
+    }
+
+    .mascot-box h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    .mascot-box p {
+      color: rgba(255,255,255,0.88);
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .mascot-message {
+      min-height: 28px;
+      font-weight: 900;
+      color: white;
+      margin-top: 12px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 0.8fr;
+      grid-template-rows: 220px 220px;
+      gap: 16px;
+    }
+
+    .gallery-card {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: end;
+      min-height: 180px;
+      padding: 22px;
+      border-radius: 24px;
+      color: white;
+      box-shadow: var(--shadow-small);
+      isolation: isolate;
+    }
+
+    .gallery-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10, 14, 37, 0.78), transparent 65%);
+      z-index: -1;
+    }
+
+    .gallery-card::after {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      font-size: 6rem;
+      z-index: -2;
+    }
+
+    .gallery-card:nth-child(1) {
+      grid-row: 1 / span 2;
+      background: linear-gradient(135deg, #4746d6, #4ab8ff);
+    }
+    .gallery-card:nth-child(1)::after { content: "🚀"; font-size: 10rem; }
+    .gallery-card:nth-child(2) { background: linear-gradient(135deg, #ff8b48, #ffc64c); }
+    .gallery-card:nth-child(2)::after { content: "⚽"; }
+    .gallery-card:nth-child(3) { background: linear-gradient(135deg, #3ab897, #71e198); }
+    .gallery-card:nth-child(3)::after { content: "🧪"; }
+    .gallery-card:nth-child(4) { background: linear-gradient(135deg, #e04a91, #ff83b7); }
+    .gallery-card:nth-child(4)::after { content: "🎨"; }
+    .gallery-card:nth-child(5) { background: linear-gradient(135deg, #5d47b8, #9a72ef); }
+    .gallery-card:nth-child(5)::after { content: "🎮"; }
+
+    .gallery-card h3 {
+      font-size: 1.25rem;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      padding: 38px 0 46px;
+      color: var(--muted);
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .toast {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      max-width: min(360px, calc(100% - 36px));
+      padding: 15px 18px;
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      color: var(--text);
+      background: var(--surface-solid);
+      box-shadow: var(--shadow);
+      font-weight: 900;
+      transform: translateY(130%);
+      opacity: 0;
+      transition: 260ms ease;
+      z-index: 200;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .confetti {
+      position: fixed;
+      top: -20px;
+      width: 12px;
+      height: 18px;
+      border-radius: 3px;
+      pointer-events: none;
+      z-index: 999;
+      animation: fall 1.4s linear forwards;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-16px) rotate(1deg); }
+    }
+
+    @keyframes bob {
+      0%, 100% { translate: 0 0; }
+      50% { translate: 0 -9px; }
+    }
+
+    @keyframes fall {
+      to { transform: translateY(110vh) rotate(560deg); opacity: 0.8; }
+    }
+
+    @media (max-width: 980px) {
+      .nav-links { display: none; }
+      .hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        padding-top: 62px;
+      }
+      .hero-copy { max-width: 760px; }
+      .hero-visual { min-height: 500px; }
+      .adventure-grid,
+      .badges-grid { grid-template-columns: repeat(2, 1fr); }
+      .game-layout { grid-template-columns: 1fr; }
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 220px);
+      }
+      .gallery-card:nth-child(1) { grid-column: 1 / -1; grid-row: auto; }
+    }
+
+    @media (max-width: 650px) {
+      .container { width: min(100% - 22px, 1180px); }
+      .brand span:last-child { display: none; }
+      .hero { padding: 48px 0 28px; gap: 24px; }
+      .hero h1 { letter-spacing: -2.6px; }
+      .hero-visual { min-height: 390px; }
+      .planet-card { width: min(330px, 87vw); }
+      .orbit-item { width: 58px; height: 58px; border-radius: 18px; font-size: 1.6rem; }
+      .section-head { align-items: start; flex-direction: column; }
+      .adventure-grid,
+      .badges-grid,
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-rows: none; }
+      .gallery-card:nth-child(1) { grid-column: auto; }
+      .panel { padding: 20px; border-radius: 24px; }
+      .mascot-box { grid-template-columns: 1fr; text-align: center; }
+      .mascot-face { margin-inline: auto; }
+      .hero-actions .btn { width: 100%; }
+      .mini-stats { display: grid; grid-template-columns: 1fr 1fr; }
+      section { padding: 54px 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Omar's home page">
+        <span class="brand-badge" aria-hidden="true">🚀</span>
+        <span>Omar's World</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#adventures">Adventures</a>
+        <a href="#games">Games</a>
+        <a href="#badges">Badges</a>
+        <a href="#gallery">My World</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="soundToggle" type="button" aria-label="Turn sound effects on" title="Sound effects">
+          🔇
+        </button>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark theme" title="Change theme">
+          🌙
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="container hero" id="home">
+      <div>
+        <div class="eyebrow"><span aria-hidden="true">🎉</span> Officially 11 years awesome!</div>
+        <h1>
+          Hi, I'm
+          <span class="gradient-text">Omar Mahmoud</span>
+        </h1>
+        <p class="hero-copy">
+          Welcome to my colorful world of games, science, creativity, football, big dreams, and epic adventures.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#games">Play a Game <span aria-hidden="true">🎮</span></a>
+          <button class="btn btn-secondary" id="surpriseBtn" type="button">Give Me a Surprise <span aria-hidden="true">✨</span></button>
+        </div>
+
+        <div class="mini-stats" aria-label="Omar's fun stats">
+          <div class="stat-pill"><span>⭐</span><span><strong>11</strong> years old</span></div>
+          <div class="stat-pill"><span>🚀</span><span><strong>100%</strong> curious</span></div>
+          <div class="stat-pill"><span>😄</span><span><strong>∞</strong> imagination</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Playful space illustration">
+        <div class="orbit-item orbit-1" aria-hidden="true">🎮</div>
+        <div class="orbit-item orbit-2" aria-hidden="true">⚽</div>
+        <div class="orbit-item orbit-3" aria-hidden="true">🧠</div>
+        <div class="orbit-item orbit-4" aria-hidden="true">🎨</div>
+        <div class="planet-card">
+          <div class="avatar" role="img" aria-label="A young superhero astronaut">🧑‍🚀</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="adventures">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Explore & Discover</div>
+            <h2 class="section-title">Choose your next adventure</h2>
+          </div>
+          <p class="section-subtitle">Every day can be a new level. Learn something, build something, play hard, and dream even bigger.</p>
+        </div>
+
+        <div class="adventure-grid">
+          <article class="adventure-card">
+            <div class="card-icon">🧪</div>
+            <h3>Science Lab</h3>
+            <p>Ask big questions, test cool ideas, and discover how the universe works.</p>
+          </article>
+          <article class="adventure-card">
+            <div class="card-icon">🏗️</div>
+            <h3>Build & Create</h3>
+            <p>Turn imagination into drawings, inventions, stories, and brilliant projects.</p>
+          </article>
+          <article class="adventure-card">
+            <div class="card-icon">⚽</div>
+            <h3>Champion Mode</h3>
+            <p>Move, play, practice, and always show great teamwork and sportsmanship.</p>
+          </article>
+          <article class="adventure-card">
+            <div class="card-icon">🌌</div>
+            <h3>Dream Big</h3>
+            <p>Set bold goals and remember: every expert once started as a beginner.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="games">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Mini Game Zone</div>
+            <h2 class="section-title">Ready, player Omar?</h2>
+          </div>
+          <p class="section-subtitle">Test your speed, answer a fun question, and unlock a special achievement badge.</p>
+        </div>
+
+        <div class="game-layout">
+          <article class="panel">
+            <h3>⚡ Star Catcher</h3>
+            <p>Press start, then catch the moving star as many times as you can in 15 seconds.</p>
+            <div class="reaction-zone" id="reactionZone">
+              <button class="btn btn-primary" id="startGame" type="button">Start Game 🚀</button>
+              <button class="reaction-target" id="reactionTarget" type="button" aria-label="Catch the star" hidden>⭐</button>
+            </div>
+            <div class="game-scorebar">
+              <div class="score-box">Score: <span id="score">0</span></div>
+              <div class="score-box">Time: <span id="timer">15</span>s</div>
+              <div class="score-box">Best: <span id="bestScore">0</span></div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <h3>🧠 Brain Booster</h3>
+            <p id="quizQuestion">Which planet is known as the Red Planet?</p>
+            <div class="quiz-options" id="quizOptions">
+              <button class="quiz-option" data-answer="wrong" type="button">A. Venus</button>
+              <button class="quiz-option" data-answer="correct" type="button">B. Mars</button>
+              <button class="quiz-option" data-answer="wrong" type="button">C. Jupiter</button>
+              <button class="quiz-option" data-answer="wrong" type="button">D. Neptune</button>
+            </div>
+            <div class="quiz-result" id="quizResult" aria-live="polite"></div>
+            <button class="btn btn-secondary" id="newQuiz" type="button">New Question 🔄</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="badges">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Achievement Shelf</div>
+            <h2 class="section-title">Omar's super badges</h2>
+          </div>
+          <p class="section-subtitle">Some badges are already yours. Others are waiting for you to complete a challenge.</p>
+        </div>
+
+        <div class="badges-grid">
+          <article class="badge-card">
+            <div class="badge-medal">🚀</div>
+            <div><h3>Big Dreamer</h3><p>Unlocked for imagining amazing futures.</p></div>
+          </article>
+          <article class="badge-card">
+            <div class="badge-medal">💡</div>
+            <div><h3>Idea Machine</h3><p>Unlocked for creative thinking.</p></div>
+          </article>
+          <article class="badge-card locked" id="quizBadge">
+            <div class="badge-medal">🧠</div>
+            <div><h3>Quiz Master</h3><p>Answer a quiz question correctly.</p></div>
+          </article>
+          <article class="badge-card locked" id="gameBadge">
+            <div class="badge-medal">⭐</div>
+            <div><h3>Star Catcher</h3><p>Score at least 8 points in the game.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="mascot-box">
+          <div class="mascot-face" aria-hidden="true">🤖</div>
+          <div>
+            <h2>Meet Zappy, Omar's adventure buddy!</h2>
+            <p>Zappy shares quick ideas, cheerful challenges, and reminders to keep learning and having fun.</p>
+            <button class="btn btn-secondary" id="mascotBtn" type="button">Ask Zappy 💬</button>
+            <div class="mascot-message" id="mascotMessage" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">My Colorful World</div>
+            <h2 class="section-title">Things that make life awesome</h2>
+          </div>
+          <p class="section-subtitle">This section can later be replaced with Omar's real photos, favorite hobbies, school projects, and achievements.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card"><h3>Space Adventures</h3></article>
+          <article class="gallery-card"><h3>Football Time</h3></article>
+          <article class="gallery-card"><h3>Cool Experiments</h3></article>
+          <article class="gallery-card"><h3>Creative Art</h3></article>
+          <article class="gallery-card"><h3>Game Zone</h3></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">Made with ❤️ for Omar Mahmoud — Keep learning, playing, and dreaming big!</div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const soundToggle = document.getElementById('soundToggle');
+    const toast = document.getElementById('toast');
+
+    let soundOn = localStorage.getItem('omarSound') === 'on';
+    let audioContext;
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => toast.classList.remove('show'), 2600);
+    }
+
+    function playTone(frequency = 520, duration = 0.09) {
+      if (!soundOn) return;
+      try {
+        audioContext ||= new (window.AudioContext || window.webkitAudioContext)();
+        const oscillator = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        oscillator.type = 'sine';
+        oscillator.frequency.value = frequency;
+        gain.gain.setValueAtTime(0.08, audioContext.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + duration);
+        oscillator.connect(gain).connect(audioContext.destination);
+        oscillator.start();
+        oscillator.stop(audioContext.currentTime + duration);
+      } catch (error) {
+        console.warn('Audio is not available in this browser.', error);
+      }
+    }
+
+    function updateSoundButton() {
+      soundToggle.textContent = soundOn ? '🔊' : '🔇';
+      soundToggle.setAttribute('aria-label', soundOn ? 'Turn sound effects off' : 'Turn sound effects on');
+    }
+
+    soundToggle.addEventListener('click', () => {
+      soundOn = !soundOn;
+      localStorage.setItem('omarSound', soundOn ? 'on' : 'off');
+      updateSoundButton();
+      playTone(700, 0.12);
+      showToast(soundOn ? 'Sound effects are on! 🔊' : 'Sound effects are off. 🔇');
+    });
+
+    const savedTheme = localStorage.getItem('omarTheme');
+    const preferredDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = savedTheme || (preferredDark ? 'dark' : 'light');
+
+    function updateThemeButton() {
+      const dark = root.dataset.theme === 'dark';
+      themeToggle.textContent = dark ? '☀️' : '🌙';
+      themeToggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = next;
+      localStorage.setItem('omarTheme', next);
+      updateThemeButton();
+      playTone(next === 'dark' ? 380 : 620, 0.1);
+    });
+
+    updateThemeButton();
+    updateSoundButton();
+
+    function confetti(count = 45) {
+      const colors = ['#6c63ff', '#ff5fa2', '#ffc83d', '#2fd3a0', '#45b6ff', '#ff8a45'];
+      for (let i = 0; i < count; i++) {
+        const piece = document.createElement('span');
+        piece.className = 'confetti';
+        piece.style.left = `${Math.random() * 100}vw`;
+        piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+        piece.style.animationDelay = `${Math.random() * 0.5}s`;
+        piece.style.transform = `rotate(${Math.random() * 360}deg)`;
+        document.body.appendChild(piece);
+        setTimeout(() => piece.remove(), 2200);
+      }
+    }
+
+    const surprises = [
+      'Mission: learn one amazing fact about space today! 🌌',
+      'Challenge: draw your dream robot in five minutes! 🤖',
+      'Power move: make someone smile today! 😄',
+      'Adventure idea: build the tallest paper tower you can! 🏗️',
+      'Champion challenge: practice a new football skill! ⚽'
+    ];
+
+    document.getElementById('surpriseBtn').addEventListener('click', () => {
+      const surprise = surprises[Math.floor(Math.random() * surprises.length)];
+      showToast(surprise);
+      confetti(30);
+      playTone(760, 0.14);
+    });
+
+    const reactionZone = document.getElementById('reactionZone');
+    const reactionTarget = document.getElementById('reactionTarget');
+    const startGame = document.getElementById('startGame');
+    const scoreEl = document.getElementById('score');
+    const timerEl = document.getElementById('timer');
+    const bestScoreEl = document.getElementById('bestScore');
+    const gameBadge = document.getElementById('gameBadge');
+
+    let score = 0;
+    let timeLeft = 15;
+    let gameTimer;
+    let playing = false;
+    let bestScore = Number(localStorage.getItem('omarBestScore') || 0);
+    bestScoreEl.textContent = bestScore;
+
+    function moveTarget() {
+      const padding = 10;
+      const maxX = reactionZone.clientWidth - reactionTarget.offsetWidth - padding * 2;
+      const maxY = reactionZone.clientHeight - reactionTarget.offsetHeight - padding * 2;
+      reactionTarget.style.left = `${padding + Math.random() * Math.max(0, maxX)}px`;
+      reactionTarget.style.top = `${padding + Math.random() * Math.max(0, maxY)}px`;
+    }
+
+    function endGame() {
+      playing = false;
+      clearInterval(gameTimer);
+      reactionTarget.hidden = true;
+      startGame.hidden = false;
+      startGame.textContent = 'Play Again 🚀';
+
+      if (score > bestScore) {
+        bestScore = score;
+        localStorage.setItem('omarBestScore', String(bestScore));
+        bestScoreEl.textContent = bestScore;
+      }
+
+      if (score >= 8) {
+        gameBadge.classList.remove('locked');
+        localStorage.setItem('omarGameBadge', 'unlocked');
+        confetti(60);
+        showToast(`Amazing! ${score} stars — badge unlocked! ⭐`);
+      } else {
+        showToast(`Great try! You caught ${score} stars. Reach 8 to unlock the badge!`);
+      }
+    }
+
+    startGame.addEventListener('click', () => {
+      score = 0;
+      timeLeft = 15;
+      playing = true;
+      scoreEl.textContent = score;
+      timerEl.textContent = timeLeft;
+      startGame.hidden = true;
+      reactionTarget.hidden = false;
+      moveTarget();
+      playTone(650, 0.12);
+
+      clearInterval(gameTimer);
+      gameTimer = setInterval(() => {
+        timeLeft -= 1;
+        timerEl.textContent = timeLeft;
+        if (timeLeft <= 0) endGame();
+      }, 1000);
+    });
+
+    reactionTarget.addEventListener('click', () => {
+      if (!playing) return;
+      score += 1;
+      scoreEl.textContent = score;
+      playTone(520 + score * 24, 0.07);
+      moveTarget();
+    });
+
+    if (localStorage.getItem('omarGameBadge') === 'unlocked') {
+      gameBadge.classList.remove('locked');
+    }
+
+    const questions = [
+      {
+        question: 'Which planet is known as the Red Planet?',
+        options: ['A. Venus', 'B. Mars', 'C. Jupiter', 'D. Neptune'],
+        correct: 1
+      },
+      {
+        question: 'How many sides does a hexagon have?',
+        options: ['A. 5', 'B. 6', 'C. 7', 'D. 8'],
+        correct: 1
+      },
+      {
+        question: 'What gas do plants absorb from the air?',
+        options: ['A. Oxygen', 'B. Helium', 'C. Carbon dioxide', 'D. Hydrogen'],
+        correct: 2
+      },
+      {
+        question: 'Which animal is the fastest on land?',
+        options: ['A. Lion', 'B. Horse', 'C. Cheetah', 'D. Wolf'],
+        correct: 2
+      },
+      {
+        question: 'What is 9 × 7?',
+        options: ['A. 56', 'B. 63', 'C. 72', 'D. 67'],
+        correct: 1
+      }
+    ];
+
+    const quizQuestion = document.getElementById('quizQuestion');
+    const quizOptions = document.getElementById('quizOptions');
+    const quizResult = document.getElementById('quizResult');
+    const quizBadge = document.getElementById('quizBadge');
+    let currentQuestion = 0;
+    let answered = false;
+
+    function loadQuestion(index) {
+      currentQuestion = index;
+      answered = false;
+      const item = questions[index];
+      quizQuestion.textContent = item.question;
+      quizResult.textContent = '';
+      quizOptions.innerHTML = '';
+
+      item.options.forEach((option, optionIndex) => {
+        const button = document.createElement('button');
+        button.className = 'quiz-option';
+        button.type = 'button';
+        button.textContent = option;
+        button.addEventListener('click', () => answerQuiz(button, optionIndex));
+        quizOptions.appendChild(button);
+      });
+    }
+
+    function answerQuiz(button, optionIndex) {
+      if (answered) return;
+      answered = true;
+      const correct = questions[currentQuestion].correct;
+      const buttons = [...quizOptions.querySelectorAll('.quiz-option')];
+
+      buttons[correct].classList.add('correct');
+      if (optionIndex === correct) {
+        quizResult.textContent = 'Correct! You are a Quiz Master! 🎉';
+        quizBadge.classList.remove('locked');
+        localStorage.setItem('omarQuizBadge', 'unlocked');
+        confetti(45);
+        playTone(820, 0.15);
+      } else {
+        button.classList.add('wrong');
+        quizResult.textContent = 'Good try! The highlighted answer is correct. Keep learning! 💪';
+        playTone(260, 0.12);
+      }
+    }
+
+    document.getElementById('newQuiz').addEventListener('click', () => {
+      let next;
+      do {
+        next = Math.floor(Math.random() * questions.length);
+      } while (questions.length > 1 && next === currentQuestion);
+      loadQuestion(next);
+      playTone(600, 0.08);
+    });
+
+    if (localStorage.getItem('omarQuizBadge') === 'unlocked') {
+      quizBadge.classList.remove('locked');
+    }
+
+    const mascotMessages = [
+      'Today’s mission: ask one “why” question and find the answer! 🔎',
+      'Remember, mistakes are proof that your brain is learning. 🧠',
+      'Try creating something using only paper and tape! ✂️',
+      'A champion practices even when nobody is watching. 🏆',
+      'Your imagination is a superpower. Use it today! ✨'
+    ];
+
+    document.getElementById('mascotBtn').addEventListener('click', () => {
+      const message = mascotMessages[Math.floor(Math.random() * mascotMessages.length)];
+      document.getElementById('mascotMessage').textContent = message;
+      playTone(680, 0.1);
+    });
+
+    loadQuestion(0);
+  </script>
+</body>
+</html>
